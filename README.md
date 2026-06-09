@@ -15,12 +15,16 @@ python3 generate_digest.py 2026-06-16 # override "today" (for testing/backfill)
 The generator is **idempotent, self-backfilling, and self-updating**:
 
 - It builds one digest per **Mon–Sun ISO week**, from the first week of June 2026
-  (`config.FIRST_WEEK_MONDAY`) up to and including the **current (partial) week**.
-- The current week is built immediately as a partial digest and **re-fetched on
-  every run until it is finalized**, so it fills in as the week progresses. A
-  just-completed week is also re-fetched for a short grace period
-  (`config.FINALIZE_GRACE_DAYS`, default 2 days) to catch submissions that reach
-  the arXiv index a day or two late.
+  (`config.FIRST_WEEK_MONDAY`) up to and including the current week.
+- arXiv announces new submissions only on **weekdays (Mon–Fri)**, so a week is
+  treated as **complete once its Friday has passed** — the scheduled Saturday run
+  therefore always captures a full week. (A run made *before* a week's Friday,
+  e.g. a manual mid-week run, builds it as a partial "in progress" digest that
+  fills in on later runs.)
+- A complete week is still **re-fetched on each run until it is finalized**, kept
+  open for a grace period past its nominal Sunday
+  (`config.FINALIZE_GRACE_DAYS`, default 2 days) so any weekend-submitted papers
+  that arXiv only announces the following week are captured before freezing.
 - A week is **finalized** once `(today − its Sunday) > FINALIZE_GRACE_DAYS`. Once
   finalized it is frozen and never re-fetched; before then it is refreshed.
 - **Any missing past week is constructed retroactively** automatically.

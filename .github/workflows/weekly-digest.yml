@@ -8,9 +8,11 @@ name: Weekly math.PR digest
 
 on:
   schedule:
-    # Saturdays 07:00 UTC (7am GMT). The current Mon–Sun week is captured as a
-    # partial digest on Saturday; it is finalised (incl. Sunday's submissions) on
-    # the following Saturday's run, which refetches the full week before freezing.
+    # Saturdays 07:00 UTC (7am GMT). arXiv announces new submissions only on
+    # weekdays (Mon–Fri), so by Saturday the whole Mon–Sun week is in and the run
+    # captures it as a COMPLETE week. A light top-up on the following Saturday
+    # picks up any weekend-submitted papers arXiv announces the next week, then
+    # the week is frozen.
     - cron: '0 7 * * 6'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
 

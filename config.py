@@ -11,11 +11,12 @@ CATEGORY = "math.PR"
 # The earliest week (Monday) for which a digest should ever be built.
 FIRST_WEEK_MONDAY = "2026-06-01"  # first week of June 2026
 
-# The current (in-progress) week is built as a partial digest and re-fetched on
-# every run until it is "finalized". A just-completed week is also re-fetched for
-# a short grace period so submissions that reach the arXiv index a day or two
-# late are still picked up. A week is finalized once (today - its Sunday) exceeds
-# this many days; after that it is frozen and never re-fetched.
+# arXiv announces new submissions only on weekdays (Mon–Fri), so a Mon–Sun week
+# is treated as COMPLETE once its Friday has passed (e.g. the Saturday run). A
+# week is still re-fetched on each run until it is "finalized" — kept open for a
+# grace period past its nominal Sunday so any weekend-submitted papers that arXiv
+# only announces the following week are captured before the week is frozen. A
+# week is finalized once (today - its Sunday) exceeds this many days.
 FINALIZE_GRACE_DAYS = 2
 
 # --- Coauthors (from gracar.org publication list) -------------------------

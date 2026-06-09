@@ -195,7 +195,14 @@ def week_path(monday):
 
 def build_week(monday, sunday, today, force=False):
     path = week_path(monday)
-    complete = sunday < today                               # week fully elapsed
+    friday = monday + timedelta(days=4)
+    # arXiv announces new submissions only on weekdays (Mon–Fri), so once a
+    # week's Friday has passed (i.e. a Saturday-or-later run) the whole week's
+    # announced content is in and the week is treated as complete.
+    complete = today > friday
+    # Still re-fetch for a grace period past the nominal Sunday so any weekend-
+    # submitted papers that arXiv only announces the following week are captured
+    # before the week is frozen.
     finalized = (today - sunday).days > config.FINALIZE_GRACE_DAYS
     # Skip only weeks already cached AND finalized. Partial (current) weeks and
     # just-completed weeks still inside the grace window are re-fetched so future
