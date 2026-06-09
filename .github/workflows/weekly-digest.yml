@@ -14,10 +14,8 @@ on:
     - cron: '0 7 * * 6'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
 
-# Run the JavaScript actions on Node 24 ahead of GitHub's 2026-06-16 forced
-# switch (silences the Node 20 deprecation warning and verifies compatibility).
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+# Action versions below are pinned to Node 24-native majors, so nothing relies on
+# the deprecated Node 20 runtime (GitHub removes it from runners 2026-09-16).
 
 # Allow the job to commit data back and to deploy Pages.
 permissions:
@@ -37,9 +35,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -58,11 +56,11 @@ jobs:
             git push
           fi
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
