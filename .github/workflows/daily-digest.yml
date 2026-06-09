@@ -1,19 +1,21 @@
-name: Weekly math.PR digest
+name: Daily math.PR digest
 
 # Runs entirely on GitHub's infrastructure — no local machine needed.
 #  * Fetches/updates digests (generate_digest.py is self-backfilling: it builds
-#    any missing week and tops up the in-progress week).
+#    any missing week and tops up the in-progress week on every run).
 #  * Commits the updated data/ + site/ back to the repo (the persistent cache).
 #  * Publishes site/ to GitHub Pages over https.
 
 on:
   schedule:
-    # Saturdays 07:00 UTC (7am GMT). arXiv announces new submissions only on
-    # weekdays (Mon–Fri), so by Saturday the whole Mon–Sun week is in and the run
-    # captures it as a COMPLETE week. A light top-up on the following Saturday
-    # picks up any weekend-submitted papers arXiv announces the next week, then
-    # the week is frozen.
-    - cron: '0 7 * * 6'
+    # 02:00 UTC, Monday–Friday — shortly after arXiv has announced its latest
+    # batch. arXiv announces new submissions at 20:00 US Eastern on Sun–Thu
+    # evenings (none Fri/Sat ET), which lands at 00:00 UTC (EDT) / 01:00 UTC
+    # (EST) the next day — i.e. Mon–Fri in UTC. 02:00 UTC clears the latest
+    # landing time with an hour to spare and works in both DST regimes. Each run
+    # tops up the in-progress Mon–Sun week; the generator freezes a week once its
+    # grace window has passed, so daily runs stay idempotent.
+    - cron: '0 2 * * 1-5'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
 
 # Action versions below are pinned to Node 24-native majors, so nothing relies on
@@ -27,7 +29,7 @@ permissions:
 
 # Never let two runs (e.g. a manual run during a scheduled one) clash.
 concurrency:
-  group: weekly-digest
+  group: daily-digest
   cancel-in-progress: false
 
 jobs:
@@ -54,7 +56,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No digest changes this run."
           else
-            git commit -m "Weekly digest update — $(date -u +%Y-%m-%d)"
+            git commit -m "Digest update — $(date -u +%Y-%m-%d)"
             git push
           fi
 
