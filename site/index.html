@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>math.PR Weekly Digest &middot; Peter Gracar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>math.PR weekly digest</h1>
+    <p class="sub">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
+       curated for <a id="ownerLink" href="#" target="_blank" rel="noopener"></a>'s research interests
+       &mdash; random geometric graphs, percolation, particle systems, and the spread of infection.</p>
+  </div>
+</header>
+
+<div class="layout wrap">
+  <aside id="sidebar">
+    <div class="search"><input id="filter" type="search" placeholder="Filter titles / authors / keywords&hellip;"></div>
+    <h2>Digests</h2>
+    <nav id="weekList"></nav>
+    <div class="legend">
+      <span class="chip coauthor">coauthor</span>
+      <span class="chip high">highly relevant</span>
+      <span class="chip medium">possibly relevant</span>
+    </div>
+    <p class="foot" id="genStamp"></p>
+  </aside>
+
+  <main id="main"></main>
+</div>
+
+<script src="index.js"></script>
+<script>
+const D = window.DIGEST_INDEX;
+const $ = (s, r=document) => r.querySelector(s);
+const el = (t, c, h) => { const e=document.createElement(t); if(c)e.className=c; if(h!=null)e.innerHTML=h; return e; };
+const esc = s => (s||"").replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const BUCKETS = [
+  {key:"coauthor", label:"Coauthor submissions", cls:"coauthor"},
+  {key:"high",     label:"Highly relevant",      cls:"high"},
+  {key:"medium",   label:"Possibly relevant",    cls:"medium"},
+  {key:"other",    label:"Everything else",      cls:"other"},
+];
+
+function fmtRange(w){
+  const o={month:'short',day:'numeric'};
+  const a=new Date(w.monday+'T00:00:00'), b=new Date(w.sunday+'T00:00:00');
+  return a.toLocaleDateString('en-GB',o)+' – '+b.toLocaleDateString('en-GB',{...o,year:'numeric'});
+}
+function fmtDay(d){ return d? new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : ''; }
+const inProgress = w => w.complete===false;
+
+function authorsHTML(e){
+  const set=new Set((e.coauthors||[]).map(c=>c.toLowerCase()));
+  return e.authors.map(a=>{
+    const isCo=[...set].some(c=>{const p=c.split(' ');return a.toLowerCase().includes(p[p.length-1].replace(/[^a-z]/g,''));});
+    return isCo? '<strong class="co">'+esc(a)+'</strong>' : esc(a);
+  }).join(', ');
+}
+
+function entryCard(e){
+  const card=el('article','entry b-'+e.bucket);
+  const cats=e.categories.map(c=>'<span class="cat'+(c===e.primary_category?' prim':'')+'">'+esc(c)+'</span>').join('');
+  const kws=(e.matched_keywords||[]).slice(0,8).map(k=>'<span class="kw">'+esc(k)+'</span>').join('');
+  const co=(e.coauthors&&e.coauthors.length)?'<div class="cobanner">★ Coauthor: '+e.coauthors.map(esc).join(', ')+'</div>':'';
+  card.innerHTML =
+    co+
+    '<h3><a href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.title)+'</a></h3>'+
+    '<div class="authors">'+authorsHTML(e)+'</div>'+
+    '<div class="meta">'+cats+' <a class="idlink" href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.id)+'</a>'+
+      ' &middot; <a href="'+e.pdf_url+'" target="_blank" rel="noopener">pdf</a></div>'+
+    '<details class="abs"><summary>Abstract</summary><p>'+esc(e.abstract)+'</p></details>'+
+    (kws?'<div class="kws">'+kws+'</div>':'');
+  return card;
+}
+
+function renderWeek(w, term){
+  const main=$('#main'); main.innerHTML='';
+  const head=el('div','weekhead');
+  const coN=w.entries.filter(e=>e.bucket==='coauthor').length;
+  head.innerHTML='<h2>'+fmtRange(w)+(inProgress(w)?' <span class="tag-prog">in progress</span>':'')+'</h2>'+
+    '<p class="wstats">'+w.entries.length+(inProgress(w)?' submissions so far':' new submissions')+' to '+esc(w.category)+
+    ' &middot; ISO week '+w.iso_year+'-W'+String(w.iso_week).padStart(2,'0')+
+    (coN?' &middot; <span class="hl">'+coN+' coauthor</span>':'')+'</p>'+
+    (inProgress(w)?'<div class="progress">● Partial week — data through '+fmtDay(w.data_through)+
+      '. This digest updates automatically on each run until the week closes.</div>':'');
+  main.appendChild(head);
+
+  const t=(term||'').trim().toLowerCase();
+  let shown=0;
+  for(const b of BUCKETS){
+    let items=w.entries.filter(e=>e.bucket===b.key);
+    if(t) items=items.filter(e=>(e.title+' '+e.authors.join(' ')+' '+(e.matched_keywords||[]).join(' ')+' '+e.abstract).toLowerCase().includes(t));
+    if(!items.length) continue;
+    const sec=el('section','bucket '+b.cls);
+    const isOther=b.key==='other';
+    sec.innerHTML='<h3 class="bhead'+(isOther?' collapsible':'')+'">'+b.label+' <span class="ct">'+items.length+'</span></h3>';
+    const body=el('div','bbody'+(isOther&&!t?' hidden':''));
+    items.forEach(e=>body.appendChild(entryCard(e)));
+    if(isOther){
+      const h=sec.querySelector('.bhead');
+      h.addEventListener('click',()=>body.classList.toggle('hidden'));
+    }
+    sec.appendChild(body);
+    main.appendChild(sec);
+    shown+=items.length;
+  }
+  if(!shown) main.appendChild(el('p','empty','No submissions match &ldquo;'+esc(term)+'&rdquo; this week.'));
+}
+
+let current=0;
+let openYears=null;                       // Set of expanded years; null => init
+const yearOf = w => w.monday.slice(0,4);
+
+function weekLink(i, term){
+  const w=D.weeks[i], c=w.counts;
+  const a=el('a','weeklink'+(i===current?' active':''));
+  a.href='#';
+  a.innerHTML='<span class="wr">'+fmtRange(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
+    '<span class="badges">'+(c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
+    (c.high?'<span class="b high">'+c.high+'</span>':'')+
+    '<span class="b tot">'+c.total+'</span></span>';
+  a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
+  return a;
+}
+
+function renderNav(term){
+  const nav=$('#weekList'); nav.innerHTML='';
+  // group week indices by year, preserving the newest-first order of D.weeks
+  const order=[], byYear={};
+  D.weeks.forEach((w,i)=>{
+    const y=yearOf(w);
+    if(!(y in byYear)){ byYear[y]=[]; order.push(y); }
+    byYear[y].push(i);
+  });
+  if(openYears===null){               // default: only the most recent year open
+    openYears=new Set(order.length?[order[0]]:[]);
+  }
+  openYears.add(yearOf(D.weeks[current]));   // keep the active week's year open
+  order.forEach(y=>{
+    const items=byYear[y];
+    const open=openYears.has(y);
+    const coAll=items.reduce((s,i)=>s+D.weeks[i].counts.coauthor,0);
+    const head=el('button','yearhead'+(open?' open':''));
+    head.innerHTML='<span><span class="caret">'+(open?'▾':'▸')+'</span> '+y+'</span>'+
+      '<span class="ymeta">'+items.length+' wk'+(coAll?' · <span class="co">★'+coAll+'</span>':'')+'</span>';
+    head.addEventListener('click',()=>{ openYears.has(y)?openYears.delete(y):openYears.add(y); renderNav(term); });
+    nav.appendChild(head);
+    if(open){
+      const grp=el('div','yearweeks');
+      items.forEach(i=>grp.appendChild(weekLink(i,term)));
+      nav.appendChild(grp);
+    }
+  });
+}
+
+// Lazy-load a week's full entries (injected <script>, works from file:// in
+// most browsers). The week file populates window.DIGEST_WEEKS["<monday>"].
+function loadWeek(mon, cb, err){
+  const store=window.DIGEST_WEEKS||(window.DIGEST_WEEKS={});
+  if(store[mon]) return cb(store[mon]);
+  const s=document.createElement('script');
+  s.src='data/week-'+mon+'.js';
+  s.onload=()=>{ const d=(window.DIGEST_WEEKS||{})[mon]; d?cb(d):(err&&err()); };
+  s.onerror=()=>err&&err();
+  document.head.appendChild(s);
+}
+
+function selectWeek(i, term, scroll){
+  current=i; renderNav(term);
+  const w=D.weeks[i], main=$('#main');
+  if(!(window.DIGEST_WEEKS||{})[w.monday]) main.innerHTML='<p class="empty">Loading&hellip;</p>';
+  loadWeek(w.monday,
+    full=>renderWeek(full, $('#filter').value),
+    ()=>{ main.innerHTML='<p class="empty">Couldn\'t load <code>data/week-'+w.monday+'.js</code>. '+
+      'If you opened this page directly from disk, your browser may be blocking local data files &mdash; '+
+      'serve the folder instead: <code>python3 -m http.server --directory site</code></p>'; });
+  if(scroll!==false) window.scrollTo(0,0);
+}
+
+function init(){
+  const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
+  $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
+    ' · '+D.weeks.length+' week(s) archived';
+  if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
+  renderNav('');
+  selectWeek(0,'',false);
+  $('#filter').addEventListener('input',e=>selectWeek(current, e.target.value, false));
+}
+init();
+</script>
+</body>
+</html>
