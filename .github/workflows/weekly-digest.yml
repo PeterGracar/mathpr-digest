@@ -8,10 +8,16 @@ name: Weekly math.PR digest
 
 on:
   schedule:
-    # Mondays 06:17 UTC — after the Mon–Sun week closes. Add more lines (e.g.
-    # '17 6 * * 1,4') to refresh the in-progress week more often during the week.
-    - cron: '17 6 * * 1'
+    # Saturdays 07:00 UTC (7am GMT). The current Mon–Sun week is captured as a
+    # partial digest on Saturday; it is finalised (incl. Sunday's submissions) on
+    # the following Saturday's run, which refetches the full week before freezing.
+    - cron: '0 7 * * 6'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
+
+# Run the JavaScript actions on Node 24 ahead of GitHub's 2026-06-16 forced
+# switch (silences the Node 20 deprecation warning and verifies compatibility).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 # Allow the job to commit data back and to deploy Pages.
 permissions:
