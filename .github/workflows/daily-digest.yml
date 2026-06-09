@@ -3,8 +3,11 @@ name: Daily math.PR digest
 # Runs entirely on GitHub's infrastructure — no local machine needed.
 #  * Fetches/updates digests (generate_digest.py is self-backfilling: it builds
 #    any missing week and tops up the in-progress week on every run).
-#  * Commits the updated data/ + site/ back to the repo (the persistent cache).
-#  * Publishes site/ to GitHub Pages over https.
+#  * Commits the updated data/ back to the repo (the persistent cache). site/
+#    is NOT committed: it is fully rebuilt from data/ on every run, and the live
+#    site is served from the uploaded Pages artifact (below), not from the repo —
+#    so committing it would only add rebuild churn to git history.
+#  * Publishes the freshly built site/ to GitHub Pages over https.
 
 on:
   schedule:
@@ -52,7 +55,9 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data site
+          # Only data/ is the persistent cache; site/ is rebuilt each run and
+          # served from the Pages artifact, so it is intentionally not committed.
+          git add data
           if git diff --cached --quiet; then
             echo "No digest changes this run."
           else
