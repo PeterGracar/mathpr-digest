@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-09",
-  "total_submissions": 19,
-  "fetched": 19,
-  "generated_at": "2026-06-09T13:25:57Z",
+  "data_through": "2026-06-10",
+  "total_submissions": 37,
+  "fetched": 37,
+  "generated_at": "2026-06-10T06:28:12Z",
   "entries": [
     {
       "id": "2606.09691v1",
@@ -34,6 +34,30 @@
         "continuum percolation",
         "percolation",
         "stochastic geometry"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.10257v1",
+      "title": "Downward conditional monotonicity gives survival and extinction for contact processes in random environments",
+      "abstract": "The concept of downward conditional monotonicity for the Markov-modulated Poisson process (MMPP) is introduced and used to derive the optimal stochastic domination of a standard Poisson point process. The maximum arrival rate for the Poisson process which allows this domination to exist is shown to be related to an eigenvalue extracted from the generator matrix of the quasi-birth--death (QBD) formulation of the MMPP. This allows derivation of survival and extinction regimes for a large family of contact processes whose infection and recovery rates vary over time according to an underlying random environment with a finite number of states. Direct comparison with standard contact processes which dominate from above and below accomplishes this.",
+      "authors": [
+        "Joseph P. Stover"
+      ],
+      "published": "2026-06-08T23:56:24Z",
+      "updated": "2026-06-08T23:56:24Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10257v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10257v1",
+      "score": 8,
+      "matched_keywords": [
+        "point process",
+        "poisson process",
+        "survival"
       ],
       "coauthors": [],
       "bucket": "high"
@@ -110,6 +134,77 @@
       "bucket": "medium"
     },
     {
+      "id": "2606.10214v1",
+      "title": "Distribution of Sandpile groups of random directed bipartite graphs",
+      "abstract": "Fix a prime $p$ and a constant $\\frac{1}{p}<α\\leq 1$. Consider the random directed Erdős--Rényi bipartite graph $\\vec G(n,\\lceilαn\\rceil ,v)$ with bipartition $(V_1,V_2)$ of sizes $|V_1|=n$ and $|V_2|=\\lceilαn\\rceil$, and edge probability $0<v<1$. Bhargava, DePascale and Koenig conjectured a limiting distribution for the $p$-Sylow subgroup of the sandpile group of $\\vec G(n,\\lceilαn\\rceil,v)$ as $n\\to\\infty$. We prove this conjecture. Similar results have previously been proved by computing the expected number of surjections from the random abelian $p$-group onto $H$, for each finite abelian $p$-group $H$. However, in the case of $p$-Sylow subgroups of sandpile groups of random directed bipartite graphs, these surjective moments often diverge to infinity, despite the conjectured limiting distribution having finite moments. We resolve this by restricting to a high-probability subset of graphs on which the surjective moments are well-behaved, and discarding a rare exceptional set of graphs whose contribution to the distribution vanishes but whose contribution to the surjective moments often diverges. Computing the conditional surjective moments on the good set and applying Wood's universality theorem yields the desired convergence in distribution.",
+      "authors": [
+        "Deepesh Singhal"
+      ],
+      "published": "2026-06-08T22:08:54Z",
+      "updated": "2026-06-08T22:08:54Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10214v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10214v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.11043v1",
+      "title": "Thick points under Gaussian free field dynamics",
+      "abstract": "We investigate the evolution of thick points under two natural dynamics for the Gaussian free field (GFF) in dimension 2. The first dynamic we analyze is the Ornstein-Uhlenbeck GFF. We prove that, simultaneously for all points, the evolution of their thickness is continuous. Additionally, we characterize all deterministic functions $f: \\mathbb{R}\\rightarrow \\mathbb{R}$ such that there are points whose thickness function is $f$. The second dynamic we study is the stationary solution of the additive stochastic heat equation. In this case, the thickness of points is not continuous. Moreover, this rougher dynamic generates super-thick points, namely points with thickness greater than $2$. As a function of $γ> 2$, we identify infinitely many phase transitions corresponding to the existence of exceptional times where at least $N$ points are $γ$-thick. These phase transitions, occurring at $γ^2 = 8, 6, 16/3, \\dots$, converge to $4$ as $N \\to \\infty$. Mapping to the critical FK-model parameter via $q=4\\cos^2(4π/γ^2)$, these critical values correspond to the Beraha numbers, which are precisely the points at which the CFT for critical FK percolation should be minimal",
+      "authors": [
+        "Felipe Espinosa Vergara",
+        "Avelio Sepúlveda"
+      ],
+      "published": "2026-06-09T16:10:53Z",
+      "updated": "2026-06-09T16:10:53Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11043v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11043v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.11068v1",
+      "title": "The Frog Model on $\\mathbb Z$ with Random Discrete Weibull Lifetimes and Biased Nearest-Neighbour Random Walks",
+      "abstract": "We study the frog model on $\\mathbb Z$ with particle-wise random discrete Weibull lifetimes and biased nearest-neighbour random walks. Each particle has an independent survival parameter $π\\in(0,1)$. Conditionally on $π=p$, its lifetime $Ξ$ satisfies $$ \\mathbb P(Ξ\\ge k\\mid π=p)=p^{k^γ}, \\, k\\in\\mathbb{N}_0, $$ where $γ>0$. The distribution of $π$ is assumed to have right-edge density $$ f_π(u)\\sim (1-u)^{β-1} L\\left(\\frac1{1-u}\\right), \\, u\\uparrow1, $$ where $β>0$ and $L:(0,\\infty)\\to(0,\\infty)$ is a slowly varying function at infinity. The main step is to estimate the tail of the maximal displacement of a single particle before death. If $τ_n$ denotes the time needed by the underlying walk to reach distance $n$, then $$ \\mathbb P(D^*\\ge n)=\\mathbb E[G(τ_n)], \\, G(k):=\\mathbb P(Ξ\\ge k). $$ Since $$ G(k)\\sim Γ(β)k^{-γβ}L(k^γ), $$ and the biased nearest-neighbour random walk has linear hitting-time scale, the off-critical threshold is $β_c=1/γ$. If $β>β_c$ and the initial number of particles per site has finite mean, the model dies out almost surely. If $β<β_c$ and the initial configuration is not almost surely empty, the model survives with positive probability in the direction of the drift.",
+      "authors": [
+        "Ramírez-González J. H.",
+        "Prates Machado Fabio"
+      ],
+      "published": "2026-06-09T16:30:27Z",
+      "updated": "2026-06-09T16:30:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11068v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11068v1",
+      "score": 4,
+      "matched_keywords": [
+        "random walk",
+        "survival"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2606.08928v1",
       "title": "The Singular Values of Lévy's Area Matrix",
       "abstract": "The matrix of Lévy's areas of $d$-dimensional Brownian motion is a fundamental object in stochastic analysis. In this article, we study the singular values of this $d \\times d$ skew-symmetric random matrix. First, we derive an explicit formula for the density of the singular values and, en passant, present a new short proof of the characteristic function of Lévy's area when $d \\ge 3$. This also allows us to extend the well-known formula for the density of Lévy's area to $d \\ge 3$. Next, we use these results to characterise the singular spectrum as a determinantal point process with its kernel in explicit form. Finally, we study the asymptotics as $d \\to \\infty$: the empirical measure of singular values converges to an absolute Cauchy distribution, the largest singular values are of order $d$ with Gaussian fluctuations, the smallest singular values are of order $1/d$, and the local bulk spacings are of order $1/d$, with sine-kernel statistics after rescaling.",
@@ -131,6 +226,52 @@
       ],
       "coauthors": [],
       "bucket": "medium"
+    },
+    {
+      "id": "2606.10165v1",
+      "title": "The frog model with death and drift on free products of complete graphs",
+      "abstract": "We study the frog model with death and drift on $\\mathbb{D}_{m,d}$, the free product of $d+1$ copies of the complete graph of order $m$. Active and inactive particles are located at the vertices of $\\mathbb{D}_{m,d}$. Each active particle performs a $α$-biased random walk towards the root of $\\mathbb{D}_{m,d}$, dying after a random lifetime with a geometric distribution of parameter $1-p$. Each inactive particle remains dormant until an active particle visits its location. We present conditions on the parameters $α$ and $p$ for the process to die out almost surely and to survive with positive probability. Our proofs are based on comparisons of the model with simple and multi-type branching processes.",
+      "authors": [
+        "Nancy Garcia",
+        "Élcio Lebensztayn",
+        "Jaime Utria"
+      ],
+      "published": "2026-06-08T20:48:42Z",
+      "updated": "2026-06-08T20:48:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10165v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10165v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10313v1",
+      "title": "Invariance principles for additive functionals of voter models",
+      "abstract": "In this paper, we prove an invariance principle for the additive functionals of a family of voter models, which include the nearest-neighbor cases on $d$-dimensional lattices for $d$ at least $5$ or on regular trees with degree at least $3$ and some long-range cases on lattices as special examples. The proof of our main result extends a martingale decomposition method, where the Kolmogorov backward equation and the duality relationship between the voter model and the coalescing random walk play the key roles.",
+      "authors": [
+        "Xiaofeng Xue"
+      ],
+      "published": "2026-06-09T02:07:37Z",
+      "updated": "2026-06-09T02:07:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10313v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10313v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
     },
     {
       "id": "2606.08925v1",
@@ -208,7 +349,10 @@
       "updated": "2026-06-08T08:56:44Z",
       "primary_category": "math.PR",
       "categories": [
-        "math.PR"
+        "math.PR",
+        "cs.DM",
+        "math.CO",
+        "math.FA"
       ],
       "abs_url": "https://arxiv.org/abs/2606.09221v1",
       "pdf_url": "https://arxiv.org/pdf/2606.09221v1",
@@ -335,20 +479,20 @@
       "bucket": "other"
     },
     {
-      "id": "2606.09712v1",
+      "id": "2606.09712v2",
       "title": "Nearest zero-critical point distances for Gaussian SU(2) polynomials",
-      "abstract": "We study nearest zero-critical point distances for the Gaussian SU(2) polynomial $p_n$. If $z_i$ is a zero of $p_n$ and $D_n(z_i)$ denotes its Fubini-Study distance to the nearest critical point, we prove that the empirical measure of the rescaled distances $nD_n(z_i)$ converges weakly in probability to the law of \\[ Y=\\frac{2}{|Z|}, \\] where $Z$ is distributed according to the Fubini-Study probability measure in the affine coordinate. Equivalently, \\[ \\mathbb P(Y\\le y)=\\frac{y^2}{y^2+4}, \\qquad y>0. \\] The proof identifies the deterministic macroscopic interaction field \\[ V_{\\mathrm{FS}}(z)=\\frac{\\bar z}{1+|z|^2}, \\] which governs the leading-order displacement between a typical zero and its nearest critical point. The heavy right tail of the limiting law arises from the degeneration of this field at the exceptional point $z=0$.",
+      "abstract": "We study nearest zero--critical point distances for the Gaussian SU(2) polynomial $p_n$. For each zero $z_i$ of $p_n$, let $D_n(z_i)$ denote its Fubini--Study distance to the nearest critical point. We prove that the empirical measure of the rescaled distances $nD_n(z_i)$ converges weakly in probability to the law of $2/|Z|$, where $Z$ is distributed according to the Fubini--Study probability measure in the affine chart.",
       "authors": [
         "Renjie Feng"
       ],
       "published": "2026-06-08T16:37:58Z",
-      "updated": "2026-06-08T16:37:58Z",
+      "updated": "2026-06-09T16:34:50Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2606.09712v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.09712v1",
+      "abs_url": "https://arxiv.org/abs/2606.09712v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.09712v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -447,6 +591,272 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.09820v1",
       "pdf_url": "https://arxiv.org/pdf/2606.09820v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10058v1",
+      "title": "Mean First Passage Times and Fundamental Tensors of Higher Order Markov Chains",
+      "abstract": "The mean first passage times are among the most critical characteristics of a Markov chain. In this paper, we focus on the scenario in which one or more states of a higher order ergodic Markov chain are modified to be absorbing. We prove that the resulting chain has to be absorbing. For a higher order absorbing Markov chain, we prove that the equation its fundamental tensor satisfies must be nonsingular and provide a MATLAB function {\\tt fund} for solving the equation. Besides, we connect each horizontal slice of the mean first passage time tensor with a fundamental tensor obtained when one state of a higher order ergodic Markov chain is modified to be absorbing, which also leads to a tensor series representation for selected mean first passage times.",
+      "authors": [
+        "Jianhong Xu"
+      ],
+      "published": "2026-06-08T18:34:00Z",
+      "updated": "2026-06-08T18:34:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10058v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10058v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10074v1",
+      "title": "On difference in word frequencies in a symmetric Bernoulli process",
+      "abstract": "In a symmetric Bernoulli process, all binary strings, or ``words'' of the same length have the same long term frequency. However, between two such words, one may have a ``frequency advantage'' in the sense that in any long enough segment of the Bernoulli process, the probability that the word occurs more times than the other word is greater than the probability the other way around. To characterize the frequency advantage in the long run, the asymptotics of the difference between the two probabilities as the length of the segment of the Bernoulli process tends to infinity is derived.",
+      "authors": [
+        "Zhiyi Chi"
+      ],
+      "published": "2026-06-08T18:48:20Z",
+      "updated": "2026-06-08T18:48:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10074v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10074v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10242v1",
+      "title": "A Tsang-range high-moment bound for $\\operatorname{Im}\\log L(\\tfrac12+it,χ)$ under GRH",
+      "abstract": "Conditional on the Generalized Riemann Hypothesis for $L(s,χ)$, we prove the Selberg--Tsang high-moment bound for $X_χ(t) = \\operatorname{Im}\\log L(\\tfrac12+it,χ)$ at fixed squarefree odd conductor $q \\ge 3$ and primitive non-principal character $χ$. Writing $L_T = \\log\\log(qT)$: for every $K > 0$ there exist constants $C_K$ and $T_0$ such that $\\frac{1}{T}\\int_T^{2T} |X_χ(t)|^{2k}\\,dt \\le (C_K\\,k\\,L_T)^k$ for all $T \\ge T_0$ and every integer $1 \\le k \\le K L_T$. The proof ports Selberg's pointwise approximate formula for $S(t)$ to $L(s,χ)$ at fixed conductor under GRH, splits it into three prime-power Dirichlet polynomials, and evaluates their moments via Soundararajan's mean-value lemma. As a corollary, Markov's inequality yields a Gaussian-scale tail $\\exp(-c V^2 / L_T)$ for $\\sqrt{L_T} \\ll V \\ll L_T$ -- a GRH-conditional, fixed-conductor, imaginary-part analogue of the large-deviation upper bounds known for $\\log|ζ(\\tfrac12+it)|$.",
+      "authors": [
+        "Scott D. Hughes"
+      ],
+      "published": "2026-06-08T23:09:36Z",
+      "updated": "2026-06-08T23:09:36Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10242v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10242v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10336v1",
+      "title": "From Pitman's local times representation to the Gorin-Shkolnikov identity and beyond",
+      "abstract": "We give a novel proof of the Gorin-Shkolnikov identity based on Pitman's SDE representation of Brownian excursion local times. More generally, we derive a family of Gaussian identities for nonlinear functionals of excursion local times, which includes Hariya's identity. These results extend naturally to reflected Brownian bridges conditioned on their local times and to Brownian meanders.",
+      "authors": [
+        "Wenpin Tang"
+      ],
+      "published": "2026-06-09T02:31:58Z",
+      "updated": "2026-06-09T02:31:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10336v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10336v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10496v1",
+      "title": "Dimension lower bounds in random geometry via Lipschitz functions",
+      "abstract": "We prove lower bounds for the Hausdorff dimensions of various natural sets associated with the Liouville quantum gravity (LQG) metric. We prove that the set of 3-star points (i.e., starting points of three disjoint geodesics) has Hausdorff dimension at least two with respect to the LQG metric, which is conjectured to be optimal. Our proof works for a general class of planar length metrics which also includes, e.g., Kendall's Poisson roads metric. We additionally prove a dimension lower bound of one for the set of 2-star points intersected with the boundary and for the metric net intersected with the boundary, as well as a dimension lower bound of two for the intersection of two metric nets. In the particular setting of LQG, we obtain sharper lower bounds for the Hausdorff dimensions of the set of 2-star points and the LQG metric net, with respect to both the Euclidean metric and the LQG metric. Our proofs are primarily topological. The key idea is to express the sets of interest in terms of non-constancy sets of Lipschitz functions.",
+      "authors": [
+        "Manan Bhatia",
+        "Ewain Gwynne",
+        "Brin Harper"
+      ],
+      "published": "2026-06-09T07:21:54Z",
+      "updated": "2026-06-09T07:21:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10496v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10496v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10503v1",
+      "title": "The two-sided peak polynomial",
+      "abstract": "We derive a generating function identity for the joint distribution of the numbers of peaks of a permutation and its inverse, via enriched $P$-partitions. The coefficients of the corresponding peak polynomial $W_n(s,t)$ satisfy a second-order recurrence. A martingale formulation of this recurrence yields a bivariate central limit theorem, showing that the two statistics are asymptotically independent. We also give an exact closed form for their covariance, which is of order $n^{-1}$.",
+      "authors": [
+        "Alperen Özdemir"
+      ],
+      "published": "2026-06-09T07:28:51Z",
+      "updated": "2026-06-09T07:28:51Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10503v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10503v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10559v1",
+      "title": "Deterministic Denominator Design for Localized Tamed Stochastic-Gradient Langevin Dynamics",
+      "abstract": "Tamed stochastic-gradient Langevin dynamics (SGLD) stabilizes large drifts by adding a denominator to the update. If this denominator uses the same stochastic-gradient sample as the update step, it can also change the conditional mean drift. We study deterministic denominators: the state-dependent envelope is fixed before the current oracle sample is drawn. The main question is how to design this envelope in practice. The design starts from an oracle score, builds a low-cost proxy score on pilot states, chooses activation thresholds by empirical quantiles, and then applies a small calibration layer. The analysis tracks three steps: proxy and threshold errors become envelope errors; envelope errors perturb one SGLD step; and the local residuals give stationary errors through a conditional perturbation bridge. Experiments show that the proxy-quantile denominators are close to oracle-score behavior, avoid the random-denominator mean-shift channel, and improve simple deterministic taming choices.",
+      "authors": [
+        "Yiwei Zhou",
+        "Ziheng Chen"
+      ],
+      "published": "2026-06-09T08:25:41Z",
+      "updated": "2026-06-09T08:25:41Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10559v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10559v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.10973v1",
+      "title": "Quasisymmetric rigidity of the Brownian sphere",
+      "abstract": "The Brownian sphere, also known as the Brownian map, is a canonical random metric measure space homeomorphic to the two-dimensional sphere $\\mathbf S^2$. It can be interpreted as the uniform measure on surfaces homeomorphic to $\\mathbf S^2$, in the sense that it arises as the scaling limit of many natural models of random planar maps chosen uniformly from a given class. It is also equivalent to the $\\sqrt{8/3}$-Liouville quantum gravity sphere. We prove that the Brownian sphere is quasisymmetrically rigid, meaning that, almost surely, it has no nontrivial quasisymmetric automorphisms. We also show that two independent Brownian spheres are almost surely not quasisymmetrically equivalent. Our argument also gives a new proof that the conformal structure of the Brownian sphere is almost surely determined by its metric structure.",
+      "authors": [
+        "Jason Miller",
+        "Yi Tian"
+      ],
+      "published": "2026-06-09T15:13:28Z",
+      "updated": "2026-06-09T15:13:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.CV",
+        "math.MG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.10973v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.10973v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.11085v1",
+      "title": "Geometric obstructions to Lipschitz transport between weighted Hessian $\\mathrm{CD}(κ,\\infty)$ manifolds",
+      "abstract": "We construct a weighted Riemannian manifold $(\\mathbb R^2,g,μ)$ satisfying $\\mathrm{CD}(1/2,\\infty)$, the curvature-dimension condition, with the following property: if $γ$ denotes a centered Gaussian measure on $\\mathbb R^2$, then every map $T:\\mathbb R^2 \\to \\mathbb R^2$ satisfying $T_\\#γ=μ$ fails to be Lipschitz as a map from $(\\mathbb R^2,\\|\\cdot\\|)$ to $(\\mathbb R^2,g)$. Building on this, we prove a Weyl asymptotic law for the eigenvalues of the weighted Laplacian $-Δ_{g,μ}$ and show that they are asymptotically negligible when compared to the eigenvalues of $-Δ_{g,γ}$. These results give strong counterexamples to two questions of E. Milman and complement the recent counterexample of Aryan.",
+      "authors": [
+        "William Dudarov",
+        "Dan Mikulincer"
+      ],
+      "published": "2026-06-09T16:44:48Z",
+      "updated": "2026-06-09T16:44:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.MG",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11085v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11085v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.11094v1",
+      "title": "Edge-regular graphs with non-negative curvature have polynomial growth",
+      "abstract": "A long-standing conjecture in the emerging discrete Bakry-Émery theory asserts that bounded-degree graphs satisfying $\\mathrm{CD}(0,\\infty)$ have polynomial growth. In the present paper, we prove this conjecture for all edge-regular graphs, and even obtain a volume doubling estimate with a constant that depends only on the degree. This is made possible thanks to the discovery of a surprising self-improvement phenomenon, which seems of independent interest: any edge-regular graph satisfying $\\mathrm{CD}(κ,\\infty)$ for some $κ\\in\\mathbb R$ must in fact satisfy $\\mathrm{CD}(κ,n)$ for some explicit, universal and optimal dimension parameter $n$.",
+      "authors": [
+        "Guy Blachar",
+        "Hervé Pajot",
+        "Justin Salez"
+      ],
+      "published": "2026-06-09T16:51:46Z",
+      "updated": "2026-06-09T16:51:46Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11094v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11094v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.11118v1",
+      "title": "Data-Driven Dynamic Assortment in Online Platforms: Learning about Two Sides",
+      "abstract": "We study a dynamic assortment problem on a two-sided service platform with incomplete information and heterogeneous customers in a discrete-time setting. In each period, a customer arrives seeking service, and the platform chooses an assortment of sellers to display. The customer then proposes a transaction to at most one seller in the assortment according to a multinomial logit choice model. After a fixed number of periods, sellers review the proposals they have received and each chooses at most one customer according to another multinomial logit choice model, after which the cycle repeats. A key challenge is that the platform does not know the choice-model parameters of either customers or sellers in advance. To our knowledge, this is the first study of a dynamic assortment problem in which both sides' choice parameters are unknown. We develop a data-driven algorithm that learns these parameters while optimizing the platform's objective over time. We evaluate performance using regret, which measures revenue loss relative to a clairvoyant benchmark that knows all parameters and customer arrivals in advance. We show that the algorithm's worst-case regret grows polylogarithmically over time, and we derive a matching lower bound, establishing its rate optimality.",
+      "authors": [
+        "Rahul Roy",
+        "Nur Sunar",
+        "Jayashankar M. Swaminathan"
+      ],
+      "published": "2026-06-09T17:15:10Z",
+      "updated": "2026-06-09T17:15:10Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "math.PR",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11118v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11118v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.11142v1",
+      "title": "Strong Approximations for Markov Chains Weakly Converging to Diffusions",
+      "abstract": "In this paper, we construct strong approximations for discrete-time Markov chains weakly converging to continuous diffusion processes, as well as for their perturbed counterparts. Under the assumption of bounded coefficients, we construct closely coupled versions of these processes on a shared probability space. In particular, for both non-degenerate and degenerate cases, we maximize the probability of their exact pathwise coincidence on discrete time grids. Moreover, we construct such probability space that the probability of a large deviation of the interpolated Markov chain from the continuous diffusion trajectory is small on the entire time interval.",
+      "authors": [
+        "V. Konakov",
+        "D. Kucher",
+        "E. Mammen"
+      ],
+      "published": "2026-06-09T17:30:47Z",
+      "updated": "2026-06-09T17:30:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.11142v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.11142v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
