@@ -18,7 +18,12 @@ on:
     # landing time with an hour to spare and works in both DST regimes. Each run
     # tops up the in-progress Mon–Sun week; the generator freezes a week once its
     # grace window has passed, so daily runs stay idempotent.
-    - cron: '0 2 * * 1-5'
+    #
+    # Minute is offset from the top of the hour (:17 rather than :00): GitHub's
+    # scheduler is heavily oversubscribed at exact hour boundaries, so on-the-hour
+    # crons are frequently delayed or dropped under load. An off-hour minute is
+    # far more likely to fire on time.
+    - cron: '17 2 * * 1-5'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
 
 # Action versions below are pinned to Node 24-native majors, so nothing relies on
