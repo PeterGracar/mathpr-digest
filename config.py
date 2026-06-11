@@ -45,6 +45,7 @@ HIGH_KEYWORDS = [
     ("random connection model", 6),
     ("random geometric graph", 6),
     ("weight-dependent", 6),
+	("random graph", 6),
     ("scale-free", 5),
     ("preferential attachment", 5),
     ("boolean model", 6),
