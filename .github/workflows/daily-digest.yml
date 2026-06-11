@@ -10,6 +10,15 @@ name: Daily math.PR digest
 #  * Publishes the freshly built site/ to GitHub Pages over https.
 
 on:
+  # Rebuild and republish whenever the code/templates change, so site edits go
+  # live immediately instead of waiting for the next scheduled run. data/ is
+  # excluded so the job's own digest commits (which only touch data/) don't
+  # retrigger it into a loop; the concurrency group below also prevents a
+  # push-triggered run from overlapping a scheduled one.
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'data/**'
   schedule:
     # 02:00 UTC, Monday–Friday — shortly after arXiv has announced its latest
     # batch. arXiv announces new submissions at 20:00 US Eastern on Sun–Thu
