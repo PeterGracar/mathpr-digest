@@ -102,6 +102,31 @@ INDEX_HTML = r"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>math.PR Weekly Digest &middot; Peter Gracar</title>
 <link rel="stylesheet" href="style.css">
+<script>
+// Render LaTeX in arXiv titles/abstracts. Content is built dynamically, so we
+// disable auto-typeset on load and call MathJax.typesetPromise() ourselves after
+// each render (see typesetMath()).
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    processEscapes: true,
+  },
+  options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] },
+  startup: {
+    typeset: false,
+    ready: () => {
+      MathJax.startup.defaultReady();
+      // Typeset whatever was already rendered before MathJax finished loading.
+      MathJax.startup.promise.then(() => {
+        const m = document.querySelector('#main');
+        if(m) MathJax.typesetPromise([m]).catch(()=>{});
+      });
+    },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
 <body>
 <header>
@@ -135,6 +160,14 @@ const D = window.DIGEST_INDEX;
 const $ = (s, r=document) => r.querySelector(s);
 const el = (t, c, h) => { const e=document.createElement(t); if(c)e.className=c; if(h!=null)e.innerHTML=h; return e; };
 const esc = s => (s||"").replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// Typeset any LaTeX inside a node once MathJax has loaded. Safe to call before
+// MathJax is ready (the initial render is re-typeset from the startup hook below).
+function typesetMath(node){
+  if(!node || !window.MathJax || !MathJax.typesetPromise) return;
+  MathJax.typesetClear && MathJax.typesetClear([node]);
+  MathJax.typesetPromise([node]).catch(()=>{});
+}
 
 const BUCKETS = [
   {key:"coauthor", label:"Coauthor submissions", cls:"coauthor"},
@@ -207,6 +240,7 @@ function renderWeek(w, term){
     shown+=items.length;
   }
   if(!shown) main.appendChild(el('p','empty','No submissions match &ldquo;'+esc(term)+'&rdquo; this week.'));
+  typesetMath(main);
 }
 
 let current=0;
