@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-11",
-  "total_submissions": 63,
-  "fetched": 63,
-  "generated_at": "2026-06-11T08:47:21Z",
+  "data_through": "2026-06-12",
+  "total_submissions": 81,
+  "fetched": 81,
+  "generated_at": "2026-06-12T06:56:17Z",
   "entries": [
     {
       "id": "2606.09691v1",
@@ -84,6 +84,33 @@
       "matched_keywords": [
         "percolation",
         "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.13374v1",
+      "title": "Temporal Conductance and Bounds on the Voter Model for Dynamic Networks",
+      "abstract": "The voter model is a classical stochastic process that models how opinions might spread through a network: at each step, every node lazily adopts the opinion of a random neighbour; eventually all nodes share the same opinion (consensus). Stronger connectivity should yield faster consensus. Berenbrink, Giakkoupis, Kermarrec, and Mallmann-Trenn (ICALP 2016) make this precise via the network's conductance: if the network has $m$ edges, minimum degree $d_{\\min}$, and conductance at least $φ$, then the voter model reaches consensus in expected $O(m/(d_{\\min}φ))$ steps. Their results extend to dynamic networks with fixed vertex degrees by considering the network's conductance at each time step. We introduce temporal conductance $Φ$, a more general connectivity measure for dynamic networks. Unlike static conductance, which collapses to $0$ whenever some snapshot is disconnected, $Φ$ captures connectivity through edges that appear at different times. We generalise the results of Berenbrink et al. from static conductance to temporal conductance, showing that the expected consensus time of the standard voter model is at most $O(m/(d_{\\min}Φ))$. Moreover, we prove that this bound is tight up to constant factors. We expect temporal conductance to be a useful primitive for analysing other dynamics on temporal networks, and potentially time-inhomogeneous Markov chains more generally.",
+      "authors": [
+        "Tatiana Rocha Avila",
+        "Holger Dell",
+        "John Lapinskas"
+      ],
+      "published": "2026-06-11T13:58:23Z",
+      "updated": "2026-06-11T13:58:23Z",
+      "primary_category": "cs.DC",
+      "categories": [
+        "cs.DC",
+        "cs.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13374v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13374v1",
+      "score": 6,
+      "matched_keywords": [
+        "connectivity",
+        "inhomogeneous"
       ],
       "coauthors": [],
       "bucket": "high"
@@ -284,6 +311,54 @@
       "bucket": "medium"
     },
     {
+      "id": "2606.12720v1",
+      "title": "On McDiarmid's Inequality under Dependence via Approximate Tensorization of Entropy",
+      "abstract": "We argue that dependent versions of McDiarmid's inequality are a useful but underutilized tool in mathematical statistics, learning theory and theoretical computer science. To make this point, we first highlight that approximate tensorization of entropy (ATE) implies McDiarmid's via the Entropy Method. Second, we derive McDiarmid's inequality for non-isotropic Gaussian random vectors $X \\sim \\mathcal N(μ, Σ)$ through ATE with a constant of the order of the condition number of $Σ$. We both independently obtain this ATE through a simple application of stochastic localization and also discuss how a more general ATE for the Gibbs sampler due to Ascolani et al., 2026 generalizes McDiarmid's-like concentration to strongly log-concave and log-smooth probability measures. We then apply the resulting concentration inequalities to resolve a question on the concentration of $\\operatorname{sign}(X)$ posed by Simone Bombari, investigate Erdős-Rényi graphs under dependence and prove a Dvoretzky-Kiefer-Wolfowitz-type inequality for observations from a joint measure fulfilling ATE and continuous marginal CDFs. For the class of strongly log-concave and log-smooth measures, this result improves upon a prior Dvoretzky-Kiefer-Wolfowitz-type inequality for non-i.i.d. observations due to Bobkov and Götze, 2010, by establishing the expected $1/\\sqrt{n}$-rate of convergence under weak dependence instead of $n^{-1/3}$.",
+      "authors": [
+        "Valentin Roth"
+      ],
+      "published": "2026-06-10T22:11:28Z",
+      "updated": "2026-06-10T22:11:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12720v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12720v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.13648v1",
+      "title": "Stochastic dominations for FK percolation and sharp thinning thresholds for the Ising energy field",
+      "abstract": "At first glance, one would imagine that the energy field of the Ising model, the set of edges whose endpoints share the same spin, is stochastically monotone as a function of the coupling constants. However, this is not generally the case. In this paper, we introduce two weaker notions of stochastic domination that make this result true: $p$--weak and $p$--weak$^\\dagger$ domination. Both of these notions depend on a parameter $p$ and we find the optimal values $p$ and $p^\\dagger$ so that these dominations hold. One of the key ingredient to obtain some of the results is a new stochastic domination relating FK percolations with different parameters $q,\\tilde{q}\\geq 1$ that is of independent interest.",
+      "authors": [
+        "Paul Cahen",
+        "Avelio Sepúlveda"
+      ],
+      "published": "2026-06-11T17:50:28Z",
+      "updated": "2026-06-11T17:50:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13648v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13648v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2606.08928v1",
       "title": "The Singular Values of Lévy's Area Matrix",
       "abstract": "The matrix of Lévy's areas of $d$-dimensional Brownian motion is a fundamental object in stochastic analysis. In this article, we study the singular values of this $d \\times d$ skew-symmetric random matrix. First, we derive an explicit formula for the density of the singular values and, en passant, present a new short proof of the characteristic function of Lévy's area when $d \\ge 3$. This also allows us to extend the well-known formula for the density of Lévy's area to $d \\ge 3$. Next, we use these results to characterise the singular spectrum as a determinantal point process with its kernel in explicit form. Finally, we study the asymptotics as $d \\to \\infty$: the empirical measure of singular values converges to an absolute Cauchy distribution, the largest singular values are of order $d$ with Gaussian fluctuations, the smallest singular values are of order $1/d$, and the local bulk spacings are of order $1/d$, with sine-kernel statistics after rescaling.",
@@ -393,6 +468,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.12135v1",
       "pdf_url": "https://arxiv.org/pdf/2606.12135v1",
+      "score": 3,
+      "matched_keywords": [
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.13487v1",
+      "title": "Branching-selection particle systems and inverse first passage problems",
+      "abstract": "A generalised inverse first passage problem asks whether, given a probability measure $p$ on $[0,\\infty]$, one can find a boundary $b:[0,\\infty]\\to \\mathbb{R}$ such that the stopping time:\\[τ:=\\inf\\left\\{t:Λ\\int_0^t ω(W_s-b(s))ds \\geq U\\right\\}\\] has distribution $p$, where $U\\sim Exp(1)$, $Λ\\in(0,\\infty)$ and $ω$ is a monotonic decreasing function. We construct a branching-selection particle system whose hydrodynamic limit is governed by a free boundary problem and connect this to the generalised inverse first passage problem. In the $N$-particle system, particles move as independent Brownian motions, branch at a prescribed rate, and are removed at a rate proportional to their location relative to a position $b^N(t)$ which is a function of the empirical distribution. We identify the limit of $b^N$ as the solution of the inverse first passage problem.",
+      "authors": [
+        "Jacob Mercer"
+      ],
+      "published": "2026-06-11T15:37:00Z",
+      "updated": "2026-06-11T15:37:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13487v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13487v1",
       "score": 3,
       "matched_keywords": [
         "particle system"
@@ -1445,6 +1543,321 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.12410v1",
       "pdf_url": "https://arxiv.org/pdf/2606.12410v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.12670v1",
+      "title": "The censored stochastic six-vertex model and parabolic Kazhdan--Lusztig $R$-polynomials",
+      "abstract": "We introduce a censored version of the stochastic six-vertex model. We show that for parameters $b_1 < b_2$, this model started from the initial condition ${1}_{x>0}$ is stochastically dominated at any time by the blocking measure. This is a partial analog of the censoring inequality for monotone spin systems. In particular, this result allows us to control the behavior of second-class particles. The proof uses parabolic Kazhdan--Lusztig $R$-polynomials, whose appearance is explained using a connection between the stochastic six-vertex model and the Iwahori--Hecke algebras of symmetric groups. Furthermore, we find an intertwining relation for this process using normalized parabolic Kazhdan--Lusztig $R$-polynomials as an intertwining kernel.",
+      "authors": [
+        "Hindy Drillick",
+        "Levi Haunschmid-Sibitz"
+      ],
+      "published": "2026-06-10T20:55:27Z",
+      "updated": "2026-06-10T20:55:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12670v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12670v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.12694v1",
+      "title": "A unified complexity bound for logconcave sampling",
+      "abstract": "We give a simple, unified, and nearly tight bound for sampling arbitrary logconcave distributions from a warm start using the In-and-Out algorithm along with exponential lifting. The main new ingredient in the analysis is an improved bound on the Poincaré constant of a lifted distribution. As a consequence, the resulting convergence rate is nearly tight for both constrained settings (e.g., Gaussian restricted to a convex body) and well-conditioned settings (e.g., strongly logconcave and smooth densities).",
+      "authors": [
+        "Yunbum Kook",
+        "Santosh S. Vempala"
+      ],
+      "published": "2026-06-10T21:28:30Z",
+      "updated": "2026-06-10T21:28:30Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12694v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12694v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.12707v1",
+      "title": "Storage and Transport Capacity Design for a Self-Reliable Two-Node Stochastic Resource System",
+      "abstract": "We study a two-node stochastic resource system operating over a finite horizon. Each node experiences uncertain supply and demand and is equipped with finite storage. The objective is to ensure that resource levels remain within prescribed limits with high probability. To this end, we formulate a chance-constrained capacity-design problem in which resources can be exchanged through a capacity-limited transport link. We characterize the minimum storage required at each node, derive the optimal transport policy, and quantify the trade-off between storage and transport capacities. Our results show the existence of a critical transport-capacity threshold that enables full risk pooling between the nodes. Moreover, this threshold decreases with the operating horizon, implying that full-pooling performance can be achieved with progressively smaller transport capacity over longer horizons.",
+      "authors": [
+        "Arnab Deya",
+        "Vivek Khatana",
+        "Ankur Mani",
+        "Murti V. Salapaka"
+      ],
+      "published": "2026-06-10T21:54:53Z",
+      "updated": "2026-06-10T21:54:53Z",
+      "primary_category": "eess.SY",
+      "categories": [
+        "eess.SY",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12707v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12707v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.12804v1",
+      "title": "Sub-Riemannian spectral distance",
+      "abstract": "We study eigenvalues and eigenfunctions of the ``div-grad type\" sub-Laplacian with respect to Popp's volume on a compact equiregular sub-Riemannian manifold $M$. Since Popp's volume is canonically determined by the sub-Riemannian structure of $M$, the spetra of the sub-Laplacian carry geometric meanings. In this paper, we first embed $M$ into the Hilbert space of square-summable sequences using eigenfunctions and then define a spectral distance between two compact equiregular sub-Riemannian manifolds. Our result is a sub-Riemannian analogue of Berard-Besson-Gallot's classical work in the Riemannian case.",
+      "authors": [
+        "Yuzuru Inahama"
+      ],
+      "published": "2026-06-11T02:01:51Z",
+      "updated": "2026-06-11T02:01:51Z",
+      "primary_category": "math.DG",
+      "categories": [
+        "math.DG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12804v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12804v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.12820v1",
+      "title": "Averaging principles for nonautonomous multiscale McKean-Vlasov stochastic systems",
+      "abstract": "This paper investigates a class of nonautonomous multiscale McKean-Vlasov stochastic systems. By leveraging the nonautonomous Poisson equation, we rigorously establish both strong and weak averaging principles, accompanied by explicit convergence rates. Notably, the coefficients of the averaging equations derived in the general case retain dependence on the scaling parameter $\\varepsilon$. However, under the additional assumptions that the fast-scale coefficients are either asymptotically convergent or time-periodic, we demonstrate that the slow component converges, in the strong or weak sense, to averaging equations with coefficients independent of $\\varepsilon$.",
+      "authors": [
+        "Jie Xiang",
+        "Huijie Qiao"
+      ],
+      "published": "2026-06-11T02:34:08Z",
+      "updated": "2026-06-11T02:34:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.12820v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.12820v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13084v1",
+      "title": "Characterizing metric-space-valued processes: separating classes and weak invariance principles for measure-theoretic inference",
+      "abstract": "This article investigates stochastic processes taking values in metric spaces that lack a topological vector space structure, a regime characterized by intricate interplay between topological, geometric, and temporal dependence structures. It is formally established that spaces admitting an isometric Hilbertian embedding constitute a strict subclass within the much broader class of metric spaces possessing the ball property. While traditional kernel methods are susceptible to geometric distortion when the underlying space cannot be isometrically embedded into a Hilbert space, we bypass such limitations by exploiting a fundamental structural property inherent to this broader class; namely, that Borel probability measures are uniquely determined by their values on balls. These separating classes provide the foundation for the subsequently introduced measure-theoretic inference methodology. We derive uniform convergence of a family of time-dependent random measures, alongside weak invariance principles for the corresponding nonstationary random fields. This framework explicitly exposes how dependence and geometric complexity influence sample path regularity. Furthermore, because the rapid decay of small-ball probabilities can prohibit the existence of limiting distributions for supremum-based discrepancy measures, we develop $L^p$-based alternatives. By directly leveraging the introduced convergence results, this approach circumvents the need for higher-order $U$-process formulations. Finally, for spaces that do admit an isometric Hilbertian embedding, and where $U$-processes naturally arise, we establish limit theory for both degenerate and nondegenerate multi-parameter $U$-processes, and demonstrate that local discrepancy tests maintain asymptotic stability under dynamic parameter regimes.",
+      "authors": [
+        "Anne van Delft"
+      ],
+      "published": "2026-06-11T09:06:45Z",
+      "updated": "2026-06-11T09:06:45Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13084v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13084v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13147v1",
+      "title": "Scaling limits of the single-curve interface and outermost loops in the planar random field Ising model",
+      "abstract": "We prove that the interface separating $+1$ and $-1$ spins in the near-critical planar random field Ising model (RFIM) with Dobrushin boundary conditions has a scaling limit, whose law is conformally covariant and almost surely absolutely continuous with respect to SLE$_3$. The limiting curve can be seen as a massive version of SLE$_3$ in the sense of Makarov and Smirnov, but in a random environment. We then show that the outermost spin loops of the near-critical planar RFIM with $+1$ boundary conditions have subsequential limits and that any of these limits is almost surely singular with respect to CLE$_3$. This dichotomy between absolute continuity of the single interface and singularity of the outermost loops reflects the fact that a single interface does not explore enough of the magnetization field of the near-critical RFIM to detect the singularity of this field with respect to the critical Ising magnetization field, whereas the outermost spin loops do.",
+      "authors": [
+        "Fenglin Huang",
+        "Léonie Papon",
+        "Aoteng Xia"
+      ],
+      "published": "2026-06-11T10:21:08Z",
+      "updated": "2026-06-11T10:21:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13147v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13147v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13264v1",
+      "title": "Interference Queueing Networks: A Replica Mean-Field Approach in the Symmetric Setting",
+      "abstract": "We propose a model for evaluating the performance of wireless communication networks beyond the ubiquitous full-buffer assumption, under which every transmitter is always active. The network is represented by N interacting queues arranged on a torus, with homogeneous arrival rate and service rates depending on the activity of neighboring interferers. More precisely, each queue is associated with a transmitter-receiver pair, and its service rate is given by the Shannon capacity, which depends on the corresponding Signal-to-Interference-plus-Noise Ratio (SINR). Since interfering transmitters only emit when their queue is non-empty, the SINR and hence the service rate improves when neighboring queues are empty. We derive the stability region of the system, together with approximations of its stationary distribution and its exponential rate of convergence to stationarity. These approximations are obtained via a replica mean-field limit, for which we establish propagation of chaos and long-time behavior results.",
+      "authors": [
+        "Philippe Sarotte",
+        "Nahuel Soprano-Loto",
+        "François Baccelli"
+      ],
+      "published": "2026-06-11T12:20:23Z",
+      "updated": "2026-06-11T12:20:23Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13264v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13264v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13313v1",
+      "title": "Sphere Packings in Higher Dimension (after Boaz Klartag)",
+      "abstract": "Let $δ_n^L$ be the maximal density of a lattice sphere packing in the $n$-dimensional Euclidean space. We explain how Boaz Klartag proved the inequality $δ_n^L \\geq c n^2 2^{-n}$ where $c>0$ is a universal constant. In higher dimension, even for non-lattice sphere packings, this new lower bound is a substantial improvement. Klartag's proof uses the probabilistic method in two different ways. The first, very standard, relies on the statistical properties of a uniformly chosen random lattice. The second, completely new, studies the stochastic evolution of an ellipsoid constrained to contain non nonzero lattice points in the interior.",
+      "authors": [
+        "Guillaume Aubrun"
+      ],
+      "published": "2026-06-11T13:08:35Z",
+      "updated": "2026-06-11T13:08:35Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13313v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13313v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13331v1",
+      "title": "Pathwise integration beyond Young via Faber--Schauder energy spaces",
+      "abstract": "We develop a pathwise integration theory based on Faber--Schauder energy spaces. The approach replaces the classical Hölder--Young and finite-variation Young conditions by dyadic summability conditions expressed in terms of Faber--Schauder coefficients. On the normalized interval $[0,1]$, these conditions define Banach spaces $\\mathcal{E}^p$, which we call Faber--Schauder energy spaces. For $p,q>1$ satisfying $1/p+1/q\\ge1$, we prove that every pair $f\\in\\mathcal{E}^p$ and $g\\in\\mathcal {E}^q$ admits a continuous pathwise integral $I_{f,g}$, constructed from dyadic left Riemann sums. We call $I_{f,g}$ the Faber--Schauder integral, and show that it depends boundedly and bilinearly on $(f,g)$ in the corresponding energy norms. The integral satisfies additivity, integration by parts, and a dyadic Young--Loève estimate. It is also the uniform limit of classical Riemann--Stieltjes integrals of finite Faber--Schauder approximations. The Faber--Schauder integral agrees with the classical Young integral whenever the latter is available, but also applies to deterministic and Gaussian examples for which neither the Hölder--Young condition nor the finite-variation Young condition can be verified. In this sense, it provides a Faber--Schauder coefficient-based extension of Young's framework.",
+      "authors": [
+        "Donghan Kim"
+      ],
+      "published": "2026-06-11T13:23:57Z",
+      "updated": "2026-06-11T13:23:57Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13331v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13331v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13442v1",
+      "title": "Scaling limit of additive functionals for reversible non-gradient exclusion process: critical cases",
+      "abstract": "For the reversible speed-change exclusion process $(η_t)_{t \\geq 0}$ in $\\mathbb{Z}^d$, we study the scaling limit of additive functionals ${Γ_t(f) = \\int_0^t f(η_s)\\, \\mathrm{d} s}$. Concerning the local centered function $f$, the previous work [Commun. Math. Phys. 104, 1-19, 1986] by Kipnis and Varadhan and [Comm. Pure Appl. Math., 66: 649-677, 2013] by Gon{ç}alves and Jara respectively covered the cases $d \\geq 3$ and $d=1$. The present paper completes the missing part $d=2$, and also develops the theory for functions with higher degree. The novelty is a quantitative homogenization of the resolvent, which allows to overcome the obstacle of correlation function in non-gradient models.",
+      "authors": [
+        "Chenlin Gu",
+        "Linzhi Yang",
+        "Linjie Zhao"
+      ],
+      "published": "2026-06-11T15:04:56Z",
+      "updated": "2026-06-11T15:04:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13442v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13442v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13459v1",
+      "title": "Symmetric Cooperative Motion in Higher Dimensions",
+      "abstract": "We prove a distributional convergence result for a multidimensional version of symmetric cooperative motion which was introduced and studied in one dimension in \\cite{HRW, SCM1}. Our approach relies on framing the associated recursive distributional equation as a discretization of the porous medium equation. A major challenge is to analyze the behaviour of finite difference schemes which approximate weak solutions of the porous medium equation with unbounded initial data. In overcoming this difficulty, we perform a detailed analysis of the probability mass function of symmetric cooperative motion, in which we introduce several new comparison arguments for the discrete process. Consequently, along the way, we establish a novel multidimensional convergence result for a finite difference scheme approximating the ZKB/Barenblatt solution of the porous medium equation, which is of independent interest.",
+      "authors": [
+        "Louigi Addario-Berry",
+        "Gavin Barill",
+        "Hannah Cairns",
+        "Jessica Lin"
+      ],
+      "published": "2026-06-11T15:14:48Z",
+      "updated": "2026-06-11T15:14:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13459v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13459v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13575v1",
+      "title": "Dimension-free Markov--Bernstein inequalities for product measures",
+      "abstract": "We study dimension-free Markov--Bernstein inequalities for polynomials with respect to product probability measures. In the Gaussian case, for $p\\ge4$, we prove that \\[ \\|\\nabla f\\|_{L^p(γ^n)} \\le C(p)d^{\\frac12+θ_p} \\|f\\|_{L^p(γ^n)} \\] for every polynomial $f$ of degree at most $d$, where $θ_p\\le \\frac{2}{3p}$ and $θ_p=0$ whenever $p$ is an even integer. Thus, for even integer exponents, we establish the sharp dependence on the degree conjectured by Eskenazis--Ivanisvili. For general $p\\ge4$, the estimate improves upon their dimension-free inequality. We also obtain dimension-free Markov--Bernstein inequalities with sharp dependence on the degree for even integer exponents beyond the Gaussian setting. We first prove such estimates for the uniform distribution on the unit cube and then extend them to products of absolutely continuous measures with unimodal densities. Finally, we treat products of one-dimensional Freud measures with densities proportional to $e^{-|t|^{2m}}$.",
+      "authors": [
+        "Egor Kosov"
+      ],
+      "published": "2026-06-11T17:01:24Z",
+      "updated": "2026-06-11T17:01:24Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13575v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13575v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.13615v1",
+      "title": "Data-driven subsampling rates for diffusion parameter estimation of SDEs",
+      "abstract": "We study the problem of diffusion parameter estimation for stochastic differential equation (SDE) models in scenarios where data and model are compatible only on specific scales that have yet to be determined. We introduce a simple and efficient method for selecting suitable rates at which given time series data should be subsampled in order to ensure that the statistical structure of the subsampled data is consistent with the behavior of the SDE model on an infinitesimal scale. Our approach is based on analyzing the statistics of the lengths of monotonically increasing or decreasing segments in the subsampled data sequence, which we refer to as monotone runs. As an analytical foundation, we prove for a large class of SDEs with additive noise that the lengths of monotone runs at an infinitesimal scale are approximately geometrically distributed with success probability $1/2$. This universal characterization is employed to derive an automated method for selecting appropriate subsampling rates for given time series data that is directly applicable in real-world scenarios and does not rely on an asymptotic framework of multiscale diffusions. The approach is demonstrated using an application from industrial mathematics concerning surrogate models for fiber lay-down curves in production processes of nonwoven textiles.",
+      "authors": [
+        "Felix Lindner",
+        "Andre Schmeißer",
+        "Felipe Trolldenier",
+        "Raimund Wegener"
+      ],
+      "published": "2026-06-11T17:27:03Z",
+      "updated": "2026-06-11T17:27:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.13615v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.13615v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
