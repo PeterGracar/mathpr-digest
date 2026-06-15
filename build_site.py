@@ -141,6 +141,8 @@ window.MathJax = {
 <div class="layout wrap">
   <aside id="sidebar">
     <div class="search"><input id="filter" type="search" placeholder="Filter titles / authors / keywords&hellip;"></div>
+    <p class="searchstat" id="searchStat" hidden>searching all weeks&hellip;</p>
+    <div id="allResults"></div>
     <h2>Digests</h2>
     <nav id="weekList"></nav>
     <div class="legend">
@@ -208,6 +210,15 @@ function entryCard(e){
   return card;
 }
 
+// Single source of truth for what "matches" the search term, shared by the main
+// panel, the per-week sidebar counts, and the combined view. `t` MUST already be
+// trimmed + lowercased by the caller.
+function entryMatches(e, t){
+  return (e.title+' '+e.authors.join(' ')+' '+
+          (e.matched_keywords||[]).join(' ')+' '+e.abstract)
+         .toLowerCase().includes(t);
+}
+
 function renderWeek(w, term){
   const main=$('#main'); main.innerHTML='';
   const head=el('div','weekhead');
@@ -224,7 +235,7 @@ function renderWeek(w, term){
   let shown=0;
   for(const b of BUCKETS){
     let items=w.entries.filter(e=>e.bucket===b.key);
-    if(t) items=items.filter(e=>(e.title+' '+e.authors.join(' ')+' '+(e.matched_keywords||[]).join(' ')+' '+e.abstract).toLowerCase().includes(t));
+    if(t) items=items.filter(e=>entryMatches(e,t));
     if(!items.length) continue;
     const sec=el('section','bucket '+b.cls);
     const isOther=b.key==='other';
@@ -245,22 +256,69 @@ function renderWeek(w, term){
 
 let current=0;
 let openYears=null;                       // Set of expanded years; null => init
+let viewAll=false;                        // main panel showing combined results?
+let lastWeek=0;                           // week to restore when search is cleared
+let searchTimer=null;                     // debounce timer for cross-week search
+let searchSeq=0;                          // bumped per run to ignore stale loads
 const yearOf = w => w.monday.slice(0,4);
+const lc = s => (s||'').trim().toLowerCase();
+
+// Filtered per-bucket counts for a *loaded* week, or null if not loaded yet.
+// `t` is already trimmed + lowercased.
+function filteredCounts(monday, t){
+  const wk=(window.DIGEST_WEEKS||{})[monday];
+  if(!wk) return null;
+  const c={coauthor:0,high:0,medium:0,other:0,total:0};
+  for(const e of wk.entries){
+    if(!entryMatches(e,t)) continue;
+    c[(e.bucket in c)?e.bucket:'other']++;
+    c.total++;
+  }
+  return c;
+}
+
+// Badge markup shared by week links and the "All weeks" entry. With a term we show
+// coauthor★ / high / medium / other (nonzero only); without, the static layout.
+function badgesHTML(c, term){
+  if(!lc(term)){
+    return (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
+           (c.high?'<span class="b high">'+c.high+'</span>':'')+
+           '<span class="b tot">'+c.total+'</span>';
+  }
+  return (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
+         (c.high  ?'<span class="b high">'  +c.high  +'</span>':'')+
+         (c.medium?'<span class="b medium">'+c.medium+'</span>':'')+
+         (c.other ?'<span class="b other">' +c.other +'</span>':'');
+}
 
 function weekLink(i, term){
-  const w=D.weeks[i], c=w.counts;
-  const a=el('a','weeklink'+(i===current?' active':''));
+  const w=D.weeks[i];
+  const t=lc(term);
+  const a=el('a','weeklink'+(!viewAll&&i===current?' active':''));
   a.href='#';
+  let badges;
+  if(!t){                                       // static index counts
+    badges=badgesHTML(w.counts, '');
+  }else{
+    const fc=filteredCounts(w.monday, t);
+    if(!fc){                                    // term active, week not loaded yet
+      badges='<span class="b loading">&hellip;</span>';
+      a.classList.add('pending');
+    }else{
+      badges=badgesHTML(fc, term);
+      if(!fc.total && i!==current) a.classList.add('nomatch');
+    }
+  }
   a.innerHTML='<span class="wr">'+fmtRange(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
-    '<span class="badges">'+(c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
-    (c.high?'<span class="b high">'+c.high+'</span>':'')+
-    '<span class="b tot">'+c.total+'</span></span>';
+    '<span class="badges">'+badges+'</span>';
   a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
   return a;
 }
 
 function renderNav(term){
+  renderAllEntry(term);
   const nav=$('#weekList'); nav.innerHTML='';
+  const t=lc(term);
   // group week indices by year, preserving the newest-first order of D.weeks
   const order=[], byYear={};
   D.weeks.forEach((w,i)=>{
@@ -276,9 +334,18 @@ function renderNav(term){
     const items=byYear[y];
     const open=openYears.has(y);
     const coAll=items.reduce((s,i)=>s+D.weeks[i].counts.coauthor,0);
+    // during search, show this year's total hits once all its weeks are loaded
+    let yearHits=null;
+    if(t){
+      yearHits=0;
+      for(const i of items){ const fc=filteredCounts(D.weeks[i].monday,t);
+        if(fc) yearHits+=fc.total; else { yearHits=null; break; } }
+    }
     const head=el('button','yearhead'+(open?' open':''));
+    const meta=(yearHits!=null)? items.length+' wk · <span class="hits">'+yearHits+' hit'+(yearHits===1?'':'s')+'</span>'
+                               : items.length+' wk'+(coAll?' · <span class="co">★'+coAll+'</span>':'');
     head.innerHTML='<span><span class="caret">'+(open?'▾':'▸')+'</span> '+y+'</span>'+
-      '<span class="ymeta">'+items.length+' wk'+(coAll?' · <span class="co">★'+coAll+'</span>':'')+'</span>';
+      '<span class="ymeta">'+meta+'</span>';
     head.addEventListener('click',()=>{ openYears.has(y)?openYears.delete(y):openYears.add(y); renderNav(term); });
     nav.appendChild(head);
     if(open){
@@ -287,6 +354,23 @@ function renderNav(term){
       nav.appendChild(grp);
     }
   });
+}
+
+// Sidebar "All weeks" entry: aggregated hit counts across all loaded weeks. Only
+// shown while a search term is active; clicking shows the combined results.
+function renderAllEntry(term){
+  const box=$('#allResults'); box.innerHTML='';
+  const t=lc(term);
+  if(!t) return;
+  const c={coauthor:0,high:0,medium:0,other:0,total:0};
+  D.weeks.forEach(w=>{ const fc=filteredCounts(w.monday,t);
+    if(fc) for(const k in c) c[k]+=fc[k]; });
+  const a=el('a','weeklink allweeks'+(viewAll?' active':''));
+  a.href='#';
+  a.innerHTML='<span class="wr">All weeks</span>'+
+    '<span class="badges">'+badgesHTML(c, term)+'</span>';
+  a.addEventListener('click',ev=>{ev.preventDefault();selectAll($('#filter').value);});
+  box.appendChild(a);
 }
 
 // Lazy-load a week's full entries (injected <script>, works from file:// in
@@ -301,8 +385,24 @@ function loadWeek(mon, cb, err){
   document.head.appendChild(s);
 }
 
+// Load every week's full data on demand (reusing loadWeek). `each` fires after
+// each week settles (ok or fail) for progressive re-render; `done` once all are
+// in. Idempotent once everything is loaded; failures still settle so it never
+// hangs. The currently-open week is already cached, so it's a no-op.
+let allLoaded=false, loadingAll=false;
+function loadAllWeeks(each, done){
+  if(allLoaded){ done&&done(); return; }
+  if(loadingAll) return;            // already in flight; arrivals re-render via each
+  loadingAll=true;
+  let remaining=D.weeks.length;
+  if(!remaining){ allLoaded=true; loadingAll=false; done&&done(); return; }
+  const settle=()=>{ if(--remaining===0){ allLoaded=true; loadingAll=false; done&&done(); }
+                     else each&&each(remaining); };
+  D.weeks.forEach(w=>loadWeek(w.monday, settle, settle));
+}
+
 function selectWeek(i, term, scroll){
-  current=i; renderNav(term);
+  current=i; viewAll=false; renderNav(term);
   const w=D.weeks[i], main=$('#main');
   if(!(window.DIGEST_WEEKS||{})[w.monday]) main.innerHTML='<p class="empty">Loading&hellip;</p>';
   loadWeek(w.monday,
@@ -313,6 +413,79 @@ function selectWeek(i, term, scroll){
   if(scroll!==false) window.scrollTo(0,0);
 }
 
+// Combined view: every matching entry across all loaded weeks, grouped by bucket,
+// each card tagged with its week (click to open that week).
+function renderAllResults(term){
+  const main=$('#main'); main.innerHTML='';
+  const t=lc(term);
+  const loading=!allLoaded;
+  // gather matches per bucket from loaded weeks, newest-first (D.weeks order)
+  const hits={}; let total=0, weeksWith=0;
+  BUCKETS.forEach(b=>hits[b.key]=[]);
+  D.weeks.forEach((w,i)=>{
+    const wk=(window.DIGEST_WEEKS||{})[w.monday];
+    if(!wk) return;
+    let any=false;
+    wk.entries.forEach(e=>{ if(!entryMatches(e,t)) return;
+      (hits[e.bucket]||hits.other).push({e, i, w}); total++; any=true; });
+    if(any) weeksWith++;
+  });
+  const head=el('div','weekhead');
+  head.innerHTML='<h2>All weeks'+(loading?' <span class="tag-prog">loading…</span>':'')+'</h2>'+
+    '<p class="wstats">'+total+' submission'+(total===1?'':'s')+' matching &ldquo;'+esc(term)+'&rdquo;'+
+    ' across '+weeksWith+' week'+(weeksWith===1?'':'s')+'</p>';
+  main.appendChild(head);
+  let shown=0;
+  for(const b of BUCKETS){
+    const items=hits[b.key];
+    if(!items.length) continue;
+    const sec=el('section','bucket '+b.cls);
+    const isOther=b.key==='other';
+    sec.innerHTML='<h3 class="bhead'+(isOther?' collapsible':'')+'">'+b.label+' <span class="ct">'+items.length+'</span></h3>';
+    const body=el('div','bbody'+(isOther?' hidden':''));
+    items.forEach(({e,i,w})=>{
+      const card=entryCard(e);
+      const tag=el('a','entry-week'); tag.href='#'; tag.textContent=fmtRange(w);
+      tag.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
+      card.insertBefore(tag, card.firstChild);
+      body.appendChild(card);
+    });
+    if(isOther){ sec.querySelector('.bhead').addEventListener('click',()=>body.classList.toggle('hidden')); }
+    sec.appendChild(body); main.appendChild(sec); shown+=items.length;
+  }
+  if(!shown) main.appendChild(el('p','empty',loading?'Searching all weeks&hellip;':
+    'No submissions match &ldquo;'+esc(term)+'&rdquo;.'));
+  typesetMath(main);
+}
+
+function selectAll(term){
+  viewAll=true; renderNav(term); renderAllResults(term); window.scrollTo(0,0);
+}
+
+// Debounced cross-week search. The combined "All weeks" view is the default while
+// a term is active; per-week sidebar badges update once data is loaded.
+function onSearchInput(raw){
+  clearTimeout(searchTimer);
+  const t=(raw||'').trim();
+  if(!t){                                   // cleared: revert to the last week view
+    searchSeq++; viewAll=false;
+    $('#searchStat').hidden=true;
+    selectWeek(lastWeek,'',false);
+    return;
+  }
+  if(!viewAll) lastWeek=current;            // remember where we came from
+  searchTimer=setTimeout(()=>{
+    const seq=++searchSeq;
+    if(allLoaded){ selectAll(raw); return; }
+    $('#searchStat').hidden=false;
+    selectAll(raw);                         // render partial view from loaded weeks
+    loadAllWeeks(
+      ()=>{ if(seq===searchSeq){ renderNav(raw); renderAllResults(raw); } },
+      ()=>{ if(seq===searchSeq){ $('#searchStat').hidden=true; renderNav(raw); renderAllResults(raw); } }
+    );
+  }, 200);
+}
+
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
   $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
@@ -320,7 +493,7 @@ function init(){
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
   renderNav('');
   selectWeek(0,'',false);
-  $('#filter').addEventListener('input',e=>selectWeek(current, e.target.value, false));
+  $('#filter').addEventListener('input',e=>onSearchInput(e.target.value));
 }
 init();
 </script>
@@ -346,6 +519,7 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 #sidebar{position:sticky;top:18px}
 .search input{width:100%;padding:9px 11px;border-radius:9px;border:1px solid var(--line);
   background:var(--panel);color:var(--ink);font-size:14px}
+.searchstat{margin:6px 2px 0;font-size:11.5px;color:var(--mut)}
 #sidebar h2{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin:18px 0 8px}
 .yearhead{width:100%;display:flex;justify-content:space-between;align-items:center;
   background:transparent;border:none;color:var(--ink);cursor:pointer;
@@ -354,16 +528,25 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .yearhead .caret{display:inline-block;width:12px;color:var(--mut);font-size:11px}
 .yearhead .ymeta{font-size:11.5px;font-weight:400;color:var(--mut)}
 .yearhead .ymeta .co{color:var(--co)}
+.yearhead .ymeta .hits{color:var(--accent)}
 .yearweeks{margin-bottom:4px}
 .weeklink{display:flex;justify-content:space-between;align-items:center;gap:8px;
   padding:9px 11px;border:1px solid var(--line);border-radius:9px;margin-bottom:7px;background:var(--panel);color:var(--ink)}
 .weeklink:hover{border-color:#37414f;text-decoration:none}
 .weeklink.active{border-color:var(--accent);background:var(--panel2)}
+.weeklink.nomatch{opacity:.42}
+.weeklink.nomatch:hover{opacity:.7}
+.weeklink.pending .badges{opacity:.6}
+.weeklink.allweeks{margin-top:6px;border-color:var(--accent)}
+.weeklink.allweeks .wr{font-weight:600}
 .weeklink .wr{font-size:13.5px}
 .badges{display:flex;gap:5px;flex-shrink:0}
 .b{font-size:11px;padding:1px 7px;border-radius:20px;background:#2a3140;color:var(--mut)}
 .b.tot{background:#2a3140}
 .b.high{background:rgba(103,217,155,.16);color:var(--hi)}
+.b.medium{background:rgba(143,182,255,.16);color:var(--med)}
+.b.other{background:#2a3140;color:var(--mut)}
+.b.loading{background:#2a3140;color:var(--mut);opacity:.7}
 .b.coauthor{background:rgba(255,207,92,.18);color:var(--co)}
 .legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:11px;padding:2px 9px;border-radius:20px}
@@ -404,6 +587,9 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .abs summary{cursor:pointer;color:var(--mut);font-size:13px;outline:none}
 .abs summary:hover{color:var(--ink)}
 .abs p{margin:8px 0 0;color:#c3c9d4;font-size:13.5px}
+.entry-week{display:inline-block;margin-bottom:8px;font-size:11.5px;
+  color:var(--mut);background:#222834;padding:1px 9px;border-radius:20px}
+.entry-week:hover{color:var(--ink);text-decoration:none}
 .kws{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
 .kw{font-size:11px;background:#222834;color:#9fb4d8;padding:1px 8px;border-radius:20px}
 .empty{color:var(--mut);padding:30px 0}
