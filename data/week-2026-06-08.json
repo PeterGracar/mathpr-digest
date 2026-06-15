@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 24,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
-  "data_through": "2026-06-12",
-  "total_submissions": 81,
-  "fetched": 81,
-  "generated_at": "2026-06-12T06:56:17Z",
+  "data_through": "2026-06-14",
+  "total_submissions": 94,
+  "fetched": 94,
+  "generated_at": "2026-06-15T07:40:14Z",
   "entries": [
     {
       "id": "2606.09691v1",
@@ -84,6 +84,31 @@
       "matched_keywords": [
         "percolation",
         "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.14170v1",
+      "title": "Uniform-in-time error estimates for McKean-Vlasov SDEs with common noise and stochastic algorithms",
+      "abstract": "In this work, by construct an asymptotic coupling by reflection, we first explore the uniform-in-time estimate on probability distance for two measure-valued processes induced by a McKean-Vlasov SDE with common noise and an interacting particle system, where the drift terms are dissipative merely in the long distance. As direct applications of this estimate, we establish the uniform-in-time error estimates for the numerical solutions derived via backward/tamed/adaptive Euler-Maruyama methods. Moreover, as another direct application, the uniform-in-time conditional propagation of chaos is quantified.",
+      "authors": [
+        "Yuhang Zhang",
+        "Minghui Song"
+      ],
+      "published": "2026-06-12T06:52:44Z",
+      "updated": "2026-06-12T06:52:44Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14170v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14170v1",
+      "score": 7,
+      "matched_keywords": [
+        "interacting particle system",
+        "particle system"
       ],
       "coauthors": [],
       "bucket": "high"
@@ -499,6 +524,32 @@
       "bucket": "medium"
     },
     {
+      "id": "2606.14564v1",
+      "title": "Upper tails for irregular graphs beyond the mean-field regime",
+      "abstract": "Let $G_{n,p}$ be the binomial random graph of density $p$ and let $X_H$ be the number of copies of a fixed graph $H$ in $G_{n,p}$. We prove asymptotically tight bounds on the logarithmic upper-tail probability of $X_H$ whenever $H$ is a connected, irregular graph with maximum degree $Δ\\ge 2$ and $p \\ge n^{-1/Δ- \\varepsilon_H} (\\log n)^{ω(1)}$ for an explicit $\\varepsilon_H >0$. These bounds are expressed in terms of a new variational problem that generalises the combinatorial optimisation problem arising from the naïve mean-field approximation. This new variational problem includes an entropy term that corresponds to the large number of embeddings of certain highly structured graphs in $K_n$. For a certain class of irregular graphs $H$ that we call stable, we show that this description of the upper-tail probability is valid in a range of densities that is optimal up to a poly($\\log\\log n$) factor. For a further subclass of stable graphs, which includes all irregular complete bipartite graphs, we show that this range of densities is optimal up to a multiplicative constant.",
+      "authors": [
+        "Asaf Cohen Antonir",
+        "Matan Harel",
+        "Frank Mousset",
+        "Wojciech Samotij"
+      ],
+      "published": "2026-06-12T15:40:32Z",
+      "updated": "2026-06-12T15:40:32Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14564v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14564v1",
+      "score": 3,
+      "matched_keywords": [
+        "random graph"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2606.10165v1",
       "title": "The frog model with death and drift on free products of complete graphs",
       "abstract": "We study the frog model with death and drift on $\\mathbb{D}_{m,d}$, the free product of $d+1$ copies of the complete graph of order $m$. Active and inactive particles are located at the vertices of $\\mathbb{D}_{m,d}$. Each active particle performs a $α$-biased random walk towards the root of $\\mathbb{D}_{m,d}$, dying after a random lifetime with a geometric distribution of parameter $1-p$. Each inactive particle remains dormant until an active particle visits its location. We present conditions on the parameters $α$ and $p$ for the process to die out almost surely and to survive with positive probability. Our proofs are based on comparisons of the model with simple and multi-type branching processes.",
@@ -540,6 +591,31 @@
       "score": 2,
       "matched_keywords": [
         "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14019v1",
+      "title": "Real-order moments, tail representations, and logarithmic means",
+      "abstract": "This paper develops a unified framework for the study of real-order moments of arbitrary random variables. General integral representations are established in terms of cumulative distribution functions and survival functions, covering continuous, discrete, and mixed distributions supported on the whole real line. These formulas extend the classical tail-integral identities for nonnegative random variables and provide a common treatment of positive, fractional, and negative moments. For discrete distributions, explicit series representations are derived in terms of cumulative probabilities, yielding simple criteria for the existence of moments. Applications are presented for the zeta and Skellam distributions, illustrating how tail behavior determines moment finiteness and how moments can be represented geometrically through cumulative distribution functions. In addition, a representation for logarithmic moments is obtained, linking logarithmic means, Laplace transforms, and the classical Frullani identity. The results provide a unified perspective on moment representations and establish useful connections between tail probabilities, distribution functions, Laplace transforms, and moment existence.",
+      "authors": [
+        "Roberto Vila",
+        "Eduardo Nakano"
+      ],
+      "published": "2026-06-12T01:40:22Z",
+      "updated": "2026-06-12T01:40:22Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14019v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14019v1",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -1858,6 +1934,231 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.13615v1",
       "pdf_url": "https://arxiv.org/pdf/2606.13615v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14038v1",
+      "title": "Trivariate Hypergeometric Series Formulas for Pure Partition Functions of Multiple $3$-SLE$_κ$",
+      "abstract": "Pure partition functions of multiple SLE are characterized by null-state partial differential equations, Möbius covariance, and boundary asymptotics. After quotienting by Möbius covariance, the case of three curves is the first genuinely multivariable one: the moduli space has three independent variables, naturally represented by the three unoriented cross-ratios of the three pairs of links. We solve this Möbius-normalized three-variable problem for the two basic link-pattern types of multiple \\(3\\)-SLE\\(_κ\\), namely the rainbow and neighbor patterns. Writing \\(β=4/κ\\), we construct explicit trivariate hypergeometric-series normal forms and identify them with the corresponding pure partition functions for all \\(β>1/2\\) in the rainbow case and all \\(β\\ge2/3\\) in the neighbor case. Equivalently, these ranges are \\(κ\\in(0,8)\\) and \\(κ\\in(0,6]\\), respectively. The proof is analytic. The null-state PDEs and Möbius covariance yield recursion relations for the trivariate coefficient arrays. In the rainbow case, coefficient estimates give convergence and boundary regularity on the closed cube. In the neighbor case, Pfaff systems continue the local power series to a neighborhood of \\([0,1)^3\\), while side-face equations, regular normal estimates, and corner propagation give continuity on \\([0,1]^3\\) for \\(β\\ge2/3\\). The endpoint \\(β=2/3\\), corresponding to \\(κ=6\\), requires a logarithmic normal term. The two-dimensional boundary degenerations are classical Appell \\(F_1\\) and Horn \\(G_2\\) functions. The probabilistic identification uses SLE martingale arguments and Itô calculus, together with positivity and boundary regularity. We also discuss boundary degenerations, including heuristic connections with boundary Green's functions.",
+      "authors": [
+        "Dapeng Zhan"
+      ],
+      "published": "2026-06-12T02:26:29Z",
+      "updated": "2026-06-12T02:26:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14038v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14038v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14095v1",
+      "title": "Lyapunov-Based Sample Complexity Analysis for Weakly-Coupled MDPs",
+      "abstract": "We study the sample complexity of learning in average-reward weakly-coupled Markov decision processes (WCMDPs) and Restless Bandits (RBs) under a generative model. Naive reduction to a tabular MDP leads to high complexity bounds as the state-action space is exponentially large in the number of arms $N$. By exploiting the weakly coupled structure, we show that near-optimal policies can be learned with sample and computational complexities that are polynomial in $N$. Specifically, we analyze the plug-in approach, which applies an efficient planning algorithm to an empirical model estimated from data. For fully heterogeneous WCMDPs, we establish the first finite-sample PAC guarantee with polynomial complexity and an $O(1/\\sqrt{N})$ optimality gap. For homogeneous RBs, we further prove that a smaller optimality gap is achievable under mild structural assumptions. A primary technical contribution of our work is a novel Lyapunov-based analysis framework. Unlike classical approaches that rely on the difficult-to-control bias function, our framework uses an explicitly constructed Lyapunov function along with a drift transfer technique between the true and empirical models. A key step of independent interest in our framework is a fine-grained perturbation analysis for the underlying linear programming (LP) relaxation, which provides a general tool for analyzing LP-based policies and weakly-coupled systems.",
+      "authors": [
+        "Tianhao Wu",
+        "Matthew Zurek",
+        "Weina Wang",
+        "Qiaomin Xie"
+      ],
+      "published": "2026-06-12T04:19:53Z",
+      "updated": "2026-06-12T04:19:53Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14095v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14095v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14274v1",
+      "title": "Secondary terms for first moments of Selmer groups of twists of elliptic curves over global function fields",
+      "abstract": "Let $E$ be a non-isotrivial elliptic curve over a global function field $\\mathbb{F}_q(t)$ of characteristic coprime to $2$ and $3$. Under some explicit conditions, we determine the secondary terms for the first moments of prime Selmer groups of cyclic prime twist families of $E$ over $\\mathbb{F}_q(t)$.",
+      "authors": [
+        "Sun Woo Park"
+      ],
+      "published": "2026-06-12T08:56:53Z",
+      "updated": "2026-06-12T08:56:53Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14274v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14274v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14294v1",
+      "title": "A random approach to the multibonacci sequence",
+      "abstract": "This paper presents a random approach to the multibonacci sequence. We generalise the model introduced by Benjamin, Levin, Mahlburg, and Quinn, which is based on a random tiling method using dominoes and squares that leads to the Fibonacci sequence, and which was extended to the tribonacci case in a previous work by the authors. Our approach employs tiling with linear $k$-ominoes, $k=1,\\ldots,s$, combined with specific colouring, to generate a weighted multibonacci sequence. For a natural random variable~$X$ defined by this model, we establish the distribution of $X$ in terms of multibonacci numbers and compute $\\mathbb{E}[X] = 2^{s+1}-3$.",
+      "authors": [
+        "Hacène Belbachir",
+        "Hamza Zeggada"
+      ],
+      "published": "2026-06-12T09:26:46Z",
+      "updated": "2026-06-12T09:26:46Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14294v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14294v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14318v1",
+      "title": "Sectional Curvature for Kantorovich-Wasserstein and Hellinger-Kantorovich Geometries",
+      "abstract": "We derive an explicit formula for the sectional curvature of the space ${\\cal M}(M)$ of finite measures on a Riemannian manifold M. The space ${\\cal M}(M)$ is equipped with the Hellinger-Kantorovich metric $HK$. Even in the case M=R^n, the curvature is comprised of two parts: the `lifted part' is negative, and the `twisted part' is positive. It will be analyzed in detail for the multidimensional torus. Our general approach to sectional curvature in geodesic spaces also leads to new insights into the curvature of the space $P_2(M)$ of probability measures on M equipped with the Kantorovich-Wasserstein metric $W_2$.",
+      "authors": [
+        "Karl-Theodor Sturm"
+      ],
+      "published": "2026-06-12T09:58:00Z",
+      "updated": "2026-06-12T09:58:00Z",
+      "primary_category": "math.DG",
+      "categories": [
+        "math.DG",
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14318v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14318v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14322v1",
+      "title": "Stability of Synthetic Ricci Curvature Lower Bounds for Inverse Limit Extended Metric Measure Spaces",
+      "abstract": "We show that every Polish extended metric measure space arises as an inverse limit of metric measure spaces up to isomorphism. We then prove that synthetic Ricci curvature lower bounds and several functional inequalities, including the log-Sobolev, Talagrand, Poincaré, and dimension-free Harnack inequalities are stable under inverse limit. We discuss applications to infinite-dimensional spaces, including abstract Wiener spaces and their quotient spaces.",
+      "authors": [
+        "Kohei Suzuki",
+        "Takumi Yokota"
+      ],
+      "published": "2026-06-12T10:03:42Z",
+      "updated": "2026-06-12T10:03:42Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14322v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14322v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14443v1",
+      "title": "Semiclassical limit of Polyakov-Liouville measure and Q-Curvature Uniformization on evev-dimensional manifolds",
+      "abstract": "We study the semiclassical limit of the Polyakov-Liouville measure $\\boldsymbolν_γ$, which is a non-Gaussian measure on $H^{-\\eps}(M)$ that has recently been extended from Riemann surfaces to general Riemannian manifolds $(M,g)$ of even dimension. We show that under an appropriate rescaling in the semiclassical limit as $γ\\to0$, the normalized Polyakov-Liouville measure $\\Q_γ$ concentrates on the unique smooth weight $u$ for which the conformal metric $e^{2u}g$ on $M$ has constant $Q$-curvature.",
+      "authors": [
+        "Maria Gordina",
+        "Eva Kopfer",
+        "Karl-Theodor Sturm"
+      ],
+      "published": "2026-06-12T13:23:48Z",
+      "updated": "2026-06-12T13:23:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14443v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14443v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14450v1",
+      "title": "Universality for Products of Random Matrices with i.i.d. Entries and the Fuss--Catalan Number",
+      "abstract": "Let \\((w_{ij})_{i,j\\ge1}\\) be a single infinite array of independent identically distributed real- or complex-valued entries of mean zero, variance \\(σ^2\\), and finite fourth moment. Set \\(W_n=(w_{ij})_{1\\le i,j\\le n}\\) and \\(X_n=n^{-1/2}W_n\\). For every fixed \\(k\\ge1\\), we identify the almost sure limiting operator norm of several fixed products built from this family. Define the \\(k\\)-th freeness coefficient by \\[ γ_k:=\\sqrt{\\frac{(k+1)^{k+1}}{k^k}}. \\] Then we prove \\[ \\|X_n^k\\|\\toσ^kγ_k \\qquad \\text{almost surely}. \\] The same limit holds for products sampled with replacement from any fixed finite pool of independent copies of \\(X_n\\); in particular, it holds for the product of \\(k\\) independent copies. Thus, the freeness coefficient captures the non-commuting characteristic between large random matrices %powers and independent or fixed-pool sampled products under the finite fourth moment assumption. The improvement of the classical Bai--Yin-type power estimate from the scale \\(σ^k(k{+}1)\\) to \\(σ^k \\sqrt{k{+}1}\\) is a direct corollary of our result. The main technical challenge is to prove the upper bound using a high-moment expansion of %the upper bound is proved by a high-moment expansion of \\(\\E\\Tr((X_n^kX_n^{*k})^m)\\). The leading zero-defect trace words are tree-like and are counted by the Fuss--Catalan number \\[ F_{k,m}= \\frac1{km+1}\\binom{(k+1)m}{m}. \\] The combinatorial tool helps to devise a defect-sensitive global enumeration: if \\(L=km\\) and \\[ r=(L+1-v)+(L-q), \\] then the number of admissible word classes with defect \\(r\\) is at most \\(F_{k,m}(Cm)^{Dr}\\). This polynomial-in-\\(m\\) loss, with degree proportional to the defect, is summable in the logarithmic moment range.",
+      "authors": [
+        "Yanjin Xiang",
+        "Kun Chen",
+        "Zhihua Zhang"
+      ],
+      "published": "2026-06-12T13:34:48Z",
+      "updated": "2026-06-12T13:34:48Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14450v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14450v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14542v1",
+      "title": "Boltzmann-Like Occupation of Nonequilibrium Steady States on Dense Networks",
+      "abstract": "A central problem in statistical physics is to extend the Boltzmann distribution to nonequilibrium steady states (NESS). We prove that NESS on large dense networks have Boltzmann-like occupation despite extensive entropy production. We further show that the active-matter heuristic of \"low rattling\" is asymptotically exact. Intuitively, these NESS spend a greater fraction of their time in states they leave more slowly. This explanation extends to the broader class of \"equiaccessible\" steady states, which play a role in our analysis akin to that of equilibrium in linear response.",
+      "authors": [
+        "Jacob Calvert"
+      ],
+      "published": "2026-06-12T15:20:32Z",
+      "updated": "2026-06-12T15:20:32Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14542v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14542v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.14687v1",
+      "title": "Lehner's operator norm formulas, semidefinite programming, and spiked matrix models",
+      "abstract": "Lehner (1999) derived elegant formulas for the operator norm $\\|\\mathfrak{X}\\|$ of operators of the form $\\mathfrak{X} = \\mathbf{A}_0 \\otimes \\mathfrak{1} + \\sum_{i = 1}^n \\mathbf{A}_i \\otimes \\mathfrak{m}_i$, also easily generalized to the spectral edge $λ_{\\max}(\\mathfrak{X})$, in terms of nonlinear optimization problems over positive definite matrices. Here the $\\mathbf{A}_i$ are finite-dimensional Hermitian matrices, the $\\mathfrak{m}_i$ are either free semicircular or free Rademacher families of operators, and $\\mathfrak{1}$ is the identity operator. We first show that both of Lehner's nonlinear optimizations can be rewritten as linear semidefinite programs (SDPs), even in the Rademacher case where Lehner's optimization is not itself convex. We give the primal and dual forms of these SDPs, derive the complementary slackness relations and consequences thereof, and propose that the SDPs are more stable and accurate than the iterative numerical scheme proposed in Lehner's original work. We then apply the SDPs from the semicircular case to spiked matrix models, studied recently via Lehner's formula by Bandeira, Cipolloni, Schröder, and van Handel (2024). We give a new proof of the Baik--Ben Arous--Péché (BBP) transition they establish in models with isotropic (but possibly correlated) Gaussian noise by constructing feasible variables for the associated primal and dual SDPs. Combining our construction with a sensitivity interpretation of optimal dual variables, we study the fluctuations of leading eigenvectors of such models. We conjecture and give numerical evidence that these fluctuations are Gaussian but anisotropic and non-universal, and that their covariance may be computed in terms of the optimizer of the dual of Lehner's formula, which in turn is approximately the leading eigenmatrix of a completely positive operator associated to the covariance of the noise model.",
+      "authors": [
+        "Dmitriy Kunisky"
+      ],
+      "published": "2026-06-12T17:50:49Z",
+      "updated": "2026-06-12T17:50:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OA",
+        "math.OC",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.14687v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.14687v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
