@@ -260,7 +260,12 @@ function renderWeek(w, term){
     main.appendChild(sec);
     shown+=items.length;
   }
-  if(!shown) main.appendChild(el('p','empty','No submissions match &ldquo;'+esc(term)+'&rdquo; this week.'));
+  if(!shown){
+    const msg = t ? 'No submissions match &ldquo;'+esc(term)+'&rdquo; this week.'
+                  : (inProgress(w) ? 'No submissions yet &mdash; this week is still in progress.'
+                                   : 'No submissions recorded for this week.');
+    main.appendChild(el('p','empty',msg));
+  }
   typesetMath(main);
 }
 
