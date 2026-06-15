@@ -17,10 +17,11 @@ The generator is **idempotent, self-backfilling, and self-updating**:
 - It builds one digest per **Mon–Sun ISO week**, from the first week of June 2026
   (`config.FIRST_WEEK_MONDAY`) up to and including the current week.
 - arXiv announces new submissions only on **weekdays (Mon–Fri)**, so a week is
-  treated as **complete once its Friday has passed** — the scheduled Saturday run
-  therefore always captures a full week. (A run made *before* a week's Friday,
-  e.g. a manual mid-week run, builds it as a partial "in progress" digest that
-  fills in on later runs.)
+  treated as **complete once its Friday has passed**. The scheduled run is daily
+  on weekdays, so the first run after a week's Friday captures it as a full week.
+  (A run made *before* a week's Friday — e.g. a manual mid-week run, or the
+  Mon–Thu scheduled runs — builds it as a partial "in progress" digest that fills
+  in on later runs.)
 - A complete week is still **re-fetched on each run until it is finalized**, kept
   open for a grace period past its nominal Sunday
   (`config.FINALIZE_GRACE_DAYS`, default 2 days) so any weekend-submitted papers
@@ -65,11 +66,13 @@ python3 -m http.server 8731 --directory site
 
 ## Running on GitHub (no local machine needed)
 
-`.github/workflows/weekly-digest.yml` runs the whole pipeline on GitHub's
-infrastructure: a weekly cron (Mondays 06:17 UTC, plus a manual "Run workflow"
-button) runs `generate_digest.py`, commits the updated `data/` + `site/` back to
-the repo, and publishes `site/` to **GitHub Pages** over https. No secrets are
-needed — arXiv's API is public.
+`.github/workflows/daily-digest.yml` runs the whole pipeline on GitHub's
+infrastructure: a weekday cron (02:17 UTC, Mon–Fri), plus a push-to-`main`
+trigger (so template/code edits go live immediately) and a manual "Run workflow"
+button, runs `generate_digest.py`, commits the updated `data/` back to the repo
+(`site/` is git-ignored and rebuilt each run), and publishes the freshly built
+`site/` to **GitHub Pages** over https. No secrets are needed — arXiv's API is
+public.
 
 One-time setup:
 
@@ -82,8 +85,8 @@ One-time setup:
    ```
 2. In the repo: **Settings → Pages → Build and deployment → Source: GitHub
    Actions**.
-3. (Optional) **Actions** tab → *Weekly math.PR digest* → **Run workflow** to
-   trigger the first build immediately instead of waiting for Monday.
+3. (Optional) **Actions** tab → *Daily math.PR digest* → **Run workflow** to
+   trigger the first build immediately instead of waiting for the next cron.
 
 Notes:
 - GitHub Pages on a **private** repo needs a paid plan; on the **free** plan use
@@ -91,8 +94,8 @@ Notes:
   keywords from gracar.org), so a public repo is fine.
 - Actions cron is best-effort (UTC, may lag/skip under load); the self-backfill
   logic reconstructs any missed week on the next run.
-- Weekly commits keep the repo active, so the scheduled workflow won't hit
-  GitHub's 60-days-inactivity auto-disable.
+- The weekday digest commits keep the repo active, so the scheduled workflow
+  won't hit GitHub's 60-days-inactivity auto-disable.
 - Once the GitHub run is confirmed working, retire the local Claude Code
   scheduled task so digests aren't produced in two places.
 
@@ -102,9 +105,10 @@ Notes:
 |-----------------------|--------------------------------------------------------------|
 | `config.py`           | Coauthors, relevance keywords/weights, thresholds, dates.    |
 | `generate_digest.py`  | Fetch (arXiv API via `curl`), score, cache per-week JSON.    |
-| `build_site.py`       | Render `data/*.json` → `site/{index.html,style.css,digests.js}`. |
+| `build_site.py`       | Render `data/*.json` → `site/{index.html, style.css, index.js, data/week-*.js}`. Holds all HTML/CSS/JS as raw strings. |
 | `data/week-*.json`    | One cached digest per week (raw + scored entries).           |
-| `site/`               | The dynamic browsable website.                               |
+| `site/`               | The generated browsable website (git-ignored; rebuilt each run). |
+| `CLAUDE.md`           | Architecture + conventions guide for working in the repo.    |
 
 ## Scoring
 
