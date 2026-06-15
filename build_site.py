@@ -219,6 +219,19 @@ function entryMatches(e, t){
          .toLowerCase().includes(t);
 }
 
+// Wire up the collapsible "Everything else" bucket. When it starts hidden we tag
+// it tex2jax_ignore so the page-level typeset skips it (it's the largest bucket),
+// then typeset it lazily the first time it's expanded — keeping MathJax work off
+// content the reader hasn't opened.
+function collapsibleOther(sec, body, startHidden){
+  if(startHidden) body.classList.add('hidden','tex2jax_ignore');
+  let typeset=!startHidden;
+  sec.querySelector('.bhead').addEventListener('click',()=>{
+    const hidden=body.classList.toggle('hidden');
+    if(!hidden && !typeset){ body.classList.remove('tex2jax_ignore'); typeset=true; typesetMath(body); }
+  });
+}
+
 function renderWeek(w, term){
   const main=$('#main'); main.innerHTML='';
   const head=el('div','weekhead');
@@ -240,12 +253,9 @@ function renderWeek(w, term){
     const sec=el('section','bucket '+b.cls);
     const isOther=b.key==='other';
     sec.innerHTML='<h3 class="bhead'+(isOther?' collapsible':'')+'">'+b.label+' <span class="ct">'+items.length+'</span></h3>';
-    const body=el('div','bbody'+(isOther&&!t?' hidden':''));
+    const body=el('div','bbody');
     items.forEach(e=>body.appendChild(entryCard(e)));
-    if(isOther){
-      const h=sec.querySelector('.bhead');
-      h.addEventListener('click',()=>body.classList.toggle('hidden'));
-    }
+    if(isOther) collapsibleOther(sec, body, !t);
     sec.appendChild(body);
     main.appendChild(sec);
     shown+=items.length;
@@ -260,8 +270,22 @@ let viewAll=false;                        // main panel showing combined results
 let lastWeek=0;                           // week to restore when search is cleared
 let searchTimer=null;                     // debounce timer for cross-week search
 let searchSeq=0;                          // bumped per run to ignore stale loads
+let searchScope='recent';                 // cross-week search window: 'recent'|'all'
+const WINDOW_MONTHS=12;                    // size of the 'recent' window
 const yearOf = w => w.monday.slice(0,4);
 const lc = s => (s||'').trim().toLowerCase();
+
+// Cross-week search is windowed so the download and combined render stay bounded
+// as the archive grows: by default only weeks within the last WINDOW_MONTHS are
+// loaded and aggregated; "include older weeks" widens the scope to the full
+// archive. Until the archive exceeds the window there are no older weeks, so this
+// is a no-op and everything behaves as a plain all-weeks search.
+function scopeCutoff(){ const d=new Date(); d.setMonth(d.getMonth()-WINDOW_MONTHS);
+  return d.toISOString().slice(0,10); }
+function inScope(w){ return searchScope==='all' || w.monday>=scopeCutoff(); }
+function scopeIndices(){ const o=[]; D.weeks.forEach((w,i)=>{ if(inScope(w)) o.push(i); }); return o; }
+function olderCount(){ const c=scopeCutoff(); return D.weeks.filter(w=>w.monday<c).length; }
+function scopeLoaded(){ return scopeIndices().every(i=>(window.DIGEST_WEEKS||{})[D.weeks[i].monday]); }
 
 // Filtered per-bucket counts for a *loaded* week, or null if not loaded yet.
 // `t` is already trimmed + lowercased.
@@ -299,6 +323,9 @@ function weekLink(i, term){
   let badges;
   if(!t){                                       // static index counts
     badges=badgesHTML(w.counts, '');
+  }else if(!inScope(w)){                         // outside the search window
+    badges='<span class="b tot">'+w.counts.total+'</span>';
+    a.classList.add('outofscope');
   }else{
     const fc=filteredCounts(w.monday, t);
     if(!fc){                                    // term active, week not loaded yet
@@ -363,11 +390,12 @@ function renderAllEntry(term){
   const t=lc(term);
   if(!t) return;
   const c={coauthor:0,high:0,medium:0,other:0,total:0};
-  D.weeks.forEach(w=>{ const fc=filteredCounts(w.monday,t);
+  scopeIndices().forEach(i=>{ const fc=filteredCounts(D.weeks[i].monday,t);
     if(fc) for(const k in c) c[k]+=fc[k]; });
+  const scoped=(searchScope==='recent' && olderCount()>0);
   const a=el('a','weeklink allweeks'+(viewAll?' active':''));
   a.href='#';
-  a.innerHTML='<span class="wr">All weeks</span>'+
+  a.innerHTML='<span class="wr">'+(scoped?'Recent weeks':'All weeks')+'</span>'+
     '<span class="badges">'+badgesHTML(c, term)+'</span>';
   a.addEventListener('click',ev=>{ev.preventDefault();selectAll($('#filter').value);});
   box.appendChild(a);
@@ -385,20 +413,19 @@ function loadWeek(mon, cb, err){
   document.head.appendChild(s);
 }
 
-// Load every week's full data on demand (reusing loadWeek). `each` fires after
-// each week settles (ok or fail) for progressive re-render; `done` once all are
-// in. Idempotent once everything is loaded; failures still settle so it never
-// hangs. The currently-open week is already cached, so it's a no-op.
-let allLoaded=false, loadingAll=false;
-function loadAllWeeks(each, done){
-  if(allLoaded){ done&&done(); return; }
-  if(loadingAll) return;            // already in flight; arrivals re-render via each
-  loadingAll=true;
-  let remaining=D.weeks.length;
-  if(!remaining){ allLoaded=true; loadingAll=false; done&&done(); return; }
-  const settle=()=>{ if(--remaining===0){ allLoaded=true; loadingAll=false; done&&done(); }
-                     else each&&each(remaining); };
-  D.weeks.forEach(w=>loadWeek(w.monday, settle, settle));
+// Load the full data for every in-scope week (reusing loadWeek). `each` fires
+// after a week settles (ok or fail) while the scope is still incomplete, for
+// progressive re-render; `done` fires once all in-scope weeks are present.
+// Failures still settle so it never hangs; cached/in-flight weeks are skipped, so
+// it's safe to call again when the scope widens (see expandScope).
+const loadingWeeks=new Set();
+function loadScope(each, done){
+  if(scopeLoaded()){ done&&done(); return; }
+  const settle=m=>{ loadingWeeks.delete(m);
+    if(scopeLoaded()) done&&done(); else each&&each(); };
+  scopeIndices().forEach(i=>{ const m=D.weeks[i].monday;
+    if((window.DIGEST_WEEKS||{})[m] || loadingWeeks.has(m)) return;
+    loadingWeeks.add(m); loadWeek(m, ()=>settle(m), ()=>settle(m)); });
 }
 
 function selectWeek(i, term, scroll){
@@ -418,12 +445,13 @@ function selectWeek(i, term, scroll){
 function renderAllResults(term){
   const main=$('#main'); main.innerHTML='';
   const t=lc(term);
-  const loading=!allLoaded;
-  // gather matches per bucket from loaded weeks, newest-first (D.weeks order)
+  const loading=!scopeLoaded();
+  const scoped=(searchScope==='recent' && olderCount()>0);
+  // gather matches per bucket from loaded in-scope weeks, newest-first
   const hits={}; let total=0, weeksWith=0;
   BUCKETS.forEach(b=>hits[b.key]=[]);
-  D.weeks.forEach((w,i)=>{
-    const wk=(window.DIGEST_WEEKS||{})[w.monday];
+  scopeIndices().forEach(i=>{
+    const w=D.weeks[i], wk=(window.DIGEST_WEEKS||{})[w.monday];
     if(!wk) return;
     let any=false;
     wk.entries.forEach(e=>{ if(!entryMatches(e,t)) return;
@@ -431,9 +459,10 @@ function renderAllResults(term){
     if(any) weeksWith++;
   });
   const head=el('div','weekhead');
-  head.innerHTML='<h2>All weeks'+(loading?' <span class="tag-prog">loading…</span>':'')+'</h2>'+
+  head.innerHTML='<h2>'+(scoped?'Recent weeks':'All weeks')+(loading?' <span class="tag-prog">loading…</span>':'')+'</h2>'+
     '<p class="wstats">'+total+' submission'+(total===1?'':'s')+' matching &ldquo;'+esc(term)+'&rdquo;'+
-    ' across '+weeksWith+' week'+(weeksWith===1?'':'s')+'</p>';
+    ' across '+weeksWith+' week'+(weeksWith===1?'':'s')+
+    (scoped?' &middot; last '+WINDOW_MONTHS+' months':'')+'</p>';
   main.appendChild(head);
   let shown=0;
   for(const b of BUCKETS){
@@ -442,7 +471,7 @@ function renderAllResults(term){
     const sec=el('section','bucket '+b.cls);
     const isOther=b.key==='other';
     sec.innerHTML='<h3 class="bhead'+(isOther?' collapsible':'')+'">'+b.label+' <span class="ct">'+items.length+'</span></h3>';
-    const body=el('div','bbody'+(isOther?' hidden':''));
+    const body=el('div','bbody');
     items.forEach(({e,i,w})=>{
       const card=entryCard(e);
       const tag=el('a','entry-week'); tag.href='#'; tag.textContent=fmtRange(w);
@@ -450,16 +479,34 @@ function renderAllResults(term){
       card.insertBefore(tag, card.firstChild);
       body.appendChild(card);
     });
-    if(isOther){ sec.querySelector('.bhead').addEventListener('click',()=>body.classList.toggle('hidden')); }
+    if(isOther) collapsibleOther(sec, body, true);
     sec.appendChild(body); main.appendChild(sec); shown+=items.length;
   }
-  if(!shown) main.appendChild(el('p','empty',loading?'Searching all weeks&hellip;':
+  if(!shown) main.appendChild(el('p','empty',loading?'Searching weeks&hellip;':
     'No submissions match &ldquo;'+esc(term)+'&rdquo;.'));
+  if(scoped){
+    const n=olderCount();
+    const btn=el('button','loadmore','Include '+n+' older week'+(n===1?'':'s'));
+    btn.addEventListener('click',expandScope);
+    main.appendChild(btn);
+  }
   typesetMath(main);
 }
 
 function selectAll(term){
   viewAll=true; renderNav(term); renderAllResults(term); window.scrollTo(0,0);
+}
+
+// Widen the combined search to the full archive, loading older weeks on demand.
+function expandScope(){
+  searchScope='all';
+  const term=$('#filter').value, seq=++searchSeq;
+  $('#searchStat').hidden=scopeLoaded();
+  renderNav(term); renderAllResults(term);
+  loadScope(
+    ()=>{ if(seq===searchSeq){ renderNav(term); renderAllResults(term); } },
+    ()=>{ if(seq===searchSeq){ $('#searchStat').hidden=true; renderNav(term); renderAllResults(term); } }
+  );
 }
 
 // Debounced cross-week search. The combined "All weeks" view is the default while
@@ -468,7 +515,7 @@ function onSearchInput(raw){
   clearTimeout(searchTimer);
   const t=(raw||'').trim();
   if(!t){                                   // cleared: revert to the last week view
-    searchSeq++; viewAll=false;
+    searchSeq++; viewAll=false; searchScope='recent';
     $('#searchStat').hidden=true;
     selectWeek(lastWeek,'',false);
     return;
@@ -476,10 +523,10 @@ function onSearchInput(raw){
   if(!viewAll) lastWeek=current;            // remember where we came from
   searchTimer=setTimeout(()=>{
     const seq=++searchSeq;
-    if(allLoaded){ selectAll(raw); return; }
+    if(scopeLoaded()){ selectAll(raw); return; }
     $('#searchStat').hidden=false;
     selectAll(raw);                         // render partial view from loaded weeks
-    loadAllWeeks(
+    loadScope(
       ()=>{ if(seq===searchSeq){ renderNav(raw); renderAllResults(raw); } },
       ()=>{ if(seq===searchSeq){ $('#searchStat').hidden=true; renderNav(raw); renderAllResults(raw); } }
     );
@@ -536,6 +583,8 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .weeklink.active{border-color:var(--accent);background:var(--panel2)}
 .weeklink.nomatch{opacity:.42}
 .weeklink.nomatch:hover{opacity:.7}
+.weeklink.outofscope{opacity:.5}
+.weeklink.outofscope:hover{opacity:.8}
 .weeklink.pending .badges{opacity:.6}
 .weeklink.allweeks{margin-top:6px;border-color:var(--accent)}
 .weeklink.allweeks .wr{font-weight:600}
@@ -590,6 +639,9 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .entry-week{display:inline-block;margin-bottom:8px;font-size:11.5px;
   color:var(--mut);background:#222834;padding:1px 9px;border-radius:20px}
 .entry-week:hover{color:var(--ink);text-decoration:none}
+.loadmore{display:block;width:100%;margin:6px 0 0;padding:11px;border:1px dashed var(--line);
+  border-radius:10px;background:var(--panel);color:var(--accent);cursor:pointer;font-size:13.5px}
+.loadmore:hover{border-color:var(--accent);background:var(--panel2)}
 .kws{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
 .kw{font-size:11px;background:#222834;color:#9fb4d8;padding:1px 8px;border-radius:20px}
 .empty{color:var(--mut);padding:30px 0}
