@@ -274,7 +274,6 @@ let openYears=null;                       // Set of expanded years; null => init
 let viewAll=false;                        // main panel showing combined results?
 let lastWeek=0;                           // week to restore when search is cleared
 let searchTimer=null;                     // debounce timer for cross-week search
-let searchSeq=0;                          // bumped per run to ignore stale loads
 let searchScope='recent';                 // cross-week search window: 'recent'|'all'
 const WINDOW_MONTHS=12;                    // size of the 'recent' window
 const yearOf = w => w.monday.slice(0,4);
@@ -418,23 +417,33 @@ function loadWeek(mon, cb, err){
   document.head.appendChild(s);
 }
 
-// Load the full data for every in-scope week (reusing loadWeek). `each` fires
-// after a week settles (ok or fail) while the scope is still incomplete, for
-// progressive re-render; `done` fires once all in-scope weeks are present.
-// Failures still settle so it never hangs; cached/in-flight weeks are skipped, so
-// it's safe to call again when the scope widens (see expandScope).
+// Load the full data for every in-scope week (reusing loadWeek). Each settle (ok
+// or fail) triggers refreshSearch, which re-renders from live state — so it's safe
+// to call repeatedly (e.g. when the scope widens) and late arrivals can never
+// apply stale results. Failures still settle so it never hangs; cached/in-flight
+// weeks are skipped.
 const loadingWeeks=new Set();
-function loadScope(each, done){
-  if(scopeLoaded()){ done&&done(); return; }
-  const settle=m=>{ loadingWeeks.delete(m);
-    if(scopeLoaded()) done&&done(); else each&&each(); };
+function loadScope(){
   scopeIndices().forEach(i=>{ const m=D.weeks[i].monday;
     if((window.DIGEST_WEEKS||{})[m] || loadingWeeks.has(m)) return;
-    loadingWeeks.add(m); loadWeek(m, ()=>settle(m), ()=>settle(m)); });
+    loadingWeeks.add(m);
+    const fin=()=>{ loadingWeeks.delete(m); refreshSearch(); };
+    loadWeek(m, fin, fin);
+  });
+}
+
+// Re-render the combined view + sidebar from the current term/scope. Single source
+// of truth for the "searching…" caption: visible iff a combined search is showing
+// and its in-scope weeks aren't all loaded yet.
+function refreshSearch(){
+  const term=$('#filter').value;
+  if(!viewAll || !lc(term)){ $('#searchStat').hidden=true; return; }
+  $('#searchStat').hidden=scopeLoaded();
+  renderNav(term); renderAllResults(term);
 }
 
 function selectWeek(i, term, scroll){
-  current=i; viewAll=false; renderNav(term);
+  current=i; viewAll=false; $('#searchStat').hidden=true; renderNav(term);
   const w=D.weeks[i], main=$('#main');
   if(!(window.DIGEST_WEEKS||{})[w.monday]) main.innerHTML='<p class="empty">Loading&hellip;</p>';
   loadWeek(w.monday,
@@ -499,20 +508,14 @@ function renderAllResults(term){
 }
 
 function selectAll(term){
-  viewAll=true; renderNav(term); renderAllResults(term); window.scrollTo(0,0);
+  viewAll=true; renderNav(term); renderAllResults(term);
+  $('#searchStat').hidden = !lc(term) || scopeLoaded();
+  loadScope();                              // fetch any missing in-scope weeks
+  window.scrollTo(0,0);
 }
 
 // Widen the combined search to the full archive, loading older weeks on demand.
-function expandScope(){
-  searchScope='all';
-  const term=$('#filter').value, seq=++searchSeq;
-  $('#searchStat').hidden=scopeLoaded();
-  renderNav(term); renderAllResults(term);
-  loadScope(
-    ()=>{ if(seq===searchSeq){ renderNav(term); renderAllResults(term); } },
-    ()=>{ if(seq===searchSeq){ $('#searchStat').hidden=true; renderNav(term); renderAllResults(term); } }
-  );
-}
+function expandScope(){ searchScope='all'; selectAll($('#filter').value); }
 
 // Debounced cross-week search. The combined "All weeks" view is the default while
 // a term is active; per-week sidebar badges update once data is loaded.
@@ -520,22 +523,13 @@ function onSearchInput(raw){
   clearTimeout(searchTimer);
   const t=(raw||'').trim();
   if(!t){                                   // cleared: revert to the last week view
-    searchSeq++; viewAll=false; searchScope='recent';
+    viewAll=false; searchScope='recent';
     $('#searchStat').hidden=true;
     selectWeek(lastWeek,'',false);
     return;
   }
   if(!viewAll) lastWeek=current;            // remember where we came from
-  searchTimer=setTimeout(()=>{
-    const seq=++searchSeq;
-    if(scopeLoaded()){ selectAll(raw); return; }
-    $('#searchStat').hidden=false;
-    selectAll(raw);                         // render partial view from loaded weeks
-    loadScope(
-      ()=>{ if(seq===searchSeq){ renderNav(raw); renderAllResults(raw); } },
-      ()=>{ if(seq===searchSeq){ $('#searchStat').hidden=true; renderNav(raw); renderAllResults(raw); } }
-    );
-  }, 200);
+  searchTimer=setTimeout(()=>selectAll(raw), 200);
 }
 
 function init(){
