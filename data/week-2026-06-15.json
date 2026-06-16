@@ -6,9 +6,333 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-15",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-06-15T09:11:57Z",
-  "entries": []
+  "data_through": "2026-06-16",
+  "total_submissions": 14,
+  "fetched": 14,
+  "generated_at": "2026-06-16T07:44:21Z",
+  "entries": [
+    {
+      "id": "2606.16715v1",
+      "title": "Testing for a Hidden Geometry in Random Graphs",
+      "abstract": "We study the problem of detecting a faint geometric signal hidden in an otherwise random graph. Formally, we consider a hypothesis testing problem in which, under the null, the observed graph is an Erdős--Rényi random graph $\\mathcal{G}(n,q)$, while under the alternative a random geometric graph $\\mathcal{G}(k,q,d)$ is planted on $k\\le n$ vertices. The planted subgraph is generated from independent random points on the unit sphere $\\mathbb{S}^{d-1}$, with edges determined by latent geometric proximity and calibrated to have edge density $q$. Our goal is to characterize the statistical and computational limits of detecting this hidden geometry. We derive sharp information-theoretic lower bounds that identify regimes where detection is impossible and provide algorithms that achieve these limits whenever detection is feasible. We further investigate the computational complexity of the problem and determine when efficient polynomial-time tests exist. The model exhibits an \\emph{easy--hard--impossible} phase transition: some regimes allow efficient detection, others permit detection only with computationally intractable procedures, and still others render detection impossible even with unlimited computational power. As evidence for the computational barrier, we prove that all low-degree polynomial algorithms fail throughout the conjecturally hard regime, demonstrating a sharp gap between statistical and computational feasibility.",
+      "authors": [
+        "Amit Silber",
+        "Mor Oren-Loberman",
+        "Wasim Huleihel"
+      ],
+      "published": "2026-06-15T13:42:33Z",
+      "updated": "2026-06-15T13:42:33Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16715v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16715v1",
+      "score": 16,
+      "matched_keywords": [
+        "erdos",
+        "phase transition",
+        "random geometric graph",
+        "random graph",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.16083v1",
+      "title": "Eyring-Kramers asymptotics for infinite-dimensional stochastic gradient systems",
+      "abstract": "We study small-noise asymptotics for a class of reversible stochastic evolution equations in infinite dimensions. The dynamics are of the form \\[ dX_t=-A\\nabla F(X_t)\\,dt+\\sqrt{2β^{-1}A}\\,dW_t, \\] where $F$ is a regular multi-well potential, $A$ is a selfadjoint mobility operator, $W$ is a cylindrical Brownian motion and $β\\gg 1$ is the inverse noise strength. The invariant measure is a Gibbs perturbation of a Gaussian reference measure, and the resulting framework covers, in particular, the stochastic Allen-Cahn and stochastic Cahn-Hilliard equations on bounded intervals. In the double-well case, we derive a sharp asymptotic formula for the first nonzero eigenvalue of the generator. This gives an infinite-dimensional Eyring-Kramers law for the spectral gap, with exponential rate determined by the communication height and leading prefactor determined by the local quadratic behavior at the relevant minima and saddle points. Our approach provides a general strategy for lifting finite-dimensional Eyring-Kramers analysis to infinite-dimensional stochastic gradient systems.",
+      "authors": [
+        "Morris Brooks",
+        "Giacomo Di Gesù"
+      ],
+      "published": "2026-06-15T00:49:03Z",
+      "updated": "2026-06-15T00:49:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16083v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16083v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16164v1",
+      "title": "A Low-Regularity Semigroup Sewing Lemma via Quotient Structures",
+      "abstract": "We develop a low-regularity Sewing theory for the semigroup coboundary $\\hatδ=δ-a$ associated with a strongly continuous semigroup $S$. Unlike the ordinary low-regularity Sewing problem, the semigroup setting has an intrinsic algebraic non-uniqueness below the threshold $1$, in the sense that solutions are canonical only modulo semigroup cocycles. Accordingly, the natural target is a quotient space rather than an increment space. We identify this quotient structure and construct the corresponding semigroup Sewing map. The construction uses a frozen terminal-time transform, which rewrites semigroup defects, for each terminal time, as ordinary low-regularity Sewing problems on a frozen simplex. This reduction, however, does not by itself produce a genuine semigroup increment; the main additional step is to prove that the frozen solution classes are compatible as the terminal time varies and hence assemble into a canonical quotient class for $\\hatδ$. This yields canonical classes for $0<γ<1$, and at $γ=1$ under logarithmic control. We further provide a scale-dependent criterion for selecting genuine representatives, verified for heat semigroups on Sobolev scales through a parabolic Littlewood--Paley tail condition.",
+      "authors": [
+        "Nannan Li",
+        "Xing Gao"
+      ],
+      "published": "2026-06-15T03:26:37Z",
+      "updated": "2026-06-15T03:26:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16164v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16164v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16237v1",
+      "title": "The Backward Stochastic Partial Differential Integral Equations: Solvability and Comparison Principle",
+      "abstract": "The paper is concerned with the well-posedness of backward stochastic partial differential equations with jumps, also called backward stochastic partial differential integral equations. We start from the proof for the existence and uniqueness of solution to backward stochastic evolution equation with jump in the Gelfand triple framework. Then the well-posedness of both weak solution and strong solution to backward stochastic partial differential integral equation is obtained with the Gelfand triple replaced by specific Sobolev spaces. Finally, the comparison principle for backward stochastic partial differential integral equation is proved, which has potential applications in financial mathematics.",
+      "authors": [
+        "Qingxin Meng",
+        "Qi Zhang"
+      ],
+      "published": "2026-06-15T05:35:27Z",
+      "updated": "2026-06-15T05:35:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16237v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16237v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16259v1",
+      "title": "Super-Arrhenius relaxation of the triangular plaquette model in any dimension",
+      "abstract": "Consider the following plaquette model from statistical physics: a lamp lies at every vertex of the triangular lattice and a switch lies at every even vertex of the (bipartite) dual hexagonal lattice. Each switch toggles the three lamps on its face. The energy of a configuration is the number of ON lamps. For the Glauber dynamics associated with the Gibbs measure defined by this Hamiltonian at any inverse temperature $β>0$, we show that, in any dimension $d\\ge 2$, the infinite volume relaxation time satisfies \\[e^{β^2/C}/C \\le T_{\\mathrm{rel}}\\le Ce^{e^{Cβ}}\\] for some $C>0$. Our result entails that the Gibbs measure is unique. The $e^{β^2}$ scaling was conjectured by Newman and Moore in 1999 and matches the behaviour of supercritical rooted kinetically constrained models such as the East model, thus recovering fragile glass phenomenology in the absence of kinetic constraints. More precisely, we show that, on a torus of side length $2^k$, when $β\\to\\infty$ and $k/β\\to0$, we have $T_{\\mathrm{rel}}=e^{2βk(1+o(1))}$. Quite surprisingly, however, we also prove that, on non-periodic finite domains of size $n\\le e^{β/C}$ for large $C>0$, we have the much larger asymptotics $\\ln T_{\\mathrm{rel}}=βn^{Θ(1)}$. The main ingredients of the proofs are new results in extremal and enumerative combinatorics and rely on renormalisation ideas for the dynamics and its groundstates also known as the Ledrappier subshift. We note consequences of our results to geometric group theory (more precisely to the complexity of the word problem for the Baumslag finitely presented group) and to ergodic theory.",
+      "authors": [
+        "Laurent Bartholdi",
+        "Ivailo Hartarsky",
+        "Ivan Mitrofanov"
+      ],
+      "published": "2026-06-15T06:05:58Z",
+      "updated": "2026-06-15T06:05:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.stat-mech",
+        "math.CO",
+        "math.DS",
+        "math.GR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16259v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16259v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16373v1",
+      "title": "Higher-order spectral perturbation expansions II: Kernel matrices and manifold learning",
+      "abstract": "We study spectral concentration bounds for kernel matrices as approximation of the corresponding kernel integral operator. Results are established under weak assumptions on the data setting and the reproducing kernel relying only on a Mercer condition and a local Weyl law. This allows us to deal with key features of kernel matrices, such as large multiplicities, large effective dimension, and heavy-tailed distributions. Our results apply to infinite dimensional principal component analysis, manifold learning, and Bayesian nonparametric statistics. We illustrate this via two prototypical examples: The heat kernel on the sphere and a wavelet prior from Bayesian nonparametrics.",
+      "authors": [
+        "Bernhard Stankewitz",
+        "Martin Wahl"
+      ],
+      "published": "2026-06-15T08:10:43Z",
+      "updated": "2026-06-15T08:10:43Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16373v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16373v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16487v1",
+      "title": "Logarithmic Large Deviations for Heavy-Tailed Sums",
+      "abstract": "We establish logarithmic large-deviation bounds for sums of independent nonnegative random variables with regularly varying tails. The normalization is chosen at the extreme-value scale and the speed is $\\log n$. In contrast with Cramér's theorem, the resulting rate function is determined only by the tail index. The proof transfers a maximum large-deviation principle to sums in the one-big-jump region.",
+      "authors": [
+        "José M. Zapata"
+      ],
+      "published": "2026-06-15T09:55:05Z",
+      "updated": "2026-06-15T09:55:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16487v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16487v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16609v1",
+      "title": "On stability of outliers from the circular law",
+      "abstract": "This work investigates the stability of outliers from the circular law, via the convergence of their associated diagonal overlaps between eigenvectors - also known as the squared eigenvalue condition numbers. We consider and compare two paradigmatic cases, namely: 1) the Complex Ginibre Ensemble conditioned on the existence of an outlier, and 2) the outlier induced by a rank-one Hermitian perturbation of a Complex Ginibre matrix. In both cases, we prove almost sure convergence towards a specific constant that only depends on the radius of the outlier and its status - either conditioned or induced. These results can be generalized to other complex integrable ensembles with the same techniques, and complement our understanding of eigenvalue stability in non-Hermitian ensembles.",
+      "authors": [
+        "Guillaume Dubach",
+        "Aniss Fares",
+        "Lilou Thomas"
+      ],
+      "published": "2026-06-15T11:58:21Z",
+      "updated": "2026-06-15T11:58:21Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16609v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16609v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16636v1",
+      "title": "Free energy of non-convex multi-species spin glasses with centered Ising spins",
+      "abstract": "We identify the limit free energy of all multi-species spin glasses with centered $\\pm 1$ spins. The result was previously known only under a convexity assumption on the covariance function of the Hamiltonian. We also obtain a one-species reduction of the formula for balanced multi-species models.",
+      "authors": [
+        "Hong-Bin Chen",
+        "Victor Issa",
+        "Jean-Christophe Mourrat"
+      ],
+      "published": "2026-06-15T12:25:59Z",
+      "updated": "2026-06-15T12:25:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16636v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16636v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16662v1",
+      "title": "Random Tensor Estimates and Deterministic Diagonal Resolutions for Mixed Paracontrolled Operators",
+      "abstract": "We prove an abstract operator-level convergence criterion for mixed paracontrolled random operators \\[ T^{i;j,k}_Λ(w) = I_i(w<Ψ_{j,Λ})\\circ Ψ_{k,Λ} \\] on \\(\\mathbb T^d\\). These operators are the second-level mixed blocks generated by quadratic paracontrolled expansions, and are singular in the range where the deterministic resonant-product threshold fails. At finite cutoff we separate \\[ T^τ_Λ= D^τ_Λ+B^τ_Λ, \\] where \\(D^τ_Λ\\) is the Fourier-diagonal covariance contraction supported on the external diagonal \\(n=q\\), and \\(B^τ_Λ\\) is a centered second homogeneous Gaussian chaos with incidence \\(n=q+\\ell+r\\). The centered component is controlled by a finite second-order random tensor estimate, a Banach-valued time lift, and Sobolev--Besov dyadic summation. The deterministic component is treated through a diagonal-resolution interface: retained raw branches or model-determined orbit sums are required only to satisfy scalar Volterra dyadic bounds after the relevant finite cancellations have been formed. The result applies in arbitrary dimension, for finite color/label families, Fourier-diagonal weak covariance, random initial data, colored-in-time Gaussian profiles, and frequency-dependent amplitudes. It abstracts the reusable mixed-operator mechanism underlying concrete color-phase diagonal analyses, while leaving model-specific diagonal classification and scalar Volterra estimates as explicit inputs.",
+      "authors": [
+        "Guangqian Zhao"
+      ],
+      "published": "2026-06-15T12:56:35Z",
+      "updated": "2026-06-15T12:56:35Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16662v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16662v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16699v1",
+      "title": "Quantitative Oppenheim Conjecture for Random Quadratic Forms and Optimal Variance Bounds in Function Fields",
+      "abstract": "We prove a quantitative version of Oppenheim's conjecture in the function field setting. In order to do so, we compute the higher moments of the Siegel transform. In particular, we find an optimal bound on the variance of the number of lattice points in a set. Moreover, we compute the exact variance of the number of lattice points in a ball, which is of independent interest.",
+      "authors": [
+        "Jiyoung Han",
+        "Noy Soffer Aranov"
+      ],
+      "published": "2026-06-15T13:33:32Z",
+      "updated": "2026-06-15T13:33:32Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16699v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16699v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16791v1",
+      "title": "Riviera model with egoistical settlers",
+      "abstract": "The Riviera model mimics a densifying settlement along the coastline. In the lattice version, houses are built sequentially in empty sites with the constraint that every newly built house has at least one empty neighboring site. The distribution of clusters of adjacent houses does not obey a closed set of evolutionary equations, but the void-cluster-void distribution does. We compute the latter and extract the cluster distribution from it. In the jammed state, when all voids have length one and the evolution ceases, the cluster distribution has a neat form and exhibits a factorial decay with the length of the cluster. To investigate finite systems, we employ a static approach directly treating jammed states. If the coastline is a finite segment, we determine the statistics of the number of empty sites in the jammed state (the average, variance, and higher cumulants). We also study a continuum version in which houses are built along the line so that each newly built house is sufficiently separated from at least one neighboring house.",
+      "authors": [
+        "P. L. Krapivsky"
+      ],
+      "published": "2026-06-15T14:36:03Z",
+      "updated": "2026-06-15T14:36:03Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16791v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16791v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16885v1",
+      "title": "The Winner Takes It All",
+      "abstract": "The winner-takes-all (WTA) process takes place on an arbitrary graph. There is an agent on each vertex of the graph, and active agents at neighboring vertices play games. In each game, a randomly chosen agent wins, while the loser is eliminated from subsequent games. The games are played at random times; each game finishes instantaneously, and the games cease when each active agent has only losers among its neighbors. On the one-dimensional lattice, the fraction of winners in the final state is $e^{-1}$, and we also determine the fractions $w_j$ of winners who won $j=0, 1, 2$ games. For the WTA process on a segment, we determine statistics of the total number of winners (the average, the variance, and all higher cumulants), the probabilities of reaching the final state with the minimum or maximum number of winners, and establish the behavior near the boundaries. For infinite regular trees with vertices of degree $d$, i.e., Bethe lattices with coordination number $d$, the fraction of winners is $(2/d)^{d/(d-2)}$.",
+      "authors": [
+        "P. L. Krapivsky"
+      ],
+      "published": "2026-06-15T15:58:49Z",
+      "updated": "2026-06-15T15:58:49Z",
+      "primary_category": "physics.soc-ph",
+      "categories": [
+        "physics.soc-ph",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16885v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16885v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.16948v1",
+      "title": "The Optimal Rate Function in Covariant Quantum State Tomography",
+      "abstract": "The problem of quantum tomography is to estimate an unknown quantum state $ρ$ from a measurement of $n$ copies of $ρ$. One can ask which tomography protocol, i.e.\\ which choice of multi-copy measurement, gives the best possible estimate of $ρ$. To do so, we characterize tomography protocols by their \\emph{rate function}, which governs the exponential rate at which a protocol assigns probability to a particular estimate $σ$ of the true state $ρ$. This rate function is a quantum mechanical generalization of the classical relative entropy between the true state and its estimate, and depends on the choice of protocol. It is bounded by the quantum relative entropy, and we show that this bound is sharp: for any $ρ$ and $σ$ we construct a family of protocols whose rate functions converge to the quantum relative entropy $D(σ\\|ρ)$. We consider the family of covariant tomography protocols; these are the basis independent state estimation schemes that assume no prior information about $ρ$ and $σ$. Keyl described a specific tomography protocol based on Schur sampling, and conjectured that among all covariant tomography protocols it has the largest possible rate function for all $σ$ and $ρ$. We prove this conjecture. The resulting rate function is an annealed version of quantum relative entropy, due to the cost of learning the eigenbasis in covariant quantum state tomography.",
+      "authors": [
+        "Arick Grootveld",
+        "Alexander Maloney",
+        "Jason Pollack",
+        "Peixue Wu"
+      ],
+      "published": "2026-06-15T16:47:46Z",
+      "updated": "2026-06-15T16:47:46Z",
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "hep-th",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.16948v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.16948v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }
