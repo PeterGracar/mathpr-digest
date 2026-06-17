@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-16",
-  "total_submissions": 14,
-  "fetched": 14,
-  "generated_at": "2026-06-16T07:44:21Z",
+  "data_through": "2026-06-17",
+  "total_submissions": 39,
+  "fetched": 39,
+  "generated_at": "2026-06-17T07:28:08Z",
   "entries": [
     {
       "id": "2606.16715v1",
@@ -40,6 +40,131 @@
       ],
       "coauthors": [],
       "bucket": "high"
+    },
+    {
+      "id": "2606.17912v1",
+      "title": "Asymptotics of the number of labelled connected sparse multitype graphs",
+      "abstract": "We study the asymptotic enumeration of labelled connected multitype graphs in the sparse regime, where both the number of vertices and edges grow linearly and the excess is proportional to the size of the graph. Extending the classical theory of connected graph enumeration to the multitype setting, we consider graphs with prescribed numbers of vertices of each type and prescribed edge counts between each pair of types. Our approach is probabilistic and relies on the theory of inhomogeneous random graphs. In particular, we exploit large-deviation principles and asymptotic estimates for connectedness probabilities to relate the counting problem to the emergence of giant components in suitably tuned supercritical random graphs. From large deviation asymptotics of connected components of inhomogeneous random graphs, we recognize that a connected graph with a given edge statistics corresponds to the (unique) giant component of larger inhomogeneous random graph with a suitably chosen connection kernel. This correspondence allows us to derive the leading exponential asymptotics for the number of connected multitype graphs with fixed type profile and edge matrix. The resulting formula generalizes the asymptotic enumeration results of Bender, Canfield, and McKay for connected sparse graphs to the multitype framework. More broadly, the paper illustrates how probabilistic techniques can provide transparent and effective tools for addressing new combinatorial enumeration problems.",
+      "authors": [
+        "Luisa Andreis",
+        "Mario Veshaj"
+      ],
+      "published": "2026-06-16T13:34:03Z",
+      "updated": "2026-06-16T13:34:03Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17912v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17912v1",
+      "score": 12,
+      "matched_keywords": [
+        "giant component",
+        "inhomogeneous",
+        "random graph"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.17792v1",
+      "title": "The Loss of Tension in an Infinite Membrane with Holes of Decaying Spatial Density",
+      "abstract": "What is the effect of randomly removing material from an infinite stretched membrane? Under what conditions can the membrane still sustain tension? This problem was introduced by Robert Connelly in connection with applications of rigidity theory in the natural sciences, and was later studied in M. V. Menshikov, K. A. Rybnikov, and S. E. Volkov, \"The loss of tension in an infinite membrane with holes distributed according to a Poisson law\" (2002); a discrete version was also considered in Robert Connelly, Konstantin Rybnikov, and Stanislav Volkov, \"Percolation and the Loss of Tension in an Infinite Triangular Lattice\" (2001). We study a mathematical framework based on a non-homogeneous Poisson point process whose intensity $λ$ tends to zero at infinity. The hole shapes are i.i.d.\\ and independent of their locations. We show that if the intensity does not decay too quickly, then tension is still lost throughout the whole plane, as in the homogeneous model studied in 2002. Conversely, we give sufficient conditions under which complete loss of tension does not occur. Thus, both destruction and non-destruction regimes are possible even when the intensity tends to zero, indicating a phase transition in the model. The processes studied here are closely related to bootstrap percolation.",
+      "authors": [
+        "Lukas Early",
+        "Stanislav Volkov"
+      ],
+      "published": "2026-06-16T11:11:54Z",
+      "updated": "2026-06-16T11:11:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17792v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17792v1",
+      "score": 10,
+      "matched_keywords": [
+        "percolation",
+        "phase transition",
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.17604v1",
+      "title": "Spectral recovery of a planted triangle-dense subgraph",
+      "abstract": "Given a simple graph on $n$ vertices and a parameter $k$, the triangle-densest-$k$-subgraph problem is known to be computationally hard in the worst case. To circumvent the computational hardness, we study an average-case model where a triangle-dense subgraph on $k$ vertices is planted in an Erdős-Rényi random graph on $n$ vertices. For the recovery of the planted subgraph, we propose a simple spectral algorithm and a semidefinite program, both of which use a graph matrix whose entries are local signed triangle counts. Theoretical guarantees for these algorithms are established through spectral analysis of the graph matrix. Finally, we provide evidence showing a statistical-to-computational gap analogous to that for the planted clique problem. The computational threshold in terms of the subgraph size $k$ is at least $\\sqrt{n}$ in the framework of low-degree polynomial algorithms, while the information-theoretic threshold is at most logarithmic in $n$.",
+      "authors": [
+        "Sam van der Poel",
+        "Cheng Mao",
+        "Benjamin McKenna"
+      ],
+      "published": "2026-06-16T07:10:57Z",
+      "updated": "2026-06-16T07:10:57Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17604v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17604v1",
+      "score": 7,
+      "matched_keywords": [
+        "erdos",
+        "random graph",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.17771v1",
+      "title": "Moment generating function of the tacnode process",
+      "abstract": "The tacnode process is a universal determinantal point process arising in non-intersecting particle systems and random tiling models. In this paper, we study the generating function for the counting functions of the tacnode process on a union of $m$ intervals, $m\\in\\mathbb{N}^{+}$. Our first result provides an integral representation for the $m$-point generating function in terms of the Hamiltonian governing a system of $8m+4$ coupled differential equations. Combined with several differential identities for this Hamiltonian, the representation yields the large gap asymptotics, up to and including the constant term. As further applications, we obtain asymptotic formulae for the expectations, variances, and covariances of the counting functions, and establish a central limit theorem for their joint fluctuations. These results extend the previously known $1$-point theory for the tacnode process to the multi-interval setting with multiple discontinuities.",
+      "authors": [
+        "Taiyang Xu"
+      ],
+      "published": "2026-06-16T10:44:55Z",
+      "updated": "2026-06-16T10:44:55Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17771v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17771v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.17901v1",
+      "title": "The Erdős-Hajnal High-Girth Subgraph Conjecture Holds in the Polynomial Chromatic-Sparsity Regime",
+      "abstract": "For a graph $G$ put $h_r(G)=\\max{χ(H):H\\subseteq G,\\operatorname{girth}(H)\\ge r}.$ Erdős and Hajnal asked whether $h_r(G)\\to\\infty$ as $χ(G)\\to\\infty$, for every fixed $r\\ge4$. We prove this in every fixed polynomial edge-density regime: for all $r\\ge4$, $k\\ge2$, $P,C>0$, there is $M=M_{r,k}(P,C)$ such that $χ(G)\\ge M,\\ e(G)\\le Cχ(G)^P\\Longrightarrow h_r(G)\\ge k.$ Quantitatively, after replacing $P$ by $P\\vee2$ and $C$ by $C\\vee2$, $M_{r,k}(P,C)\\le \\exp!\\left(O_{r,k}\\bigl((P+2+\\log(C\\vee2))^2\\bigr)\\right),$ and consequently the same conclusion holds throughout the quasi-polynomial range $e(G)\\le \\exp\\bigl(C_0(\\logχ(G))^a\\bigr),\\ 1 < a < 3/2,$ for all sufficiently large $χ(G)$. In each fixed polynomial-density regime we also obtain $f_{P,C}(k,r)\\le k^{O_{r,P,C}(1)}.$ The proof combines a chromatic-defect random extraction lemma, compact and near-quadratic sparse-core bases, and a peeling/thinning bootstrap increasing the admissible edge exponent by $1/(r-1)$. We also prove structural saturation results for possible counterexamples, including Moore-strength exact-cycle packings and quadratic saturation in projected colour-pair space. Finally, writing $h_r^{\\mathrm f}(G)=\\max{χ_{\\mathrm f}(H):H\\subseteq G,\\operatorname{girth}(H)\\ge r},$ we develop a fractional random-extraction framework based on Mohar-Wu preservation. We prove sufficient cheap-cycle-killing criteria and verify them for several structured families, including clique-organised families, line graphs of incidence graphs of equal-order generalized quadrangles and generalized hexagons, and the Bohman-Keevash tracking-time triangle-free-process graph. We also isolate a density-free obstruction that any proof using this fractional surgery route must overcome.",
+      "authors": [
+        "Eric Li"
+      ],
+      "published": "2026-06-16T13:28:17Z",
+      "updated": "2026-06-16T13:28:17Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17901v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17901v1",
+      "score": 2,
+      "matched_keywords": [
+        "erdos"
+      ],
+      "coauthors": [],
+      "bucket": "other"
     },
     {
       "id": "2606.16083v1",
@@ -150,6 +275,27 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.16373v1",
       "pdf_url": "https://arxiv.org/pdf/2606.16373v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17112v1",
+      "title": "Unbounded nonconvex Young differential inclusions: existence of a measurable selection of solutions",
+      "abstract": "We study the differential inclusion $\\text{d}z_t\\in F(z_t)\\text{d}x_t$, with initial condition $z_0=ξ$, where $F$ is a nonconvex-valued multifunction, and $x$ a path of bounded $q$-variation, for some $1\\leqslant q<2$, extending the work of Bailleul, Brault, and Coutin (2020). We obtain existence of local and global solutions to this inclusion without assuming $F$ bounded. If $z(ξ,x)$ denotes such a solution, we obtain measurability of $z$ with respect to $x$ and $ξ$. To establish this, we introduce a Skorokhod-type distance and prove that Young integration is continuous with respect to it. By the way, we prove that a compact-valued $γ$-H{ö}lder map $F$ has, for any $p>1/γ$ and $ξ\\in F(0)$, a selection $f(ξ)$ of bounded $p$-variation, started at $ξ$, such that $f$ is measurable in $ξ$.",
+      "authors": [
+        "Nathan Benichou"
+      ],
+      "published": "2026-06-15T08:22:30Z",
+      "updated": "2026-06-15T08:22:30Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17112v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17112v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -329,6 +475,427 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.16948v1",
       "pdf_url": "https://arxiv.org/pdf/2606.16948v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17381v1",
+      "title": "Large deviation principle for friendship-biases in Galton--Watson trees",
+      "abstract": "In this paper we consider the friendship-bias of the vertices in an infinite rooted Galton--Watson tree. The friendship-bias of a vertex is the difference between the average degree of the neighbours of the vertex and the degree of the vertex itself. A vertex is said to be of type $χ\\in S$, with $S = \\{-,0,+\\}$, when its friendship-bias is, respectively, strictly negative, zero or strictly positive. We consider the fractions $f_l^χ$ of vertices of type $χ\\in S$ along a random downward path up to branching depth $l \\in \\mathbb{N}$ and derive a large deviation principle (LDP) for the triple $(f_l^χ)_{χ\\in S}$ as $l\\to\\infty$. The branching depth of a vertex counts the number of branchings that occur along the path that connects the vertex to the root of the tree. The rate in the LDP is $l$, while the rate function in the LDP is identified in terms of a variational formula minimising a relative entropy under a linear constraint. We focus on the case of binary branching, for which the rate function is already quite involved. We identify the qualitative properties of the rate function and show how it can be computed numerically. We briefly indicate how to proceed for more general branching and for vertex types along a tree consisting of a finite number of random downward paths. Our paper is the first to consider large deviations of vertex types.",
+      "authors": [
+        "Frank den Hollander",
+        "Azadeh Parvaneh"
+      ],
+      "published": "2026-06-16T00:37:43Z",
+      "updated": "2026-06-16T00:37:43Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17381v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17381v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17425v1",
+      "title": "Order statistics for edge eigenvectors of Wigner matrices",
+      "abstract": "In this paper, we establish a general comparison theorem for the order statistics of the edge eigenvectors for generalized Wigner matrices. Consequently, we derive the Gumbel law for the maximal edge eigenvector component and prove the universality of the Gaussian fluctuations of the order statistics in an intermediate regime close to the maximum. In addition, our comparison result also implies a quantitative first order estimate for moderately small order statistics.",
+      "authors": [
+        "Zhigang Bao",
+        "Teodor Bucht",
+        "Kevin Schnelli"
+      ],
+      "published": "2026-06-16T02:18:45Z",
+      "updated": "2026-06-16T02:18:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17425v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17425v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17426v1",
+      "title": "Bounded Difference Concentration for Infinitely Exchangeable Sequences with Applications to AI Benchmark Uncertainty",
+      "abstract": "We consider the concentration properties of functions of infinitely exchangeable random variables. By conditioning on the de Finetti directing measure, we show that the deviation of any function with bounded-difference constants $c_1, \\dots, c_n$ decomposes into a conditional sampling fluctuation and a latent mixture fluctuation. When this latent mixture is $σ_{\\mathrm{mix}}^2$-subgaussian, we establish a concentration inequality with an effective variance proxy of $\\frac{1}{4}\\sum_i c_i^2 + σ_{\\mathrm{mix}}^2$. Crucially, we demonstrate that for zero-sum linear contrasts, such as the difference between a subsample mean and a full population mean, the latent mixture term cancels exactly. This cancellation yields a tight, mixture-free Hoeffding-type bound that provides a direct de Finetti mechanism for the infinite-extendibility limit of recent finite-exchangeable concentration results. We apply this framework to quantify uncertainty in composite AI benchmarks, such as MMLU, where question items naturally exhibit exchangeable dependence across domains. Our results provide both a domain-stratified hierarchical model for bounding the uncertainty of accuracy scores, and a distribution-free, cost-saving statistical guarantee for accurately estimating full benchmark scores from random subsets.",
+      "authors": [
+        "Fangyuan Lin",
+        "Spencer Frei",
+        "Victor H. de la Pena"
+      ],
+      "published": "2026-06-16T02:19:01Z",
+      "updated": "2026-06-16T02:19:01Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17426v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17426v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17452v1",
+      "title": "Optional Stopping for Superhedging Supermartingales",
+      "abstract": "Superhedging supermartingales, introduced by the authors in previous work, are non-probabilistic processes defined via subadditive outer integrals that carry a purely financial interpretation in terms of superhedging cost. Building on the Leinert-König theory of non-lattice integration, the present paper establishes several results that are classical in probability theory but whose non-probabilistic proofs require fundamentally new arguments: (i) a tower inequality for the conditional outer integral \\overlineσ_j applied at stopping times, reducing to equality when the integrand is conditionally integrable; (ii) three versions of Doob's optional stopping theorem, organised by the class of supermartingale and the range of the stopping times; and (iii) Dubins' upcrossing inequality in both finite- and infinite-time horizons. A key structural result, property (K)-a.e., identifies conditions under which the two superhedging operators \\overlineσ_j and \\overline{I}_j coincide on non-negative functions, extending the scope of all preceding results to the positive operator \\overline{I}_j. None of the proofs invoke classical measure-theoretic tools; in particular, (classical) integrability and measurability are not assumed. The analogues of classical stochastic results acquire a purely financial interpretation and, in this way, gain depth and generality by providing a context that is independent of any a priori probabilistic structure.",
+      "authors": [
+        "Christian Bender",
+        "Sebastian E. Ferrando"
+      ],
+      "published": "2026-06-16T03:11:21Z",
+      "updated": "2026-06-16T03:11:21Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17452v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17452v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17472v1",
+      "title": "A Tanaka-Type Formula for Compact Sets and Equilibrium Measures of Lévy Processes",
+      "abstract": "Tanaka's formula is a classical identity for Brownian motion, and Tsukada (2018) extended it to Lévy processes not necessarily symmetric. From a potential-theoretic point of view, this formula shows that the invariant function for the process killed upon hitting a singleton can be decomposed into the sum of a martingale part and a local time. In this paper, we generalize this singleton setting and derive a Tanaka-type formula for a compact set $B$. To this end, we introduce the equilibrium measure, defined as the rescaled limit of the $q$-capacity measures, and show that the invariant function for the process killed upon hitting $B$ can be represented as the integral, with respect to the equilibrium measure, of the invariant functions associated with processes killed upon hitting singletons, up to an additive constant called the Robin constant. Moreover, when $B$ is an interval, we obtain explicit representations of the equilibrium measure, the Robin constant, and the martingale part for recurrent stable processes as well as for recurrent spectrally negative Lévy processes. Finally, we discuss how an analogous Tanaka-type formula can also be established for transient Lévy processes.",
+      "authors": [
+        "Kohki Iba",
+        "Victor Rivero"
+      ],
+      "published": "2026-06-16T03:30:39Z",
+      "updated": "2026-06-16T03:30:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17472v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17472v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17501v1",
+      "title": "Critical spectral behavior and large deviations for geometric $α$-stable processes",
+      "abstract": "In this paper, we study the Schrödinger-type operator associated with geometric stable processes on $\\mathbb{R}^{d}$, especially the differentiability of spectral function. Let $\\mathcal{H}$ be the generator of the geometric stable process and $μ$ a smooth measure on $\\mathbb{R}^{d}$. Then the spectral function $C(θ)$ is defined as $C(θ) = -\\inf σ(-\\mathcal{H} - θμ)$, where $σ(\\mathcal{A})$ denotes the spectrum of $\\mathcal{A}$ and $θ$ is a real parameter. Since the geometric stable process exhibits severe local singularities in its Lévy measure, its transition semigroup lacks ultracontractivity, which invalidates classical methods for proving the differentiability. To overcome this obstacle, we use the compact embedding of the extended Dirichlet space into $L^2(μ)$. As a primary application of this differentiability, we establish a large deviation principle for a positive continuous additive functional associated with the smooth measure $μ$.",
+      "authors": [
+        "Kaneharu Tsuchida"
+      ],
+      "published": "2026-06-16T04:23:57Z",
+      "updated": "2026-06-16T04:23:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17501v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17501v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17517v1",
+      "title": "Killed resolvents and measure-valued stopping gains for reflected optimal stopping with max-type rewards",
+      "abstract": "We study an infinite-horizon optimal stopping problem for a normally reflected two-dimensional diffusion in the positive quadrant with nonsmooth max-type reward \\(G(x_1,x_2)=x_1\\vee αx_2\\). The paper develops a conditional measure-theoretic framework for the associated reflected obstacle problem. The main innovation is to show that the stopping gain \\(Γ=c+rG-\\mathcal LG\\) is a signed measure, not a function: the kink of \\(G\\) generates an explicit negative surface measure on \\(Δ=\\{x_1=αx_2\\}\\). We then prove that the correct potential representation uses the resolvent of the reflected diffusion killed on first entry into the stopping set, rather than the unrestricted reflected resolvent. Under explicit monotonicity, regularity, and measure-superharmonicity assumptions, we derive an epigraph representation, a continuation-side boundary-trace condition, and a candidate verification theorem. The framework clarifies hidden regularity and uniqueness assumptions in multidimensional nonsmooth optimal stopping.",
+      "authors": [
+        "Louis Shuo Wang",
+        "Jiguang Yu",
+        "Ye Liang"
+      ],
+      "published": "2026-06-16T04:51:03Z",
+      "updated": "2026-06-16T04:51:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17517v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17517v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17665v1",
+      "title": "Non-asymptotic Tail Bounds for the Kostlan--Shub--Smale Field: Tensor PCA and Spherical $k$-Spin Complexity",
+      "abstract": "This paper builds a hierarchy of explicit, non-asymptotic tail bounds for the supremum of the Kostlan--Shub--Smale (KSS) random field on the sphere, and applies it to two problems: Spiked Tensor PCA and the landscape of the spherical $k$-spin model. For Tensor PCA, we study the non-asymptotic statistical limits of estimating a rank-$R$ symmetric signal tensor of order~$k\\ge 3$ and dimension~$d\\ge 3$ from a single Gaussian observation at signal-to-noise ratio~$λ$, through the \\emph{profile maximum likelihood estimator}, the MLE restricted to normalized rank-$R$ tensors of coherence at least~$κ$. Our analysis uses a single reduction: a deterministic geometric inequality (the Tube Method) and a rank-reduction step bound the estimation error by the supremum of the canonical KSS field, which the Kac--Rice formula turns into a Gaussian integral against the expected absolute characteristic polynomial of a shifted Gaussian Orthogonal Ensemble, controlled in turn by the four explicit tail bounds of our hierarchy (three from a Mehta--Fyodorov representation, one from a Ben Arous--Dembo--Guionnet large deviation). The same reduction yields two results, each with explicit constants. For estimation, a finite-$(k,d)$ error bound recovers the asymptotically optimal rate~$\\sqrt{d\\log k}$ of Perry, Wein and Bandeira, with explicit dependence on the rank~$R$ and the coherence~$κ$. For the landscape, a two-sided non-asymptotic bracketing of the annealed complexity of the spherical $k$-spin Hamiltonian recovers the Auffinger--Ben Arous--Černý complexity function in the high-dimensional limit.",
+      "authors": [
+        "Jean-Marc Azaïs",
+        "Federico Dalmao",
+        "Yohann De Castro"
+      ],
+      "published": "2026-06-16T08:27:25Z",
+      "updated": "2026-06-16T08:27:25Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17665v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17665v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17859v1",
+      "title": "Full $Γ-$expansion for the level-two large deviation rate functionals of non-reversible one-dimensional diffusions with periodic boundary conditions",
+      "abstract": "Consider the diffusion process \\begin{equation*} dX_ε(t) = \\mss b(X_ε(t)) \\, dt + \\sqrt{2\\, ε\\, \\mss a(X_ε(t))} \\, dW_{t}, \\end{equation*} on the one-dimensional torus $\\bb T = [0,1)$. Here $ε$ is the temperature, $W_{t}$ a Brownian motion on $\\bb T$ and $\\mss a$, $\\mss b$ functions of class $C^{2}(\\bb T)$ satisfying further conditions. Denote by $\\mss P(\\bb T)$ the set of probability measures on $\\bb T$ equipped with the weak topology, and by $\\ms I_ε\\colon \\mss P(\\bb T)\\to [0,+\\infty)$ the level two large deviation rate functional of the diffusion $X_ε(\\cdot)$. We derive a full $Γ-$expansion of $\\ms I_ε$, as $ε\\to 0$, expressing it as \\begin{equation*} \\ms I_ε = \\frac{1}ε \\;\\ms J^{(-1)} \\; +\\; \\ms J^{(0)} \\;+\\; \\sum_{p=1}^{\\widehat{\\mf q}}\\frac{1}{θ^{(p)}_ε}\\;\\ms J^{(p)}\\,, \\end{equation*} where $\\ms J^{(-1)}$, $\\ms J^{(0)}$, $\\ms J^{(p)} \\colon \\mss P(\\bb T)\\to [0,+\\infty]$ represent rate functionals, independent of $ε$, and $θ^{(p)}_ε$ are the time-scales at which the Markov process $X_ε(\\cdot)$ exhibits a metastable behaviour.",
+      "authors": [
+        "Claudio Landim",
+        "Christian Maura"
+      ],
+      "published": "2026-06-16T12:32:52Z",
+      "updated": "2026-06-16T12:32:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17859v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17859v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17895v1",
+      "title": "Persistence diagrams of random triangular matrices over finite fields",
+      "abstract": "Let us consider a random infinite lower triangular matrix, where the entries on and below the diagonal are i.i.d. uniform random elements of a fixed finite field. We investigate the evolution of the span of the first $n$ rows of this matrix as $n$ grows. Many properties of this evolving subspace can be captured with the help of the verbose persistence diagram, which is a standard tool in stochastic topology and topological data analysis. We give an explicit formula for the distribution of the persistence diagram. We prove a law of large numbers for the distribution of lifetimes. We also describe the fluctuations of the persistent Betti numbers.",
+      "authors": [
+        "András Mészáros"
+      ],
+      "published": "2026-06-16T13:14:17Z",
+      "updated": "2026-06-16T13:14:17Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17895v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17895v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17922v1",
+      "title": "On Injectivity of Phase Retrieval",
+      "abstract": "In this short note, we prove that if $A \\in \\mathbb C^{N \\times M}$ with $N=4M-5$ has i.i.d.\\ standard complex Gaussian entries, then the probability that the phase retrieval map generated by $A$ is not injective is positive. This proves Part (1) of a conjecture of Cynthia Vinzant, which was later restated by Afonso S. Bandeira in \\cite{BDL+26}. The main result of this paper was obtained using generative AI, in particular the Rethlas system.",
+      "authors": [
+        "Zhangsong Li"
+      ],
+      "published": "2026-06-16T13:36:58Z",
+      "updated": "2026-06-16T13:36:58Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17922v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17922v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17968v1",
+      "title": "Diffuse Interface Energies with Microscopic Heterogeneities II: Rare Events",
+      "abstract": "We analyze Allen-Cahn functionals with stationary ergodic coefficients in the regime where the length scale $δ$ of the heterogeneities is much smaller (microscopic) than the interface width $ε$ (mesoscopic). In a companion paper, we show that if the ratio $ε^{-1} δ$ vanishes fast enough as $ε\\to 0$, then the functionals converge to an effective surface energy where the energy density is determined by homogenization effects originating at microscopic scales. Here we prove that if the ratio $ε^{-1} δ$ vanishes too slowly, the limit of the functional may actually be smaller than this homogenized energy. We refer to this as the rare events regime. In the case of the random checkerboard in dimension one, we use large deviations techniques to give a complete description of the rare events regime, showing that the limiting energy depends in a nontrivial way on the limit of $ε^{-1} δ| \\log ε|$. We further construct, in any dimension, examples of random media in which rare events become relevant at algebraic scales $δ\\approx ε^{1 + α}$ for an arbitrary $α> 0$, as well as almost periodic examples in which atypical configurations play the same role as rare events.",
+      "authors": [
+        "Peter S. Morfe",
+        "Christian Wagner"
+      ],
+      "published": "2026-06-16T14:21:29Z",
+      "updated": "2026-06-16T14:21:29Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17968v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17968v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.17992v1",
+      "title": "Asymptotic enumeration of unlabelled cubic planar graphs",
+      "abstract": "We determine the precise asymptotic number of unlabelled cubic planar graphs with $n$ vertices. Our approach blends generating series methods with computational bounds and probabilistic local large deviation theorems.",
+      "authors": [
+        "Benedikt Stufler"
+      ],
+      "published": "2026-06-16T14:42:39Z",
+      "updated": "2026-06-16T14:42:39Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.17992v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.17992v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18039v1",
+      "title": "Cutoff for asymmetric shelf shuffle",
+      "abstract": "A mechanical shuffler consists of $m$ shelves. A deck of $n$ cards, arranged in increasing order, is dealt from the bottom sequentially. Each card is assigned a shelf uniformly at random and placed on the top (bottom) of the existing pile with probability $p$ ($1-p$) independently. We refer to this as asymmetric shelf-shuffle. We find the law $ν_{n, m}^{(p)}$ of the permutation induced by the asymmetric shelf-shuffle and show that the pair consisting of the number of descents and the number of valleys is a sufficient statistic. This generalizes a result of Diaconis, Fulman, and Holmes (Ann. Appl. Prob., 2013) corresponding to the case $p=1/2$. For $p=1/2$, Chen and Ottolini (ECP, 2025) established the cutoff in the total variation distance near $\\lfloor n^{5/4}\\rfloor$. We establish the cutoff for the asymmetric shelf shuffle. Let $ν_n$ be the uniform measure on the set of all permutations $S_n$ of $\\{1, \\ldots, n\\}$. For a fixed $p\\neq 1/2$ and $c>0$, we show that \\[\\TV\\left(ν_{n, \\lfloor cn^{3/2}\\rfloor }^{(p)}, ν_n\\right)=1-2Φ\\left(-\\frac{|2p-1|}{4\\sqrt{3}c}\\right)+O_{c, p}(n^{-1/2})\\;.\\] We also establish the cutoff in the separation distance near $m\\approx n^{2}$ and in the relative entropy near $m=n^{3/2}$. In both cases, we also obtain the cutoff profile explicitly.",
+      "authors": [
+        "Raghavendra Tripathi"
+      ],
+      "published": "2026-06-16T15:15:49Z",
+      "updated": "2026-06-16T15:15:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18039v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18039v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18047v1",
+      "title": "Analysis of the asymmetric shelf shuffle",
+      "abstract": "In an asymmetric shelf shuffle, a deck of $n$ cards is dealt sequentially from the bottom and assigned one of the $m$ shelves uniformly at random. The card is placed at the top of the assigned shelf with probability $p$, and at the bottom of the assigned shelf with probability $(1-p)$. Analysis of the shelf shuffle has gained much attention recently, and the case $p=1/2$ was first treated by Diaconis--Fulman--Holmes [Ann. Appl. Prob. 23 (2013), no. 4, 1692--1720]. In this paper, we extend the analysis of the shelf shuffle to general $p\\in (0, 1)$. In particular, we study the distribution of cycles, cycle lengths, number of descents, number of valleys, number of inversions, and the RSK shape of a permutation obtained from an asymmetric shelf shuffle. Our results extend the analysis of Diaconis--Fulman--Holmes to arbitrary $p$. Furthermore, our analysis of the distribution of descents and inversions is new even for $p=1/2$.",
+      "authors": [
+        "Raghavendra Tripathi"
+      ],
+      "published": "2026-06-16T15:24:26Z",
+      "updated": "2026-06-16T15:24:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18047v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18047v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18162v1",
+      "title": "Periodicity, type $II_1$ factors and free Poisson laws in interacting Fock spaces",
+      "abstract": "We show that the von Neumann algebra generated by position operators in a 2-periodic interacting Fock space is a type $II_1$ factor. On the probabilistic side, we prove that the squared position operators have a Marchenko-Pastur distribution with respect to the vacuum state, yielding a natural realization of free Poisson laws within this framework.",
+      "authors": [
+        "Vitonofrio Crismale",
+        "Yun Gang Lu",
+        "Éric Ricard"
+      ],
+      "published": "2026-06-16T17:00:43Z",
+      "updated": "2026-06-16T17:00:43Z",
+      "primary_category": "math.OA",
+      "categories": [
+        "math.OA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18162v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18162v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18183v1",
+      "title": "A Diffusion Approximation for Temporal-Difference Learning with Linear Features under Markovian Noise",
+      "abstract": "Temporal difference (TD) learning with linear function approximation is a core method for policy evaluation. Its classical continuous-time description is an ordinary differential equation (ODE), which captures the asymptotic mean dynamics but neglects stochastic fluctuations determining the error floor. We introduce a stochastic differential equation (SDE) approximation for linear TD(0) under Markovian noise. The resulting model distinguishes the contraction dynamics governed by the projected Bellman operator from the influence of Markovian sampling. As a consequence, the model explains the constant-stepsize error floor through the interaction between Markovian long-run covariance and the contraction geometry of the projected Bellman operator.",
+      "authors": [
+        "M. Forzo",
+        "E. Monzio Compagnoni",
+        "A. Russo",
+        "A. Pacchiano"
+      ],
+      "published": "2026-06-16T17:16:52Z",
+      "updated": "2026-06-16T17:16:52Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18183v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18183v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18214v1",
+      "title": "Time and Killed Resolvents in Reflected Optimal Stopping with a Max Payoff",
+      "abstract": "We study infinite-horizon optimal stopping for normally reflected two-dimensional diffusions in the positive quadrant with max payoff \\(G(x_1,x_2)=x_1\\veeαx_2\\). The non-smooth payoff produces a singular stopping-gain measure on the kink set \\(Δ=\\{x_1=αx_2\\}\\). We prove $\\displaystyle Γ^Δ(dx) = -\\frac{n^\\top a(x)n}{2\\sqrt{1+α^2}}\\,σ_Δ(dx)$, with $n=(1,-α)$, so the diagonal component is non-positive and strictly negative under local ellipticity. This implies that every interior kink point lies in the continuation region. We further show that the correct value representation uses the resolvent killed at first entry into the stopping set, $\\displaystyle V=G-R_r^{\\mathcal C}Γ$, and give a closed-form reflected Brownian counter-example showing that the unrestricted reflected resolvent is generally wrong. A reflected Brownian benchmark and numerical experiments illustrate the local-time, resolvent-gap, and diagonal-avoidance mechanisms.",
+      "authors": [
+        "Louis Shuo Wang",
+        "Ye Liang"
+      ],
+      "published": "2026-06-16T17:44:18Z",
+      "updated": "2026-06-16T17:44:18Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18214v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18214v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18218v1",
+      "title": "Finite-Time Queue Peak Laws in Stochastic Networks: Logarithmic Scaling After Geometric Thresholds",
+      "abstract": "We study finite-horizon queue peaks in generalized switches, a standard stochastic-network model in which many queues share constrained service resources. Arrivals may be dependent, time-varying, and adapted to the past; the standing load condition is uniform interior slack, meaning the conditional mean arrival vector stays in a fixed contraction of the capacity region. We show that this slack reshapes the finite-time peak law for drift-minimizing scheduling policies such as MaxWeight. The square-root envelope that is sharp without slack persists only up to a geometry-dependent threshold; beyond that threshold, the running maximum grows only logarithmically with the horizon, both with high probability and in expectation. The mechanism is self-normalization: in the current queue direction, the projected fluctuation scale is normalized by the stabilizing drift scale. This removes capacity geometry from the logarithmic coefficient, while geometry remains in the threshold. Matching lower bounds show that both the logarithmic term and a geometric threshold are unavoidable. When finite-time state-space collapse is available, the threshold can be sharpened using local bottleneck geometry. For generalized input-queued switches, we obtain finite-time peak bounds with tight logarithmic coefficients. Simulations illustrate the two-phase envelope, local geometric refinements, and variance-sensitive improvements predicted by the theory.",
+      "authors": [
+        "Hao Liang",
+        "Cheng Tang",
+        "Yunzong Xu"
+      ],
+      "published": "2026-06-16T17:47:47Z",
+      "updated": "2026-06-16T17:47:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.LG",
+        "eess.SY",
+        "math.OC",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18218v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18218v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
