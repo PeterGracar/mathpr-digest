@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-17",
-  "total_submissions": 39,
-  "fetched": 39,
-  "generated_at": "2026-06-17T07:28:08Z",
+  "data_through": "2026-06-18",
+  "total_submissions": 56,
+  "fetched": 56,
+  "generated_at": "2026-06-18T07:08:51Z",
   "entries": [
     {
       "id": "2606.16715v1",
@@ -37,6 +37,33 @@
         "random geometric graph",
         "random graph",
         "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2606.18722v1",
+      "title": "Very large cliques in a scale-free random graph",
+      "abstract": "In this short article we consider a preferential attachment random graph model with edge steps, studied by Alves, Ribeiro and Sanchis. Starting with an initial graph $\\mathbb{G}_1$ formed by a vertex with a self-loop attached to it, the model evolves as follows. At every subsequent (discrete) time step, either with probability $p$ we add a vertex to the graph and connect it to exactly one of the older vertices selected with probability proportional to its degree, or with probability $1-p$ we add one edge between two existing vertices, both selected (independently) with probability proportional to their degrees. Let $ω(\\mathbb{G})$ be the clique number of a graph $\\mathbb{G}$, i.e.\\ the number of vertices in a largest complete subgraph of $\\mathbb{G}_{}$. Alves, Ribeiro and Sanchis showed that, for any given $\\varepsilon>0$, we have $ω(\\mathbb{G}_{2t})\\geq t^{\\frac{1-p}{2-p}(1-\\varepsilon)}$ with high probability (i.e.\\ with probability tending to $1$ as $t\\rightarrow \\infty$). Here we strengthen this bound by showing that, for any function $f:\\mathbb{N}\\mapsto \\mathbb{N}$ that satisfies $f(t)\\rightarrow \\infty$ as $t\\rightarrow \\infty$, with high probability \\[ω(\\mathbb{G}_{2t}) = Ω\\left(t^{\\frac{1-p}{2-p}}\\Big(\\log^{\\frac{1}{2-p}}(t)f(t)\\Big)^{-1}\\right).\\]",
+      "authors": [
+        "Carlo De Ambroggio",
+        "Umberto De Ambroggio"
+      ],
+      "published": "2026-06-17T06:01:02Z",
+      "updated": "2026-06-17T06:01:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18722v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18722v1",
+      "score": 13,
+      "matched_keywords": [
+        "preferential attachment",
+        "random graph",
+        "scale-free"
       ],
       "coauthors": [],
       "bucket": "high"
@@ -121,6 +148,29 @@
       "bucket": "high"
     },
     {
+      "id": "2606.19207v1",
+      "title": "Extrema of microscopically slowed-down Gaussian fields",
+      "abstract": "We introduce a family of Gaussian fields whose covariance structure exhibits an inhomogeneous, microscopic slowdown and it interpolates between a $\\log$ profile (for a certain interpolation parameter $α=0$) and a $\\log\\log$ profile (when the interpolation parameter is $α=1/2$). We consider both one dimensional such objects (which we call {\\it Branching Brownian Motions in a cooling environment}) as well as higher dimensional, spatial fields. We identify the correct centering of the maximum at time $T$ and prove tightness of the recentered maximum. While the exponent in the first-order growth varies linearly with $α$, giving a leading order of $T^{1-α}$, the second-order correction exhibits a phase transition at $α=1/3$.",
+      "authors": [
+        "Zuodi Xie"
+      ],
+      "published": "2026-06-17T15:45:08Z",
+      "updated": "2026-06-17T15:45:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19207v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19207v1",
+      "score": 7,
+      "matched_keywords": [
+        "inhomogeneous",
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
       "id": "2606.17771v1",
       "title": "Moment generating function of the tacnode process",
       "abstract": "The tacnode process is a universal determinantal point process arising in non-intersecting particle systems and random tiling models. In this paper, we study the generating function for the counting functions of the tacnode process on a union of $m$ intervals, $m\\in\\mathbb{N}^{+}$. Our first result provides an integral representation for the $m$-point generating function in terms of the Hamiltonian governing a system of $8m+4$ coupled differential equations. Combined with several differential identities for this Hamiltonian, the representation yields the large gap asymptotics, up to and including the constant term. As further applications, we obtain asymptotic formulae for the expectations, variances, and covariances of the counting functions, and establish a central limit theorem for their joint fluctuations. These results extend the previously known $1$-point theory for the tacnode process to the multi-interval setting with multiple discontinuities.",
@@ -162,6 +212,28 @@
       "score": 2,
       "matched_keywords": [
         "erdos"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19131v1",
+      "title": "Law of the Iterated Logarithm for $p$-Walks on $\\mathbb{Z}$",
+      "abstract": "The $p$-rotor walk on $\\mathbb{Z}$ is a self-interacting walk that interpolates between the simple random walk and the deterministic rotor walk. While the weak convergence of this model to a perturbed Brownian motion is known, its almost sure asymptotic boundaries have not been characterized. In this paper, we establish the exact Law of the Iterated Logarithm (LIL) for the $p$-rotor walk. Utilizing the decomposition of the walk into a martingale perturbed by its running extrema, we obtain first a functional Law of the Iterated Logarithm for the linearly interpolated paths of the $p$-walk. We then obtain the classical LIL constants by solving a calculus of variations problem over the perturbed Strassen set.",
+      "authors": [
+        "Robin Kaiser"
+      ],
+      "published": "2026-06-17T14:42:30Z",
+      "updated": "2026-06-17T14:42:30Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19131v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19131v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -633,6 +705,29 @@
       "bucket": "other"
     },
     {
+      "id": "2606.18301v1",
+      "title": "Denoising Distances in Metric Measure Spaces",
+      "abstract": "Recent work studied the problem of finding clusters and denoising pairwise distances from noisy distances of points sampled on a manifold. We study the same problems in more general metric measure spaces under \\lowerphiregularity{}. We give an algorithm that extracts large localized clusters around every sampled point and uses them to denoise distances to any fixed accuracy, with near-linear running time in the dense fixed-accuracy regime. We also show how to achieve much higher accuracy with a non-efficient algorithm. This suggests that unlike the Riemannian case, denoising to higher accuracy in more general metric spaces has a statistical-computational gap.",
+      "authors": [
+        "Han Huang",
+        "Pakawut Jiradilok",
+        "Elchanan Mossel"
+      ],
+      "published": "2026-06-16T06:19:42Z",
+      "updated": "2026-06-16T06:19:42Z",
+      "primary_category": "cs.CG",
+      "categories": [
+        "cs.CG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18301v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18301v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2606.17665v1",
       "title": "Non-asymptotic Tail Bounds for the Kostlan--Shub--Smale Field: Tensor PCA and Spherical $k$-Spin Complexity",
       "abstract": "This paper builds a hierarchy of explicit, non-asymptotic tail bounds for the supremum of the Kostlan--Shub--Smale (KSS) random field on the sphere, and applies it to two problems: Spiked Tensor PCA and the landscape of the spherical $k$-spin model. For Tensor PCA, we study the non-asymptotic statistical limits of estimating a rank-$R$ symmetric signal tensor of order~$k\\ge 3$ and dimension~$d\\ge 3$ from a single Gaussian observation at signal-to-noise ratio~$λ$, through the \\emph{profile maximum likelihood estimator}, the MLE restricted to normalized rank-$R$ tensors of coherence at least~$κ$. Our analysis uses a single reduction: a deterministic geometric inequality (the Tube Method) and a rank-reduction step bound the estimation error by the supremum of the canonical KSS field, which the Kac--Rice formula turns into a Gaussian integral against the expected absolute characteristic polynomial of a shifted Gaussian Orthogonal Ensemble, controlled in turn by the four explicit tail bounds of our hierarchy (three from a Mehta--Fyodorov representation, one from a Ben Arous--Dembo--Guionnet large deviation). The same reduction yields two results, each with explicit constants. For estimation, a finite-$(k,d)$ error bound recovers the asymptotically optimal rate~$\\sqrt{d\\log k}$ of Perry, Wein and Bandeira, with explicit dependence on the rank~$R$ and the coherence~$κ$. For the landscape, a two-sided non-asymptotic bracketing of the annealed complexity of the spherical $k$-spin Hamiltonian recovers the Auffinger--Ben Arous--Černý complexity function in the high-dimensional limit.",
@@ -896,6 +991,291 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.18218v1",
       "pdf_url": "https://arxiv.org/pdf/2606.18218v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18433v1",
+      "title": "On a class of reflected McKean-Vlasov Stochastic Differential Equations with jumps",
+      "abstract": "This paper investigates a class of reflected McKean-Vlasov Stochastic Differential Equations driven by both Brownian motion and a compensated Poisson random measure. We establish the existence and uniqueness of solutions and provide moments estimates for the state processes.",
+      "authors": [
+        "Mohammed Elhachemy"
+      ],
+      "published": "2026-06-16T19:27:25Z",
+      "updated": "2026-06-16T19:27:25Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18433v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18433v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18458v1",
+      "title": "Stable size-biasing and the positive scale-mixture order of generalized Gaussian laws",
+      "abstract": "Let $X_r\\sim N_r(0,1)$ be the centered unit-scale generalized Gaussian random variable with density proportional to $\\exp(-|x|^r/2)$. We prove that, for $p,q>0$, there exists a strictly positive random variable $V$, independent of $X_q$, such that $X_p\\stackrel{d}{=}VX_q$ if and only if $p\\le q$. Moreover, the law of $V$ is unique. For $p<q$, put $a=1/p$, $b=1/q$, and $α=b/a=p/q$. If $S_α$ is a positive $α$-stable random variable with Laplace transform $\\mathbb{E}\\exp(-uS_α)=\\exp(-u^α)$, set $W_0=S_α^{-b}$, let $W$ be the $W_0$-size-biased version of $W_0$, and define $V_{p,q}=2^{a-b}W$. Then $X_p\\stackrel{d}{=}V_{p,q}X_q$. For $p>q$, the required Mellin quotient, viewed as the candidate characteristic function of $\\log V$, is unbounded by Stirling's formula, and hence cannot be a characteristic function. The factor laws form a multiplicative cocycle, $V_{p,r}\\stackrel{d}{=}V_{p,q}V_{q,r}$, for $p\\le q\\le r$, where the factors on the right-hand side are independent copies. Thus the Mellin quotient isolated by Dytso, Bustin, Poor and Shamai is realized constructively throughout the $p<q$ branch. In particular, $Φ_{p,q}$ is positive definite exactly in the range $p\\le q$, and the inverse Fourier--Mellin candidate density in the remaining $p<q$ branch is a genuine nonnegative probability density. The known Gaussian-base and bounded-parameter product cases are recovered as parts of a single positive scale-mixture classification.",
+      "authors": [
+        "Domingos S. P. Salazar"
+      ],
+      "published": "2026-06-16T20:04:47Z",
+      "updated": "2026-06-16T20:04:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18458v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18458v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18654v1",
+      "title": "Rigidity of infinite exchangeable sequences with Gaussian marginals",
+      "abstract": "We study infinite exchangeable sequences with Gaussian one-dimensional marginals. We formulate the conjecture that joint Gaussianity of a single pair of coordinates forces the entire sequence to be a Gaussian process. Although this conjecture remains open, we prove that joint Gaussianity of the first four coordinates is sufficient. We also establish the corresponding two-point criterion under the additional assumption that the directing measure is almost surely infinitely divisible.",
+      "authors": [
+        "Maximillian Newman"
+      ],
+      "published": "2026-06-17T03:43:07Z",
+      "updated": "2026-06-17T03:43:07Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18654v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18654v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18866v1",
+      "title": "Cramér-Type Moderate Deviations for Engel's Series via a Martingale Approach",
+      "abstract": "Let $x$ be uniformly distributed on $(0,1)$, and let $(q_n)_{n\\geq1}$ be the digits of its Engel series expansion. We establish a Cramér-type moderate deviation expansion for $(\\log q_n-n)/\\sqrt n$. The proof is based on a martingale decomposition and asymptotic results for martingales. As consequences, we obtain a moderate deviation principle over the full range of scales between the central limit theorem and the law of large numbers, without the additional lower rate restriction required in several earlier works. We also derive a uniform Berry--Esseen bound of order $(\\log n)/\\sqrt n$.",
+      "authors": [
+        "Shaochen Wang",
+        "Guangyu Yang"
+      ],
+      "published": "2026-06-17T09:45:23Z",
+      "updated": "2026-06-17T09:45:23Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18866v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18866v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18877v1",
+      "title": "Ergodic Properties of Non-Linear Density-Dependent Perturbations of the Ornstein-Uhlenbeck Process",
+      "abstract": "The present paper considers McKean-Vlasov SDEs with density-dependent spatially unbounded drift, which may be viewed as a non-linear density-dependent perturbation of the Ornstein-Uhlenbeck process. We develop a comprehensive theoretical framework for this class of equations. First, we establish strong well-posedness and derive optimal Gaussian pointwise bounds for both the solution density and its gradient. Then we derive an explicit expression for the stationary density and show that it satisfies logarithmic Sobolev and Poincaré inequalities. Finally, we prove exponential convergence to equilibrium in the \\(χ^2\\)-metric.",
+      "authors": [
+        "Denis Belomestny",
+        "Ekaterina Morozova"
+      ],
+      "published": "2026-06-17T09:55:02Z",
+      "updated": "2026-06-17T09:55:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18877v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18877v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.18919v1",
+      "title": "Probabilistic representation and classical solutions of wave equations with complex polynomial nonlinearities",
+      "abstract": "We review the probabilistic representation of solutions of wave equations with polynomial nonlinearities in spatial dimensions d=1,2,3 using stochastic branching processes. Under regularity assumptions on the initial data, we derive conditions ensuring the integrability of the corresponding Monte Carlo estimator, and the existence and smoothness of mild and classical solutions. We also present numerical results and comparisons with grid-based algorithms for the solution of nonlinear wave equations.",
+      "authors": [
+        "Joshua J. Y. Chan",
+        "Nicolas Privault"
+      ],
+      "published": "2026-06-17T10:48:38Z",
+      "updated": "2026-06-17T10:48:38Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.18919v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.18919v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19060v1",
+      "title": "Delayed blow-up by transport noise for the 3D Navier-Stokes equation with Navier-slip boundary conditions",
+      "abstract": "We study the vorticity formulation of the 3D Navier-Stokes equation driven by transport noise in a periodic channel with Navier-slip boundary conditions. We consider both non-degenerate transport noise and degenerate tangential transport noise. For any prescribed $T>0$ and $ε>0$, we prove that, by choosing the noise intensity sufficiently large and concentrating the noise on sufficiently high modes, the solution exists up to $T$ with probability at least $1-ε$. A main contribution of this work is to identify and analyze the interaction between enhanced dissipation induced by transport noise and physical boundary effects. The no-flux condition breaks the isotropy of the noise and changes the scaling limit of the Itô-Stratonovich corrector. In the non-degenerate case, a boundary feedback term appears in the limiting effective operator; in the degenerate case, the limiting operator is a nonlocal anisotropic tangential dissipation. The proof is based on a combination of a boundary correction operator, a Meyers-type estimate, a scaling-limit analysis of the Itô-Stratonovich corrector, and resolvent estimates for the deterministic limiting equations.",
+      "authors": [
+        "Meng Zhao"
+      ],
+      "published": "2026-06-17T13:30:33Z",
+      "updated": "2026-06-17T13:30:33Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19060v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19060v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19075v1",
+      "title": "Random Schrödinger operators on manifolds and abstract bounds for multiplier-type operators",
+      "abstract": "We study random Schrödinger operators on closed Riemannian manifolds with Anderson-type potentials. We prove high-probability spectral inclusion bounds showing that eigenvalues remain close to those of the Laplacian, with deviations controlled by a norm of the potential coefficients. Compared with deterministic bounds, this yields a square-root cancellation gain. The proof is based on a general principle showing that randomisation improves operator norm bounds for multiplier-type operators, which we formulate in both discrete and continuous settings.",
+      "authors": [
+        "Jean-Claude Cuenin",
+        "Konstantin Merz",
+        "Eduard Stefanescu"
+      ],
+      "published": "2026-06-17T13:45:49Z",
+      "updated": "2026-06-17T13:45:49Z",
+      "primary_category": "math.SP",
+      "categories": [
+        "math.SP",
+        "math.AP",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19075v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19075v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19115v1",
+      "title": "Finite free perpetuities",
+      "abstract": "We introduce and study finite free perpetuities, defined as monic polynomial solutions of degree $n$ to the affine fixed-point equation \\[ p(z) = \\mathbb{E}\\!\\left[ A^{n}\\,p\\!\\left(\\frac{z-B}{A}\\right)\\mathbf{1}_{\\{A\\neq0\\}} \\right] + \\mathbb{E}\\!\\left[ (z-B)^n\\mathbf{1}_{\\{A=0\\}} \\right], \\] where $A$ and $B$ are complex-valued random variables with finite moments up to order $n$. Equivalently, if $p(z)=\\mathbb{E}[(z-X)^n]$, then $p$ encodes a truncated moment version of the classical perpetuity equation $X\\stackrel{d}{=}AX+B$ with $X$ and $(A,B)$ independent. This places finite free perpetuities between classical perpetuities and free-probabilistic fixed-point laws. We prove existence and uniqueness under weak conditions, and we identify a broad class of admissible pairs $(A,B)$ for which the resulting polynomial has only real, nonnegative zeros. Our approach uses finite free additive and multiplicative convolutions together with a probabilistic representation via the $U$-transform. As a motivating example, we exhibit an explicit family of finite free perpetuities expressed in terms of Jacobi polynomials and show that their empirical root distributions converge to a free-beta-prime law. More generally, for admissible sequences of parameters, we prove weak convergence of the empirical root distributions of finite free perpetuities to the law of a free perpetuity characterized by the corresponding free fixed-point equation. This yields a finite-degree polynomial model approximating free perpetuities and clarifies the connection between classical affine recursions, finite free convolutions, and free probability.",
+      "authors": [
+        "Julia Le Bihan",
+        "Bartosz Kołodziejek"
+      ],
+      "published": "2026-06-17T14:28:50Z",
+      "updated": "2026-06-17T14:28:50Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19115v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19115v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19279v1",
+      "title": "NeSyCat Torch: A Differentiable Tensor Implementation of Categorical Semantics for Neurosymbolic Learning",
+      "abstract": "Neurosymbolic semantics is fragmented: classical, fuzzy, probabilistic and neural systems each define truth by their own inductive rules. NeSyCat, extending ULLER, subsumes them under a single inductive definition of truth, parametric in a strong monad and an aggregation structure on truth-values. NeSyCat has so far lacked an account of predicates and functions learned by neural networks. We provide NeSyCat Torch as the missing link and interpret computational symbols via neural networks, implementing the framework in probabilistic programming and tensor-based backends. We use the distribution monad for reference semantics and metric evaluation, and complement it by a monad for numerically stable, differentiable training: the lazy log-tensor monad over the log-semiring. For efficient training in batches, we furthermore employ a batch monad. The axioms are the source code: written once in monad-based do-notation, monadic bind performs marginalisation, lazily pruning unneeded branches. On MNIST addition, our HaskTorch, JAX, and PyTorch implementations outperform LTN and DeepProbLog in speed and accuracy, while achieving nearly the accuracy of DeepStochLog. However, unlike DeepStochLog, we stay in a uniform framework that applies to many first-order NeSy approaches. Namely, the construction is parametric in the monad; instantiating it with, e.g., the Giry monad extends the approach to continuous probability (working out a neural representation here is left for future work).",
+      "authors": [
+        "Daniel Romero Schellhorn",
+        "Till Mossakowski",
+        "Björn Gehrke"
+      ],
+      "published": "2026-06-17T16:56:31Z",
+      "updated": "2026-06-17T16:56:31Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.LO",
+        "math.CT",
+        "math.LO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19279v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19279v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19298v1",
+      "title": "Secretary Problem Thresholds and Convergents of $1/e$",
+      "abstract": "We prove that if $p/q$ is a continued fraction convergent of $1/e$ with $q\\geq 3$, then, for the secretary problem with $q$ applicants, the optimal number of initially rejected applicants is $p$.",
+      "authors": [
+        "Raúl Sánchez Galán"
+      ],
+      "published": "2026-06-17T17:23:31Z",
+      "updated": "2026-06-17T17:23:31Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19298v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19298v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19306v1",
+      "title": "On two overlooked stick-breaking constructions of the normalized inverse Gaussian process",
+      "abstract": "We shed light on two alternative stick-breaking constructions of the normalized inverse Gaussian (NIG) random discrete distribution which appear to have been overlooked so far in the Bayesian nonparametric setting. The first is derived from a result in Aldous and Pitman (1998) for the conditional Brownian excursion partition, mixing over the local time at zero up to time one. The second arises as a particular case of a result in James (2013) for priors obtained by a random spatial and temporal change of the normalized generalized Gamma subordinator. Both constructions are in terms of straightforward transformations of standard random variables and can be easily generalized to provide the stick-breaking construction of any element, respectively, in a) the family of mixed Poisson-Kingman models driven by the $1/2$ stable Lévy measure and b) the family of Poisson-Gamma processes driven by the Inverse Gaussian subordinator.",
+      "authors": [
+        "Annalisa Cerquetti"
+      ],
+      "published": "2026-06-17T17:29:18Z",
+      "updated": "2026-06-17T17:29:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19306v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19306v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19313v1",
+      "title": "Stability of Khintchine-type inequalities via log-monotonicity",
+      "abstract": "We investigate Khintchine-type inequalities for the weighted sums $S=\\sum_ka_kX_k$ of independent copies of a symmetric random variable $X$. We show how log-monotonicity of the sequence $r_k(X)=k! \\mathbb{E}[X^{2k}]/(2k)!$ implies sharp comparisons between the $L_p$ and $L_2$ norms of $S$ for every even integer $p\\geq 2$, extending classic Khintchine-type inequalities and yielding new results in the log-convex setting. We also investigate the stability of our inequalities. Our first stability inequality sharpens the classic inequality by a deviation of the coefficient vector from the coordinate extremizers, while the second quantifies deviation from the Gaussian limit. Our results recover recent stability inequalities for random signs and apply to a broad class of distributions, including type-$\\mathscr{L}$ random variables, ultra sub-Gaussian random variables and Gaussian mixtures.",
+      "authors": [
+        "Ángel Chávez",
+        "Sam Sheng"
+      ],
+      "published": "2026-06-17T17:34:52Z",
+      "updated": "2026-06-17T17:34:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19313v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19313v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
