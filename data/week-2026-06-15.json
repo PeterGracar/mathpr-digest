@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-18",
-  "total_submissions": 56,
-  "fetched": 56,
-  "generated_at": "2026-06-18T07:08:51Z",
+  "data_through": "2026-06-19",
+  "total_submissions": 67,
+  "fetched": 67,
+  "generated_at": "2026-06-19T07:29:43Z",
   "entries": [
     {
       "id": "2606.16715v1",
@@ -120,6 +120,32 @@
       "bucket": "high"
     },
     {
+      "id": "2606.19583v1",
+      "title": "Power-law hypothesis and (un)fairness of PageRank on undirected multi-type PAMs",
+      "abstract": "The preferential attachment model (PAM) describes the sequential growth of a network based on the \"rich-get-richer\" principle. Several versions of it have become established for modeling, e.g., citation networks, capturing a power-law degree distribution. Directed versions of the preferential attachment model where the edges are directed from the new to the old vertices have been the subject of extensive research. They have been shown to exhibit remarkable properties such as heavier tails for the limiting graph-normalized PageRank than for the in-degrees. By contrast, for the undirected version, we recently showed that PageRank has similar tails as the degree. In the present paper, we discuss the PageRank asymptotics for a multi-type version of the undirected PAM (here vertices have different colors), complementing previous results of Antunes, Bhamidi, Banerjee and Pipiras on the asymptotics of PageRank on similar directed multi-type or colored PAMs. Our studies are motivated by the aim to go beyond the rigid rule of edge orientation in directed preferential attachment models. As the main result, for the case of a finite set of colors, we show that the power-law hypothesis for PageRank is fulfilled also for the colored undirected PAM, where, by contrast to the directed case, the power-law exponent is color-dependent for some choices of the initial color distribution and the attractiveness function. For the specific case of a two-type model, we discuss implications of our results on fairness in sampling underrepresented nodes from the network.",
+      "authors": [
+        "Christian Borgs",
+        "Florian Henning",
+        "Remco van der Hofstad",
+        "Nelly Litvak"
+      ],
+      "published": "2026-06-17T20:38:08Z",
+      "updated": "2026-06-17T20:38:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19583v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19583v1",
+      "score": 8,
+      "matched_keywords": [
+        "degree distribution",
+        "preferential attachment"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
       "id": "2606.17604v1",
       "title": "Spectral recovery of a planted triangle-dense subgraph",
       "abstract": "Given a simple graph on $n$ vertices and a parameter $k$, the triangle-densest-$k$-subgraph problem is known to be computationally hard in the worst case. To circumvent the computational hardness, we study an average-case model where a triangle-dense subgraph on $k$ vertices is planted in an Erdős-Rényi random graph on $n$ vertices. For the recovery of the planted subgraph, we propose a simple spectral algorithm and a semidefinite program, both of which use a graph matrix whose entries are local signed triangle counts. Theoretical guarantees for these algorithms are established through spectral analysis of the graph matrix. Finally, we provide evidence showing a statistical-to-computational gap analogous to that for the planted clique problem. The computational threshold in terms of the subgraph size $k$ is at least $\\sqrt{n}$ in the framework of low-degree polynomial algorithms, while the information-theoretic threshold is at most logarithmic in $n$.",
@@ -189,6 +215,34 @@
       "score": 3,
       "matched_keywords": [
         "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.20356v1",
+      "title": "Robust $Q$-learning for mean-field control under Wasserstein uncertainty in common noise",
+      "abstract": "In this article, we present a robust $Q$-learning algorithm for discrete-time mean-field control problems under Wasserstein uncertainty in the common noise law. The algorithm combines a quantization-and-projection scheme with a Wasserstein dual reformulation on the common-noise space. We establish its convergence together with finite-time iteration bounds for both synchronous and asynchronous learning schemes. Numerical experiments on systemic risk and epidemic models compare the asynchronous implementation with an idealized Bellman iteration, illustrate the robustness-performance tradeoff under common-noise misspecification, and report the observed convergence behavior of the asynchronous $Q$-learning algorithm.",
+      "authors": [
+        "Mathieu Laurière",
+        "Ariel Neufeld",
+        "Kyunghyun Park"
+      ],
+      "published": "2026-06-18T15:20:00Z",
+      "updated": "2026-06-18T15:20:00Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.AI",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.20356v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20356v1",
+      "score": 3,
+      "matched_keywords": [
+        "epidemic"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -1145,7 +1199,7 @@
       "bucket": "other"
     },
     {
-      "id": "2606.19075v1",
+      "id": "2606.19075v2",
       "title": "Random Schrödinger operators on manifolds and abstract bounds for multiplier-type operators",
       "abstract": "We study random Schrödinger operators on closed Riemannian manifolds with Anderson-type potentials. We prove high-probability spectral inclusion bounds showing that eigenvalues remain close to those of the Laplacian, with deviations controlled by a norm of the potential coefficients. Compared with deterministic bounds, this yields a square-root cancellation gain. The proof is based on a general principle showing that randomisation improves operator norm bounds for multiplier-type operators, which we formulate in both discrete and continuous settings.",
       "authors": [
@@ -1154,7 +1208,7 @@
         "Eduard Stefanescu"
       ],
       "published": "2026-06-17T13:45:49Z",
-      "updated": "2026-06-17T13:45:49Z",
+      "updated": "2026-06-18T10:37:56Z",
       "primary_category": "math.SP",
       "categories": [
         "math.SP",
@@ -1162,8 +1216,8 @@
         "math.FA",
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2606.19075v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.19075v1",
+      "abs_url": "https://arxiv.org/abs/2606.19075v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.19075v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -1276,6 +1330,207 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.19313v1",
       "pdf_url": "https://arxiv.org/pdf/2606.19313v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19507v1",
+      "title": "The t-Split Two-Periodic Aztec Diamond Model",
+      "abstract": "In this work we consider an Aztec diamond model split into two unequal regions which are asymptotically fixed in size. Each region is weighted with a distinct two-periodic weighting. We refer to this model as the t-split two-periodic Aztec diamond, to signify its difference from the previous work title Split Two-Periodic Aztec Diamond, where the model was split into two equal regions. We derive an integral expression for the correlation kernel of the model and give a partial description of the scaling limit behavior, along with a conjecture for the remainder. We refer to the larger and smaller sides of the model as the dominant and non-dominant sides, and to the location of the weight change as the interface. The dominant side exhibits a limit shape that depends only on its own weighting and is identical to that of the two-periodic Aztec diamond, while the non-dominant side appears to have a novel limit shape that depends on both weightings and the location of the interface. Lastly, we consider the complete limit shape in the case where the dominant side two-periodic parameter goes to 0.",
+      "authors": [
+        "Meredith Shea"
+      ],
+      "published": "2026-06-17T18:46:48Z",
+      "updated": "2026-06-17T18:46:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19507v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19507v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19663v1",
+      "title": "Counterexample to a conjecture on the pairwise independent correlation gap using AI",
+      "abstract": "Aided by the AI tool GPT5.5 Pro, we provide a counterexample to a conjecture made by Ramachandra and Natarajan (2025) [Pairwise independent correlation gap, Operations Research Letters, 107255, 6040].",
+      "authors": [
+        "Arjun Ramachandra",
+        "Karthik Natarajan"
+      ],
+      "published": "2026-06-18T00:18:43Z",
+      "updated": "2026-06-18T00:18:43Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19663v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19663v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19763v1",
+      "title": "Optimal Sparsification of Gaussian Processes",
+      "abstract": "We prove an optimal dimension-free sparsification theorem for suprema of centered Gaussian processes. Given a bounded set $T\\subseteq\\mathbb{R}^n$, we show that the supremum of the canonical Gaussian process on $T$ can be $L^2$-approximated by the supremum of a shifted subprocess indexed by only $\\exp(O(1/\\varepsilon^2))$ points, with error at most $\\varepsilon$ times the Gaussian width of $T$. In particular, the size of the approximating process is independent of both the ambient dimension and the cardinality of the original index set. This improves a recent sparsification theorem of De, Nadimpalli, O'Donnell, and Servedio (2026) by an exponential factor, and we show that the dependence on $\\varepsilon$ is tight up to constants in the exponent. As consequences, we obtain an exponentially improved junta theorem for norms over Gaussian space and sharpen results on learning, property testing, and polyhedral approximation of convex sets under the Gaussian measure. The proof is based on an interpolation argument that combines Sudakov's minoration with the Brascamp--Lieb inequality.",
+      "authors": [
+        "Shivam Nadimpalli"
+      ],
+      "published": "2026-06-18T03:52:58Z",
+      "updated": "2026-06-18T03:52:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19763v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19763v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19859v1",
+      "title": "Doeblin Curves",
+      "abstract": "Recent research on Doeblin coefficients has shed light on their usefulness as a multi-way generalization of the Dobrushin contraction coefficient for TV distance, in a separate vein from their classic role in the theory of Markov chain ergodicity. However, strong conditions, such as being bounded away from 0, are typically necessary for Doeblin coefficients to establish the existence of information contraction. Building on recently formulated concepts of nonlinear information contraction, we aim to propose a finer-grained Doeblin-based characterization of multi-way contraction behavior which yields non-vacuous contraction guarantees even for channels whose Doeblin coefficient is 0. To this end, we introduce the notion of a Doeblin curve -- a nonlinear function which quantifies the contraction behavior of a Markov kernel on collections of input distributions at specific levels of divergence and power. Through the course of our analysis, we develop a new variational characterization of Doeblin coefficients, present several properties of Doeblin curves, define several versions of power-constrained Doeblin curves, and derive upper and lower bounds using our aforementioned variational characterization. We then utilize these results in diverse areas, including generalization bounds for noisy iterative optimization, error bounds for reliable computation with noisy circuits, and differential privacy guarantees for online iterative algorithms. In particular, we extend results in these areas to broader domains or group settings, leveraging Doeblin curves to reveal finer-grained contraction phenomena than Doeblin coefficients.",
+      "authors": [
+        "Dongmin Lee",
+        "William Lu",
+        "Anuran Makur",
+        "Japneet Singh"
+      ],
+      "published": "2026-06-18T07:11:43Z",
+      "updated": "2026-06-18T07:11:43Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19859v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19859v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19909v1",
+      "title": "Establishing an $Ω(\\sqrt{d})$ complexity lower bound for PDMP samplers and how to break it: a sub-$\\sqrt{d}$ algorithm for Gaussian-tailed targets",
+      "abstract": "Despite the theoretical appeal of their non-reversibility, to date, no Piecewise Deterministic Markov Process (PDMP) samplers have been developed that scale better than $\\mathcal{O}(\\sqrt{d})$ in computational complexity with respect to the target dimension $d$. We prove that this is a fundamental limitation by establishing an $Ω(\\sqrt{d})$ lower bound on the algorithmic complexity of PDMP samplers in a standard setup. By relaxing the assumption that the target density must remain invariant at all continuous times, we then demonstrate how to bypass this barrier. Specifically, we introduce a novel PDMP sampling scheme and show that it achieves an empirical complexity of $\\mathcal{O}(d^α)$, where $α\\in [0.2, 0.3]$ for Gaussian-tailed targets. In addition, this PDMP scheme is locally adaptive in both trajectory length and distance between velocity updates.",
+      "authors": [
+        "Augustin Chevallier"
+      ],
+      "published": "2026-06-18T08:04:12Z",
+      "updated": "2026-06-18T08:04:12Z",
+      "primary_category": "stat.CO",
+      "categories": [
+        "stat.CO",
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19909v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19909v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.19925v1",
+      "title": "Asymptotic properties for fully coupled delayed forward-backward stochastic differential equations",
+      "abstract": "We investigate the asymptotic behavior of solutions to a class of fully coupled forward-backward stochastic differential equations with time-delayed generators. Such systems arise naturally in stochastic models with memory effects and constitute a significant extension of the classical fully coupled FBSDE framework. The presence of delay introduces additional analytical difficulties due to the dependence of the coefficients on the past trajectories of the solution processes and the resulting non-Markovian structure. Under suitable assumptions on the coefficients, we study the asymptotic properties of a perturbed delayed FBSDE driven by a small noise parameter. We first establish the convergence in distribution of the associated solution processes as the perturbation parameter tends to zero. We then prove almost sure convergence towards the solution of the corresponding deterministic limiting system. As a consequence of these asymptotic results, we derive a large deviation principle for the solution processes. Our results extend the asymptotic analysis of Cruzeiro, Gomes and Zhang (2014) from the classical fully coupled FBSDE setting to the delayed framework, and complement existing works on weakly coupled delayed forward-backward systems. They provide, to the best of our knowledge, the first large deviation principle for fully coupled forward-backward stochastic differential equations with delayed generators.",
+      "authors": [
+        "Auguste Aman",
+        "Clément Manga"
+      ],
+      "published": "2026-06-18T08:24:51Z",
+      "updated": "2026-06-18T08:24:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.19925v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.19925v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.20062v1",
+      "title": "Optimal Coarse Correlated Equilibria in Mean Field Games: Linear Programming and No-Regret Learning",
+      "abstract": "We introduce optimal coarse correlated equilibria for continuous-time mean field games. A coarse correlated equilibrium is a randomized recommendation scheme from which no player can gain by ignoring the recommendation and switching to an alternative strategy. The problem is as follows: a moderator selects, among all mean-field coarse correlated equilibria, one that optimizes a prescribed performance criterion, which may differ from the representative player's objective. After formulating the problem, we develop a linear programming (LP) formulation, prove the existence of optimal LP coarse correlated equilibria, and relate the LP characterization to the original probabilistic setting. Building on this characterization, we design a no-regret primal-dual algorithm, based on an equivalent Lagrangian formulation of the external-regret constraint, for learning such equilibria. We provide explicit convergence rates for the learning algorithm, and numerical examples illustrate the method.",
+      "authors": [
+        "Luciano Campi",
+        "Federico Cannerozzi",
+        "Ioannis Tzouanas"
+      ],
+      "published": "2026-06-18T10:35:01Z",
+      "updated": "2026-06-18T10:35:01Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.20062v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20062v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.20169v1",
+      "title": "Theory of uncertain probability: can we derive the probability density function of uncertain random experiments with continuously changing conditions?",
+      "abstract": "This paper aims to explore the formation mechanism of probability distribution in situations where the differences among random experiments are distinguishable, and these differences continue to evolve along with the dynamic changes in conditions and their mechanisms of action. To this end, we are motivated to devise a new theoretical system -- theory of uncertain probability (TUP) with Kolmogorov's system and nonlinear theories as special cases. TUP develops a novel model that integrates probability and uncertainty as well as the known and unknown to more accurately depict numerous typical random phenomena under more realistic assumptions, and thus provides appropriate tools for greater variety of real needs. It also allows for pioneering interpretation of the causal mechanisms underlying many important distributional characteristics and incorporation of pathwise property to distribution model.",
+      "authors": [
+        "Xiaolin Gong"
+      ],
+      "published": "2026-06-18T12:36:21Z",
+      "updated": "2026-06-18T12:36:21Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.20169v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20169v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.20289v1",
+      "title": "Dimension-free bounds for {R}iesz transforms on the {H}amming cube via a {B}ellman function",
+      "abstract": "We give a Bellman-function proof of the dimension-free estimate \\[ \\Big\\| \\vec{R} f \\Big\\|_{L^p(Ω;\\,\\ell^2)} \\lesssim (p-1) \\,\\|f\\|_{L^p(Ω)}, \\qquad 2\\le p<\\infty, \\] for the vector of Riesz transforms associated with the Walsh number operator on the Hamming cube $Ω=\\{-1,1\\}^n$, as well as for locally compact abelian groups, in particular $Ω=\\mathbb{Z}^n$. The argument is based on a Poisson semigroup representation, symmetrized estimates along edges of $Ω$, and a two-point inequality. This is the first non noncommutative proof of this result, after the seminal papers of Lust-Piquard and later Junge-Mei-Parcet. According to an example of Lamberton, for $1<p<2$ such a dimension-free bound is known to be false.",
+      "authors": [
+        "Komla Domelevo",
+        "Paata Ivanisvili",
+        "Stefanie Petermichl",
+        "Alexander Volberg"
+      ],
+      "published": "2026-06-18T14:30:49Z",
+      "updated": "2026-06-18T14:30:49Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.20289v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.20289v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
