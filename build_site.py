@@ -50,6 +50,11 @@ def build(weeks=None):
         weeks = load_all_weeks()
     # newest first
     weeks = sorted(weeks, key=lambda w: w["monday"], reverse=True)
+    # Only surface weeks that actually have content. A brand-new week opens empty
+    # — arXiv announces a week's first submissions ~a day after it starts (its
+    # Monday papers land in the next run) — so it shouldn't appear in the UI (nav,
+    # index, or a lazy data file) until it has at least one entry.
+    weeks = [w for w in weeks if w.get("entries")]
     site_data = os.path.join(SITE_DIR, "data")
     os.makedirs(site_data, exist_ok=True)
 
