@@ -6,9 +6,456 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-22",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-06-22T20:51:45Z",
-  "entries": []
+  "data_through": "2026-06-23",
+  "total_submissions": 20,
+  "fetched": 20,
+  "generated_at": "2026-06-23T06:19:53Z",
+  "entries": [
+    {
+      "id": "2606.22967v1",
+      "title": "Spatial Coagulation Systems with Mercer Kernels: Replicator Dynamics and Gelation",
+      "abstract": "We study a spatial version of the Smoluchowski coagulation equation in which particles carry both an integer mass and a spatial location, and coagulate according to a mass-space product kernel. After coagulation, the resulting particle inherits the sum of the parent masses and a single spatial location. We provide a recursive formula for the solution and show that, while the first local mass moments are conserved up to gelation time at each location, the second local mass moments evolve according to a closed system of differential equations. When the spatial part of the kernel is of Mercer type, we further show that this system reduces to a replicator equation under a time rescaling and normalisation. We then use the fact that the replicator equation admits monotone functionals to quantify how spatial heterogeneity influences the rate of gelation and derive bounds on the gelation time. We also discuss the implications of these results for several important classes of Mercer kernels, including radial, diffusion, and translation-invariant kernels.",
+      "authors": [
+        "Ivan Kryven",
+        "Elena Magnanini"
+      ],
+      "published": "2026-06-22T07:46:12Z",
+      "updated": "2026-06-22T07:46:12Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.22967v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22967v1",
+      "score": 4,
+      "matched_keywords": [
+        "gelation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.22964v1",
+      "title": "Signature McKean-Vlasov stochastic differential equations",
+      "abstract": "McKean-Vlasov-type stochastic differential equations (SDEs) are characterized by coefficients depending on both the state and the law of the solution. In this work, we focus on a class of such equations where the coefficients depend on a linear combination of the expected signature of the geometric $p$-rough path lift of its solution, with $p\\in(2,3)$. After establishing the strong existence and uniqueness of a solution, we prove how such an equation can approximate a general class of path-dependent McKean-Vlasov SDEs. Finally, we consider the associated particle system and propagation of chaos is established.",
+      "authors": [
+        "Fred Espen Benth",
+        "Salvador Ortiz-Latorre",
+        "Leonardo Tarquini"
+      ],
+      "published": "2026-06-22T07:44:53Z",
+      "updated": "2026-06-22T07:44:53Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.22964v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22964v1",
+      "score": 3,
+      "matched_keywords": [
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.23553v1",
+      "title": "Skewness tunes the small-drift record rate of random walks and Lévy flights",
+      "abstract": "A random walk with small positive drift $μ$ sets new records at a rate $λ(μ)$ that vanishes as $μ\\to 0$. For centered steps attracted to a stable law $Y$ with index $1 < α\\leq 2$ and positivity parameter $ρ= P(Y>0)$, we find $λ(μ) \\sim Kμ^{(1-ρ)/ν}$, $ν=1-1/α$, as $μ\\to 0$. The result is exact for Gaussian and strictly stable steps, and extends at the leading-power level to their domains of attraction. The exponent is set by the asymmetry only through $ρ$, sweeping the interval $[1,\\,1/(α-1)]$ as the skewness varies. It recovers the Gaussian linear law with slope $\\sqrt{2}$ and, for symmetric heavy tails, the power $μ^{α/2(α-1)}$; beyond the stable tail ratio, distributional details enter through the prefactor $K$, which is explicit for strictly stable steps. The result follows directly from one Mellin transform of the harmonic sum in the Spitzer-Baxter identity, which factorizes into a kernel transform and a Riemann $ζ$ factor whose poles deliver at once the leading law, its prefactor, and a correction ladder, unifying diffusive, heavy-tailed, and skewed walks. The same transform also yields the expected maximum, recovering Kingman's heavy-traffic law for queues and Siegmund's corrected-diffusion constant as adjacent poles.",
+      "authors": [
+        "José Ricardo G. Mendonça"
+      ],
+      "published": "2026-06-22T16:26:06Z",
+      "updated": "2026-06-22T16:26:06Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23553v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23553v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23558v1",
+      "title": "Regime-Switching Volterra Operators: Modal Stability and Quenched Amplification",
+      "abstract": "We develop an operator-theoretic framework for finite-dimensional, regime-dependent Volterra equations with completely monotone memory kernels, dissipative network coupling, and Hawkes-type self-excitation. For each fixed regime we construct the associated Volterra resolvent family and prove global well-posedness, continuity across regime switches, and explicit a priori bounds. The main stability result is sharp in the commuting case: after simultaneous diagonalization of the network Laplacian and the excitation operator, each mode obeys a scalar characteristic equation, and global asymptotic stability holds exactly when every modal branching ratio lies below the intensity damping threshold. We also give a norm-based sufficient condition for noncommuting operators and a Perron--Frobenius spectral criterion for nonnegative intensity blocks, showing when norm estimates are conservative. Beyond mean stability, we prove a pathwise finite-range power law for burst amplitudes generated by residence in a Hurwitz but nonnormal regime: under a cone-alignment event, the survival exponent is the ratio of the regime exit rate to a cone-corrected finite-time growth rate bounded above by the logarithmic norm of a fixed Markovian realization in the chosen Euclidean metric. A complementary idealized-feedback result shows how a logarithmic-norm contraction caps the amplification band. Finally, we derive the deterministic intensity block as a mean-field limit of a relaxing long-memory Hawkes system with regimes. Numerical experiments on modal equations, a small-world network, and a switched nonnormal ODE validate the sharp threshold and the finite-range amplification mechanism without using the closed-form tail formula as input.",
+      "authors": [
+        "Mauricio Herrera-Marín"
+      ],
+      "published": "2026-06-22T16:29:05Z",
+      "updated": "2026-06-22T16:29:05Z",
+      "primary_category": "stat.AP",
+      "categories": [
+        "stat.AP",
+        "math.AP",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23558v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23558v1",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.22940v1",
+      "title": "From smooth to discontinuous kernels: a variance transfer principle for hyperuniform processes",
+      "abstract": "We give a transfer principle for the fluctuations of linear statistics of finite particle systems around Lebesgue measure: if for a smooth kernel the variance decays polynomially with some exponent a compared to independent (non-interacting) particles, then the number variance over balls centred at almost every point decays with exponent min(1,a) times a log term if a=1, over a possibly reduced range of scales for non-periodic systems. We apply this principle to eigenvalues of random N*N Girko matrices, leveraging results of Cipolloni et al., and obtain the optimal perimeter-like number variance, on the microscopic and some mesoscopic scales range, after local averaging. We also apply the results to Coulomb gases, by transferring the results of Serfaty: we prove that 2D-Coulomb gases are 2-hyperuniform, i.e. they have surface order number variance, which is optimal, and that 3D Coulomb gases are 1-hyperuniform. In 2D, it allows to prove finite Coulomb energy and Wasserstein distance to Lebesgue measure.",
+      "authors": [
+        "Raphaël Lachièze-Rey"
+      ],
+      "published": "2026-06-22T07:18:00Z",
+      "updated": "2026-06-22T07:18:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.22940v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22940v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.22960v1",
+      "title": "Broadcasting on Random Trees: Martingale Methods and Error Bounds",
+      "abstract": "The broadcasting problem on trees concerns the transmission of binary information along the edges of a tree. In the formulation studied here, each vertex carries one of two colours, and along every edge the colour is transmitted with error probability $q$. The central question is whether the root colour can be reconstructed from the observed colours of all vertices in the tree, but crucially, without knowing which vertex is the root. We study the problem of reconstructing the root colour in a broadcasting process on random trees, focusing on the majority rule estimator. We introduce a novel and adaptable martingale approach for analysing the colour imbalance. This method provides a simpler and more powerful alternative to existing techniques. Our martingale approach unifies the analysis of the different tree models and leads to linear upper bounds for the error probability of the majority rule estimator in each case. This shows that, for a broad class of random tree models, the error probability of the majority rule admits a linear upper bound in $q$.",
+      "authors": [
+        "Tayfun Kardas",
+        "Vsevolod Shneer",
+        "Vitali Wachtel"
+      ],
+      "published": "2026-06-22T07:39:12Z",
+      "updated": "2026-06-22T07:39:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.22960v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22960v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.22990v1",
+      "title": "Diffusions with resetting boundaries: ergodic control and renewal optimization",
+      "abstract": "We study ergodic optimization problems for one-dimensional diffusions with resetting boundaries, namely diffusions that are instantaneously reset according to prescribed distributions upon reaching designated boundary points. For controlled diffusions with resetting boundaries, we consider optimization of the ergodic cost over a broad class of admissible real-time controls. We derive a Hamilton--Jacobi--Bellman equation with non-local boundary conditions and establish a verification theorem for optimal stationary Markov controls. In the case of one resetting and one reflecting boundary, we also prove an existence result under weak integrability assumptions. We then study renewal diffusions. Using their regenerative structure, we derive explicit formulas for the ergodic cost. These formulas are applied to optimization problems over families of drift coefficients, yielding explicit characterizations of optimal drift parameters in several examples. Finally, we study an infinite-penalty regime in which boundary hitting is prohibited and characterize the corresponding optimal ergodic cost.",
+      "authors": [
+        "Sergey Nikitin"
+      ],
+      "published": "2026-06-22T08:10:14Z",
+      "updated": "2026-06-22T08:10:14Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.22990v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.22990v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23025v1",
+      "title": "Spectral-capacitary bounds for homological recovery from reflected Brownian trajectories",
+      "abstract": "Can the topology of an unknown reflecting domain be recovered from one reflected Brownian trajectory, and how long must it be observed? We formulate this as a minimax homological inference problem based on the reflected Wiener sausage. The optimal observation time is, up to constants, the sum of three terms: a spectral-access or burn-in time set by the Neumann spectral gap; an inverse-capacity detection time for small topological features, showing that Brownian capacity rather than volume controls discovery; and a logarithmic factor in the number of features to be resolved. Matching minimax lower bounds prove that all three contributions are necessary. The proof combines a finite-target spectral hitting estimate, expressed through killed eigenvalues, with a uniform small-hole eigenvalue theorem comparing the principal killed eigenvalue of an epsilon-scale feature with its Brownian capacity, uniformly over interior and boundary targets. The resulting framework distinguishes full reconstruction, obtained from an intrinsic epsilon-net and yielding two-sided homology isomorphisms, from faster feature detection by witness regions, which gives the corresponding surjective homological recovery.",
+      "authors": [
+        "Tristan Guillaume"
+      ],
+      "published": "2026-06-22T08:37:15Z",
+      "updated": "2026-06-22T08:37:15Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23025v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23025v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23034v1",
+      "title": "The Mortensen observer on the space of probability measures",
+      "abstract": "We study a deterministic filtering problem formulated directly on the Wasserstein space of probability measures with finite second moment. Motivated by the Mortensen minimum-energy observer, we consider the reconstruction of an evolving probability density from partial observations by minimizing an action functional combining a kinetic transport cost and a time-dependent observation mismatch. The resulting value function is defined on the infinite-dimensional manifold $(P_2(R^d), W_2)$ and satisfies a Hamilton-Jacobi-Bellman equation involving the Wasserstein gradient. Under suitable regularity and growth assumptions on the observation functional, we establish dynamic programming principles, continuity of the value function, existence of minimizing trajectories, and viscosity solution properties of the associated Hamilton-Jacobi equation. We provide two complementary notions of viscosity solutions: a geometric formulation based on subdifferentials in Wasserstein space, and a Hilbertian formulation inspired by Lions' lifting approach. This allows us to prove a comparison principle and uniqueness of solutions. Extensions to transport equations with drift are also discussed. Finally, we introduce a semi-Lagrangian scheme in order to approximate the value function, and show $Γ$-convergence of the scheme.",
+      "authors": [
+        "Martin Morange"
+      ],
+      "published": "2026-06-22T08:44:45Z",
+      "updated": "2026-06-22T08:44:45Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23034v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23034v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23099v1",
+      "title": "Path-dependent Affine Processes",
+      "abstract": "We extend the classical theory of affine processes to a path-dependent setting by introducing path-dependent coefficients and provide analytic formulas for their Fourier--Laplace transform in terms of generalized Riccati-type equations. In the proposed framework, we define path-dependent affine processes through their exponential-affine Fourier--Laplace transform on the path space and establish a characterization theorem. Conversely, for path-dependent stochastic differential equations with affine path-dependent coefficients, we also provide explicit exponential-affine representations of the Fourier--Laplace functional in terms of those Riccati equations. Moreover, we derive a condition ensuring non-negativity of the path-dependent diffusion coefficient, guaranteeing well-posedness of the model. Finally, we apply these results to a path-dependent volatility model and a path-dependent extension of the Heston model, including a delayed Heston model as a special case.",
+      "authors": [
+        "Boris Günther",
+        "Thomas Kruse",
+        "Ludger Overbeck",
+        "Thorsten Schmidt"
+      ],
+      "published": "2026-06-22T09:42:42Z",
+      "updated": "2026-06-22T09:42:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23099v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23099v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23222v1",
+      "title": "A Route to Harris ergodicity for Non-Feller Markov Kernels",
+      "abstract": "For non-Feller Markov kernels satisfying a quasi-Feller factorization, the compact-petite-set criterion gives petite compact sets under \\(ψ\\)-irreducibility when the support of \\(ψ\\) has non-empty interior. Thus, for coercive Lyapunov functions, the sublevel sets used in the Harris--Lyapunov argument are petite. Under aperiodicity they are small. The Hairer--Mattingly contraction theorem then yields geometric ergodicity in weighted total variation under the usual geometric drift condition.",
+      "authors": [
+        "Jean-Gabriel Attali"
+      ],
+      "published": "2026-06-22T12:10:13Z",
+      "updated": "2026-06-22T12:10:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23222v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23222v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23242v1",
+      "title": "Correction to \"The stepping stone model in a random environment\" -- limit theorems for the occupation time and intersection time of reversible random walks in random environments",
+      "abstract": "This note corrects a mistake in the author's above-mentionned published work regarding the intersection local time of two independent random walks in a random environment. The random walks each behave as nearest neighbour random walks in random conductances in the same random environment. The proof of the main result in the original work relied on the derivation of the scaling limit of an additive functionnal of the environment at the locations where the two independent random walks meet, which was shown to be given by a constant times the intersection local time of two Brownian motions. This note shows how the value of the constant denoted by $ γ$ in this work should be updated to correct the statement. The derivation of this constant uses new results on the scaling limit of the occupation time of reversible random walks in a random environment.",
+      "authors": [
+        "Raphaël Forien"
+      ],
+      "published": "2026-06-22T12:26:45Z",
+      "updated": "2026-06-22T12:26:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23242v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23242v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23295v1",
+      "title": "Non-asymptotic estimates of the minimal risk in statistical learning",
+      "abstract": "In this paper we prove some concentration inequalities for two types of error probabilities in the Empirical Risk Principle (ERP) in statistical learning, which provide a lower bound and an upper bound for the minimal risk (in terms of the minimal empirical risk) with non-asymptotic high confidence. The usual boundedness condition of the empirical risk function is relaxed to the Gaussian or exponential integrability condition. The confidence of the lower bound of the minimal risk is shown to be independent of the number of training parameters and the dimension of the input vectors, allowing one to detect the deficiency of a learning machine efficiently; and the confidence of the upper bound of the minimal risk is proved to be high provided that the sample size $n$ is much greater than the box dimension of the parameter set $Θ$ in the Orlicz metric $d_{ψ_1}$ associated with the risk functions. Our work is based on Talagrand's concentration inequalities (the sharp versions by Bousquet and Klein-Rio), transport-entropy inequalities and the recent progress in the theory of empirical processes and statistical learning.",
+      "authors": [
+        "Liming Wu",
+        "Sen Yang"
+      ],
+      "published": "2026-06-22T13:09:28Z",
+      "updated": "2026-06-22T13:09:28Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23295v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23295v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23383v1",
+      "title": "Near-Lipschitz stability of the Kim--Milman flow map",
+      "abstract": "We prove that the Kim--Milman flow map enjoys favorable stability properties with respect to variations in the target measure, provided that one of the target measures is sufficiently regular. Our results include stability in relative entropy, and more notably, Lipschitz stability in the $2$-Wasserstein distance up to a logarithmic factor. We complement our results with a general existence theorem for these maps for any target measure with finite second moment.",
+      "authors": [
+        "Sinho Chewi",
+        "Katharina Eichinger",
+        "Aram-Alexandre Pooladian"
+      ],
+      "published": "2026-06-22T14:12:03Z",
+      "updated": "2026-06-22T14:12:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.FA",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23383v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23383v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23433v1",
+      "title": "Emergence of Common Noise: Quantitative Conditional Propagation of Chaos",
+      "abstract": "We study a dynamical invariance principle for interacting particle systems with mean-field interactions and common noise emerging through a collective stochastic perturbation. The particle dynamics combine autonomous evolution with a weakly scaled random bombardment whose cumulative effect generates a Brownian common noise in the large population limit. Working in a general abstract framework based on stochastic flows and the stochastic sewing lemma, we establish quantitative conditional propagation of chaos estimates for both discrete Euler schemes and their continuous-time flow limits. Our approach yields explicit Wasserstein convergence rates and applies in particular to jump-diffusion models motivated by interacting spiking neuron systems. The analysis relies on quantitative central limit theorems of Rio and Bonis together with a stochastic sewing argument adapted to $L^2$-valued flows.",
+      "authors": [
+        "Vlad Bally",
+        "Eva Löcherbach"
+      ],
+      "published": "2026-06-22T14:51:18Z",
+      "updated": "2026-06-22T14:51:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23433v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23433v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23440v1",
+      "title": "The Expected Number of Pairwise Stable Networks",
+      "abstract": "This paper studies probabilistic properties of pairwise stability for a network model where individual utilities are random variables. We study the probability that a given network is pairwise stable and the expected number of pairwise stable networks. We provide a closed-form solution for the latter number. As the evaluation of the exact expression is computationally challenging for large populations, we provide tractable lower and upper bounds for this expression which allow us to pin down the asymptotic behavior of the expected number of pairwise stable networks up to a multiplicative constant. This asymptotic behavior is described by the number of networks $ 2^{n(n-1)/2} $ times $ (2/n+1)^{n} $, a sequence that tends to infinity fast. We normalize the number of pairwise stable networks by this sequence and show that the variance of the normalized number of pairwise stable networks converges to zero as $ n $ tends to infinity. We conclude that almost surely the number of pairwise stable networks tends to infinity, while the fraction of pairwise stable networks tends to $ 0 $ as $ n $ goes to infinity.",
+      "authors": [
+        "P. Jean-Jacques Herings",
+        "Christian Seel",
+        "Arkadi Predtetchinski"
+      ],
+      "published": "2026-06-22T14:58:28Z",
+      "updated": "2026-06-22T14:58:28Z",
+      "primary_category": "econ.TH",
+      "categories": [
+        "econ.TH",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23440v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23440v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23506v1",
+      "title": "Cost of one-relator groups",
+      "abstract": "For any infinite one-relator group $Γ=\\langle S \\mid w^m\\rangle$, we prove that $\\mathrm{cost}(Γ)=|S|-\\frac{1}{m}$. For such groups, this gives $β^{(2)}_1(Γ)=\\mathrm{cost}(Γ) - 1$, answering a special case of Gaboriau's question on the relationship between cost and first $\\ell^2$-Betti number.",
+      "authors": [
+        "Antoine Poulin",
+        "Konrad Wróbel"
+      ],
+      "published": "2026-06-22T15:54:49Z",
+      "updated": "2026-06-22T15:54:49Z",
+      "primary_category": "math.GR",
+      "categories": [
+        "math.GR",
+        "math.DS",
+        "math.OA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23506v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23506v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23547v1",
+      "title": "The location of the largest exponential spacing and Euler's generalized pentagonal numbers",
+      "abstract": "We study the location of the largest spacing generated by the order statistics of a sample from the standard exponential distribution. Although the asymptotic behaviour of the largest spacing itself is well understood, considerably less is known about the index at which it is attained. Using the independence and unequal rates of exponential spacings, we derive exact finite-sample formulas and show that, when measured relative to the right endpoint, the location of the largest spacing converges in distribution to a non-degenerate probability distribution on the positive integers. We obtain explicit integral representations for the limiting probabilities and, using Euler's pentagonal number theorem, derive a series representation involving the generalized pentagonal numbers. This reveals that the Euler product appearing in the limiting distribution of the largest exponential spacing also governs the distribution of its location. The convergence result is also extended to the location of the largest $m$-spacing for every fixed $m\\geq 1$, despite the dependence among overlapping $m$-spacings. Numerical values illustrate the concentration of the limiting distribution near the right endpoint and the rapid convergence of the finite-sample probabilities.",
+      "authors": [
+        "Norbert Henze"
+      ],
+      "published": "2026-06-22T16:21:26Z",
+      "updated": "2026-06-22T16:21:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23547v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23547v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23556v1",
+      "title": "Computing Gaussian and exponential integrals in ${\\Bbb R}^n$",
+      "abstract": "We consider expectations of the type $E\\ \\exp \\left\\{\\sum_{i=1}^m φ_i \\right\\}$, where $φ_i: {\\Bbb R}^n \\longrightarrow {\\Bbb C}$ are functions, each depending on a few coordinates of a point in ${\\Bbb R}^n$, and the expectation is taken with respect to the standard Gaussian or symmetric exponential probability measures. We prove sufficient conditions, in terms of the Lipschitz constants of $φ_i$ and the combinatorics of their dependencies, for the integral to be separated from 0, and, consequently, to be amenable to a computationally efficient approximation. We discuss applications to computing volumes of bodies and statistics on integer points in polyhedra in ${\\Bbb R}^n$.",
+      "authors": [
+        "Alexander Barvinok"
+      ],
+      "published": "2026-06-22T16:28:05Z",
+      "updated": "2026-06-22T16:28:05Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "math-ph",
+        "math.CA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23556v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23556v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23648v1",
+      "title": "Optimal Stopping for a Diffusion with Unobserved Bernoulli Drift",
+      "abstract": "We solve fairly explicitly an optimal stopping problem for a Wiener process with unobserved Bernoulli drift, in the presence of a cost on terminal position which is symmetric and increases with distance from the origin, and of a fixed positive cost per unit time \\(c > 0\\). After filtering, the problem reduces to Markovian optimal stopping with complete observations for the state process ``centered'' by its starting position $x \\in \\mathbb R$. However, the solution becomes possible only after foliating by an additional state-parameter \\(y \\in \\mathbb{R}\\), representing the displacement from the initial position; this foliation ``lifts'' the problem from the real line to the plane, solves the augmented problem for each fixed initial position \\(x\\), characterizes fairly explicitly the optimal stopping region in \\((x,y)\\)-space, and finally obtains the solution of the original problem by ``slicing'' along \\(y=0\\). Following this procedure, we show that, under suitable structural assumptions on the terminal cost, each fixed-\\(x\\) continuation section is either empty or a single bounded interval, whose endpoints are determined uniquely by a balancing condition; the corresponding value function is then given in semi-explicit form. The two-dimensional continuation region is obtained by gluing these fixed-\\(x\\) intervals over \\(x\\); its two free boundaries satisfy natural monotonicity properties and, at regular points, can be described by a coupled system of ordinary differential equations. The resulting description yields a threshold-type solution of the original one-dimensional problem whenever the horizontal slice \\(y=0\\) enters the two-dimensional continuation region.",
+      "authors": [
+        "Georgy Gaitsgori",
+        "Ioannis Karatzas"
+      ],
+      "published": "2026-06-22T17:35:12Z",
+      "updated": "2026-06-22T17:35:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23648v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23648v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }
