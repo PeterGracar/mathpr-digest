@@ -5,11 +5,11 @@
   "iso_week": 25,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-06-21",
   "total_submissions": 105,
   "fetched": 105,
-  "generated_at": "2026-06-23T06:19:53Z",
+  "generated_at": "2026-06-24T06:16:26Z",
   "entries": [
     {
       "id": "2606.16715v1",
@@ -1891,23 +1891,23 @@
       "bucket": "other"
     },
     {
-      "id": "2606.21122v1",
-      "title": "Negative index, matchings, and negative eigenvalues of tridiagonal stochastic matrices",
-      "abstract": "We study negative eigenvalues of $n\\times n$ stochastic matrices whose off-diagonal support is constrained by a sparse graph. The main tool is a matching-based inertia principle: if $G$ is bipartite with matching number $μ(G)$, $S$ is a real symmetric matrix supported on $G$ with nonnegative diagonal entries and whose negative index (i.e. number of negative eigenvalues) is denoted by $ ν_{-}(S) $, then $$ ν_{-}(S)\\leq μ(G). $$ In particular, every $n\\times n$ nonnegative tridiagonal stochastic matrix $P$ satisfies $ ν_{-}(P)\\leq \\left\\lfloor \\frac{n}{2}\\right\\rfloor.$ Consequently, after ordering the eigenvalues of $P$ decreasingly, we have $λ_{\\lceil n/2\\rceil}(P)\\geq0, \\ \\text{and hence} \\ λ_2(P)\\geq0, \\mbox{ for } n\\geq3. $ This gives an all-dimensional strengthening of the previously known $4\\times4$ tridiagonal stochastic result. Finally, we show that this tridiagonal bound is sharp in every dimension and we explore some possible extension.",
+      "id": "2606.21122v2",
+      "title": "Negative index, matchings, and nonnegative eigenvalues of tridiagonal stochastic matrices",
+      "abstract": "We study negative eigenvalues of $n\\times n$ stochastic matrices whose off-diagonal support is constrained by a sparse graph. The main tool is a matching-based inertia principle: if $G$ is bipartite with matching number $μ(G)$, $S$ is a real symmetric matrix supported on $G$ with nonnegative diagonal entries and whose negative index (i.e. number of negative eigenvalues counted with their multiplicities) is denoted by $ν_{-}(S) $, then \\[ ν_{-}(S)\\leq μ(G). \\] In particular, every $n\\times n$ nonnegative tridiagonal stochastic matrix $P$ satisfies $ ν_{-}(P)\\leq \\left\\lfloor \\frac{n}{2}\\right\\rfloor. $ Consequently, after ordering the eigenvalues of $P$ in the decreasing order, we have $ λ_{\\lceil n/2\\rceil}(P)\\geq0, \\ \\text{and hence} \\ λ_2(P)\\geq0, \\mbox{ for } n\\geq3. $ This gives an all-dimensional strengthening of the previously known $4\\times4$ tridiagonal stochastic result. Next, we show that this tridiagonal bound is sharp in every dimension in both reducible and irreducible cases. Finally, we explore some possible extension and raise some open questions.",
       "authors": [
         "Bassam Mourad",
         "Issam Kaddoura",
         "Hassan Issa"
       ],
       "published": "2026-06-19T05:51:01Z",
-      "updated": "2026-06-19T05:51:01Z",
+      "updated": "2026-06-23T10:43:22Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.SP"
       ],
-      "abs_url": "https://arxiv.org/abs/2606.21122v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.21122v1",
+      "abs_url": "https://arxiv.org/abs/2606.21122v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.21122v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],

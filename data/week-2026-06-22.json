@@ -6,11 +6,60 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-23",
-  "total_submissions": 20,
-  "fetched": 20,
-  "generated_at": "2026-06-23T06:19:53Z",
+  "data_through": "2026-06-24",
+  "total_submissions": 48,
+  "fetched": 48,
+  "generated_at": "2026-06-24T06:16:26Z",
   "entries": [
+    {
+      "id": "2606.23896v1",
+      "title": "The one-point Schreier Poisson boundary of Thompson's group $F$",
+      "abstract": "We identify the Poisson boundary of the one-point Schreier-chain random walk obtained by projecting the simple symmetric random walk on Thompson's group $F$ to the dyadic orbit point $1/2$. For the associated simple labelled-generator walk on the dyadic Schreier graph, the full Poisson boundary is the skeleton end boundary. The proof combines the known description of this Schreier graph as a binary-tree skeleton with recurrent one-dimensional ray attachments with an explicit trace computation. After tracing to the grey skeleton and deleting holding probabilities, the walk becomes a reversible nearest-neighbor walk on the rooted binary tree with two unequal classes of edge conductance. This reduces the boundary identification to standard Poisson--Martin theory for transient walks on trees and leaves a finite electrical-network calculation for the harmonic measure. Following Kaimanovich's coding of skeleton ends by odd 2-adic integers [{\\emph{Groups, Graphs and Random Walks}}, London Math. Soc. Lecture Note Ser.~436, pp.~300--342, 2017], the hitting measure is a biased Bernoulli product measure with explicitly computed bias. It is singular with respect to Haar measure, has full topological support, and is exact-dimensional; these properties and the exact constants are proved here.",
+      "authors": [
+        "Christian Mönch"
+      ],
+      "published": "2026-06-22T19:49:57Z",
+      "updated": "2026-06-22T19:49:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.GR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23896v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23896v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [
+        "Christian Monch"
+      ],
+      "bucket": "coauthor"
+    },
+    {
+      "id": "2606.24385v1",
+      "title": "Gradient Mean-Field Dynamics with Measure-Valued States: Well-Posedness, Chaos, and Long-Time Stability",
+      "abstract": "We study a stochastic mean-field interacting particle system whose state space is $\\Y = \\Tt^d \\times \\cP(U)$, where the first component represents a spatial variable and the second one is a probability measure over a compact metric space $U$. The dynamics are driven by locally Lipschitz drift operators: the spatial component evolves according to a Brownian diffusion, while the measure-valued component is perturbed by a projected cylindrical noise acting in the Arens--Eells space. We first establish existence and uniqueness of strong solutions for both the $N$-particle system and the associated nonlinear McKean--Vlasov equation under locally Lipschitz and linear growth assumptions on the drift coefficients. We then prove propagation of chaos: as $N\\to\\infty$, the empirical measure converges in expectation in Wasserstein--1 distance towards the unique McKean--Vlasov solution. Further, we investigate exponential convergence of the nonlinear McKean--Vlasov dynamics towards a unique invariant measure.",
+      "authors": [
+        "Anderson Melchor Hernandez"
+      ],
+      "published": "2026-06-23T10:18:28Z",
+      "updated": "2026-06-23T10:18:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24385v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24385v1",
+      "score": 7,
+      "matched_keywords": [
+        "interacting particle system",
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2606.22967v1",
       "title": "Spatial Coagulation Systems with Mercer Kernels: Replicator Dynamics and Gelation",
@@ -36,6 +85,30 @@
       "bucket": "medium"
     },
     {
+      "id": "2606.24599v1",
+      "title": "Perron--Frobenius theorem for a general tree-valued growth-fragmentation-isolation process",
+      "abstract": "A general tree-valued dynamics is considered in continuous time: new vertices are added, and the percolation happens on the links, and the connected components can be frozen. The model is an infinite-type branching process. The main result establishes the Perron--Frobenius type theorem on this model, which extends the previous work [Ann. Appl. Probab. 33 (6B) 5233 - 5278]. The proof does not rely on any property of the uniform random recursive tree.",
+      "authors": [
+        "Chenlin Gu",
+        "Mingyuan Shen",
+        "Ronghang Zhang"
+      ],
+      "published": "2026-06-23T14:01:56Z",
+      "updated": "2026-06-23T14:01:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24599v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24599v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2606.22964v1",
       "title": "Signature McKean-Vlasov stochastic differential equations",
       "abstract": "McKean-Vlasov-type stochastic differential equations (SDEs) are characterized by coefficients depending on both the state and the law of the solution. In this work, we focus on a class of such equations where the coefficients depend on a linear combination of the expected signature of the geometric $p$-rough path lift of its solution, with $p\\in(2,3)$. After establishing the strong existence and uniqueness of a solution, we prove how such an equation can approximate a general class of path-dependent McKean-Vlasov SDEs. Finally, we consider the associated particle system and propagation of chaos is established.",
@@ -55,6 +128,30 @@
       "score": 3,
       "matched_keywords": [
         "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.24881v1",
+      "title": "Queues with Correlated Service Times -- the $M/M_D/c$ Model",
+      "abstract": "This paper studies multi-server queueing systems with correlated service times, modeled as the $M/M_D/c$ queue, which is a natural extension of the recent work by Thapa and Zhao \\cite{Thapa-Zhao:2026}. In this model, arrivals follow a Poisson process, while service times across servers exhibit dependence captured by the Marshall--Olkin multivariate exponential distribution (MO-MVED). We first develop a rigorous sample-path construction of the system and establish that the resulting queueing process is a continuous-time Markov chain. We then analyze the stationary behavior of the $M/M_D/c$ model. In the homogeneous case, we derive a complete solution via geometric tail structure and explicit boundary equations, recovering a tractable one-dimensional representation. In the heterogeneous case, we establish a general framework combining a geometric tail with a finite boundary system, and prove existence, uniqueness, and nonnegativity of the stationary distribution. The above results provide a unified analytic framework extending classical $M/M/c$ theory to correlated-service settings, and reveal how dependence among service times fundamentally affects system performance and structure. Beyond the $M/M_D/c$ model, We next study the interplay between Marshall--Olkin service dependence and queue-state Markovianity. On the one hand, Marshall--Olkin dependent service completions are shown to preserve Markovianity for a broad class of queueing systems. On the other hand, if a queueing process admits a Markovian state description without tracking service ages, residual service times, or service phases, then its service mechanism must satisfy a weak multivariate lack-of-memory property and consequently belongs to the Marshall--Olkin family. These results provide a probabilistic foundation for the use of Marshall--Olkin multivariate exponential service times in Markovian queueing models.",
+      "authors": [
+        "Qihui Bu",
+        "Suman Thapa",
+        "Yiqiang Q. Zhao"
+      ],
+      "published": "2026-06-23T17:57:19Z",
+      "updated": "2026-06-23T17:57:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24881v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24881v1",
+      "score": 3,
+      "matched_keywords": [
+        "poisson process"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -104,6 +201,55 @@
       "score": 2,
       "matched_keywords": [
         "survival"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24352v1",
+      "title": "Typical geometry of self-repelling polymers in a constant force field",
+      "abstract": "We study a general class of self-repelling polymers on $\\mathbb Z^2$, including the simple random walk, the self-avoiding walk and the repulsive Domb-Joyce model, in the presence of a constant force field acting on each monomer. Conditioning the polymer to have fixed length and fixed endpoints, we identify the limiting free energy and prove that typical trajectories concentrate exponentially near a deterministic macroscopic shape. This shape is characterized as the unique minimizer of a variational problem and can be interpreted as a geodesic of a height-dependent Finsler metric. We also analyze two limiting regimes with universal features: for small field strength, in the symmetric case, the geodesic is close to a classical catenary, while for large field strength it converges to a universal polygonal shape governed by the nearest-neighbor lattice constraint.",
+      "authors": [
+        "Kamil Khettabi",
+        "Yvan Velenik"
+      ],
+      "published": "2026-06-23T09:42:49Z",
+      "updated": "2026-06-23T09:42:49Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.stat-mech",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24352v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24352v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24887v1",
+      "title": "Critical Erd{\\H o}s-Rényi digraph: all eigenvectors away from zero are delocalized",
+      "abstract": "We consider the adjacency matrix of the directed Erd{\\H o}s-Rényi graph. As long as the expected degree is larger than the logarithm of the number of vertices, the graph is connected, we show that all eigenvectors are completely delocalized. Below this critical scale, we prove eigenvector delocalization if the corresponding eigenvalue is away from zero. This contrasts the \\emph{undirected} or Hermitian setting, where large eigenvalues have localized eigenvectors [arXiv:2005.14180]. Our results also hold for sparse random matrices with independent entries, which can be viewed as weighted Erd{\\H o}s-Rényi digraphs.",
+      "authors": [
+        "Johannes Alt",
+        "Sarah Timhadjelt"
+      ],
+      "published": "2026-06-23T17:59:29Z",
+      "updated": "2026-06-23T17:59:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24887v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24887v1",
+      "score": 2,
+      "matched_keywords": [
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -452,6 +598,502 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.23648v1",
       "pdf_url": "https://arxiv.org/pdf/2606.23648v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23853v1",
+      "title": "The Measurable Majority",
+      "abstract": "This paper studies strict majority reasoning in finite electorates using so-called $\\textit{social decision frames}$: finite sets of voters equipped with distinguished families of coalitions interpreted as those voting blocs evaluated to form a strict majority. A coherence criterion for qualitative majority judgments is identified and shown to give an exact characterization for representability of strict majorities by finitely additive measures. In addition, a minimal natural logic for reasoning about strict majorities is shown to be sound and complete. These developments motivate examination of associated combinatorial questions concerning incoherence in finite families of sets; partial results and a conjecture are given. Finally, the results of this paper are applied to correct a classical representation theorem for weak qualitative probability structures due to Patrick Suppes and to establish a May-type characterization for ordinary strict majority rule for social decision frames.",
+      "authors": [
+        "Lawrence S. Moss",
+        "Arthur Paul Pedersen"
+      ],
+      "published": "2026-06-22T18:42:26Z",
+      "updated": "2026-06-22T18:42:26Z",
+      "primary_category": "econ.TH",
+      "categories": [
+        "econ.TH",
+        "cs.AI",
+        "cs.LO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23853v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23853v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.23865v1",
+      "title": "Uniform-in-time Gaussian fluctuations for multiscale nonlinear stochastic systems via Malliavin Calculus",
+      "abstract": "We establish a uniform-in-time quantitative central limit theorem (QCLT) for a nonlinear slow-fast stochastic system. We identify significant weaker sufficient conditions that enable us to obtain time-independent bounds for the Wasserstein distance between the fluctuation process and a centered Gaussian random variable. To prove our main result, we utilize tools from Malliavin calculus, specifically the second-order Poincaré inequality. In this context, applying the Poincaré inequality requires demonstrating uniform bounds over time for both the first- and second-order Malliavin derivatives.",
+      "authors": [
+        "Shivam Singh Dhama"
+      ],
+      "published": "2026-06-22T19:04:30Z",
+      "updated": "2026-06-22T19:04:30Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.23865v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.23865v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24038v1",
+      "title": "Sim-to-Real Betting on the E-Process: Bringing \"simulators\" to anytime-valid confidence sequences",
+      "abstract": "This note describes an integration of the sim-to-real performance estimate with betting (from Chen et al.) and the safe anytime-valid inference (from Ramdas et al.). Using the scaled simulators. The method produces efficient, reliable certificates for the mean estimate, an approach that is especially valuable in robot performance testing. This note gives a primary, self-contained account of the construction; preliminaries of the respective methods are kept at a minimum, and one shall refer to the original works for full detail. Some synthetic examples demonstrating the proposed algorithm can be found at https://github.com/ISUSAIL/Bet4Sim2Real-EProcess.",
+      "authors": [
+        "Yujia Chen",
+        "Bowen Weng"
+      ],
+      "published": "2026-06-23T00:38:41Z",
+      "updated": "2026-06-23T00:38:41Z",
+      "primary_category": "cs.RO",
+      "categories": [
+        "cs.RO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24038v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24038v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24056v1",
+      "title": "Decorated stable $p$-adic self-similar processes with stationary increments",
+      "abstract": "We construct new classes of examples of self-similar processes with stationary increments indexed by $\\mathbb Q_p$ via stable integrals. Classical constructions arise from the real counterpart and from discounted branching random walks. We discuss a new decoration technique that significantly enlarges these classes. The decoration technique makes use of the special symmetry of $\\mathbb{Q}_p$ to obtain self-similarity and stationarity of increments, and it does not have an analogue on the real line. We also show that these enlarged classes of decorated processes are pairwise incomparable under inclusion.",
+      "authors": [
+        "Yi Shen",
+        "Zhenyuan Zhang"
+      ],
+      "published": "2026-06-23T02:03:00Z",
+      "updated": "2026-06-23T02:03:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24056v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24056v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24090v1",
+      "title": "Sparsity-adaptive concentration inequalities for random polynomials",
+      "abstract": "We prove concentration inequalities for polynomials of independent, sparse $α$-sub-exponential random variables. Specifically, we consider $X_i=δ_iξ_i$, where the Bernoulli selectors $δ_i$ are independent with parameters $p_i$, and the variables $ξ_i$ are independent \\(α\\)-sub-exponential random variables (not necessarily centered). For any polynomial $f:\\mathbb R^n\\to\\mathbb R $ of degree at most $D$ and any $0<α\\le 1 $, we establish an $L_r$-moment bound for \\(f(X)-\\mathbb E f(X)\\) in terms of partition norms of sparsity-weighted expected derivative tensors. The weights count distinct coordinates rather than multiplicities and therefore distinguish diagonal, partially diagonal, and off-diagonal contributions. This captures the sparse scaling in both collective fluctuation regimes and extreme-coordinate regimes. When all sparsity parameters are equal to one, our result recovers the polynomial concentration inequality of Götze, Sambale, and Sinulis. In degree two, it recovers sparse Hanson-Wright bounds. As applications, we derive deviation inequalities for the distance between a sparse simple random tensor and a fixed subspace, and obtain lower bounds for the smallest singular value of matrices whose columns are independent sparse simple random tensors.",
+      "authors": [
+        "Guozheng Dai",
+        "Ke Wang"
+      ],
+      "published": "2026-06-23T03:10:49Z",
+      "updated": "2026-06-23T03:10:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24090v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24090v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24134v1",
+      "title": "Uniform Sampling from High-dimensional Spectral Norm Balls",
+      "abstract": "Motivated by an application in machine learning optimization, this paper focuses on the challenges of sampling a matrix uniformly from the unit spectral norm ball. It is proven that all singular values of sampled matrices converge to 1 almost surely as the matrix dimensions increase. This result provides the theoretical justification for a proposed simple sampling method applicable for large dimension sizes matching matrices found in modern large language models. Experimental results demonstrate both the convergence of the singular values, as well as the exact and proposed approximate sampling methods.",
+      "authors": [
+        "Michael R. Metel"
+      ],
+      "published": "2026-06-23T04:34:13Z",
+      "updated": "2026-06-23T04:34:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.LG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24134v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24134v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24167v1",
+      "title": "On the stability of rarefaction for stochastic viscous conservation law",
+      "abstract": "We study the asymptotic stability of rarefaction waves for one-dimensional stochastic viscous conservation laws driven by nonlinear conservative noise. In a critical scaling where stochastic energy injection and viscous dissipation compete at comparable magnitudes, standard kinetic and viscosity frameworks encounter obstructions due to regularity gaps and non-integrable profiles. To address this, we introduce a stochastic area inequality controlling accumulated energy fluctuations, a local $L^1$ contraction principle via stochastic Kružkov doubling-of-variables that yields pathwise uniqueness without global integrability, and a modified Galerkin scheme preserving the $H^2$ energy structure. Assuming local $H^2$ regularity, we prove almost sure algebraic convergence to the rarefaction wave. For sufficiently small initial perturbations, we establish global well-posedness and sharp decay estimates in expectation. The smallness condition identifies a regime where viscous dissipation dominates stochastic injection, reflecting a structural stability threshold rather than a technical artifact. Our approach extends the analytical framework for conservative SPDEs with rough fluxes.",
+      "authors": [
+        "Zhao Dong",
+        "Feimin Haung",
+        "Houqi Su"
+      ],
+      "published": "2026-06-23T05:40:56Z",
+      "updated": "2026-06-23T05:40:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24167v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24167v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24271v1",
+      "title": "Deep numerical schemes for systems of Ergodic BSDEs with applications to regime-switching forward utilities",
+      "abstract": "In this paper, we introduce two neural-network-based numerical schemes for solving systems of coupled ergodic Backward Stochastic Differential Equations (eBSDEs), motivated by the approximation of optimal strategies within the framework of forward utilities in a regime-switching stochastic factor model. Our approach builds on the representation of such models through systems of eBSDEs introduced in [HLT20]. We first establish a link between the solution of the system of ergodic BSDEs and that of an associated multidimensional BSDE with random terminal time, given by the hitting time of the positive recurrent stochastic factor. Building on this representation, we introduce a locally additive deep learning scheme obtained by minimizing aggregated local error terms. We then present a new Deep Galerkin Method (DGM) inspired algorithm that minimizes the residual of the associated ergodic PDE system, relying on a representation of the ergodic cost. Finally, we apply this framework to regime-switching forward utilities in a stochastic factor model. We first derive a general consistency SPDE that characterizes regime-switching forward utilities and retrieve their representation with systems of ergodic BSDEs in the homothetic case. Numerical experiments demonstrate the performance of the proposed methods, with a particular focus on the impact on forward preferences of taking into account regime switches.",
+      "authors": [
+        "Guillaume Broux-Quemerais",
+        "Sarah Kaakai",
+        "Anis Matoussi",
+        "Wissal Sabbagh"
+      ],
+      "published": "2026-06-23T07:55:09Z",
+      "updated": "2026-06-23T07:55:09Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24271v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24271v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24290v1",
+      "title": "Optimal Couplings of Levy Processes in the Class of Immersion Couplings",
+      "abstract": "We study the optimal coupling problem for Levy processes on R^d with respect to the quadratic cost. For any two such processes with finite second moments, we prove that the optimal Levy coupling constructed in Kang and Lim (2025), which was previously shown to be optimal among Feller couplings, is in fact optimal among the larger class of immersion couplings. The proof makes use of a characterization of immersion couplings, which is equivalent to the classical martingale preservation definition but more convenient for our purposes. The construction is based on two fundamental ingredients: the existence of an optimal coupling within the class of Levy couplings, and a dual formulation of the associated optimization problem. While both results were previously established in Kang and Lim (2025), we provide here simpler and more transparent proofs relying only on optimal transport between infinitely divisible measures and a generalized minimax principle. These arguments are self-contained and may be of independent interest.",
+      "authors": [
+        "Tau Shean Lim",
+        "Ray Shua Ooi"
+      ],
+      "published": "2026-06-23T08:13:03Z",
+      "updated": "2026-06-23T08:13:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24290v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24290v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24304v1",
+      "title": "Quantitative Homogenization of PDEs with Neumann boundary conditions: a probabilistic approach",
+      "abstract": "In this paper, we study quantitative homogenization for viscosity solutions of multi-scale semilinear second order partial differential equations (PDEs) on convex domains with Neumann boundary conditions. To this aim we use the probabilistic approach by studying the quantitative homogenization of backward stochastic differential equations (SDEs) associated with slow-fast systems of reflected SDEs.",
+      "authors": [
+        "Zhen-Qing Chen",
+        "Jing Wu"
+      ],
+      "published": "2026-06-23T08:35:27Z",
+      "updated": "2026-06-23T08:35:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24304v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24304v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24323v1",
+      "title": "Conditioning of incoherent sub-dictionaries sampled from a coherent dictionary",
+      "abstract": "Motivated by the desire to find a realistic and stable random model for $d$-dimensional signals, that are sparse in a transform-based and thus often coherent frame, such as a wavelet or a Gabor frame, we study the conditioning of incoherent sub-dictionaries sampled from a coherent dictionary, such as a unit norm frame. In particular, we show that if the sub-dictionary is selected via a coherence rejective Poisson sampling model, it is well-conditioned with high probability, as long as its expected size scales as $d/\\log (K)$, where $K$ is the number of dictionary elements. The result is proved for the more general case of sampling quadratic sub-matrices from a real but not necessarily symmetric $K\\times K$ matrix with zero diagonal, where coherence rejective sampling is defined via a symmetric mask, that acts as coherence substitute.",
+      "authors": [
+        "Karin Schnass"
+      ],
+      "published": "2026-06-23T08:58:46Z",
+      "updated": "2026-06-23T08:58:46Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24323v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24323v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24465v1",
+      "title": "History estimation in random recursive trees: Pointwise approach via iterated Jordan centralities",
+      "abstract": "We study the problem of estimating the arrival times of vertices in a uniform random recursive tree from its unlabeled structure. We adopt a pointwise perspective and analyze the distribution of the relative estimation error, and derive tail bounds that are uniform in both the vertex and the tree size. For the ranking induced by Jordan centrality, the probability that the estimate exceeds the true arrival time by a factor $S$ decays on the order of $1/S$, while the probability of underestimating the arrival time by a factor $1/S$ decays exponentially in $S$. We introduce a refined centrality measure whose overestimation tail decays on the order of $(\\log S)/S^{2}$, at the cost of a heavier lower tail of order $1/S^{2}$. These results reveal a tradeoff between upper- and lower-tail performance in arrival-time estimation that is invisible to the previously studied risk functional. Nevertheless, the refined centrality measure attains the optimal order of the risk for all its parameter values.",
+      "authors": [
+        "Johannes Bäumler",
+        "Simon Briend",
+        "Joost Jorritsma"
+      ],
+      "published": "2026-06-23T11:58:20Z",
+      "updated": "2026-06-23T11:58:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24465v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24465v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24485v1",
+      "title": "On the convex hull of a planar Brownian bridge with a random Gaussian endpoint",
+      "abstract": "We consider a one-parameter family of isotropic planar Gaussian processes \\[ X_σ(t) =B_t+σt Z,\\qquad 0\\le t\\le 1,\\quad 0\\le σ\\le 1, \\] where $B$ is a standard ($0$-to-$0$) planar Brownian bridge on $[0,1]$, and $Z\\sim \\mathrm N(0,I)$ is a standard Gaussian random vector independent of $B$. The family interpolates between standard planar Brownian bridge ($σ=0$) and standard planar Brownian motion ($σ=1$). As the main result of the paper we compute the expected perimeter and area of the convex hull of the random set $\\left\\{X_σ(t) \\colon 0\\le t\\le 1\\right\\}$ as closed formulas in terms of $σ$, and recover the classical Brownian bridge and Brownian motion values at $σ=0$ and $σ=1$. We also consider the convex hull spanned by multiple independent processes of this type and the possibilities for closed formulas in special cases. The key observation in our argument is that the isotropy property reduces the expected perimeter and area to one-dimensional quantities through the support function and Cauchy's formulas.",
+      "authors": [
+        "Nikola Sandrić",
+        "Stjepan Šebek",
+        "Luka Šimek"
+      ],
+      "published": "2026-06-23T12:19:02Z",
+      "updated": "2026-06-23T12:19:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24485v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24485v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24514v1",
+      "title": "Exact Evaluation of Probabilistic Programs with Cylindrical Algebraic Decomposition",
+      "abstract": "We present a method for computing the exact output distribution of small programs with random inputs. Specifically, we are interested in inline programs manipulating sensor data such as \\eg GPS or inertial measurement sensors whose inputs have a known or well-modelled distribution. These programs typically only include relatively few variables, arithmetic operations, square roots and if-else statements. This small syntax allows us to recast the problem of computing the exact output distribution as a cylindrical algebraic decomposition problem followed by symbolic and/or numerical integration. We present this method in detail and show with two prototypes that it can successfully be applied to benchmarks from the literature on floating-point arithmetic and small programs from open-source sensor libraries.",
+      "authors": [
+        "Fredrik Dahlqvist",
+        "Mohamed Hamza Bandukara",
+        "Niki Omidvari"
+      ],
+      "published": "2026-06-23T12:46:08Z",
+      "updated": "2026-06-23T12:46:08Z",
+      "primary_category": "cs.SC",
+      "categories": [
+        "cs.SC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24514v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24514v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24562v1",
+      "title": "A parameterized family of balance indices for phylogenetic networks",
+      "abstract": "We introduce a new family of balance indices for phylogenetic networks: the $H_α$ indices, where $α$ is a positive real number. This family includes the $B_2$ index as a special case ($α= 1$) and provides a natural extension of the Sackin index to phylogenetic networks. We show that the $H_α$ indices share many structural properties with the $B_2$ index, most notably a \"grafting property\" that makes it possible to express the $H_α$ index of a network in terms of the $H_α$ indices of its biconnected components. These properties allow us to identify networks that minimize / maximize $H_α$ for various classes of phylogenetic networks, and to study its distribution for several models of random trees and networks (in particular, Galton-Watson trees and binary Markov branching trees, with a focus on the Yule and PDA models). Finally, we show how local limits can be used to analyze the asymptotic behavior of $H_α$ for large trees and networks, and we obtain general results for the moments of $H_α$ for a broad class of random phylogenetic networks known as blowups of Galton-Watson trees.",
+      "authors": [
+        "François Bienvenu",
+        "Jean-Jil Duchamps",
+        "Hadrien Maffioli"
+      ],
+      "published": "2026-06-23T13:29:58Z",
+      "updated": "2026-06-23T13:29:58Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR",
+        "q-bio.PE"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24562v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24562v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24584v1",
+      "title": "On the convergence of doubly stochastic Markov chains",
+      "abstract": "We characterize the asymptotic behavior of time-homogeneous doubly stochastic Markov chains. Our investigation revolves around understanding the dynamics of products of doubly stochastic matrices, which in turn allows us to fully characterize three distinct behaviors: cyclicity, convergence towards a special equilibrium matrix, and divergence. Notably, we introduce a novel and comprehensive sufficient condition for the convergence of an infinite product of doubly stochastic matrices.",
+      "authors": [
+        "Ludovick Bouthat",
+        "Nicolas Doyon",
+        "Javad Mashreghi",
+        "Frédéric Morneau-Guérin"
+      ],
+      "published": "2026-06-23T13:46:48Z",
+      "updated": "2026-06-23T13:46:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24584v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24584v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24603v1",
+      "title": "Toeplitz Determinants and Admissible Correlation Intervals",
+      "abstract": "For a homogeneous one-dimensional random field, positive semidefiniteness of finite Toeplitz correlation matrices imposes non-trivial constraints on admissible correlation coefficients. The widths of the corresponding admissible intervals are closely related to determinants of principal Toeplitz submatrices. Using the classical Desnanot--Jacobi determinant identity, I derive a simple determinantal representation for the widths of admissible correlation intervals. As an immediate consequence, I recover the product expressions for admissible interval widths previously stated by Schneider & Hartlap (2009). The argument places these relations into the general framework of classical Toeplitz determinant theory.",
+      "authors": [
+        "Thomas Erben"
+      ],
+      "published": "2026-06-23T14:04:04Z",
+      "updated": "2026-06-23T14:04:04Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "astro-ph.GA",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24603v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24603v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24703v1",
+      "title": "Scheduling jobs with unknown size distribution in a M/G/1 queue: the shifted empirical Gittins",
+      "abstract": "In this paper we consider a M/G/1 queue for which we want to minimize the expected response time. We show how to compute indices from $n$ samples of the job size distribution such that the corresponding index policy is asymptotically optimal as $n$ grows. This construction is based on a discretization of the bounded support of the job size distribution and a shift of the samples to their nearest discrete point to the right. We show that the Gittins index of the empirical distribution of these shifted samples is close to the Gittins index of the original distribution. This translates to the asymptotic optimality of the corresponding index policy for minimizing the expected response time. Numerical comparison with other approaches further confirm the efficiency of our approach.",
+      "authors": [
+        "Nicolas Gast",
+        "Bruno Gaujal",
+        "Adrien Obrecht"
+      ],
+      "published": "2026-06-23T15:30:47Z",
+      "updated": "2026-06-23T15:30:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS",
+        "cs.PF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24703v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24703v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24768v1",
+      "title": "Strong duality for the GROW criterion",
+      "abstract": "This paper presents general strong duality results when testing hypotheses by betting against them. A bet is an e-variable for a composite null hypothesis $\\mathcal{P}$: a nonnegative random variable $X$ whose expected value is at most one under every $¶\\in \\Pcal$. Following Kelly, Breiman, Cover, Shafer, Grünwald and others, we study a natural minimax \\emph{log-optimality} criterion: given a composite alternative $\\Qcal$, we characterize the ``GROW value'' $\\sup_{X} \\inf_{\\Q} \\E_{\\Q}[\\log X]$. This paper generalizes the results of \\cite{larsson2025numeraire} from (arbitrary $\\Pcal$ and) simple $\\Qcal$ to arbitrary $\\Qcal$. We identify a weak-$*$ joint information projection pair between arbitrary $\\Pcal$ and $\\Qcal$ that always exists and show that the GROW value for \\emph{bounded} e-variables always equals the relative entropy of this pair, without any restrictions on $\\Pcal$ or $\\Qcal$. We also prove a similarly general strong duality for the REGROW criterion with bounded e-variables and arbitrary bounded offsets. Under various assumptions our results extend to unbounded e-variables, and examples show that without any assumptions such extensions fail. Our results are analogous to those in~\\cite{larsson2026complete}, swapping tests for bounded e-variables, minimax risk for the GROW criterion, and total variation for relative entropy.",
+      "authors": [
+        "Ashwin Ram",
+        "Martin Larsson",
+        "Johannes Ruf",
+        "Aaditya Ramdas"
+      ],
+      "published": "2026-06-23T16:28:56Z",
+      "updated": "2026-06-23T16:28:56Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "cs.GT",
+        "cs.IT",
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24768v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24768v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24771v1",
+      "title": "Autoregressive Processes on Riemannian Manifolds",
+      "abstract": "This paper introduces a Riemannian autoregressive (R-AR) model of order one, generalising classical discrete-time stochastic processes to manifold-valued data. The model is based on two parameters, a parameter $μ$ representing the intrinsic central tendency as the Fréchet mean and an autoregressive parameter $φ$ controlling the stationarity and ergodic properties. Due to the inherent dependence structure of the R-AR process, the estimation procedure for these parameters necessitates new asymptotic results for dependent processes on manifolds. Thus, we establish a strong law of large numbers for the sample Fréchet mean set of ergodic Markov chains in proper metric spaces. By proving this general consistency result, we move beyond the limitations of classical i.i.d. theory to provide the mathematical foundation required for the strong consistency of our proposed estimators. The framework is validated through numerical simulations in the hyperbolic plane and an application to aerosol size distributions on the Fisher-Rao manifold, demonstrating how the proposed model can characterise mean-reverting dynamics in nonlinear geometries.",
+      "authors": [
+        "Meshal Abuqrais",
+        "Davide Pigoli"
+      ],
+      "published": "2026-06-23T16:31:03Z",
+      "updated": "2026-06-23T16:31:03Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24771v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24771v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24793v1",
+      "title": "Random sequential nearest-neighbor coloring on trees",
+      "abstract": "We study a nearest-neighbor coloring process in which vertices are revealed in random order and inherit the color of the closest vertex revealed before them. This model is a discrete analogue of coloring processes previously studied by Preater (2009) and Aldous (2018) in Euclidean spaces. We focus here on regular trees and analyze the associated genealogy of color inheritance. In contrast with the Euclidean case, the genealogical graph on an infinite regular tree is not connected: it has infinitely many infinite one-ended components, each with a distinct asymptotic direction, while every vertex has only finitely many descendants. We also describe how this structure is modified in the presence of finitely many initial seeds. Finally, we study local limits of the coloring on finite regular trees as their height tends to infinity, for two natural seed configurations: two fixed seeds, and one blue seed at the root with red seeds at the leaves.",
+      "authors": [
+        "Anne-Laure Basdevant",
+        "Arvind Singh"
+      ],
+      "published": "2026-06-23T16:46:40Z",
+      "updated": "2026-06-23T16:46:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24793v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24793v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.24821v1",
+      "title": "A Pathwise Approach to the Strong Feller Property and Irreducibility of Nonlinear Branching Processes",
+      "abstract": "We study the strong Feller property and irreducibility for continuous-state nonlinear branching processes defined as solutions to stochastic differential equations with jumps. Due to boundary degeneracy and discontinuous jump coefficients, classical methods do not apply. We develop a pathwise approach combining state-dependent time change, truncated auxiliary processes, and localized coupling to establish these two properties. As applications, we obtain exponential convergence to a unique quasi-stationary distribution in the absorbing case, and uniform exponential ergodicity in the non-absorbing case. This pathwise approach is flexible and can be adapted to a broader class of jump-diffusions without relying on specific coefficient structures.",
+      "authors": [
+        "Pei-Sen Li",
+        "Xiangqi Zheng",
+        "Xiaowen Zhou"
+      ],
+      "published": "2026-06-23T17:05:57Z",
+      "updated": "2026-06-23T17:05:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.24821v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.24821v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
