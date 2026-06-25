@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-24",
-  "total_submissions": 48,
-  "fetched": 48,
-  "generated_at": "2026-06-24T06:16:26Z",
+  "data_through": "2026-06-25",
+  "total_submissions": 65,
+  "fetched": 65,
+  "generated_at": "2026-06-25T06:19:57Z",
   "entries": [
     {
       "id": "2606.23896v1",
@@ -104,6 +104,32 @@
       "score": 4,
       "matched_keywords": [
         "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.25042v1",
+      "title": "Information from coincidences",
+      "abstract": "We prove a single algebraic mixed coincidence identity that unifies a broad swath of information-theoretic variational results. For any family of priors $\\{π_i\\}$ and real exponents $\\{ α_i \\}$, the log of the mixed count $E_{x\\simν}\\!\\left[\\prod_{i=1}^W π_i^{α_i}(x)\\right]$ is simultaneously a Boltzmann coincidence weight, an exponential-family normalizer, a maximum-entropy value, and a KL-barycenter optimum. The identity yields a unified derivation of classical cornerstones of information theory: concentration of empirical distributions (Sanov-type decompositions and Gibbs conditioning), hypothesis-testing error exponents (Chernoff information and its multi-way analogue), change-of-measure inequalities (Donsker-Varadhan and PAC-Bayes), and laws governing rare-pattern coincidences (Erdos-Renyi run-length, iterative guesswork, rate-distortion, and birthday thresholds). Each is recovered as a specialization of the same algebraic equality. It strictly generalizes the classical Renyi entropy and divergence variational formulas (one and two priors respectively) to a $W$-prior simplex, and holds for unnormalized and continuum-indexed priors. Among its consequences are an exact multi-prior PAC-Bayes penalty that subtracts an explicit \"coincidence bonus\" from the usual single-prior posterior penalty, and the asymptotic MAP error exponent for $W$-ary hypothesis testing as an edge-restricted simplex optimum. We demonstrate the calculus at scale on two large alphabets encoding richly modeled sequential languages: on language-model next-token predictives where we recover contrastive decoding, and on human genomic regulatory sequence where it separates correlated from diverse prior families along a sliding-window trace.",
+      "authors": [
+        "Akshay Balsubramani"
+      ],
+      "published": "2026-06-23T18:01:05Z",
+      "updated": "2026-06-23T18:01:05Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25042v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25042v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -250,6 +276,30 @@
       "score": 2,
       "matched_keywords": [
         "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26049v1",
+      "title": "Face volume densities of positive-intensity and ideal Poisson--Voronoi tessellations in hyperbolic spaces",
+      "abstract": "We determine analytically for all $k\\in\\{0,1,\\ldots,d-1\\}$ the $k$-volume densities of a Poisson--Voronoi tessellation of intensity $λ>0$ in the $d$-dimensional hyperbolic space of constant curvature $-1$. This largely extends previous results of Isokawa in dimensions two and three. As applications, we provide closed form expressions for all face volume densities and all typical face volumes of the ideal Poisson--Voronoi tessellation (IPVT), which is the low-intensity limit as $λ\\downarrow0$ of the hyperbolic Poisson--Voronoi tessellation. As a main tool we develop a new Blaschke--Petkantschin--type formula in hyperbolic space.",
+      "authors": [
+        "Matteo D'Achille",
+        "Christoph Thäle"
+      ],
+      "published": "2026-06-24T17:27:08Z",
+      "updated": "2026-06-24T17:27:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.MG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26049v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26049v1",
+      "score": 2,
+      "matched_keywords": [
+        "voronoi"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -1035,7 +1085,7 @@
       "bucket": "other"
     },
     {
-      "id": "2606.24771v1",
+      "id": "2606.24771v2",
       "title": "Autoregressive Processes on Riemannian Manifolds",
       "abstract": "This paper introduces a Riemannian autoregressive (R-AR) model of order one, generalising classical discrete-time stochastic processes to manifold-valued data. The model is based on two parameters, a parameter $μ$ representing the intrinsic central tendency as the Fréchet mean and an autoregressive parameter $φ$ controlling the stationarity and ergodic properties. Due to the inherent dependence structure of the R-AR process, the estimation procedure for these parameters necessitates new asymptotic results for dependent processes on manifolds. Thus, we establish a strong law of large numbers for the sample Fréchet mean set of ergodic Markov chains in proper metric spaces. By proving this general consistency result, we move beyond the limitations of classical i.i.d. theory to provide the mathematical foundation required for the strong consistency of our proposed estimators. The framework is validated through numerical simulations in the hyperbolic plane and an application to aerosol size distributions on the Fisher-Rao manifold, demonstrating how the proposed model can characterise mean-reverting dynamics in nonlinear geometries.",
       "authors": [
@@ -1043,14 +1093,14 @@
         "Davide Pigoli"
       ],
       "published": "2026-06-23T16:31:03Z",
-      "updated": "2026-06-23T16:31:03Z",
+      "updated": "2026-06-24T03:07:12Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2606.24771v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.24771v1",
+      "abs_url": "https://arxiv.org/abs/2606.24771v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.24771v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -1094,6 +1144,331 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.24821v1",
       "pdf_url": "https://arxiv.org/pdf/2606.24821v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25135v1",
+      "title": "Convergence Rates for Semistochastic Processes",
+      "abstract": "We study processes that consist of deterministic evolution punctuated at random times by disturbances with random severity; we call such processes semistochastic. Under appropriate assumptions such a process admits a unique stationary distribution. We develop a technique for establishing bounds on the rate at which the distribution of the random process approaches the stationary distribution. An important example of such a process is the dynamics of the carbon content of a forest whose deterministic growth is interrupted by natural disasters (fires, droughts, insect outbreaks, etc.).",
+      "authors": [
+        "James Broda",
+        "Alexander Grigo",
+        "Nikola P. Petrov"
+      ],
+      "published": "2026-06-23T20:06:40Z",
+      "updated": "2026-06-23T20:06:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25135v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25135v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25204v1",
+      "title": "Exponential Rank Bounds for Random Matrices",
+      "abstract": "Fix $b\\in(0,1)$, let $1\\leq k\\leq n$, and let $A=(A_{ij})$ be an $n\\times n$ random matrix with independent real entries satisfying $$ \\sup_{x\\in\\mathbb{R}}\\mathbb{P}\\{A_{ij}=x\\}\\leq b<1 \\qquad (1\\leq i,j\\leq n). $$ We show that there exists $c>0$ such that $$ \\mathbb{P}\\{\\operatorname{rank} A\\leq n-k\\}\\leq \\exp(-cnk), \\qquad 1\\leq k\\leq n. $$",
+      "authors": [
+        "Achintya Raya Polavarapu"
+      ],
+      "published": "2026-06-23T21:53:58Z",
+      "updated": "2026-06-23T21:53:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25204v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25204v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25336v1",
+      "title": "Invariant Measures of Lévy-driven Stochastic Differential Equations",
+      "abstract": "We study the structure and regularity of (infinitesimally) invariant measures of the solutions to stochastic differential equations $dX_t = b(X_t)\\,dt + dZ_t$, where $(Z_t)_{t\\geq 0}$ is a Lévy process. We show, in particular, that the invariant measure has to satisfy a Volterra-type convolution equation; since we can obtain the kernels explicitly, we are able to apply regularity methods from harmonic analysis. As an application, we get a very short proof -- in any dimension -- of a classic result due to Sato and Yamazato on the form of the invariant measure of a generalized Ornstein--Uhlenbeck process.",
+      "authors": [
+        "V. Knopova",
+        "Y. Mokanu",
+        "R. L. Schilling"
+      ],
+      "published": "2026-06-24T03:05:17Z",
+      "updated": "2026-06-24T03:05:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25336v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25336v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25440v1",
+      "title": "Dragon curves in Littlewood roots",
+      "abstract": "A Littlewood polynomial is a polynomial whose coefficients lie in $\\{- 1, +1\\}$. While the majority of roots of a Littlewood polynomial of large degree are near the unit circle, numerical experiments suggest that when plotting the roots of \\emph{all} Littlewood polynomials of a given large degree, striking fractal structures appear away from the unit circle. These fractals resemble the attractor of a certain iterated function system and are known as \\emph{dragon curves}. In this note, we provide a rigorous explanation of this phenomenon, along with an analysis of a random variant, saying that such fractal behavior is typical.",
+      "authors": [
+        "Marcus Michelen",
+        "Oren Yakir"
+      ],
+      "published": "2026-06-24T06:04:54Z",
+      "updated": "2026-06-24T06:04:54Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25440v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25440v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25441v1",
+      "title": "On the L{é}vy concentration function of Gaussian quadratic forms with applications to second order U-statistics",
+      "abstract": "We provide an upper-bound for the L{é}vy concentration function: $$ Q_{S}(\\varepsilon):= \\sup_{x \\in\\mathbb{R}}\\mathbb{P} (x < S \\leq x+\\varepsilon) $$ where $S$ is a weighted sum of noncentral chi-square random variables: $$ S:= \\sum_{k=1}^\\infty λ_k (Z_k^2 - 1) + μ_kZ_k $$ Here, $\\{Z_k\\}_{k=1}^\\infty$ is a sequence of independent standard Gaussian random variables and $\\{λ_k\\}_{k=1}^\\infty, \\{μ_k\\}_{k=1}^\\infty$ are real valued, square summable sequences. Random variables of this type often appear as limiting distributions of second order U-statistics. Our bound is adaptive, in that it recovers (up to constant factors) Gaussian type concentration function estimates if $\\|λ\\|_2$ is negligible compared to $\\|μ\\|_2$ and chi-square estimates if $\\|μ\\|_{2}$ is negligible compared to $\\|λ\\|_2$. Our bound generalizes existing bounds in various ways. In particular, we make no assumptions regarding the number of nonzero $|λ_k|$ or the size of the minimal $|λ_k|$, nor do we make any assumptions on the signs of $λ_k$. Finally, we apply our bound to some examples of interest, specifically quadratic forms that arise in limit theorems for second-order U-statistics.",
+      "authors": [
+        "Abhimanyu Choudhary",
+        "Arun Kumar Kuchibhotla"
+      ],
+      "published": "2026-06-24T06:09:03Z",
+      "updated": "2026-06-24T06:09:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25441v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25441v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25494v1",
+      "title": "A functional central limit theorem for kernel gradient flow and infinitesimal gradient boosting",
+      "abstract": "Building on the large-sample analysis of infinitesimal gradient boosting (Dombry and Duchamps, 2024b), we study the fluctuations of the process around its deterministic limit and establish a functional central limit theorem: the rescaled deviations converge in distribution to a Gaussian process. The analysis is carried out in a reproducing kernel Hilbert space (RKHS) naturally associated with the softmax gradient tree base learner, in which the boosting process is characterized as the solution of an autonomous ordinary differential equation (ODE). The proof rests on a general stochastic perturbation analysis of ODEs in Banach spaces, which is of independent interest: whenever a sequence of vector fields converges and satisfies a central limit theorem, so does the associated ODE solution. We first illustrate this perturbation approach in the simpler setting of kernel gradient flow, where the Gaussian limit admits an explicit characterization, and then consider the more complicated tree-based gradient boosting setting.",
+      "authors": [
+        "Clément Dombry",
+        "Jean-Jil Duchamps"
+      ],
+      "published": "2026-06-24T07:22:17Z",
+      "updated": "2026-06-24T07:22:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25494v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25494v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25501v1",
+      "title": "An RDT based approach to large deviations of Wishart and Wigner matrices spectral edges",
+      "abstract": "We present a novel methodology for studying \\emph{large deviations principles} (LDPs) of random matrices. By utilizing a partially lifted variant of \\emph{random duality theory} (RDT), we develop a generic LDP framework that completely circumvents traditional random matrix theory (RMT) methods. To demonstrate the framework's simplicity and accuracy, we apply it to the Wishart and Wigner GOE classical statistical ensembles. In both cases, we obtain elegant LDP characterizations of the upper and lower spectral edges that fully match the results achieved through traditional \\emph{Coulomb gas} methodologies in [85,95].",
+      "authors": [
+        "Mihailo Stojnic"
+      ],
+      "published": "2026-06-24T07:34:18Z",
+      "updated": "2026-06-24T07:34:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25501v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25501v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25539v1",
+      "title": "An example of Ensemble Kalman Filter with resampling",
+      "abstract": "This paper introduces the Exact Ensemble Kalman Filter (ExEnKF), a novel algorithm for state estimation in discrete-time nonlinear filtering problems with linear observations. Unlike traditional Ensemble Kalman Filters (EnKFs), which approximate the filtering distribution using ensembles of Dirac measures, the ExEnKF employs Gaussian measures, enabling more efficient exploration of the state space and potentially alleviating the curse of dimensionality. We prove the algorithm's asymptotic consistency with the optimal filter (Theorem 3.1), establishing a convergence rate of order 1/ $\\sqrt$ N for N particles. Numerical experiments on the Lorenz-96 multiscale model demonstrate that the ExEnKF outperforms the standard EnKF under model misspecification and poor initialization, particularly in highly stochastic regimes. The algorithm's robustness is further highlighted by its ability to track hidden components of the true signal, even when observations are generated from a different model (e.g., multiscale vs. single-scale). This work advances the theoretical understanding of ensemble methods in nonlinear filtering and provides a practical alternative to sequential Monte Carlo methods for high-dimensional systems",
+      "authors": [
+        "Sylvain Rubenthaler"
+      ],
+      "published": "2026-06-24T08:15:23Z",
+      "updated": "2026-06-24T08:15:23Z",
+      "primary_category": "stat.CO",
+      "categories": [
+        "stat.CO",
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25539v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25539v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25716v1",
+      "title": "Imprecise Transition Matrices for Markov Cohort Models: Lower and Upper Expectations with a Practical Health Economic Application",
+      "abstract": "In applied health research, Markov cohort models are built on a precisely specified transition probability matrix. However, in many applications, the available evidence -- transition counts, structural constraints, and treatment-effect data -- identifies a set of admissible matrices rather than one uniquely justified matrix. This paper formulates an imprecise-probability extension in which inference yields lower and upper expectations over an evidence-compatible set of precise Markov cohort models. The contribution differs from existing imprecise Markov-chain work by focusing on finite-horizon cohort trajectories, additive accumulated outcomes, and transition matrices constructed from empirical transition counts. Under non-empty compact separately specified outgoing-row sets, the lower and upper accumulated outcomes are computed exactly by Bellman-style lower and upper transition operators. We prove the envelope theorem, reduction to the classical model, coherence properties of the lower transition operator, and algebraic conditions under which a single selected matrix yields a non-robust decision. We then show how multinomial transition counts induce admissible matrix sets through the Imprecise Dirichlet Model. A real-world cost-effectiveness example of patent foramen ovale closure after cryptogenic stroke illustrates the practical consequence: the empirical transition matrix slightly favors closure, whereas the imprecise analysis yields an incremental net monetary benefit interval crossing zero. The method provides both a rigorous lower-expectation formulation and a practical diagnostic for decisions that depend on transition probabilities not fully resolved by the evidence.",
+      "authors": [
+        "Rowan Iskandar"
+      ],
+      "published": "2026-06-24T11:31:18Z",
+      "updated": "2026-06-24T11:31:18Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25716v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25716v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25771v1",
+      "title": "Pointwise Hurst Estimation via Scale Accumulation: A Noise-Robust Approach for Rough Volatility",
+      "abstract": "We introduce an estimator for the pointwise, time-varying Hölder exponent (Hurst parameter) of a stochastic process, based on the geometry accumulation integral G_Lambda(t) = integral from Lambda to 1 of |eth_s X(t)| s^{-1} ds, where eth_s X(t) = (X(t+s)-X(t))/s is the scale derivative at resolution s. We prove consistency, noise robustness with explicit threshold Lambda* = sigma^{1/H}, and a CLT at rate (log Lambda)^{-1/2}. The estimator is pointwise in time, defined at finite resolution, and eliminates microstructure noise by scale separation. Existing estimators give a global H from integrated variance; this gives a time-varying H(t) directly from the price path.",
+      "authors": [
+        "Jokubas Petkevicius"
+      ],
+      "published": "2026-06-24T12:46:28Z",
+      "updated": "2026-06-24T12:46:28Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25771v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25771v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25810v1",
+      "title": "Spectral Collapse Under Geometric Alignment of Extreme Events",
+      "abstract": "Let Q_n = B_n + J_n be the quadratic covariation matrix of a high-dimensional semimartingale, where J_n is the jump component and B_n is the diffusion component. We prove that spectral collapse occurs -- meaning the ratio of the leading eigenvalue to the trace converges to 1 and the effective rank converges to 1 -- if and only if the jump directions are geometrically aligned in a weighted sense and the background diffusion is asymptotically negligible. The proof separates into two steps: geometric alignment of jump directions forces spectral concentration of J_n; background negligibility then propagates this to the full system. We extend to the stochastic setting and prove convergence in probability under natural conditions on the jump process. The framework gives a scalar diagnostic for detecting when a high-dimensional system is dominated by extreme events.",
+      "authors": [
+        "Jokubas Petkevicius"
+      ],
+      "published": "2026-06-24T13:24:32Z",
+      "updated": "2026-06-24T13:24:32Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25810v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25810v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25857v1",
+      "title": "Selection principles for quasi-stationary distributions and reinforcement processes",
+      "abstract": "Let \\(P\\) be a sub-Markov matrix on a finite set \\(S\\), representing the transition probabilities of a Markov chain on \\(S\\) absorbed at a cemetery point \\(\\partial\\notin S\\). We consider a reinforced process \\((X_n,μ_n)\\) defined as follows: \\((X_n)\\) behaves like a chain with kernel \\(P\\) until it dies, and when it dies at time \\(n\\), it is instantaneously ``resurrected'' at a point sampled according to its weighted past occupation measure \\[ μ_n = \\frac1{W_n} \\left( w_0μ_0+\\sum_{k=1}^n w_kδ_{X_k} \\right), \\qquad W_n=\\sum_{k=0}^n w_k, \\] where the positive weights $w_k$ satisfy certain technical assumptions, a typical example being given by $w_k = k^q$, with $q\\geq -1$. When \\(P\\) is irreducible, the behaviour of \\((μ_n)\\) is well understood \\cite{AFP}, \\cite{bansaye2022non}: it converges almost surely toward the unique quasi-stationary distribution (QSD) of \\(P\\). The purpose of this paper is to investigate the general situation where \\(P\\) is not irreducible. Under generic assumptions on \\(P\\), there are finitely many QSDs. We prove that the asymptotic selection depends on the summability of the inverse cumulative weights \\(1/W_n\\). If \\[ \\sum_{n\\geq0}\\frac1{W_n}=\\infty, \\] then \\((μ_n)\\) almost surely converges toward the QSD associated with the largest Perron value. If instead \\[ \\sum_{n\\geq0}\\frac1{W_n}<\\infty, \\] then each QSD is selected with positive probability. In particular, for polynomial weights \\(w_0=1\\) and \\(w_k=k^q\\), \\(k\\geq1\\), this gives almost sure selection of the QSD with largest Perron value for \\(-1\\leq q\\leq0\\), whereas each quasi-stationary distribution is selected with positive probability for \\(q>0\\).",
+      "authors": [
+        "Michel Benaïm",
+        "Tresnia Berah",
+        "Pierre Germain"
+      ],
+      "published": "2026-06-24T14:07:08Z",
+      "updated": "2026-06-24T14:07:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25857v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25857v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.25976v1",
+      "title": "Gaussian rigidity for infinite exchangeable sequences",
+      "abstract": "We prove a Gaussian rigidity theorem for infinite exchangeable sequences of real-valued random variables: the joint Gaussianity of a single pair of entries already forces the entire sequence to be a Gaussian process. This settles a conjecture raised by Newman (2026). The main analytic ingredient in the proof is Hardy's uncertainty principle. We also obtain a finite-dimensional vector-valued extension.",
+      "authors": [
+        "Yushu Zheng",
+        "Qi Zhou"
+      ],
+      "published": "2026-06-24T15:47:15Z",
+      "updated": "2026-06-24T15:47:15Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.25976v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.25976v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26065v1",
+      "title": "Localized Centered Second-Chaos Operator",
+      "abstract": "We prove a localized continuous-frequency operator estimate for centered Gaussian chaoses of order two. The result applies to operator-valued centered second chaoses, including Wick-centered same-family variants, between Hilbert spaces. In the model, two Gaussian frequency legs at scale $N$, an input leg at scale $Q$, and an output leg at scale $M$ are coupled through a soft incidence kernel; non-orthogonal Gaussian profiles are represented by covariance synthesis maps. The proof combines four oriented flattenings, rectangular non-commutative Khintchine inequalities, soft-incidence Schatten bounds, and Sobolev--Besov dyadic summation. The time lift gives $L^p$ operator convergence, while a Galerkin stabilization hypothesis gives pathwise full-cutoff convergence by the first Borel--Cantelli lemma. Under $\\mathcal G(N)\\lesssim N^{-Γ}$ one obtains the window \\[ Γ>\\frac d2, \\qquad s<λ+Γ-d, \\qquad \\max\\{0,d-Γ\\}<σ<λ+Γ-d. \\] The theorem applies to the near-output Wick-centered branch of localized paracontrolled resonant products on $\\mathbb R^d$.",
+      "authors": [
+        "Guangqian Zhao"
+      ],
+      "published": "2026-06-24T17:42:51Z",
+      "updated": "2026-06-24T17:42:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26065v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26065v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26086v1",
+      "title": "On the entropic convergence for piecewise deterministic samplers: speedup and obstruction",
+      "abstract": "For piecewise deterministic samplers such as Randomized Hamiltonian Monte Carlo (RHMC), Bouncy Particle Sampler (BPS) or Zig-Zag Process (ZZP), long-time exponential convergence rates have been established in previous works using Harris or $L^2$ hypocoercivity approaches. In particular, in the $L^2$ framework, a so-called \\emph{diffusive-to-ballistic} speedup was known for log-concave targets, according to which the convergence rates of these samplers, with suitable parameters, are quadratically improved with respect to the standard overdamped Langevin diffusion process. A recent work by Jianfeng Lu showed that this speedup also holds for the kinetic Langevin diffusion process when the convergence is stated in terms of relative entropy, raising the question whether this also holds for piecewise deterministic samplers. The present work provides a positive and a negative answer to this: first, we show that the speedup holds in entropy for RHMC; second, we show that for BPS or ZZS, even for a standard Gaussian target, a similar result cannot hold, and even that exponential convergence (at any rate) in entropy fails.",
+      "authors": [
+        "Pierre Monmarché",
+        "Lihan Wang"
+      ],
+      "published": "2026-06-24T17:56:17Z",
+      "updated": "2026-06-24T17:56:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "stat.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26086v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26086v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
