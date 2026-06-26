@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-06-25",
-  "total_submissions": 65,
-  "fetched": 65,
-  "generated_at": "2026-06-25T06:19:57Z",
+  "data_through": "2026-06-26",
+  "total_submissions": 82,
+  "fetched": 82,
+  "generated_at": "2026-06-26T06:29:46Z",
   "entries": [
     {
       "id": "2606.23896v1",
@@ -35,6 +35,31 @@
         "Christian Monch"
       ],
       "bucket": "coauthor"
+    },
+    {
+      "id": "2606.27117v1",
+      "title": "Occupation-Time Fluctuations of an Age-Dependent Branching System Driven by Poisson Immigration",
+      "abstract": "We study the occupation-time fluctuations of a critical age-dependent branching particle system with immigration in $\\mathbb{R}^d$. Immigrants arrive according to a homogeneous Poisson random measure in space and time. Each particle moves independently according to a symmetric $α$-stable process and, at the end of its lifetime, either dies or splits into two offspring with equal probability. The lifetime distribution is allowed to have either finite mean or a heavy tail of index $γ\\in(0,1]$. We investigate the asymptotic behavior of the centered occupation-time process under a suitable space-time scaling. Assuming $ α<d<(1+γ)α, $ we prove that the rescaled occupation-time fluctuations weakly converge as processes with values in the space of tempered distributions to a centered Gaussian process with an explicitly identified covariance structure. The normalization and the covariance depend on both the stability index $α$ and the tail exponent $γ$. The limiting process is self-similar, possesses long-range dependence, and is neither Markovian nor a semimartingale. In contrast with the corresponding age-dependent branching system without immigration, the contribution of the initial population vanishes in the limit, and the asymptotic fluctuations are entirely determined by the immigration mechanism. When $γ=1$, our results recover the covariance structure previously obtained for branching systems with immigration and finite-mean lifetimes. The proofs rely on the space-time random field approach, Fourier analytic techniques, and asymptotic properties of renewal functions associated with the lifetime distribution.",
+      "authors": [
+        "Ekaterina T. Kolkovska",
+        "José Alfredo López-Mimbela",
+        "Maroussia Slavtchova-Bojkova"
+      ],
+      "published": "2026-06-25T14:56:01Z",
+      "updated": "2026-06-25T14:56:01Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27117v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27117v1",
+      "score": 8,
+      "matched_keywords": [
+        "age-dependent",
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "high"
     },
     {
       "id": "2606.24385v1",
@@ -130,6 +155,30 @@
       "matched_keywords": [
         "erdos",
         "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2606.27261v1",
+      "title": "Non-colliding space-time inhomogeneous Markov chains",
+      "abstract": "We establish the explicit leading order asymptotics, with a quantitative error bound, of tail probabilities of collision times for a class of integrable space-time inhomogeneous Markov chains, in discrete and continuous time. The corresponding process conditioned not to intersect arises in interacting particle systems with local push-block interactions thereby confirming a recent prediction. The generic discrete nature of the spatial inhomogeneities rules out powerful coupling-with-Brownian-motion techniques, so our proof strategy proceeds instead via a novel steepest-descent analysis combined with a Karlin--McGregor semigroup expansion in terms of dominant-index contributions.",
+      "authors": [
+        "Theodoros Assiotis",
+        "Miles Foster Nyamundanda"
+      ],
+      "published": "2026-06-25T16:44:59Z",
+      "updated": "2026-06-25T16:44:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27261v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27261v1",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -300,6 +349,31 @@
       "score": 2,
       "matched_keywords": [
         "voronoi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27349v1",
+      "title": "All you need is log",
+      "abstract": "Comparing two probability distributions is a basic building block of statistics and machine learning, and the right family is well understood: the Rényi divergences of order $α\\in[0,\\infty]$ are the unique family monotone under data processing and additive on independent products. Many problems instead compare more than two distributions at once -- multi-population fairness, multi-prior PAC-Bayes bounds, multi-hypothesis testing -- and the right multi-distribution generalization of the Rényi family has been an open question. We characterize it. Every functional of $W$-tuples of distributions that is monotone under data processing and additive on independent products is a positive integral of multi-way coincidence divergences $C_α(π_1,\\dots,π_W) := -\\log\\int π_1^{α_1}\\cdotsπ_W^{α_W}$ (with $\\sum_k α_k = 1$) over a parameter space with four strata: the simplex interior; mixed-sign exponent cones (the analogue of Rényi orders $>1$); a tropical boundary at infinity carrying max-divergences; and pairwise Kullback-Leibler edges at the simplex vertices. Each stratum is necessary -- the destination of an explicit data-processing-monotone, product-additive divergence the others cannot reproduce -- and each is a clean limit of simplex-interior atoms. The same family arises from five independent routes -- the structural axioms, Kolmogorov-Nagumo means with Rényi's entropy axiomatics, classical entropy characterizations, multi-hypothesis testing error exponents, and a multi-lottery betting interpretation -- structural evidence that this is the canonical multi-distribution Rényi calculus rather than an artefact of any one axiomatic input. The two-prior case recovers the standard Rényi result; a worked $W=3$ instance, numerical verification, and a conditional extension round out the treatment.",
+      "authors": [
+        "Akshay Balsubramani"
+      ],
+      "published": "2026-06-25T17:54:49Z",
+      "updated": "2026-06-25T17:54:49Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27349v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27349v1",
+      "score": 2,
+      "matched_keywords": [
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -735,6 +809,27 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.24056v1",
       "pdf_url": "https://arxiv.org/pdf/2606.24056v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26149v1",
+      "title": "On Support Cardinality for Discrete Schrödinger Equation",
+      "abstract": "How sparse can a nontrivial solution of a discrete Schrödinger equation be? In this note we study Dirichlet solutions on a finite $d$-dimensional lattice box, allowing an arbitrary real potential, and measure sparsity by the number of lattice sites at which the solution is nonzero (assuming it is nonzero at the origin). Our main result is a dimension-reduction principle: the minimal possible support size cannot decrease when the dimension increases. Consequently, any lower bound proved in dimension $d-1$ automatically yields the same lower bound in dimension $d$. As an application, we obtain a nearly sharp lower bound in four dimensions, matching the best-known two-dimensional constructions up to a logarithmic factor.",
+      "authors": [
+        "Linjun Li"
+      ],
+      "published": "2026-06-23T02:20:20Z",
+      "updated": "2026-06-23T02:20:20Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26149v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26149v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -1469,6 +1564,291 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.26086v1",
       "pdf_url": "https://arxiv.org/pdf/2606.26086v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26318v1",
+      "title": "Lower bounds on non-central sections of isotropic convex bodies",
+      "abstract": "For fixed $t_0 \\in [0,\\sqrt{3}]$ we give asymptotically sharp lower bounds on the quantity $L_K \\text{vol}_{d-1}(K \\cap H)$, where $H$ is a hyperplane at distance $t_0 L_K$ from the origin, $K$ is any symmetric isotropic convex body in $\\mathbb{R}^d$, and $L_K$ stands for the isotropic constant of $K$.",
+      "authors": [
+        "Jacek Jakimiuk",
+        "Daniel Murawski",
+        "Piotr Nayar"
+      ],
+      "published": "2026-06-24T19:02:40Z",
+      "updated": "2026-06-24T19:02:40Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26318v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26318v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26496v1",
+      "title": "Homeomorphism of the Revuz correspondence under Dynkin class assumptions",
+      "abstract": "This paper investigates the topological properties of the Revuz correspondence between positive continuous additive functionals (PCAFs) and their associated smooth measures. Within the Dynkin, local Dynkin, and Green-tight Dynkin classes, we establish bidirectional equivalences among measure convergence, potential convergence, and PCAF convergence. In the local Dynkin class, weak convergence on compact sets, strong $\\mathcal{E}_1$-convergence of potentials, uniform convergence of potentials, and $L^1$-convergence of PCAFs are mutually equivalent; under the Green-tight condition, this equivalence extends to the whole space.",
+      "authors": [
+        "Zijian Xu"
+      ],
+      "published": "2026-06-25T01:02:55Z",
+      "updated": "2026-06-25T01:02:55Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26496v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26496v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26544v1",
+      "title": "Maximizing Throughput in an M/G/1 Queue with Customer Abandonments",
+      "abstract": "This paper studies the problem of identifying the optimal server assignment policy in single-server queues with customer abandonment. We consider a system with Poisson arrivals and exponentially distributed patience times. We show that when service times follow either an Erlang-$K$ or a hyperexponential distribution and the decision maker can observe the phase of a customer's service time, the Shortest Remaining Expected Processing Time (SREPT) policy maximizes the long-run average throughput, independent of the abandonment rate.",
+      "authors": [
+        "Runhua Wu",
+        "Hayriye Ayhan",
+        "Douglas G. Down"
+      ],
+      "published": "2026-06-25T02:39:08Z",
+      "updated": "2026-06-25T02:39:08Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26544v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26544v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26619v1",
+      "title": "Ergodicity of stochastic reaction-diffusion equations on unbounded domains driven by space-time white noise",
+      "abstract": "We consider the stochastic reaction-diffusion equation on the whole space: \\begin{align*} \\left\\{ \\begin{aligned} du(t,x) &=\\frac{1}{2}\\partial_{xx} u(t,x) dt+b(u(t,x))dt+ σ(u(t,x)) W(dt,dx),\\quad t\\geq 0,\\ x\\in \\mathbb{R},\\\\ u(0,x)&=u_0(x), \\quad x\\in \\mathbb{R}, \\end{aligned} \\right. \\end{align*} where $W(dt,dx)$ is a space-time white noise, $b$, $σ$ are measurable coefficients. We first show that the solution is not strong Feller, and then establish the existence and uniqueness of invariant measures, exponential mixing as well as irreducibility for the solutions. To overcome the difficulties caused by the unbounded domain, we design special controls and controlled equations to prove the irreducibility. To obtain the exponential mixing property under the dissipative condition $$(b(x)-b(y))(x-y)\\leq -α(x-y)^2,$$ the obstacle is the lack of the Itô formula/energy equality. To circumvent the problem, we manage to find a new way to fully exploit comparison principles, which we believe could be useful for other type of stochastic partial differential equations driven by multiplicative space-time noise. We note that the dissipative condition allows the coefficients to be of polynomial, even exponential growth. There exist plenty of models that satisfy the dissipative condition, including the Allen-Cahn type equations. To the best of our knowledge, this is the first paper to establish the ergodicity, exponential mixing and irreducibility of stochastic reaction-diffusion equations (SRDEs) driven by multiplicative space-time noise on unbounded domains. The results on exponential mixing are also new for (SRDEs) driven by multiplicative space-time noise on bounded domains.",
+      "authors": [
+        "Shijie Shang",
+        "Jianliang Zhai",
+        "Tusheng Zhang"
+      ],
+      "published": "2026-06-25T05:30:51Z",
+      "updated": "2026-06-25T05:30:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26619v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26619v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26681v1",
+      "title": "Global well-posedness for general parabolic Anderson model on the whole plane",
+      "abstract": "For every $ 0<κ<\\sqrt 5-2$, we prove global existence for the two-dimensional generalized parabolic Anderson model on the whole space $\\mathbb R^2$ with nonlinearity $F\\in C_b^2(\\mathbb R)$, driven by an enhanced noise $(η,Ψ)$. Here the noise $η$ has polynomially weighted spatial Besov--Hölder regularity $-1-κ$, and $Ψ$ is the corresponding renormalized second-order object. If $F''$ is globally Lipschitz, the solution is unique. The proof combines a weight-compatible annular high-low decomposition with a paracontrolled transport representation. The final remainder is estimated simultaneously in weighted $L^\\infty$ norm and in a higher order weighted parabolic Hölder norm, with strictly different polynomial weights. This weight gap absorbs the polynomial losses arising from the enhanced noise and the transport coefficient. Several key refinements of the earlier works allow the maximum-principle and Schauder estimates to yield a global a priori bound for a larger range of $κ$. Uniqueness is proved in a time-dependent exponentially weighted topology.",
+      "authors": [
+        "Hao Shen",
+        "Rongchan Zhu",
+        "Xiangchan Zhu"
+      ],
+      "published": "2026-06-25T07:13:39Z",
+      "updated": "2026-06-25T07:13:39Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26681v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26681v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26929v1",
+      "title": "Onsager--Machlup functionals for McKean--Vlasov SDEs via Euler-type approximation",
+      "abstract": "The Onsager--Machlup action functional provides a variational framework for characterizing the most probable transition paths of stochastic systems and plays an important role in the study of nonequilibrium fluctuations. Its extension to McKean--Vlasov stochastic differential equations is complicated by the intrinsic distribution dependence of the coefficients. In this paper, we address this difficulty by introducing an Euler-type approximation scheme based on classical, distribution-free stochastic differential equations. Combining the classical Onsager--Machlup theory with a convergence argument for the approximation sequence, we derive an explicit expression for the Onsager--Machlup functional associated with the McKean--Vlasov SDE. The proposed approach is constructive and extends to a broad class of distribution-dependent stochastic systems.",
+      "authors": [
+        "Ying Chao",
+        "Pingyuan Wei"
+      ],
+      "published": "2026-06-25T12:03:35Z",
+      "updated": "2026-06-25T12:03:35Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26929v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26929v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.26958v1",
+      "title": "Spectral expansion of LQG heat trace and KPZ scaling",
+      "abstract": "Let $h$ be a whole plane Gaussian free field, and let $Ω$ be a bounded domain in two dimensions. We study the asymptotics as $t\\to 0$ of the Liouville quantum gravity (LQG) heat trace, defined as the integral over $Ω$ of the on-diagonal LQG heat kernel. Our main result is to show that the second term in the spectral expansion as $t\\to 0$ of the expected heat trace is governed by a nontrivial exponent, given by the KPZ (Knizhnik--Polyakov--Zamolodchikov) relation. A similar but stronger (almost sure) result applies to the related notion of heat content. Along the way we obtain various results on the short-term behaviour of the heat kernel, notably solving a conjecture of \\cite{BW} concerning its annealed asymptotics, and showing the finiteness of all moments of the properly rescaled heat kernel.",
+      "authors": [
+        "Nathanaël Berestycki",
+        "Jakob Klein"
+      ],
+      "published": "2026-06-25T12:32:40Z",
+      "updated": "2026-06-25T12:32:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.26958v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.26958v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27035v1",
+      "title": "Rémy's diffusion on Brownian trees",
+      "abstract": "Rémy's algorithm is a famous recursive construction of uniform random binary trees of growing size by a local grafting operation. In this work we construct a continuous version, a new local diffusion on the space of real trees of growing Brownian Continuum Random Trees (CRT's). It appears as the scaling limit of a variant of Rémy's algorithm due to Bacher, Bodini, and Jacquot. Once the trees are rescaled to have constant mass, this diffusion uncovers an ergodic dynamics on trees with the Brownian CRT as unique invariant law.",
+      "authors": [
+        "Nicolas Curien",
+        "Cyril Marzouk"
+      ],
+      "published": "2026-06-25T13:42:24Z",
+      "updated": "2026-06-25T13:42:24Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27035v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27035v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27073v1",
+      "title": "Retention Profiles and KL Contraction Bounds in Finite Markov Chains",
+      "abstract": "We study Kullback-Leibler (KL) contraction in finite Markov chains through a row-wise perspective. Evaluating the SDPI ratio at point masses yields a state-indexed retention profile $r(x)=D_{\\mathrm{KL}}(P(x,\\cdot)\\|π)/\\log(1/π(x))$ and a localization ratio $L(P)=\\bar r_π/M\\in[0,1]$ (with $M=\\max_x r(x)$, $\\bar r_π=\\mathbb{E}_πr$) that distinguishes localized from global contraction obstructions. Our main contributions are (i) a convexity-gap identity showing that the gap between the row-averaged divergence and $D_{\\mathrm{KL}}(μP\\|π)$ equals the mutual information $I_μ(X;Y)$, and a derived decomposition of the contraction ratio into entropy inflation and a mutual-information penalty; (ii) a Cheeger-type lower bound on $M$, tying the bottleneck geometry of $P$ directly to the row-retention profile; (iii) an explicit construction proving that $L(P_n)\\to 0$ does not force $η_{\\mathrm{KL}}(P_n)/M_n\\to 1$, identifying cardinality of high-retention states (not their $π$-mass) as the decisive quantity. Alongside these, we record structural consequences, optimal Markov/reverse-Markov tail bounds for $r$, a Bhatia-Davis variance bound, two-sided spectral bounds with an explicit cubic correction, a KL/Pinsker mixing-time bound, and tensorization for product chains. We further show that $L(P)$ is structurally decoupled from the spectral gap, the Cheeger constant, and the mixing time: every vertex-transitive chain satisfies $L(P)=1$ regardless of its mixing speed, and the empirical rank correlations between $L(P)$ and these classical invariants on a diverse but limited test suite are essentially zero. The numerical experiments are exploratory and not used as evidence for a universal classification theorem.",
+      "authors": [
+        "Saurav Jadhav"
+      ],
+      "published": "2026-06-25T14:15:59Z",
+      "updated": "2026-06-25T14:15:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27073v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27073v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27078v1",
+      "title": "Semimartingale Optimal Transport with Jumps: A General Framework and Equivalent Formulations",
+      "abstract": "We study a semimartingale optimal transport (SOT) problem where the cost depends on the full differential characteristics, and the minimisation is over all semimartingale laws with given marginals whose absolutely continuous characteristics lie in a prescribed closed convex set. Under only minimal assumptions of measurability, convexity, and lower semicontinuity on the cost function, we prove the existence of an optimal plan for SOT and establish a Kantorovich-type duality without time-regularity conditions. We further prove that SOT admits four equivalent formulations: (i) a Kantorovich duality formulation, (ii) a viscosity solution formulation of the Hamilton--Jacobi--Bellman equation, (iii) a martingale solution formulation via Markovian projection, (iv) a PDE formulation via weak solutions of a non-local Fokker--Planck--Kolmogorov equation. The framework simultaneously generalises classical optimal transport, martingale optimal transport, Schrödinger bridge problems, and barycentric weak optimal transport.",
+      "authors": [
+        "Boyi Hou",
+        "Zhenxin Liu"
+      ],
+      "published": "2026-06-25T14:18:51Z",
+      "updated": "2026-06-25T14:18:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27078v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27078v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27259v1",
+      "title": "A modified Euler-Maruyama method to simulate a one-dimensional sticky diffusion",
+      "abstract": "A sticky diffusion is a process that can stick to and detach from a lower-dimensional boundary. A challenge in simulating such a process is in capturing the change in dimension in a dynamically consistent way. We introduce a numerical algorithm to simulate a one-dimensional sticky diffusion, which sticks to and detaches from a point. Our method is a simple modification of the standard Euler-Maruyama scheme, which chooses with some probability between a reflected Euler-Maruyama update and a jump to the sticky point. We show how to choose this probability to be consistent with the generator of the desired dynamics, and we prove that our scheme converges weakly to a sticky diffusion with order 1.",
+      "authors": [
+        "Chenqi Jiang",
+        "Miranda Holmes-Cerfon"
+      ],
+      "published": "2026-06-25T16:44:07Z",
+      "updated": "2026-06-25T16:44:07Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27259v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27259v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27324v1",
+      "title": "Kolmogorov equations for stochastic convective Brinkman-Forchheimer equations forced by Lévy Noise and its application to infinite horizon problems",
+      "abstract": "This article examines the Kolmogorov equation corresponding to the following stochastic two- and three-dimensional incompressible ($\\nabla\\cdot\\boldsymbol{u}=0$) convective Brinkman-Forchheimer equations, also known as the damped Navier-Stokes equations, driven by Lévy noise on the torus: \\begin{align*} \\mathrm{d}\\boldsymbol{u}+[-μΔ\\boldsymbol{u}+(\\boldsymbol{u}\\cdot\\nabla)\\boldsymbol{u}+α\\boldsymbol{u}+β|\\boldsymbol{u}|^{r-1}\\boldsymbol{u}+\\nabla p]\\mathrm{d} t =\\sqrt{\\mathrm{Q}}\\mathrm{d}\\mathrm{W}+\\int_{Z}σ(t,z)\\widetildeπ(\\mathrm{d} t,\\mathrm{d} z), \\end{align*} where $μ,α,β>0$ are physical constants; $\\mathrm{Q}$ is a non-negative, trace-class operator; $\\mathrm{W}$ is a cylindrical Wiener process on a Hilbert space; $σ$ represents the jump-noise coefficient; $(Z,\\mathscr{B}(Z))$ is a measurable space; $π$ is a time-homogeneous Poisson random measure; and $\\widetildeπ$ denotes its compensator. The main contribution of this work is the establishment of the essential $m$-dissipativity of the corresponding Kolmogorov operator, a property that has received limited attention in the existing literature for systems driven by jump-type noise. \\emph{Our main innovation is that, in contrast to traditional techniques which crucially depend on exponential moment estimates, we utilize the intrinsic structure of the absorption term $α\\boldsymbol{u}+β|\\boldsymbol{u}|^{r-1}\\boldsymbol{u}$ to dispense with these requirements. This allows us to establish the essential $m$-dissipativity of the Kolmogorov operator without the need for exponential moments.} We apply the developed framework to an infinite-horizon stochastic optimal control problem, demonstrating the solvability of the associated infinite-dimensional Hamilton-Jacobi-Bellman (integro-differential) equation.",
+      "authors": [
+        "Sagar Gautam",
+        "Manil T. Mohan"
+      ],
+      "published": "2026-06-25T17:36:12Z",
+      "updated": "2026-06-25T17:36:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27324v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27324v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.27357v1",
+      "title": "Typical distances in high-genus triangulations",
+      "abstract": "We study the distance between two uniformly chosen points on a uniform random triangulation whose genus g is proportional to the number of faces 2n. We show that the distance rescaled by log(n) converges in probability to a deterministic constant, which answers a conjecture of Budzinski, Chapuy and Louf. The proof relies on the precise study of the volume growth of the ball of radius r for r of order log(n). The main ingredients are the recent local convergence results for uniform triangulations with boundaries and the isoperimetric inequalities obtained by Budzinski and Louf.",
+      "authors": [
+        "Tanguy Lions"
+      ],
+      "published": "2026-06-25T17:57:59Z",
+      "updated": "2026-06-25T17:57:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.27357v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.27357v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
