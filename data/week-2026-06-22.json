@@ -5,11 +5,11 @@
   "iso_week": 26,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-06-28",
-  "total_submissions": 132,
-  "fetched": 132,
-  "generated_at": "2026-06-30T06:33:34Z",
+  "total_submissions": 133,
+  "fetched": 133,
+  "generated_at": "2026-07-01T06:45:06Z",
   "entries": [
     {
       "id": "2606.27844v1",
@@ -1746,23 +1746,23 @@
       "bucket": "other"
     },
     {
-      "id": "2606.25857v1",
+      "id": "2606.25857v2",
       "title": "Selection principles for quasi-stationary distributions and reinforcement processes",
-      "abstract": "Let \\(P\\) be a sub-Markov matrix on a finite set \\(S\\), representing the transition probabilities of a Markov chain on \\(S\\) absorbed at a cemetery point \\(\\partial\\notin S\\). We consider a reinforced process \\((X_n,μ_n)\\) defined as follows: \\((X_n)\\) behaves like a chain with kernel \\(P\\) until it dies, and when it dies at time \\(n\\), it is instantaneously ``resurrected'' at a point sampled according to its weighted past occupation measure \\[ μ_n = \\frac1{W_n} \\left( w_0μ_0+\\sum_{k=1}^n w_kδ_{X_k} \\right), \\qquad W_n=\\sum_{k=0}^n w_k, \\] where the positive weights $w_k$ satisfy certain technical assumptions, a typical example being given by $w_k = k^q$, with $q\\geq -1$. When \\(P\\) is irreducible, the behaviour of \\((μ_n)\\) is well understood \\cite{AFP}, \\cite{bansaye2022non}: it converges almost surely toward the unique quasi-stationary distribution (QSD) of \\(P\\). The purpose of this paper is to investigate the general situation where \\(P\\) is not irreducible. Under generic assumptions on \\(P\\), there are finitely many QSDs. We prove that the asymptotic selection depends on the summability of the inverse cumulative weights \\(1/W_n\\). If \\[ \\sum_{n\\geq0}\\frac1{W_n}=\\infty, \\] then \\((μ_n)\\) almost surely converges toward the QSD associated with the largest Perron value. If instead \\[ \\sum_{n\\geq0}\\frac1{W_n}<\\infty, \\] then each QSD is selected with positive probability. In particular, for polynomial weights \\(w_0=1\\) and \\(w_k=k^q\\), \\(k\\geq1\\), this gives almost sure selection of the QSD with largest Perron value for \\(-1\\leq q\\leq0\\), whereas each quasi-stationary distribution is selected with positive probability for \\(q>0\\).",
+      "abstract": "Let $P$ be a sub-Markov matrix on a finite set $S$, representing the transition probabilities of a Markov chain on \\(S\\) absorbed at a cemetery point $\\partial\\notin S$. We consider a reinforced process \\((X_n,μ_n)\\) defined as follows: $(X_n)$ behaves like a chain with kernel $P$ until it dies, and when it dies at time $n$, it is instantaneously ``resurrected'' at a point sampled according to its weighted past occupation measure $$ μ_n = \\frac{1}{W_n} \\left( w_0μ_0+\\sum_{k=1}^n w_kδ_{X_k} \\right), \\qquad W_n=\\sum_{k=0}^n w_k, $$ where the positive weights $w_k$ satisfy certain technical assumptions, a typical example being given by $w_k = k^q$, with $q\\geq -1$. When $P$ is irreducible, the behaviour of $(μ_n)$ is well understood \\cite{AFP}, \\cite{bansaye2022non}: it converges almost surely toward the unique quasi-stationary distribution (QSD) of $P$. The purpose of this paper is to investigate the general situation where $P$ is not irreducible. Under generic assumptions on $P$, there are finitely many QSDs. We prove that the asymptotic selection depends on the summability of the inverse cumulative weights $1/W_n$. If $$ \\sum_{n\\geq 0}\\frac1{W_n}=\\infty, $$ then $(μ_n)$ almost surely converges toward the QSD associated with the largest Perron value. If instead $$ \\sum_{n\\geq0}\\frac1{W_n}<\\infty, $$ then each QSD is selected with positive probability. In particular, for polynomial weights $w_0=1$ and $w_k=k^q$, $k\\geq1$, this gives almost sure selection of the QSD with largest Perron value for $-1\\leq q\\leq 0$, whereas each quasi-stationary distribution is selected with positive probability for $q>0$.",
       "authors": [
         "Michel Benaïm",
         "Tresnia Berah",
         "Pierre Germain"
       ],
       "published": "2026-06-24T14:07:08Z",
-      "updated": "2026-06-24T14:07:08Z",
+      "updated": "2026-06-30T15:18:46Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.DS"
       ],
-      "abs_url": "https://arxiv.org/abs/2606.25857v1",
-      "pdf_url": "https://arxiv.org/pdf/2606.25857v1",
+      "abs_url": "https://arxiv.org/abs/2606.25857v2",
+      "pdf_url": "https://arxiv.org/pdf/2606.25857v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2989,6 +2989,28 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.29622v1",
       "pdf_url": "https://arxiv.org/pdf/2606.29622v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2606.30692v1",
+      "title": "Stochastic Analysis of Fade Duration Using Wiener Chaos Expansion and Malliavin Calculus: Optimal Importance Sampling via Adaptive SGD",
+      "abstract": "Characterizing fade duration in wireless channels is fundamental for designing robust communication systems. Classical approaches -- Rice's level-crossing theory and Monte Carlo simulation -- lack precision for tail events and are computationally prohibitive for rare-event probability estimation. This paper introduces a rigorous framework combining Wiener Chaos Expansion (WCE), Malliavin Calculus, and importance sampling with adaptive weights to analyze fade duration $Z(T)$ distributions. Main contributions include: (i) high-accuracy moment estimation and CCDF characterization via WCE minimizing Monte Carlo variance; (ii) Markovian projection reducing infinite-dimensional dynamics to tractable systems ($\\dim \\leq 3$) for Rayleigh, Rician, and Nakagami models under stated assumptions; (iii) asymptotically optimal importance sampling weights derived from Malliavin sensitivities, achieving 839 to 2516x variance reductions; (iv) a theoretically grounded and provably efficient adaptive SGD algorithm with Robbins-Monro step size schedule for parameter estimation. Numerical experiments validate our approach with relative errors below 0.5\\%, enabling gradient-based optimization of fade duration statistics even for regimes where $P \\sim 10^{-15}$, without requiring $\\mathcal{O}(1/P)$ samples, by evaluating sensitivities through analytical Malliavin weights.",
+      "authors": [
+        "Francisco Delgado-Vences"
+      ],
+      "published": "2026-06-28T22:17:41Z",
+      "updated": "2026-06-28T22:17:41Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR",
+        "stat.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2606.30692v1",
+      "pdf_url": "https://arxiv.org/pdf/2606.30692v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
