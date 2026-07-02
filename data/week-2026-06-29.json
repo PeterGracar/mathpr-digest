@@ -6,11 +6,62 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-01",
-  "total_submissions": 51,
-  "fetched": 51,
-  "generated_at": "2026-07-01T06:45:07Z",
+  "data_through": "2026-07-02",
+  "total_submissions": 75,
+  "fetched": 75,
+  "generated_at": "2026-07-02T06:10:15Z",
   "entries": [
+    {
+      "id": "2607.00731v1",
+      "title": "Sharp Asymptotics for the Largest Component in the Subcritical Regime of Preferential Attachment Without Vertex Growth",
+      "abstract": "We study the size of the largest component in Pittel's preferential attachment process without vertex growth. Starting from the empty graph on a fixed vertex set $[n]$, edges are added one by one with probabilities proportional to $(d_u+α)(d_v+α)$, where $d_u$ and $d_v$ are the current degrees of $u$ and $v$, and $α>0$. Let $L_1$ denote the size of the largest component, and set $m_c:=\\frac{αn}{2(α+1)}.$ We prove that if $m=m_c(1-\\varepsilon), \\varepsilon=\\varepsilon(n)\\to0, \\varepsilon^3 n\\to\\infty,$ then \\[ L_1=(1+o_p(1))\\frac{2(α+2)}{α+1}\\varepsilon^{-2}\\log(\\varepsilon^3 n) \\] for every fixed $α>0$. More generally, the same asymptotic holds whenever $α=α(n)\\to a\\in(0,\\infty]$. In particular, the constant $2(α+2)/(α+1)$ converges to the Erdős--Rényi value $2$ as $α\\to\\infty$. Moreover, if $m=\\left\\lfloor \\frac n2(1-\\varepsilon)\\right\\rfloor$ and $α\\varepsilon\\to\\infty$, then \\[ L_1=(2+o_p(1))\\varepsilon^{-2}\\log(\\varepsilon^3 n). \\] The subcritical asymptotics for \\(L_1\\) resolve the problem left open by Janson and Warnke. The upper bound argument relies on the observation that, after conditioning on the degree sequence, the graph can be treated through the corresponding configuration model, the lower bound follows from tree component asymptotics and a second moment argument.",
+      "authors": [
+        "Yiming Chen"
+      ],
+      "published": "2026-07-01T10:17:10Z",
+      "updated": "2026-07-01T10:17:10Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00731v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00731v1",
+      "score": 12,
+      "matched_keywords": [
+        "configuration model",
+        "erdos",
+        "preferential attachment",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.00897v1",
+      "title": "Recovery of Planted Subgraphs",
+      "abstract": "Understanding the fundamental limits of recovering planted subgraphs in random graphs is a central challenge in high-dimensional statistics and theoretical computer science. While existing work has largely focused on special subgraph families such as cliques, bicliques, or dense blocks, the exact recovery of a general planted subgraph in Erdős--Rényi random graphs remains poorly understood. In this paper, we study the exact recovery of an arbitrary planted subgraph $Γ= Γ_n$ embedded in a dense Erdős--Rényi random graph $\\mathcal{G}(n,q_n)$, where edges within $Γ$ are present independently with probability $p_n > q_n$. Our main results identify sharp conditions under which exact recovery is possible with high probability, and we establish matching lower bounds showing the necessity of these conditions. The resulting statistical threshold is characterized by a new graph-theoretic quantity, which we term the \\emph{minimal maximum subgraph density}. This quantity is defined as the maximum subgraph density of the smallest induced balanced subgraph of $Γ$. We then turn to the problem of recovery under polynomial-time constraints. We propose a computationally efficient recovery algorithm that applies to arbitrary planted subgraphs and analyze its performance in terms of certain spectral properties of the adjacency matrix. In addition, we derive computational lower bounds for recovery using the low-degree polynomial framework, establishing regimes where recovery is statistically possible but computationally hard. Finally, we consider several extensions of our setting, including recovery in semi-random models and weaker notions of recovery.",
+      "authors": [
+        "Wasim Huleihel"
+      ],
+      "published": "2026-07-01T13:02:12Z",
+      "updated": "2026-07-01T13:02:12Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00897v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00897v1",
+      "score": 7,
+      "matched_keywords": [
+        "erdos",
+        "random graph",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2606.30277v1",
       "title": "Existence and absence of Bose-Einstein condensation in the interacting random Kac-Luttinger model",
@@ -136,6 +187,54 @@
       "bucket": "medium"
     },
     {
+      "id": "2607.00149v1",
+      "title": "Uniform-in-time Propagation-of-Chaos for Stein Variational Gradient Descent",
+      "abstract": "We study uniform-in-time propagation-of-chaos for continuous-time Stein Variational Gradient Descent (SVGD). Classical finite-time propagation-of-chaos estimates for mean-field systems typically deteriorate rapidly with time and therefore do not directly explain the long-time relation between the finite-particle system and its mean-field limit. We obtain two complementary classes of uniform-in-time propagation-of-chaos results. For broad distributional metrics, we introduce a cutoff strategy which combines finite-time propagation-of-chaos estimates up to an $N$-dependent horizon with independent quantitative long-time convergence estimates for the finite-particle and mean-field SVGD flows. This yields uniform-in-averaging-time propagation-of-chaos bounds in Langevin kernel Stein discrepancy, Wasserstein-1 distance, and Wasserstein-2 distance, with logarithmic or iterated-logarithmic rates depending on the metric, target and kernel class. We also develop a finite-dimensional theory for matrix-valued finite-rank kernels. For Gaussian targets with bilinear kernels, the SVGD dynamics close exactly on first and second moments, yielding genuine uniform-in-physical-time parametric propagation-of-chaos rates in finite-dimensional Stein-feature metrics. We then prove a conjugacy principle showing that these feature-level estimates transfer to conjugate target-kernel pairs under orientation-preserving diffeomorphisms, thereby extending the theory to broad classes of nonlinear, including multimodal, targets. Together, these results highlight the contrast between generic distributional metrics, for which our general approach yields logarithmic rates, and closed finite-dimensional Stein observables, for which parametric $N^{-1/2}$ propagation-of-chaos rates persist uniformly in time.",
+      "authors": [
+        "Krishnakumar Balasubramanian",
+        "Sayan Banerjee",
+        "Anna Korba"
+      ],
+      "published": "2026-06-30T20:27:39Z",
+      "updated": "2026-06-30T20:27:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00149v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00149v1",
+      "score": 3,
+      "matched_keywords": [
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.00311v1",
+      "title": "Thermal Concentration and Poisson--Dirichlet Edge Statistics for Random--Lattice Gibbs Ensembles",
+      "abstract": "We study Gibbs measures on high--dimensional Haar--random unimodular lattices, where the energy of a lattice vector is its squared Euclidean norm. The random lattice is viewed as quenched geometric disorder, and $c>0$ denotes the scaled inverse temperature. We first analyze the edge window of vectors whose length is within the factor $e^{a/n}$ of the shortest length, with fixed $a$ as $n\\to\\infty$. For the full sign--class Gibbs ensemble, we prove a Poisson point process limit theorem for the Gibbs mass of this window. The mass vanishes in probability for $0<c\\le1$, while for $c>1$ it has a nontrivial Poisson limit, and the ranked Gibbs weights converge to the Poisson--Dirichlet distribution with parameter $1/c$. We then pass to a primitive--direction Gibbs ensemble and consider a fixed approximation factor $γ>1$. For this modified ensemble, we prove a weighted moment formula and a quenched thermal concentration result in the high--temperature range $0<c<1$. This yields the primitive fixed--factor visibility curve $c=γ^{-2}$ for approximate shortest directions. More precisely, the primitive Gibbs mass of the fixed--factor window tends to zero for $c<γ^{-2}$, to one for $γ^{-2}<c<1$, and to $1/2$ at the critical boundary $c=γ^{-2}$. Thus the fixed--factor theorem is a visibility statement for an idealized primitive target measure, not for the original full lattice Gibbs measure. The results provide a random--lattice thermodynamic reference model for Gibbs targets related to approximate shortest vectors, without implying an efficient algorithm for the shortest vector problem.",
+      "authors": [
+        "Masahiro Kaminaga"
+      ],
+      "published": "2026-07-01T01:27:49Z",
+      "updated": "2026-07-01T01:27:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00311v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00311v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2606.29829v1",
       "title": "Noise Sensitivity Governed by Continuous-Time Random Walks on the Symmetric Group",
       "abstract": "We study the noise sensitivity of Boolean functions on the symmetric group, where noise is induced by running a Markov chain on the symmetric group $S_n$, focusing in particular on the case where the underlying chain is an interchange process on the complete graph $K_n$, the $d$-dimensional discrete torus or the star graph. We prove comparison results between these noise sources. We also show that the indicator of long cycles is noise-sensitive under the interchange process on each of the aforementioned graphs. In addition, we study the noise sensitivity of several fundamental functions such as the parity function and analogues of the dictator function. Furthermore, using the fact that the interchange process on the complete graph is the continuous-time random walk generated by all transpositions, we prove that noise sensitivity remains unchanged when the noise source is switched from the continuous-time random walk generated by all transpositions to that generated by all $s$-cycles ($s$ is even and $2<s\\ll n$).",
@@ -177,6 +276,80 @@
       "score": 2,
       "matched_keywords": [
         "voronoi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00205v1",
+      "title": "Guesswork Under Linear Constraints: Exact Exponent for Coset Decoding",
+      "abstract": "We establish the exact exponential growth rate of the $ρ$-th moment of the constrained guesswork $G_{\\mathrm{coset}}$ -- the rank of the true noise vector within its syndrome coset of a random binary linear code under i.i.d.\\ Bernoulli$(p)$ noise: \\( \\lim_{n\\to\\infty} \\frac{1}{n}\\log_2\\Eb\\!\\left[G_{\\mathrm{coset}}^ρ\\right] = ρ\\,h_{\\frac{1}{1+ρ}}(p)\\;+\\;ρ(R-1), \\, ρ>0, \\) where $h_α(p)$ is the binary Rényi entropy and $R=k/n$ is the code rate. The exponent shifts down by exactly $ρ(1-R)$ relative to the unconstrained Arıkan--Merhav exponent, with each of the $n(1-R)$ parity checks contributing equally. Finite-length simulations confirm convergence from below. We further establish: (i)~a transfer theorem expressing the partition-function exponent in terms of an arbitrary weight-enumerator growth rate $g(δ)$; (ii)~the exact exponent for $L_n$-list (``$k$-th'') constrained guesswork; and (iii)~a sharp second-order refinement of order $ρ\\log_2 n$. Beyond the binary i.i.d.\\ setting, we prove a universality theorem: for any code ensemble $\\mathcal{E}$ whose weight enumerator concentrates at rate $g_{\\mathcal{E}}(δ)$, the guesswork exponent equals $(1+ρ)ψ_{1/(1+ρ)}(g_{\\mathcal{E}})-ρ\\,ψ_1(g_{\\mathcal{E}})$, where $ψ_α(g)=\\sup_δ[g(δ)+α\\ell(δ)]$. As concrete applications, we instantiate this theorem for the $q$-ary extension, $Λ_q(ρ)=ρ\\,h^{(q)}_{1/(1+ρ)}(P)+ρ(R-1)\\log_2 q$, and for Gallager's regular LDPC ensemble, obtaining a closed-form guesswork exponent via an exact finite-length identity for the ensemble-average weight enumerator.",
+      "authors": [
+        "Hassan Tavakoli"
+      ],
+      "published": "2026-06-30T21:35:56Z",
+      "updated": "2026-06-30T21:35:56Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "cs.GT",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00205v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00205v1",
+      "score": 2,
+      "matched_keywords": [
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00330v1",
+      "title": "Ergodicity and High-Frequency Inference for Hybrid Switching Lévy-Driven Stochastic Differential Equations",
+      "abstract": "Hybrid switching Lévy-driven stochastic differential equations with pure-jump noise and state-dependent switching rates are studied under high-frequency observation. A three-stage inference procedure is proposed for the drift, scale, and switching-rate parameters, combining a staged Gaussian quasi-likelihood with an intensity-type contrast. Checkable sufficient conditions for weighted exponential ergodicity are established for the hybrid process; the proof does not rely on Brownian smoothing, but uses a fixed skeleton-chain argument combining small-jump accessibility and regime connectivity. Under ergodicity and the high-frequency sampling scheme, consistency, joint asymptotic normality, and a polynomial-type large deviation inequality are proved for the full estimator. The joint limit exhibits a transparent covariance structure: the drift and scale blocks are coupled through the third moment of the driving Lévy noise, whereas the switching-rate block is asymptotically uncorrelated with the continuous-coefficient blocks. Numerical experiments for models driven by normal inverse Gaussian noise illustrate the finite-sample behavior of the proposed estimators.",
+      "authors": [
+        "Yuzhong Cheng"
+      ],
+      "published": "2026-07-01T02:13:40Z",
+      "updated": "2026-07-01T02:13:40Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00330v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00330v1",
+      "score": 2,
+      "matched_keywords": [
+        "connectivity"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00586v1",
+      "title": "Optimal scaling of MCMC algorithms: exploiting the symmetry of the Metropolis-Hastings formula",
+      "abstract": "We present a simple, yet general approach to study the scaling properties as the dimensionality of Metropolised MCMC sampling algorithms increases. The study relies ultimately on the symmetry of the Metropolis-Hastings formula. Our findings contain, as particular cases, many known results for the Random Walk Metropolis, MALA and other algorithms. In addition, they provide, in an easy way, new optimal scaling results for a variety of proposal mechanisms, including implicit proposals and proposals generated with the help of differential equation integrators. The analysis applies to targets that are products of a given, not necessarily univariate distribution, and also to cases where the different terms in the product are scaled differently. We show how to construct gradient-based MALA-like proposals where the variance of the proposal as the dimension $d$ increases may be taken as $O(1/d^μ)$, with $μ>0$ arbitrarily small, to be compared with the values $μ= 1$ for Random Walk Metropolis and $μ=1/3$ for MALA.",
+      "authors": [
+        "P. Dobson",
+        "J. M. Sanz-Serna",
+        "K. C. Zygalakis"
+      ],
+      "published": "2026-07-01T08:08:54Z",
+      "updated": "2026-07-01T08:08:54Z",
+      "primary_category": "stat.CO",
+      "categories": [
+        "stat.CO",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00586v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00586v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -1165,6 +1338,388 @@
       ],
       "abs_url": "https://arxiv.org/abs/2606.32024v1",
       "pdf_url": "https://arxiv.org/pdf/2606.32024v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00132v1",
+      "title": "On a moment determinacy conjecture of Bertoin and Yor",
+      "abstract": "Let $ξ$ be an unkilled real-valued Lévy process which drifts to $+\\infty$ and has positive exponential moments of all orders, and define $I_ξ=\\int_0^\\infty e^{-ξ_t},dt$, and its reciprocal $X_ξ=1/I_ξ$. Bertoin and Yor proved that $X_ξ$ is moment-determinate when $ξ$ has no positive jumps, and conjectured that this condition is also necessary. We prove the latter. The proof is based on a lower bound near zero for the law of $I_ξ$. We show that a group of sufficiently many positive jumps near the origin puts $I_ξ$ on a suitable small scale. The first selected jump time is used as a one-dimensional smooth coordinate, yielding an absolutely continuous subcomponent of the law of $I_ξ$. After the change of variables, the resulting subdensity of $X_ξ$ satisfies a Krein moment indeterminacy criterion.",
+      "authors": [
+        "Martin Minchev"
+      ],
+      "published": "2026-06-30T20:11:52Z",
+      "updated": "2026-06-30T20:11:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00132v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00132v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00207v1",
+      "title": "Homogenization of $\\ell_2$-Adversarial Training in High-Dimensions: Exact Dynamics under Stochastic Gradient Descent",
+      "abstract": "We develop a framework for analyzing the learning dynamics of $\\ell_2$-adversarial training of single-index models on Gaussian mixtures in the high-dimensional limit under streaming stochastic gradient descent (SGD). We derive deterministic equivalents for a broad class of statistics of the SGD iterates, including the adversarial risk and distance to adversarial optimality, in terms of the solution to a system of ODEs. We use them to study two idealized learning rate schedules: the Polyak stepsize and exact line search. In the case of $\\ell_2$-adversarial least squares with a single class, we show that, unlike noiseless standard least squares, no constant learning rate guarantees monotone descent of SGD towards a minimizer of the adversarial risk. We identify anisotropic covariance and a mismatch in ridge parameters as the main sources of suboptimality of exact line search relative to the Polyak stepsize. We also introduce a stochastic differential equation (SDE), called adversarial homogenized SGD, that captures the evolution of statistics of the iterates of SGD. For $\\ell_2$-adversarial least squares, using this SDE, we show the evolution of the risk is equivalent, up to dimension-free constants, to that of SGD on standard least squares with an adaptive learning rate and adaptive $\\ell_2$-regularization. When the dynamics converge, the limiting adversarial risk and SGD iterate are determined by a fixed-point equation, with the limiting iterate being equivalent to the solution of a ridge regression problem whose regularization parameter is the limiting effective regularization of SGD.",
+      "authors": [
+        "Fabrizzio Sabelli"
+      ],
+      "published": "2026-06-30T21:38:10Z",
+      "updated": "2026-06-30T21:38:10Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00207v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00207v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00230v1",
+      "title": "Waiting time analysis in a finite-capacity multi-server systems with dynamic priorities, dynamically evolving customer types, and abandonment",
+      "abstract": "In many service systems, an estimation of customers' waiting times for the service can assist in decision making focused on enhancing the operational efficiency, improving the customers' experience, and ensuring efficient resource allocation. In this paper, we study the customers' waiting times in a finite-capacity service system with a finite number of parallel servers and a shared waiting area. We consider two customer types, Type 1 and Type 2, with dynamic admission priorities, dynamically evolving customer type, and abandonment. We model the system under such assumptions using a continuous-time Markov chain (CTMC) and develop a methodology based on Krylov subspace approximation methods to evaluate the conditional waiting time distributions of Type 1 and Type 2 customers in the system. This methodology (CTMC-Krylov) offers a scalable computational approach that is well suited for analysing large complex systems. Next, we model this system using a quasi-birth-and-death (QBD) process and derive analytical expressions building on matrix-analytic methods to evaluate the conditional and long-run waiting time distributions using recursion. We illustrate the practical applicability of our models in a hospital system through a suite of numerical examples based on a large dataset obtained from a tertiary referral hospital in Australia, considering two types of patients, complex (Type 1) and other (Type 2).",
+      "authors": [
+        "M. Abdullah Khokhar",
+        "Malgorzata M. O'Reilly",
+        "Richard Turner"
+      ],
+      "published": "2026-06-30T22:17:23Z",
+      "updated": "2026-06-30T22:17:23Z",
+      "primary_category": "stat.AP",
+      "categories": [
+        "stat.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00230v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00230v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00262v1",
+      "title": "Demographic senescence as multi-level selection in miniature",
+      "abstract": "Multi-level selection and senescence do not at first sight have much in common. Here, we demonstrate that the emergent mortality patterns generated by demographic senescence can be understood as the product of multi-level selection. We formulate a two-level Moran type process and use its scaling limits to illustrate that a simple mathematical framework that models multi-level selection in group-structured populations also models damage accumulation patterns and resultant mortality curves in ageing organisms. To verbally make the connection, observe that defectors spread within a group consisting of cooperators and defectors; when groups compete against each other, defector-rich groups suffer, and between-group selection causes such groups to be systematically under-represented. Exactly analogously, senescing individuals accumulate damage to physiological sub-systems, and `damage begets damage'; individuals who are more damaged are more likely to die, hence damage-rich individuals are systematically under-represented in later age classes. Thus, emergent senescence patterns in complex, integrated organisms are formally equivalent to the patterns generated by a within-generation multi-level selection process in which intra-organismal sub-systems play the role of particles, organisms play the role of collectives, and selective disappearance plays the role of group selection.",
+      "authors": [
+        "Ananda Shikhara Bhat",
+        "Hanna Kokko"
+      ],
+      "published": "2026-06-30T23:18:43Z",
+      "updated": "2026-06-30T23:18:43Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "cond-mat.stat-mech",
+        "math.AP",
+        "math.PR",
+        "physics.bio-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00262v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00262v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00458v1",
+      "title": "Kinetic Fokker-Planck Equations with Nonlinear Diffusion",
+      "abstract": "We study existence, regularity, and uniqueness for the nonlinear kinetic Fokker--Planck equation $$ \\partial_t f=Δ_vΨ(f)-v\\cdot\\nabla_x f, \\qquad f|_{t=0}=f_0, $$ on $\\mathbb R^{2d}$. In the model case $Ψ(r)=r^s$, this equation couples nonlinear fast-diffusion/porous-medium type diffusion with kinetic transport. A distinctive feature is that the diffusion acts only in the velocity variable $v$, so that compactness in the spatial variable $x$ cannot be obtained from standard elliptic estimates and must instead be recovered through the hypoelliptic structure. Under general structural assumptions on $Ψ$, including the fast-diffusion powers $Ψ(r)=r^s$ with $s\\in(0,1)$, we construct nonnegative weak solutions and prove quantitative anisotropic Besov regularity estimates. Under an additional mass-critical growth condition on the fast-diffusion side, the constructed weak solution preserves mass, admits a renormalized kinetic formulation, and is unique in the $L^1$-class of mass-preserving renormalized kinetic solutions. In the power-law case $Ψ(r)=r^s$, this condition is precisely $s\\ge 1-1/d$ when $d\\ge2$, while in dimension $d=1$ the whole fast-diffusion range $s\\in(0,1)$ is covered. The main analytic ingredient is a parameter-dependent smoothing estimate for the kinetic semigroup generated by $$ Ψ'(ζ)Δ_v - v\\cdot\\nabla_x , $$ which quantitatively tracks the dependence on the kinetic level $ζ$. Combined with the kinetic formulation, this estimate yields compactness in both spatial and velocity variables for the nonlinear hypoelliptic problem. As an application, we also obtain martingale-problem solutions to the associated distributional-density dependent stochastic differential equation.",
+      "authors": [
+        "Zimo Hao",
+        "Zhengyan Wu",
+        "Xicheng Zhang"
+      ],
+      "published": "2026-07-01T05:25:29Z",
+      "updated": "2026-07-01T05:25:29Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00458v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00458v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00495v1",
+      "title": "Rank deficiency of Bernoulli random matrices for growing corank",
+      "abstract": "Let A be an n x n Bernoulli random matrix whose entries are i.i.d. Bernoulli(p) random variables. In this paper, we determine the probability that the corank of A is at least k when k is of order O(sqrt(log n)): P(corank A >= k) = (1-p+o_n(1))^(kn).",
+      "authors": [
+        "Zeyan Song",
+        "Hanchao Wang"
+      ],
+      "published": "2026-07-01T06:22:19Z",
+      "updated": "2026-07-01T06:22:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00495v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00495v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00538v1",
+      "title": "Failure of Convex-Hull Bounds under Log-Convex Tails",
+      "abstract": "Fix $0<r<1$, and let $X_1,X_2,\\dots$ be independent symmetric Weibull$(r)$ random variables, that is, \\[ \\textsf{P}(|X_i|>t)=e^{-t^r},\\qquad t\\ge 0. \\] We prove that there is no constant $C_r$, depending only on $r$, with the following universal property: for every finite set $T\\subset \\R^N$ there exists a sequence $(y_k)_{k\\ge 1}\\subset \\R^N$ such that \\[ T-T\\subset conv\\{y_k:k\\ge 1\\}, \\qquad \\|X_{y_k}\\|_{L_{\\log(k+2)}}\\le C_r\\,\\bx(T) \\quad (k\\ge 1), \\] where $X_t=\\sum_i t_i X_i$ and $\\bx(T)=\\textsf{E}\\sup_{t\\in T}X_t$. This gives a negative answer to a question of Latała concerning the validity of convex-hull bounds for canonical Weibull processes. In fact, the failure persists even when the auxiliary vectors appearing in the convex hull are allowed to be arbitrary.",
+      "authors": [
+        "Xuanang Hu",
+        "Hanchao Wang"
+      ],
+      "published": "2026-07-01T07:28:32Z",
+      "updated": "2026-07-01T07:28:32Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00538v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00538v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00587v1",
+      "title": "(Non-)Hyperuniformity of Second Order Statistics of Point Processes",
+      "abstract": "We investigate statistical properties of certain stationary point processes, namely determinantal processes with projection kernels and Gibbs point processes with superstable pair interactions. These are examples of hyperuniform and non-hyperuniform stationary point processes, respectively. We are interested in the variance of their second order statistics within a ball around the origin, and we study the asymptotic growth of this variance as the radius of the ball goes to infinity. It is shown that, generically, for both types of processes the variance is asymptotically proportional to the volume of the ball. In other words: the second order statistics of these point processes behave non-hyperuniform. For Gibbs processes with superstable interactions these results have an interesting application to the so-called inverse Henderson problem of statistical mechanics. We also show that the structure factor (respectively the Bartlett spectral measure) of these Gibbs processes is strictly positive, while it is positive except for a simple zero at the origin for the determinantal processes.",
+      "authors": [
+        "Fabio Frommer",
+        "Martin Hanke"
+      ],
+      "published": "2026-07-01T08:10:33Z",
+      "updated": "2026-07-01T08:10:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00587v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00587v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00592v1",
+      "title": "Character sums over smooth numbers",
+      "abstract": "Let $Ψ(x,y)$ denote the count of $y$-smooth numbers below $x$ and $P(n)$ denote the largest prime factor of $n$. We show that \\[ \\frac{1}{\\varphi(q)} \\sum_{χ\\bmod q} \\Bigl| \\sum_{\\substack{n \\leq x \\\\ P(n) \\leq y}} χ(n) \\Bigr| = o \\Bigl( \\sqrt{Ψ(x,y)} \\Bigr), \\] whenever $(\\log x)^6 \\leq y \\leq x^{\\frac{1}{32 \\log \\log x}}$ and $q \\geq x^{1 + \\varepsilon}$ for some small quantifiable $\\varepsilon > 0$. The saving is substantial when $\\varepsilon$ is fixed away from zero, and we prove similar results for continuous characters and completely multiplicative twists of these sums.",
+      "authors": [
+        "Seth Hardy",
+        "Max Wenqiang Xu"
+      ],
+      "published": "2026-07-01T08:17:56Z",
+      "updated": "2026-07-01T08:17:56Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00592v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00592v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00753v1",
+      "title": "Threatening excursions in large population quasi-stationary birth and death systems. On a question of Antonio Galves",
+      "abstract": "We consider time continuous multispecies birth and death processes in a regime of large populations. The jump rates depend on a large scaling parameter K modeling the charge capacity. When K tends to infinity, the process is close (in finite time) to a dynamical system containing a non zero global attracting equilibrium and zero as unstable equilibrium. For each fixed K, extinction in finite time occurs almost surely and a quasi-stationary distribution occurs naturally in the study of the statistics over times scales which are large but smaller than the extinction time scale. Before this catastrophic event the process makes many unsuccessful large deviations attempts with time scales corresponding to how far it deviates from the quasi-equilibrium. The paper concerns the statistical description of these typical trajectories starting from the quasi-stationary distribution until extinction. An unusual mixing property yields large time scale behavior for the process starting from a fixed state. We give a precise statistical description of the successive exit times of the process rescaled by K from a neighborhood of the equilibrium of the dynamical system in a clumping time scale and prove their asymptotic Poisson distribution. We also give a precise description of the asymptotic distribution of the successive records until extinction.",
+      "authors": [
+        "Pierre Collet",
+        "Servet Martínez",
+        "Sylvie Méléard"
+      ],
+      "published": "2026-07-01T10:37:54Z",
+      "updated": "2026-07-01T10:37:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00753v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00753v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00799v1",
+      "title": "Optimal control problem for reflected McKean--Vlasov stochastic differential equations with Poisson jumps",
+      "abstract": "In this paper, we consider the optimal relaxed control problem for a class of one-dimensional reflected McKean--Vlasov stochastic differential equations with Poisson jumps. Due to the presence of the jump term, the state process generally belongs to the Skorokhod space $D([0,T],\\Rp)$, which makes the proof of tightness and the passage to the limit more complicated. Under Lipschitz conditions and suitable growth conditions, we establish uniform moment estimates for the state process and the reflecting process. Then, by using Aldous' tightness criterion, the continuity of the Skorokhod map, and the stability results for stochastic integrals, we prove the existence of an optimal relaxed control. Furthermore, under the Roxin convexity condition, we prove the existence of a strict optimal control. In the general case, we show that relaxed controls can be approximated by a sequence of strict controls.",
+      "authors": [
+        "Wenrui Lu",
+        "Kai Wang"
+      ],
+      "published": "2026-07-01T11:28:24Z",
+      "updated": "2026-07-01T11:28:24Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00799v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00799v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00800v1",
+      "title": "Brownian motion in Minkowski normed spaces",
+      "abstract": "A Minkowski normed space is the Euclidean space equipped with a (possibly asymmetric) uniformly convex and smooth norm, forming a particular class of Finsler manifolds. We construct a stochastic process with one-dimensional time marginal densities given by the fundamental solution to the nonlinear Finsler heat equation in Minkowski normed spaces. This process is constructed as a solution to a singular McKean--Vlasov stochastic differential equation and constitutes a nonlinear Markov process in the sense of McKean. Furthermore, we show that solutions to this stochastic differential equation are pathwise unique, and thus probabilistically strong solutions, though the equation has singular coefficients beyond the subcritical regime. Since our construction is a natural extension of the construction of standard Brownian motion from the standard heat kernel, we call this process \\emph{Brownian motion in Minkowski normed spaces.} To the best of our knowledge, this is the first construction of stochastic processes associated with nonlinear heat equation in Finslerian spaces.",
+      "authors": [
+        "Shin-ichi Ohta",
+        "Marco Rehmeier",
+        "Kohei Suzuki"
+      ],
+      "published": "2026-07-01T11:29:08Z",
+      "updated": "2026-07-01T11:29:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.DG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00800v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00800v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00853v1",
+      "title": "Energy integrals and asymmetric co-potentials for closed forms",
+      "abstract": "We investigate the class of measures of finite energy integrals and the behavior of potentials and co-potentials associated with non-symmetric closed forms. In particular, we compare these objects with their symmetric counterparts from three viewpoints: a non-symmetric version of Stollmann--Voigt's inequality, non-symmetric perturbations of symmetric forms, and closed forms associated with non-symmetric jump-type forms. Our results indicate that measures of finite energy integrals, potentials, and co-potentials behave differently in the non-symmetric setting, requiring more delicate analysis than in the symmetric case.",
+      "authors": [
+        "Kazuhiro Kuwae",
+        "Takumu Ooi",
+        "Kaneharu Tsuchida",
+        "Toshihiro Uemura"
+      ],
+      "published": "2026-07-01T12:18:37Z",
+      "updated": "2026-07-01T12:18:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00853v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00853v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.00966v1",
+      "title": "Sharp Bounds for Dynamic Averaging on Cycles",
+      "abstract": "We study a dynamic averaging process on the cycle \\(C_n\\). At each discrete time, an edge is chosen uniformly at random, one unit of load is introduced, and the two endpoint loads are replaced by their common average after the new unit has been added. Starting from the zero configuration, we prove that the expected gap between the largest and smallest loads is \\(O(\\sqrt n)\\), uniformly in time. Building on the lower-bound argument of Alistarh, Nadiradze, and Sabour for the expected square of the gap, we further show that the expected gap is \\(Ω(\\sqrt n)\\) in the long run. This confirms their conjecture that the expected gap is of order \\(\\sqrt n\\).",
+      "authors": [
+        "Dean Kraizberg",
+        "Ron Peretz"
+      ],
+      "published": "2026-07-01T14:04:31Z",
+      "updated": "2026-07-01T14:04:31Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.00966v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.00966v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.01126v1",
+      "title": "Distribution of Selmer ranks in prime cyclic extensions",
+      "abstract": "Using modifications to work of Klagsbrun, Mazur, and Rubin, we study (assuming the Extended Riemann Hypothesis) the distribution of Selmer ranks of twist families of some given even-dimensional Galois modules satisfying some mild technical conditions. As a corollary, we study the probability with which a fixed elliptic curve gains (or does not gain) rank in $p$-cyclic extensions, obtaining bounds for this distribution. Likewise, for some superelliptic curves $C$, we bound the average size of $C(L)$ as $L$ ranges over $p$-cyclic extensions over a number field $K$ containing primitive $p$-th roots of unity. Lastly, we study the probability with which a fixed hyperelliptic curve gains (or does not gain) rank in quadratic extensions, also obtaining bounds for this distribution. In all three cases, the extensions under consideration are ordered by the product of ramified primes.",
+      "authors": [
+        "Daniel Keliher",
+        "Sun Woo Park"
+      ],
+      "published": "2026-07-01T16:13:02Z",
+      "updated": "2026-07-01T16:13:02Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.01126v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01126v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.01209v1",
+      "title": "All-out Attack: Optimal Block Withholding Under Pay-Per-Share Scheme",
+      "abstract": "Classical Block Withholding (BWH) attacks have been extensively studied in block-dependent reward schemes, where pool members are compensated upon a block discovery within the pool. However, most contemporary mining pools operate under share-based scheme wherein participants are paid immediately upon submission of valid shares. In this paper, we analyze BWH under Pay-Per-Share (PPS) and Full-PPS (FPPS) schemes for Nakamoto-style blockchains and prove that these mechanisms are not incentive compatible -- contrary to claims in prior literature. Under PPS/FPPS, the optimal strategy for a BWH attacker is the All-out Attack (AoA): the adversary allocates its entire hashpower toward the victim pool, submitting only partial Proof-of-Work shares (pPoW) while withholding all valid blocks, i.e., full Proof-of-Work (fPoW). Under AoA, prior to the first difficulty adjustment, the adversary incurs negligible loss due to the withheld fPoWs. After the first difficulty adjustment, which reduces block difficulty, the adversary generates more pPoWs per unit time, achieving a relative gain of $\\fracα{1-α}$ compared to pre-adjustment rates, where $α$ is the fraction of adversarial hashpower. Moreover, per unit time and per unit hashpower, all honest miners benefit at the same rate as the adversary. In contrast, the victim pool operator incurs losses: it pays the attacker out-of-pocket for pPoW submissions but receives no fPoW compensation in return. Finally, advanced variants of BWH, such as Fork After Withholding (FAW), do not yield additional profit to the attacker.",
+      "authors": [
+        "Mustafa Doger",
+        "Sennur Ulukus"
+      ],
+      "published": "2026-07-01T17:46:37Z",
+      "updated": "2026-07-01T17:46:37Z",
+      "primary_category": "cs.CR",
+      "categories": [
+        "cs.CR",
+        "cs.DC",
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.01209v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01209v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.01229v1",
+      "title": "Multidimensional Risk Made Easy",
+      "abstract": "Suppose we want to assign a certainty equivalent--one number--to a multivariate risk. Which such assignments are law-invariant, monotone with respect to vector stochastic dominance, and invariant to independent background risk? I show that every such certainty equivalent is a positive mixture of scalar entropic certainty equivalents applied to positive projections of the vector risk. The same representation yields a robust-order characterization: unanimity across such certainty equivalents is equivalent, up to closure, to dominance after adding independent multidimensional background risk. In a social-welfare specialization, the corresponding shadow valuations are welfare weights.",
+      "authors": [
+        "Mark Whitmeyer"
+      ],
+      "published": "2026-07-01T17:59:24Z",
+      "updated": "2026-07-01T17:59:24Z",
+      "primary_category": "econ.TH",
+      "categories": [
+        "econ.TH",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.01229v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.01229v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
