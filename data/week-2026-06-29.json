@@ -5,11 +5,11 @@
   "iso_week": 27,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-07-05",
-  "total_submissions": 136,
-  "fetched": 136,
-  "generated_at": "2026-07-07T06:18:46Z",
+  "total_submissions": 137,
+  "fetched": 137,
+  "generated_at": "2026-07-08T05:31:41Z",
   "entries": [
     {
       "id": "2607.02477v1",
@@ -298,6 +298,32 @@
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.05425v1",
+      "title": "Edge-based mean-field approximation of dynamics on networks via approximate lumping of Markov chains",
+      "abstract": "Mean-field approximations for dynamical processes on networks are widely used, but existing derivations often rely either on moment closures or on idealised assumptions about network structure, leaving the nature of the underlying averaging unclear. Here we present a mathematically principled framework for deriving edge-based mean-field approximations for a broad class of Markov processes on networks using approximate lumping. We consider models in which each vertex is in one of a finite number of vertex states and transitions depend on the number of neighbours in each state. Our approach partitions the full Markov chain state space according to the number of vertices and edges in each possible state, and averages transition rates between partitions. This yields density-dependent population processes that, in the limit of large system size, reduce to a low-dimensional system of ordinary differential equations. We demonstrate the method on single graphs and graph ensembles, such as Erdős-Rényi random networks, and show that well-known edge-based mean-field approximations arise as special cases of our approach. Our approximate lumping framework clarifies the nature of the averaging underlying mean-field approximations, providing a basis for future work on assessing their accuracy.",
+      "authors": [
+        "Gábor Timár",
+        "Jonathan A. Ward",
+        "Péter L. Simon"
+      ],
+      "published": "2026-06-30T15:56:04Z",
+      "updated": "2026-06-30T15:56:04Z",
+      "primary_category": "physics.soc-ph",
+      "categories": [
+        "physics.soc-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05425v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05425v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -2944,9 +2970,9 @@
       "bucket": "other"
     },
     {
-      "id": "2607.04252v1",
+      "id": "2607.04252v2",
       "title": "Universal fluctuations of first discoveries in competitive exploration",
-      "abstract": "Random exploration is usually quantified by how fast new space is found, from the range of a single walker to the territory collectively covered by many walkers. In competitive exploration, first arrival secures an exclusive resource, as when foragers compete for food items or agents capture distributed targets. It is then no longer enough to know which sites have been discovered: one must determine, for each discovered site, which searcher reached it first. We introduce the discovery share $X_n$, the fraction of the first $n$ collective discoveries secured by a tagged searcher. For two identical competitors, exchange symmetry fixes $\\langle X_n\\rangle=1/2$, but the central question is whether this equal split emerges in each long exploration history or only on average, \\emph{i.e.} whether early competitive advantages are erased or persist. Here we show that the answer is controlled by the spectral dimension $d_s$, defined by the large-time decay of the probability that a single searcher is at its starting point after $t$ steps, $p_0(t)\\sim t^{-d_s/2}$. Across ordinary diffusion, long-range superdiffusion and subdiffusion induced by crowding or memory, $d_s$ separates persistent randomness in recurrent exploration $(d_s<2)$, anomalously slow non-Gaussian concentration for $2\\le d_s<3$, and Gaussian concentration, logarithmically corrected at $d_s=3$, for $d_s\\ge3$. For $d_s\\ge2$, we derive exact asymptotic variances, including prefactors, and the discovery scale on which competitive imbalances are erased. Two-point correlations of first-discovery labels identify the memory mechanism behind these regimes. The same phase structure persists under changes in geometry, competitor heterogeneity, number of competitors and memory, revealing a general fluctuation theory of first-arrival inequalities.",
+      "abstract": "Random exploration is usually quantified by how fast new space is found, from the range of a single walker to the territory collectively covered by many walkers. In competitive exploration, first arrival secures an exclusive resource, as when foragers compete for food items or agents capture distributed targets. It is then no longer enough to know which sites have been discovered: one must determine, for each discovered site, which searcher reached it first. We introduce the discovery share $X_n$, the fraction of the first $n$ collective discoveries secured by a tagged searcher. For two identical competitors, exchange symmetry fixes $\\langle X_n\\rangle=1/2$, but the central question is whether this equal split emerges in each long exploration history or only on average, i.e. whether early competitive advantages are erased or persist. Here we show that the answer is controlled by the spectral dimension $d_s$, defined by the large-time decay of the probability that a single searcher is at its starting point after $t$ steps, $p_0(t)\\sim t^{-d_s/2}$. Across ordinary diffusion, long-range superdiffusion and subdiffusion induced by crowding or memory, $d_s$ separates persistent randomness in recurrent exploration $(d_s<2)$, anomalously slow non-Gaussian concentration for $2\\le d_s<3$, and Gaussian concentration, logarithmically corrected at $d_s=3$, for $d_s\\ge3$. For $d_s\\ge2$, we derive exact asymptotic variances, including prefactors, and the discovery scale on which competitive imbalances are erased. Two-point correlations of first-discovery labels identify the memory mechanism behind these regimes. The same phase structure persists under changes in geometry, competitor heterogeneity, number of competitors and memory, revealing a general fluctuation theory of first-arrival inequalities.",
       "authors": [
         "Arthur Plaud",
         "P. L. Krapivsky",
@@ -2954,14 +2980,14 @@
         "Olivier Bénichou"
       ],
       "published": "2026-07-05T12:03:25Z",
-      "updated": "2026-07-05T12:03:25Z",
+      "updated": "2026-07-07T16:49:58Z",
       "primary_category": "cond-mat.stat-mech",
       "categories": [
         "cond-mat.stat-mech",
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.04252v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.04252v1",
+      "abs_url": "https://arxiv.org/abs/2607.04252v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.04252v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],

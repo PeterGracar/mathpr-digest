@@ -6,11 +6,36 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-07",
-  "total_submissions": 19,
-  "fetched": 19,
-  "generated_at": "2026-07-07T06:18:47Z",
+  "data_through": "2026-07-08",
+  "total_submissions": 37,
+  "fetched": 37,
+  "generated_at": "2026-07-08T05:31:42Z",
   "entries": [
+    {
+      "id": "2607.05671v1",
+      "title": "Bi-infinite systems of singularly interacting Brownian particles and the KPZ equation",
+      "abstract": "We study a bi-infinite system of interacting Brownian particles on the real line with singular asymmetric interactions mediated by the collision local times. Particles perform Brownian motions, and when neighboring particles collide, the associated local time is split in proportions $p$ and $q=1-p$. We first develop well-posedness theory for the particle system, proving pathwise uniqueness and strong existence under natural growth assumptions on the initial configuration and local times. We also identify a family of stationary distributions for the infinite-dimensional process of gaps between successive particles: for every $λ>0$, the product measure with i.i.d. Exp$(λ)$ gaps is invariant. Our main result concerns the equilibrium fluctuations of the associated particle-count (height) function in a weakly asymmetric regime. Taking $p=p_\\varepsilon$ so that $p_\\varepsilon^{-1}-1=\\exp\\{σ\\varepsilon^{1/4}\\}$, initializing the interparticle gaps with i.i.d. Exp$(1)$ random variables, and applying a microscopic Hopf-Cole transform to the diffusively rescaled count function, we prove convergence, as $\\varepsilon \\rightarrow 0$, to the multiplicative stochastic heat equation (SHE) with Brownian exponential initial data. Equivalently, the logarithm of the limit is the Hopf-Cole solution of the KPZ equation with two-sided Brownian initial data. The proof combines localization to finite particle subsystems via chains of collisions, Brownian last-passage percolation estimates, a key local time cancellation property, and a martingale problem for a scale-adapted mollification of the Hopf-Cole field, whose space-time regularity is tuned to match that of the limiting SHE. The resulting fluctuation theorem places these Brownian particle systems with asymmetric singular collision dynamics within the KPZ universality class.",
+      "authors": [
+        "Sayan Banerjee",
+        "Amarjit Budhiraja",
+        "Peter Rudzis"
+      ],
+      "published": "2026-07-06T22:30:48Z",
+      "updated": "2026-07-06T22:30:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05671v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05671v1",
+      "score": 7,
+      "matched_keywords": [
+        "particle system",
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2607.04759v1",
       "title": "Limit theorems for strongly and intermediately supercritical branching processes in Markovian environment with linear fractional offspring distributions",
@@ -78,6 +103,27 @@
       "matched_keywords": [
         "random walk"
       ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05460v1",
+      "title": "By Law, Every Zero-Mean Risk Is the Difference of Two Equally Distributed Risks",
+      "abstract": "We prove that every mean-zero probability law on the real line is the law of X-Y for some identically distributed real-valued random variables X and Y.",
+      "authors": [
+        "Mark Whitmeyer"
+      ],
+      "published": "2026-07-06T00:16:19Z",
+      "updated": "2026-07-06T00:16:19Z",
+      "primary_category": "econ.TH",
+      "categories": [
+        "econ.TH",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05460v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05460v1",
+      "score": 0,
+      "matched_keywords": [],
       "coauthors": [],
       "bucket": "other"
     },
@@ -307,7 +353,7 @@
       "bucket": "other"
     },
     {
-      "id": "2607.05226v1",
+      "id": "2607.05226v2",
       "title": "The Exact Worst-Case Tail Probability under Bounded Kurtosis",
       "abstract": "We determine exactly what a kurtosis bound buys for one-sided tail control. For the class $\\mathcal{C}(κ)$ of real random variables with mean $0$, variance $1$, and fourth moment at most $κ$, the skewness left free, we compute the worst-case tail probability $V_1(t,κ)=\\sup_{X\\in\\mathcal{C}(κ)}\\mathbb{P}(X\\geq t)$ for every threshold $t>0$ and every $κ\\geq 1$. The answer is a four-regime map: a Cantelli tongue $b(κ)\\le t\\le c(κ)$ on which the two-moment bound $1/(1+t^2)$ remains tight and the kurtosis constraint is worthless; a tail regime $t\\geq c(κ)$ with the closed form $V_1=(κ-1)/((t^2-1)^2+κ-1)$; a plateau regime, present only for $κ\\le 3/2$, on which the worst case freezes and the value does not depend on $t$; and a central regime described exactly by an explicit algebraic system, provably admitting no closed form in nested square roots. Beyond $c(κ)$ the one-sided and two-sided worst cases coincide: Cantelli's improvement over Chebyshev is annihilated by fourth-moment information. The minimal degree of a sum-of-squares proof of the tight bound is $2$ on the closed tongue and $4$ everywhere else, an exact phase diagram of proof degree. Every closed-form regime carries an explicit dual certificate and an explicit extremal distribution, re-verified on parameter grids by an independent checker in exact arithmetic. The closed forms invert to exact worst-case quantiles, sharpen a median-of-means constant, and give the exact per-direction tail available to degree-4 reasoning under certifiable kurtosis. We found the map through an AI-guided search around the certifying pipeline, LemmaForge, which is validated on classical benchmarks, independently reproduces the symmetric-slice bound of Zelen (1954), and recovers the $2\\sqrt{3}-3$ constant of He, Zhang, and Zhang (2010) at $t=0$.",
       "authors": [
@@ -317,15 +363,15 @@
         "Junbin Gao"
       ],
       "published": "2026-07-06T15:40:54Z",
-      "updated": "2026-07-06T15:40:54Z",
+      "updated": "2026-07-07T15:33:32Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.ST",
         "stat.ML"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.05226v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.05226v1",
+      "abs_url": "https://arxiv.org/abs/2607.05226v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.05226v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -433,6 +479,372 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.05384v1",
       "pdf_url": "https://arxiv.org/pdf/2607.05384v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05652v1",
+      "title": "The Pathwise Approach to Metastability and its Applications to Galves--Löcherbach Models",
+      "abstract": "Metastability is the tendency of a system to dwell for a very long time near an apparently stable equilibrium before a rare fluctuation drives it, on a comparatively short time scale, towards another. Among the rigorous frameworks developed to capture this phenomenon, the pathwise approach proceeds by identifying the ``typical'' trajectories of the stochastic dynamics at hand and estimating their probabilities. In this article we review the pathwise approach and its application to the Galves--Löcherbach (GL) class of stochastic models of spiking neural networks. After recalling the conceptual and historical roots of the theory -- which goes from chemistry to rigorous probability theory, with fundamental ideas coming mainly from statistical physics -- and illustrating them on two classical examples, we give a general definition encompassing the known variants of the GL model and survey the metastability results already established for some of these variants. As far as we can, we do so in a self-contained fashion, and we sketch the proofs when possible, highlighting their common structure. We close with a discussion on open problems and point to possible further directions.",
+      "authors": [
+        "Morgan André",
+        "Kádmo Laxa"
+      ],
+      "published": "2026-07-06T21:32:01Z",
+      "updated": "2026-07-06T21:32:01Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05652v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05652v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05693v1",
+      "title": "Free Multiplicative Convolution and Erlang Moments in Monitored Quantum Transport",
+      "abstract": "We study the transmission eigenvalues of monitored Haar products \\[ B_L=(PS_L)(PS_{L-1})\\cdots(PS_1), \\] where the $S_i$ are independent Haar unitaries and $P$ is a deterministic projection. For fixed $L$, we prove that the empirical eigenvalue distribution of $B_L^\\dagger B_L$ converges to $ν_c^{\\boxtimes L}$, where $ν_c=(1-c)δ_1+cδ_0$. We then take the free small-loss limit and identify the limiting law by \\[ S_{μ_τ}(z)=\\exp\\left(\\fracτ{1+z}\\right). \\] Lagrange inversion gives explicit Erlang-type moments, explaining the polynomials appearing in Beenakker's recursion. We also record spectral consequences, including the atom $μ_τ(\\{1\\})=(1-τ)_+$ and the real branch point $τ\\mathrm{e}^{1-τ}$, and formulate the diagonal scaling $L\\simτN$, $c=1/N$, as a quantitative convergence problem supported by low-order moment checks.",
+      "authors": [
+        "Joon Hyung Lee"
+      ],
+      "published": "2026-07-06T23:21:51Z",
+      "updated": "2026-07-06T23:21:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "quant-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05693v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05693v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05848v1",
+      "title": "Mesoscopic eigenvalue statistics for correlated random matrices",
+      "abstract": "We prove a mesoscopic central limit theorem for linear eigenvalue statistics of correlated Hermitian random matrices. The class considered here includes Wigner and Wigner-type matrices, as well as models whose entry correlations decay polynomially in the distance between index pairs. The proof combines a multivariate cumulant expansion with multi-resolvent local laws and a detailed analysis of the resulting variance kernel on the operator-level.",
+      "authors": [
+        "László Erdős",
+        "Jaehun Lee"
+      ],
+      "published": "2026-07-07T05:12:03Z",
+      "updated": "2026-07-07T05:12:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05848v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05848v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05976v1",
+      "title": "Likelihood estimation of an interpretable early-warning sign of critical transitions",
+      "abstract": "A critical transition is a sudden, abrupt and potentially unforeseen change in the state of a complex system often associated with catastrophic collapses and irreversability. Here we introduce a novel, interpretable early-warning signal of bifurcation-induced critical transitions. The proposed indicator can be readily computed from timeseries observations by maximum likelihood estimation and it has the advantage of providing immediate insight on the state of the system. We showcase its applicability by assessing its performance using models of ecosystems and ocean circulation collapse.",
+      "authors": [
+        "Davide Papapicco",
+        "Lauren Smith",
+        "Graham Donovan"
+      ],
+      "published": "2026-07-07T08:08:36Z",
+      "updated": "2026-07-07T08:08:36Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05976v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05976v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.05981v1",
+      "title": "Long-time behaviour of dynamical systems driven by bounded mixing noises",
+      "abstract": "We study the mixing properties of discrete-time and continuous-time dissipative dynamical systems driven by bounded mixing random forces. The continuous-time systems are reduced to discrete-time random dynamical systems generated by time-one maps, so that the main analysis is carried out in the discrete setting. We introduce a class of mixing random forcings whose conditional distributions with respect to the past satisfy natural regularity, recurrence, and non-degeneracy assumptions, extending the framework previously developed for more restrictive classes of processes in a paper by Kuksin-Shirikyan in GAFA (2025). Under a linearised controllability assumptions on the system, we prove exponential mixing in the total variation metric for finite-dimensional phase spaces. We then establish an infinite-dimensional counterpart yielding exponential mixing in the dual-Lipschitz metric under suitable amendments of restrictions on the system and the random forcing. Our approach is based on lifting the dynamics to an appropriate Markov process on an infinite-dimensional history space and applying a Doeblin coupling argument through the method of Kantorovich functional. As applications, we derive exponential mixing for a broad class of ordinary differential equations driven by bounded and mixing random processes. As an application of our result to PDEs we discuss the randomly perturbed primitive equations of atmospheric dynamics.",
+      "authors": [
+        "Peng Gao",
+        "Sergei Kuksin"
+      ],
+      "published": "2026-07-07T08:14:43Z",
+      "updated": "2026-07-07T08:14:43Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.05981v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.05981v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06041v1",
+      "title": "High-dimensional limits and extremizers for maximal functions associated with log-concave densities",
+      "abstract": "We introduce a unified framework to establish the high-dimensional asymptotic behavior of maximal functions associated with radial log-concave probability densities, encompassing the maximal heat semigroup, Hardy-Littlewood maximal function over Euclidean balls, and, additionally, maximal spherical means. Namely, for any $p \\in (1, \\infty)$, we prove that the $L^p(\\mathbb{R}^d)$ operator norms of these maximal operators all converge as the dimension $d \\to \\infty$ to a single, universal limit $λ(p)$. Furthermore, by proving that the $L^p$ operator norms for the heat semigroup $\\mathcal G_*^d$ are monotonically non-decreasing in the dimension, we provide explicit quantitative bounds on the universal limit, showing that $\\frac{2}{5}\\frac{p}{p-1} \\le \\|\\mathcal{G}_*^1\\|_{L^p(\\mathbb{R}) \\to L^p(\\mathbb{R})} \\le λ(p) \\le \\frac{p}{p-1}$. We also prove an extremality property: among all symmetric convex bodies in high dimensions, the maximal operator associated with the Euclidean ball achieves the asymptotically minimal $L^p$ operator norm. Our main results are established via a general transference principle that allows us to control maximal functions via Fourier multiplier symbols. To estimate these symbols uniformly across log-concave densities, we import variance type bounds and thin-shell type concentration of measure results, which are novel tools in the study of maximal functions. In particular, to prove the extremality property, we require a variance type bound for general log concave measures established in a recent series of breakthroughs in high dimensional convex geometry.",
+      "authors": [
+        "Valentina Ciccone",
+        "Błażej Wróbel"
+      ],
+      "published": "2026-07-07T09:16:36Z",
+      "updated": "2026-07-07T09:16:36Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06041v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06041v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06151v1",
+      "title": "Leveraging Extragradient for Effective Sharpness-Aware Minimization in Deep Learning",
+      "abstract": "Generalization remains a pivotal challenge in deep learning, where traditional optimizers like Stochastic Gradient Descent (SGD) often converge to sharp minima, leading to overfitting and reduced performance on unseen data. Building on Sharpness-Aware Minimization (SAM), for seeking flat minima associated with improved generalization, we propose the Extragradient-Inspired Sharpness-Aware Minimization (EISAM), a novel optimizer that enhances generalization via the extragradient technique. EISAM uses a two-step update process: a prediction step investigating the geometry of the loss landscape and a perturbation step that refines updates with a base optimizer. This approach achieves better generalization performance than SAM. Crucially, EISAM reduces sensitivity to the perturbation radius, enhancing robustness, and simplifying the tuning across diverse settings. Extensive experiments on benchmark datasets demonstrate that EISAM consistently outperforms SGD, Adaptive Moment Estimation (Adam), and SAM in test accuracy and training efficiency across various architectures. Theoretical analysis further confirms that EISAM tightens the generalization bound by steering parameters toward flatter minima with reduced curvature. Accompanied by a thorough hyperparameter analysis, EISAM offers practical tuning guidance, establishing it as a robust, scalable, and broadly applicable optimization solution that advances both the theory and practice in deep learning.",
+      "authors": [
+        "Yao Fu",
+        "Chunxia Zhang",
+        "Junmin Liu",
+        "Yihang Jin",
+        "Haishan Ye",
+        "Yuanao Yang"
+      ],
+      "published": "2026-07-07T11:25:46Z",
+      "updated": "2026-07-07T11:25:46Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06151v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06151v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06178v1",
+      "title": "Discrete imprecise copulas and alternating sign matrices",
+      "abstract": "In this paper, we study discrete quasi-copulas and discrete imprecise copulas of minimal range, which naturally correspond to alternating sign matrices. We show that this family is invariant under all defect transformations on quasi-copulas and give a constructive proof demonstrating that discrete imprecise copulas of minimal range do not, in general, avoid sure loss. In contrast, we show that discrete imprecise copulas of minimal range that correspond to dense alternating sign matrices are always coherent, and hence avoid sure loss.",
+      "authors": [
+        "Tomaž Košir",
+        "Elisa Perrone",
+        "Nik Stopar"
+      ],
+      "published": "2026-07-07T11:55:37Z",
+      "updated": "2026-07-07T11:55:37Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06178v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06178v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06242v1",
+      "title": "Exponential mixing and Freidlin--Wentzell large deviation principle for Markov cocycles",
+      "abstract": "This paper studies the long time statistics and small noise asymptotics of Markov cocycles associated with Markov processes in random environments modeled by measure preserving dynamical systems on a standard Borel probability space. Our first result provides an abstract criterion for exponential mixing of stationary measures for such cocycles, formulated toward SPDE applications with assumptions that can be verified directly from a priori estimates. To overcome the nonuniformity from the environment, we combine generalized coupling arguments with ergodic theoretic methods. This allows us to convert nonuniform estimates along the environment into contraction on a positive density set of times, and then upgrade this to all time contraction by introducing a block gap-counting argument. Our second result establishes a Freidlin--Wentzell large deviation principle(LDP) for the unique stationary measure in the small noise limit with a good rate function. For the upper bound, the noise is allowed to be degenerate, while the deterministic pullback attractor may have nontrivial dynamics. The abstract theory applies to nonautonomous SPDEs. We illustrate it with two examples: the two-dimensional Navier--Stokes equations on bounded domains and damped Sine--Gordon equations, where both the deterministic forcing and the degenerate additive noise depend on the random environment.",
+      "authors": [
+        "Rongchang Liu",
+        "Kening Lu",
+        "Lin Shi",
+        "Bixiang Wang"
+      ],
+      "published": "2026-07-07T13:08:16Z",
+      "updated": "2026-07-07T13:08:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06242v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06242v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06249v1",
+      "title": "Extreme least singular values of Gaussian row submatrices and a phase retrieval stability problem",
+      "abstract": "Let $\\mathbb F\\in\\{\\mathbb R,\\mathbb C\\}$ and $d_{\\mathbb F}=\\dim_{\\mathbb R}\\mathbb F$. If $A_m\\in\\mathbb F^{N_m\\times m}$ has independent standard Gaussian entries and $N_m/m\\toγ>1$, then \\[ \\min_{\\substack{T\\subset[N_m]\\\\ |T|=m}} σ_{\\min}(A_{m,T}) = \\left(\\frac{γ^γ}{(γ-1)^{γ-1}}\\right)^{-m/d_{\\mathbb F}+o_P(m)} . \\] If $N_m=γm+O(1)$, the convergence of $m^{-1}\\log M_m^{\\mathbb F}$ has probability error $O(m^{-1})$. In particular, at the real phase-retrieval threshold $N=2m-1$, \\[ ω(A_m)=4^{-m+o_P(m)}, \\] so the Gaussian Balan--Wang critical exponential base is $1/4$.",
+      "authors": [
+        "Yitzchak Shmalo"
+      ],
+      "published": "2026-07-07T13:15:47Z",
+      "updated": "2026-07-07T13:15:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06249v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06249v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06252v1",
+      "title": "A Convex Approximation Framework for Neural Likelihood-Based Bayesian Inverse Problems",
+      "abstract": "Many problems in science and engineering are difficult to model accurately, either due to unknown physical mechanisms, poorly quantified measurement uncertainty, or prohibitive computational costs of high-fidelity simulations. These challenges limit the applicability of classical probabilistic inference methods such as Markov chain Monte Carlo, especially in high-dimensional Bayesian inverse problems. As data from scientific experiments become increasingly available, machine learning methods offer a flexible alternative to explicit parametric modelling. We study neural likelihood approximation, where the goal is to learn the likelihood function directly from data without explicit knowledge of the underlying data-generating process. A common approach trains likelihood surrogates by minimizing the Kullback-Leibler divergence between the true posterior and an approximate posterior, which is equivalent to minimizing the expected negative log-likelihood. This work improves the theoretical foundations of neural likelihood approximation by alleviating limitations of restrictive model classes: we show that, by working with un-normalized potentials and folding normalization into the training objective, the resulting learning problem is strictly convex. We show that empirical minimizers of the resulting data-driven objective converge to the true likelihood as the sample size grows. Numerical experiments for the neural likelihood approximation are conducted for a deblurring and a non-linear PDE based imaging problem.",
+      "authors": [
+        "Fabian Schneider",
+        "Tapio Helin",
+        "Leila Taghizadeh"
+      ],
+      "published": "2026-07-07T13:18:45Z",
+      "updated": "2026-07-07T13:18:45Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06252v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06252v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06275v1",
+      "title": "Equality conditions for correlation inequalities",
+      "abstract": "We prove equality conditions for the Ahlswede--Daykin (AD) inequality and the Fortuin--Kasteleyn--Ginibre (FKG) inequality. We then present a number of applications and special cases of these equality conditions. These include Björner's and Fishburn's inequalities for linear extensions of finite posets, the Lam--Postnikov--Pylyavskyy (LPP) and the Okounkov inequalities for Schur positivity of products of Schur functions. We conclude with equality conditions for the Ahlswede--Daykin--Schur (ADS) inequality recently introduced in Chan--Chen--Pak--Soskin (2026), which is an AD type extension of the LPP inequality.",
+      "authors": [
+        "Swee Hong Chan",
+        "Igor Pak"
+      ],
+      "published": "2026-07-07T13:41:15Z",
+      "updated": "2026-07-07T13:41:15Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06275v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06275v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06290v1",
+      "title": "Quantitative Gaussian-Process limits of Tensor Programs",
+      "abstract": "We study the infinite-width Gaussian-process limit of random neural networks through the lens of tensor programs, and we provide a quantitative convergence theory in Wasserstein distance. Our main result gives explicit finite-width error bounds, of order inverse square-root of the widths between finite-network executions and their Gaussian-process limits. The framework is architecture-agnostic and covers feed-forward models together with weight-sharing schemes relevant for recurrent and transformer-type architectures.",
+      "authors": [
+        "Andrea Agazzi",
+        "Eloy Mosig García",
+        "Dario Trevisan"
+      ],
+      "published": "2026-07-07T13:59:56Z",
+      "updated": "2026-07-07T13:59:56Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06290v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06290v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06331v1",
+      "title": "Bass notes of random hyperbolic surfaces of large genus",
+      "abstract": "This is a Séminaire Bourbaki survey on spectral gaps of random hyperbolic surfaces. The first part of the text is a brief survey on the geometry and spectra of random hyperbolic surfaces. After this, we discuss the results by Hide-Magee, Anantharaman-Monk and Hide-Macera-Thomas on near optimal spectral gaps for random surfaces.",
+      "authors": [
+        "Bram Petri"
+      ],
+      "published": "2026-07-07T14:27:15Z",
+      "updated": "2026-07-07T14:27:15Z",
+      "primary_category": "math.SP",
+      "categories": [
+        "math.SP",
+        "math.DG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06331v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06331v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06398v1",
+      "title": "Random Multiplicative Functions and Making Squares from Polynomial Values",
+      "abstract": "For a large family of polynomials $P(X)\\in \\mathbb{Z}[X]$, we prove central limit theorems for $\\sum_{n\\le N} f(P(n))$ for both Rademacher and extended Rademacher multiplicative functions $f$. To achieve this, we establish a paucity phenomenon in counting solutions to \\[P(n_1)P(n_2)P(n_3)P(n_4) = \\square, \\quad 1\\le n_1, n_2, n_3, n_4 \\le N.\\] Results of Hooley, Evertse--Silverman, and Reuss play an important role in the proof. Our estimates are sharpest for $°P = 2$, thanks to the rich theory of Pell--Fermat equations.",
+      "authors": [
+        "Régis de la Bretèche",
+        "Victor Y. Wang",
+        "Max Wenqiang Xu"
+      ],
+      "published": "2026-07-07T15:29:17Z",
+      "updated": "2026-07-07T15:29:17Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06398v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06398v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06428v1",
+      "title": "Impact of spinning on the early-warning signs in non-Markovian stochastic systems",
+      "abstract": "We construct early-warning signals for impending critical transitions in non-Markovian systems. We analyze stochastic forcings such as fractional Brownian motion, fractional Ornstein-Uhlenbeck processes and red noise in fast-slow systems exhibiting such transitions. We show that the effectiveness of indicators such as autocovariance, autocorrelation, and spectral density depends on several properties of the underlying system. In particular, we compare the influence of the Hurst index and the bifurcation type. We prove that the rotatory dynamics associated with a Hopf bifurcation substantially alters the scaling laws of these observables. Finally, we provide practical guidelines for implementing these signals and validate them on both theoretical and applied models.",
+      "authors": [
+        "Paolo Bernuzzi",
+        "Alexandra Blessing",
+        "Dennis Rudik"
+      ],
+      "published": "2026-07-07T15:55:05Z",
+      "updated": "2026-07-07T15:55:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06428v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06428v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
