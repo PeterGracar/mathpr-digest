@@ -6,11 +6,36 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-08",
-  "total_submissions": 37,
-  "fetched": 37,
-  "generated_at": "2026-07-08T05:31:42Z",
+  "data_through": "2026-07-09",
+  "total_submissions": 61,
+  "fetched": 61,
+  "generated_at": "2026-07-09T06:15:50Z",
   "entries": [
+    {
+      "id": "2607.07589v1",
+      "title": "Surviving from the tip of a cone in competing first-passage percolation",
+      "abstract": "In two-type first passage percolation on $\\mathbb{Z}^2$, two entities compete to capture the sites of the lattice. The entities spread between nearest neighbor sites at times specified by random passage times associated with the edges. We consider the case when both types have the same passage time distribution, with one type starting at the origin and the other from an infinite cone with tip at the origin and pointing in direction $θ$. Itai Benjamini has suggested that the type starting at the origin can grow unboundedly if and only if the slope of the cone is strictly smaller than $π/2$, so that the cone does not fill a whole half-plane. The main result is that this is correct for any $θ$ such that the asymptotic shape of the one-type process has a tangent line with direction $θ$. The proofs are based on a description of infinite time-minimizing paths in terms of Busemann functions together with local modification arguments.",
+      "authors": [
+        "Daniel Ahlberg",
+        "Maria Deijfen",
+        "Matteo Sfragara"
+      ],
+      "published": "2026-07-08T16:12:20Z",
+      "updated": "2026-07-08T16:12:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07589v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07589v1",
+      "score": 8,
+      "matched_keywords": [
+        "first passage percolation",
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2607.05671v1",
       "title": "Bi-infinite systems of singularly interacting Brownian particles and the KPZ equation",
@@ -37,6 +62,56 @@
       "bucket": "high"
     },
     {
+      "id": "2607.07616v1",
+      "title": "The End of the Double Random Current",
+      "abstract": "The Ising correlation function can be expressed in terms of connectivity probabilities of a random graph known as the double random current. In 2016, Duminil-Copin asked whether this random graph only has one topological end. One-endedness implies that free and wired random-cluster measures are equal and that any translation-invariant Gibbs measure of the Ising model is a convex combination of the $+$ and $-$ Gibbs measures. In the general setting of transitive amenable graphs, these properties have been established by Raoufi, effectively circumventing the question of one-endedness. In this paper, we prove one-endedness of the double random current on any transitive, amenable one-ended graph and, relying on Raoufi's work, we answer the question of Duminil-Copin in the affirmative in this general setup. The results of this paper do not give a new proof of uniqueness of random-cluster measure or the characterisations of Gibbs states for the Ising model.",
+      "authors": [
+        "Ulrik Thinggaard Hansen",
+        "Frederik Ravn Klausen"
+      ],
+      "published": "2026-07-08T16:33:04Z",
+      "updated": "2026-07-08T16:33:04Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07616v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07616v1",
+      "score": 5,
+      "matched_keywords": [
+        "connectivity",
+        "random graph"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.07308v1",
+      "title": "Norm Bounds for Sparse Random Tensors and Spectral Gap of Random Hypergraphs",
+      "abstract": "Friedman and Wigderson (1995) introduced a notion of second eigenvalue for hypergraphs that generalizes the second eigenvalue of the adjacency matrix of a graph. We show that $r$-uniform Erdős-Rényi hypergraphs on $n$ vertices exhibit a spectral gap as soon as their expected number of hyperedges $m$ satisfies $m \\gg n^{r/2}$. Prior work identified this scale only up to logarithmic factors; removing these factors is the main technical challenge. Our proof overcomes this obstacle through an explicit decomposition of an associated selector process, inspired by a generic decomposition theorem of Talagrand (2021). As a consequence of our techniques, we obtain improved norm bounds for sparse random tensors with independent entries. Finally, under a mild moment equivalence assumption, we extend to tensors a seminal result of Seginer (2000) for random matrices with i.i.d. entries.",
+      "authors": [
+        "Kevin Lucca",
+        "Lucas Pesenti"
+      ],
+      "published": "2026-07-08T11:51:36Z",
+      "updated": "2026-07-08T11:51:36Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07308v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07308v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2607.04759v1",
       "title": "Limit theorems for strongly and intermediately supercritical branching processes in Markovian environment with linear fractional offspring distributions",
       "abstract": "In this paper, we study the asymptotic behaviour for distribution of supercritical branching process in a Markovian environment with linear fractional offspring distributions. A phase transition in the behaviour of the process is discovered, through investigating the strongly and intermediately strongly supercritical cases.",
@@ -54,6 +129,30 @@
       "score": 3,
       "matched_keywords": [
         "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.07617v1",
+      "title": "Loop Equations Characterize Random Matrix Statistics",
+      "abstract": "We prove that the universal local point processes of random matrix theory are characterized by their loop equation hierarchies. More precisely, for every rational $β>0$, the $\\mathrm{Sine}_β$ point process is the unique solution of the bulk loop equation hierarchy, and the $\\mathrm{Airy}_β$ point process is the unique solution of the edge loop equation hierarchy. These uniqueness results provide a direct route to universality: it suffices to verify the corresponding approximate loop equations for the ensemble. In many models, these equations follow from local laws and integration by parts.",
+      "authors": [
+        "Paul Bourgade",
+        "Jiaoyang Huang"
+      ],
+      "published": "2026-07-08T16:33:33Z",
+      "updated": "2026-07-08T16:33:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07617v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07617v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -99,6 +198,28 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.05219v1",
       "pdf_url": "https://arxiv.org/pdf/2607.05219v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07022v1",
+      "title": "Coordinate-wise Elephant Random Walk",
+      "abstract": "We introduce a coordinate-wise version of the elephant random walk on the $k$-dimensional discrete hypercube $Q_k=\\{-1,1\\}^k$. At each global time step, one coordinate is selected uniformly at random and updated according to an elephant-type memory rule using only the past values of that coordinate. The resulting process is a nearest-neighbor walk with possible holding on the hypercube, but it is not Markovian on $Q_k$ because the transition probabilities depend on coordinate-wise empirical histories. We show that, when all memory parameters satisfy $p_i<1$, the coordinate-wise memory biases vanish almost surely. Consequently, the time-dependent transition kernels of the walk are asymptotically close in total variation to the memoryless coordinate-refresh kernel. Using this perturbation argument and the uniform ergodicity of the refresh chain, we prove a weak law of large numbers for bounded observables. We then study the Doob martingale associated with a bounded observable and prove a martingale central limit theorem and functional central limit theorem. The limiting variance is determined by the refresh kernel and the uniform measure on the hypercube, and is completely independent of the memory parameters $p_1,p_2,\\dots,p_k.$",
+      "authors": [
+        "Denisse A. Escobar Parra"
+      ],
+      "published": "2026-07-08T05:40:38Z",
+      "updated": "2026-07-08T05:40:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07022v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07022v1",
       "score": 2,
       "matched_keywords": [
         "random walk"
@@ -462,23 +583,23 @@
       "bucket": "other"
     },
     {
-      "id": "2607.05384v1",
+      "id": "2607.05384v2",
       "title": "Well-invertible column subsets of sparse matrices are rare",
-      "abstract": "A random $n\\times k$ matrix $S$ is an \\emph{$(r,α)$-oblivious subspace injection} (OSI) if $\\Exp\\|S^\\top x\\|_2^2=\\|x\\|_2^2$ for every $x\\in\\R^n$, and for every fixed $r$-dimensional subspace $V\\subset\\R^n$, with probability close to one, one has $α\\|x\\|_2^2\\le\\|S^\\top x\\|_2^2$ for all $x\\in V$. In this work, we show that in the regime $r=Ω(k)$ and $α=Ω(1)$, and under a mild additional structural assumption, no constant-row-sparsity matrix $S$ is OSI, thereby answering, in a strong form, a question raised by Camaño, Epperly, Meyer, and Tropp. We show that the failure of the OSI property for sparse random matrices stems from a general deterministic phenomenon, thereby reducing a probabilistic problem to a non-probabilistic one. This phenomenon is related to the restricted invertibility principle introduced in the seminal work of Bourgain--Tzafriri. Let $(n_k)_{k\\in\\N}$ be a sequence of integers satisfying $\\frac{n_k}{k}\\to\\infty$. For each $k$, let $S^{(k)}$ be a $n_k\\times k$ non-random matrix with $O(1)$ nonzero entries per row, whose nonzero entries have average magnitude $O(1)$, and such that the total number of pairs of rows with supports overlapping at two or more indices is $o({n_k}^2/k)$. We prove that for every constant $\\varepsilon>0$, as $k\\to\\infty$, the overwhelming majority of $k\\times \\lfloor\\varepsilon k\\rfloor$ submatrices of $(S^{(k)})^\\top$ have the smallest singular value $o(1)$. Thus, the well-invertible submatrices whose existence is guaranteed by the Bourgain--Tzafriri theorem are rare. The proof is itself based on probabilistic tools.",
+      "abstract": "A random $n\\times k$ matrix $S$ is an \\emph{$(r,α)$-oblivious subspace injection} (OSI) if $\\mathbb{E}\\|S^\\top x\\|_2^2=\\|x\\|_2^2$ for every $x\\in\\mathbb{R}^n$, and for every fixed $r$-dimensional subspace $V\\subset\\mathbb{R}^n$, with probability close to one, one has $α\\|x\\|_2^2\\le\\|S^\\top x\\|_2^2$ for all $x\\in V$. In this work, we show that in the regime $r=Ω(k)$ and $α=Ω(1)$, and under a mild additional structural assumption, no constant-row-sparsity matrix $S$ is OSI, thereby answering, in a strong form, a question raised by Camaño, Epperly, Meyer, and Tropp. We show that the failure of the OSI property for sparse random matrices stems from a general deterministic phenomenon, thereby reducing a probabilistic problem to a non-probabilistic one. This phenomenon is related to the restricted invertibility principle introduced in the seminal work of Bourgain--Tzafriri. Let $(n_k)_{k\\in\\mathbb{N}}$ be a sequence of integers satisfying $\\frac{n_k}{k}\\to\\infty$. For each $k$, let $S^{(k)}$ be a $n_k\\times k$ non-random matrix with $O(1)$ nonzero entries per row, whose nonzero entries have average magnitude $O(1)$, and such that the total number of pairs of rows with supports overlapping at two or more indices is $o({n_k}^2/k)$. We prove that for every constant $\\varepsilon>0$, as $k\\to\\infty$, the overwhelming majority of $k\\times \\lfloor\\varepsilon k\\rfloor$ submatrices of $(S^{(k)})^\\top$ have the smallest singular value $o(1)$. Thus, the well-invertible submatrices whose existence is guaranteed by the Bourgain--Tzafriri theorem are rare. The proof is itself based on probabilistic tools.",
       "authors": [
         "Han Huang",
         "Mark Rudelson",
         "Konstantin Tikhomirov"
       ],
       "published": "2026-07-06T17:56:16Z",
-      "updated": "2026-07-06T17:56:16Z",
+      "updated": "2026-07-08T16:03:41Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.FA"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.05384v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.05384v1",
+      "abs_url": "https://arxiv.org/abs/2607.05384v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.05384v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -805,6 +926,30 @@
       "bucket": "other"
     },
     {
+      "id": "2607.06644v1",
+      "title": "Fast determinantal sampling on general spaces and diffusion geometry",
+      "abstract": "Determinantal point processes have recently emerged as a kernel-based alternative to standard independent sampling for constructing efficient minibatches, coresets, and other compact representations of large-scale datasets. In particular, sampling mechanisms based on DPPs are believed to demonstrate better approximation properties compared to classical i.i.d. samplers, even at the scale of the exponent. One of the key strengths of DPP based samplers is that they can be deployed over very general spaces, in contrast to more classical sampling methods beyond i.i.d. which tend to work in very well-structured settings, principally Euclidean spaces. In this work, we establish explicit rate guarantees for determinantal sampling in spaces that extend far beyond known Euclidean setups, focusing on spectral kernels obtained from eigenspaces of naturally associated Laplacian and other Markov diffusion operators. This includes, in particular, Riemannian manifolds and weighted networks. In determinantal sampling from compact Riemannian manifolds, we establish sampling rates that automatically pick up the intrinsic dimensionality $d_{\\text{int}}$ of the underlying manifold. In the setting of networks, we investigate DPP-based samplers on the celebrated k-nearest neighbour graphs, as well as weighted random geometric graphs, and demonstrate a similar improved dependence on the intrinsic dimensionality of the data. Overall, our approach achieves guarantees of $\\big(\\text{sample size}\\big)^{-\\frac{1}{2}-\\frac{1}{2d_{\\text{int}}}}$ that match known rates on Euclidean spaces of comparable dimension. In terms of techniques, we connect to the celebrated Weyl's Law for manifold spectra, and leverage tools from the theory of Markov diffusions and Dirichlet forms as well as certain ingredients from the theory of pseudodifferential operators, which could be of independent interest in this area.",
+      "authors": [
+        "Hoang-Son Tran",
+        "Pranav Gupta",
+        "Subhroshekhar Ghosh"
+      ],
+      "published": "2026-07-07T15:26:03Z",
+      "updated": "2026-07-07T15:26:03Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06644v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06644v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2607.06398v1",
       "title": "Random Multiplicative Functions and Making Squares from Polynomial Values",
       "abstract": "For a large family of polynomials $P(X)\\in \\mathbb{Z}[X]$, we prove central limit theorems for $\\sum_{n\\le N} f(P(n))$ for both Rademacher and extended Rademacher multiplicative functions $f$. To achieve this, we establish a paucity phenomenon in counting solutions to \\[P(n_1)P(n_2)P(n_3)P(n_4) = \\square, \\quad 1\\le n_1, n_2, n_3, n_4 \\le N.\\] Results of Hooley, Evertse--Silverman, and Reuss play an important role in the proof. Our estimates are sharpest for $°P = 2$, thanks to the rich theory of Pell--Fermat equations.",
@@ -845,6 +990,409 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.06428v1",
       "pdf_url": "https://arxiv.org/pdf/2607.06428v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06693v1",
+      "title": "Stable Phase Retrieval for Spans of Independent Random Variables",
+      "abstract": "We prove that, after $L^2$ normalization, stable phase retrieval holds over the $L^2$-spans of independent real-valued centered random variables if and only if all but possibly one coordinate satisfies a uniform two-sided $L^1$ bound. This provides a complete characterization of stable phase retrieval for such subspaces, building upon the pioneering work of Calderbank--Daubechies--Freeman--Freeman and confirming the conjectured characterization communicated to us by those authors. We provide two different proofs of this fact, both based on a decomposition of the $\\ell^2$-coefficients of each random variable. The first is a compactness proof, which makes use of the infinite divisibility of limit laws of tail sums. The second is a quantitative proof, which substitutes the compactness step with an explicit dichotomy based on anticoncentration estimates of Sperner type. This latter proof was partially LLM generated based on the ideas in the first proof and a considerable amount of guidance by the authors. An autoformalization of our main result in Lean 4 is also provided, following the ideas in the quantitative proof.",
+      "authors": [
+        "Pedro Abdalla",
+        "Jaume de Dios Pont",
+        "João P. G. Ramos",
+        "Mitchell A. Taylor"
+      ],
+      "published": "2026-07-07T18:10:15Z",
+      "updated": "2026-07-07T18:10:15Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.CA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06693v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06693v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06745v1",
+      "title": "Regularization and Asymptotic Behaviour of Ornstein-Uhlenbeck Evolution Operators in Infinite Dimension",
+      "abstract": "We are concerned with the properties of Ornstein-Uhlenbeck evolution operators acting on functions defined in a Hilbert space and p-integrable with respect to a suitable Gaussian measure. These operators provide solutions to the infinite dimensional, non-autonomous backward Kolmogorov equation. The first part of the paper focuses on some general regularization properties, while the second part carries on a deep analysis of the asymptotic behaviour in the periodic case. In particular, we identify the optimal convergence rate of the Ornstein-Uhlenbeck operator with respect to time and we give an optimality criterion depending only on the drift term of the Kolmogorov equation.",
+      "authors": [
+        "Francesco Bartaloni"
+      ],
+      "published": "2026-07-07T19:24:41Z",
+      "updated": "2026-07-07T19:24:41Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06745v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06745v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06785v1",
+      "title": "On the smallest singular value of the product of random and deterministic matrices",
+      "abstract": "Let $A=(a_{ij})$ be an $n\\times n$ real-valued random matrix with independent, mean-zero, variance-one entries whose fourth moments are uniformly at most $K$. Suppose that there exists $κ\\in (0, 1)$ such that the entries of $A$ satisfy $$ \\max_{i,j}\\sup_{u \\in \\mathbb{R}} \\mathbb{P}(\\lvert a_{ij} - u\\rvert < 1) \\le κ. $$ We prove that there are constants $c,C>0$, depending only on $K$ and $κ$, such that for every fixed invertible $n\\times n$ matrix $M$ and every $\\varepsilon\\ge0$, $$ \\mathbb{P}!\\left(s_{\\min}(MA) \\le \\frac{\\varepsilon}{\\lVert M^{-1}\\rVert_{\\mathrm{HS}}}\\right) \\le C\\varepsilon + e^{-cn}. $$ In the Gaussian case, we also show that the above estimate is sharp in the sense that $\\mathbb{E}[s_{\\min}(MA)]\\asymp \\lVert M^{-1}\\rVert_{\\mathrm{HS}}^{-1}.$",
+      "authors": [
+        "Brayden Letwin",
+        "Achintya Raya Polavarapu"
+      ],
+      "published": "2026-07-07T20:31:42Z",
+      "updated": "2026-07-07T20:31:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06785v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06785v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06813v1",
+      "title": "Mixing of Glauber Dynamics on High Overlap Gibbs Measures",
+      "abstract": "We show fast mixing of Glauber dynamics for certain quadratic Gibbs measures with large external fields. The main ingredient is an overlap condition that allows us to control correlation matrices uniformly over all pinnings, by controlling norms of small submatrices of the interaction matrix. Using stochastic localization, we then obtain a lower bound on the spectral gap and, consequently, polynomial-time mixing of Glauber dynamics. As a direct application, we consider the Sherrington-Kirkpatrick model, whose interaction matrix is a scaled GOE matrix. For this model, we show that for any fixed finite inverse temperature $β$, there exists a strength of external field $θ$, not depending on the size of the system, for which Glauber dynamics mixes in polynomial time (with high probability on the draw of the interaction matrix).",
+      "authors": [
+        "Afonso S. Bandeira",
+        "Ahmed El Alaoui",
+        "Almut Rödder"
+      ],
+      "published": "2026-07-07T21:20:41Z",
+      "updated": "2026-07-07T21:20:41Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06813v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06813v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06863v1",
+      "title": "Jacobi-like relative value iteration algorithms for ergodic risk-sensitive control of Markov chains",
+      "abstract": "We propose a Jacobi-like relative value iteration (RVI) algorithm and a Gauss-Seidel-like implementation for the ergodic risk-sensitive control (ERSC) problem of a controlled discrete time Markov chain (DTMC) on a finite state space. Under the assumption that the DTMC is irreducible and recurrent under every stationary Markov policy, we prove that the iterates of the proposed RVI algorithms converge at a geometric rate. The main challenge stems from the multiplicative structure of the ERSC cost criterion and the associated Bellman-like operators, which prevents us from adapting the analogous global contraction and bi-Lipschitz continuity properties that underlie the proof of convergence in the average cost setting. We overcome this by establishing local contraction properties for the risk-sensitive Bellman-like operators and a local bi-Lipschitz continuity property for their fixed points, and use these properties to show the iterates converge geometrically. We conclude by implementing our proposed RVI algorithms on two examples: service effort control for a single-server queue of finite capacity, and maximizing the exit rate from a finite domain (on a graph).",
+      "authors": [
+        "Sumith Reddy Anugu",
+        "Guodong Pang",
+        "Nicola Sassone"
+      ],
+      "published": "2026-07-07T23:30:34Z",
+      "updated": "2026-07-07T23:30:34Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06863v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06863v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06942v1",
+      "title": "Invariant Measures for Soliton Systems Generated by Mealy Automata",
+      "abstract": "We study invariant measures for soliton systems described by Mealy automata. Motivated by recently introduced soliton models associated with 2-letter, 3-state Mealy automata, we formulate the time evolution induced by Mealy automata on bi-infinite configuration spaces. We provide sufficient conditions for the invariance of Bernoulli product measures and derive a criterion for the invariance of two-sided space-homogeneous Markov distributions. We then apply these general results to three soliton models, which can be interpreted as variants of the box-ball system (BBS). For two of these models, BBS-S(2) and BBS-V(2), we prove that Bernoulli product measures are invariant. For the remaining model, BBS-C(2), we establish a more general result: the invariance of two-sided space-homogeneous Markov distributions, which include Bernoulli product measures as a special case. Furthermore, for all three models, we compute the phase shift associated with the interaction of two solitons, as well as the velocity of an isolated soliton. Although the latter has already been studied previously, both quantities constitute fundamental characteristics for understanding the generalized hydrodynamics of these systems. These results provide a foundation for the study of invariant measures, generalized Gibbs ensembles, and generalized hydrodynamic behavior in Mealy-automaton soliton systems.",
+      "authors": [
+        "Takahiro Kanazawa",
+        "Yutaro Nakabayashi"
+      ],
+      "published": "2026-07-08T03:11:43Z",
+      "updated": "2026-07-08T03:11:43Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.stat-mech",
+        "math.PR",
+        "nlin.PS",
+        "nlin.SI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06942v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06942v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.06952v1",
+      "title": "Universality for cokernels of partially random integral matrices",
+      "abstract": "Given any $\\varepsilon > 0$, let $M(n)$ be a random $n \\times (n+u)$ matrix over $\\mathbb{Z}_p$, with all entries independent and $\\varepsilon$-balanced (lying in each residue class mod $p$ with probability at most $1-\\varepsilon$). Wood proved that as $n \\to \\infty$ the distribution of $\\mathrm{cok}(M(n))$ approaches Cohen and Lenstra's conjectured distribution of class groups. Given $α,β>0$ such that $α+ β<1$, we prove that the distribution of $\\mathrm{cok}(M(n))$ still approaches the Cohen--Lenstra distribution even if we weaken the hypothesis by allowing up to $αn$ entries per column and up to $βn$ entries per row of $M(n)$ to not be $\\varepsilon$-balanced. We also weaken the independence condition by allowing certain types of dependence between the entries of each column. In addition, we prove that, for any $δ> 0$, the cokernels of random band matrices of width $\\log(n)^{1+δ}$ with $\\varepsilon$-balanced entries in the band and arbitrary entries outside of it will also approach the Cohen--Lenstra distribution, which answers a question of Kang--Lee--Yu.",
+      "authors": [
+        "Isaac Rajagopal"
+      ],
+      "published": "2026-07-08T03:26:29Z",
+      "updated": "2026-07-08T03:26:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.06952v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.06952v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07014v1",
+      "title": "Local large deviations for linear-region growth in random piecewise-linear networks",
+      "abstract": "We study a random compositional model for the growth of affine regions in deep piecewise-linear networks. The model is generated by i.i.d.\\ perturbations of the symmetric height-one tent map, and the main observable is the number \\(N_n\\) of affine pieces after \\(n\\) layers. We prove the existence of a submultiplicative pressure for \\(N_n\\), yielding exponential upper bounds for both tails of \\(n^{-1}\\log N_n\\). The same argument applies to abstract submultiplicative complexity observables and gives higher-dimensional extensions for convex-polytopal affine-cover counts and worst-line affine-piece counts. Since the true branch count has no matching supermultiplicative inequality, lower bounds require a separate certified construction. We introduce a finite-state defect process that records branches whose future splitting can be guaranteed, and use bridge words to obtain constructive upper-tail lower bounds. In a uniformly favorable small-noise regime, this process is governed by a companion matrix whose Perron root tends to \\(2\\), implying eventual exclusion of lower tails below \\(\\log 2-ξ\\).",
+      "authors": [
+        "Recep Özkan",
+        "Christian Hirsch"
+      ],
+      "published": "2026-07-08T05:14:19Z",
+      "updated": "2026-07-08T05:14:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07014v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07014v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07283v1",
+      "title": "Multi-time Markov renewal chains and stratified renewal theorems",
+      "abstract": "We develop a discrete Markov renewal theory on a standard Borel state space, with vector-valued sojourn times and lower-rectangle observation on $\\N^d$. The Markov renewal potential is a kernel-valued convolution resolvent and yields unified representations for semi-Markov transitions, first-passage laws, occupation measures and rewards. The semi-Markov field observed on the partially ordered lattice is generally not Markov. We identify its canonical Markovian augmentation through the backward recurrence vector and give a lumpability criterion for the exceptional cases in which the augmentation can be projected back to the original state space. The lower-rectangle order leads to a stratified inverse-renewal theory: the direction simplex is decomposed into rate-determining cells, with Gaussian limits on cells having a unique active coordinate and minima of correlated Gaussian fields on their interfaces. We establish functional inverse limits, critical-interface limits and logarithmic estimates for inverse deviations. Exact-time potentials are obtained from an operator-theoretic local theorem for Fourier--Laplace perturbations of Markov-additive kernels, while a regenerative theorem gives the corresponding arithmetic lattice-class form. The results connect Markov renewal equations, multiparameter Markov structure and the local asymptotic geometry induced by rectangular observation.",
+      "authors": [
+        "Leonidas Kordalis",
+        "Samis Trevezas"
+      ],
+      "published": "2026-07-08T11:21:16Z",
+      "updated": "2026-07-08T11:21:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07283v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07283v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07309v1",
+      "title": "Quantitative limit theorems for generalized Pólya urns with applications to random tree models",
+      "abstract": "We establish novel quantitative limit theorems for the asymptotic distribution of colours in a generalized Pólya urn. Concretely, we construct explicit rates of convergence for the proportion of balls of each colour in the urn, both in square-mean and almost surely, under a general condition on the replacement matrix. As an application, we revisit three models of random recursive trees studied by Janson (Random Structures & Algorithms 26 (2005), 69--83): random recursive trees, random plane recursive trees, and random recursive $d$-ary trees. For each model, we show that the corresponding outdegree statistics can be cast as generalized Pólya urns, and thereby obtain explicit rates of convergence, both in $L^2$ and almost surely, for the proportion of nodes of each outdegree. In all three cases, the rates we obtain are of order $O(1/n)$ in $L^2$ and almost surely, and are uniform in the outdegree under consideration.",
+      "authors": [
+        "Morenikeji Neri",
+        "Pedro Pinto"
+      ],
+      "published": "2026-07-08T11:51:49Z",
+      "updated": "2026-07-08T11:51:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07309v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07309v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07410v1",
+      "title": "Essential spectrum for Brox-type diffusion processes",
+      "abstract": "This paper investigates the essential spectrum and compactness property of Markov semigroups generated by multi-dimensional Brox diffusion processes under two types of random media: stationary Gaussian random fields and semi-selfsimilar Lévy random fields. For Gaussian environments satisfying general stationary covariance growth conditions, we prove that the associated semigroup is almost surely noncompact; if the covariance function grows sublinearly at infinity, then the bottom of the essential spectrum vanishes almost surely, with fractional Brownian fields as a concrete example. For multi-dimensional semi-selfsimilar Lévy environments with scaling index $α\\in(1,2)$, we show that the essential spectral bottom equals zero almost surely for arbitrary space dimension $d\\ge1$, and the same conclusion holds for one-dimensional symmetric $α$-stable Lévy processes with any $α\\in(0,2)$. Furthermore, we study one-dimensional diffusion operators perturbed by random Lévy drift. When $0<δ\\le 1/α$, random environmental fluctuations can destroy the compactness of semigroups induced by deterministic power-law potentials $\\pm|x|^δ$, even if the unperturbed semigroup is compact. The analysis relies on almost sure volume growth estimates for the random reference measure induced by environmental potentials, sample path asymptotics of random fields, ergodic theory of scaling transforms, and spectral criteria for regular Dirichlet forms. A unified framework linking sample path behaviors of random potentials to spectral characteristics of diffusion semigroups is established, and several open problems for large potential exponents are stated.",
+      "authors": [
+        "Yuichi Shiozawa",
+        "Jian Wang"
+      ],
+      "published": "2026-07-08T13:42:27Z",
+      "updated": "2026-07-08T13:42:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07410v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07410v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07552v1",
+      "title": "Weak convergence rate for the Cox-Ingersoll-Ross process",
+      "abstract": "We study the weak convergence rate of a drift-implicit discretisation scheme for the Cox-Ingersoll-Ross (CIR) process in the regime where the process remains strictly positive. Specifically, we consider scheme~(4) of Alfonsi~\\cite{A}, which arises naturally from applying a drift-implicit Euler step to the SDE satisfied by the square root of the CIR process and admits a unique positive closed-form solution at each time step. Using a PDE approach combined with a continuous-time SDE representation of the discretised process, we prove that the weak convergence rate is $\\mathcal{O}(1/N)$ under the Feller condition $2α\\geqθ^2$ and mild polynomial growth conditions on the payoff function. The proof requires only elementary techniques and, in particular, avoids the semi-exact simulation machinery used in earlier work. The methodology is expected to extend to a broader class of diffusion processes.",
+      "authors": [
+        "Alexandros Pavlis",
+        "Umut Cetin"
+      ],
+      "published": "2026-07-08T15:49:07Z",
+      "updated": "2026-07-08T15:49:07Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07552v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07552v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07598v1",
+      "title": "Universal Central Limit Theorem for non-exchangeable interacting diffusions",
+      "abstract": "We study non-exchangeable interacting diffusions with pairwise interaction strengths encoded by a sequence of matrices. Under suitable structural and denseness conditions on these matrices, we prove a universal Central Limit Theorem for the global fluctuation field. As the number of particles $n$ becomes large, it converges in distribution to the unique solution of a stochastic partial differential equation (SPDE), the same Gaussian limit as in the exchangeable mean field case. The result applies, for instance, to scaled adjacency matrices of $m_n$-regular graphs when $m_n/\\sqrt{n}\\to\\infty$. A spatial interaction model shows that the $n^{-1/2}$ denseness threshold is sharp. The proof proceeds with an analysis in negative Sobolev spaces, building on sharp quantitative propagation of chaos results together with functional inequalities.",
+      "authors": [
+        "Mykhaylo Shkolnikov",
+        "Lane Chun Yeung"
+      ],
+      "published": "2026-07-08T16:14:08Z",
+      "updated": "2026-07-08T16:14:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07598v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07598v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07618v1",
+      "title": "Fourier restriction norm method adapted to controlled paths: stochastic wave equations",
+      "abstract": "We investigate the pathwise well-posedness issue of the stochastic nonlinear wave equation (SNLW) with a multiplicative noise. While the Ito solution theory (= random field solution theory) was established in the '80s, its pathwise well-posedness has remained a challenging open problem for over forty years. By building a unified framework for the Fourier restriction norm method adapted to the $U^p$- and $V^p$-spaces, due to Koch and Tataru (2007), and the Young/rough integration theory via the sewing lemma and controlled paths due to Gubinelli (2004) along with the random tensor estimate for multiple stochastic integrals with respect to (fractional) Brownian motions, we establish pathwise local well-posedness of SNLW in optimal regularity ranges. In particular, in the one-dimensional case with a white-in-time noise, our result covers the case of an almost space-time white noise, which is optimal within the framework of one-parameter rough paths.",
+      "authors": [
+        "Andreia Chapouto",
+        "Jiawei Li",
+        "Tadahiro Oh"
+      ],
+      "published": "2026-07-08T16:33:53Z",
+      "updated": "2026-07-08T16:33:53Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07618v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07618v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07624v1",
+      "title": "Unconditional well-posedness of the stochastic Korteweg-de Vries equation on the real line",
+      "abstract": "We study well-posedness issues of the stochastic Korteweg-de Vries equation (SKdV) with an additive noise, posed on the real line. By using the Fourier restriction norm method adapted to the Fourier-Lebesgue space in time, we first prove global well-posedness of SKdV in $L^2(\\mathbb R)$ without assuming the homogenous Sobolev regularity, which was imposed in a work by de Bouard, Debussche, and Tsutsumi (1999). Then, by adapting the argument by Zhou (1997) to the stochastic setting, we prove optimal pathwise unconditional uniqueness for SKdV in $L^2(\\mathbb R)$. In the appendix, we present a short argument for proving boundedness of the multiplication by a sharp cutoff function in the Fourier-Lebesgue and Sobolev spaces, which is of interest in its own right.",
+      "authors": [
+        "Damiano Greco",
+        "Tadahiro Oh",
+        "Kotaro Tsugawa"
+      ],
+      "published": "2026-07-08T16:39:58Z",
+      "updated": "2026-07-08T16:39:58Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07624v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07624v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07628v1",
+      "title": "On probabilistic ill-posedness",
+      "abstract": "In this note, we introduce an enhanced notion of probabilistic well-posedness for dispersive PDEs with random initial data by imposing stability at the origin as the amplitude of randomization tends to $0$. We then use this notion to re-interpret recent works on \"beyond variance blowup\" for dispersive PDEs, by the authors with their collaborators (2025, 2026), as probabilistic ill-posedness results. By drawing an analogy to the failure of $C^k$-smoothness of a solution map in the deterministic setting, we interpret variance blowup results as mild probabilistic ill-posedness.",
+      "authors": [
+        "Tadahiro Oh",
+        "Nikolay Tzvetkov"
+      ],
+      "published": "2026-07-08T16:43:59Z",
+      "updated": "2026-07-08T16:43:59Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07628v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07628v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07680v1",
+      "title": "Any-Dimensional Learning by Sampling",
+      "abstract": "Many machine learning models are defined for inputs of different sizes, such as point clouds containing different numbers of points, sequences of tokens of different lengths, and graphs on different numbers of nodes. Such models are trained on finitely-many examples of necessarily limited sizes. How well do these models generalize from inputs of small size to larger inputs of size not seen during training? Furthermore, evaluating such models on large inputs is often expensive. How can we sketch large inputs to obtain smaller ones on which the model takes similar values? At the heart of both questions is the need to compare inputs of different sizes and to approximate large inputs by small ones. We present a unified approach to address these questions by using random sampling maps to compare inputs of different sizes. The sampling maps we consider are generalizations of sampling with replacement, random binning, and species sampling. We characterize the application domains in which each type of sampling is appropriate in terms of the symmetries and relations between problem instances of different sizes in the domain. Our framework yields explicit generalization and sketching rates for function classes continuous with respect to a chosen notion of sampling, encompassing large families of functions defined on sequences, graphs, and tensors of different sizes. Specific examples include moment polynomials on measures, homomorphism densities and numbers of graphs, permutation-invariant transformers, and graph neural networks.",
+      "authors": [
+        "Eitan Levin",
+        "Venkat Chandrasekaran"
+      ],
+      "published": "2026-07-08T17:38:29Z",
+      "updated": "2026-07-08T17:38:29Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07680v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07680v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.07694v1",
+      "title": "Minimum Norm Interpolation via The Local Theory of Banach Spaces: The Role of Gaussianity",
+      "abstract": "We study minimum-norm interpolation (MNI) in overparameterized linear regression with isotropic Gaussian covariates, in settings where the MNI has no closed-form formula. Whereas most prior work relied on Gaussian comparison tools such as the convex Gaussian min--max theorem (CGMT), our approach uses tools from high-dimensional geometry and probability. First, when the norm is in isotropic position, we obtain an ``offset'' bound that controls the amount by which the MNI shrinks the ground truth. Second, we show that the ``intrinsic'' variance of the $\\ell_1$-MNI is at most $O(\\tfrac{1}{n\\log(d/n)^2})$, using a variant of Talagrand's $L_1$--$L_2$ inequality due to Cordero-Erausquin and Ledoux [2012], together with a classical result of Gluskin [1988]. We recover the sharp mean-squared error (MSE) bound for the $\\ell_1$-MNI obtained by Wang et al. [2022], using the work of Fleury [2012] on the symmetric Gaussian polytope, which is defined via \\[ P_{n,d} := \\mathrm{conv}\\{\\pm X_i\\}_{i=1}^{d} \\text{ where } X_i \\overset{\\mathrm{i.i.d.}}{\\sim} N(0,\\mathrm{I}_{n \\times n}), \\] rather than CGMT. Our methods also imply improvements on previous results in high-dimensional geometry that may be of independent interest. First, we show that with overwhelming probability, the ratio between the isotropic constant of $P_{n,d}$ and that of the Euclidean ball in $\\mathbb{R}^n$ is at most $1+O((\\log(d/n))^{-2})$, improving a result of Klartag and Kozma [2009]. We also establish a refined weighted thin-shell estimate on $P_{n,d}$, and provide an elementary proof of the main theorem of Fleury [2012].",
+      "authors": [
+        "Gil Kur",
+        "Reese Pathak"
+      ],
+      "published": "2026-07-08T17:50:15Z",
+      "updated": "2026-07-08T17:50:15Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.07694v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.07694v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
