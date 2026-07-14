@@ -6,9 +6,487 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-13",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-07-13T05:48:53Z",
-  "entries": []
+  "data_through": "2026-07-14",
+  "total_submissions": 21,
+  "fetched": 21,
+  "generated_at": "2026-07-14T05:09:55Z",
+  "entries": [
+    {
+      "id": "2607.11033v1",
+      "title": "Limit laws for component-pruned sparse random graphs and percolated tori",
+      "abstract": "We prove an $\\mathrm{MSO}_2$ zero-one law for a very sparse Erdős-Rényi graph after pruning by component order. Let $p_n=c_n/n$, where $c_n\\to0$, and delete every component of order less than $f(n)$, where $f(n)\\to\\infty$. If \\[ f(n)\\bigl(\\log f(n)+\\log(1/c_n)\\bigr)=o(\\log n), \\] then the resulting graph satisfies a zero-one law for $\\mathrm{MSO}_2$, with quantification over sets of vertices and sets of edges. The proof combines uniform component counts, an MSO Feferman-Vaught decomposition for disjoint unions, and semilinearity of the order spectra of MSO-definable classes of finite trees. We also show that the term $f(n)\\log f(n)$ cannot simply be omitted: star components can occur at first-order-visible Poisson thresholds. We further establish first-order limit laws for bond percolation on the discrete torus $T_L^d$. In the two-sided subpolynomial regime, pruning below a sufficiently slow threshold yields a zero-one law. For the unpruned model in either one-sided polynomial regime, the reciprocal exponents $α=1/k$ are precisely the critical scales. At such a scale, an extended limit of $N p_N^k$ or $N q_N^k$ equal to $0$ or $\\infty$ gives a zero-one law; a positive finite limit gives a convergence law but not a zero-one law; and the absence of an extended limit gives failure of convergence. Finally, $\\mathrm{MSO}_1$ already detects the parity of the torus side length through bipartiteness, producing a natural obstruction to monadic convergence in a near-deterministic regime.",
+      "authors": [
+        "Mostafa Mirabi",
+        "Saharon Shelah"
+      ],
+      "published": "2026-07-13T02:58:37Z",
+      "updated": "2026-07-13T02:58:37Z",
+      "primary_category": "math.LO",
+      "categories": [
+        "math.LO",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11033v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11033v1",
+      "score": 8,
+      "matched_keywords": [
+        "erdos",
+        "percolation",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.11376v1",
+      "title": "Correlated and uncorrelated long--time asymptotics of type D ASEP",
+      "abstract": "The type D ASEP is an asymmetric two--species interacting particle system on $\\Z$, in which two separately conserved species hop, bind into a composite ``bound pair'', and split. The model, along with its reversible measures and orthogonal polynomial duality, was constructed using the representation theory of $U_q(\\so_{2n})$. The reversible measures and orthogonal polynomial duality are each a product of two copies of the single-species ASEP reversible measures and orthogonal polynomial duality. In this paper, we study the long-time asymptotics of the type D ASEP. In the fixed--$q$ regime, using an exact current--decoupling identity, we prove that the asymptotic hydrodynamic limit and Tracy--Widom fluctuations decouple, as predicted from the duality. In the weak--asymmetry (Edwards--Wilkinson) regime, when $q=1-c/N^2$, we prove that the two density fluctuation fields \\underline{decouple}: each converges to a linear stochastic heat equation, with no cross--coupling in either the drift or the noise, the limiting noises having vanishing cross--correlation. More surprisingly, we then prove that the two limiting normal random variables are \\underline{correlated} with a seemingly new correlation function. The correlation is exactly equal to $(1-e^{-4c})/(4c)$, with the positive parts of the normal random variables having correlations expressed by the Bessel--Struve function. This paper, with the exception of the abstract and introduction, was written entirely by Claude Opus 4.8 and Fable 5. The proofs were then formalized in Lean, using Aristotle by Harmonic AI. The human author of this paper verified the proofs manually.",
+      "authors": [
+        "Jeffrey Kuan"
+      ],
+      "published": "2026-07-13T10:39:09Z",
+      "updated": "2026-07-13T10:39:09Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11376v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11376v1",
+      "score": 7,
+      "matched_keywords": [
+        "interacting particle system",
+        "particle system"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.11608v1",
+      "title": "Phase transition for weakly interacting focusing Gibbs measures with harmonic potential",
+      "abstract": "In this paper, we study the Gibbs measures on Euclidean spaces associated to the focusing nonlinear Schrödinger equation with harmonic potential and critical non linearity whose coupling constant tends to 0, a question initially posed by Brydges-Slade (1996) for the $Φ^4_2$-model on $\\mathbb{T}^2$. In dimension one and in the higher dimensional cases (with radial assumption), we establish a critical threshold below which the frequency-truncated measures converge to the base Gaussian measure (possibly with a renormalized $L^2$ cut-off) while, in the supercritical regime, we prove non-convergence of the frequency-truncated measures, even up to a subsequence.",
+      "authors": [
+        "Damiano Greco",
+        "Yuzhao Wang"
+      ],
+      "published": "2026-07-13T14:30:06Z",
+      "updated": "2026-07-13T14:30:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11608v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11608v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.11275v1",
+      "title": "The limit law of the maximum of discrete partial-sums distribution II",
+      "abstract": "Let $X_1,\\,X_2,\\,\\ldots,\\,X_N$, $N\\in\\mathbb N$ be independent, discrete, integer-valued random variables. Assume that $X_j\\geqslant m_j$ almost surely for each $j=1,\\,2,\\,\\ldots,\\,N$, where $m_1,\\,m_2,\\,\\ldots,\\,m_N\\in\\mathbb{Z}$ satisfy $m_1+\\cdots+m_N<0$. Furthermore, suppose that the sequence $X_1,\\,X_2,\\,\\ldots$ is periodic in distribution, i.e. $X_k{\\buildrel d \\over =} X_{k+N}$ for all $k\\in\\mathbb N$. We derive computable representations for the distribution functions of $\\max\\{X_1,\\,X_1+X_2,\\,\\ldots\\}$, $\\max\\{X_2,\\,X_2+X_3,\\,\\ldots\\}$, $\\ldots$, $\\max\\{X_N,\\,X_N+X_{N+1},\\,\\ldots\\}$. The obtained formulas are based on a linear recurrence whose initial values are determined from a linear system that involves the roots of an associated characteristic equation and the distributions of $X_1,\\,X_2,\\,\\ldots,\\,X_N$. Several examples are presented, including a biseasonal-biased Rademacher random walk for which the distribution, generating functions, and all moments admit explicit closed-form expressions. In addition, we identify and correct several inaccuracies in the results reported in \\cite{Grigutis2024}.",
+      "authors": [
+        "Andrius Grigutis",
+        "Juozas Petkelis"
+      ],
+      "published": "2026-07-13T08:57:51Z",
+      "updated": "2026-07-13T08:57:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11275v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11275v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11283v1",
+      "title": "Markov Properties of $k$-Record Processes via Order Statistics",
+      "abstract": "The theory of $k$-record values (Type 2 $k$-records) plays an important role in the study of partial extremes and in statistical inference based on record data. A common approach reduces the analysis of $k$-records associated with a distribution function $F$ to that of ordinary records from the transformed distribution $F_{1:k}(x)=1-(1-F(x))^k$. This representation is widely used to derive distributional and inferential results, often without an explicit construction of the underlying stochastic mechanism, and relies on a structural property of order statistics that, although classical, is typically invoked without proof. We give a direct derivation of the probabilistic structure of $k$-record processes based on the sequence of running order statistics $U_n=X_{n-k+1:n}$, the $k$-th largest among the first $n$ observations. We show that $(U_n)$ forms a Markov chain with respect to its natural filtration, with an explicit transition kernel. The key step is a conditional-independence property of upper order statistics, which we isolate and prove: conditionally on $U_n$, the $k-1$ observations exceeding $U_n$ are distributed as order statistics from the distribution truncated at $U_n$, independently of the whole past trajectory. Under continuity of $F$, the usual Type 2 $k$-record times coincide almost surely with the record times of $(U_n)$. This yields a transparent construction of the $k$-record process as the record process of a Markov chain, and classical distributional results -- including the representation through $F_{1:k}$ and the joint density of the first $m$ $k$-record values -- are recovered in a unified framework. We also treat the exponential case, in which the $k$-record values form a random walk with independent exponential increments and Gamma-distributed marginals, and record a corresponding characterisation of the exponential distribution.",
+      "authors": [
+        "Rodrigo Labouriau"
+      ],
+      "published": "2026-07-13T09:04:56Z",
+      "updated": "2026-07-13T09:04:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11283v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11283v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11010v1",
+      "title": "The storage capacity of the Ising perceptron: verification of the outstanding numerical conditions",
+      "abstract": "Krauth and Mézard predicted in 1989 that the storage capacity of the Ising perceptron at zero margin is an explicit constant $α_\\star\\approx0.8330786$. Let $M_N$ be the largest number of random patterns that can be stored by an $N$-dimensional Ising perceptron. We give a computer-assisted proof that \\[ \\frac{M_N}{N}\\xrightarrow{\\mathbb P}α_\\star, \\qquad α_\\star\\in[0.833078599,0.833078600]. \\] Previous work established matching conditional lower and upper bounds, subject respectively to a one-variable global sign condition of Ding--Sun and a two-variable global sign condition of Huang. We rigorously verify both conditions using Arb ball arithmetic. For Huang's condition, a moment-coordinate reparametrization compresses the unbounded parameter plane onto a compact convex body. Convex duality and certified adaptive sweeps control its bulk, while a ray-concavity argument treats the degenerate maximizer. We also re-establish the shared parameter rectangle and verify the full Ding--Sun condition, including its curvature and endpoint requirements. Combining these verifications with the existing sharp-threshold and universality theorems proves the result for Gaussian disorder and for every fixed i.i.d.\\ mean-zero, unit-variance subgaussian disorder law, including Bernoulli disorder. The complete verification programs, certificates, and raw records accompany the paper.",
+      "authors": [
+        "Yitzchak Shmalo"
+      ],
+      "published": "2026-07-13T02:23:05Z",
+      "updated": "2026-07-13T02:23:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11010v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11010v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11011v1",
+      "title": "Branching-Time Signatures of Growth Regime in Tumor Birth-Death Models",
+      "abstract": "Tumor evolution is shaped by cell division, cell death, competition, and constraints imposed by the local microenvironment. Because these dynamics are usually not observed directly, phylogenetic trees inferred from somatic variation in sampled tumor cells can provide an indirect record of the population history that produced the sample. In this paper, we examine whether the distribution of inferred internal branching times exhibits signatures that depend on the underlying tumor growth regime. Specifically, we study the distribution of internal branching times in continuous-time birth-death models of tumor evolution. Exponentially growing populations exhibit a unimodal distribution of internal branching times, with the mode located near the root. In contrast, logistic growth, which models expansion constrained by carrying capacity, yields a substantially more intricate genealogical structure: the distribution of branching times undergoes a systematic transition as the time elapsed since tumor initiation increases. Specifically, this progression shifts from an expansion-dominated phase, through an intermediate early-recent bimodal phase, to a final recent-dominated phase. Extensive simulations of reconstructed tumor genealogies support these theoretical findings.",
+      "authors": [
+        "Meng Wang",
+        "Zhangchi Weng",
+        "Jasmine Foo",
+        "Zicheng Wang"
+      ],
+      "published": "2026-07-13T02:26:10Z",
+      "updated": "2026-07-13T02:26:10Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11011v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11011v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11062v1",
+      "title": "The optimal rate of convergence in mean field control via recoupled shadow flows",
+      "abstract": "We prove that the value functions of the $N$-particle stochastic optimal control problem converge uniformly to the value function of the corresponding mean field control problem at the empirical-measure rate ($N^{-1/d}$ for $d\\geq3$ and $N^{-1/2}\\sqrt{\\log N}$ for $d=2$), for mean field costs that are merely Lipschitz continuous in the $1$-Wasserstein distance. For $d\\geq2$ the rate is optimal in this class, which covers problems whose mean field optimizers are neither unique nor stable. This proves the rate conjectured by Daudin, Delarue and Jackson, and removes the semiconcavity hypothesis made there. The proof is control-theoretic: from each realization of an $N$-particle control we build a pathwise Fokker--Planck flow -- a shadow flow -- which, repeatedly recoupled to the particles by optimal transport, shadows the empirical measure at the empirical-measure rate. The same rate holds with additive common noise, uniformly in its intensity. Finally, in dimension one we discover that the empirical-measure benchmark is not optimal: cooperating particles beat it, and the optimal polynomial exponent is $4/7$, strictly between the accuracy of independent samples and that of quantization by freely placed points. The proofs combine an anticipating correction of the shadow flow, a Gibbs law implementing the cooperation, and a Schrödinger ground-state estimate for the optimality.",
+      "authors": [
+        "Sebastian Munoz"
+      ],
+      "published": "2026-07-13T04:00:42Z",
+      "updated": "2026-07-13T04:00:42Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11062v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11062v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11069v1",
+      "title": "Sharp Ternary Martingale Isoperimetry and $n$-adic Takagi-Type Lower Bounds",
+      "abstract": "Let $S_1$ be the one-variation associated with the regular $n$-adic martingale filtration on $[0,1)$. We study the martingale isoperimetric profile \\[ V_n(x):= \\inf_{\\substack{A\\subset[0,1)\\ {\\rm measurable}\\\\ |A|=x}} \\|S_1(\\mathbbm 1_A)\\|_1 . \\] For the ternary filtration we determine this profile exactly. Namely, \\[ V_3(x)=T_3(x):= \\sum_{j=0}^{\\infty}3^{-j}ψ_3(\\{3^j x\\}), \\] where \\[ ψ_3(t)= \\min\\left\\{ \\frac{1+2\\left|t-\\frac12\\right|}{3}, \\frac{2-4\\left|t-\\frac12\\right|}{3} \\right\\}, \\qquad 0\\le t\\le1 . \\] Thus the sharp ternary profile is a Takagi-type Bellman function. It is, however, not the usual ternary Takagi--van der Waerden function $ω_3$; for example, \\[ T_3(1/3)=4/9, \\qquad ω_3(1/3)=1/3 . \\] For general $n\\ge2$, we prove that every measurable $A\\subset[0,1)$ satisfies \\[ \\|S_1(\\mathbbm 1_A)\\|_1 \\ge ω_n(|A|^*) \\asymp_n |A|^*\\log\\frac1{|A|^*}, \\qquad |A|^*:=\\min\\{|A|,1-|A|\\}. \\] Moreover, this logarithmic order is sharp up to a constant depending only on $n$. Finally, for every $0<α<1$, we prove the endpoint estimate \\[ \\|S_1(\\mathbbm 1_A)\\|_α\\ge |A|^*, \\] and show that it is sharp up to a constant depending only on $α$ and $n$.",
+      "authors": [
+        "Natanael Alpay"
+      ],
+      "published": "2026-07-13T04:17:27Z",
+      "updated": "2026-07-13T04:17:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11069v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11069v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11076v1",
+      "title": "Smoluchowski-Kramers Approximation for Stochastic Differential Equations driven by Fractional Brownian Motion",
+      "abstract": "In this paper, we discuss the validity of an approximation inspired by the Smoluchowski-Kramers approximation for a class of stochastic differential equations driven by fractional Brownian motion with additive noise. By rewriting such equations in the form of slow-fast systems and decomposing the fast component into three parts, we investigate the small mass limit of these equations and derive the corresponding convergence rates. Furthermore, under certain regularity conditions, we study the large and moderate deviation principles for a class of stochastic differential equations driven by fractional Brownian motion with small multiplicative noise via the weak convergence approach.",
+      "authors": [
+        "Jiaxin Zha"
+      ],
+      "published": "2026-07-13T04:28:45Z",
+      "updated": "2026-07-13T04:28:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11076v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11076v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11180v1",
+      "title": "An exponent-$s$ dynamical Borel-Cantelli lemma and the waiting time problem",
+      "abstract": "Galatolo and Kim proved that the dynamical Borel-Cantelli property for decreasing sequences of balls is tightly connected with the waiting time problem. In systems where all such sequences are Borel-Cantelli, the time needed to enter a small ball $B$ for the first time scales as $μ(B)^{-1}$, and conversely, waiting time estimates yield Borel-Cantelli results for sequences of balls whose radii decrease in a controlled way. We extend this correspondence to the exponent-$s$ setting introduced by Tseng. For $s\\ge 1$, the $s$-exponent monotone shrinking target property ($s$MSTP) requires the Borel-Cantelli conclusion only for decreasing sequences of centered balls satisfying the stronger divergence condition $\\sum_nμ(B_n)^s=\\infty$. We prove that $s$MSTP forces the lower waiting time exponent, measured on the scale of $-\\logμ(B(y,r))$, to lie in the interval $[1,s]$ almost everywhere. That a quantitative ($s$-strong) form of the property bounds the upper exponent by $s$ and that, conversely, an exponent-$s$ waiting time estimate implies the Borel-Cantelli property for decreasing sequences of centered balls whose radii obey the calibrated decay condition matching the critical divergence exponent $s$. We also obtain the corresponding quantitative orbit approximation statement $\\liminf_n n^β\\,d(T^nx,y)=0$ for $β<1/(s\\,\\underline{d}_μ(y))$, show that the universal lower bound with exponent $1$ pins the theory to $s\\ge 1$, and discuss sharpness on circle rotations, where by results of Kurzweil, Kim-Seo and Tseng the picture is governed by the Diophantine type of the rotation number.",
+      "authors": [
+        "Dušan Bajović",
+        "Boris Petković"
+      ],
+      "published": "2026-07-13T07:23:30Z",
+      "updated": "2026-07-13T07:23:30Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11180v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11180v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11369v1",
+      "title": "Moment-based PPT criteria for random bipartite states",
+      "abstract": "Moment-based relaxations of the positive partial transpose (PPT) criterion have been recently introduced, as a hierarchy of entanglement criteria involving only experimentally accessible quantities of a given bipartite state. The goal of this work is to study their typical detection performance on high-dimensional bipartite systems. Concretely, we investigate whether random bipartite mixed states on $\\mathbb C^d\\otimes\\mathbb C^d$, obtained as the marginal over an environment $\\mathbb C^s$ of a uniformly distributed pure state, generically satisfy or violate them. For each fixed level $m\\in\\mathbb N$ in this hierarchy of moment-based PPT criteria, we are able to identify a threshold environment dimension $s=λ_md^2$ at which the behavior of the associated random state switches from violating to satisfying it, with probability going to $1$ as $d$ grows. The proof combines combinatorics of permutations techniques to estimate the average value of moments of partially transposed random states and concentration of measure arguments to bound the probability of deviating from such average, when the underlying local dimension $d$ is large. We additionally need tools from the theory of Hankel determinant evaluation via orthogonal polynomials.",
+      "authors": [
+        "Cécilia Lancien",
+        "Kieran McShane"
+      ],
+      "published": "2026-07-13T10:32:42Z",
+      "updated": "2026-07-13T10:32:42Z",
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "math-ph",
+        "math.CO",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11369v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11369v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11378v1",
+      "title": "An Operator-Theoretic Analysis of Nonlinear Filtering under Model Misspecification",
+      "abstract": "We study Bayesian filtering under misspecified model dynamics. The optimal filter is governed by predictive operators $K=\\{K_t\\}_{t\\ge 1}$ associated with the true dynamics, while the approximate filter uses perturbed operators $\\widehat K=\\{\\widehat K_t\\}_{t\\ge 1}$. Both filters share the same update operators $U=\\{U_t\\}_{t\\ge 1}$ induced by the observation model. We work in a fully probabilistic setting in which observations are random variables, rather than fixed realizations. This viewpoint yields a linear recursion for the mean measures of the optimal filter and makes the propagation of filtering errors depend on two ingredients: the contraction of the predictive operators, and the accumulated model discrepancy. Within this framework, we derive explicit bounds for the discrepancy between the optimal and misspecified filters. The bounds separate the effect of the initial-condition error from the perturbation introduced by the dynamical mismatch $\\widehat K-K$. Under suitable contractivity assumptions, the cumulative error stabilizes at a steady-state level determined by the size of the misspecification and by the Dobrushin coefficients of the predictive operators. We also give analytical examples in which the assumptions can be verified directly. In particular, if the transition functions are bounded and the transition noise belongs to a family of elliptically symmetric distributions, including Gaussian, Student-$t$ and Laplace laws, then the filter error stabilizes as predicted by the theory. The results provide a theoretical basis for quantifying the robustness of nonlinear filters under random observations and misspecified dynamics.",
+      "authors": [
+        "Fabián González",
+        "Ömer Deniz Akyildiz",
+        "Dan Crisan",
+        "Joaquín Míguez"
+      ],
+      "published": "2026-07-13T10:41:04Z",
+      "updated": "2026-07-13T10:41:04Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11378v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11378v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11469v1",
+      "title": "Breuer-Major-Donsker invariance principle",
+      "abstract": "We prove a Breuer-Major-type Donsker's invariance principle for stationary Gaussian sequences under the natural \\emph{finite-variance assumption} on the test function. This result, which we call the \\emph{Breuer-Major-Donsker} principle, or simply the \\emph{BMD principle}, removes the additional moment assumption imposed in the functional Breuer-Major theorem of Nourdin and Nualart (\\emph{Probab. Theory Related Fields}, 2020). Our method does not rely on the Malliavin-calculus estimates used by Nourdin and Nualart, in particular Meyer's inequality. Instead, it is based on a predictable-martingale decomposition of the partial-sum process, which is of independent interest. We also make systematic use of \\emph{non-determinism}, a central notion in Gaussian prediction theory. In the non-deterministic case, the martingale part is handled by the martingale functional central limit theorem, while the predictable remainder gains integrability above order two through Ornstein-Uhlenbeck smoothing. In the deterministic case, the martingale part vanishes, and the smoothing mechanism is no longer available along the full sequence. Nevertheless, under an additional mild assumption on the covariance function, a suitable decimation recovers non-determinism and reduces the proof to the non-deterministic case.",
+      "authors": [
+        "Paul Mansanarez",
+        "Guillaume Poly",
+        "Guangqu Zheng"
+      ],
+      "published": "2026-07-13T12:23:05Z",
+      "updated": "2026-07-13T12:23:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11469v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11469v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11489v1",
+      "title": "Asymptotic expansion of induced Grassmannian Chern forms and distribution of random degeneracy sets",
+      "abstract": "For the Grassmannian embeddings defined by the spaces $H^0(X,L^p\\otimes E)$, where $L$ is a positive line bundle and $E$ is a holomorphic vector bundle over a compact complex manifold, we prove a complete asymptotic expansion of the induced Grassmannian Chern forms and compute the first coefficients explicitly. As an application of the first-order asymptotics and of the theory of meromorphic transforms by Dinh and Sibony, we prove that on a compact Kähler manifold, the normalized currents of integration over the loci where several random sections become linearly dependent converge almost surely to the corresponding power of the curvature form of the positive line bundle, with a quantitative estimate for the speed of convergence. Moreover, in the determinant case, we additionally present an alternative method based on the Wishart distribution, together with variance estimates.",
+      "authors": [
+        "Turgay Bayraktar",
+        "Dan Coman",
+        "Bingxiao Liu",
+        "George Marinescu"
+      ],
+      "published": "2026-07-13T12:46:16Z",
+      "updated": "2026-07-13T12:46:16Z",
+      "primary_category": "math.CV",
+      "categories": [
+        "math.CV",
+        "math.DG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11489v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11489v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11520v1",
+      "title": "Stochastic individual-bases models",
+      "abstract": "These are lecture notes for an advanced topics course in the master's programme at Bonn University. It aims to give a concise review of some of the work that has been done around the topic of adaptive dynamics from a rigorous stochastic point of view over the last 25 years and to make this area accessible to students with a good knowledge of probability in general, and the theory of Markov processes in particular. Our emphasis is on the issue of emerging scaling limits, where scaling parameters are time, population size, mutation rates, and mutation step size. These allow to exhibit within a fairly simple class of models a variety of biologically relevant phenomena. These notes are organised in three parts. Part 1 presents some historical background as well as the mathematical setting and main tools. Part 2 is the core of the notes and discusses the various scaling regimes and scaling limits. Part 3 looks at some extensions on the basic model, notably diploid models, phenotypic plasticity, and effects of environmental changes over time.",
+      "authors": [
+        "Anton Bovier",
+        "Anna Kraut"
+      ],
+      "published": "2026-07-13T13:07:32Z",
+      "updated": "2026-07-13T13:07:32Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11520v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11520v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11547v1",
+      "title": "On The Eigenvalue Rigidity of the Laguerre Unitary Ensemble",
+      "abstract": "In this paper, we establish an optimal global rigidity estimate for the eigenvalues of the Laguerre unitary ensemble. Using the central limit theorem, we first construct a random measure via the eigenvalue counting function and then prove its convergence to a Gaussian multiplicative chaos measure, which yields the desired rigidity result. To prove this convergence, we apply a sufficient condition due to Claeys et al. [7] and carry out an asymptotic analysis of the corresponding exponential moments.",
+      "authors": [
+        "Chenhao Lu",
+        "Xiaolu Yue"
+      ],
+      "published": "2026-07-13T13:33:43Z",
+      "updated": "2026-07-13T13:33:43Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11547v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11547v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11685v1",
+      "title": "A stochastic Fokker--Planck equation for the mean-field limit of a population of noisy integrate-and-fire neurons",
+      "abstract": "We study a densely connected system of excitatory integrate-and-fire neurons which are subject to common noise. The system incorporates a gradual transmission of action potentials and captures the re- and hyperpolarization phases through a random refractory period followed by a reset to a randomized level below the rest potential. As the number of neurons tends to infinity, we show that there is weak convergence to a unique membrane potential density governed by a stochastic Fokker--Planck equation with a well-defined spike transmission rate. The latter is driven by the mean cumulative spike count, which is non-differentiable but shown to satisfy a generalized flux condition. We obtain the uniqueness of the Fokker--Planck equation from energy estimates in the dual of the first Sobolev space. Finally, we give a conditional McKean--Vlasov representation of the membrane potential density as the law of a representative neuron given the common noise.",
+      "authors": [
+        "Ben Hambly",
+        "Aldaïr Petronilia",
+        "Christoph Reisinger",
+        "Andreas Søjmark"
+      ],
+      "published": "2026-07-13T15:22:04Z",
+      "updated": "2026-07-13T15:22:04Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11685v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11685v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11719v1",
+      "title": "A uniform relative deviation inequality for VC-subgraph classes",
+      "abstract": "We establish a new Bernstein-type deviation inequality for classes of functions whose complexity is characterized through subgraphs. The inequality is non-asymptotic, involves explicit constants, and features a relative normalization by the probability level. Applied to kernel density estimation, it produces a location and bandwidth-adaptive error bound between the estimator and the smoothed density, holding simultaneously over all points on the real line and all positive bandwidths. The proof is elementary, combining a new symmetrization principle, which incorporates the relative normalization, with the maximal sub-Gaussian inequality, and requires neither concentration nor entropy-integral arguments. When specialized to classes of sets, our technique improves the constants in the classical Vapnik-Chervonenkis inequality with relative deviation of Anthony and Shawe-Taylor (1993), reducing the factor 4 S A (2n) to S A (2n) in the right-tail inequality and to 3 S A (2n) in the left-tail inequality.",
+      "authors": [
+        "François Portier"
+      ],
+      "published": "2026-07-13T15:45:48Z",
+      "updated": "2026-07-13T15:45:48Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11719v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11719v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11756v1",
+      "title": "Infinite support of the Parisi measure in the Sherrington-Kirkpatrick model",
+      "abstract": "We prove that, at zero external field and every inverse temperature $β>1$, the Parisi measure of the Sherrington-Kirkpatrick model has infinite support. The proof proceeds by contradiction. Assuming that the Parisi measure is finitely supported, we use the Gaussian Cole-Hopf representation of the Parisi PDE solution to derive a differential inequality that is incompatible with the variational optimality conditions for the Parisi minimizer established by Jagannath and Tobasco (2017).",
+      "authors": [
+        "Patrick Lopatto"
+      ],
+      "published": "2026-07-13T16:13:26Z",
+      "updated": "2026-07-13T16:13:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11756v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11756v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.11773v1",
+      "title": "Existence and vanishing noise limit of measure attractors for McKean-Vlasov $p$-Laplacian lattice systems with delay driven by Lévy noise",
+      "abstract": "This paper is concerned with the existence and the limiting behavior of measure attractors of distribution laws of the solution segment process for the McKean-Vlasov stochastic $p$-Laplace lattice system with time delay driven by Lévy noise. The nonlinear drift and diffusion terms are allowed to have superlinear growth. Due to time delay, the Skorohod metric space is employed to describe the trajectories of the solutions with jumps. We first prove the existence and uniqueness of càdlàg solutions for the lattice system, and then define a non-autonomous cocycle acting on the Borel probability measures in the Skorohod space. This cocycle is continuous in bounded subsets of the space of probability measures only when time is sufficiently large. We then prove the existence of pullback absorbing sets and the asymptotic compactness of the cocycle as well as the existence and uniqueness of pullback measure attractors. We finally investigate the limiting behavior of measure attractors of the lattice system as the noise intensity approaches zero, and establish the optimal convergence rate of singleton measure attractors in the Wasserstein distance of order $θ$.",
+      "authors": [
+        "Zhang Chen",
+        "Xiaoxiao Sun",
+        "Bixiang Wang"
+      ],
+      "published": "2026-07-13T16:31:25Z",
+      "updated": "2026-07-13T16:31:25Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.11773v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.11773v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }
