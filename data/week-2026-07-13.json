@@ -5,11 +5,11 @@
   "iso_week": 29,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-07-19",
-  "total_submissions": 126,
-  "fetched": 126,
-  "generated_at": "2026-07-21T05:30:12Z",
+  "total_submissions": 128,
+  "fetched": 128,
+  "generated_at": "2026-07-22T05:29:27Z",
   "entries": [
     {
       "id": "2607.14993v1",
@@ -346,20 +346,20 @@
       "bucket": "medium"
     },
     {
-      "id": "2607.14332v1",
+      "id": "2607.14332v2",
       "title": "Dimers, filters, and $q$-deformed real numbers",
       "abstract": "This article associates to each positive real number $x$ an inhomogeneous dimer model with an activity parameter $q>0$ and uses it to define a positive-real-valued function $q \\mapsto [[x]]_q$ that is related to (and indeed was inspired by) the algebraic $q$-deformation $[x]_q$ introduced by Morier-Genoud and Ovsienko~\\cite{MO22}. The technical details are most transparent when the dimer model is replaced by an equivalent model involving filters in partially ordered sets. When $x$ is rational we have $[[x]]_q = q \\: [x]_q$, and it seems likely that more generally the two sides of the equation agree wherever both are defined.",
       "authors": [
         "James Propp"
       ],
       "published": "2026-07-15T19:53:30Z",
-      "updated": "2026-07-15T19:53:30Z",
+      "updated": "2026-07-20T19:47:29Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.14332v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.14332v1",
+      "abs_url": "https://arxiv.org/abs/2607.14332v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.14332v2",
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
@@ -562,22 +562,22 @@
       "bucket": "medium"
     },
     {
-      "id": "2607.15029v1",
+      "id": "2607.15029v2",
       "title": "Towards realistic large random models of labeled transition systems and their 0-1 laws",
       "abstract": "Model checking is the automated verification of properties (specified in some modal logic) in labeled transition systems (LTSs); it is an essential tool in ensuring software systems function as intended. State spaces of software grow exponentially, and heuristics are needed to ensure model checking remains feasible in real-world applications. Heuristics, in turn, require a good understanding on the typical behaviour of LTSs. In this paper, we use random graph theory to create a probabilistic model of large LTSs. From a theoretical analysis of the creation of large LTSs, backed by empirical data from the Model Checking Contest, we endow these models with realistic parameter values. Then, we analyze the asymptotic behaviour of this model under LTL and CTL, two modal logics popular in model checking. We show that, depending on the precise model, as the size grows to infinity we either have a convergence law (for every formula, the probability that it holds converges to a limit) or a 0-1 law (...and this limit is 0 or 1). We also discuss the theoretical complexity of determining these limits, and give algorithms for doing so. These results are the starting point towards a deep theoretical understanding of typical LTS behaviour, and highlight the promising applicability of random graph theory to model checking. \\keywords{Model checking \\and Random graphs \\and 0-1 laws",
       "authors": [
         "Milan Lopuhaä-Zwakenberg"
       ],
       "published": "2026-07-16T14:13:19Z",
-      "updated": "2026-07-16T14:13:19Z",
+      "updated": "2026-07-21T08:38:37Z",
       "primary_category": "cs.LO",
       "categories": [
         "cs.LO",
         "math.CO",
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.15029v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.15029v1",
+      "abs_url": "https://arxiv.org/abs/2607.15029v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.15029v2",
       "score": 3,
       "matched_keywords": [
         "random graph"
@@ -1739,7 +1739,7 @@
       "bucket": "other"
     },
     {
-      "id": "2607.14384v1",
+      "id": "2607.14384v2",
       "title": "Circuit complexity lower bounds for quantum spin glasses",
       "abstract": "A central question in quantum information theory is the circuit complexity of states arising from standard many-body models. We study this question for quantum $p$-spin glasses, random Hamiltonians whose interactions act on $p$-tuples of qubits through Pauli strings. Anschuetz, Gamarnik, and Kiani (arXiv:2404.07231) showed that the optimum energy is separated from the best energy achievable by product states. This leaves open whether shallow circuits can close the gap, since even depth-one circuits can generate entanglement. We show that the entanglement needed to close the product-state gap cannot be generated at shallow depth. When the average interaction degree grows with $n$, we prove that, for all sufficiently large fixed $p$, any circuit preparing an $n$-qubit state whose normalized energy is within a fixed positive constant of the optimum must have depth $Ω_p(\\log n)$. In the bounded-average-degree regime, we prove a fixed-depth obstruction: for every fixed $D$, a sufficiently large degree prefactor rules out depth-$D$ preparation of near-ground states. Both results hold uniformly over circuits with an arbitrary number of ancilla qubits. Our results give an obstruction in the spirit of the No Low-Energy Trivial States problem of Freedman and Hastings (arXiv:1301.1363), but for random quantum spin glasses rather than code-based Hamiltonians such as those of Anshu, Breuckmann, and Nirkhe (arXiv:2206.13228), whose ground states admit polynomial-size preparation circuits. This setting opens a probabilistic route to NLTS-like questions: we recast state-preparation lower bounds for random quantum Hamiltonians as uniform control of Gaussian processes indexed by shallow circuits.",
       "authors": [
@@ -1747,7 +1747,7 @@
         "David Gamarnik"
       ],
       "published": "2026-07-15T21:56:01Z",
-      "updated": "2026-07-15T21:56:01Z",
+      "updated": "2026-07-21T14:30:06Z",
       "primary_category": "quant-ph",
       "categories": [
         "quant-ph",
@@ -1755,8 +1755,8 @@
         "cs.CC",
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.14384v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.14384v1",
+      "abs_url": "https://arxiv.org/abs/2607.14384v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.14384v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2553,6 +2553,29 @@
       "bucket": "other"
     },
     {
+      "id": "2607.16770v1",
+      "title": "Subextensive Random Boundary Perturbations in the Short-Range Edwards--Anderson Model",
+      "abstract": "We consider the nearest-neighbor Edwards--Anderson Ising model on cubic boxes with random perturbations supported at the boundary. We prove that any perturbation admitting an energy envelope that is negligible compared with the volume, both in expectation and almost surely, leaves the limiting quenched specific free energy unchanged. For independent finite-variance bulk disorder in dimension at least two, an Efron--Stein estimate also yields almost-sure self-averaging along the full sequence of boxes. The hypotheses are verified for i.i.d. scalar surface fields, fixed random exterior spins, and periodic wrap-around bonds, with an $ O(L^{-1}) $ comparison of quenched means. The result concerns the specific free energy and does not assert convergence of finite-volume Gibbs measures.",
+      "authors": [
+        "Hexiang Wang",
+        "Keheng Zhu",
+        "Mauris Chueng"
+      ],
+      "published": "2026-07-18T11:12:09Z",
+      "updated": "2026-07-18T11:12:09Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.16770v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.16770v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2607.16832v1",
       "title": "Ideal Gårding polynomials",
       "abstract": "We introduce ideal Gårding polynomials, a convexity-enhanced subclass of Gårding polynomials whose Gårding components are recursively convex under partial differentiation. This class strictly contains real stable polynomials and, after translation and homogenization, lies in the Lorentzian class. Our main result is that ideal Gårding polynomials still admit a robust structure theory despite this additional convexity: they are preserved under polarization, satisfy natural closure properties, and support a linear preserver theory. A key contribution of this paper is a universal model for univariate Gårding polynomials, described by monotone root sequences and equivalently by volume polynomials of Pitman--Stanley polytopes. We establish quotient concavity, and Newton--Maclaurin type inequalities, which leads to the polarization theorem, and suggests further connections with convex geometry and Lorentzian polynomials.",
@@ -2593,6 +2616,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.16863v1",
       "pdf_url": "https://arxiv.org/pdf/2607.16863v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.18327v1",
+      "title": "Convergence and almost sure exponential stability of compensated split-step theta scheme for stochastic pantograph models with Poisson random measure",
+      "abstract": "Recently, stochastic pantograph models have gained an intensive attention and have been used in different fields such as finance, biology, control and stochastic neural networks. It is also more preferable to incorporate jumps during the study of stochastic differential equations. In this paper, stochastic pantograph model with Poisson random measure is studied. The compensated split-step theta technique is applied to the considered model. The numerical scheme exhibits a non divergent attitude and converges to the solution of our model under assumptions addressed later on. Furthermore, the almost sure exponential stability of the numerical scheme is investigated via utilizing the discrete semi-martingale convergence theorem. Finally, theoretical findings are manifested via some numerical examples.",
+      "authors": [
+        "Amr Abosenna",
+        "Yongchun Zhou",
+        "Boping Tian"
+      ],
+      "published": "2026-07-18T16:07:36Z",
+      "updated": "2026-07-18T16:07:36Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.18327v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.18327v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
