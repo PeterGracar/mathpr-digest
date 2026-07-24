@@ -6,11 +6,33 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-23",
-  "total_submissions": 58,
-  "fetched": 58,
-  "generated_at": "2026-07-23T05:34:20Z",
+  "data_through": "2026-07-24",
+  "total_submissions": 78,
+  "fetched": 78,
+  "generated_at": "2026-07-24T05:30:01Z",
   "entries": [
+    {
+      "id": "2607.21374v1",
+      "title": "Local structure at the maximum and sharp persistence asymptotics of rough fractional Brownian motion",
+      "abstract": "We consider a fractional Brownian motion $B$ with Hurst index $0 < H < 1/2$, and its maximiser $τ$ on $[0,1]$. We show that the rescaled process $a^H(B_{τ+\\cdot/a}-B_τ)$ converges in $C_{\\mathrm{loc}}(\\mathbb R)$ to a limiting tangent law that is $H$-self-similar, supported on nonpositive paths pinned at zero, and rerooting-rescaling invariant: rerooting the limit process at its maximum on any fixed compact interval separated from zero and rescaling again asymptotically reproduces the same law. We also show that the tangent law has a natural interpretation as \"fractional Brownian motion conditioned to be nonpositive on the entire line\". As an application, we consider persistence probabilities for fractional Brownian motion. A tilted variant of $B$ yields a different tangent law with a finite left horizon and an infinite right horizon and we show that \\[ \\mathbb P(B_t \\leq 1\\text{ for all }0 \\leq t \\leq T) \\sim \\frac{H\\mathbb E[M]}{Γ(1/H)D_H}T^{-(1-H)}, \\] where $D_H \\in (0,\\infty)$ has an explicit representation in terms of the tilted tangent law.",
+      "authors": [
+        "Christian Mönch"
+      ],
+      "published": "2026-07-23T14:38:14Z",
+      "updated": "2026-07-23T14:38:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21374v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21374v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [
+        "Christian Monch"
+      ],
+      "bucket": "coauthor"
+    },
     {
       "id": "2607.18011v1",
       "title": "From local giants to locality in long-range percolation",
@@ -64,6 +86,57 @@
         "percolation",
         "recurrence and transience",
         "transience"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.21392v1",
+      "title": "Moderate Deviations for Gaussian Maxima and an Entropy Proof of Critical SK Free Energy Fluctuations",
+      "abstract": "We study two problems for Gaussian maxima. First, let $(X_1,\\ldots,X_N)$ be a centered Gaussian vector with $\\operatorname{Var}(X_i)\\leq 1$. If, for fixed $α\\in(0,\\sqrt{2})$ and $κ>0$, one has $\\mathbb{E}\\max_i X_i\\geqα\\sqrt{\\log N}$ and $\\mathbb{E}\\max_i X_i+κ\\sqrt{\\log N}\\leq\\sqrt{2\\log N}$, then \\[ \\mathbb{P}\\left(\\max_i X_i\\geq \\mathbb{E}\\max_i X_i+κ\\sqrt{\\log N}\\right) \\leq N^{-κ^2/(2-α^2)+o(1)}. \\] This answers a question of Ding, Eldan and Zhai, and the exponent is attained by an equicorrelated Gaussian field. Second, for the Sherrington--Kirkpatrick model at the critical inverse temperature $β_c=1/\\sqrt{2}$, we prove \\[ \\operatorname{Var}\\bigl(F_N(β_c)\\bigr)=\\frac{1}{6}\\log N+O(1). \\] Our proof gives an alternative proof of the variance asymptotics at the critical temperature from an entropy perspective, independently of the approach of Du and Huang \\cite{DuHuang2026}. For the upper bound, we express the variance as an entropy under exponential tilting and identify this entropy with the Kullback--Leibler divergence of a Gaussian synchronization model. Its derivative is then bounded using the I-MMSE formula, information percolation, and estimates for the susceptibility of the critical Erdős--Rényi random graph. For the lower bound, we combine Gaussian convexity applied at the replica parameter with an estimate for inverse moments on the sphere and an identity relating GOE eigenvalue densities in consecutive dimensions.",
+      "authors": [
+        "Yiming Chen"
+      ],
+      "published": "2026-07-23T14:55:06Z",
+      "updated": "2026-07-23T14:55:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21392v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21392v1",
+      "score": 11,
+      "matched_keywords": [
+        "erdos",
+        "percolation",
+        "random graph",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.21428v1",
+      "title": "Subcritical percolation and network archaeology on random recursive tree substrate networks",
+      "abstract": "We study a network-archaeology problem for a dynamic graph whose latent substrate is a random recursive tree and whose observed topology is enriched by an independent homogeneous Erdős-Rényi shortcut layer. From a single unlabeled snapshot, the goal is to construct a confidence set of deterministic size for the first vertex. Since shortcut edges create cycles, the usual tree-based arguments using Jordan centrality do not apply directly. Our method uses auxiliary subcritical bond percolation to expose a tree-like renormalized structure: retained recursive-tree clusters form heavy-tailed blobs, retained shortcuts connect these blobs through a subcritical rank-one random graph, and large components are leading backbone blobs decorated by subcritical shortcut pieces. Applying Jordan centrality inside the largest auxiliary percolation components then gives a deterministic-size root confidence set for the cyclic observed network.",
+      "authors": [
+        "Shankar Bhamidi",
+        "Akshay Sakanaveeti"
+      ],
+      "published": "2026-07-23T15:31:12Z",
+      "updated": "2026-07-23T15:31:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21428v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21428v1",
+      "score": 11,
+      "matched_keywords": [
+        "erdos",
+        "percolation",
+        "random graph",
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "high"
@@ -146,7 +219,7 @@
       "bucket": "high"
     },
     {
-      "id": "2607.18364v1",
+      "id": "2607.18364v2",
       "title": "Evaluating the Impact of Epidemic Control via State-Dependent Markovian Switching Modeling",
       "abstract": "We develop an exact finite-population stochastic framework for SIR epidemics evolving under Markovian switching between intervention regimes. The epidemic state is augmented by a finite phase component, allowing transmission, recovery, and direct immunity-acquisition rates to depend on the active regime. Phase-transition intensities may depend on the current epidemic state, so that policy escalation can react to the number of infectious individuals. Exploiting the monotonicity of the susceptible compartment, we derive level-wise recursions for the joint Laplace--Stieltjes transform and probability generating function of the extinction time and the number of infections generated before extinction. These recursions yield the infection-count distribution, conditional extinction-time transforms, and mixed moments linking epidemic duration and infection burden, while replacing a large global linear system with small phase-level solves. The framework is illustrated using weekly mpox incidence data from Luxembourg. A baseline one-phase SIR model is calibrated by maximum likelihood under a Poisson observation model. The calibrated baseline is then used for conditional comparisons of fixed control regimes, early versus delayed strict intervention, vaccination-supported control, and state-dependent escalation. The results show how switching mechanisms affect both the total number of infected individuals and the extinction time, including their dispersion. Since the switching mechanisms are specified rather than estimated from the intervention history, the results are conditional model-based comparisons rather than estimates of the historical effects of interventions in Luxembourg.",
       "authors": [
@@ -155,15 +228,15 @@
         "Samis Trevezas"
       ],
       "published": "2026-07-20T16:08:29Z",
-      "updated": "2026-07-20T16:08:29Z",
+      "updated": "2026-07-23T13:58:23Z",
       "primary_category": "q-bio.PE",
       "categories": [
         "q-bio.PE",
         "math.PR",
         "stat.ME"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.18364v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.18364v1",
+      "abs_url": "https://arxiv.org/abs/2607.18364v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.18364v2",
       "score": 5,
       "matched_keywords": [
         "epidemic",
@@ -173,9 +246,9 @@
       "bucket": "medium"
     },
     {
-      "id": "2607.20097v1",
+      "id": "2607.20097v2",
       "title": "Phase transition for the asymptotic entropy of branching random walks on groups",
-      "abstract": "We consider supercritical branching random walks (BRW shortly) on infinite countable groups $G$ and we prove that the asymptotic entropy of the empirical distributions of the BRW has a phase transition at $ρ_* = \\e^{h(μ)}$, where $h(μ)$ is the asymptotic entropy of the underlying random walk on $G$ with step distribution $μ$. Below this value $ρ_*$, the asymptotic empirical entropy of BRW equals the logarithm of the exponential growth rate of the population. Above this value, it is constantly equal to the asymptotic entropy of the underlying random walk. In particular, this answers questions from Kaimanovich-Woess [MR4663513, Section 6.3] about the existence and the behavior of the asymptotic entropy.",
+      "abstract": "We consider supercritical branching random walks (BRW) on infinite countable groups $G$ and we prove that the asymptotic entropy of the empirical distributions of the BRW has a phase transition at $ρ_* = e^{h(μ)}$, where $h(μ)$ is the asymptotic entropy of the underlying random walk on $G$ with step distribution $μ$. Below this value $ρ_*$, the asymptotic empirical entropy of BRW equals the logarithm of the exponential growth rate of the population. Above this value, it is constantly equal to the asymptotic entropy of the underlying random walk. In particular, this answers questions from Kaimanovich-Woess [MR4663513, Section 6.3] about the existence and the behavior of the asymptotic entropy.",
       "authors": [
         "Jeremie Brieussel",
         "Robin Kaiser",
@@ -183,13 +256,13 @@
         "Ecaterina Sava-Huss"
       ],
       "published": "2026-07-22T12:51:07Z",
-      "updated": "2026-07-22T12:51:07Z",
+      "updated": "2026-07-23T08:22:33Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.20097v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.20097v1",
+      "abs_url": "https://arxiv.org/abs/2607.20097v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.20097v2",
       "score": 5,
       "matched_keywords": [
         "phase transition",
@@ -264,6 +337,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.18531v1",
       "pdf_url": "https://arxiv.org/pdf/2607.18531v1",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.20646v1",
+      "title": "The Independence-Preserving Property and Planar Web Geometry",
+      "abstract": "This paper introduces planar web geometry into the study of characterization problems for probability laws arising from independence preservation. Let $F(x,y) = (u, v)$ be a real-analytic diffeomorphism defined on an open domain in $\\mathbb{R}^2$. Let $X$ and $Y$ be independent random variables and set $(U, V) = F(X, Y)$. The map $F$ is said to preserve the independence if $U$ and $V$ are independent. This condition is highly restrictive and can therefore be used to characterize the laws for which it holds. This framework provides unified proofs of characterization theorems, including classical results such as the Kac--Bernstein and Lukacs theorems and the Matsumoto--Yor property, as well as recent results for the quadrirational Yang--Baxter maps $H_I^+$, $H_{II}^+$, and $H_{III}^A$. For measures with positive continuous densities, the map preserves independence if and only if their logarithmic densities solve the corresponding inhomogeneous Abelian functional equation. The solution space is identified with an affine space modeled on the space of Abelian relations, whose dimension is at most three according to Bol's rank bound. The same method also produces further examples, including a class generalizing transformations studied by Koudou and Vallois; every map in this class admits at least a two-parameter family of preserved product measures. The independence-preserving property of a map is preserved by coordinatewise one-variable reparametrizations, which also preserve the associated web. Thus the web associated with a map is a natural invariant under the corresponding equivalence relation of independence-preserving maps. Together with the local algebraizability of nonsingular planar $4$-webs of maximal rank, this correspondence suggests a route toward a complete classification of maps preserving the independence of a three-parameter family of measures.",
+      "authors": [
+        "Yoshihiro Gyotoku"
+      ],
+      "published": "2026-07-22T18:16:46Z",
+      "updated": "2026-07-22T18:16:46Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AG",
+        "math.DG",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20646v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20646v1",
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
@@ -364,6 +462,29 @@
       "score": 3,
       "matched_keywords": [
         "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.20838v1",
+      "title": "Long-memory Markov chains with power-law intensities",
+      "abstract": "We introduce a self-exciting point process with power-law intensity dynamics that admits a finite-dimensional Markovian state representation. The model is constructed to preserve the local jump and slope update structure of power-law Hawkes processes, while replacing global history dependence with a nonlinear Markov chain governing the intensity dynamics. Within a general state-space framework, we establish irreducibility, aperiodicity, and the T-chain property under mild regularity conditions on the inter-arrival time distribution. Under an explicit stability condition, we further prove that the latent state process is positive Harris recurrent, ensuring the existence of a unique invariant distribution. Simulation results based on the local Whittle estimator show that the proposed Markovian intensity model exhibits long-memory behavior near the boundary of the stability region.",
+      "authors": [
+        "Kyungsub Lee"
+      ],
+      "published": "2026-07-23T01:58:48Z",
+      "updated": "2026-07-23T01:58:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20838v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20838v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -488,6 +609,52 @@
       "score": 2,
       "matched_keywords": [
         "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20680v1",
+      "title": "An Exact Scale--Shape Factorization of the Typical Poisson--Voronoi Cell Volume",
+      "abstract": "For a stationary Poisson--Voronoi tessellation in Euclidean space, we derive an exact scale--shape factorization of the Palm-typical cell volume. Conditional on the number of effective facets, the Voronoi flower volume is Gamma distributed and independent of the normalized shape. This yields exact mixture representations, transform and moment identities, and a universal bound on the normalized cell-to-flower ratio. It also separates shape variability at fixed facet number from mixing over facet numbers as two sources of departure from a single Gamma law. We reduce the lower-tail problem to a critical inverse-volume integral and a separate higher-facet summability condition on normalized configuration spaces, and derive a conditional leading small-volume asymptotic. The one-dimensional case is recovered exactly, the planar case admits explicit coordinates, and simulations in dimensions two through four illustrate the principal consequences.",
+      "authors": [
+        "Tian Shi",
+        "Minghua Xia"
+      ],
+      "published": "2026-07-22T19:31:02Z",
+      "updated": "2026-07-22T19:31:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20680v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20680v1",
+      "score": 2,
+      "matched_keywords": [
+        "voronoi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.21342v1",
+      "title": "Multi-window trace connectivity in subcritical planar Brownian loop soups",
+      "abstract": "Let \\(\\cL_D^θ\\) be a Brownian loop soup of intensity \\(0<θ<1/2\\) in a bounded smooth planar domain. We estimate the probability that one cluster of intersecting loop traces meets a fixed number of separated shrinking bulk discs. For every fixed \\(q\\ge3\\), this probability is, up to an arbitrary loss in the logarithmic exponents, the product of the corresponding one-arm probabilities. The upper bound is not obtained by multiplying pairwise estimates or by a formal application of BK. We condition on the loops not confined to one target collar, charge a local arm down to their penetration radius at every target, and control the joint penetration depths by a multi-target Brownian loop-measure estimate. The latter follows from a marked Schur-complement expansion on finite killed networks, uniform planar capacity estimates, and a random-walk-loop-soup coupling. The lower bound uses winding separators, one macroscopic bridge loop, and Poisson FKG. The one-window exponent and the two-window estimate are due to Jego, Lupu and Qian.",
+      "authors": [
+        "Zhengwen Qiao"
+      ],
+      "published": "2026-07-23T14:12:50Z",
+      "updated": "2026-07-23T14:12:50Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21342v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21342v1",
+      "score": 2,
+      "matched_keywords": [
+        "connectivity"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -1361,6 +1528,291 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.20400v1",
       "pdf_url": "https://arxiv.org/pdf/2607.20400v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20632v1",
+      "title": "An FBSDE Construction of the Sine-Gordon EQFT for $β^{2} < \\frac{6}{7}\\, 8π$ and Perturbative Renormalization in the Full Subcritical Regime",
+      "abstract": "We construct the sine-Gordon measure and its renormalized effective potential in finite volume up to the seventh threshold. The construction relies on a weak stochastic control problem, its associated weak FBSDE, and an analysis of the renormalization flow equation using a multipole Mayer expansion. The analysis is fully inductive, and we include a complete order-by-order analysis in the subcritical regime $β^{2}<8π$.",
+      "authors": [
+        "Sarah-Jean Meyer"
+      ],
+      "published": "2026-07-22T18:03:53Z",
+      "updated": "2026-07-22T18:03:53Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20632v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20632v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20714v1",
+      "title": "High Minima of Gaussian Processes: Overshoots and Minimizer Locations",
+      "abstract": "Let $X(t)$, $t\\in K$, be a centred Gaussian process with continuous sample paths on a compact metric space $K$, and let $M=\\min_{t\\in K}X(t)$. Let $σ_*^2$ denote the minimum covariance energy associated with $X$, and assume that $σ_*^2>0$. Motivated by the results of \\cite{chakrabarty2018asymptotic} for smooth Gaussian processes, we show that, conditionally on $M>u$, the scaled overshoot $u(M-u)$ converges, as $u\\to\\infty$, to an exponential random variable with mean $σ_*^2$. Moreover, every weak subsequential limit of the conditional law of a measurable minimizer of $X$ is an optimal covariance-energy measure. In particular, if this measure is unique, then the conditional law converges weakly to it. The results are illustrated by stationary Gaussian processes, fractional Brownian motion, and fractional Brownian sheet.",
+      "authors": [
+        "Enkelejd Hashorva",
+        "Svyatoslav Novikov"
+      ],
+      "published": "2026-07-22T20:31:36Z",
+      "updated": "2026-07-22T20:31:36Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.AP",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20714v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20714v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20801v1",
+      "title": "Imprecise Probabilistic Programming, Precisely: Credal Sets via Graded Monads, BDDs, and Semiring-Parametric Inference (Functional Pearl)",
+      "abstract": "Imprecise probability generalizes standard probability theory by replacing a single distribution with a convex set of possible distributions. We show that this generalization requires no change to the standard BDD compilation and weighted model counting pipeline used by discrete probabilistic languages. An imprecise coin flip is simply a BDD variable whose weight is left free rather than fixed. We introduce Imp, a Haskell-embedded DSL for imprecise probabilistic programming. A graded monad, indexed by finite sets of named sources of epistemic uncertainty, restores the commutativity that the standard convex powerset monad lacks, and GHC's type system enforces this at compile time. Weighted model counting is parametric in the semiring, so the same compiled BDD supports exact, differentiable, and interval-bounded inference.",
+      "authors": [
+        "Jack Liell-Cock",
+        "Sam Staton"
+      ],
+      "published": "2026-07-23T00:06:45Z",
+      "updated": "2026-07-23T00:06:45Z",
+      "primary_category": "cs.PL",
+      "categories": [
+        "cs.PL",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20801v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20801v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20818v1",
+      "title": "Self-Balancing Sequential Sampling: Fast Convergence with Controlled Predictability",
+      "abstract": "Many instances of sequential sampling, including audit and inspection scheduling, representative sampling, and treatment assignment, require selections to be distributed evenly without becoming easy to anticipate or exploit. We study a family of sequential sampling rules that adaptively bias sampling probabilities in order to achieve faster convergence of the empirical distribution to a desired target law, while keeping the resulting samples as unpredictable as possible. The resulting self-balancing sampler is simple to implement, arises naturally among a class of Markovian samplers sharing a certain invariance property, and admits a stochastic mirror-descent interpretation. Our main results show that (i) this self-balancing sampler converges at the fastest possible $O(n^{-1})$ rate with explicit dependence on biasing parameters, beating the standard $O(n^{-1/2})$ rate of IID sampling, (ii) it is the unique solution to a natural entropy-regularized optimization problem which balances the convergence rate of the empirical law and the unpredictability of the samples, and (iii) in the weak-biasing regime, the properly centered counts process converges to an Ornstein-Uhlenbeck process in the diffusive limit. Together, these results support a practical framework for reducing repeated selections and long gaps in coverage without making future selections overly predictable.",
+      "authors": [
+        "Zachary McNulty",
+        "Daniel Raban"
+      ],
+      "published": "2026-07-23T01:10:42Z",
+      "updated": "2026-07-23T01:10:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.ME",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20818v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20818v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20823v1",
+      "title": "Fluctuation impossibility results for stochastic burst networks",
+      "abstract": "Stochastic reaction networks often involve components at low copy number, where individual production and degradation events generate substantial fluctuations. Yan et al.\\ conjectured in 2019 that for networks with linear degradation and arbitrary cross-regulatory production rates, feedback cannot suppress the stationary fluctuations for each component below the fluctuations of its constant-rate counterpart. Their formulation allows random burst sizes $K_i$: the unit-birth case has $K_i\\equiv1$, the biologically important burst model takes $K_i$ to be geometrically distributed, but more general positive integer-valued burst laws are also permitted. The conjecture was recently proved for unit births, $K_i\\equiv1$. We show here that the conjecture is \\textit{false in general} by constructing a two-component network with bounded production rates and burst sizes in $\\{1,2\\}$ for which both stationary Fano factors lie below their common constant-rate baseline. We then prove the conjecture for positive geometric bursts, the canonical burst model in stochastic gene expression. For arbitrary regulatory architecture and nonlinear cross-regulatory production rates, we prove an exact weighted tradeoff that rules out simultaneous suppression of every component below its geometric-burst baseline. We also prove a complementary structural impossibility result for arbitrary positive integer-valued burst laws with finite second moments: if the activating and inhibiting interactions have a globally consistent sign structure, in the sense that every cycle of the regulatory interaction graph contains an even number of negative interactions, then every component individually satisfies $F_{X_i}\\ge B_i$, where $F_{X_i}$ is its stationary Fano factor and $B_i$ is its constant-rate burst baseline.",
+      "authors": [
+        "David F. Anderson"
+      ],
+      "published": "2026-07-23T01:24:01Z",
+      "updated": "2026-07-23T01:24:01Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-bio.MN",
+        "q-bio.QM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20823v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20823v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20882v1",
+      "title": "An Eyring--Kramers Law for the Hypoelliptic Third-Order Langevin Diffusion",
+      "abstract": "We prove an Eyring--Kramers law for metastable transitions of the hypoelliptic third-order Langevin diffusion in the low-temperature limit. The model is motivated by the high-order Langevin diffusion of Mou et al. (2021, J. Mach. Learn. Res., 22(42), 1--41). The model has a Gibbs invariant measure, but the noise reaches the position variable only through a step-three chain. For a double-well potential with a unique index-one transition saddle, we determine both the Arrhenius exponential scale and the sharp prefactor of the mean transition time. The prefactor is governed by the unique positive unstable rate of the third-order deterministic linearization at the saddle. Our proof extends the underdamped Eyring--Kramers strategy of Lee--Ramil--Seo (2026, arXiv:2503.12610v2) to the step-three setting and combines the weak-capacity framework with a saddle-adapted boundary layer, an explicit Gaussian current calculation, committor localization, and intrawell flatness. Under matched kinetic normalizations, the resulting metastable prefactor is strictly smaller than its underdamped counterpart. A numerical experiment for a one-dimensional double well illustrates both the Arrhenius scaling and the predicted prefactor comparison.",
+      "authors": [
+        "Yingli Wang",
+        "Lingjiong Zhu"
+      ],
+      "published": "2026-07-23T03:08:14Z",
+      "updated": "2026-07-23T03:08:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20882v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20882v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20919v1",
+      "title": "Random unitary circuits with constant spectral gap",
+      "abstract": "We prove constant lower bounds for the spectral gap of the following random walks on unitary groups $\\mathsf{SU}(2^n)$ on $n$ qubits. (i) Random Pauli Rotation: choose an $n$-qubit Pauli operator $P$ and an angle $θ\\in \\mathbb R / 2π\\mathbb Z$, both uniformly at random, and apply $e^{\\mathrm i θP}$. (ii) Brickwork Random Unitary Circuit: choose $n-1$ unitaries $U_{i}$ uniformly at random from $\\mathsf{SU}(4)$ independently, and apply $U_{2j-1}$ on two qubits $2j-1, 2j$ and then $U_{2j}$ on two qubits $2j, 2j+1$. Importantly, the spectral gaps are independent of $n$ and apply for all finite dimensional unitary representations of $\\mathsf{SU}(2^n)$ uniformly, including those that appear in unitary $t$-designs. We also prove analogous constant gap results for Clifford unitaries, which are indispensable for our result on Brickwork Random Unitary Circuit.",
+      "authors": [
+        "Tim Baer",
+        "Jeongwan Haah"
+      ],
+      "published": "2026-07-23T04:56:09Z",
+      "updated": "2026-07-23T04:56:09Z",
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20919v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20919v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20956v1",
+      "title": "Sharp moduli of continuity for Gaussian fields and stochastic PDEs via correlation bounds",
+      "abstract": "Exact uniform and local moduli of continuity for anisotropic Gaussian random fields are established under a general framework based on correlation bounds for pairwise increments. This framework does not necessarily require strong local nondeterminism (SLND), stationarity of increments, or spectral-type representations. As an application, we solve an open problem about sharp moduli of continuity for a class of linear stochastic PDEs in a particular case where the solution is $C^{1-}$ in space and SLND is not available. In this case, we establish decorrelation of the spatial increments via new localization estimates, which may be of independent interest. We also briefly discuss an example about Gaussian Volterra processes.",
+      "authors": [
+        "Cheuk Yin Lee",
+        "Tianyi Zhang"
+      ],
+      "published": "2026-07-23T06:34:53Z",
+      "updated": "2026-07-23T06:34:53Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20956v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20956v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.20996v1",
+      "title": "The optimal constant for minimum weight feedback arc sets in oriented graphs",
+      "abstract": "Let $D$ be an oriented graph (a digraph with no directed 2-cycles) with maximum degree $Δ\\ge 1$, equipped with nonnegative arc weights of total weight $w(D)$, and let $\\mathrm{fas}_w(D)$ denote the minimum weight of a feedback arc set of $D$. Alon (2002) proved $\\mathrm{fas}_w(D)\\le(\\frac{1}{2}-\\frac{1}{16\\sqrt{2Δ}})w(D)$. We determine the optimal constant: \\[\\mathrm{fas}_w(D)\\le(\\frac{1}{2}-\\frac{\\sqrt{2}}{6\\sqrtΔ})w(D).\\] In fact, we show a stronger result: $\\mathrm{fas}_w(D)\\le\\frac{1}{2}w(D)-\\frac{\\sqrt{2}}{12}\\sum_v w_2(v)$, where $w_2(v)$ is the $\\ell_2$-norm of the weights of the arcs incident with $v$. Both bounds are attained by the unit-weight directed triangle, so the constant $\\sqrt{2}/6$ is best possible (already among unweighted oriented graphs). The proof combines the vertex-peeling scheme of Berger and Shor with a continuous random-ordering analysis: realizing the random order by independent uniform labels renders the expected local imbalance at each vertex exactly an integrated Khintchine-type functional, and the theorem reduces to the sharp evaluation \\[\\inf_{\\|a\\|_2=1}\\int_0^1 \\mathbb{E}|\\sum_j a_j B_j(q)|\\,dq = \\frac{\\sqrt{2}}{6},\\] where the $B_j(q)$ are i.i.d. Bernoulli$(q)$ random variables, which we prove via Fourier analysis. The proof also yields a randomized, near-linear-time algorithm attaining the bounds in expectation.",
+      "authors": [
+        "Yacong Zhou"
+      ],
+      "published": "2026-07-23T07:21:47Z",
+      "updated": "2026-07-23T07:21:47Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.20996v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.20996v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.21062v1",
+      "title": "A new probabilistic approach for mean field games of optimal stopping",
+      "abstract": "We propose a novel probabilistic formulation for optimal stopping mean field games (OS-MFGs) with randomized strategies. We characterize mean field equilibria through a new class of coupled forward-backward systems, termed coupled reflected forward-backward McKean--Vlasov stochastic differential equations (MKV-RFBSDEs). An equilibrium is represented by a quintuple $(X,Y,Z,A,L)$, where $L$ is an adapted, $[0,1]$-valued, non-increasing càdlàg process representing the randomized stopping strategy. The optimality of randomized stopping strategies is characterized through two novel Skorokhod-type conditions involving $L$. This characterization is new even for classical optimal stopping problems without mean field interactions. We rigorously prove an equivalence between solutions of the MKV-RFBSDE system and OS-MFG equilibria in randomized strategies. We establish the existence of equilibria by applying the Kakutani--Fan--Glicksberg fixed-point theorem to a set-valued best-response correspondence, relying on new stability, compactness, and continuity results for the coupled MKV-RFBSDE system. We also prove uniqueness under suitable conditions. Under alternative monotonicity assumptions, we develop a new order-theoretic approach based on Tarski's fixed-point theorem, yielding the existence of extremal equilibria and constructive schemes for the minimal and maximal solutions. We further show that a mean field equilibrium induces an approximate Nash equilibrium for the associated $N$-player stopping game. Finally, we connect our probabilistic formulation with the analytical approach characterized by a coupled system of constrained partial differential equations.",
+      "authors": [
+        "Andrea Cosso",
+        "Laura D'Andolfi",
+        "Roxana Dumitrescu"
+      ],
+      "published": "2026-07-23T08:53:11Z",
+      "updated": "2026-07-23T08:53:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21062v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21062v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.21110v1",
+      "title": "The mean-field limit of non-exchangeable particle systems with non-conservative dynamics and adaptive weights",
+      "abstract": "In the paper we introduce vector-valued dynamic extended graphons in order to obtain the mean-filed limit for certain class of problems with adaptive weights. We impose fairly general assumptions on the matrix of initial connections, which allows us to cover the case of sparse graphs.",
+      "authors": [
+        "Katarzyna Ryszewska"
+      ],
+      "published": "2026-07-23T09:39:05Z",
+      "updated": "2026-07-23T09:39:05Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21110v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21110v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.21443v1",
+      "title": "The critical KPZ scale for the Averaging Process",
+      "abstract": "KPZ-type extremal fluctuations have recently been proved for several models of random walks in space-time random environments (RWRE) in $1+1$ dimensions. A general moment criterion predicts the spatial scale at which this behavior should occur, but does not by itself guarantee non-trivial fluctuations at that scale. In this paper, we show that the averaging process provides an instance in which this criterion is not sharp: because of a degeneracy in the update mechanism, the actual KPZ limit appears only beyond the predicted scale. The relevant critical contribution arises from the interplay of two distinct fluctuation mechanisms, a phenomenon that appears to be rather special within the RWRE setting. Our proof builds on Dobrushin-type local-time limit theorems for zero-sum additive functionals, refined estimates for tilted $k$-point motions, and the recent moment-based axiomatic characterization of Cole--Hopf solutions to the one-dimensional KPZ equation. We also identify the behavior on the two sides of the critical scale, thereby sharply separating the subcritical, critical, and supercritical regimes of the model.",
+      "authors": [
+        "Hindy Drillick",
+        "Shalin Parekh",
+        "Federico Sau"
+      ],
+      "published": "2026-07-23T15:50:08Z",
+      "updated": "2026-07-23T15:50:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21443v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21443v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.21520v1",
+      "title": "Asymptotic Analysis of Empirical Dynamic Programming in Infinite-Horizon Stochastic Optimal Control",
+      "abstract": "We derive statistical limit theorems for sample-based approximations of infinite-horizon discounted stochastic optimal control problems in discrete time. Our first result is a functional central limit theorem for the sample-based value function under a uniqueness-type condition on population optimal policies. The limiting law is a mean-zero Gaussian process characterized by a linear fixed point equation that resembles a dynamic programming principle. We compare these asymptotics with those obtained from sample-based policy optimization and illustrate that their limiting variances can be different. We also derive a limit theorem for models with nonunique optimal policies, where the limiting law may be non-Gaussian. Applications to inventory control and renewable harvesting illustrate the theory.",
+      "authors": [
+        "Xin Chen",
+        "Elif Sena Isik",
+        "Johannes Milz"
+      ],
+      "published": "2026-07-23T17:03:46Z",
+      "updated": "2026-07-23T17:03:46Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.21520v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.21520v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
