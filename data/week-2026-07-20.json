@@ -5,11 +5,11 @@
   "iso_week": 30,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-07-26",
   "total_submissions": 135,
   "fetched": 135,
-  "generated_at": "2026-07-28T05:25:12Z",
+  "generated_at": "2026-07-29T05:31:35Z",
   "entries": [
     {
       "id": "2607.21374v1",
@@ -1409,7 +1409,7 @@
       "bucket": "other"
     },
     {
-      "id": "2607.18635v1",
+      "id": "2607.18635v2",
       "title": "Remainders of generalised Taylor expansions and a priori bounds for rough differential equations",
       "abstract": "In this article we establish global a priori estimates on the solution of a generic rough differential equation driven by an $α$-Hölder path covering the full range of regularity $α\\in(0,1)$, under the hypothesis of Lipschitz continuity (but neither boundedness nor coercivity) of specific combinations of the coefficients and their derivatives, called elementary differentials. Our main tool is a closed formula for the remainder of a generalised Taylor expansion in terms of products of gradients of the elementary differentials, which allows to take advantage of cancellations in an optimal way.",
       "authors": [
@@ -1418,15 +1418,15 @@
         "Lorenzo Zambotti"
       ],
       "published": "2026-07-21T02:09:24Z",
-      "updated": "2026-07-21T02:09:24Z",
+      "updated": "2026-07-28T06:38:02Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.CO",
         "math.RA"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.18635v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.18635v1",
+      "abs_url": "https://arxiv.org/abs/2607.18635v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.18635v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2725,7 +2725,7 @@
       "bucket": "other"
     },
     {
-      "id": "2607.22971v1",
+      "id": "2607.22971v2",
       "title": "On the Order-Conditional Optimality of Gaffke's Bound",
       "abstract": "Let $X = (X_1, \\ldots, X_n)$ be a random vector from any Borel probability law on $\\mathbb{R}_+^n$. We revisit the problem of deriving a lower confidence bound (LCB) on a scalar parameter of that law. We recast classical work, beginning with Buehler, in purely probabilistic terms to form a more accessible and extensible framework. We then specialize the framework to the case where the components of $X$ are independent. In this context, we prove that Gaffke's bound is Buehler optimal for the order that it induces with respect to the maximum marginal mean parameter: $max_{i \\in [n]} E_Q[X_i]$, which reduces to the common mean when the $X_i$ are independent and identically distributed. That is to say, no other valid LCB that orders samples in the same way as Gaffke's bound can improve on it with respect to this parameter.",
       "authors": [
@@ -2733,7 +2733,7 @@
         "Erik Learned-Miller"
       ],
       "published": "2026-07-25T00:40:52Z",
-      "updated": "2026-07-25T00:40:52Z",
+      "updated": "2026-07-28T12:03:31Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -2741,8 +2741,8 @@
         "math.PR",
         "stat.ML"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.22971v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.22971v1",
+      "abs_url": "https://arxiv.org/abs/2607.22971v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.22971v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2883,7 +2883,7 @@
       "bucket": "other"
     },
     {
-      "id": "2607.23381v1",
+      "id": "2607.23381v2",
       "title": "Non-Gaussianity of the Stagnation Law in Particle Swarm Optimization",
       "abstract": "We study one-dimensional particle swarm optimization during stagnation, with two fixed distinct attractors and equal independent uniform acceleration ranges. The position then satisfies a second-order random affine recurrence. For inertia $w$ and acceleration range $c$, we prove that throughout the open mean-square stability region \\[ -1<w<1,\\qquad c>0,\\qquad 12(1-w^2)-c(7-5w)>0, \\] no invariant position marginal, and hence no limiting position marginal, can be Gaussian. This solves the open Problem 18 in \\cite{ParticleSwarmProblems}. The proof compares the stationary moment equations with the Gaussian moment identities through order eight. A Hermite-polynomial formulation gives explicit fourth- and sixth-order compatibility conditions whose common solutions lie on a degree-$107$ polynomial branch. Exact eighth-order equations exclude every point on that branch. The final certificate is verified using arithmetic modulo $23$ and independently modulo $1{,}000{,}003$. A separate raw-moment implementation produces exact polynomials $Q_4,Q_6,Q_8$ in $(w,c)$ and verifies the same obstruction over the rational numbers. The fourth- and sixth-order curves have a genuine admissible intersection, but the eighth-order condition removes it, showing why low-order Gaussian diagnostics are insufficient. All code, exact polynomials, logs, and plot-validation data are supplied as online resources.",
       "authors": [
@@ -2892,13 +2892,13 @@
         "Ionel Popescu"
       ],
       "published": "2026-07-25T22:04:23Z",
-      "updated": "2026-07-25T22:04:23Z",
+      "updated": "2026-07-28T10:05:29Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2607.23381v1",
-      "pdf_url": "https://arxiv.org/pdf/2607.23381v1",
+      "abs_url": "https://arxiv.org/abs/2607.23381v2",
+      "pdf_url": "https://arxiv.org/pdf/2607.23381v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],

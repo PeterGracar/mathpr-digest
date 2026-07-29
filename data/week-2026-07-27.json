@@ -6,11 +6,61 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-07-28",
-  "total_submissions": 24,
-  "fetched": 24,
-  "generated_at": "2026-07-28T05:25:13Z",
+  "data_through": "2026-07-29",
+  "total_submissions": 36,
+  "fetched": 36,
+  "generated_at": "2026-07-29T05:31:35Z",
   "entries": [
+    {
+      "id": "2607.25567v1",
+      "title": "Random Trees in Hyperbolic FPP",
+      "abstract": "We start by surveying known properties of first passage percolation (FPP) geodesics on a Gromov-hyperbolic group $G$. Due to a coalescence phenomenon established in earlier work of the authors, a random tree $T(ξ,ω)$ consisting of infinite random geodesics to a point $ξ$ on the Gromov boundary $\\partial G$ emerges naturally. These trees have a rich random geometry that we explore further in this paper.",
+      "authors": [
+        "Riddhipratim Basu",
+        "Mahan Mj"
+      ],
+      "published": "2026-07-28T10:55:11Z",
+      "updated": "2026-07-28T10:55:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.GR",
+        "math.GT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25567v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25567v1",
+      "score": 8,
+      "matched_keywords": [
+        "first passage percolation",
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2607.25277v1",
+      "title": "A note on the random constrained-degree percolation model on $\\mathbb{L}^2$",
+      "abstract": "This note considers a constrained-degree percolation model in a random environment on the square lattice, where each vertex is assigned a random degree constraint, and edges attempt to open at random times. We prove that whenever an infinite open cluster exists, it is almost surely unique, implying the positivity of the connectivity function in the supercritical regime.",
+      "authors": [
+        "Marco Ticse"
+      ],
+      "published": "2026-07-28T04:30:22Z",
+      "updated": "2026-07-28T04:30:22Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25277v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25277v1",
+      "score": 6,
+      "matched_keywords": [
+        "connectivity",
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2607.24561v1",
       "title": "Range convergence and sharp one-arm asymptotics for the critical percolation cluster in high dimensions",
@@ -18,7 +68,7 @@
       "authors": [
         "M. Cabezas",
         "D. Croydon",
-        "A. Fribegh",
+        "A. Fribergh",
         "N. Kawamoto"
       ],
       "published": "2026-07-27T15:31:28Z",
@@ -61,6 +111,33 @@
       "bucket": "medium"
     },
     {
+      "id": "2607.25065v1",
+      "title": "Topology and dynamics of unimodular random hyperbolic manifolds",
+      "abstract": "We investigate the relationship between the space of ends of a unimodular random hyperbolic manifold and the dynamics of its geodesic flow. We show that having two ends of infinite volume implies recurrence, while having infinitely many such ends implies positive drift and entropy. We also provide a transience criterion which applies to deterministic hyperbolic manifolds. Our method relies on studying Delaunay graphs over point processes and on the analytic notion of capacity.",
+      "authors": [
+        "Ilya Gekhtman",
+        "Nir Lazarovich",
+        "Arie Levit",
+        "Asaf Nachmias"
+      ],
+      "published": "2026-07-27T20:50:58Z",
+      "updated": "2026-07-27T20:50:58Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.GT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25065v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25065v1",
+      "score": 4,
+      "matched_keywords": [
+        "transience"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2607.23914v1",
       "title": "The Phase Transition in Online PCA Depends on $n/d\\log(d)$, not $n/d$",
       "abstract": "High dimensional statistical theory has established the importance of constant aspect ratio, when the number of dimensions ($d$) and samples ($n$) satisfy $n,d\\to\\infty$ with $n/d\\to γ\\in(0,\\infty)$, in understanding the limits of canonical estimation problems. In particular, for estimating the top eigenvector of a $d\\times d$ population covariance matrix from $n$ iid samples, the BBP phase transition gives a precise threshold -- a simple functional of the aspect ratio -- such that the top sample principal component attains nonzero asymptotic correlation with the truth only when the leading population eigenvalue exceeds it. In this paper, we show that for online / streaming algorithms the story is very different, and constant aspect ratio is insufficient for nonzero overlap. We study Oja's algorithm, the most popular method for online PCA. Let $Σ=θ^2 v_0v_0^\\top+I\\in\\mathbb{R}^{d\\times d}$, and run Oja's algorithm with step size $δ/d$ on $n$ iid samples $X_k\\sim\\mathcal{N}(0,Σ)$, with output $\\hat v_n$. Then, as $n,d\\to\\infty$ with $n/d\\log d\\toγ\\in(0,\\infty)$, we establish a phase transition: $|\\langle\\hat v_n,v_0\\rangle|\\to 0$ when $γ<γ_*$, and $\\toρ_*$ when $γ>γ_*$. Here $ρ_*=ρ_*(θ,δ)=\\sqrt{(θ^2-δ/2)_+/θ^2(1+δ/2)}$ and $γ_*=γ_*(θ,δ)=1/2δ(θ^2-δ/2)_+$. Further, at criticality, when $n=[γ_*d\\log d+ηd]$ and $d\\to\\infty$, $η\\in\\mathbb{R}$, the correlation is random: $|\\langle\\hat v_n,v_0\\rangle|\\stackrel{w}{\\to}ρ_*|G|\\exp(η/2γ_*)/\\sqrt{ρ_*^4+G^2\\exp(η/γ_*)}$ where $G\\sim\\mathcal{N}(0,1)$. This is in stark contrast to ordinary high dimensional PCA, where nonzero overlap is possible at constant $n/d$ and improves as $n/d$ increases.",
@@ -81,6 +158,53 @@
       "score": 3,
       "matched_keywords": [
         "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.25616v1",
+      "title": "Stealthy point processes and lattice induction",
+      "abstract": "We prove a realization theorem for stealthy point processes based on lattice induction, together with a converse in dimension one. Every probability-preserving $\\mathbb R^d$-action induced from a full-rank lattice admits a generating Delone cross-section whose Bartlett spectrum vanishes on a neighborhood of the origin. The construction can be chosen so that first-order linear statistics detect a nonzero part of the inducing spectral type. Bernoulli bases yield a nonzero absolutely continuous component, while weakly mixing bases of singular maximal spectral type yield a nonzero singular-continuous component. To our knowledge, these are the first rigorously constructed translation-invariant stealthy point processes on $\\mathbb R^d$ with non-pure-point Bartlett spectrum. Conversely, let $η$ be an ergodic translation-invariant point process on $\\mathbb R$ with positive intensity and local second moments. If \\[ \\int_{0<|ξ|<1}\\frac{1}{ξ^2}\\,dσ_η(ξ)<\\infty, \\] then its translation action has a nonzero eigenvalue and is lattice-induced. Consequently, an ergodic probability-preserving Borel $\\mathbb R$-space is lattice-induced if and only if it admits a generating stealthy Delone cross-section. This should be compared with a theorem of Borichev, Sodin and Weiss stating that a translation-invariant point process on $\\mathbb Z$ with proper spectral support is periodic.",
+      "authors": [
+        "Michael Björklund"
+      ],
+      "published": "2026-07-28T11:45:42Z",
+      "updated": "2026-07-28T11:45:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25616v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25616v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2607.25986v1",
+      "title": "Asymptotics of a two-species particle system associated to the doubly parabolic Keller-Segel equation in the plane",
+      "abstract": "We consider the two-species particle system introduced by Stevens (2000) related to the doubly parabolic Keller-Segel equation. It consists of $N$ cells and of a varying number of chemoattractant particles. Cells diffuse in the plane and follow the (mollified) empirical gradient of concentration of chemoattractant. Chemoattractant particles are produced by cells at some constant rate, diffuse and disappear at some constant rate. We show that when the sensitivity of cells to the chemoattractant is small enough, under some rather weak condition on the family of mollifiers, this system approximates the parabolic-parabolic Keller-Segel equation as $N\\to \\infty$. We also prove that when $N$ is fixed and when the production rate of chemoattractant particles tends to infinity, this system approximates the (non-Markovian) one-species system introduced Talay-Tomašević (2020) and further studied by the authors (2023).",
+      "authors": [
+        "Nicolas Fournier",
+        "Milica Tomašević"
+      ],
+      "published": "2026-07-28T17:06:06Z",
+      "updated": "2026-07-28T17:06:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25986v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25986v1",
+      "score": 3,
+      "matched_keywords": [
+        "particle system"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -562,6 +686,160 @@
       ],
       "abs_url": "https://arxiv.org/abs/2607.24705v1",
       "pdf_url": "https://arxiv.org/pdf/2607.24705v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25002v1",
+      "title": "Local Moments of Möbius Fourier Polynomials and the Riemann Hypothesis",
+      "abstract": "Let $$ P_N(t)=\\frac1{\\sqrt N}\\sum_{n\\leq N}μ(n)\\e^{2πi nt}, \\qquad t\\in\\T=\\mathbb R/\\mathbb Z. $$ We give a local probabilistic reformulation of the Riemann hypothesis by evaluating the normalized Möbius Fourier polynomial \\(P_N\\) at a uniform random point in an arc of radius \\(c/N\\). We prove that RH is equivalent to subpolynomial growth of arbitrarily high finite local moments of these random variables. The principal quantitative tool is a local moment-to-point-value inequality which recovers the value \\(P_N(0)=M(N)/\\sqrt N\\) from local \\(L^q\\)-data (where $M$ denotes the Mertens function). This provides a critical-scale local criterion for RH and complements Denjoy's random-walk heuristic, Kahane's theory of random Fourier series, and global \\(L^p\\)-semiflatness criteria for Möbius polynomials.",
+      "authors": [
+        "Alberto Verjovsky"
+      ],
+      "published": "2026-07-27T18:58:35Z",
+      "updated": "2026-07-27T18:58:35Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25002v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25002v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25428v1",
+      "title": "Oriented Minimum spanning tree looks like the Uniform spanning tree on the complete graph (at least locally)",
+      "abstract": "We prove that the local limit of the minimum spanning arborescence in the complete graph (which is an oriented cousin of the minimum spanning tree in the complete graph) is the same as that of the uniform random tree, oriented towards infinity. The latter is known to be the critical Poisson Galton--Watson tree conditioned to survive. This is in sharp contrast with the local limit of the minimum spanning tree, which is known to be different from that of the uniform spanning tree (due to results of Addario--Berry \\cite{AddarioBerry2013} and Addario--Berry, Griffiths and Kang \\cite{PWIT_local_minimum}). Thus we demonstrate that introducing orientations changes the local geometry of the minimum spanning tree in a non-trivial manner.",
+      "authors": [
+        "Swarnadeep Bagchi",
+        "Gourab Ray"
+      ],
+      "published": "2026-07-28T08:24:34Z",
+      "updated": "2026-07-28T08:24:34Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25428v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25428v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25486v1",
+      "title": "Spectra of high-dimensional Spearman correlation matrices under scale-mixture dependence",
+      "abstract": "We study the asymptotic spectral properties of high-dimensional Spearman correlation matrices for scale-mixture data. We consider observations of the form $x_t=σ_t ξ_t \\in \\mathbb{R}^N,$ where the coordinates of $ξ_t$ are i.i.d.\\ and the scalar mixture variable $σ_t$ is shared by all coordinates. Under natural symmetry assumptions, the coordinates of $x_t$ are pairwise uncorrelated in both the Pearson and Spearman sense. Nevertheless, they are not independent when the mixture variable is non-degenerate. We show that this higher-order dependence survives the rank transformation and leaves a nontrivial spectral signature. In the proportional regime $N/T\\to q\\in(0,\\infty),$ the empirical spectral distribution of the Spearman correlation matrix converges almost surely to a generalized Marčenko--Pastur law governed by the limiting distribution of an effective rank variance. We also formulate a broader latent-variable extension, which covers, in particular, some scale-mixture models with correlated directional components. We discuss solvable examples and numerical approximations, motivated in part by heavy-tailed data in robust multivariate statistics, econometrics, and finance.",
+      "authors": [
+        "Jean-Philippe Bouchaud",
+        "Pierre Bousseyroux",
+        "Tomas Espana",
+        "Matteo Smerlak"
+      ],
+      "published": "2026-07-28T09:24:08Z",
+      "updated": "2026-07-28T09:24:08Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25486v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25486v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25645v1",
+      "title": "Estimates of the total variation distance between laws of Sobolev mappings on Gaussian spaces",
+      "abstract": "Under small-ball bounds for the Malliavin determinants of two $\\mathbb R^k$-valued Sobolev mappings on a Gaussian space, we estimate the total variation distance between their laws both in terms of the Kantorovich--Rubinstein distance and in terms of the distance between the mappings in the corresponding Sobolev space. In particular, our results yield new total variation distance estimates for distributions of random vectors whose components belong to finite sums of Wiener chaoses, with exponents improved by an asymptotic factor of two. The proof is based on fractional regularity estimates for distributions of Sobolev mappings. Namely, we show that if an $\\mathbb R^k$-valued mapping has components in $W^{2,p}(γ)$ and the determinant of the corresponding Malliavin matrix satisfies a small-ball bound of order $\\varkappa\\in(0,1]$, then the law of the mapping has fractional regularity of order \\[ \\frac{\\varkappa}{1+(2k-1)\\varkappa p^{-1}}. \\] In particular, for large $p$, this gives regularity of order $\\varkappa$ up to an $O(p^{-1})$ loss.",
+      "authors": [
+        "Egor Kosov",
+        "Anastasiia Zhukova"
+      ],
+      "published": "2026-07-28T12:29:59Z",
+      "updated": "2026-07-28T12:29:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25645v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25645v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25685v1",
+      "title": "Mimicking diffusion processes with differential equations",
+      "abstract": "The probability-flow ordinary differential equation (PF-ODE) associated with a diffusion process is widely used in score-based generative modeling as a deterministic sampler that reproduces the marginal distributions of the diffusion. While this marginal-matching property is sometimes taken for granted, its validity depends on the well-posedness of an ordinary differential equation whose velocity field is constructed from the score function of the diffusion. We examine the precise mathematical relation between a diffusion process, the Fokker-Planck equation and the associated PF-ODE under weak regularity assumptions on the drift and score. We first establish existence and uniqueness of the marginal density flow as a solution of the Fokker--Planck equation under minimal assumptions on the diffusion coefficients. We then study the corresponding Lagrangian problem using the DiPerna-Lions-Ambrosio theory of regular Lagrangian flows. We prove existence, uniqueness and stability of the flow, and show that it transports the initial distribution onto the diffusion marginals, under Sobolev or bounded-variation regularity of the score together with one-sided bounds on the divergence of the probability-flow velocity. We identify sufficient conditions for the required regularity in diffusion models relevant for applications. Our analysis underlines a fundamental distinction between Eulerian and Lagrangian descriptions. We construct a counterexample in which the Fokker--Planck equation has a unique density flow while the associated PF-ODE fails to admit a regular Lagrangian flow from the initial time, demonstrating that uniqueness of the density evolution does not in general imply the existence of a deterministic probability-flow representation. Finally, we derive stability estimates for probability-flow trajectories under learned score approximations.",
+      "authors": [
+        "Rama Cont"
+      ],
+      "published": "2026-07-28T13:01:23Z",
+      "updated": "2026-07-28T13:01:23Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.CA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25685v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25685v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25694v1",
+      "title": "Parameter Estimation of the Stochastic Allen--Cahn Equation via variations",
+      "abstract": "This paper addresses statistical inference for stochastic partial differential equations. We study the stochastic Allen-Cahn equation driven by space-time white noise and analyze its mild solution. Our main focus is the asymptotic behavior of the spatial quadratic variation of the solution, for which we establish the exact limiting value. As an application, we develop parameter estimation procedures based on these asymptotic results. We prove that the unique solution can be decomposed as u = X + Y where X denotes the solution of the linear stochastic heat equation and Y accounts for the nonlinear effects. Exploiting a detailed analysis of the heat kernel and its scaling behavior, we derive Hölder continuity properties of Y in both spatial and temporal variables, showing that Y exhibits substantially higher regularity than X. This decomposition and the resulting regularity estimates are key ingredients in the development of parameter estimation procedures based on the asymptotic behavior of quadratic variations of the solution.",
+      "authors": [
+        "Simon Chony Acosta",
+        "Christian Olivera",
+        "Ciprian Tudor"
+      ],
+      "published": "2026-07-28T13:11:44Z",
+      "updated": "2026-07-28T13:11:44Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25694v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25694v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2607.25949v1",
+      "title": "Block-hierarchical covariance decompositions for finite-block additive functionals",
+      "abstract": "We study additive functionals of stationary Markov chains whose observables depend on a fixed finite block of consecutive states. Such block observables arise naturally in sliding-window statistics, pattern counts, and local dependence analysis. In the independent setting, additive functionals of overlapping finite blocks are known to have a covariance operator with integer spectrum \\(0,1,\\ldots,k\\), and the eigenvalue-one component represents the information first detectable at block length \\(k\\). We study the corresponding problem when the underlying sequence is a stationary Markov chain. For a fixed block observable \\(f(X_t,\\ldots,X_{t+k-1})\\), we introduce a Hilbert-space decomposition that separates information already contained in shorter consecutive blocks from the genuinely new block-\\(k\\) component, called the incremental component. We show that this component persists as an eigenvalue-one component under Markovian dependence: on this space the Green--Kubo covariance converges trivially and the covariance operator acts as the identity. More generally, the integers \\(1,\\ldots,k-1\\) are shown to arise hierarchically as eigenvalues of the Green--Kubo operator. In the reversible case, the remaining covariance structure is described through a boundary-corrected one-coordinate marginal spectrum determined by the base transition operator. Reversible two-state chains and Gaussian AR(1) models illustrate the theory through concrete spectral formulas.",
+      "authors": [
+        "Abbas Alhakim"
+      ],
+      "published": "2026-07-28T16:34:33Z",
+      "updated": "2026-07-28T16:34:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2607.25949v1",
+      "pdf_url": "https://arxiv.org/pdf/2607.25949v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
