@@ -6,9 +6,383 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-03",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-08-03T05:52:23Z",
-  "entries": []
+  "data_through": "2026-08-04",
+  "total_submissions": 16,
+  "fetched": 16,
+  "generated_at": "2026-08-04T05:25:14Z",
+  "entries": [
+    {
+      "id": "2608.01970v1",
+      "title": "Idleness Functions for Ollivier-Ricci Curvature on Hypergraphs",
+      "abstract": "Let $\\mathcal H=(V,E)$ be a locally finite simple hypergraph, equip $V$ with the hyperpath metric, and consider the lazy random walk introduced for hypergraph Ollivier--Ricci curvature by Tian and Zhao \\cite{TianZhao2025}. For adjacent vertices $x$ and $y$, we prove that the idleness function $α\\mapstoκ_α^{\\mathcal H}(x,y)$ is piecewise affine and with no more than three affine pieces. A separate mass-balance argument gives linearity on $[1/2,1]$ for every locally finite simple hypergraph and, consequently, a limit-free expression for the Lin--Lu--Yau curvature. In the $r$-uniform linear case, the hypergraph walk agrees exactly with the simple random walk on its 2-section. This reduction transfers the sharp endpoint intervals of Bourne, Cushing, Liu, Münch, and Peyerimhoff \\cite{BourneEtAl2018}.",
+      "authors": [
+        "Qing Xia"
+      ],
+      "published": "2026-08-03T09:35:25Z",
+      "updated": "2026-08-03T09:35:25Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01970v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01970v1",
+      "score": 4,
+      "matched_keywords": [
+        "hypergraph",
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.01671v1",
+      "title": "The Godsil--McKay Asymptotic for Latin Rectangles in the Sublinear Range of Erdős Problem 725",
+      "abstract": "Erdős Problem 725 asks for an asymptotic formula for the number $L_{k,n}$ of ordered, labelled $k\\times n$ Latin rectangles. Godsil and McKay proved that $L_{k,n}\\sim (n!)^k((n)_k/n^k)^n(1-k/n)^{-n/2}e^{-k/2}$ for $k=o(n^{6/7})$. We provide a partial solution to Erdős Problem 725 by proving this asymptotic for every $k=o(n)$. More precisely, set $\\widetilde A_{k,n}=(n!)^k((n)_k/n^k)^n\\exp\\{[n(H_n-H_{n-k})-k]/2\\}$. For every $K(n)=o(n)$, uniformly for $0\\leq k\\leq K(n)$, we prove $\\log(L_{k,n}/\\widetilde A_{k,n})=O(k^2/n^2)$, with an absolute implied constant. The results of this paper have been formally verified in Lean.",
+      "authors": [
+        "Eric Li"
+      ],
+      "published": "2026-08-03T04:05:07Z",
+      "updated": "2026-08-03T04:05:07Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01671v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01671v1",
+      "score": 2,
+      "matched_keywords": [
+        "erdos"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.01674v1",
+      "title": "Limit Theorems for Tempered Linear Processes with Innovations in the Domain of Attraction of a Stable Law",
+      "abstract": "We study the partial-sum behavior of tempered linear processes \\[ X_{N,n}=\\sum_{j=1}^{\\infty}e^{-λ_Nj}\\frac{\\ell(j)}{j}\\varepsilon_{n-j}, \\qquad λ_N\\downarrow0, \\] where $\\ell$ is slowly varying and the innovations belong to the domain of attraction of an $α$-stable law with $1<α\\leq2$. The filter $j^{-1}\\ell(j)$ represents the logarithmic boundary between summable and power-law long-memory coefficients. Let \\[ Q_N=\\sum_{j=1}^{N}e^{-λ_Nj}\\frac{\\ell(j)}{j}, \\qquad L(N)=\\sum_{j=1}^{N}\\frac{\\ell(j)}{j}. \\] We prove that the partial-sum process, normalized by $B_NQ_N$, converges to the stable Lévy motion associated with the innovations. Moreover, \\[ Q_N\\sim L(N)\\quad\\text{if }Nλ_N=O(1), \\qquad Q_N\\sim L(1/λ_N)\\quad\\text{if }Nλ_N\\to\\infty. \\] Then weak, moderate, and strong tempering have the same first-order Lévy limit but different normalizations. In the weakly and moderately tempered regimes, the second-order remainder, normalized by $B_N\\ell(N)$, converges in finite-dimensional distributions to a logarithmically tempered stable process; in the Gaussian finite-moment case the convergence is functional. These results extend the untempered logarithmic-boundary theorem and complement existing invariance principles for tempered linear processes.",
+      "authors": [
+        "Qian Yu"
+      ],
+      "published": "2026-08-03T04:11:23Z",
+      "updated": "2026-08-03T04:11:23Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01674v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01674v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.01806v1",
+      "title": "The Burgers' Equation in the Hermite-Sobolev Spaces",
+      "abstract": "In this paper, we show existence and uniqueness of solutions to the viscous Burgers' equation in $\\mathbb{R}^d$, when the initial condition $u_0$ is in Hermite-Sobolev space of index $p$, for suitable non-negative integers $p$. Our solutions are local in time. We also have a regularity result, viz. if $u_0$ belongs to Schwartz space, then so does the solution.",
+      "authors": [
+        "Suprio Bhar",
+        "Rajeev Bhaskaran",
+        "Barun Sarkar"
+      ],
+      "published": "2026-08-03T07:14:03Z",
+      "updated": "2026-08-03T07:14:03Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01806v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01806v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.01860v1",
+      "title": "A Variational Characterization of a Gibbs Measure related to the Aviles-Giga Functional",
+      "abstract": "We derive explicit characterizations of Gibbs-measures related to the Aviles-Giga functional. We build on the variational approach presented by Barashkov and Gubinelli (2020) in the context of the $Φ^4_3$-model.",
+      "authors": [
+        "Jean-Dominique Deuschel",
+        "Clara Thierbach",
+        "Barbara Zwicknagl"
+      ],
+      "published": "2026-08-03T08:08:47Z",
+      "updated": "2026-08-03T08:08:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01860v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01860v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.01863v1",
+      "title": "Exponential mixing for Korteweg-de Vries equation with localized noise",
+      "abstract": "We establish exponential mixing for the randomly forced and weakly damped KdV equation in $L^2(\\mathbb{T})$. The noise is bounded, localized, and degenerate in high frequencies. Our proof relies on a general probabilistic framework in [11,33], nonlinear smoothing for KdV and its linearization via normal form transformation, and stabilization of the system by localized force. This paper continues a series of works connecting asymptotic compactness, control theory, and ergodicity and mixing for randomly forced dispersive PDEs.",
+      "authors": [
+        "Yuxuan Chen",
+        "Shengquan Xiang",
+        "Zhifei Zhang",
+        "Jia-Cheng Zhao"
+      ],
+      "published": "2026-08-03T08:12:34Z",
+      "updated": "2026-08-03T08:12:34Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.DS",
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.01863v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.01863v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02103v1",
+      "title": "$p$-Adic Diffusion and Random Walks on $[0, 1]$",
+      "abstract": "Integral operators on the real unit interval are constructed as transported from ones on the $p$-adic unit disc via the Monna map. This gives rise to strong Markov processes on $[0, 1]$, whose paths are right-continuous and have no discontinuities other than jumps. The spectra of the corresponding diffusion operators, whose kernel functions depend on a $p$-adic distance, are calculated. Further, the solution to the Cauchy problem for their heat equations are approximated via continuous- time random walks on finite sets coming from a hierarchical partition of the unit interval induced by the $p$-adic distance. The transport of $p$-adic diffusion to the real domain via the Monna map gives rise to a simple visualisation method. Illustrations of concrete examples are undertaken in the end.",
+      "authors": [
+        "Patrick Erik Bradley",
+        "Paulina Halwas",
+        "Ell Ari Nitsche",
+        "Ángel Morán Ledezma"
+      ],
+      "published": "2026-08-03T12:02:16Z",
+      "updated": "2026-08-03T12:02:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02103v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02103v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02212v1",
+      "title": "The narrow escape problem in arbitrary dimension",
+      "abstract": "The narrow escape problem is a prototypical example for studying entropic metastability, motivated by the analysis of biological and chemical systems. The problem concerns the determination of the exit time and position of a Brownian particle trapped in a domain with a reflecting boundary pierced by narrow holes. Our goal is to investigate this problem in a general domain in any dimension (greater than or equal to two), using the quasi-stationary distribution approach to metastability. In particular, we derive the asymptotic expansion of the mean exit time and the law of the exit position in the limit where the hole sizes tend to zero. Our analytical predictions are illustrated by numerical simulations, using dedicated Monte Carlo techniques.",
+      "authors": [
+        "Louis Carillo",
+        "Tony Lelièvre",
+        "Thomas Normand",
+        "Gabriel Stoltz",
+        "Urbain Vaes"
+      ],
+      "published": "2026-08-03T13:35:06Z",
+      "updated": "2026-08-03T13:35:06Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02212v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02212v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02293v1",
+      "title": "Dynamic Traffic Allocation for Revenue Maximization on Creator Economy Platform",
+      "abstract": "Creator economy platforms face a strategic dilemma: allocating traffic to established stars for immediate ad revenue versus nurturing emerging creators to build a follower base for future monetization. We develop a continuous-time dynamic optimization model to characterize the optimal traffic allocation policy for a platform managing heterogeneous creators with dual revenue streams (advertising and direct follower contributions). We characterize the optimal policy analytically, revealing a ``most-valuable-creator-first\" rule driven by a forward-looking activation set. Under Bass diffusion dynamics, this policy exhibits a sophisticated ``conditional reversal\" strategy, where the platform temporarily prioritizes lagging creators to capitalize on word-of-mouth effects. Regarding the ecosystem structure, we find the optimal policy acts as a selective gatekeeper. Unlike myopic policies that lead to a harsh ``winner-take-all\" market, or naive fairness-driven heuristics that foster inefficient ``indiscriminate growth,\" the optimal policy imposes a strict capability threshold that screens which creators receive platform traffic. Furthermore, it enforces disciplined growth for successful entrants, capping their follower bases at an optimal ceiling to prevent over-investment. Finally, we demonstrate that simple heuristics can lead to significant revenue losses (up to 25\\%) and propose a practical ``follower-growth adjusted\" heuristic that achieves near-optimal performance by leveraging observed growth momentum.",
+      "authors": [
+        "Zhengli Wang",
+        "Franklin Lin Feng",
+        "Zhixi Wan"
+      ],
+      "published": "2026-08-03T14:23:58Z",
+      "updated": "2026-08-03T14:23:58Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "econ.TH",
+        "math.PR",
+        "stat.AP",
+        "stat.ME"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02293v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02293v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02319v1",
+      "title": "Averaging Principle for Ordinary Differential Equations in a Multiscale Random Environment",
+      "abstract": "We study slow-fast stochastic systems in which a fast process, evolving within several ergodic components, drives the transition rates of a slow jump process switching between these components. Considering a differential equation whose vector field depends on both processes, we show that, under suitable ergodicity and regularity conditions, its solutions converge in law in $D([0,T],\\mathbb R^d)$ to an averaged system depending only on the slow process. The averaged drift is obtained by averaging the original vector field over the invariant measure of the fast process within each component. Our results extend classical averaging theory to systems where the vector field is explicitly influenced by a fast random environment with multi-component dynamics.",
+      "authors": [
+        "Vincent Kagan"
+      ],
+      "published": "2026-08-03T14:43:14Z",
+      "updated": "2026-08-03T14:43:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02319v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02319v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02417v1",
+      "title": "A Bismut-Elworthy-Li formula for linear stochastic evolution equations in Banach spaces",
+      "abstract": "We prove a Bismut-Elworthy-Li formula for linear stochastic evolution equations in Banach spaces. The admissible directions are those for which the deterministic orbit is square integrable with values in the Hilbertian range of the noise coefficient. Under this square function condition, the derivative of the semigroup is represented by a stochastic integral against an explicit deterministic control. The result is a concrete control realisation of the Cameron--Martin formula for the fixed-time Gaussian transition measures.",
+      "authors": [
+        "Jan van Neerven"
+      ],
+      "published": "2026-08-03T15:58:37Z",
+      "updated": "2026-08-03T15:58:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CA",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02417v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02417v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02430v1",
+      "title": "Wasserstein mixing time of the unadjusted Langevin algorithm",
+      "abstract": "We provide new estimates in Wasserstein distance for the asymptotic bias of the unadjusted Langevin algorithm, in the classical setting of log-smooth strongly log-concave measures. Our bound implies a Wasserstein mixing time of order $κ\\sqrt{d}/\\varepsilon$, where $κ$ is the condition number, $d$ is the dimension, and $\\varepsilon$ is the target precision: this improves by a factor of $\\sqrt{d}/\\varepsilon$ over the previous state-of-the-art results.",
+      "authors": [
+        "Francesco Pedrotti",
+        "Peter A. Whalley"
+      ],
+      "published": "2026-08-03T16:10:29Z",
+      "updated": "2026-08-03T16:10:29Z",
+      "primary_category": "stat.CO",
+      "categories": [
+        "stat.CO",
+        "cs.LG",
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02430v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02430v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02450v1",
+      "title": "PhaseLift for Coded Diffraction Patterns: Optimal Sampling Rate",
+      "abstract": "Recovering a complex-valued signal from coded diffraction patterns, namely the Fourier intensities obtained after modulating the signal with a collection of masks, is a fundamental structured phase retrieval problem arising in diffraction imaging and related applications. Despite its practical importance, the theoretical analysis of this structured framework remains scarce. In the standard random mask model, the optimal sampling rate achievable by computationally tractable recovery methods has remained open. In this paper, we establish the optimal sampling rate for the PhaseLift feasibility program. More precisely, PhaseLift achieves exact recovery of an unknown signal $\\pmb{x}_0\\in\\mathbb{C}^n$, up to a global phase, from $\\mathcal{O}(\\log n)$ random masks, with polynomially decaying failure probability. Since $Ω(\\log n)$ masks are necessary to identify certain signals under the erasure mask ensemble, our result thereby achieves the optimal mask complexity. Equivalently, PhaseLift attains the optimal total sampling rate of $m=\\mathcal{O}( n\\log n)$ scalar intensity measurements. The proof is based on an approximate dual certificate construction via a refined golfing scheme that combines adaptive mask allocation with a dimension-independent truncation threshold.",
+      "authors": [
+        "Gao Huang",
+        "Song Li"
+      ],
+      "published": "2026-08-03T16:25:17Z",
+      "updated": "2026-08-03T16:25:17Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02450v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02450v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02459v1",
+      "title": "A Response Calculus for Liouville Brownian Motion I: Simple Spectrum, Joint Eigenvalue Densities, and Ward Identities",
+      "abstract": "We develop a response calculus for Dirichlet Liouville Brownian motion under Cameron--Martin shifts of the Gaussian free field. On every bounded connected planar domain, without boundary regularity assumptions, we prove throughout the full subcritical range $0<γ<2$ that the generator has almost surely simple spectrum and that every finite vector of ordered eigenvalues has an absolutely continuous law. This resolves the open simple-spectrum problem for Dirichlet Liouville Brownian motion. The calculus combines coherent versions of Gaussian multiplicative chaos with fixed-space perturbation of the associated trace forms. The first variation of an isolated eigenvalue cluster becomes a finite-dimensional compression on its eigenspace. Every multiple cluster admits a smooth direction with simple first-order splitting, while the response measures of distinct simple eigenvalues are linearly independent. Analytic zero-set and submersion arguments on finite-dimensional Gaussian slices then give the spectral conclusions. At the operator level, in the same full subcritical range, the calculus yields differentiability of the resolvent in a fixed energy space and tested one-sided, moving-measure, and fixed-base resolvent Ward identities. We construct explicit causal tempered distributions whose Laplace transforms realize the moving-measure and fixed-base responses; no time-domain heat-semigroup difference-quotient convergence is asserted. Finally, for $0<γ<\\sqrt2$, Green--Riesz potentials of response measures for spatially averaged resolvent observables realize their Gaussian Sobolev gradients. This yields absolute continuity for the occupation resolvent at every parameter and, outside deterministic null sets of resolvent parameters, for further scalar observables and finite families associated with disjoint non-negative test functions.",
+      "authors": [
+        "Chunhao Cai"
+      ],
+      "published": "2026-08-03T16:31:17Z",
+      "updated": "2026-08-03T16:31:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02459v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02459v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02487v1",
+      "title": "Computational and Statistical Guarantees of the \\textit{c}-Rectified flow",
+      "abstract": "Recently, rectified flow has emerged as a fundamental framework for large-scale image generation, powering state-of-the-art systems such as FLUX.1 and Stable Diffusion 3. Despite its remarkable empirical success, the computational and statistical guarantees of iterative rectified flow have remained largely unexplored. We address this problem by studying \\textit{c}-rectified flow, a cost-aware class of rectified flow that projects velocity fields onto a gradient class while preserving endpoint marginals. The ordinary rectified flow can fail to recover the optimal transport coupling: in a Gaussian case study, the iteration converges to the optimal coupling if and only if the source and target covariance matrices commute. In contrast, under suitable compactness and uniform-integrability assumptions, iterative \\textit{c}-rectified flow always converges to the optimal transport coupling. We further establish quantitative one-step contraction and exponential convergence guarantees under projection-stability assumptions for both quadratic and strongly convex displacement costs. Finally, under a Hölder ball assumption, we develop new minimax-optimal score estimation rates and show that, when combined with iterative \\textit{c}-rectified flow, they yield a rate-optimal estimator of the optimal transport for the dimension \\(d \\ge 3\\) and a nearly parametric rate for \\(d=1,2\\).",
+      "authors": [
+        "Leda Wang",
+        "Zhehao Xu",
+        "Qiang Liu",
+        "Harrison H. Zhou"
+      ],
+      "published": "2026-08-03T16:53:29Z",
+      "updated": "2026-08-03T16:53:29Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.OC",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02487v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02487v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.02543v1",
+      "title": "On the local conformal structure of Imaginary Liouville theory",
+      "abstract": "Imaginary Liouville theory was recently proposed as a path integral construction of a non-rational conformal field theory (CFT) with central charge less than one (Usciati et al. 2026). In the present work, we establish Ward identities and Belavin-Polyakov-Zamolodchikov differential equations in this framework, assuming a precise conjecture on the decay of the Laplace transform of Imaginary Gaussian multiplicative chaos. These results provide a first step towards a rigorous implementation of the conformal bootstrap program for conformal field theories with central charge lower than one. This work is the first to investigate the intrinsic properties of Imaginary Liouville theory beyond exact computations.",
+      "authors": [
+        "Baptiste Cerclé",
+        "Romain Usciati"
+      ],
+      "published": "2026-08-03T17:30:27Z",
+      "updated": "2026-08-03T17:30:27Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "hep-th",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.02543v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.02543v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }
