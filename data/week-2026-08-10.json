@@ -6,9 +6,487 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-10",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-08-10T04:07:25Z",
-  "entries": []
+  "data_through": "2026-08-11",
+  "total_submissions": 21,
+  "fetched": 21,
+  "generated_at": "2026-08-11T03:54:55Z",
+  "entries": [
+    {
+      "id": "2608.09465v1",
+      "title": "Balancing fractional Brownian motion",
+      "abstract": "We study the discrepancy of balancing $n$ independent sample paths of fractional Brownian motion with Hurst exponent $H\\in(0,1)$ on $[0,1]$, an infinite-dimensional analogue of balancing Gaussian vectors. We establish a phase transition at $H=1/2$: with high probability, the discrepancy is $Ω(n^{1/2-H})$ and $\\mathcal O(n^{1/2-H}(\\log n)^{c(H)})$, where $c(H)=H+1/2$ if $H\\geq 1/2$ and $c(H)=1/2$ otherwise. At the critical exponent $H=1/2$, we show that the discrepancy is $Θ(1)$ with constant probability as $n\\to\\infty$. In this regime, we further characterize the geometry of the solution space by computing the expected number of local minima, establishing an overlap gap property near the existence threshold, and proving its absence at every diverging optimality threshold. We also give randomized polynomial-time algorithms that compute signings with discrepancy $\\mathcal O(n^{1/2-H}\\sqrt{\\log n})$ for $H<1/2$, $\\mathcal O((\\log n)^{3/2})$ for $H=1/2$, and $\\mathcal O(\\sqrt{\\log n})$ for $H>1/2$, with high probability. Our analysis combines a truncated balancing argument based on a wavelet representation of fractional Brownian motion with probabilistic methods.",
+      "authors": [
+        "Hengrui Luo",
+        "Yiming Xu"
+      ],
+      "published": "2026-08-10T11:35:19Z",
+      "updated": "2026-08-10T11:35:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09465v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09465v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.09729v1",
+      "title": "On the self-intersection time of non-backtracking random walks",
+      "abstract": "We study the self-intersection time of the non-backtracking random walk on connected undirected graphs. For every fixed $Δ\\geq 3$ we show that the expected self-intersection time is $O(\\sqrt{n} \\log n)$ on $n$-vertex graphs with minimum degree at least $3$ and maximum degree at most $Δ$. For regular graphs with a uniform spectral gap, we improve this to $O(\\sqrt{n})$. We also show an $Ω(\\sqrt{n})$ lower bound on a class of regular expanders. Our upper bound on the expected self-intersection time implies an improved mixing time bound on Glauber dynamics for the Ising model on $Δ$-regular graphs at the tree uniqueness threshold.",
+      "authors": [
+        "Ferenc Bencs",
+        "Leslie Ann Goldberg",
+        "Matthew Jenssen",
+        "Mark Jerrum",
+        "Gabor Pete",
+        "Guus Regts",
+        "Yitong Yin"
+      ],
+      "published": "2026-08-10T15:30:31Z",
+      "updated": "2026-08-10T15:30:31Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09729v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09729v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.08998v1",
+      "title": "LU Factorization of Discrete Random Matrices",
+      "abstract": "We consider the probability that a discrete random matrix $M_n(ξ)$ is \\emph{strongly non-singular}, meaning all its leading principal submatrices are non-singular. This property is equivalent to the existence of an LU factorization. We show that for any discrete random variable $ξ$ with finite support and $|ξ|_\\infty < 1$, there is a constant probability that $M_n(ξ)$ is strongly non-singular with a growth factor bounded by $n^{5/2+δ}$. Furthermore, we provide a tight asymptotic lower bound for this probability as $|ξ|_\\infty \\to 0$. Finally, we provide exact counts for strongly non-singular binary matrices up to $n=9$ and use these to derive improved upper bounds for the Bernoulli case.",
+      "authors": [
+        "Samuel Orellana Mateo",
+        "John Urschel",
+        "Nicholas West"
+      ],
+      "published": "2026-08-10T01:33:19Z",
+      "updated": "2026-08-10T01:33:19Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.08998v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.08998v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09051v1",
+      "title": "On the Schauder Estimates for Non-local Equations with Drift: The Supercritical Case",
+      "abstract": "We establish a Schauder estimate for a nonlocal Cauchy problem with drift. The leading operator is the generator of a non-degenerate $α$-stable process with $α\\in(0,1)$, and the drift is $β$-Hölder continuous with $β\\in (1-α,1)$. The proof relies on a refined conic Littlewood--Paley decomposition and a one-dimensional one-sided dyadic maximum principle.",
+      "authors": [
+        "Yanfang Li",
+        "Guohuan Zhao"
+      ],
+      "published": "2026-08-10T02:57:05Z",
+      "updated": "2026-08-10T02:57:05Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09051v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09051v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09092v1",
+      "title": "Exact Periodicity, Surjectivity, and a Haar Limit Law for a Restarting Josephus Process",
+      "abstract": "We study a restarting Josephus process in which the participants retain their linear order and counting restarts at the current leftmost survivor after every deletion. For step size $m$, put $q=m-1$, and let $F_n(q)$ denote the initial position of the survivor. Reverse insertion gives $F_1(q)=1$ and $F_k(q)=F_{k-1}(q)+\\mathbf{1}_{\\{q\\bmod k<F_{k-1}(q)\\}}$. Writing $L_n=\\operatorname{lcm}(1,\\ldots,n)$, we establish three results for the compatible residue system in this recurrence. First, the full period group of $F_n$ is exactly $L_n\\mathbb{Z}$. Second, $F_n$ is surjective onto $\\{1,\\ldots,n\\}$. The proof is constructive and unconditional but computer-assisted: a Chinese-remainder construction and explicit prime estimates reduce it to a finite exact certificate. Third, if $\\widetilde Q_n$ is uniform modulo $L_n$, then $(F_n(\\widetilde Q_n)-1)/(n-1)$ converges to a symmetric, nondegenerate law on $[0,1]$. A common Haar coupling yields almost-sure and $L^r$ convergence for every $1\\le r<\\infty$, together with an $O(n^{-1/4})$ bound in $W_1$. Logarithmic boundary-mass estimates rule out every symmetric beta law. We also formulate endpoint dominance as an open problem, prove strict dominance over the two nearest internal positions for every $n\\ge4$, exclude prime levels as minimal counterexamples, and verify the claim exactly through $n=49$.",
+      "authors": [
+        "Lizhong Chen"
+      ],
+      "published": "2026-08-10T03:43:27Z",
+      "updated": "2026-08-10T03:43:27Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09092v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09092v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09105v1",
+      "title": "Longest convex chains with i.i.d. points",
+      "abstract": "Sample $n$ i.i.d. points from a triangle, according to some bounded density function. Given two vertices $A,B$ of the triangle, what is the maximum number of samples that form a convex chain with initial point $A$ and terminal point $B$? We show that to leading order, the answer is $cn^{1/3}$, generalizing a result of Ambrus and Bárány that considered uniformly distributed points. Furthermore, we express the constant $c$ using a variational formula whose maximizer (if unique) gives the limiting curve formed by the longest convex chain. By comparison, for $n$ i.i.d. samples from the unit square, the length of the longest monotone chain is asymptotically $c'n^{1/2}$. Despite the difference in scale, our formula is nicely connected to one established for $c'$ by Deuschel and Zeitouni.",
+      "authors": [
+        "Erik Bates",
+        "Arnab Sen"
+      ],
+      "published": "2026-08-10T04:23:36Z",
+      "updated": "2026-08-10T04:23:36Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09105v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09105v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09265v1",
+      "title": "Entropic Partial Optimal Transport and Partial Gromov--Wasserstein Distance between Gaussian Mixtures",
+      "abstract": "Optimal transport and Gromov--Wasserstein distances are useful tools for comparing probability measures and metric measure spaces, but their balanced formulations force all mass to be matched. This constraint is often too strong for data with outliers, missing parts, or only partial overlap. In this paper, we develop entropic partial optimal transport for Gaussian mixture models and define a partial mixture Gromov--Wasserstein distance. For the finite entropic partial optimal transport problem, we prove the existence and uniqueness of the minimizer and establish quantitative large-penalty estimates. Moreover, the resulting entropic partial component couplings induce continuous partial transport plans through Gaussian optimal maps. We analyze their large-penalty and subsequent zero-entropy limits and construct the associated displacement interpolations and barycentric projection maps. In addition, by identifying each Gaussian mixture with a finite metric measure space of Gaussian components, we establish the metric property and large-penalty limit of the partial mixture Gromov--Wasserstein distance. Finally, numerical experiments on synthetic Gaussian mixtures and point clouds illustrate the effects of the penalty and entropic regularization and the robustness of partial matching to outliers.",
+      "authors": [
+        "Toshiaki Yachimura",
+        "Xiaocheng Zou"
+      ],
+      "published": "2026-08-10T08:19:29Z",
+      "updated": "2026-08-10T08:19:29Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09265v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09265v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09319v1",
+      "title": "Averaging Principle and Pullback Attractor Convergence for McKean--Vlasov Stochastic Reaction--Diffusion Equations",
+      "abstract": "We establish three averaging principles for distribution-dependent stochastic reaction--diffusion equations with rapidly oscillating coefficients on the torus $\\mathbb T^d$, $d\\le3$. First, solutions converge in mean square, uniformly on finite time intervals, to solutions of the averaged equation. Under a contraction condition, both the original and averaged equations admit unique bounded entire solutions whose mean-square distance vanishes uniformly for all $t\\in\\mathbb R$. At the level of probability laws, the original nonautonomous equation possesses a family of pullback attractors, whereas the averaged equation has a global attractor; the former converge upper-semicontinuously to the latter, uniformly over the coefficient hull. As an application, we present a class of stochastic reaction--diffusion models motivated by large-scale interacting systems.",
+      "authors": [
+        "Honglei Chen",
+        "Mengyu Cheng",
+        "Zhenxin Liu"
+      ],
+      "published": "2026-08-10T08:59:02Z",
+      "updated": "2026-08-10T08:59:02Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09319v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09319v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09368v1",
+      "title": "A proof of Ross's conjecture for two-site moving-target search",
+      "abstract": "A target moves between two sites according to a discrete-time Markov chain with transition matrix $M$. At each epoch one site is searched at positive cost, and a search of site $i$ misses a target that is present there with probability $α_i$. In the classical range $α_i<1$, Ross conjectured that an optimal policy is threshold in the posterior probability that the target is at site 1. MacPhee and Jordan proved the conjecture throughout the nonpositive-determinant regime for interior transition matrices, and for many additional transition laws, but left part of the regime $\\det M>0$ unresolved. We prove threshold optimality throughout $\\det M>0$. In unnormalised survivor coordinates, finite search words have affine costs. The two Bellman branches generate word pairs with a two-level prefix-count constraint; a nested sequence of local swaps and nested projective intervals then yield a common separator that rules out reverse crossing. A log-odds contraction closes the finite-horizon induction, and a uniform $O(1/n)$ truncation bound passes the result to the undiscounted infinite horizon. Combined with MacPhee--Jordan and boundary continuity, this proves Ross's conjecture for every two-site transition matrix when $α_i<1$. We also classify the endpoint cases $α_i=1$ under the extended-real expected-cost criterion.",
+      "authors": [
+        "Yunpeng Li"
+      ],
+      "published": "2026-08-10T09:48:02Z",
+      "updated": "2026-08-10T09:48:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09368v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09368v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09419v1",
+      "title": "Left-tail expansions for Schröder branching processes with explicit convergence rates",
+      "abstract": "In previous work, the density of the martingale limit in Schröder branching processes was expressed as a convergent double power-law series with oscillatory terms. The proof relied on two assumptions, one of which imposed a geometric restriction on the critical angle of the Julia set of the offspring generating function near $1$. In this paper, we show that both assumptions can be removed. We derive explicit bounds on the expansion coefficients, which imply locally uniform convergence of the double series. The coefficients decay exponentially in one summation index, with the rate explicitly determined by the critical angle, and super-exponentially in the other. Finally, we investigate the behavior of the critical angle and describe regimes in which it approaches its minimum. This analysis shows how the geometry of the Julia set influences the magnitude of the oscillatory corrections in the left-tail expansion.",
+      "authors": [
+        "Anton A. Kutsenko"
+      ],
+      "published": "2026-08-10T10:46:12Z",
+      "updated": "2026-08-10T10:46:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.FA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09419v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09419v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09494v1",
+      "title": "Walk-on-Spheres Monte Carlo and deep neural network approximations of elliptic PDEs with drift and killing",
+      "abstract": "In this paper we provide Monte Carlo and deep neural network approximations for stochastic representations of solutions to linear elliptic partial differential equations with constant diffusion, drift and killing. Building on the modified Walk-on-Spheres algorithm of Beznea et al. (arXiv:2209.01432), we introduce Monte Carlo estimators that explicitly incorporate sampled random times arising in the analyzed stochastic representations. We establish uniform error bounds for these estimators and show that, under suitable assumptions, a prescribed approximation accuracy is achieved with sample complexities growing at most polynomially in both the inverse accuracy and the problem dimension. Furthermore, we prove a deep neural network approximation result for the stochastic representations. Assuming suitable neural network representations of the boundary data and the distance function to the boundary, we use the constructed Monte Carlo to design deep neural networks that approximate the representation uniformly with a number of parameters growing at most polynomially in the inverse accuracy and the problem dimension. These results extend previous complexity analyses to a broader class of elliptic equations involving drift and killing.",
+      "authors": [
+        "Konrad Kleinberg",
+        "Thomas Kruse"
+      ],
+      "published": "2026-08-10T12:01:46Z",
+      "updated": "2026-08-10T12:01:46Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "cs.LG",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09494v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09494v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09589v1",
+      "title": "On stochastic stability of systems driven by red noise",
+      "abstract": "We consider discrete-time non-linear stochastic dynamical systems where the driving noise is not i.i.d. but an autoregressive process (``red noise''). Under a standard dissipativity condition, we prove geometrically fast convergence to a stationary distribution in total variation.",
+      "authors": [
+        "Balázs Gerencsér",
+        "Miklós Rásonyi"
+      ],
+      "published": "2026-08-10T13:22:15Z",
+      "updated": "2026-08-10T13:22:15Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09589v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09589v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09700v1",
+      "title": "A general paracontrolled ansatz for singular SPDEs",
+      "abstract": "We provide a general ansatz for the paracontrolled approach introduced by Gubinelli, Imkeller, Perkowski for treating singular SPDEs. The ansatz proposed covers a large class of equations. It is described via decorated trees that encode its coefficients and its stochastic data. The main novelty is the recursive definition of the paracontrolled stochastic iterated integrals that involve a well-chosen combinatorial set of words. The paralinearisation is performed via a lift of iterated paraproducts to modelled distributions and the reconstruction theorem coming from Regularity Structures. We also provide a fixed point argument and the renormalised equation with this ansatz when one uses the preparation map formalism that encompasses the BPHZ renormsalition. The last main result is the convergence of the renormalised stochastic data via the BPHZ renormalisation via an adaptation of the spectral gap approach. One obtains in the end a general solution theory for parabolic singular SPDEs via the paracontrolled approach.",
+      "authors": [
+        "Yvain Bruned",
+        "Nicolas Moench"
+      ],
+      "published": "2026-08-10T15:06:06Z",
+      "updated": "2026-08-10T15:06:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.RA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09700v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09700v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09712v1",
+      "title": "Exact Exponential-Moment Thresholds for Nonlinear Mean-Reverting Diffusions",
+      "abstract": "We study the exponential moments of the integrated squared drift that appear in Novikov's criterion, for one-dimensional diffusions with constant volatility $σ$ whose drift $λ$ is strictly mean-reverting but may steepen rapidly in the tails. A localised change of measure reduces the question to a single potential, in which the drift enters only through its derivative, the local reversion rate $q=-λ'$. Two consequences follow. First, on a natural class of steeply reverting drifts, Novikov's coefficient $a=1/2$ is the only one at which the horizon matters: below it the moments are finite on every horizon, above it infinite on every horizon. Second, on that critical line the growth of the reversion rate decides. A subquadratic reversion rate gives finiteness on every horizon, and one dominating every quadratic gives divergence on every positive horizon. In between, when the reversion rate grows exactly quadratically with limiting curvature $κ_\\infty$, we obtain an exact boundary at $κ_\\infty σ^2 T^2=π^2$: the moments are finite below it, infinite above it, and infinite at the boundary itself for cubic and affine-cubic drift. The constant is the first Dirichlet eigenvalue of a Brownian bridge, which appears because a quartic terminal potential pins the transferred path. Cubic reversion is the canonical case, with critical horizon $cσ^2T^2=π^2/3$; exponentially steep reversion lies strictly above the critical scale. Throughout, the drift-removing stochastic exponential remains a true martingale, so criticality of the classical moment criteria is distinct from criticality of the exponential they were meant to certify.",
+      "authors": [
+        "Jaewoo Lee"
+      ],
+      "published": "2026-08-10T15:13:46Z",
+      "updated": "2026-08-10T15:13:46Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09712v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09712v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09744v1",
+      "title": "On the weighted hard-core model and Rado's covering problem for congruent Euclidean balls",
+      "abstract": "Let $B^d$ denote the Euclidean unit ball in $\\mathbb{R}^d$ and $f(B^d)$ denote the largest constant $c$ such that every finite collection of congruent Euclidean balls contains a pairwise disjoint subcollection whose total volume is at least $c$ times the volume of the union of the original collection. The classical Vitali covering lemma gives $f(B^d)\\geq3^{-d}$. In this paper, we establish two improvements. First, by a purely combinatorial argument, we prove that $$ f(B^d)\\geq \\frac{2}{3^d + 2^d} $$ for every integer $d \\geq1$. This improves the Vitali bound by a factor tending to $2$ as d tends to infinity. Second, using a weighted hard-core model together with a weighted geometric estimate for intersections of Euclidean balls, we show that, for all sufficiently large $d$, $$ f(B^d)\\geq \\left( \\log\\frac{3}{1+\\sqrt3} -O\\left(\\frac{\\log d}{d}\\right) \\right)d\\,3^{-d}. $$ Thus, the classical lower bound is improved by a factor of order $d$.",
+      "authors": [
+        "Chengfei Xie",
+        "Gennian Ge"
+      ],
+      "published": "2026-08-10T15:39:41Z",
+      "updated": "2026-08-10T15:39:41Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "cs.DM",
+        "math.CA",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09744v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09744v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09756v1",
+      "title": "Two-sided estimates of Lyapunov exponents for Milstein schemes of non-autonomous stochastic differential equations",
+      "abstract": "The stabilising effect of multiplicative noise for stochastic differential equations, though counterintuitive, has been observed and investigated extensively in last decades. In practice, it is desirable to know if such stabilisation holds also for the discretised setting. In this paper, we address this problem by means of sharp upper and lower estimates for Lyapunov exponents of Milstein schemes for non-autonomous stochastic differential equations. These estimates provide precise large time behaviour in both almost sure and $p$-moment sense. In particular, our results show the preservation of stabilisation from the continuum setting to the discretised setting. One main idea of our analysis is to exploit the second order term concerning the stochastic noise from the Milstein scheme to obtain precise estimates for Taylor expansions of logarithmic and power functions.",
+      "authors": [
+        "Vu Thi Hue",
+        "Bao Quoc Tang",
+        "Do Duc Thuan"
+      ],
+      "published": "2026-08-10T15:46:35Z",
+      "updated": "2026-08-10T15:46:35Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09756v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09756v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09840v1",
+      "title": "Langevin dynamics along the zero set of real-analytic potentials",
+      "abstract": "We consider the Langevin diffusion $dX_t = - β\\nabla V(X_t) dt + \\sqrt{2} dB_t$ for a general nonnegative real-analytic potential $V$ and a large parameter $β$. In the large-$β$ limit the process is confined to the zero set of $V$, assuming that it starts there. We derive a candidate limiting evolution on the zero set. To do so, the zero set is partitioned into strata according to a measure of local codimension known as the local learning coefficient and its multiplicity. It is then shown that the Dirichlet form associated with $X$ converges in a certain sense to a hierarchy of Dirichlet forms corresponding to a stochastic evolution on the strata. This evolution is strongly biased toward higher-dimensional, or \"more singular\", strata. This result is motivated by a question from Watanabe's singular learning theory regarding the learning dynamics of overparameterized statistical models and the generalization puzzle in deep learning. The result suggests a mechanism for the observation that stochastic gradient methods tend to be biased toward singular solutions that generalize well.",
+      "authors": [
+        "Martin Larsson"
+      ],
+      "published": "2026-08-10T16:55:51Z",
+      "updated": "2026-08-10T16:55:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09840v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09840v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09856v1",
+      "title": "Mass erasure on measured $\\mathbb{R}$-trees, applications to Lévy forests",
+      "abstract": "Let $h>0$. For a complete and separable $\\mathbb{R}$-tree $(T,d)$ equipped with a root $ρ$ and a finite Borel measure $μ$, we define the $h$-mass-erased tree by removing from $T$ all fringe subtrees of mass less than $h$ and we equip it with a suitable measure such that the erasure operators $(\\mathcal{E}_h)_{h\\ge 0}$ form a semigroup that is continuous for the Gromov-weak topology. Then, we say that a sequence $\\boldsymbolμ_n=(T_n,d_n,ρ_n,μ_n)$, $n\\in\\mathbb{N}$, converges in the sense of mass erasure if $(\\mathcal{E}_h\\boldsymbolμ_n)_{n\\in\\mathbb{N}}$ converges Gromov-weakly for all $h\\ge 0$. This notion of convergence is strictly weaker than Gromov-weak convergence and we establish criteria to relate the two notions. We define a distance function that metrizes convergence in the sense of mass erasure. By extending the notion of measured $\\mathbb{R}$-trees to allow mass on the boundary (the far ends of infinite geodesics), we obtain a complete metric space. Next, we identify random trees of finite type (that is, discrete trees with edge lengths) satisfying the regenerative branching property as a specific class of measured (sub)critical GW forests. We then show that this class of trees is preserved by mass erasure and we compute the law of these mass-erased GW forests explicitly. Finally, we establish a limit theorem for these measured (sub)critical GW forests to converge to standard measured Lévy forests, i.e. those whose total mass has the same distribution as the total population of a continuous-state branching process. This includes cases with bounded variation by crucially using the convergence in the sense of mass erasure and it extends the cases studied previously.",
+      "authors": [
+        "Thomas Duquesne",
+        "Matthias Winkel"
+      ],
+      "published": "2026-08-10T17:14:04Z",
+      "updated": "2026-08-10T17:14:04Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09856v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09856v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09870v1",
+      "title": "Logarithmic-Free Moment and Generalization Bounds for Uniformly Stable Algorithms",
+      "abstract": "Uniform stability is a classical tool for controlling the generalization error of a learning algorithm. Bousquet, Klochkov, and Zhivotovskiy (2020) showed that the problem can be reduced to a moment inequality for a sum of weakly interacting functions of independent random variables. Their bound contains an additional factor $\\log n$, and they asked whether this factor can be removed. We answer this upper-bound question affirmatively. More specifically, let $Z=(Z_1,\\ldots,Z_n)$ have independent coordinates and let $g_i(Z)$ satisfy $$ \\mathbb E[g_i(Z)\\mid Z_{-i}]=0, \\qquad \\left| \\mathbb E[g_i(Z)\\mid Z_i]\\right|\\le M, \\qquad \\forall i = \\overline{1, n} $$ while changing any coordinate $Z_j$, $j\\neq i$, changes $g_i$ by at most $β$ and $Z_{-i}$ denotes all coordinates except $Z_i$. We prove that, for every $p\\ge2$, $$ \\left\\| \\sum_{i=1}^n g_i(Z)\\right\\|_p \\le 16pnβ+M\\sqrt{2pn}. $$ This removes the $\\log n$ factor from the previous bound and matches the lower bound of Bousquet, Klochkov, and Zhivotovskiy up to universal constants in the range covered by their construction. Our proof first establishes the required estimate on the Rademacher cube, then transfers it to arbitrary product distributions by a two-copy randomization argument.",
+      "authors": [
+        "Thanh Nguyen-Cung",
+        "Binh T. Nguyen"
+      ],
+      "published": "2026-08-10T17:25:27Z",
+      "updated": "2026-08-10T17:25:27Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09870v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09870v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09881v1",
+      "title": "Rooted Gibbs-DLR Measures in Planar Directed Polymers",
+      "abstract": "We study rooted Gibbs-DLR measures in the directed polymer model on $\\mathbb{Z}^2$ with an ergodic disorder distribution which satisfies an additional mild hypothesis. We prove that the set of extremal rooted Gibbs-DLR measures is closed and totally ordered, characterize extremality in terms of path coalescence, and show that each fully supported extremal rooted Gibbs measure canonically generates a globally consistent and coalescing family of extremal rooted Gibbs measures indexed by all lattice sites. These families are, moreover, totally ordered. Building on this structure, we prove strong existence and strong uniqueness of the associated Busemann process, together with an $L^1$ continuity theorem for the shift-covariant Busemann cocycles which is joint in the inverse temperature, the tilt parameter, and the random environment. This yields, as a corollary, in-probability continuity of the generated extremal Gibbs measures corresponding to directions of differentiability under bounded i.i.d. perturbations of the weights. In positive temperature, it shows in-probability convergence of the generated extremal Gibbs measures. At zero temperature, it also yields quenched subsequential large deviation principles for the corresponding positive-temperature rooted Gibbs-DLR measures on path space. The rate functions are determined by a zero-temperature Busemann cocycle and vanish precisely on the infinite geodesics generated by that cocycle.",
+      "authors": [
+        "Christopher Janjigian",
+        "Firas Rassoul-Agha",
+        "Timo Seppäläinen"
+      ],
+      "published": "2026-08-10T17:33:42Z",
+      "updated": "2026-08-10T17:33:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09881v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09881v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.09906v1",
+      "title": "On the $β=2$ Partition function for Dirichlet $L$-functions in the $q$-aspect",
+      "abstract": "We study the $β=2$ partition function $\\int_{|h| \\leq \\log^θ(q)/2}|L(1/2+ih,χ)|^2dh$ for typical Dirichlet characters modulo a large prime $q$ and $θ\\in (-1/2,0]$ motivated by a $q$-analogue of the Saksman--Webb conjectures. When $θ<0$, we use Harper's randomisation argument to introduce explicit conditioning to recover moment upper bounds consistent with critical normalisation predicted there. As an application, we prove that for $q(1-o(1))$ Dirichlet characters modulo $q$, $\\max_{|h| \\leq 1/2}|L(1/2+ih,χ)|\\ll \\frac{\\log(q)}{(\\log\\log(q))^{3/4+o(1)}}$, establishing an upper bound matching the predictions of the $q$-analogue of the Fyodorov--Hiary--Keating conjectures up to second order.",
+      "authors": [
+        "Christopher Atherfold"
+      ],
+      "published": "2026-08-10T17:52:05Z",
+      "updated": "2026-08-10T17:52:05Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.09906v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.09906v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }
