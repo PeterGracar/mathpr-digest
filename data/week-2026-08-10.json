@@ -6,11 +6,62 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-11",
-  "total_submissions": 21,
-  "fetched": 21,
-  "generated_at": "2026-08-11T03:54:55Z",
+  "data_through": "2026-08-12",
+  "total_submissions": 47,
+  "fetched": 47,
+  "generated_at": "2026-08-12T04:17:36Z",
   "entries": [
+    {
+      "id": "2608.11198v1",
+      "title": "(Non-)coincidence of critical parameters for Poisson Zoos and Loop Soup Percolation on $\\mathbb{Z^d}$, $d > 4$, and $\\mathbb{T}_d$,$ d \\ge 3$",
+      "abstract": "In this article we investigate the (non)-coincidence of critical parameters for various related percolation problems. More precisely, for the random walk loop soup we show that on $\\mathbb Z^d$, $d\\ge 5$, the critical parameters for the percolation problems differ on the discrete graph and the respective metric graph. Moreover, on trees we deduce an analogous statement as well as the coincidence of the critical parameters for percolation and susceptibility for a more general class of percolation problems, the so-called Poisson zoo. Along the way we develop the useful notion of sensitivity to Bernoulli enhancements of such percolation problems with long range correlations, which builds on previously developed enhancement ideas.",
+      "authors": [
+        "Volker Betz",
+        "Alexander Drewitz",
+        "Andreas Klippel",
+        "Christian Mönch"
+      ],
+      "published": "2026-08-11T17:56:09Z",
+      "updated": "2026-08-11T17:56:09Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11198v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11198v1",
+      "score": 6,
+      "matched_keywords": [
+        "percolation",
+        "random walk"
+      ],
+      "coauthors": [
+        "Alexander Drewitz",
+        "Christian Monch"
+      ],
+      "bucket": "coauthor"
+    },
+    {
+      "id": "2608.10190v1",
+      "title": "Peripheral Traps and Lower Bounds on Mixing Times for Random Walks on Sparse Heavy-Tailed Random Intersection Graphs",
+      "abstract": "This paper analyzes mixing time lower bounds for random walks on sparse, heavy-tailed Random Intersection Graphs. In sparse feature regimes, heavy-tailed feature distributions lead to the formation of peripheral traps---chains of overlapping low-weight feature cliques attached to high-weight hub nodes within the graph's giant component. By modeling escape trajectories from these traps as continuous-limit hitting times for reflected Brownian motion, the analysis demonstrates that random walks experience logarithmic squared delays. Consequently, the mixing time is bounded below by $Ω(\\log^2 n)$, and the local total variation distance exhibits non-concentrated decay. This local obstruction prevents a sharp cutoff phenomenon from these initial states, conditionally implying the absence of a global cutoff if the global mixing time is of the same logarithmic squared order.",
+      "authors": [
+        "Vyacheslav Koval"
+      ],
+      "published": "2026-08-10T20:08:55Z",
+      "updated": "2026-08-10T20:08:55Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10190v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10190v1",
+      "score": 5,
+      "matched_keywords": [
+        "giant component"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
     {
       "id": "2608.09465v1",
       "title": "Balancing fractional Brownian motion",
@@ -28,6 +79,79 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.09465v1",
       "pdf_url": "https://arxiv.org/pdf/2608.09465v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.10184v1",
+      "title": "The sharp SAT/UNSAT phase transition in random ellipsoid fitting",
+      "abstract": "Let $x_1,\\ldots,x_n$ be independent standard Gaussian vectors in $\\mathbb{R}^d$. An \\emph{ellipsoid fit} is a matrix $S \\succeq 0$ such that $x_i^\\top S x_i =d$ for every $i$, so that all the points lie on the boundary of the centered ellipsoid $\\{ x : x^\\top S x = d\\}$. Saunderson, Parrilo and Willsky conjectured that, as $n,d \\to \\infty$, this semidefinite feasibility problem undergoes a sharp transition at $n \\sim d^2/4$. We prove this conjecture. If $\\lim \\sup n/d^2 = α^* <1/4$, then, with probability tending to one, an ellipsoid fit exists; moreover, one can choose $S$ with all eigenvalues in a fixed interval $[λ_- , λ_+] \\subset (0,\\infty)$ depending only on $α^*$. Conversely, if $\\lim \\inf n/d^2 > 1/4$, then, with probability tending to one, no ellipsoid fit exists, without any spectral restriction. Our proof builds on the Gaussian-equivalence framework developed by Bandeira and Maillard (2025) and closes the two gaps left open in their work: establishing exact fitting and removing the operator-norm constraint. On the satisfiable side, the new ingredients are a head-tail decomposition of the dual vector, exact correction of the sparse head constraints, and a Gaussian comparison principle for the low-influence tail. On the unsatisfiable side, we split a candidate into a low-rank spectral head and a Schatten-3 diffuse bulk, Gaussianize the bulk conditionally on the head, and apply a projected Gordon escape argument. The threshold is governed by the statistical dimension $d(d+1)/4$ of the positive semidefinite cone.",
+      "authors": [
+        "Theodor Misiakiewicz",
+        "Garrett G. Wen"
+      ],
+      "published": "2026-08-10T19:55:11Z",
+      "updated": "2026-08-10T19:55:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn",
+        "cs.DS",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10184v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10184v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.10992v1",
+      "title": "Sharpness of the avalanche phase transition in the Bak--Sneppen model",
+      "abstract": "We prove sharpness of the avalanche phase transition in the one-dimensional Bak--Sneppen model, for both the one-sided and isotropic update rules. In the one-sided model, the avalanche range is described by a nonlinear self-interacting jump process whose tails satisfy a triangular system. An extremal inequality for decreasing probability masses yields a polynomial lower bound on the range tail at the susceptibility threshold; this bound forces the appearance of infinite avalanches immediately above criticality and hence identifies the susceptibility and infinite-avalanche thresholds. A comparison of avalanche endpoints transfers this equality to the isotropic model. In both models, no infinite avalanche occurs at criticality, while the range has exponential moments at every strictly subcritical level. Combined with the range--duration and stationary-limit results of Meester and Znamenski, this identifies all three avalanche critical thresholds and proves the conjectured stationary product limit in both models.",
+      "authors": [
+        "Olivier Hénard"
+      ],
+      "published": "2026-08-11T14:45:25Z",
+      "updated": "2026-08-11T14:45:25Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10992v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10992v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.11071v1",
+      "title": "Scaling Laws for Majority-based Opinion Dynamics in the Presence of Stubborn Agents",
+      "abstract": "In a multi-agent system, there are often stubborn followers of specific opinions or beliefs. Motivated by this observation, in this paper, we aim to understand how stubborn agents affect the distribution of opinions in a network where both stubborn and non-stubborn agents interact with each other. To do so, we assume that all agents have an opinion in the set $\\{0,1\\}$ and each non-stubborn agent updates its opinion according to the $2k$\\textit{-choices rule}, where the agent samples $2k$ neighbours (including both stubborn and non-stubborn neighbours) uniformly at random and adopts the majority opinion among the sampled group of neighbours and itself. We assume that a proportion of agents, $γ_i$, are stubborn followers of opinion $i\\in \\{0,1\\}$. It is natural to expect that the steady-state distribution of the opinions in the network will be dominated by the opinion with the larger proportion of stubborn followers. We show that while this is true, the time to reach steady-state depends heavily on the values of the parameters $γ_0$ and $γ_1$. When the individual values of these parameters, as well as their difference, are small, it can take an exponentially long time (in the network size) to reach the steady-state. In sharp contrast, when at least one of the parameters $γ_0$ and $γ_1$ is large, the network reaches the steady-state in a time that is only logarithmic in the network size. Hence, there exists a sharp phase transition in the network dynamics based on the proportions of stubborn agents. We also characterise the behaviour of the system when the parameters $γ_0$ and $γ_1$ lie on the boundary of the phase transition. In this boundary region, we show using Stein's method that the dynamics are driven by a diffusion process which takes polynomial time to mix.",
+      "authors": [
+        "Luke Meredith",
+        "Arpan Mukhopadhyay"
+      ],
+      "published": "2026-08-11T15:35:22Z",
+      "updated": "2026-08-11T15:35:22Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.MA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11071v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11071v1",
       "score": 3,
       "matched_keywords": [
         "phase transition"
@@ -193,6 +317,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.09319v1",
       "pdf_url": "https://arxiv.org/pdf/2608.09319v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10040v1",
+      "title": "Online Discrepancy Minimization for Sub-Gaussian Inputs via Regularization and Restriction",
+      "abstract": "We study online discrepancy minimization: vectors $v_1,\\ldots,v_T\\in\\mathbb{R}^n$ arrive sequentially, and each must immediately be assigned a sign $x_t\\in\\{\\pm1\\}$, with the aim of minimizing $\\|\\sum_{t=1}^T x_t v_t\\|_\\infty$. We give a polynomial-time potential-based algorithm combining a regularization of the $\\ell_\\infty$-norm with restriction to an adaptively chosen coordinate set. For i.i.d. inputs with independent, symmetric, centered, unit-variance sub-Gaussian coordinates of sub-Gaussian norm at most $σ$, the algorithm achieves terminal discrepancy $O(σ^8\\sqrt{n})$ with probability at least $1-\\exp(-Ω(σ^3\\sqrt{n}))$. If the coordinates are independently masked by Bernoulli variables with mean $k/n$, where $k\\gtrsim(\\log n)^2$, the bound improves to $O(σ^8\\sqrt{k})$, with failure probability $\\exp(-Ω(σ^3\\sqrt{k}))$. Both guarantees hold for every prescribed finite horizon $T$, with no dependence on $T$. The dense result substantially generalizes a theorem of Bansal and Spencer (2020) for Rademacher inputs and gives an efficient $O(\\sqrt{n})$ bound for Gaussian inputs, as conjectured by Gamarnik et al. (2022). When $T$ is polynomially larger than $n$, this is conditionally close to optimal: under worst-case hardness assumptions for standard approximate lattice problems, Vafa and Vaikuntanathan (2025) showed that no polynomial-time algorithm, even offline, can improve the $\\sqrt{n}$ scale by a fixed polynomial factor in $T/n$.",
+      "authors": [
+        "Nicola Wengiel"
+      ],
+      "published": "2026-08-10T09:24:46Z",
+      "updated": "2026-08-10T09:24:46Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "cs.DM",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10040v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10040v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -483,6 +630,448 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.09906v1",
       "pdf_url": "https://arxiv.org/pdf/2608.09906v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10183v1",
+      "title": "Elephant-Reinforced Galves--Löcherbach Networks",
+      "abstract": "We introduce an infinite-dimensional Galves--Löcherbach system with bounded Elephant-type reinforced synaptic interactions. The reinforcement mechanism modifies the probabilities of excitatory and inhibitory synaptic updates while keeping their amplitudes uniformly bounded. We prove non-explosion by means of a Lyapunov estimate and establish a conditional Wasserstein contraction for the membrane-potential dynamics when the coupled systems share the same reinforcement profile. Finally, we derive the corresponding replica mean-field equation under the Poisson hypothesis.",
+      "authors": [
+        "Ioannis Papageorgiou"
+      ],
+      "published": "2026-08-10T19:54:24Z",
+      "updated": "2026-08-10T19:54:24Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10183v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10183v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10215v1",
+      "title": "The variance of the Pitman--Yor process: a Cifarelli--Regazzini identity and inversion formula",
+      "abstract": "The celebrated Cifarelli--Regazzini identity for the Dirichlet process and its analytic inversion lie at the foundation of an elegant distributional theory for linear functionals of random probability measures, providing, in particular, an explicit formula for the density function of the Dirichlet mean. Nonlinear functionals of the Dirichlet process, by contrast, remain substantially less understood in the literature. In this paper, we develop a transform-and-inversion strategy beyond linear functionals by considering the variance of the Pitman--Yor process, which generalizes the Dirichlet process. We establish a Cifarelli--Regazzini identity for the Pitman--Yor variance, whose direct analytic inversion yields an explicit formula for its density function. The corresponding results for the Dirichlet variance are recovered as a limiting case.",
+      "authors": [
+        "Emanuele Dolera",
+        "Stefano Favaro"
+      ],
+      "published": "2026-08-10T20:36:37Z",
+      "updated": "2026-08-10T20:36:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10215v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10215v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10321v1",
+      "title": "Multi-Credit Calibration via Elastically Stopped Lévy Processes",
+      "abstract": "We calibrate credit default swaps and index tranches with elastically stopped Lévy processes: each firm defaults when the running supremum of a latent, spectrally positive distress process crosses an independent exponential barrier. This yields a Cox construction with totally inaccessible default times, while retaining the interpretability and explicit formulas of a structural approach. Adding a single common compound Poisson jump factor to every firm's latent driver gives a parsimonious multi-credit model with simultaneous defaults, which is priced by an exact Wiener--Hopf Monte Carlo scheme. Its tractability rests on a single-name result we prove: a finite partial-fraction formula for the Laplace transform of the default probability under phase-type jumps. On daily CDX North American High-Yield and Investment-Grade panels, our drivers attain the lowest out-of-sample errors in a six-model field and reproduce the inverted spread curves of names heading into default, which a Lévy subordinator provably does not. At the index level, the two-parameter dependence structure closes $73\\%$ to $89\\%$ of the tranche pricing gap left by independent marginals with the dependence parameters frozen, and up to $95\\%$ once re-marked to tranche quotes; our framework dominates a single-factor Gaussian copula and the affine intensity benchmark of Duffie--Gârleanu on both indices.",
+      "authors": [
+        "Graeme Baker",
+        "Agostino Capponi"
+      ],
+      "published": "2026-08-10T23:45:32Z",
+      "updated": "2026-08-10T23:45:32Z",
+      "primary_category": "q-fin.MF",
+      "categories": [
+        "q-fin.MF",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10321v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10321v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10415v1",
+      "title": "Continuous random variables",
+      "abstract": "This is an introduction to probability, written with a quantum idea in mind, namely that the semicircle law comes first. We first discuss discrete probability, notably with the binomial and hypergeometric laws, positive and negative, and the Poisson and compound Poisson laws. Then we get into the continuous case, with the basics of the theory explained, and with as starting examples the exponential, semicircle and beta distributions. Afterwards, we investigate the central limits and normal variables, both real and complex, and with a look at Rayleigh laws, and hyperspherical laws too. Finally, we discuss a number of more specialized distributions, and more specialized techniques too, and we end with an introduction to random matrices and freeness.",
+      "authors": [
+        "Teo Banica"
+      ],
+      "published": "2026-08-11T03:03:54Z",
+      "updated": "2026-08-11T03:03:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.QA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10415v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10415v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10491v1",
+      "title": "Opinion Dynamics with Memory Loss and Communication Delays",
+      "abstract": "We propose a novel framework for modeling binary opinions (0 or 1) of individuals connected through a weighted directed network, where edge weights quantify interpersonal influence. Unlike classical models that assume complete access to previously expressed opinions, our framework allows individuals to update their biases using structured memory sets that capture limited and delayed information exchange. To analyze these opinion differences, we introduce a mathematically tractable notion of relative bias between pairs of individuals. The relative biases evolve according to a linear update rule involving past expressed opinions specified by the memory sets. We define the belief of an individual as the probability of expressing opinion 1 and derive a time-delayed dynamical system governing the evolution of network beliefs. We establish its asymptotic behavior and characterize its properties. The framework is further extended to networks containing bots, which maintain fixed biases while influencing neighboring individuals. We quantify the effect of bots by comparing the fixed points of the dynamics in their presence and absence. Finally, simulations illustrate the influence of memory, network structure, and bot interactions on the resulting opinion dynamics.",
+      "authors": [
+        "Somya Singh",
+        "Sharayu Moharir",
+        "Neeraja Sahasrabudhe"
+      ],
+      "published": "2026-08-11T05:04:42Z",
+      "updated": "2026-08-11T05:04:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10491v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10491v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10515v1",
+      "title": "Limiting Law of Local Fields for the Mean Field Ghatak-Sherrington Model",
+      "abstract": "We study the limiting law of local field in the mean field Ghatak-Sherrington model with spin values $\\{0,\\pm1,\\ldots,\\pm S\\}$ in the high-temperature regime. Using the cavity method and the quantitative overlap and self-overlap estimates of Sheng-Wu~\\cite{SW24}, we prove a central limit theorem for the non-centered cavity field. As a result, we then identify the local field limiting law as a random finite mixture of Gaussian distributions. The proof is based on moment method and gives a quantitative error bound.",
+      "authors": [
+        "Yunhui Chen",
+        "Keaton Fierro"
+      ],
+      "published": "2026-08-11T05:39:48Z",
+      "updated": "2026-08-11T05:39:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10515v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10536v1",
+      "title": "Anomalous current fluctuations in the stochastic XNOR hopping model",
+      "abstract": "We consider fluctuations of the spin current in the stochastic XNOR process, a kinetically constrained hopping model in one spatial dimension. We formulate three conjectures with explicit amplitudes for the long-time current distributions: a Gaussian limit on the $t^{1/4}$ scale for homogeneous initial states with nonzero magnetization, a half-normal limit on the $t^{1/4}$ scale for domain-wall states with opposite magnetizations, and an M-Wright limit on the $t^{1/8}$ scale for homogeneous initial states at zero magnetization. Earlier work identified the tracer mechanism and anticipated the scaling exponents and limiting shapes in the domain-wall and zero-magnetization settings. Starting from the microscopic XNOR dynamics, we predict the missing amplitudes for the continuous-time process and extend the picture to homogeneous biased initial data. Simulations provide numerical support for all three conjectures without fitted parameters. A separate mathematical companion paper presents an extensively AI-generated candidate proof. Generative-AI tools were used in the research and writing workflow.",
+      "authors": [
+        "Balázs Pozsgay"
+      ],
+      "published": "2026-08-11T06:16:37Z",
+      "updated": "2026-08-11T06:16:37Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math.PR",
+        "nlin.SI"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10536v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10536v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10654v1",
+      "title": "Fixed forests in the minimum spanning tree and cubic volume growth",
+      "abstract": "Let $M_n$ be the minimum spanning tree of the complete graph $K_n$ with i.i.d.\\ uniform edge weights. For a fixed forest $F$ with connected components $T_1, \\ldots, T_d$, we show that there exists a function $Ψ$ on finite trees such that $$ n^{|E(F)|} \\mathbb{P}_n(F \\subseteq M_n) \\longrightarrow \\prod_{i=1}^d Ψ(T_i). $$ We give a recursive description of $Ψ$ and calculate it explicitly for several small trees. For the star $S_k$ and the path $P_k$, we prove that $Ψ(S_k) \\sim ζ(2)^k$ and $Ψ(P_k) \\sim k^2/12$, respectively. We also show that the expected size of a ball of radius $r$ is asymptotic to $r^3/36$, and give exponential tail bounds.",
+      "authors": [
+        "Luca Makowiec"
+      ],
+      "published": "2026-08-11T08:38:20Z",
+      "updated": "2026-08-11T08:38:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10654v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10654v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10853v1",
+      "title": "Moment comparisons, Sudakov inequalities and entropy of centroid bodies",
+      "abstract": "Let $X$ be an isotropic log-concave random vector in $\\mathbb{R}^n$ and let $G$ be standard Gaussian. Starting from the first moment comparison for gauges, we derive corresponding estimates at arbitrary moment orders. For every gauge $φ$ and every $q\\geqslant 1$, $$ \\|φ(G)\\|_q\\leqslant C\\sqrt{\\ln(en)+q}\\,\\|φ(X)\\|_q,\\qquad \\|φ(X)\\|_q\\leqslant C\\left(\\sqrt{\\ln(en)}+ψ(X)\\sqrt q\\right)\\|φ(G)\\|_q. $$ Applied to support functions, this gives the sharp worst case order $C\\sqrt{\\ln(en)}$ for the $L_2$-Sudakov constant and quantitative $L_p$-Sudakov estimates. Combining, at each level of Latala's dyadic chain, the strongest of the three quantitative $L_p$-Sudakov estimates used here yields $$ \\left(\\mathbb{E}\\|Y\\|^p\\right)^{1/p}\\leqslant C\\left(n^{1/4}\\sqrt{\\ln(en)}\\,\\ln(e+\\ln(en))\\,\\mathbb{E}\\|X\\|+σ_p(Y)\\right) $$ whenever the weak moments of $Y$ are dominated by those of $X$. In a second direction, we study the generalized dual Sudakov problem for the self generated metrics associated with $Z_r(X)^\\circ$ and prove dimension free packing estimates for $Z_p(X)$. We also obtain mean norm estimates for centroid bodies, factorization through arbitrary symmetric convex bodies and an affine dimensional refinement.",
+      "authors": [
+        "Antonios Hmadi",
+        "Dimitris-Marios Liakopoulos"
+      ],
+      "published": "2026-08-11T12:25:33Z",
+      "updated": "2026-08-11T12:25:33Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10853v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10853v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10876v1",
+      "title": "Reflection Coupling and Quantitative Contraction for Underdamped Langevin Diffusions with Superlinear Forces",
+      "abstract": "Underdamped Langevin diffusions are widely used for sampling and kinetic models, but quantitative convergence is difficult when the force is only locally Lipschitz and grows faster than linearly. The noise acts only on velocity, while standard reflection-coupling estimates rely on global Lipschitz bounds. We develop a localized reflection--synchronous coupling for this setting. The construction combines a hypocoercive Lyapunov function with a weighted concave distance, so that local coupling errors are absorbed by global drift. Because the active reflection region can intersect the singular set of the reflection direction, we regularize the coupling and pass to a weak limit while preserving the correct marginals. This yields an explicit exponential contraction of the Markov semigroup in a tailored Kantorovich distance for a restricted class of superlinear forces. Consequently, the Gibbs measure is unique within the corresponding finite-cost class, and the dynamics converge to equilibrium exponentially. The result extends quantitative pathwise contraction beyond globally Lipschitz forces and provides computable stability estimates for nonlinear kinetic samplers.",
+      "authors": [
+        "Shan Huang",
+        "Xiaoyue Li"
+      ],
+      "published": "2026-08-11T12:53:11Z",
+      "updated": "2026-08-11T12:53:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10876v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10876v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10883v1",
+      "title": "Two Moments for Risk-Monotone Additive Statistics",
+      "abstract": "Every statistic on laws with finite pth moment that is additive across independent risks and monotone in mean-preserving spreads depends only on an additive function of the mean when p is strictly less than 2, and only on such a function and a nonnegative multiple of the variance when p is no less than 2.",
+      "authors": [
+        "Mark Whitmeyer"
+      ],
+      "published": "2026-08-11T13:02:01Z",
+      "updated": "2026-08-11T13:02:01Z",
+      "primary_category": "econ.TH",
+      "categories": [
+        "econ.TH",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10883v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10883v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10936v1",
+      "title": "Threshold Structure of Optimal Policies in Restart POMDPs",
+      "abstract": "We study a Restart POMDP (Partially Observable Markov Decision Process) on a general Borel state space, where the controller either lets the hidden state evolve unobserved or restarts the system and observes the new state. Exploiting a sufficient-statistic representation consisting of the last observed state and the elapsed time since restart, we reduce the problem to a fully observed MDP. Under a natural one-step cost deterioration condition, we prove that optimal policies have a threshold structure in the elapsed time for both the discounted and total undiscounted cost criteria. When the state space is partially ordered and the kernel is stochastically monotone, we further show that the optimal threshold is nonincreasing in the state. For the average cost criterion, under additional assumptions of geometric ergodicity and domination of the transient gain, we establish analogous threshold results via the vanishing discount approach, after showing the uniform boundedness of the optimal thresholds and relative value functions.",
+      "authors": [
+        "Konstantin Avrachenkov",
+        "Alexey Piunovskiy",
+        "Yi Zhang"
+      ],
+      "published": "2026-08-11T14:03:29Z",
+      "updated": "2026-08-11T14:03:29Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10936v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10936v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.10944v1",
+      "title": "Central limit theory for serial tail dependence estimators in heavy-tailed long memory linear time series",
+      "abstract": "We prove multiple central limit theorems for serial tail dependence estimators in heavy-tailed long memory linear time series. The main theoretical tools are two novel multivariate reduction principles for partial sums of heavy-tailed long memory linear time series, subordinated over sliding windows and above a threshold growing with sample size. This requires addressing several substantial difficulties, including handling a nonlinear, sample-size dependent, and multivariate subordination mechanism, the dependence between several overlapping linear processes, and the lack of higher-order moments of the marginal distribution. Despite these obstacles, our assumptions are mild and, in particular, the innovation process is allowed to have infinite variance. A key feature of our theory is that our second reduction principle holds uniformly in the threshold, allowing central limit theory for empirical extremograms with sample quantiles as thresholds. This question has received little attention in the literature on serial extremal dependence estimation even though the version of empirical extremograms with random thresholds is ubiquitous in practice. We compare our results in several respects with those that may be obtained under short-range dependence, thereby discovering markedly different convergence rates and limit laws in our long memory setting.",
+      "authors": [
+        "Ioan Scheffel",
+        "Marco Oesting",
+        "Gilles Stupfler"
+      ],
+      "published": "2026-08-11T14:16:06Z",
+      "updated": "2026-08-11T14:16:06Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.10944v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.10944v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11016v1",
+      "title": "Gromov-Wasserstein Quantization and Clustering: Structure, Rates, and Algorithms",
+      "abstract": "Clustering is a fundamental class of data analysis techniques with the most important representatives being centroid-based methods like $k$-means. Such methods are strongly connected to quantization problems, which aim to approximate general probability measures with discrete ones. For example, $k$-means corresponds to quantization with respect to the Wasserstein distance. While Wasserstein quantization clusters points within a fixed space, this paper studies Gromov-Wasserstein (GW) quantization, which additionally aims at clustering the ambient geometry of the space. We show existence of solutions to the GW quantization problem and give a characterization that justifies an analogue to the $k$-means algorithm (Lloyd's algorithm) to approximate them numerically. We further calculate the quantization rate for usual Euclidean geometries that are used in the GW context, and relate it to standard Wasserstein quantization rates. Finally, numerical experiments show that GW quantization opens up many modeling possibilities beyond normal clustering methods (e.g., for geodesic distances of 3D shapes or structured pruning of neural networks) and that the introduced algorithm leads to useful numerical solutions with approximation quality often in line with theoretically optimal rates.",
+      "authors": [
+        "Florian Beier",
+        "Stephan Eckstein"
+      ],
+      "published": "2026-08-11T14:58:31Z",
+      "updated": "2026-08-11T14:58:31Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "cs.CG",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11016v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11016v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11031v1",
+      "title": "A Bayesian Proof of the Bernoulli Theorem",
+      "abstract": "We give a new proof of the Bernoulli theorem, conjectured by Talagrand and proved in the seminal work of Bednorz and Latała. Our approach is based on information-theoretic ideas: lower bounds on the supremum of a Bernoulli process are translated to the fundamental limits of Bayesian estimation in a Cauchy additive channel. This leads to a new information-theoretic functional that characterizes Bernoulli-process suprema and plays a role analogous to Fernique's majorizing-measure functional for Gaussian processes. The same viewpoint yields a distributional strengthening: for any prescribed law of the index, we characterize the largest expected value attainable over all couplings of that index with the Bernoulli process. This extends to Bernoulli processes a phenomenon previously understood for Gaussian processes through the work of Fernique and Talagrand.",
+      "authors": [
+        "Jingbo Liu",
+        "Ilias Zadik"
+      ],
+      "published": "2026-08-11T15:09:54Z",
+      "updated": "2026-08-11T15:09:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11031v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11031v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11059v1",
+      "title": "Entropy Production and Reversibility Criteria for Stochastic Evolution Equations",
+      "abstract": "This paper develops a path-space theory of entropy production for a class of stochastic evolution equations on infinite-dimensional Hilbert spaces. Since such spaces have no canonical Lebesgue reference measure, the usual finite-dimensional density formulas do not extend directly. We instead work relative to the invariant Gaussian measure of a reversible Ornstein--Uhlenbeck reference process. Combining an infinite-dimensional Girsanov transform, time reversal of the reference process, and the stationary Fokker--Planck equation relative to the Gaussian measure, we derive an explicit entropy-production formula in terms of an irreversibility field. On the natural test class, this field represents the difference between the forward and reversed nonlinear drifts. Under the standing assumptions, vanishing entropy production is equivalent to vanishing stationary probability current, self-adjointness of the generator in the invariant Hilbert space, detailed balance, and invariance of the stationary path law under time reversal. The reversible case is therefore characterized by a Gaussian-reference gradient structure for the nonlinear drift.",
+      "authors": [
+        "Jinqiao Duan",
+        "Ao Zhang",
+        "Johannes Zimmer"
+      ],
+      "published": "2026-08-11T15:25:27Z",
+      "updated": "2026-08-11T15:25:27Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11059v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11059v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11084v1",
+      "title": "Sharp Frobenius-Norm Concentration for Sample Moment Tensors",
+      "abstract": "This paper establishes sharp dimension-free Frobenius-norm concentration inequalities for sample moment tensors. Our bounds are optimal over the sub-Gaussian class, while for Gaussian data we obtain matching two-sided estimates. We also identify a parity effect: the intermediate Gaussian and sub-Gaussian scales coincide at odd tensor orders but differ at even orders. Our second main result, which supplies the weak-moment estimate behind these bounds, proves a dimension-free moment bound for Hilbert-valued polynomials under Gaussian convex domination. The proof of this bound combines a recently developed structured martingale coupling theorem with new estimates for moment tensors of uniformly log-concave distributions.",
+      "authors": [
+        "Jiaheng Chen",
+        "Daniel Sanz-Alonso"
+      ],
+      "published": "2026-08-11T15:53:09Z",
+      "updated": "2026-08-11T15:53:09Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11084v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11084v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11106v1",
+      "title": "The Renormalization Group as a Stochastic Exploration Process",
+      "abstract": "The Renormalization Group (RG) is a powerful and versatile framework for analyzing complex physical systems. Here, we reinterpret it as a stochastic process that explores physical phase spaces, scale by scale, progressively revealing finer details of small-scale structures. This perspective establishes a natural connection to other random exploration processes, such as the Schramm-Loewner evolution, and is more suited for a probabilist audience. It links RG concepts such as RG transformations, effective actions, etc, to usual probabilistic tools such as conditional expectation values, martingales, etc, but also makes contact with stochastic quantization.",
+      "authors": [
+        "Denis Bernard"
+      ],
+      "published": "2026-08-11T16:15:23Z",
+      "updated": "2026-08-11T16:15:23Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.stat-mech",
+        "hep-th",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11106v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11106v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11178v1",
+      "title": "A submartingale for the probability of avoiding the origin in one-point interaction ground-state diffusion: $d \\in \\{2,3\\}$",
+      "abstract": "We study the near-origin behavior on $[0,T]$ of the singular diffusion whose transition density is given by a Doob transform of the integral kernel of the semigroup generated by the $d$-dimensional Schrödinger operator $L^γ$ with a one-point potential at the origin, where the driving family is the ground state of $L^γ$ and $d\\in\\{2,3\\}$. We construct a submartingale whose increasing component grows only at times when the diffusion visits the origin. Using this submartingale, we show that the diffusion hits the origin with positive probability and that, conditionally on hitting the origin by time $T$, the first hitting time has a truncated generalized inverse Gaussian (GIG) distribution. We further study the dynamics under conditioning to avoid the origin: under the conditional law, the diffusion is not a standard Brownian motion, but instead admits a representation in terms of a regularized drift and a continuous martingale. While these properties are known in dimension two, the present submartingale-based approach provides an alternative verification and treats dimensions two and three in a unified manner.",
+      "authors": [
+        "Barkat Mian"
+      ],
+      "published": "2026-08-11T17:37:20Z",
+      "updated": "2026-08-11T17:37:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11178v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11178v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.11183v1",
+      "title": "A reformulation of the discrete Convexity Conjecture via $k$-thresholds",
+      "abstract": "We introduce the notion of \"$k$-thresholds'' and show that Talagrand's discrete convexity conjecture is equivalent to the assertion that, for some universal integer $k \\ge 2$, the $k$-threshold of every increasing family is at most a universal constant times its expectation threshold. We prove a reduction theorem that bounds the $k$-threshold of any increasing graph property in terms of ordinary thresholds of graphs in suitable decompositions of its members. As a consequence, we determine, up to a constant factor, the $k$-threshold of every fixed graph in terms of a natural $k$-density parameter. We also prove that $k=2$ suffices for several classical spanning graph containment properties. More generally, we establish the conjectured comparison between $k$-thresholds and expectation thresholds for broad classes of graph containment properties whose target graphs have low degeneracy.",
+      "authors": [
+        "Ruben Ascoli",
+        "Xiaoyu He",
+        "Jinyoung Park",
+        "Michel Talagrand"
+      ],
+      "published": "2026-08-11T17:43:45Z",
+      "updated": "2026-08-11T17:43:45Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.11183v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.11183v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
