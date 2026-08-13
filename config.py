@@ -34,6 +34,7 @@ COAUTHORS = [
     "Markus Heydenreich",
     "Marilyn Korfhage",
     "Peter Morters",        # Mörters
+    "Benjamin Lees",
 ]
 
 # --- Relevance keywords ----------------------------------------------------
