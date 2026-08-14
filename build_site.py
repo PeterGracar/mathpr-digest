@@ -191,19 +191,31 @@ function fmtRange(w){
 function fmtDay(d){ return d? new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : ''; }
 const inProgress = w => w.complete===false;
 
+// Author names carry diacritics ('Mönch') while config.COAUTHORS is ASCII
+// ('Monch'), so fold both before comparing — mirrors norm() in generate_digest.py.
+const fold = s => (s||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+// Same first+last rule as score_entry(), so the bolding can't disagree with the
+// coauthor list the generator produced.
+function isCoauthor(a, ca){
+  const p=fold(ca).split(/\s+/), f=fold(a);
+  return f.includes(p[0]) && f.includes(p[p.length-1]);
+}
+// Banner names: prefer the paper's own spelling ('Mönch') over the ASCII config
+// entry, falling back to the config name when no author matched.
+const coauthorNames = e => (e.coauthors||[]).map(ca=>(e.authors||[]).find(a=>isCoauthor(a,ca))||ca);
+
 function authorsHTML(e){
-  const set=new Set((e.coauthors||[]).map(c=>c.toLowerCase()));
-  return e.authors.map(a=>{
-    const isCo=[...set].some(c=>{const p=c.split(' ');return a.toLowerCase().includes(p[p.length-1].replace(/[^a-z]/g,''));});
-    return isCo? '<strong class="co">'+esc(a)+'</strong>' : esc(a);
-  }).join(', ');
+  const cos=e.coauthors||[];
+  return e.authors.map(a=>
+    cos.some(ca=>isCoauthor(a,ca))? '<strong class="co">'+esc(a)+'</strong>' : esc(a)
+  ).join(', ');
 }
 
 function entryCard(e){
   const card=el('article','entry b-'+e.bucket);
   const cats=e.categories.map(c=>'<span class="cat'+(c===e.primary_category?' prim':'')+'">'+esc(c)+'</span>').join('');
   const kws=(e.matched_keywords||[]).slice(0,8).map(k=>'<span class="kw">'+esc(k)+'</span>').join('');
-  const co=(e.coauthors&&e.coauthors.length)?'<div class="cobanner">★ Coauthor: '+e.coauthors.map(esc).join(', ')+'</div>':'';
+  const co=(e.coauthors&&e.coauthors.length)?'<div class="cobanner">★ Coauthor: '+coauthorNames(e).map(esc).join(', ')+'</div>':'';
   card.innerHTML =
     co+
     '<h3><a href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.title)+'</a></h3>'+
