@@ -5,6 +5,12 @@
 OWNER = "Peter Gracar"
 PROFILE_URL = "https://gracar.org"
 
+# Where the site header's "back" link goes. Defaults to the domain root; point
+# it at the (unlisted) page on gracar.org that links to this digest once that
+# page has a stable URL — only these two constants need to change.
+BACK_URL = PROFILE_URL
+BACK_LABEL = "gracar.org"
+
 # arXiv category to track
 CATEGORY = "math.PR"
 

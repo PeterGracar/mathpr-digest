@@ -39,6 +39,11 @@ its `data/week-YYYY-MM-DD.json` and re-run.
 
 ## Viewing the site
 
+The header carries a **"← Back to gracar.org"** link. It points at
+`config.BACK_URL` (label `config.BACK_LABEL`), which defaults to the domain
+root — set both to the unlisted page on gracar.org that links to this digest if
+you'd rather land back there.
+
 The sidebar groups weeks under **collapsible year headers**; only the current
 year is expanded by default, so the selector stays compact as years accumulate
 (one collapsed line per past year). Click a year to expand/collapse it.

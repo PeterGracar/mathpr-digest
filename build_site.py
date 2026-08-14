@@ -77,6 +77,8 @@ def build(weeks=None):
     index = {
         "owner": config.OWNER,
         "profile_url": config.PROFILE_URL,
+        "back_url": config.BACK_URL,
+        "back_label": config.BACK_LABEL,
         "category": config.CATEGORY,
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "coauthors": config.COAUTHORS,
@@ -136,6 +138,7 @@ window.MathJax = {
 <body>
 <header>
   <div class="wrap">
+    <a class="back" id="backLink" href="#"></a>
     <h1>math.PR weekly digest</h1>
     <p class="sub">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
        curated for <a id="ownerLink" href="#" target="_blank" rel="noopener"></a>'s research interests
@@ -554,6 +557,9 @@ function onSearchInput(raw){
 
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
+  // Back to wherever this digest is linked from (config.BACK_URL); same tab.
+  const bk=$('#backLink'); bk.href=D.back_url||D.profile_url;
+  bk.textContent='← Back to '+(D.back_label||'gracar.org');
   $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
     ' · '+D.weeks.length+' week(s) archived';
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
@@ -579,6 +585,8 @@ a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 header{background:linear-gradient(180deg,#191d26,#12151c);border-bottom:1px solid var(--line);padding:26px 0 20px}
+header .back{display:inline-block;margin:0 0 10px;color:var(--mut);font-size:12.5px}
+header .back:hover{color:var(--accent);text-decoration:none}
 header h1{margin:0 0 6px;font-size:25px;letter-spacing:.2px}
 header .sub{margin:0;color:var(--mut);max-width:820px}
 .layout{display:grid;grid-template-columns:300px 1fr;gap:26px;padding-top:24px;padding-bottom:60px;align-items:start}
