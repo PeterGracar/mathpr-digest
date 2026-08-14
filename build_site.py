@@ -229,11 +229,14 @@ function entryCard(e){
 
 // Single source of truth for what "matches" the search term, shared by the main
 // panel, the per-week sidebar counts, and the combined view. `t` MUST already be
-// trimmed + lowercased by the caller.
+// folded by the caller (use lc()), so 'monch' finds 'Mönch' and vice versa.
+// The folded haystack is cached per entry — it is rebuilt on every keystroke
+// across every in-scope week otherwise, and normalize() over whole abstracts is
+// the expensive part.
 function entryMatches(e, t){
-  return (e.title+' '+e.authors.join(' ')+' '+
-          (e.matched_keywords||[]).join(' ')+' '+e.abstract)
-         .toLowerCase().includes(t);
+  if(e._hay===undefined) e._hay=fold(e.title+' '+e.authors.join(' ')+' '+
+                                     (e.matched_keywords||[]).join(' ')+' '+e.abstract);
+  return e._hay.includes(t);
 }
 
 // Wire up the collapsible "Everything else" bucket. When it starts hidden we tag
@@ -261,7 +264,7 @@ function renderWeek(w, term){
       '. This digest updates automatically on each run until the week closes.</div>':'');
   main.appendChild(head);
 
-  const t=(term||'').trim().toLowerCase();
+  const t=lc(term);
   let shown=0;
   for(const b of BUCKETS){
     let items=w.entries.filter(e=>e.bucket===b.key);
@@ -294,7 +297,7 @@ let searchTimer=null;                     // debounce timer for cross-week searc
 let searchScope='recent';                 // cross-week search window: 'recent'|'all'
 const WINDOW_MONTHS=12;                    // size of the 'recent' window
 const yearOf = w => w.monday.slice(0,4);
-const lc = s => (s||'').trim().toLowerCase();
+const lc = s => fold(s).trim();           // normalise a search term (folds accents)
 
 // Cross-week search is windowed so the download and combined render stay bounded
 // as the archive grows: by default only weeks within the last WINDOW_MONTHS are
