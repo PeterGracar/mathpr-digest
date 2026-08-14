@@ -39,10 +39,31 @@ its `data/week-YYYY-MM-DD.json` and re-run.
 
 ## Viewing the site
 
-The header carries a **"← Back to gracar.org"** link. It points at
-`config.BACK_URL` (label `config.BACK_LABEL`), which defaults to the domain
-root — set both to the unlisted page on gracar.org that links to this digest if
-you'd rather land back there.
+The header carries a **"← Back to gracar.org"** link. Its target is, in order of
+preference:
+
+1. a `?from=` parameter on the incoming link — `…/mathpr-digest/?from=secret.html`
+   sends you back to `https://gracar.org/secret.html`;
+2. the referrer, when the browser passes a full path (see below);
+3. `config.BACK_URL` (label `config.BACK_LABEL`), which defaults to the domain root.
+
+Only URLs on the `BACK_URL` host (or a subdomain) are accepted, so a hand-crafted
+`?from=` can't repoint the link off-site. The resolved target is kept in
+`sessionStorage` so a reload doesn't lose it, and `?from=` is stripped from the
+address bar so the referring path isn't carried along if the digest URL is shared.
+
+**Linking from a page on gracar.org.** Browsers now trim cross-site referrers to
+the bare origin by default, so a plain link lands you back at `gracar.org`, not at
+the page you came from. To return to that exact page, use either form on the
+linking page:
+
+```html
+<a href="https://<user>.github.io/mathpr-digest/?from=secret.html">math.PR digest</a>
+<a href="https://<user>.github.io/mathpr-digest/" referrerpolicy="unsafe-url">math.PR digest</a>
+```
+
+The `?from=` form is the reliable one; `referrerpolicy` depends on the browser
+honouring it and is suppressed entirely by some privacy settings.
 
 The sidebar groups weeks under **collapsible year headers**; only the current
 year is expanded by default, so the selector stays compact as years accumulate

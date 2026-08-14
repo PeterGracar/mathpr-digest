@@ -555,10 +555,37 @@ function onSearchInput(raw){
   searchTimer=setTimeout(()=>selectAll(raw), 200);
 }
 
+// Where the header's back link points. Prefers the page the visitor actually
+// arrived from — an explicit ?from= on the incoming link, else the referrer
+// (which only carries a path when the linking page sets referrerpolicy; browsers
+// otherwise trim cross-site referrers to the bare origin) — and falls back to
+// config.BACK_URL. Candidates must live on the BACK_URL host, so a hand-crafted
+// ?from= can't repoint the link off-site. Remembered for the session so a reload
+// keeps it, and ?from= is stripped from the address bar so the referring path
+// isn't carried along if the digest URL gets shared.
+function backTarget(){
+  const home=D.back_url||D.profile_url||'https://gracar.org';
+  let host; try{ host=new URL(home).host; }catch(e){ return home; }
+  const same=u=>{
+    if(!u) return '';
+    try{ const p=new URL(u,home);
+      return /^https?:$/.test(p.protocol)&&(p.host===host||p.host.endsWith('.'+host))? p.href : ''; }
+    catch(e){ return ''; }
+  };
+  const store=(v)=>{ try{ return v==null? sessionStorage.getItem('backTo')
+    : (sessionStorage.setItem('backTo',v),v); }catch(e){ return v||''; } };
+  const q=new URLSearchParams(location.search).get('from');
+  const from=same(q)||same(document.referrer);
+  if(q!==null) try{                       // some browsers refuse this on file://
+    const u=new URL(location.href); u.searchParams.delete('from');
+    history.replaceState(null,'',u.pathname+u.search+u.hash);
+  }catch(e){}
+  return from? store(from) : (store()||home);
+}
+
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
-  // Back to wherever this digest is linked from (config.BACK_URL); same tab.
-  const bk=$('#backLink'); bk.href=D.back_url||D.profile_url;
+  const bk=$('#backLink'); bk.href=backTarget();
   bk.textContent='← Back to '+(D.back_label||'gracar.org');
   $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
     ' · '+D.weeks.length+' week(s) archived';
