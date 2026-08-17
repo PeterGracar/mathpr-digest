@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 33,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
-  "data_through": "2026-08-14",
-  "total_submissions": 102,
-  "fetched": 102,
-  "generated_at": "2026-08-14T10:23:03Z",
+  "data_through": "2026-08-16",
+  "total_submissions": 122,
+  "fetched": 122,
+  "generated_at": "2026-08-17T03:13:15Z",
   "entries": [
     {
       "id": "2608.12954v1",
@@ -127,20 +127,20 @@
       "bucket": "high"
     },
     {
-      "id": "2608.10190v1",
+      "id": "2608.10190v2",
       "title": "Peripheral Traps and Lower Bounds on Mixing Times for Random Walks on Sparse Heavy-Tailed Random Intersection Graphs",
-      "abstract": "This paper analyzes mixing time lower bounds for random walks on sparse, heavy-tailed Random Intersection Graphs. In sparse feature regimes, heavy-tailed feature distributions lead to the formation of peripheral traps---chains of overlapping low-weight feature cliques attached to high-weight hub nodes within the graph's giant component. By modeling escape trajectories from these traps as continuous-limit hitting times for reflected Brownian motion, the analysis demonstrates that random walks experience logarithmic squared delays. Consequently, the mixing time is bounded below by $Ω(\\log^2 n)$, and the local total variation distance exhibits non-concentrated decay. This local obstruction prevents a sharp cutoff phenomenon from these initial states, conditionally implying the absence of a global cutoff if the global mixing time is of the same logarithmic squared order.",
+      "abstract": "This paper analyzes mixing time lower bounds for random walks on sparse, heavy-tailed Random Intersection Graphs. In sparse feature regimes, heavy-tailed feature distributions lead to the formation of peripheral trap -- chains of overlapping low-weight feature cliques attached to high-weight hub nodes within the graph's giant component. By modeling escape trajectories from these traps as continuous limit hitting times for reflected Brownian motion, the analysis demonstrates that random walks experience logarithmic squared delays. Consequently, the mixing time is bounded below by $Ω(\\log^2 n)$, and the local total variation distance exhibits non-concentrated decay, formally preventing a sharp cutoff phenomenon.",
       "authors": [
         "Vyacheslav Koval"
       ],
       "published": "2026-08-10T20:08:55Z",
-      "updated": "2026-08-10T20:08:55Z",
+      "updated": "2026-08-14T12:10:51Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.10190v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.10190v1",
+      "abs_url": "https://arxiv.org/abs/2608.10190v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.10190v2",
       "score": 5,
       "matched_keywords": [
         "giant component"
@@ -289,6 +289,32 @@
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.14450v1",
+      "title": "Converse bounds for multiple graph alignment and correlation detection based on last matching",
+      "abstract": "The paper focuses on information theoretic converse bounds for the alignment of $m$ correlated graphs and for the detection of correlation among $m$ graphs. A simple idea for $m\\geq 3$ is that if the alignment of $m-1$ of the graphs is revealed as extra information (by a genie for example) then it is still necessary to produce the alignment between the one remaining graph and the others, i.e. the last matching must be accomplished. For both Gaussian and Erdos-Renyi models, the last-matching problem is equivalent to one with two observed graphs, providing a path to extend converse bounds for $m=2$ to larger $m$. While the method is rather obvious for alignment, we show that the method can also be used to derive converse bounds for weak detection of correlation.",
+      "authors": [
+        "Taha Ameen",
+        "Bruce Hajek"
+      ],
+      "published": "2026-08-14T16:35:24Z",
+      "updated": "2026-08-14T16:35:24Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14450v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14450v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -465,24 +491,24 @@
       "bucket": "medium"
     },
     {
-      "id": "2608.13154v1",
+      "id": "2608.13154v2",
       "title": "Extreme principal minors of Wishart and deformed GOE matrices",
       "abstract": "We study the laws of large numbers for the largest eigenvalues among all principal minors of Wishart matrices and deformed GOE matrices. We propose a new method based on identifying the deterministic sets to which the random sets formed by suitably normalized principal minors converge in Hausdorff distance, thereby reducing the original extreme-value problems to finite-dimensional convex optimization problems. We demonstrate the effectiveness of this method in regimes not covered by the existing second-moment arguments in \\cite{cai2021asymptotic,hu2023extreme}. For deformed GOE matrices with fixed minor size \\(k\\), we determine the limit for every diagonal variance \\(a>0\\) and identify a phase transition at \\(a=2\\). Above the transition, the limiting constant satisfies an explicit recursion with no close-form expression, and the optimizers exhibit a nested hierarchical structure, thereby resolving the case left open in \\cite{cai2021asymptotic}. For Wishart matrices with general sub-Gaussian entries and fixed \\(k\\), we characterize the limit through an entropy-constrained deterministic convex set. When the entries are standard Gaussian, we solve the resulting optimization problem explicitly and obtain the exact value of the limiting constant.",
       "authors": [
-        "Zhanrui Dong",
+        "Zhaorui Dong",
         "Tiefeng Jiang",
         "Tuan Pham",
         "Jianfeng Yao"
       ],
       "published": "2026-08-13T12:22:37Z",
-      "updated": "2026-08-13T12:22:37Z",
+      "updated": "2026-08-14T06:24:44Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
         "math.ST"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.13154v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.13154v1",
+      "abs_url": "https://arxiv.org/abs/2608.13154v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.13154v2",
       "score": 3,
       "matched_keywords": [
         "phase transition"
@@ -543,8 +569,8 @@
       "bucket": "other"
     },
     {
-      "id": "2608.13361v1",
-      "title": "Aging in a spin glass with a logarithmic potential",
+      "id": "2608.13361v2",
+      "title": "Aging in a spin glass with logarithmic correlations",
       "abstract": "We consider a continuous-time random walk on the discrete two dimensional box, driven by the discrete Gaussian Free Field (DGFF) acting as potential: When at a vertex, the walk waits an exponentially distributed time with mean given by the exponential of the field times an inverse temperature parameter and then jumps to one of its neighbors uniformly at random. We prove that when the temperature is below the critical value the walk exhibits ``aging'' at a range of pre-equilibrium time scales: Observed at any such time and then again after an additional time of the same order, there is a positive probability that the walk is found within finite distance from where it was before, with this probability given asymptotically by the Generalized Arcsine Law with a temperature-dependent parameter. We show that this is a consequence of an intricate trapping mechanism which localizes the walk for periods of time which increase with the age of the system, and describe the complex structure of the underlying trapping landscape, which is intimately related to the geometry of the near-extreme level-sets of the DGFF. Altogether, this work demonstrates for the first time an Arcsine-Law aging in the case of a spin-glass-type system with a logarithmically correlated potential, throughout its glassy phase, as predicted in the physic literature.",
       "authors": [
         "Aser Cortines",
@@ -553,16 +579,40 @@
         "Adela Svejda"
       ],
       "published": "2026-08-13T15:24:45Z",
-      "updated": "2026-08-13T15:24:45Z",
+      "updated": "2026-08-14T14:40:17Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.13361v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.13361v1",
+      "abs_url": "https://arxiv.org/abs/2608.13361v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.13361v2",
       "score": 2,
       "matched_keywords": [
         "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14342v1",
+      "title": "A Deterministic Proof of the Slicing Theorem",
+      "abstract": "We give a deterministic proof of Bourgain's slicing theorem. The proof uses neither stochastic localization nor stochastic calculus, does not rely on Guan's covariance bound, and avoids $M$-ellipsoids, Pisier's regularization machinery, and complex interpolation. Instead, the argument is based on a deterministic one-parameter quadratic perturbation of the measure, a covariance-survival principle, and a geometric analysis of $L_p$-centroid bodies.",
+      "authors": [
+        "Silouanos Brazitikos"
+      ],
+      "published": "2026-08-14T14:31:39Z",
+      "updated": "2026-08-14T14:31:39Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14342v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14342v1",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -2068,6 +2118,26 @@
       "bucket": "other"
     },
     {
+      "id": "2608.13631v1",
+      "title": "The classical discrete laws near the mode: complete local expansions for the negative binomial and hypergeometric distributions",
+      "abstract": "We derive complete local asymptotic expansions near the mode for the negative binomial and hypergeometric laws, complementing the binomial expansion obtained in the companion papers. The coefficients are given in closed Bernoulli-polynomial form and retain the exact lattice displacement from the mean. For each law an entropy normalisation replaces the Bernoulli polynomials by reciprocal Bernoulli polynomials and makes the natural reflection symmetry visible. The first-order coefficient also recovers the exact mode rule: in the Katz cases the vertex gives the classical threshold exactly, while in the hypergeometric case its explicit discrepancy is always too small to change the selected integer mode.",
+      "authors": [
+        "Neven Elezović"
+      ],
+      "published": "2026-08-13T10:41:13Z",
+      "updated": "2026-08-13T10:41:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13631v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13631v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2608.13131v1",
       "title": "Huber-Wasserstein barycenters for robust distribution-valued data",
       "abstract": "We propose a robust barycenter for distribution-valued data by incorporating the Huber loss directly into the optimal transport cost. In contrast to metric-space Huber means, which apply the Huber loss to the Wasserstein distance after optimization, our construction acts on individual transport displacements, preserving quadratic behavior locally while limiting the influence of large displacements. The resulting Huber-Wasserstein barycenters form a natural interpolation between Wasserstein means and $L^1$-type Wasserstein medians. We establish the analytical and statistical foundations of this construction. For optimal transport with Huber loss, we prove regularity and uniqueness properties of dual potentials, existence of optimal transport maps, and stability as the Huber parameter varies. For the associated barycenter problem, we prove existence and characterization results, consistency of empirical plug-in estimators, and a finite-sample breakdown point essentially equal to $1/2$. In dimension one, we further derive the pointwise influence function and asymptotic distribution, quantify the associated robustness-efficiency trade-off, and show that displacement-wise Huberization can retain first-order information that is lost by distance-based Huberization under localized shape contamination. Numerical experiments on contaminated distribution-valued data demonstrate the robustness of the proposed barycenters and illustrate their interpolation between mean- and median-like behavior.",
@@ -2161,8 +2231,8 @@
     },
     {
       "id": "2608.13358v1",
-      "title": "Extreme points of sets of probability measures and φ-divergences",
-      "abstract": "In this work, we prove several equivalent characterizations of the extreme points of convex sets of probability measures of the form $\\mathcal{M}=\\mathcal{P} \\cap H$, where $\\mathcal{P}$ denotes the set of all probability measures on an arbitrary measurable space $(Ω,\\mathcal{F})$ and $H$ is an affine set of signed measures on $(Ω,\\mathcal{F})$ with finite variation. We first give a precise measure-theoretic formulation of the heuristic that extreme measures have minimal support. We then connect this with the notion of minimality with respect to absolute continuity, and prove that points that dominate no other element of $\\mathcal{M}$ are the only ones realizing the blow-up of a certain divergence map for any suitable φ-divergence. Finally, considering a different class of φ-divergences, we recover a characterization of the extreme points of $\\mathcal{M}$ as strict local maximizers of φ-divergences relative to any suitable dominating measures. We apply our result to recover and complement results from the literature in the context of finite spaces, sets of measures defined by integral constraints, multi-marginal couplings, and dominated sets of probability measures.",
+      "title": "Extreme points of sets of probability measures and $\\varphi$-divergences",
+      "abstract": "In this work, we prove several equivalent characterizations of the extreme points of convex sets of probability measures of the form $\\mathcal{M}=\\mathcal{P} \\cap H$, where $\\mathcal{P}$ denotes the set of all probability measures on an arbitrary measurable space $(Ω,\\mathcal{F})$ and $H$ is an affine set of signed measures on $(Ω,\\mathcal{F})$ with finite variation. We first give a precise measure-theoretic formulation of the heuristic that extreme measures have minimal support. We then connect this with the notion of minimality with respect to absolute continuity, and prove that points that dominate no other element of $\\mathcal{M}$ are the only ones realizing the blow-up of a certain divergence map for any suitable $φ$-divergence. Finally, considering a different class of $φ$-divergences, we recover a characterization of the extreme points of $\\mathcal{M}$ as strict local maximizers of $φ$-divergences relative to any suitable dominating measures. We apply our result to recover and complement results from the literature in the context of finite spaces, sets of measures defined by integral constraints, multi-marginal couplings, and dominated sets of probability measures.",
       "authors": [
         "Gerrit Bauch",
         "Max Nendel",
@@ -2329,6 +2399,388 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.13559v1",
       "pdf_url": "https://arxiv.org/pdf/2608.13559v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13677v1",
+      "title": "Asymptotically complete free-energy dissipation: a coarse MLSI holds at any positive temperature",
+      "abstract": "Everybody learns in school that an out-of-equilibrium system coupled to a heat bath at a fixed temperature evolves to thermodynamic equilibrium as time goes on, and the free energy will only decrease on its way there. At least since Holley's 1971 work, mathematicians know this too, in the modest context of classical Ising Glauber dynamics. But does the free energy also asymptotically decrease to the free energy of an equilibrium state? A typical school kid would say \"yes, of course\", but since the free energy is only lower semicontinuous, this question is less straightforward than it initially seems. To the best of our knowledge, apart from the uniqueness regime, where one can make use of classical functional inequalities, this question has not previously been resolved rigorously. We prove the asymptotically complete dissipation of the free energy for the classical Ising Glauber dynamics by introducing a coarse modified log-Sobolev inequality, which holds at every positive temperature, in particular in the phase-coexistence regime.",
+      "authors": [
+        "Jonas Köppl",
+        "Yannic Steenbeck"
+      ],
+      "published": "2026-08-13T18:21:57Z",
+      "updated": "2026-08-13T18:21:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13677v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13677v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13687v1",
+      "title": "Multiplicative chaos from random multiplicative functions",
+      "abstract": "We construct the multiplicative chaos measures emerging from the Dirichlet series of the twisted Steinhaus multiplicative function. Our work has three main features. First, our argument treats the full subcritical and critical phases simultaneously. Second, we show that the same multiplicative chaos measure arises from any approximation to the Dirichlet series in which the prime cutoff is sent to infinity and the critical line is approached from the right at arbitrary speeds. Such results are known as \"universality\" results, and we show this via a novel and quick partial summation trick. Third, we show that the multiplicative chaos measure is mutually absolutely continuous with a GMC measure in the same phase, coupled on the same probability space, almost surely. Our work unifies and extends results from a recent breakthrough trilogy of papers by Gorodetsky and Wong.",
+      "authors": [
+        "Haoran Hu",
+        "Yujin H. Kim",
+        "Xaver Kriechbaum"
+      ],
+      "published": "2026-08-13T18:33:47Z",
+      "updated": "2026-08-13T18:33:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13687v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13687v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13716v1",
+      "title": "Graph Causal Optimal Transport and Wasserstein Distances",
+      "abstract": "We study the graph causal optimal transport problem, a generalisation of the classical optimal transport problem in which the allowed couplings satisfy causal restrictions prescribed by a directed graph. We characterise fully the directed acyclic graphs for which the associated graph causal Wasserstein discrepancy is a metric and show that the induced topology agrees with other natural adapted topologies. We characterise the gluing properties of graph causal couplings, prove denseness of Monge couplings, and obtain a dynamic programming principle which allows us to deduce when the graph causal Wasserstein and the adapted Wasserstein distances are equal. Our results link fundamental properties of graph causal optimal transport to structural properties of its underlying graph. Complementing Cheridito and Eckstein (2025), who first introduced such distances and established Lipschitz continuity for the average treatment effect in structural causal models, we obtain Lipschitz continuity of the value function in stochastic team problems.",
+      "authors": [
+        "Jan Obłój",
+        "Vlad Tuchilus"
+      ],
+      "published": "2026-08-13T19:22:16Z",
+      "updated": "2026-08-13T19:22:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OC",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13716v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13716v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13727v1",
+      "title": "Hitting-time mixing for the star transposition shuffle",
+      "abstract": "We prove a hitting-time analogue of cutoff for the star transposition shuffle on the symmetric group S_n. Let tau be the first time at which every non-top card has been selected. We show that the shuffle is asymptotically mixed at time tau: more precisely, the total variation distance between the law of Y_tau and the uniform distribution on S_n is at most exp(-(log n)^(1/2+o(1))). Our proof compares the star transposition shuffle with the random transposition shuffle using simultaneous diagonalization of the two transition kernels, and then adapts the hitting-time strategy of Jain and Sawhney. This introduces a technique that can be applied to card shuffles that are not necessarily conjugacy invariant.",
+      "authors": [
+        "Vanshika Jain",
+        "Evita Nestoridi"
+      ],
+      "published": "2026-08-13T19:41:38Z",
+      "updated": "2026-08-13T19:41:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13727v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13727v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13732v1",
+      "title": "On the First Hitting Time Problems for Diffusion Processes: Local Time-Space Approach",
+      "abstract": "Using the local time-space calculus of Peskir (2005) and the method developed in Mijatovic (2010), we derive a new integral representation for the distribution of the first-passage time (FPT) of a diffusion process through a time-dependent barrier. We present a complete three-step numerical algorithm: first, the problem is reduced to a Volterra-type integral equation; second, its kernel is approximated by a Markov chain; finally, the resulting equation is solved using a quadrature method. The method is implemented for several representative examples, and its convergence properties are established. An extension to double barrier problems is carried out.",
+      "authors": [
+        "Jerome Detemple",
+        "Yerkin Kitapbayev",
+        "Danila Shabalin"
+      ],
+      "published": "2026-08-13T19:51:24Z",
+      "updated": "2026-08-13T19:51:24Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-fin.CP",
+        "q-fin.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13732v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13732v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13782v1",
+      "title": "The Sharp Dimension Bound in the Johnson--Lindenstrauss Lemma",
+      "abstract": "The Johnson--Lindenstrauss lemma asserts that every set of $n$ points in $d$-dimensional Euclidean space embeds into $O(\\varepsilon^{-2}\\log n)$-dimensional Euclidean space with distortion at most $1+\\varepsilon$. Larsen and Nelson conjectured that the optimal target dimension throughout the full range of the parameters $n,d, \\varepsilon$ is \\[ Θ\\left(\\min\\left\\{d,n-1,\\frac{\\log(2+\\varepsilon^2n)}{\\varepsilon^2}\\right\\}\\right). \\] We resolve this conjecture in the affirmative. In fact, we prove the stronger statement that the upper bound is attained by a linear map. The matching lower bound, due to Larsen--Nelson and Alon--Klartag, holds even for nonlinear embeddings.",
+      "authors": [
+        "Vishesh Jain"
+      ],
+      "published": "2026-08-13T21:21:35Z",
+      "updated": "2026-08-13T21:21:35Z",
+      "primary_category": "cs.CG",
+      "categories": [
+        "cs.CG",
+        "cs.DS",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13782v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13782v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.13976v1",
+      "title": "Boundary Harnack principle for diffusion with jumps on metric measure spaces",
+      "abstract": "A non-scale invariant BHP on any open set is obtained for a large class of discontinuous Hunt processes on metric measure spaces that are in weak duality with another Hunt process under suitable conditions in terms of estimates of exit distributions from open sets, and bounds on Green functions and the comparability of the jump density function. These conditions are easy to verify in concrete cases. Several examples are given to illustrate the main results and the new contributions of this paper. Our result in particular establishes the BHP on any open set for any Hunt process associated with a regular symmetric Dirichlet form on a metric measure space having both the strongly local term and the pure-jump term that admits a two-sided heat kernel estimates of the mixture of (sub-)Gaussian and stable-like form, as well as for a wide class of non-symmetric diffusion processes with jumps on $\\mathbb R^d.$",
+      "authors": [
+        "Zhen-Qing Chen",
+        "Jie-Ming Wang"
+      ],
+      "published": "2026-08-14T05:36:30Z",
+      "updated": "2026-08-14T05:36:30Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.13976v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.13976v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14069v1",
+      "title": "Energy decomposition by potential level",
+      "abstract": "In the first part we study excessive functions for a Markov process that are continuous semimartingales along the sample paths. The property then follows from the theory of local times of semimartingales. We next treat the case of Dirichlet spaces and show that, if u is a quasi-continuous version of a function u belonging to a regular Dirichlet space, then the image under u of the local energy measure of u is absolutely continuous with respect to Lebesgue measure. Finally, in a third part, we establish the occupation-time density property for certain Dirichlet processes.",
+      "authors": [
+        "Nicolas Bouleau"
+      ],
+      "published": "2026-08-14T08:26:38Z",
+      "updated": "2026-08-14T08:26:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14069v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14069v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14143v1",
+      "title": "Mod-phi convergence for random variables with cyclotomic generating functions",
+      "abstract": "We consider a sequence of discrete random variables whose generating functions are polynomials only having roots on the unit circle in the complex plane. For such sequences we prove, under mild assumptions, mod-$φ$ convergence with explicit rate and limiting function. This allows us to recover, in a unified way, classical central limit theorems as well as finer asymptotic expansions. The general theory is applied to random permutations and random partitions.",
+      "authors": [
+        "Christoph Thäle",
+        "Philipp Tuchel"
+      ],
+      "published": "2026-08-14T09:49:36Z",
+      "updated": "2026-08-14T09:49:36Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14143v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14143v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14155v1",
+      "title": "Max-semistable extremal behavior of AR(1)-processes connected with Bernoulli convolutions",
+      "abstract": "We consider simple autoregressive processes of type AR(1), whose stationary distribution is supported on a subset of the unit interval and is an affine transformation of a Bernoulli convolution. A new structural representation of the stationary distribution as a product of a power function with a log-periodic function near the origin is given, which gives structural insight to the stationary distribution on the whole unit interval by using a characteristic functional equation. This enables to prove that the stationary distribution of the AR(1)-process belongs to the domain of geometric partial attraction of a max-semistable law. We further prove uniform convergence of the distribution function of normalized maxima of the AR(1)-process to a certain power of the max-semistable law in the spirit of a merge theorem and point out connections to deterministic and random dynamical systems.",
+      "authors": [
+        "Peter Kern",
+        "Alef Sterk"
+      ],
+      "published": "2026-08-14T10:07:31Z",
+      "updated": "2026-08-14T10:07:31Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14155v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14155v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14218v1",
+      "title": "Exact moduli of continuity for the local times of Feller Brownian motions",
+      "abstract": "We examine the modulus of continuity, in the spatial variable, of the local time process of Feller Brownian motion (FBM) on the half-line $[0,\\infty)$. Briefly, a FBM is a strong Markov process on $[0,\\infty)$ that moves like standard Brownian motion on $[0,\\infty)$ up until it first encounters the state $0$. The process returns to $(0,\\infty)$, either continuously (like reflecting Brownian motion) or by jumping to a (random) positive state chosen according to a specified measure. The present work is a continuation and application of our earlier work with Michael Marcus on the moduli of continuity for the local times of a Markov process built by piecing together (``rebirthing\") the paths of another Markov process with finite lifetime. We first establish a general result on the resolvent and local times for a rebirthed process with a special holding state (the state $0$ for FBM). We show how our earlier approach using the Eisenbaum Isomorphism Theorem on an assemblage of excursions works out in this context. This knowledge is then used as an approximation device to obtain our main result on the exact uniform moduli of continuity for the local time of FBM on a spatial interval of the form $(0,1]$. Extensions are made, under certain conditions, to the more delicate situation of the spatial interval $[0,1]$. We also consider briefly the case of more general diffusions on $[0,\\infty)$.",
+      "authors": [
+        "P. J. Fitzsimmons",
+        "Jay Rosen"
+      ],
+      "published": "2026-08-14T11:49:02Z",
+      "updated": "2026-08-14T11:49:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14218v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14218v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14232v1",
+      "title": "Ollivier--Ricci Curvature on Groups of Polynomial Growth",
+      "abstract": "We study Ollivier--Ricci curvature on Cayley graphs of groups of polynomial growth. Our main result shows that non-negative Ollivier--Ricci curvature forces the group to be virtually abelian. As an application, we prove that connected vertex-transitive graphs of polynomial growth and non-negative Ollivier--Ricci curvature are quasi-isometric to $\\mathbb{Z}^k$, for some $k\\in\\mathbb{N}$.",
+      "authors": [
+        "Camillo Brena",
+        "Elia Bruè"
+      ],
+      "published": "2026-08-14T12:06:08Z",
+      "updated": "2026-08-14T12:06:08Z",
+      "primary_category": "math.DG",
+      "categories": [
+        "math.DG",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14232v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14232v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14324v1",
+      "title": "Analytic inverse problems with finitely many random measurements",
+      "abstract": "While infinite-dimensional inverse problems are traditionally analyzed assuming continuous data, practical applications rely on finitely many discrete measurements. Recent deterministic approaches establish that unknowns belonging to a $d$-dimensional model class can be stably recovered from finitely many measurements. However, for severely ill-posed problems, such as the Calderón problem and inverse scattering, the known constructions may require a number of measurements that is exponential in $d$. We show that random sampling reduces this count dramatically if one asks only for exact identifiability. By exploiting the analytic geometry of the forward maps, we prove that, whenever the infinite-data problem is injective on the model class, $2d+1$ random scalar measurements determine the unknown uniquely, almost surely. Applications are given to the Calderón problem, with both infinite- and finite-dimensional boundary sampling, and to inverse medium scattering from randomly sampled far-field values.",
+      "authors": [
+        "Giovanni S. Alberti",
+        "Damiano Poletti",
+        "Simone Sanna",
+        "Matteo Santacesaria"
+      ],
+      "published": "2026-08-14T14:11:39Z",
+      "updated": "2026-08-14T14:11:39Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14324v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14324v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14369v1",
+      "title": "Non-Shattering at and Above the Dynamical Temperature in the Spherical Pure p-Spin Model",
+      "abstract": "We consider the notion of shattering introduced by Ben Arous and Jagannath for spherical pure $p$-spin glasses with overlap $q$. For every $p\\geq 3$ and $0<β\\leqβ_{\\mathrm{sh}}(p)$, we rule out shattering whenever $q\\leq2^{-1/2}$ or $q>\\sqrt{(p-2)/(p-1)}$. The proof combines a deterministic $N+1$ bound for disjoint bands in the first range with a general-$p$ sign law showing that their total marked weight has subdominant free energy in the second. A spherical-code bound and Hölder's inequality give an additional $q$-dependent obstruction; in particular, they rule out every fixed overlap for $0<β\\leq\\sqrt{\\log2}$. For $p=3$, the first two ranges already exhaust every fixed $q\\in(0,1)$, so the landscape is not shattered at any $T\\geq T_{\\mathrm{sh}}$. For $p\\geq4$, the cases not covered by our criteria are confined to $2^{-1/2}<q\\leq\\sqrt{(p-2)/(p-1)}$ and $\\sqrt{\\log2}<β\\leqβ_{\\mathrm{sh}}(p)$. In particular, this paper partially resolves Conjecture 1 of the paper above and also suggests new methods to show non-shattering.",
+      "authors": [
+        "Taegyun Kim"
+      ],
+      "published": "2026-08-14T15:10:33Z",
+      "updated": "2026-08-14T15:10:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn",
+        "cs.LG",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14369v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14369v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14475v1",
+      "title": "Finite Gaussian Reconstruction of Polynomial Orbits: From Correlated Moments to Oscillatory Periods",
+      "abstract": "Let $P$ be a real polynomial of degree at most $m$ on $\\mathbb{R}^d$, and let $X$ be standard Gaussian. Because Gaussian observations are invariant under $O(d)$, the natural inverse problem is to recover the orthogonal orbit of $P$; the law of $P(X)$ alone is generally insufficient. We prove that a prescribed finite family of mixed moments of correlated Gaussian replicas, $$ M_{P,r}(Σ)=\\mathbb{E}\\prod_{a=1}^r P(X_a), $$ separates $O(d)$-orbits. We construct an explicit replica cutoff and rational covariance grids satisfying $$ \\frac{1}{2}I_r\\preceqΣ\\preceq\\frac{3}{2}I_r. $$ Finite differences recover all complete Wick contractions needed by invariant theory, giving an exact finite decoder. The resulting probe map is bi-H\"older equivalent to orbit distance on coefficient balls, with an effective exponent. We then identify the same certificate in an irregular period system. Replicated characteristic functions are polynomial oscillatory periods, and their mixed derivatives at zero are the moments above. If the leading homogeneous part of $P$ has an isolated critical point, the active-replica face indexed by $I$ has twisted de Rham rank $(m-1)^{d|I|}$; zero coupling is therefore a rank-changing boundary. The forced scaling $$ τ_a=ρ^{m-2}λ_a,\\qquad x_a=ρ^{-1}u_a $$ produces compatible Rees--Jacobi lattices and, under central nonresonance, a canonical rank-one Gaussian branch. On admissible tame Morse chambers, the period matrix factors into algebraic Jacobi, sectorial thimble, and integral Betti components. Projecting the assembled real-contour period onto the Gaussian branch recovers exactly the finite orbit certificate.",
+      "authors": [
+        "Obayda Julien Assaad"
+      ],
+      "published": "2026-08-14T16:54:20Z",
+      "updated": "2026-08-14T16:54:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AC",
+        "math.AG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14475v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14475v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14478v1",
+      "title": "The Fisher Metric of the Ricci Flow Heat Kernel",
+      "abstract": "We introduce and study a Fisher information metric \\(g^F_τ\\) associated to the conjugate heat kernel of a Ricci flow \\((M^n,g_t)\\). This tensor measures, at a fixed scale, how the pointed heat-kernel measure changes when the base point is moved. We prove that \\(g^F_τ\\) is monotone in scale and satisfies \\(g^F_τ\\le g_t\\). We relate its trace to the pointed Nash entropy and prove a matrix square identity for the Fisher defect \\(g_t-g^F_τ.\\) This identity gives a rigidity theorem for the equality case; on closed connected flows one has the strict inequalities \\(0<g^F_τ<g_t\\) at every positive scale, while in the complete case equality forces a Euclidean splitting. We also develop several consequences of this point of view. These include a sharp reverse Poincaré inequality for the heat semigroup, a contraction formula for \\(\\varphi\\)-divergences along conjugate heat flow, and a canonical construction of heat-kernel splitting maps from large eigenvalues of the Fisher endomorphism. As applications, we relate pointed Nash entropy close to \\(0\\) to small Fisher deficit at comparable scales, and we obtain a codimension-one Fisher-metric criterion for applying Bamler's \\(\\varepsilon\\)-regularity theorem.",
+      "authors": [
+        "Bennett Chow",
+        "Robert Koirala"
+      ],
+      "published": "2026-08-14T16:55:03Z",
+      "updated": "2026-08-14T16:55:03Z",
+      "primary_category": "math.DG",
+      "categories": [
+        "math.DG",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14478v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14478v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14526v1",
+      "title": "Gradient Gibbs measures with non-convex potentials and the universality class of the Gaussian Free Field",
+      "abstract": "We study a general class of gradient interface models with Hamiltonian $H=β\\sum V(\\nablaφ)$, $β>0$, assuming essentially that the potential $V$ is even, $V'(s)\\ge αs$ on $[0,\\infty)$ for some $α>0$, and $-M\\leq V''\\le C$. We establish a Helffer-Sjöstrand representation for these models, and use it to prove that their scaling limits are Gaussian Free Fields (GFFs), and that their covariances decay at the same rate as the GFF. This extends results for strictly convex potentials to a large class of non-convex potentials and to arbitrary temperatures. Additionally, we prove Brascamp-Lieb and dimension-free Poincaré inequalities for the models. We obtain these results by representing the interface as a mixture of gradient interface models with strictly convex potentials, extending an idea by Biskup-Spohn who had considered mixtures of Gaussians at moderate inverse temperature $β=1$. The construction of such a representation is one of the key new contributions of this work.",
+      "authors": [
+        "Simon Buchholz",
+        "Codina Cotar",
+        "Florian Schweiger"
+      ],
+      "published": "2026-08-14T17:45:42Z",
+      "updated": "2026-08-14T17:45:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14526v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14526v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
