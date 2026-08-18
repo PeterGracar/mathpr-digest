@@ -6,9 +6,367 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-17",
-  "total_submissions": 0,
-  "fetched": 0,
-  "generated_at": "2026-08-17T03:13:15Z",
-  "entries": []
+  "data_through": "2026-08-18",
+  "total_submissions": 15,
+  "fetched": 15,
+  "generated_at": "2026-08-18T03:08:53Z",
+  "entries": [
+    {
+      "id": "2608.16119v1",
+      "title": "Fully nonlinear parabolic equations under a fixed reference diffusion:weighted $L^2$ Hessian estimates and well-posedness",
+      "abstract": "We develop a fixed-reference weighted $L^2$ theory for terminal-value fully nonlinear parabolic equations. A prescribed uniformly elliptic diffusion starting from a point determines both the linear reference operator and a space--time occupation measure; time weights of order $α$ accommodate the point-start singularity. For the associated linear backward equation, we identify the optimal source-to-intrinsic-Hessian norm $C_w(X)$ and derive bounds on it from a moving-measure Bochner identity. We compute the sharp Brownian benchmark $C_α^{\\mathrm{Br}}=\\sup_{n\\in\\mathbb{N}, n\\geq 2}2\\sqrt{n(n-1)}/(n-1+α)$, prove that it is a universal tangent lower bound, and show that it is attained by regular weights for time-inhomogeneous affine Gaussian diffusions and is the infimum over such weights for normalized state-dependent covariances. Under the standing data and lower-order assumptions, the Hessian estimate yields our main nonlinear result: if the driver's Hessian Lipschitz constant satisfies $C_w(X)L_H<1$, then the equation has a unique weighted Sobolev solution and the Picard iteration on the source converges geometrically, with no smallness condition on the value or gradient channels. For the Brownian model at order $1/2$, counterexamples in dimensions $d\\geq7$ show that this strict threshold cannot be uniformly improved within the occupation-Sobolev class. For weights of order below one, additional spatial regularity and unweighted integrability of the data yield an unweighted spatial jet and a unique solution in the regular fixed-reference Markovian class for second-order backward stochastic differential equations (2BSDEs) defined here.",
+      "authors": [
+        "Jihao Long",
+        "Zhenhua Zhao"
+      ],
+      "published": "2026-08-17T05:22:26Z",
+      "updated": "2026-08-17T05:22:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16119v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16119v1",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.16672v1",
+      "title": "The Bethe-Hessian down to the Percolation Threshold",
+      "abstract": "The Bethe-Hessian is a symmetric matrix for which the negative spectrum has been observed to encode the informative structure of sparse stochastic block models. We prove that, in the stochastic block model where all vertices have expected degree $d>1$, the number of negative eigenvalues of the Bethe-Hessian is exactly the number predicted by the eigenvalues of the planted model lying outside the bulk spectrum. The condition $d>1$ is optimal, and matches a regime in which existing spectral approaches based on larger non-Hermitian matrices apply. Our result extends a theorem of Stephan and Zhu, who established the same conclusion under the assumption $d\\geq 2$. Our improvement relies on two main ideas. First, we construct test vectors on the $2$-core, where degree fluctuations are substantially smaller, and then extend them to the entire graph while controlling the quadratic form. Second, we construct the test vectors using an isotropic basis of the underlying Markov random field, with coefficients adapted to each relevant planted eigenvalue. This allows us to control the fluctuations of the test vectors throughout the sparse regime.",
+      "authors": [
+        "Dingding Dong",
+        "Theo McKenzie"
+      ],
+      "published": "2026-08-17T15:00:27Z",
+      "updated": "2026-08-17T15:00:27Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16672v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16672v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.16701v1",
+      "title": "Order-Sensitive Fast-Synapse Limits in Sparse Excitatory-Inhibitory Threshold-Reset Networks",
+      "abstract": "Componentwise weak convergence of signed synaptic kernels does not, by itself, determine the fast-synapse limit of a sparse threshold-reset network. Within a causal event protocol with clamped refractoriness and smooth positive-delay kernels, we construct two families whose excitatory and inhibitory measures converge weakly to $δ_0$ while their microscopic arrival orders are reversed. A target fires in the excitatory-first family and not in the inhibitory-first family precisely when $x+a-b<θ\\le x+a$. Strict margins preserve this response under perturbations of the target state, aggregate E/I pulse masses, and bounded drift. The macroscopic effect persists on a moderately sparse Dale-compatible random block graph with $q_N\\to\\infty$ and $q_N/N\\to0$. The two systems share their graph and initial data. Along every deterministic joint scale $\\varepsilon_N\\downarrow0$, their population-averaged firing counts differ by $1/2+o_{L^1}(1)$. A bounded-degree construction and a later probe show that the discrepancy is macroscopic and can persist through reset. Fixed positive-delay kernels with finitely many classes admit a stable regime. Before grazing, typewise-mixing sparse networks converge to a delayed class mean-field system. Directed Erdos-Renyi graphs yield the bound $O_P(λ_N^{-1/2}+\\|π_N-π\\|_1)$ when $λ_N\\to\\infty$ and $λ_N/N\\to0$. This separates stable averaging at a fixed delay from singular collapse. In the latter, componentwise weak convergence discards signed arrival-order information needed by the threshold-reset response.",
+      "authors": [
+        "Tonic Song"
+      ],
+      "published": "2026-08-17T15:19:59Z",
+      "updated": "2026-08-17T15:19:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-bio.NC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16701v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16701v1",
+      "score": 4,
+      "matched_keywords": [
+        "erdos",
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.16547v1",
+      "title": "Hyperuniform Delone Realizations and Rigidity",
+      "abstract": "We prove a measurable realization theorem for hyperuniform Delone point processes. In dimensions \\(d\\geq2\\), for every prescribed \\(q\\geq1\\), every essentially free ergodic p.m.p.\\ action of \\(\\mathbb R^d\\) admits, at every sufficiently large prescribed intensity, a generating Delone realization whose return-time point process \\(η\\) is measurably isomorphic to the original action and whose Bartlett spectrum \\(σ_η\\) satisfies \\[ σ_η(B_\\varepsilon)=o(\\varepsilon^{2q}) \\qquad(\\varepsilon\\downarrow0). \\] Thus arbitrarily high finite-order low-frequency suppression can be imposed without changing the prescribed measurable dynamics. The same realizations can be chosen with surface-order ball variance and linear rigidity to any prescribed finite order, while also being maximally rigid and almost surely bounded-displacement equivalent to a lattice. For essentially free Euclidean-motion actions whose translation subaction is ergodic, the construction can be made isotropic and \\(V\\)-ergodic, and hence \\(V\\)-weakly mixing. In dimension one, every essentially free ergodic flow admits generating Delone realizations with logarithmic interval discrepancy, maximal rigidity, and near-quadratic decay of the Bartlett spectrum at the origin.",
+      "authors": [
+        "Michael Björklund"
+      ],
+      "published": "2026-08-17T13:19:07Z",
+      "updated": "2026-08-17T13:19:07Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16547v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16547v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.16664v1",
+      "title": "Random Quadratic Form with random forcing: Metastable synchronization by noise",
+      "abstract": "We study the Random Quadratic Form (RQF) on a sphere in the presence of random Brownian forcing. We show that the forcing does not effectively change the law of the process but affects the synchronization properties of the system. While the RQF without forcing exhibits partial synchronization due to the intrinsic symmetries, the introduction of an arbitrarily small forcing results in long-term symmetry breaking and leads to full synchronization. In this work we focus on the small forcing regime and recover the multiscale behavior of the two-point process. We show that in the first stage the model converges to an anti-polar configuration due to the symmetries of the RQF and in the second stage the two clusters meet due to the symmetry breaking phenomenon. The model is motivated by continuous-time machine learning models such as Neural ODEs and continuous-time formulations of transformers. In particular, the results of this work explain the role of the bias and the scale of its initialization.",
+      "authors": [
+        "Anna Shalova"
+      ],
+      "published": "2026-08-17T14:55:16Z",
+      "updated": "2026-08-17T14:55:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.LG",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16664v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16664v1",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.15987v1",
+      "title": "Threshold cascades of interacting diffusions on unimodular random trees: a conditional branching-process universality theorem, the annealed pressure, and the dimension of the failed boundary",
+      "abstract": "We study systems of coupled Ornstein-Uhlenbeck diffusions with an absorbing failure state on finite graphs that converge locally weakly to a unimodular Galton-Watson tree. A single failure can trigger a cascade of threshold crossings, and the central question is when the cascade is subcritical or supercritical and what the cluster looks like near criticality. Under an explicitly stated front-decoupling hypothesis (the saturated-coupling regime), verified exactly on the Bethe lattice, the failed cluster of the root converges in law to the genealogy of a finite-type Galton-Watson process whose mean matrix M is computed from a single matrix-valued many-to-one formula. Conditional on this reduction we prove that criticality occurs at rho(M) = 1, that the quenched and annealed growth rates are the tangent at 0 and the value at 1 of a single convex real-analytic pressure phi(beta) = log rho(M(beta)), making the quenched/annealed gap a chord-tangent inequality, that on survival the end boundary of the failed cluster has Hausdorff dimension log rho(M), that at criticality P(|S| = n) ~ C n^{-3/2} and the conditioned cluster rescaled by n^{-1/2} converges to Aldous' Continuum Random Tree under a moment hypothesis, and that the subcritical domain is open and contractible but not convex, with the spectral gap 1 - rho(M) giving quantitative stability. Several natural claims in this setting are shown to be false, including the Hilbert-Schmidt/Krein-Rutman operator programme, the scalar many-to-one identity, and the spectral-radius/dimension identity. The reduction itself is proved unconditionally in the dissipative regime kappa < 1, where a pathwise front-tracking argument shows that back-reaction echoes decay geometrically in graph distance and beat the volume growth of the failed cluster; the strong-coupling regime remains open and is stated as a conjecture.",
+      "authors": [
+        "Achyut Kumar"
+      ],
+      "published": "2026-08-17T00:45:04Z",
+      "updated": "2026-08-17T00:45:04Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15987v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15987v1",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16144v1",
+      "title": "Central limit theorem in Rényi divergence for lattice random variables",
+      "abstract": "We establish a central limit theorem in Rényi divergence for independent and identically distributed lattice random variables $X_1, \\cdots, X_n$ with zero mean, unit variance, and maximal span $h>0$. Let $S_n=(X_1+\\cdots+X_n)/\\sqrt n$. Let $Z_n$ denote the standard Gaussian distribution quantized on the support lattice of $S_n$. For every $α>1$, with $β=α/(α-1)$, we prove that the Rényi divergence $D_α(S_n\\|Z_n)\\to 0$ if and only if the divergence is finite at some convolution level and the strict sub-Gaussian condition $$ \\mathbb E e^{tX}<e^{βt^2/2},\\quad t\\in\\mathbb R,~ t\\ne0 $$ holds. Under these conditions, we further derive an Edgeworth-type asymptotic expansion of the divergence to arbitrary order. These results provide a lattice counterpart of the Rényi entropic central limit theorem for continuous random variables due to Bobkov, Chisyakov and Götze (\\emph{Ann. Probab.} \\textbf{47} (2019), 270--323).",
+      "authors": [
+        "Zhen Fu",
+        "Jiange Li"
+      ],
+      "published": "2026-08-17T05:54:18Z",
+      "updated": "2026-08-17T05:54:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16144v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16144v1",
+      "score": 2,
+      "matched_keywords": [
+        "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16752v1",
+      "title": "Absorption Probabilities for Random Convex Hulls: Distribution-Freeness via the Wall-Crossing Method",
+      "abstract": "We consider the probability that the convex hull of the first $n$ partial sums of a $d$-dimensional random walk contains the origin. Under symmetric exchangeability of the increments and a general-position assumption, this absorption probability is distribution-free and admits an explicit formula, previously obtained by Kabluchko, Vysotsky and Zaporozhets [Geom. Funct. Anal. 27 (2017)] using characteristic polynomials of hyperplane arrangements. We give a different proof, based on a wall-crossing method which we develop here. Starting from a deterministic configuration of increments, we count the signed permutations for which the convex hull of the corresponding partial sums contains the origin and show that this count remains unchanged under generic deformations of the increments, and hence is the same for all configurations outside a natural exceptional set of measure zero. Evaluating the invariant at a single well-chosen configuration reduces the remaining calculation to the enumeration of permutation records combined with Wendel's theorem. Our method also reproves Wendel's theorem on convex hulls of random points with a sign-flip-invariant joint distribution and, in dimension one, Sparre Andersen's theorem. Finally, we derive new probabilistic representations and recurrence relations for the absorption probabilities of random-walk convex hulls and their random-bridge analogues.",
+      "authors": [
+        "Zakhar Kabluchko",
+        "Alexander Tarasov"
+      ],
+      "published": "2026-08-17T15:59:41Z",
+      "updated": "2026-08-17T15:59:41Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16752v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16752v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16170v1",
+      "title": "On hitting time distributions of Markov processes with sub-Gaussian heat kernel bounds",
+      "abstract": "In this paper, we study the hitting times of Borel right processes on a metric measure space $(E,d,μ)$ whose heat kernels satisfy sub-Gaussian bounds. It is well known that if $X=(X_t)_{t\\geq 0}$ is diffusion process without killing whose heat kernel satisfies a sub-Gaussian upper bound, then, under the volume growth condition $μ(B(x,r))\\asymp r^α$, it satisfies \\[ \\IP^x[τ_{B(x,r)}\\le t]\\le C_1\\exp\\left\\{-C_2(r^β/t)^{1/(β-1)}\\right\\}, \\] where $B(x,r):=\\{y\\in E: d(y,x)<r\\}$, $τ_{B(x,r)}:=\\inf\\{t>0:X_t\\notin B(x,r)\\}$, and $β$ is the walk dimension appearing in the sub-Gaussian heat kernel estimate. We extend this result to general Borel right processes, showing that under an upper bound condition on the volume growth, \\[ \\IP^x[σ_B\\le t]\\le C_3\\exp \\left\\{-C_4\\left(\\frac{\\widetilde d(x, B)^β}{t}\\right)^{1/(β-1)}\\right\\}, \\] where $B$ is a nearly Borel set, $σ_B$ denotes the first hitting time of $B$, and $\\widetilde d(x,B)$ represents the distance from $x$ to $B$ after removing the influence of polar subsets of $B$. Furthermore, we show that for a Borel right process with a sub-Gaussian heat kernel lower bound, the hitting time distribution satisfies the corresponding lower bound \\[ \\IP^x[σ_B\\le t]\\ge C_5 \\exp\\left\\{-C_6\\cdot \\left(\\frac{\\widetilde d(x,B)^β}{t}\\right)^{1 /(β-1)}\\right\\}. \\] We also characterize the relationship between the constants $C_i$, $3\\leq i\\leq 6$, and the constants appearing in the exponents of the corresponding heat kernel bounds. As an application of these hitting time estimates, we further study the small-time asymptotic behavior of $\\IP^x[σ_B\\leq t]$ as $t\\downarrow 0$.",
+      "authors": [
+        "Liping Li",
+        "Shuwen Lou"
+      ],
+      "published": "2026-08-17T06:42:03Z",
+      "updated": "2026-08-17T06:42:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16170v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16170v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16256v1",
+      "title": "Error Distribution of the Local Linearization Method for Stochastic Differential Equations with Additive Brownian Noise",
+      "abstract": "We prove a functional stable limit theorem for the discretization error process of a local linearization scheme for stochastic differential equations with additive Brownian noise. The scheme includes the conditional mean of the second-order term involving the Brownian increment in the Taylor expansion of the drift. The leading error is then formed by centered quadratic terms in the Brownian increments, and the sharp normalization is \\(n\\sqrt n\\). Under \\(C^3\\)-regularity and a Lyapunov-type condition on the drift, the scaled error process converges stably in \\(C([0,1],\\mathbb R^d)\\) to the solution of the limiting linear stochastic differential equation. The martingale part of the limit is driven by a Brownian motion independent of the original \\(σ\\)-field, and its coefficient is determined by the Hessian of the drift and the covariance matrix of the additive noise.",
+      "authors": [
+        "Masaaki Fukasawa",
+        "Mikio Hirokane",
+        "Kostas Kardaras"
+      ],
+      "published": "2026-08-17T08:28:23Z",
+      "updated": "2026-08-17T08:28:23Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16256v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16256v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16565v1",
+      "title": "Probabilistic Circuits as Reasoning Machines in Artificial Intelligence (Part I)",
+      "abstract": "This cumulative habilitation thesis studies probabilistic circuits (PCs) as a powerful and tractable framework for reasoning and learning under uncertainty in artificial intelligence (AI). It first advocates for probability as a core language for AI, emphasizing its connections to logic and information theory; the conceptual simplicity of probabilistic reasoning---based primarily on the sum and product rules; the parallels between probabilistic inference and human cognition; and the role of probability in optimal decision making. However, probability also faces significant computational challenges, as probabilistic inference is NP-hard in almost all probabilistic models. PCs address these challenges through structural constraints that ensure exact computation of a wide range of inference queries in polynomial time, such as marginals, conditionals, most probable explanations, expectations, and more advanced inference tasks. This thesis synthesizes a decade of research across foundations, algorithmic developments, and empirical validation of PCs. Key contributions highlighted in this work are foundational theory of PCs, Bayesian approaches for learning PCs, scalable implementations and integration with deep learning, hybrid models that combine PCs with intractable models, and connections with symbolic machine learning paradigms. This is the first part of my Habilitation Thesis. The second part is omitted, as it comprises the cumulative part of the thesis and has been published at various venues (see Chapter 5).",
+      "authors": [
+        "Robert Peharz"
+      ],
+      "published": "2026-08-17T13:29:05Z",
+      "updated": "2026-08-17T13:29:05Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16565v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16565v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16655v1",
+      "title": "Quantitative mean-field limits for repulsive Coulomb flows at bounded density and Riesz weak--strong stability",
+      "abstract": "We establish quantitative mean-field convergence and propagation of chaos for repulsive Coulomb gradient flows at the bounded-density regularity of the limiting equation. The argument couples the dissipative modulated-energy identity with the normalized quadratic transport cost of the full $N$-particle law. The remaining negative mean-square force-error term is used through an exact completion of squares after mollification: the non-Lipschitz remainder is absorbed by this negative term, while a sharp first-order commutator estimate is applied to the mollified Lipschitz field. For the Coulomb equation, the sharp $L^\\infty$ decay gives the density envelope $m(t)=\\|ρ_0\\|_{L^\\infty}/(1+t\\|ρ_0\\|_{L^\\infty})$. A density-adapted transport weight and mollification scale $m(t)^{-1/d}$ yield an Osgood comparison. Thus, for every $d\\ge2$ and $ρ_0\\in\\mathcal P_2(\\mathbb R^d)\\cap L^\\infty(\\mathbb R^d)$, we obtain quantitative comparison with the global bounded-density Coulomb solution on every prescribed finite interval. For tensorized initial data, the normalized squared Wasserstein distance of the full $N$-particle law, the expected modulated energy, and the time-integrated mean-square force error are bounded by $N^{-2γ_{T,d}/d}$ for $d\\ge3$ and $((1+\\log N)/N)^{γ_{T,2}}$ for $d=2$, where $γ_{T,d}=(1+T\\|ρ_0\\|_{L^\\infty})^{-c_d}$. For $d-2<s<d$, we also prove Riesz weak--strong stability for prescribed reference solutions in $L^\\infty(0,T;B^{s-d+2}_{\\infty,q})$, with Gronwall, Bihari, and Osgood comparisons according to $q$, together with uniqueness in the stated Besov class. Finally, an outlier construction separates modulated-energy convergence and Kac chaos from normalized Wasserstein convergence of the full $N$-particle law.",
+      "authors": [
+        "Ning Jiang",
+        "Zhengyang Qiao",
+        "Juntao Wu",
+        "Jiangwei Zhang"
+      ],
+      "published": "2026-08-17T14:51:51Z",
+      "updated": "2026-08-17T14:51:51Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16655v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16655v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16796v1",
+      "title": "Matrix group $Λ$-distributions",
+      "abstract": "The $Λ$-distribution of a compact matrix group is an invariant in algebraic probability theory that was recently introduced to study zero distributions of function field $L$-functions. It is encoded by the $σ$-moment generating function, a generalization of the Molien series of classical invariant theory. In this work, we compute the $σ$-moment generating functions of finite matrix groups in many new cases. In particular, we compute the asymptotic $Λ$-distributions for the infinite families of Weyl reflection groups of types $B_n/C_n$ and $D_n$, complementing the previously known case of reflection groups of type $A_n$, i.e., symmetric groups. We also establish a general result relating the shapes of $σ$-moment generating functions to the distributions of associated classical random variables, explaining a previous ad hoc observation for independent Gaussians arising from traces of powers on compact classical groups.",
+      "authors": [
+        "Matthew Bertucci",
+        "Sam Van Blarcom",
+        "Benjamin Glancy",
+        "Sean Howe",
+        "Thomas Madden",
+        "Ben Miller",
+        "Souparna Pal",
+        "Giorgos Papagrigoriou",
+        "Nathan Raikman",
+        "Tien Tran"
+      ],
+      "published": "2026-08-17T16:51:16Z",
+      "updated": "2026-08-17T16:51:16Z",
+      "primary_category": "math.RT",
+      "categories": [
+        "math.RT",
+        "math.AC",
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16796v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16796v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16878v1",
+      "title": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
+      "abstract": "For any convex body $\\mathcal{K}\\subset\\mathbb{R}^{n}$ containing a unit ball, the spectral gap of Hit-and-Run is $Ω(1/(n^2 C_{\\mathsf{PI}}))$, where $C_{\\mathsf{PI}}$ is the Poincaré constant of the uniform distribution $π$ over $\\mathcal{K}$. This implies that Hit-and-Run converges to a distribution within $χ^2$-divergence $\\varepsilon$ of the uniform distribution $π$ in $O(n^2 C_{\\mathsf{PI}}\\log(M/\\varepsilon))$ steps from any starting distribution $π_0$ with $M=χ^2(π_{0}\\,\\|\\,π)$, thus refining the known bound of $O(n^2 R^2 \\log(M/\\varepsilon))$ by Lovász and Vempala (2004) in terms of the outer radius $R$; for nearly isotropic bodies, together with progress on the KLS conjecture, the complexity is $O(n^2\\log n\\log(M/\\varepsilon))$, improving the dimension dependence from cubic to nearly quadratic while maintaining logarithmic dependence on the initial distance. It was an open problem to connect the convergence of Hit-and-Run to Poincaré/KLS constants as was done for the Ball walk by Kannan, Lovász and Simonovits (1997). Unlike Hit-and-Run, the Ball walk has an unavoidable linear dependence on (a stronger notion) of the initial warmness. We directly bound the spectral gap of the Hit-and-Run Markov chain by connecting it to functional isoperimetric constants, inspired by the recent analysis of In-and-Out. Rewriting the spectral gap in terms of dual certificates leads to the Babuška--Aziz constant studied in the analysis of PDEs; it is asymptotically bounded by the improved Poincaré constant, which we show can be bounded in terms of the usual Poincaré constant. The proof is based on duality and calculus, unlike known proofs of convergence for Hit-and-Run which are based on bounding the conductance. The same technique can be applied to Coordinate Hit-and-Run, resulting in a much improved mixing time of $O(n^3C_{\\mathsf{PI}}\\log(M/\\varepsilon))$.",
+      "authors": [
+        "Yunbum Kook",
+        "Santosh S. Vempala"
+      ],
+      "published": "2026-08-17T17:57:11Z",
+      "updated": "2026-08-17T17:57:11Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16878v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16878v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16882v1",
+      "title": "A Local Central Limit Theorem for Clique Counts in Sparse Random Graphs",
+      "abstract": "Let $X_H$ denote the number of copies of a fixed graph $H$ in $G_{n, p}$. Gilmer and Kopparty conjectured that $X_H$ satisfies a local central limit theorem (LCLT) provided that $H$ is connected, $p \\gg n^{-1/m(H)}$, and $n^2 (1-p) \\gg 1$, where $m(H)$ is the maximum density. Following the work of Berkowitz, Sah and Sawhney confirmed this conjecture for every constant $p$, leaving the regime where $p=o(1)$ open. In this regime, the only case addressed in the literature is when $H=K_3$, where, in a recent paper, Araújo and Mattos confirmed the conjecture for $p \\in (4n^{-1/2}, 1/2)$. This, together with a general result of Röllin and Ross, essentially settles the conjecture for the triangle. We generalise these results by showing that an LCLT holds for $H = K_r$ (for any fixed $r \\ge 3$) in the regime $n^{-1/m(H)}\\ll p\\leq 1/2$, essentially settling the conjecture for cliques.",
+      "authors": [
+        "Asaf Cohen Antonir",
+        "Ilay Hoshen",
+        "Maksim Zhukovskii"
+      ],
+      "published": "2026-08-17T17:58:22Z",
+      "updated": "2026-08-17T17:58:22Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16882v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16882v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
 }

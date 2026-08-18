@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-08-16",
-  "total_submissions": 122,
-  "fetched": 122,
-  "generated_at": "2026-08-17T03:13:15Z",
+  "total_submissions": 145,
+  "fetched": 145,
+  "generated_at": "2026-08-18T03:08:53Z",
   "entries": [
     {
       "id": "2608.12954v1",
@@ -320,6 +320,31 @@
       "bucket": "medium"
     },
     {
+      "id": "2608.14802v1",
+      "title": "Dynamical Gibbs-non-Gibbs transitions for finite-alphabet models on trees",
+      "abstract": "We study finite-alphabet spin models on trees evolving under independent symmetric spin-flip dynamics. On the lattice the time-evolved plus measure of the low temperature Ising model in zero external field was shown to be non-quasilocal for all sufficiently large times in \\cite{EnFeHoRe02}. On the tree however the time-evolved plus phase of the Ising model behaves differently, as the quasilocal Gibbs property is first lost, but then recovered at a later time \\cite{EnErIaKu12}. We first extend this result by showing that large-time reentry into the quasilocal Gibbs regime on the tree happens more generally for all finite alphabet models, when the dynamics is started in $f$-stable Gibbs states. These are defined in terms of a time-independent sharp condition on the homogeneous recursion $f$ describing the model, which can be checked explicitly. As our second and opposite result, we develop a method for proving large-time persistence of non-quasilocality of time-evolved measures. We show that even all configurations can become bad at large times, when the initial Gibbs measure corresponds to an $f$-saddle and give an explicit illustration for the Potts model. In our proofs we study the influence of spatially inhomogeneous perturbations to the solutions of a time-dependent fixed point problem.",
+      "authors": [
+        "Sebastian Bergmann",
+        "Christof Külske",
+        "Niklas Schubert"
+      ],
+      "published": "2026-08-14T18:15:28Z",
+      "updated": "2026-08-14T18:15:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14802v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14802v1",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2608.09465v1",
       "title": "Balancing fractional Brownian motion",
       "abstract": "We study the discrepancy of balancing $n$ independent sample paths of fractional Brownian motion with Hurst exponent $H\\in(0,1)$ on $[0,1]$, an infinite-dimensional analogue of balancing Gaussian vectors. We establish a phase transition at $H=1/2$: with high probability, the discrepancy is $Ω(n^{1/2-H})$ and $\\mathcal O(n^{1/2-H}(\\log n)^{c(H)})$, where $c(H)=H+1/2$ if $H\\geq 1/2$ and $c(H)=1/2$ otherwise. At the critical exponent $H=1/2$, we show that the discrepancy is $Θ(1)$ with constant probability as $n\\to\\infty$. In this regime, we further characterize the geometry of the solution space by computing the expected number of local minima, establishing an overlap gap property near the existence threshold, and proving its absence at every diverging optimality threshold. We also give randomized polynomial-time algorithms that compute signings with discrepancy $\\mathcal O(n^{1/2-H}\\sqrt{\\log n})$ for $H<1/2$, $\\mathcal O((\\log n)^{3/2})$ for $H=1/2$, and $\\mathcal O(\\sqrt{\\log n})$ for $H>1/2$, with high probability. Our analysis combines a truncated balancing argument based on a wavelet representation of fractional Brownian motion with probabilistic methods.",
@@ -539,6 +564,29 @@
       "bucket": "medium"
     },
     {
+      "id": "2608.15769v1",
+      "title": "The Dual-Population Benchmark Model",
+      "abstract": "Motivated by Fisher's and Hill's \\cite{Fisher,Hill} ideas of ranking and pivotal quantities, we introduce a planar Poisson process (PPP) model in which the negative component \\(Π_-\\), acted upon by a choice operator {\\rm C}, supplies a set of past benchmarks that divide the future points of the positive component \\(Π_+\\) into ranked categories. The benchmarks act as separators in an ordered paintbox while simultaneously acquiring the dual role of past standards established by the choice operator. The exceptional homogeneity properties of the PPP offer an infinitude of possibilities which absorb many existing combinatorial structures and enrich the toolbox of Bayesian distribution-free inference. A particular benchmark generating mechanism considered here (the exponential race) amounts to the device of splitting into spacings of nonhomogeneous order statistics. On the methodological side, the paper aims to highlight the role of order as important characteristic of an exchangeable structure, complementary to the description in terms of the components size. Moreover, we advocate the viewpoint that the order induced by a latent strength parameter is {\\it intrinsically} inherited from the distant-past temporal sampling order, hence the decoupled orders may coexist within the framework of population duality without disturbing size-biasedness of components and the full exchangeability within the sample. This implies that the indistinguishability of components in the nonlinear CRP, sometimes regarded as nonexchangeability, does not in fact destroy exchangeability and should be reconciled with the arrival ordering within the paradigm of ordered structures.",
+      "authors": [
+        "Alexander Gnedin"
+      ],
+      "published": "2026-08-16T14:44:49Z",
+      "updated": "2026-08-16T14:44:49Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15769v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15769v1",
+      "score": 3,
+      "matched_keywords": [
+        "poisson process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2608.09729v1",
       "title": "On the self-intersection time of non-backtracking random walks",
       "abstract": "We study the self-intersection time of the non-backtracking random walk on connected undirected graphs. For every fixed $Δ\\geq 3$ we show that the expected self-intersection time is $O(\\sqrt{n} \\log n)$ on $n$-vertex graphs with minimum degree at least $3$ and maximum degree at most $Δ$. For regular graphs with a uniform spectral gap, we improve this to $O(\\sqrt{n})$. We also show an $Ω(\\sqrt{n})$ lower bound on a class of regular expanders. Our upper bound on the expected self-intersection time implies an improved mixing time bound on Glauber dynamics for the Ising model on $Δ$-regular graphs at the tree uniqueness threshold.",
@@ -610,6 +658,73 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.14342v1",
       "pdf_url": "https://arxiv.org/pdf/2608.14342v1",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15140v1",
+      "title": "Resolvent intertwining and spectral duality in Markov chains with geometric resetting",
+      "abstract": "We uncover the resolvent origin of the spectral duality governing reset-neutral distributions in Markov chains with geometric resetting. Starting from the abstract conditions of Paper~III, we show that the spectral duality $B_ν(z)=κ(z)\\,A_ν(σ(z))$ is equivalent to a single symmetry of the resolvent $R(γ)=(I-(1-γ)P)^{-1}$: the intertwining relation $[Δ^2\\mathcal{R},R(γ)]=0$, where $\\mathcal{R}$ is the reflection operator of an involution $σ$ and $Δ=\\operatorname{diag}(\\sqrt{κ(z)})$; equivalently, $\\widetilde{\\mathcal{T}}=K^{-1/2}Δ^2\\mathcal{R}$ is an involution. This symmetry determines the universal critical value $C^*=1/(1+\\sqrt{K})$, with $K=κ(z)κ(σ(z))$, which depends only on the scalar $K$ --- not on the resetting rate $γ$, the reset distribution, or the particular chain. We characterize the class of $(σ,κ)$-reversible chains, encompassing both the biased random walk and genuinely non-homogeneous dynamics sharing the same $C^*$; a Doob $h$-transform realizes the duality $K\\mapsto1/K$, hence $C^*\\mapsto1-C^*$, with fixed point $C^*=1/2$. The orientation field admits the explicit resolvent representation $ψ(γ)=R(γ)(b^{(0)}-C^*b)$: its gauge-normalized form $Δ^{-1}ψ(γ)$ is antisymmetric under $σ$, it has an exact node at the fixed point of $σ$, and it governs the exact sign law $\\operatorname{sgn}(C(π,γ)-C^*) =\\operatorname{sgn}\\langleπ,ψ(γ)\\rangle$. Numerical experiments confirm the theory to machine precision. These results establish the operator-theoretic foundation of the spectral duality of Paper~III and provide the bridge to the information-geometric framework of Paper~V.",
+      "authors": [
+        "Juan Antonio Vega Coso"
+      ],
+      "published": "2026-08-15T09:31:30Z",
+      "updated": "2026-08-15T09:31:30Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15140v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15140v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15805v1",
+      "title": "Spectral duality structures and the Fisher--Rao geometry of reset distributions",
+      "abstract": "We study the geometry that spectral duality induces on the simplex of reset distributions for absorbed Markov processes with geometric resetting. The Fisher--Rao metric provides the intrinsic geometry: under the square-root embedding, the reset-neutral separatrix $Σ$ becomes a totally geodesic subsphere and a Fisher--Rao simplex of lower dimension. We then reduce the reset response to a finite structure: the response functionals $ψ(γ)$ span a subspace $V$ whose dimension $r$ equals the number of active orbits of the duality involution, while the local separatrix is its annihilator. At the vertices of the simplex we prove a sign theorem valid for every $r$, recovering the two-zone phenomenon of Paper~I. The invariant $r$ also resolves the global orientation principle conjectured in Paper~III. For $r=1$, all response functionals are collinear and, under a scalar sign condition satisfied by the canonical realisation, the response has a fixed sign on each side of $Σ$. For $r\\ge2$, the response span has dimension at least two and the orientation can rotate; we give the criterion for the failure of a global sign law and exhibit counterexamples in the abstract class. The biased random walk with multi-site geometric resetting realises the whole construction explicitly. This is the fifth paper in a program connecting stochastic resetting with spectral theory and information geometry.",
+      "authors": [
+        "Juan Antonio Vega Coso"
+      ],
+      "published": "2026-08-16T15:30:52Z",
+      "updated": "2026-08-16T15:30:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15805v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15805v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15914v1",
+      "title": "Absorption cutoff and stationary singularities for rounded Gaussian random dynamical systems",
+      "abstract": "We study Gaussian random dynamical systems with coordinatewise $\\tanh$ nonlinearity, where finite precision is modeled by nearest-grid rounding after each step. Gaussian symmetry reduces the dynamics to an exact Markov chain for the normalized squared radius. Rounding makes the origin absorbing, and the total variation distance to the absorbing equilibrium equals the survival probability of the absorption time. At fixed width, we identify the critical gain and prove an absorption cutoff with Gaussian profile as the mesh tends to zero. At fixed precision, global contraction yields a large-dimension absorption cutoff, while positive drift produces metastability. In the supercritical regime, we prove a large-dimension cutoff to a nonzero invariant law and show that, at fixed dimension, its mass near the repelling origin has a power-law asymptotic. All six main results are formalized in Lean 4 on top of Mathlib and independently checked against restatements that import only Mathlib.",
+      "authors": [
+        "Benny Avelin"
+      ],
+      "published": "2026-08-16T20:02:27Z",
+      "updated": "2026-08-16T20:02:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15914v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15914v1",
       "score": 2,
       "matched_keywords": [
         "survival"
@@ -1064,20 +1179,20 @@
       "bucket": "other"
     },
     {
-      "id": "2608.10183v1",
-      "title": "Elephant-Reinforced Galves--Löcherbach Networks",
+      "id": "2608.10183v2",
+      "title": "Elephant Reinforced Galves-Löcherbach Networks",
       "abstract": "We introduce an infinite-dimensional Galves--Löcherbach system with bounded Elephant-type reinforced synaptic interactions. The reinforcement mechanism modifies the probabilities of excitatory and inhibitory synaptic updates while keeping their amplitudes uniformly bounded. We prove non-explosion by means of a Lyapunov estimate and establish a conditional Wasserstein contraction for the membrane-potential dynamics when the coupled systems share the same reinforcement profile. Finally, we derive the corresponding replica mean-field equation under the Poisson hypothesis.",
       "authors": [
         "Ioannis Papageorgiou"
       ],
       "published": "2026-08-10T19:54:24Z",
-      "updated": "2026-08-10T19:54:24Z",
+      "updated": "2026-08-15T04:07:34Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.10183v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.10183v1",
+      "abs_url": "https://arxiv.org/abs/2608.10183v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.10183v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2073,22 +2188,22 @@
       "bucket": "other"
     },
     {
-      "id": "2608.12839v1",
+      "id": "2608.12839v2",
       "title": "Spiking Neural Networks with Elephant Reinforcement",
       "abstract": "We introduce a finite stochastic spiking-neuron network with Elephant-type memory, in which past firing activity modifies future excitability through a reinforcement-dependent threshold. For a bounded hard-threshold firing rate, we prove non-explosion of the finite system and obtain conditional exponential contraction in (1)-Wasserstein distance on a truncated potential space. We then formulate the corresponding replica mean-field dynamics and establish global existence, uniqueness in law, and non-explosion of the nonlinear process, together with a characterization of its invariant measures. Numerical experiments show that Elephant memory produces a (p)-dependent decline in firing activity, alters extinction behaviour, and yields finite-network dynamics closely matched by the replica mean-field approximation.",
       "authors": [
         "Fernando A. Najman",
         "Ioannis Papageorgiou",
-        "Sabricia K. Cauanny A. da Silveirau"
+        "Sabricia K. Cauanny A. da Silveira"
       ],
       "published": "2026-08-13T05:20:41Z",
-      "updated": "2026-08-13T05:20:41Z",
+      "updated": "2026-08-15T01:56:55Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.12839v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.12839v1",
+      "abs_url": "https://arxiv.org/abs/2608.12839v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.12839v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2781,6 +2896,392 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.14526v1",
       "pdf_url": "https://arxiv.org/pdf/2608.14526v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14833v1",
+      "title": "The Zaporozhets-Tarasov Inequality for an Arbitrary Planar Convex Body",
+      "abstract": "We prove that the mean distance between two independent uniformly distributed points in an arbitrary planar convex body is strictly smaller than the mean distance between two independent uniformly distributed points on its boundary. Equality is impossible, although the difference between these two mean distances tends to zero along a sequence of thin rectangles. The proof reduces the problem to a one-dimensional comparison of two Gini mean differences. The main new ingredient is a moment lemma for a random pair $(\\varepsilon,R)\\in\\{-1,1\\}\\times[0,1]$. The only finite algebraic part of the proof is given by exact rational certificates in the Bernstein basis; the verification script and all 6492 coefficients are available in the supplementary materials.",
+      "authors": [
+        "Maksim Kukushkin"
+      ],
+      "published": "2026-08-14T19:10:21Z",
+      "updated": "2026-08-14T19:10:21Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14833v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14833v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14848v1",
+      "title": "Mean distance between points inside and on the boundary of a convex body",
+      "abstract": "The Zaporozhets--Tarasov conjecture is considered, which states that the mean distance between two random points inside a convex body does not exceed the mean distance between two random points on its boundary. For centrally symmetric bodies the question is settled completely: the conjecture is proved for planar bodies and disproved in every dimension at least three, for all moments of the distance; an explicit family of counterexamples is constructed together with a dimension-lifting construction. It is also shown that for sufficiently high moments an analogous inequality holds for any planar convex body. For circumscribed bodies exact relations between the mean distances are obtained --- analogues of Kingman's formula derived via the projective distributions introduced here; moreover, the conjecture is proved for triangles in a stronger per-projection form.",
+      "authors": [
+        "A. S. Lotnikov"
+      ],
+      "published": "2026-08-14T19:43:02Z",
+      "updated": "2026-08-14T19:43:02Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14848v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14848v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.14970v1",
+      "title": "A Discretization of Bertrand's Paradox",
+      "abstract": "In this paper we present a discrete version of Bertrand's paradox, where each sample space is a finite set of chords and a chord is chosen uniformly at random.",
+      "authors": [
+        "Gregory Churchill",
+        "Dakota Williams"
+      ],
+      "published": "2026-08-15T01:44:29Z",
+      "updated": "2026-08-15T01:44:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.14970v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14970v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15021v1",
+      "title": "An example of an optimal transport map on a sphere",
+      "abstract": "We construct an optimal transport map between uniform distributions on two antipodal annuli of a sphere.",
+      "authors": [
+        "Asuka Takatsu"
+      ],
+      "published": "2026-08-15T04:12:13Z",
+      "updated": "2026-08-15T04:12:13Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15021v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15021v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15034v1",
+      "title": "A Central Limit Theorem for Regularized M-Estimators",
+      "abstract": "We prove a quantitative central limit theorem for linear functionals of regularized empirical-risk minimizers in the proportional-dimensional regime \\(p=O(n)\\). The data columns are independent, not necessarily identically distributed, and satisfy a uniform columnwise Poincaré inequality. Under uniform curvature and smoothness assumptions, and for a quadratic regularizer, we show that every nondegenerate statistic \\(\\sqrt n\\,u^\\top\\hatθ\\), centered by its expectation and normalized by its standard deviation, converges to a standard normal random variable in Wasserstein distance, with rate \\(O((\\log n)^7n^{-1/4})\\). The proof is based on moment and stability bounds for the minimizer, a second-order leave-one-out expansion, and a perturbative normal-approximation argument for functions of independent variables. We also prove the variance upper bound \\(\\Var(u^\\top\\hatθ)\\le C\\norm{u}_2^2/n\\), identifying the \\(\\sqrt n\\) fluctuation scale.",
+      "authors": [
+        "Cosme Louart"
+      ],
+      "published": "2026-08-15T04:38:32Z",
+      "updated": "2026-08-15T04:38:32Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15034v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15034v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15137v1",
+      "title": "One-Sided Product-Scale Upper Bounds for Nested Complex Wishart Extremes",
+      "abstract": "I study the largest eigenvalue \\(Λ_j\\) of \\(X^{(j)}(X^{(j)})^*\\), where \\(X^{(j)}\\) is the \\(M_j\\times j\\) northwest rectangle of one infinite complex Gaussian array. For two upper-tail events and, separately, for two lower-tail events at the largest-eigenvalue soft edge, I prove finite-\\(N\\) one-sided product-scale upper bounds for their joint probabilities. The logarithmic walls have polynomially small marginals, so an additive \\(o(1)\\) covariance estimate may be much larger than the vanishing product that must be controlled. Uniformly for levels in a short macroscopic window, bounded deterministic shifts, and separations at least \\(N^{2/3+ε}\\), each joint probability is at most \\((1+o(1))\\) times the product of its marginals. The classical \\(N^{2/3}\\) correlation window corresponds to order-one extended-Airy time; the theorem works at supercritical separation. Exact Laguerre operators along admissible row--column paths provide the finite-dimensional input. The upper-tail proof uses occupancy counts and cross-block trace estimates, whereas the lower-tail proof uses gap determinants, diagonal resolvents, and a Schur complement. I transfer the result between the half-integer Laguerre and physical rectangular normalizations and deduce intrinsic first- and second-moment estimates for separated sparse grids under the rarity, count-growth, spacing, and macroscopic-window budget.",
+      "authors": [
+        "Xiufan Yang"
+      ],
+      "published": "2026-08-15T09:20:58Z",
+      "updated": "2026-08-15T09:20:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15137v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15137v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15179v1",
+      "title": "An elementary proof of Marton and Shields' obstruction to finitary coding",
+      "abstract": "The paper contains An elementary proof of Marton and Shields' obstruction to finitary coding.",
+      "authors": [
+        "Jeffrey Steif"
+      ],
+      "published": "2026-08-15T11:37:09Z",
+      "updated": "2026-08-15T11:37:09Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15179v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15179v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15258v1",
+      "title": "Self-fictitious-play for Potential Monotone Ergodic Mean-field Games",
+      "abstract": "We investigate long-time learning in ergodic, potential, monotone mean-field games (MFGs) via a self-fictitious-play (SFP) dynamics coupling an optimally controlled diffusion with a slowly evolving belief. At each time, the state follows the optimal feedback associated with the current belief, while the belief is updated using the player's own empirical occupation measure rather than the population distribution. For ergodic monotone potential MFGs on the torus, we prove that the SFP dynamics is contractive and admits a unique invariant law. Moreover, we show that this invariant law is quantitatively close to the MFG Nash equilibrium, with an error of order equal to the square root of the belief-update rate. The proof combines uniform-in-time regularity estimates for the ergodic Hamilton-Jacobi-Bellman equation with an energy argument based on the Lasry-Lions divergence. The linear-quadratic example shows that this rate is sharp, and the numerical experiments illustrate the predicted scaling.",
+      "authors": [
+        "Yupeng Bai",
+        "Mathieu Laurière",
+        "Zhenjie Ren",
+        "Songbo Wang"
+      ],
+      "published": "2026-08-15T14:28:01Z",
+      "updated": "2026-08-15T14:28:01Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15258v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15258v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15335v1",
+      "title": "A concentration result for multilayer feedforward neural networks",
+      "abstract": "We consider for an arbitrary fixed $ρ$ and for each positive integer $n$ a multilayer feedforward artificial neural network with $ρ$ layers, $n$ neurons in the first layer (the input layer) and only one neuron, the output neuron, in the last layer. Very roughly formulated, the main result is that if the distribution of weights of connections from a layer to the next are, for all large $n$, approximated well by a fixed continuous (but otherwise arbitrary) curve which does not depend on $n$, and if the values of the $n$ input neurons are independently and identically distributed with a continuous probability density function, then there is a number $ψ$ such that for all $\\varepsilon > 0$ the probability that the value of the output neuron is in $[ψ- \\varepsilon, ψ+ \\varepsilon]$ tends to 1 as $n$ tends to infinity.",
+      "authors": [
+        "Vera Koponen"
+      ],
+      "published": "2026-08-15T17:31:46Z",
+      "updated": "2026-08-15T17:31:46Z",
+      "primary_category": "cs.AI",
+      "categories": [
+        "cs.AI",
+        "math.LO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15335v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15335v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15344v1",
+      "title": "A Harris recurrent continuous-time Markov process without wide-sense regenerative structure",
+      "abstract": "While Harris recurrent Markov chains (in discrete time) automatically exhibit wide-sense regenerative structure, we construct a Harris recurrent Markov process (in continuous time) that is not wide-sense regenerative, thereby giving a negative answer to the open problem first raised in the 1990s and later posed in Glynn(2011). The counterexample exhibits the following rigidity property: every almost surely finite random time that is independent of the state observed at that time must be almost surely constant. A Cantor set linearly independent over the rationals plays a key role in the construction, turning calendar time into an algebraic record of the path already traversed.",
+      "authors": [
+        "Yanlin Qu",
+        "Peter Glynn"
+      ],
+      "published": "2026-08-15T17:56:11Z",
+      "updated": "2026-08-15T17:56:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15344v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15344v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15379v1",
+      "title": "Stochastic Jacobi fields along discontinuous martingales on Riemannian submanifolds",
+      "abstract": "In this article, we consider discontinuous martingales on tangent bundles over submanifolds of Euclidean space. First, we introduce a connection rule on tangent bundles and establish the Itô calculus for discontinuous semimartingales on tangent bundles. Then we focus on harmonic maps with respect to non-local Dirichlet forms and show that the derivative of harmonic maps along infinitesimal symmetries induces discontinuous martingales on tangent bundles. This process may be viewed as a stochastic Jacobi field along the image martingale. We also introduce the stochastic parallel transport of tangent vectors along càdlàg semimartingales on Riemannian submanifolds with projected jumps. Using the parallel transport, we obtain the mean-value property for the differential of harmonic maps involving a jump part expressed through the second fundamental form. We also obtain a derivative formula for harmonic maps for isotropic Lévy processes with a Brownian component on compact Riemannian manifolds.",
+      "authors": [
+        "Fumiya Okazaki"
+      ],
+      "published": "2026-08-15T19:17:37Z",
+      "updated": "2026-08-15T19:17:37Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15379v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15379v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15515v1",
+      "title": "Weak-Type Bounds for Convolution on the Boolean Hypercube",
+      "abstract": "Let $G$ be the Boolean hypercube which carries uniform measure $λ$, and let $T_μ$ denote convolution by a finite positive measure $μ$ on $G$. For $ψ_μ(u)=\\sup\\{uλ(\\{T_μf\\geq u\\}):f\\geq 0,\\|f\\|_1=1\\},$ we prove Talagrand's convolution conjecture (Talagrand, 1989): if $μ_a=((1+a)δ_1/2+(1-a)δ_{-1}/2)^{\\otimes n}$ and $0<a<1$, then $ψ_{μ_a}(u)\\leq C_a/\\sqrt{\\log u}$ for every $u > 1$ and $n\\geq1$, where $C_a$ depends only on $a$. The proof utilizes the reverse-heat and Boolean-bridge framework of Chen (2025) and the localized terminal-discrepancy method of Xiang and Zhang (2026). We introduce a new power coupling: each reverse edge ratio is split into two geometric powers. This choice produces a switched exponential weight which restores the exact reverse jump rate of the perturbed coordinate. The resulting endpoint comparison yields an anti-concentration profile estimate without the iterated-logarithmic factor. The proof was discovered by the Odin Automatic AI Research Agent.",
+      "authors": [
+        "Junwei Lu",
+        "Shengtao Guo",
+        "Ethan X. Fang"
+      ],
+      "published": "2026-08-16T03:52:55Z",
+      "updated": "2026-08-16T03:52:55Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15515v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15569v1",
+      "title": "Statistical properties for irregular observables in slowly mixing hyperbolic systems",
+      "abstract": "We prove various statistical properties (i.e., decay of correlations, central limit theorems with convergence rates, maximal large deviations and almost sure invariance principles) for non-smooth observables in the form of indicators functions in polynomially mixing hyperbolic dynamical systems. Such results were not known (or even expected to hold) for slowly mixing hyperbolic systems, although they are important for applications to physics and other sciences.",
+      "authors": [
+        "Leonid A. Bunimovich",
+        "Yaofeng Su"
+      ],
+      "published": "2026-08-16T06:31:53Z",
+      "updated": "2026-08-16T06:31:53Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15569v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15569v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15616v1",
+      "title": "Compact Support Property of Super-Brownian Motion with Irregular Drift",
+      "abstract": "We study the one-dimensional stochastic partial differential equation \\[ d_t X_t(x)=\\frac{1}{2}ΔX_t(x) +b_1\\unicode{x1D7D9}_{\\{X_t(x)>0\\}} +\\sqrt{X_t(x)}\\dot W(t,x), \\] where $b_1>0$, $\\dot W$ is space-time white noise, and the initial condition is a nonnegative, compactly supported continuous function. We prove that its unique weak solution has the compact support property. The drift term lies outside the usual regularity assumptions for the Dawson--Girsanov theorem. Instead, the proof is based on a layer decomposition in which the solution is constructed as the monotone limit of sums of super-Brownian motions with random immigration rates determined recursively by the positivity sets of the preceding layers. By comparison, the compact support property extends to a broader class of bounded nonnegative drifts vanishing at the origin. Finally, support-radius estimates yield a comparison of the total mass of $X$ with a squared Bessel process, which allows us to show that $X$ has a positive extinction probability.",
+      "authors": [
+        "Leonid Mytnik",
+        "Johanna Weinberger"
+      ],
+      "published": "2026-08-16T08:31:56Z",
+      "updated": "2026-08-16T08:31:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15616v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15616v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15650v1",
+      "title": "Wavelength-scale optional stopping, critical Feynman-Kac gauges, and capacitary spectral inequalities",
+      "abstract": "We develop two Brownian stopping methods: one uses hitting probabilities and capacity, the other moments of weighted exit distributions. On a closed $m$-dimensional Riemannian manifold, $m\\geq 2$, the first gives low-energy spectral inequalities for equilibrium measures supported on sets of zero volume. Combining scales gives heat observability and null controllability from a full-support measure carried by a dense set of Hausdorff dimension $m-2$, minimal under a bounded $H^1$-trace condition. For every nondecreasing unbounded $Φ$ with $Φ(4E)\\leq DΦ(E)$, the measure can be chosen so that the optimal spectral constant is comparable to $Φ(E)$ and the small-time control cost to $T^{-1/2}Φ(T^{-1})^{1/2}$. Squaring the Feynman-Kac martingale doubles the potential: for radial $V$, the boundary second moment is log-convex in $\\log r$ if $r^2V(r)$ is nondecreasing, wherever the regular solution of $(\\tfrac12Δ+2V)g=0$ stays positive; the factor $2$ is sharp when $V(0)>0$. On small geodesic balls, weighted second moments give an almost-monotone frequency and a weighted three-radius inequality; bounds for its logarithmic derivative give doubling estimates, which, after a ground-state transform, feed the Remez theorem of Logunov-Malinnikova. The normalised first-moment exit law gives an averaged boundary-variance identity for Laplace eigenfunctions. At $r=cλ^{-1/2}$, outside a set carrying $O(c^{2/m})$ of the $\\varphi^2$-mass, the component of $\\{\\varphi(x)\\varphi>0\\}\\cap B(x,r)$ through $x$ contains a concentric ball of nearly full radius, fills nearly all of $B(x,r)$, and nearly matches its first Dirichlet eigenvalue. First-moment stopping also controls positive superlevel components. Reflected Brownian motion and local time give boundary-to-collar $L^\\infty$ estimates for Steklov eigenfunctions on bounded Lipschitz domains, and an $L^2$ estimate for $C^2$ domains.",
+      "authors": [
+        "Mayukh Mukherjee"
+      ],
+      "published": "2026-08-16T09:43:03Z",
+      "updated": "2026-08-16T09:43:03Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15650v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15650v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15874v1",
+      "title": "Self-normalised Bennett inequalities for Hilbert-valued martingales",
+      "abstract": "We prove time-uniform self-normalised Bennett inequalities for a martingale $(M_n)_{n\\geq0}$ in a separable Hilbert space, with $M_0=0$ and increments bounded in norm by one. Writing $V_n$ for its predictable covariance process and $h(u)=(1+u)\\log(1+u)-u$ for the Bennett rate function, we show that, for every regularisation parameter $ρ>0$, the process \\[\\exp\\left\\{ρ\\,h\\!\\left(\\frac{\\left\\lVert (V_n+ρI)^{-1/2}M_n\\right\\rVert}{\\sqrtρ}\\right)-\\frac12\\log\\det\\left(I+ρ^{-1}V_n\\right)\\right\\},\\qquad n\\geq0,\\] is a nonnegative supermartingale with initial value one, where $\\det$ is the Fredholm determinant. Ville's inequality yields time-uniform Bennett and Bernstein bounds for $\\lVert (V_n+ρI)^{-1/2}M_n\\rVert$. The result permits conditional covariance increments of infinite rank; in finite dimensions, the resulting boundaries sharpen existing martingale-transform and determinant-based variational bounds. The same construction extends to compensated marked point processes with bounded jumps. Mixing these supermartingales over $ρ$ gives simultaneous control over the regularisation parameter. Consequences include an upper law of the iterated logarithm for the regularised ellipsoidal radius in separable Hilbert spaces and, in finite dimensions, spectrum-sensitive finite-time bounds and an upper law of the iterated logarithm for the unregularised radius $\\lVert V_n^{-1/2}M_n\\rVert$, whose constant $1$ is sharp over the class. We also obtain a time-uniform Bernstein inequality for the martingale norm $\\lVert M_n\\rVert$ with dependence on $\\operatorname{tr}(V_n)$ and $\\lVert V_n\\rVert_{\\mathrm{op}}$.",
+      "authors": [
+        "David Janz"
+      ],
+      "published": "2026-08-16T17:53:59Z",
+      "updated": "2026-08-16T17:53:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15874v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15874v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15906v1",
+      "title": "Dimension-Free Lipschitz Bounds for Brenier Maps to Compactly Supported Log-Concave Targets",
+      "abstract": "We fix an integer $d\\ge1$ and a symmetric positive-definite matrix $Q\\in\\mathbb{R}^{d\\times d}$. Let $V:\\mathbb{R}^d\\to\\mathbb{R}$ be finite, set \\[ Z_μ:=\\int_{\\mathbb{R}^d}e^{-V(x)}\\,dx\\in(0,\\infty), \\qquad dμ(x):=Z_μ^{-1}e^{-V(x)}\\,dx, \\] and assume that $μ$ has finite second moment and that \\[ x\\longmapsto \\frac12\\langle Qx,x\\rangle-V(x) \\] is convex. Let $ν$ be a compactly supported log-concave probability measure with support $K$, and let $\\nablaΦ$ be the Brenier map from $μ$ to $ν$. For $v\\in\\mathbb{R}^d$, define \\[ w_K(v):= \\sup_{y\\in K}\\langle y,v\\rangle - \\inf_{y\\in K}\\langle y,v\\rangle. \\] We prove that \\[ \\partial_{vv}Φ\\le 0.587 \\sqrt{\\langle Qv,v\\rangle}\\,w_K(v) \\qquad(v\\in\\mathbb{R}^d) \\] in the sense of distributions. We show that $\\nablaΦ$ has an everywhere-defined globally Lipschitz representative such that \\[ \\operatorname{Lip}(\\nablaΦ) \\le 0.587 \\sqrt{\\|Q\\|_{\\mathrm{op}}}\\,\\operatorname{diam}(K). \\] The directional Hessian estimate is affinely covariant, whereas the global Lipschitz estimate is dimension-free. The result also applies to singular or lower-dimensional targets. In particular, it removes the $\\sqrt d$ loss in Kolesnikov's estimate for the Brenier map from Gaussian measure to normalised Lebesgue measure on a convex body. We also prove new bounds that depend only on the support for compactly supported semi-log-concave targets, which includes targets with bounded negative curvature.",
+      "authors": [
+        "Maja Gwozdz"
+      ],
+      "published": "2026-08-16T19:50:08Z",
+      "updated": "2026-08-16T19:50:08Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15906v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15906v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.15923v1",
+      "title": "Universality of two-dimensional Markovian holonomy fields",
+      "abstract": "We prove a universality theorem for a broad class of two-dimensional gauge theories on compact surfaces. Each admissible conjugation-invariant Lévy process on a compact connected Lie group determines a universality class of lattice gauge theories whose continuum limit is the associated Markovian holonomy process. Our result can be seen as a gauge-theoretic analogue of invariance principles for random walks and Lévy processes. This framework includes the Yang--Mills holonomy process and the standard heat-kernel (Villain), Wilson, and Manton lattice actions. The proof uses state-sum formulas of independent interest, separating action-dependent spectral coefficients from action-independent topological coefficients determined by the surface and the marked ribbon type of the loop configuration.",
+      "authors": [
+        "Thibaut Lemoine",
+        "Elias Nohra"
+      ],
+      "published": "2026-08-16T20:38:19Z",
+      "updated": "2026-08-16T20:38:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.15923v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15923v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
