@@ -5,11 +5,11 @@
   "iso_week": 33,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-08-16",
-  "total_submissions": 145,
-  "fetched": 145,
-  "generated_at": "2026-08-18T03:08:53Z",
+  "total_submissions": 146,
+  "fetched": 146,
+  "generated_at": "2026-08-19T03:11:09Z",
   "entries": [
     {
       "id": "2608.12954v1",
@@ -688,20 +688,20 @@
       "bucket": "other"
     },
     {
-      "id": "2608.15805v1",
+      "id": "2608.15805v2",
       "title": "Spectral duality structures and the Fisher--Rao geometry of reset distributions",
       "abstract": "We study the geometry that spectral duality induces on the simplex of reset distributions for absorbed Markov processes with geometric resetting. The Fisher--Rao metric provides the intrinsic geometry: under the square-root embedding, the reset-neutral separatrix $Σ$ becomes a totally geodesic subsphere and a Fisher--Rao simplex of lower dimension. We then reduce the reset response to a finite structure: the response functionals $ψ(γ)$ span a subspace $V$ whose dimension $r$ equals the number of active orbits of the duality involution, while the local separatrix is its annihilator. At the vertices of the simplex we prove a sign theorem valid for every $r$, recovering the two-zone phenomenon of Paper~I. The invariant $r$ also resolves the global orientation principle conjectured in Paper~III. For $r=1$, all response functionals are collinear and, under a scalar sign condition satisfied by the canonical realisation, the response has a fixed sign on each side of $Σ$. For $r\\ge2$, the response span has dimension at least two and the orientation can rotate; we give the criterion for the failure of a global sign law and exhibit counterexamples in the abstract class. The biased random walk with multi-site geometric resetting realises the whole construction explicitly. This is the fifth paper in a program connecting stochastic resetting with spectral theory and information geometry.",
       "authors": [
         "Juan Antonio Vega Coso"
       ],
       "published": "2026-08-16T15:30:52Z",
-      "updated": "2026-08-16T15:30:52Z",
+      "updated": "2026-08-18T08:38:00Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.15805v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.15805v1",
+      "abs_url": "https://arxiv.org/abs/2608.15805v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.15805v2",
       "score": 2,
       "matched_keywords": [
         "random walk"
@@ -2500,20 +2500,20 @@
       "bucket": "other"
     },
     {
-      "id": "2608.13559v1",
+      "id": "2608.13559v2",
       "title": "Equi-dependence implying independence",
       "abstract": "It is shown that, if an event $A$ has the same conditional probability in each trial in an infinite sequence of Bernoulli trials, then $A$ is independent of each trial. More general results are actually established.",
       "authors": [
         "Iosif Pinelis"
       ],
       "published": "2026-08-13T17:59:55Z",
-      "updated": "2026-08-13T17:59:55Z",
+      "updated": "2026-08-18T12:43:49Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
-      "abs_url": "https://arxiv.org/abs/2608.13559v1",
-      "pdf_url": "https://arxiv.org/pdf/2608.13559v1",
+      "abs_url": "https://arxiv.org/abs/2608.13559v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.13559v2",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
@@ -2938,6 +2938,28 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.14848v1",
       "pdf_url": "https://arxiv.org/pdf/2608.14848v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.16946v1",
+      "title": "A diffusion model for time-dependent compositional data",
+      "abstract": "We introduce a stochastic process for modeling the evolution in time of compositional measurements (i.e., a vector of non-negative values that add up to a total of 1). This model is a diffusion, as it is defined as the solution for a stochastic differential equation in the Ito sense, and it has a Dirichlet distribution as its steady distribution. We have named this process Dirichlet Diffusion (DD). As the process is confined to a manifold and the coefficients of the equation are not globally Lipschitz, the usual theorems do not apply directly and establishing the existence and properties of solutions requires a somewhat delicate analysis. We establish the existence of strong solutions under the assumption that all the parameters of the Dirichlet distribution are greater than 2; for the general case we were only able to establish the existence of weak solutions, but also that these solutions remain confined to the closed simplex without need for reflecting boundaries. A useful feature of DD that it inherits from the Dirichlet distribution is the property of aggregation: If components are combined to create a coarser composition, the resulting process is also a DD. This makes it useful, for example, for jointly modeling the evolution of a microbiome grouping the microbe species at different taxonomic levels.",
+      "authors": [
+        "Lu Chen",
+        "Omar De la Cruz Cabrera",
+        "Oana Mocioalca"
+      ],
+      "published": "2026-08-14T20:24:20Z",
+      "updated": "2026-08-14T20:24:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.16946v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16946v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
