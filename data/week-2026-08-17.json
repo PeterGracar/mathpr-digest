@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-19",
-  "total_submissions": 44,
-  "fetched": 44,
-  "generated_at": "2026-08-19T03:11:10Z",
+  "data_through": "2026-08-20",
+  "total_submissions": 64,
+  "fetched": 64,
+  "generated_at": "2026-08-20T03:10:19Z",
   "entries": [
     {
       "id": "2608.17073v1",
@@ -36,6 +36,54 @@
       ],
       "coauthors": [],
       "bucket": "high"
+    },
+    {
+      "id": "2608.19065v1",
+      "title": "Boundedly exchangeable graphs",
+      "abstract": "An infinite jointly exchangeable adjacency matrix is a mixture of graphon models, and its graph is almost surely empty or dense; classical matrix exchangeability therefore excludes sparse nonempty graphs. We study a point-process alternative, graph processes, whose vertices are identified with the atoms of a locally finite point process on a Polish latent space and whose edges are drawn conditionally independently from a symmetric connection kernel $W$. For a Poisson graph process with diffuse $σ$-finite intensity, we show that its edge measure is jointly exchangeable as a random measure if and only if $W$ is essentially constant. Non-constant kernels therefore require a different exchangeability notion. We introduce bounded exchangeability, under which every nontrivial bounded restriction determines an infinite jointly exchangeable adjacency matrix that is unique in distribution, with an associated local graphon representation. We then study threshold models on homogeneous Riemannian manifolds, in which Poisson-distributed vertices are connected whenever their intrinsic distance is at most a fixed threshold. On every infinite-volume manifold in this class, the model is sparse, its empirical degree distribution converges to a Poisson law, and its limiting clustering coefficient depends on an additional geometric parameter that can vary while the limiting degree law is held fixed.",
+      "authors": [
+        "Leon-Roman Rinke",
+        "Stefan Weber"
+      ],
+      "published": "2026-08-19T16:07:44Z",
+      "updated": "2026-08-19T16:07:44Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19065v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19065v1",
+      "score": 6,
+      "matched_keywords": [
+        "degree distribution",
+        "point process"
+      ],
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2608.18276v1",
+      "title": "The branching random walk in a uniform magnetic field : magnetization concentration and overlap distributions",
+      "abstract": "Adding a uniform external magnetic field to a mean-field spin-glass model usually requires a new analysis specific to the model. The disordered system we consider corresponds to the Gaussian binary branching random walk (BRW) - in the spirit of Derrida and Spohn [21] and studied from the statistical-physics point of view by Jagannath [22] - and we prove that this is not the case : a single elementary observation - that the resulting Hamiltonian is still a BRW, now with independent, but non-identically distributed, displacements - allows us to use the available results for general BRW. Combining classical and recent results on general BRW (Biggins [3], Chauvin and Rouault [13], Mallein [25]), one obtains an essentially complete picture of the model in an external magnetic field : the ground state, the free energy, the one-step replica symmetry breaking (1-RSB) transition, and the limiting genealogical overlap distribution with Poisson-Dirichlet statistics for the Gibbs weights. We then prove a strong concentration result for the magnetization under the Gibbs measure at low temperature, giving its explicit optimal value. It turns out that this one-replica statement is not enough to control the classical Ising overlap between two independently sampled configurations : an elementary counterexample (Remark 4.1) shows that concentration of each replica's magnetization does not, by itself, determine their joint correlation. We address this by developing a two-replica large-deviation argument - resting on the classical method of types and the subadditivity of Shannon entropy, and taking the form of a uniform Chernoff bound over the joint empirical type of a pair of configurations, matched against a two-replica concentration estimate - which we use to obtain the distribution of a second (Ising) hypercube-type overlap.",
+      "authors": [
+        "Olivier Zindy"
+      ],
+      "published": "2026-08-18T19:51:08Z",
+      "updated": "2026-08-18T19:51:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18276v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18276v1",
+      "score": 5,
+      "matched_keywords": [
+        "branching random walk",
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
     },
     {
       "id": "2608.16119v1",
@@ -106,6 +154,57 @@
       "matched_keywords": [
         "erdos",
         "renyi"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.19145v1",
+      "title": "The critical probability for percolation on finite graphs",
+      "abstract": "We determine the critical probability for Bernoulli bond percolation on essentially any finite graph. Namely, letting $λ(G)$ denote the spectral radius (maximum eigenvalue) of $G$, we prove that the critical probability is at $1/λ(G)$: above this probability there is typically a component of order $Ω(λ(G))$, whereas below it all components are of order at most $O(\\sqrt{|G|})$. These results in particular confirm a conjecture of Krivelevich and Samotij about percolation on graphs of a given average degree, and vastly extend theorems of Bollobás, Borgs, Chayes, and Riordan, who proved analogous results but only for dense graphs. Our theorems are optimal in many regimes, and also demonstrate that percolation has an unexpectedly subtle behaviour on graphs whose spectral radius is roughly the square root of their maximum degree.",
+      "authors": [
+        "Micha Christoph",
+        "Patryk Morawski",
+        "Yuval Wigderson"
+      ],
+      "published": "2026-08-19T17:32:32Z",
+      "updated": "2026-08-19T17:32:32Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19145v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19145v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.19198v1",
+      "title": "Probabilistic Representation and Convergence of Gromov-Wasserstein Gradient Flows",
+      "abstract": "Wasserstein gradient flows are intimately connected with evolution partial differential equations and diffusion processes. We take the first step in developing such connections for inner product Gromov--Wasserstein (IGW) gradient flows by studying the IGW gradient flow of the relative entropy $\\mathsf{H}(\\cdot\\|γ)$ with respect to the standard Gaussian measure $γ$. We first show that $\\mathsf{H}(\\cdot\\|γ)$ fails to be $λ$-convex along generalized or modified generalized IGW geodesics for any $λ\\in \\mathbb{R}$, and therefore falls outside the scope of the existing IGW gradient flow theory from Zhang et al. (2026). We bridge this gap by establishing a suitable \\emph{local} convexity estimate that enables the construction of the gradient flow and its extension to the infinite time horizon. We then obtain increasingly explicit representations of the resulting dynamics. Starting from a partial integro-differential equation, we derive a nonlinear Fokker--Planck equation and show that its second-moment dynamics decouple from the law as they satisfy an autonomous matrix ODE. This reduces the IGW dynamics to a linear, time-inhomogeneous Fokker--Planck equation, yielding a probabilistic representation as the time-marginal flow of a linear stochastic differential equation resembling the Ornstein--Uhlenbeck process. Finally, we study its asymptotic behavior by establishing exponential convergence of the flow to $γ$ in relative entropy.",
+      "authors": [
+        "Venkatkrishna Karumanchi",
+        "Ziv Goldfeld",
+        "Kengo Kato",
+        "Zhengxin Zhang"
+      ],
+      "published": "2026-08-19T17:59:27Z",
+      "updated": "2026-08-19T17:59:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19198v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19198v1",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -222,6 +321,54 @@
       "score": 3,
       "matched_keywords": [
         "poisson process"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.18612v1",
+      "title": "An FPRAS for Antiferromagnetic Ising Models on Random Regular Bipartite Graphs",
+      "abstract": "We design randomized approximation schemes for the partition function of antiferromagnetic Ising models with uniform external field on random regular bipartite graphs. Our algorithm generalizes the approach of Kocurek, Oveis Gharan and Tjowasi (arXiv, 2026) for hard-core models on the same random graph model beyond the uniqueness threshold. We show that, as long as $λ$ is upper bounded by a constant and $λ(1 - β) \\lesssim Δ^{-1/2}$, an efficient randomized algorithm approximates the partition function with high probability. The algorithm first truncates configurations that are large on either side of the bipartition and then samples from Gibbs distributions conditioned on fixed sizes on one or both sides. To choose an optimal truncation bound, we establish concentration properties of the Gibbs distribution on random regular bipartite graphs. Then we apply high-dimensional expansion and prove trickle-down theorems to obtain fast samplers for the conditioned distributions.",
+      "authors": [
+        "Zhidan Li",
+        "Kuan Yang"
+      ],
+      "published": "2026-08-19T06:54:21Z",
+      "updated": "2026-08-19T06:54:21Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18612v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18612v1",
+      "score": 3,
+      "matched_keywords": [
+        "random graph"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.18834v1",
+      "title": "The Parabolic Anderson Model's Total Mass at Small Times: Geometry, Fluctuations, and Renormalization",
+      "abstract": "Let $D\\subset\\mathbb R^d$ be a bounded domain, let $κ>0$ be fixed, and let $W$ be a fractional Brownian sheet on $\\mathbb R\\times\\mathbb R^d$. Consider the Stratonovich parabolic Anderson model (PAM) $\\partial_tu_κ=(\\frac12Δ+κW')u_κ$ with Dirichlet boundary condition on $D$ and the flat initial condition $u_κ(0,\\cdot)=\\mathbf 1_D$. We calculate exact asymptotics for the expectation and the standard deviation of the total mass $\\int_Du_κ(t,x)~\\mathrm d x$ as $t\\to0$ under the assumption that $W$'s Hurst indices are all at least $1/2$ and that $u_κ$'s moments are finite for small enough $t>0$. In doing so, we uncover that these asymptotics are determined by a competition between three mechanisms: (1) $\\mathbf{Geometry}$: The rate of heat diffusion through the boundary $\\partial D$. (2) $\\mathbf{Fluctuations}$: $W$'s time Hurst index. (3) $\\mathbf{Renormalization}$: The singularity of deterministic Stratonovich corrections. As a result, we identify novel phase transition phenomena, which arise from the influence of $W$'s Hurst indices on the relative magnitudes of these contributions.",
+      "authors": [
+        "Pierre Yves Gaudreau Lamarre",
+        "Yuanyuan Pan"
+      ],
+      "published": "2026-08-19T11:52:38Z",
+      "updated": "2026-08-19T11:52:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18834v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18834v1",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -367,6 +514,58 @@
       "score": 2,
       "matched_keywords": [
         "survival"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18910v1",
+      "title": "On the Slow Convergence to Trivial Solutions of Algorithms for Hard Optimization Problems",
+      "abstract": "Hard combinatorial optimization problems, many of which are NP-hard, present fundamental algorithmic challenges. Average-case analysis on random instances has emerged as a powerful framework for understanding typical algorithmic performance beyond worst-case guarantees. A substantial body of work has established negative results: for sufficiently hard instances (often controlled by the underlying graph connectivity/constraints density), no known polynomial-time algorithm can significantly outperform naive heuristics in the double asymptotic limit where both problem size and constraints density tend to infinity. We revisit this picture by studying the finite-size behavior of some optimization algorithms across easy, intermediate, and hard regimes. Through rigorous analysis of large-graph asymptotics combined with numerical experiments on canonical problems (maximum independent set and maximum $K$-SAT), we demonstrate that while algorithms do eventually converge to theoretically predicted bounds, this convergence can be remarkably slow. In the intermediate regime where instances are already highly constrained, local algorithms achieve solutions substantially better than their predicted performance in the high-constraint-density limit. This gap between finite-regime and asymptotic behavior has important practical implications: sophisticated algorithmic design remains crucial even when asymptotic theory predicts inevitable failure.",
+      "authors": [
+        "Ali Hussaini Umar",
+        "Jean Barbier",
+        "Matthieu Jonckheere",
+        "Manuel Sáenz"
+      ],
+      "published": "2026-08-19T13:40:11Z",
+      "updated": "2026-08-19T13:40:11Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cond-mat.dis-nn",
+        "cs.DM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18910v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18910v1",
+      "score": 2,
+      "matched_keywords": [
+        "connectivity"
+      ],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.19179v1",
+      "title": "A random walk on p-groups with a symmetric perfect pairing",
+      "abstract": "The kernel of a random symmetric p-adic matrix is a random abelian group, equipped with a symmetric pairing. If we consider not only the matrix but also its top-left corners, we get a process valued in isomorphism classes of abelian groups, equipped with such a pairing. We show that when the matrix is Haar random, this process is a Markov chain, generated by an operator that we explicitly describe. We will also prove that this operator is reversible with respect to a Cohen-Lenstra type measure.",
+      "authors": [
+        "Nikita Lvov"
+      ],
+      "published": "2026-08-19T17:54:27Z",
+      "updated": "2026-08-19T17:54:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19179v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19179v1",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
       ],
       "coauthors": [],
       "bucket": "other"
@@ -1030,6 +1229,267 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.18075v1",
       "pdf_url": "https://arxiv.org/pdf/2608.18075v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18286v1",
+      "title": "How far are $d$-dimensional copulas with uniform $(d-1)$-marginals from (total) independence?",
+      "abstract": "We consider the family ${\\mathcal{C}}_d^{Π_{d-1}}$ of all $d$-dimensional copulas whose $(d-1)$-dimensional marginals are all equal to the $(d-1)$-dimensional product copula $Π_{d-1}$ and tackle the natural question, `how far away' from the $d$-dimensional product copula $Π_d$ elements in ${\\mathcal{C}}_d^{Π_{d-1}}$ can be. We provide definitive answers for both, the uniform metric $d_\\infty$ as well as the stronger, conditioning-based metric $D_1$. The established results clearly indicate that the family ${\\mathcal{C}}_d^{Π_{d-1}}$ is larger than one might expect.",
+      "authors": [
+        "Damjana Kokol Bukovšek",
+        "Nik Stopar",
+        "Wolfgang Trutschnig"
+      ],
+      "published": "2026-08-18T20:11:25Z",
+      "updated": "2026-08-18T20:11:25Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18286v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18286v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18293v1",
+      "title": "Critical tensor covariance at the Marchenko--Pastur threshold",
+      "abstract": "Let $X$ be a centered, variance-one random variable with finite fourth moment, and form the principal degree-$d$ tensor feature vector of all square-free monomials in $n$ independent copies of $X$. For $m$ independent samples we determine the global spectral law of the sample covariance throughout the critical scale $d^2/n\\toλ\\in[0,\\infty)$, with aspect ratio $p/m\\to c$. For a fixed base distribution with finite fourth moment and $P(|X|=1)<1$, prior work gives ordinary Marchenko--Pastur convergence if and only if $d=o(\\sqrt n)$. We identify the finite critical boundary: when $d^2/n\\toλ\\in(0,\\infty)$, the tensor radius converges in quadratic Wasserstein distance to a lognormal law determined by the fourth moment, while all remaining bounded quadratic fluctuations vanish. A leave-one-out resolvent argument then yields almost-sure convergence of the empirical spectral distribution to a free compound-Poisson law driven by this endogenous lognormal jump. The limit reduces to Marchenko--Pastur when the fourth-moment excess or the overlap intensity vanishes. In the unit-modulus case, our estimates recover the sharp range $\\min(d,n-d)=o(n)$ for uniform quadratic-form concentration and imply Marchenko--Pastur convergence throughout that range, with an explicit variance bound.",
+      "authors": [
+        "Xiaohui Xie"
+      ],
+      "published": "2026-08-18T20:16:58Z",
+      "updated": "2026-08-18T20:16:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18293v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18293v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18320v1",
+      "title": "Asymptotics for Beta-Splitting Trees via Homogeneous Fragmentations and Meromorphic Potential Theory",
+      "abstract": "Inspired by recent work of Aldous, Janson, and Pittel on the critical beta-splitting model, we study the full beta-splitting family for beta greater than minus two through a canonical continuous-time embedding into a homogeneous exchangeable fragmentation. In this representation, the frequency of a tagged fragment is described by a subordinator. We express the continuous height of a typical leaf, its occupation probabilities, the discrete height, and the total continuous-time length in terms of the potential measure of this subordinator. Renewal theory yields first-order asymptotics and a central limit theorem for the continuous height. A regenerative-composition representation gives Gaussian limits for the discrete height above and at the critical value, and a non-Gaussian power-law limit below it. We also obtain residue expansions for the potential measure and the mean continuous height using meromorphic potential theory and generalized Nevanlinna functions. Finally, we study the maximum continuous-time height, proving a law of large numbers and a mixed Gumbel limit. At the critical parameter value, this resolves an open problem of Aldous and Janson.",
+      "authors": [
+        "Yoana R. Chorbadzhiyska",
+        "Martin Minchev",
+        "Mladen Savov"
+      ],
+      "published": "2026-08-18T21:14:45Z",
+      "updated": "2026-08-18T21:14:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18320v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18320v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18392v1",
+      "title": "On Samuels' Conjecture",
+      "abstract": "Let $0\\leqμ_1\\leq\\cdots\\leqμ_n$ and let $λ>\\sum_{i=1}^nμ_i$. Let $X_1,...,X_n$ be independent nonnegative random variables satisfying $\\mathbb{E}X_i=μ_i$, and write $D_i := λ-\\sum_{k=1}^{i-1}μ_k$ for $1\\leq i\\leq n$. We prove that $$ \\inf_{X_1,...,X_n} \\mathbb{P}\\left( \\sum_{i=1}^nX_i<λ\\right) = \\min_{1\\leq i\\leq n} \\prod_{j=i}^n \\left( 1-\\frac{μ_j}{D_i} \\right). $$ The bound is sharp and is attained. This proves Samuels' conjecture. Feige's conjecture is thereby resolved, since it follows immediately from the equal-means case. The proof is self-contained.",
+      "authors": [
+        "Zhi Ling"
+      ],
+      "published": "2026-08-18T23:48:34Z",
+      "updated": "2026-08-18T23:48:34Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18392v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18392v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18431v1",
+      "title": "Process Optimization Under Uncertainty for Improving the Bond Quality of Polymer Filaments in Fused Filament Fabrication",
+      "abstract": "This paper develops a computational framework to optimize the process parameters such that the bond quality between extruded polymer filaments is maximized in fused filament fabrication (FFF). A transient heat transfer analysis providing an estimate of the temperature profile of the filaments is coupled with a sintering neck growth model to assess the bond quality that occurs at the interfaces between adjacent filaments. Predicting the variability in the FFF process is essential for achieving proactive quality control of the manufactured part; however, the models used to predict the variability are affected by assumptions and approximations. This paper systematically quantifies the uncertainty in the bond quality model prediction due to various sources of uncertainty, both aleatory and epistemic, and includes the uncertainty and the model discrepancy in the process parameter optimization. Variance-based sensitivity analysis based on Sobol indices is used to quantify the relative contributions of the different uncertainty sources to the uncertainty in the bond quality. A Gaussian process (GP) surrogate model is constructed to compute and include the model discrepancy within the optimization. Physical experiments are conducted for calibration and validation of the physics model and also for validation of the optimum solution. The results show that the proposed formulation for process parameter optimization under uncertainty results in high bond quality between adjoining filaments of the FFF product.",
+      "authors": [
+        "Berkcan Kapusuzoglu",
+        "Matthew Sato",
+        "Sankaran Mahadevan",
+        "Paul Witherell"
+      ],
+      "published": "2026-08-19T01:44:37Z",
+      "updated": "2026-08-19T01:44:37Z",
+      "primary_category": "cs.CE",
+      "categories": [
+        "cs.CE",
+        "cs.LG",
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18431v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18431v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18557v1",
+      "title": "Randomly Permuted Orthogonal Products and Fast Dimension Reduction",
+      "abstract": "We study the effect of random signed permutations on products of orthogonal matrices and their applications to fast dimension reduction. Let $A,B \\in \\mathbb{R}^{d\\times d}$ be orthogonal matrices and let $Σ\\in \\mathbb{R}^{d\\times d}$ be a uniformly random signed permutation matrix. We analyze the random orthogonal matrix \\[ U=A ΣB, \\] and show that, under mild assumptions on the size of the entries of $A$ and $B$, \\[ \\max_{i,j=1,\\ldots,d} |U_{ij}| =O\\left ( \\sqrt{\\frac{\\log d}{d}}\\right ) \\] with high probability. As an application, we show that ORA, an analogue of the Kac walk in which every update is a $π/4$ rotation, reaches the same maximal entry scale after $O(d\\log d)$ updates. This resolves a question of Jain et al. and improves the running time of their construction. We also show that parallel ORA reaches this scale after $O(\\log d)$ rounds. We then study the random embedding \\[ Φ = \\sqrt{\\frac{d}{m}}\\, P_I U D_{ξ'}, \\] where $P_I$ restricts to $m$ coordinates and $ξ'$ is an independent Rademacher vector. We identify two parameters controlling norm preservation and show that, throughout the corresponding admissible range, $Φ$ achieves optimal embedding dimension $m\\asymp\\varepsilon^{-2}\\log(N)$. Finally, we extend the result to structured infinite models, including sparse vectors, low-rank matrices, and finite unions of subspaces.",
+      "authors": [
+        "Rafael Chiclana"
+      ],
+      "published": "2026-08-19T05:27:00Z",
+      "updated": "2026-08-19T05:27:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18557v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18557v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18688v1",
+      "title": "Regularity Preservation for Jump-Type Stochastic Transport Equations with Singular Drift",
+      "abstract": "We study a first-order stochastic transport equation driven by Brownian transport noise and a nonlinear state-dependent Poisson jump term. The drift vector field is merely integrable and satisfies the subcritical Krylov--Röckner condition. The dependence of the jump coefficient on the solution creates a nontrivial coupling between the solution value and its spatial gradient. To handle this coupling, we construct a stochastic characteristic system for the position, the solution value, and the gradient, and derive a characteristic representation by means of an Itô--Wentzell formula with jumps. For singular drifts, we combine smooth approximation, the Zvonkin transformation, estimates for stochastic flows, and stochastic Gronwall inequalities to pass to a weakly differentiable limit. Uniqueness is established directly in the weakly differentiable class through a renormalized energy estimate for the difference of two solutions, including the contribution of the Poisson compensator. Under suitable integrability and differentiability assumptions on the jump coefficient, we prove the existence and uniqueness of weakly differentiable solutions. We further show that the first-order spatial Sobolev regularity of the initial datum is preserved by the evolution.",
+      "authors": [
+        "Mingbo Zhang"
+      ],
+      "published": "2026-08-19T08:37:47Z",
+      "updated": "2026-08-19T08:37:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18688v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18688v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18783v1",
+      "title": "When to Sell an Asset? - A Distribution Builder Approach",
+      "abstract": "We consider the question of the optimal timing of the sale of an asset with stochastic dynamics. Our analysis is based on the method of the distribution builder introduced by Sharpe, Goldstein and Blythe [SGB00] for the purpose of optimal portfolio selection. Instead of specifying a utility function or risk aversion coefficient, this tool directly elicits the target distribution of the investor. We show how the problem of an optimal asset sale is in this setting linked to the problem of finding a Skorokhod embedding of a distribution into a diffusion process. In the case where the asset process follows a geometric Brownian motion and a specific family of distributions is targeted, one can observe a risk-return tradeoff.",
+      "authors": [
+        "Peter Carr",
+        "Stephan Sturm"
+      ],
+      "published": "2026-08-19T10:41:45Z",
+      "updated": "2026-08-19T10:41:45Z",
+      "primary_category": "q-fin.PR",
+      "categories": [
+        "q-fin.PR",
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18783v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18783v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18990v1",
+      "title": "Proving Lehner's formulas via RDT -- indefinite and asymmetric scenarios",
+      "abstract": "The strong asymptotic freeness established in [28,53] allows for the study of norms of Gaussian matrix polynomials via corresponding free operator counterparts. For spectral edges of semicircular free counterparts to symmetric Kronecker-Gaussian matrices, Lehner in [39] determined closed-form analytical characterizations. As an alternative to classical spectral methods, in [62], we created a Random Duality Theory (RDT) based framework for studying these problems and reproved Lehner's formula for definite matrix coefficients. In this work, we develop the RDT machinery further and achieve strong progress in several key directions: (i) Symmetric Square Case: We consider indefinite matrix coefficients and provide spectral edges lower bounds that match Lehner's formula. (ii) Asymmetric Non-Square Variants: We establish RDT asymmetric analogues to Lehner formulas and prove that they lower-bound the spectral edges. (iii) Interlaced Decoupling Property: We uncover that the obtained analogues exhibit a remarkable interlaced decoupling property. Additionally, we consider semi-definite programming (SDP) formulations that allow for the practical solution of the obtained analytical characterizations. Theoretical predictions obtained through solving SDPs are compared to numerical simulations, showing a striking agreement even for problem dimensions on the order of a few hundreds.",
+      "authors": [
+        "Mihailo Stojnic"
+      ],
+      "published": "2026-08-19T14:55:07Z",
+      "updated": "2026-08-19T14:55:07Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18990v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18990v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.18999v1",
+      "title": "A Sharp Joint Bias-Energy Envelope for Radial Clipping",
+      "abstract": "Radial clipping does two things at once: it removes the part of a vector outside a ball and retains a bounded vector inside the ball. The removed part produces bias, while the squared norm of the retained part produces energy. We determine the exact joint price of these effects when only a $p$-moment, $1<p\\le2$, is available. The problem turns out to be one-dimensional: everything is decided by the position of one point along a ray. At $α=pβ$, the extremal configuration changes. On one side a worst point can be chosen on the clipping sphere; on the other the unique positive extremal radius moves outside. When $p=2$, all inner radii tie in the first regime. The resulting constant is optimal both in the deterministic inequality and in the corresponding Hilbert-space stochastic problem. In the first regime, a symmetric law attains the bound. In the second, the supremum is not attained, but a two-point family with an increasingly rare outlier approaches it. We also show how the same transition determines the sharp bias-energy frontier. We conclude with statistical consequences and an application to online learning.",
+      "authors": [
+        "Danila Litvinov"
+      ],
+      "published": "2026-08-19T15:02:00Z",
+      "updated": "2026-08-19T15:02:00Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.18999v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.18999v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.19050v1",
+      "title": "Online Permutation Embedding: Optimal Stopping and Scaling Laws",
+      "abstract": "We study optimal online algorithms for embedding a permutation $π$ of $[k]$ into an iid stream of uniform $[0,1]$ random variables. This problem is a broad generalization of the classical online monotone subsequence selection problem, recovered in the special case $π=\\mathrm{Id}_k$. Our first contribution is an efficiently solvable dynamic program for the optimal embedding time of any $k$-permutation $π$. This dynamic program also yields an explicit optimal online embedding algorithm. We then investigate the asymptotic scaling of the optimal embedding time for uniformly random target permutations, as well as the extremal problem of identifying the permutations with largest expected online embedding time. Our second main result shows that, to first order, random permutations are strictly faster to embed than monotone permutations, which in turn are strictly faster to embed than the extremal permutations. This separation stands in sharp contrast to prevailing conjectures and heuristics in the offline theory of permutation embeddings.",
+      "authors": [
+        "Dylan J. Altschuler",
+        "Quentin Dubroff",
+        "Konstantin Tikhomirov"
+      ],
+      "published": "2026-08-19T15:42:18Z",
+      "updated": "2026-08-19T15:42:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19050v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19050v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.19104v1",
+      "title": "Record times for coverage thresholds and maximal spacings",
+      "abstract": "Let $X_1,X_2, \\ldots $ be independent uniform random points in a bounded region $A \\subset {\\bf R}^d$ having a smooth boundary, $d \\geq 1$. Let $B \\subset A$ be compact. The _coverage threshold_ of $B$, $R_n$, is the smallest $r$ such that $B$ is covered by the balls of radius $r$ centred on $X_1,\\ldots,X_n$. The _maximal spacing_ $\\tilde{R}_n$ is the volume of the largest ball contained in $A \\setminus \\{X_1,\\ldots,X_n\\}$. We investigate the asymptotic frequency of _record times_ in the sequence $(R_n)$, that is times $n$ for which $R_n < R_{n-1}$. Let $N_m$ denote the number of records in the sequence $(R_n)$ up to time $m$, and let $ν_m$ be the time at which the $m$th record value of the sequence $(R_n)$ occurs. For $B \\subset A^o$, we show that almost surely, $N_n \\sim \\frac12 (\\log n)^2$ and $ν_n^{1/\\sqrt{n}}\\to \\exp \\big(\\sqrt{2}\\: \\big)$ as $n \\to \\infty$, and likewise for $\\tilde{N}_n$ and $\\tildeν_n$, defined analogously in terms of $(\\tilde{R}_n)$. But if $B=A$ and $d \\geq 3$, then $N_n \\sim (1- \\frac{1}{d}) (\\log n)^2$ and $ν_n^{1/\\sqrt{n}}\\to \\exp \\big( \\sqrt{2d/(d-1)} \\: \\big)$. We also discuss the generalization (for fixed $k \\in {\\bf N}$) to $k$-coverage thresholds, maximal $k$-spacings and non-uniformly distributed points $X_i$ in $A$.",
+      "authors": [
+        "Mathew D. Penrose"
+      ],
+      "published": "2026-08-19T16:58:02Z",
+      "updated": "2026-08-19T16:58:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.19104v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.19104v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
