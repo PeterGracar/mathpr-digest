@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 34,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
-  "data_through": "2026-08-21",
-  "total_submissions": 86,
-  "fetched": 86,
-  "generated_at": "2026-08-21T03:16:25Z",
+  "data_through": "2026-08-23",
+  "total_submissions": 102,
+  "fetched": 102,
+  "generated_at": "2026-08-24T03:16:56Z",
   "entries": [
     {
       "id": "2608.17073v1",
@@ -77,6 +77,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.18276v1",
       "pdf_url": "https://arxiv.org/pdf/2608.18276v1",
+      "score": 5,
+      "matched_keywords": [
+        "branching random walk",
+        "random walk"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.21125v1",
+      "title": "Two problems for threshold cascades of interacting diffusions on unimodular random trees: front propagation with a Bramson correction, and the continuous-type limit theory",
+      "abstract": "Companion to arXiv:2608.XXXXX, which reduces threshold cascades of coupled Ornstein-Uhlenbeck diffusions on graphs converging Benjamini-Schramm to a unimodular Galton-Watson tree, unconditionally in a dissipative regime, to a finite-type Galton-Watson process. Two problems are left open there; we formulate both precisely, supply the analytic framework, and prove partial theorems. First, front propagation. We show the generation-indexed front admits a genuine branching random walk comparison, prove the front depth grows ballistically with an explicit speed $c_*$ given by the Perron root of a tilted mean matrix (unconditional in the dissipative regime), and reduce the conjectured Bramson delay $c_* t - \\frac{3}{2c_*}\\log t$ to the uniform integrability of a derivative martingale, which we construct at the linearised level. The front central limit theorem and the Bramson correction are stated as conjectures with a proof strategy. Second, the sensitive regime, where the type is a continuous failure strength and the offspring law is a Cox mixture. We prove the mean offspring operator $K$ on $L^2$ of the strength variable is quasi-compact with a spectral gap, the mechanism being Hilbert-Schmidt smoothing of the Ornstein-Uhlenbeck kernel governing strength inheritance. This yields a general-state-space Kesten-Stigum theorem, extends the $n^{-3/2}$ total-progeny law to continuous types with an explicit constant, and gives a strength-resolved central limit theorem. The continuous-type CRT scaling limit is reduced to a multitype invariance principle on a Polish type space, conjectured with all hypotheses verified modulo one tightness estimate. Neither problem is fully closed; each is given a framework, first-order theorems, and a precisely delimited remaining step.",
+      "authors": [
+        "Achyut Kumar",
+        "Abhinav duddala"
+      ],
+      "published": "2026-08-21T14:04:51Z",
+      "updated": "2026-08-21T14:04:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21125v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21125v1",
       "score": 5,
       "matched_keywords": [
         "branching random walk",
@@ -205,6 +229,30 @@
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
+      ],
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.20552v1",
+      "title": "One-point fluctuations for exponential last passage percolation under upper-tail conditioning",
+      "abstract": "We study exponential directed last passage percolation conditioned on the last passage time to a specified macroscopic point being atypically large. We determine the one-point fluctuations throughout two of the three spatial regions arising under this conditioning, as well as on the boundaries between these regions, extending the work of Baik-Cordaro-Tripathi. Depending on the location of the observation point, the limiting fluctuations are governed by the GUE Tracy-Widom distribution, a Gaussian distribution, or the one-spike BBP distribution on the boundaries between these regions. Through the correspondence with tandem queues, our results also describe how an atypically late departure at one customer-station pair affects departure epochs elsewhere in the network.",
+      "authors": [
+        "Jinho Baik",
+        "Tejaswi Tripathi"
+      ],
+      "published": "2026-08-20T20:32:12Z",
+      "updated": "2026-08-20T20:32:12Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20552v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20552v1",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
       ],
       "coauthors": [],
       "bucket": "medium"
@@ -1914,6 +1962,30 @@
       "bucket": "other"
     },
     {
+      "id": "2608.20447v1",
+      "title": "Mutual information and sensitivity analysis for feature selection in customer targeting: a comparative study",
+      "abstract": "Feature selection is a highly relevant task in a data-driven knowledge discovery project. Several techniques have been developed aiming at finding the features that influence most an outcome to predict, including mutual information and, in recent years, the data-based sensitivity analysis. The present research focus on analyzing the advantages and disadvantages of each of these two techniques, by applying both to a bank telemarketing case. Thereafter, a logistic regression model is built on the tuned set of features identified by each of the two techniques as the most influencing set of features on the success of a telemarketing contact, in a total of 13 features for mutual information and 9 features for the data-based sensitivity analysis. The latter performs better for lower values of false positives while the former is slightly better for a higher false positive ratio. Thus, mutual information becomes a better choice if bank managers intend to reduce slightly the cost of contacts without risking losing a high number of successes. Such results show that mutual information, although not recent, is still a valid method for feature selection. On the other side, the data-based sensitivity analysis selection achieved good prediction results with less features.",
+      "authors": [
+        "Nestor Barraza",
+        "Sergio Moro",
+        "Marcelo Ferreyra",
+        "Adolfo de la Peña"
+      ],
+      "published": "2026-08-20T17:00:19Z",
+      "updated": "2026-08-20T17:00:19Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20447v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20447v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2608.20266v1",
       "title": "Necessary conditions for deterministic and stochastic maximal regularity",
       "abstract": "We study the role of Banach space geometry in deterministic and stochastic maximal regularity. We first construct an example showing that the UMD assumption in Weis' characterisation of maximal $L^p$-regularity in terms of $R$-sectoriality cannot be omitted. Combining this construction with an equivalence between stochastic maximal regularity and deterministic maximal regularity on the $2$-concavification of the underlying space, we obtain an operator on a UMD Banach function space of type $2$ that has a bounded $H^\\infty$-calculus of angle zero, but fails stochastic maximal $L^p$-regularity (SMR$_p$) for every $p\\in[2,\\infty)$. Motivated by this example, we study the Banach space geometry hypothesis underlying SMR$_p$ more closely. This is an $R$-boundedness condition $(S_p)$ for stochastic convolution operators. For UMD spaces $X$ of type $2$, we show that this condition is not only sufficient, but also necessary for two canonical test operators: a diagonal multiplier on a Rademacher space and, for $q>2$, the Laplacian on $L^q(\\mathbb R^d;X)$. Finally, we prove that its interval-kernel and exponential-kernel formulations are equivalent and that, at the endpoint $p=2$, condition $(S_2)$ holds if and only if $X$ is isomorphic to a Hilbert space.",
@@ -1977,6 +2049,294 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.20321v1",
       "pdf_url": "https://arxiv.org/pdf/2608.20321v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20472v1",
+      "title": "Free Burnside groups of large odd exponent have cost 1",
+      "abstract": "We prove that the free Burnside group $B(m,n)$ with $m\\geq 2$ generators and sufficiently large odd exponent $n$ (e.g., $n\\geq 1003$ if $m=2$, and $n\\geq 665$ if $m\\geq 3$), has cost $1$. It follows that $B(m,n)$ is anti-treeable, and that its first $\\ell^2$-Betti number $β_1^{(2)}(B(m,n))$ vanishes. The latter recovers and extends a result of Feldkamp and Kionke [Proc. Amer. Math. Soc., 2023], who proved that $β_1^{(2)}(B(m,p))=0$ for all sufficiently large prime exponents $p$.",
+      "authors": [
+        "Miguel Donoso-Echenique",
+        "Eduardo Silva"
+      ],
+      "published": "2026-08-20T18:02:11Z",
+      "updated": "2026-08-20T18:02:11Z",
+      "primary_category": "math.GR",
+      "categories": [
+        "math.GR",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20472v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20472v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20537v1",
+      "title": "Persistent anisotropy in multi-dimensional branching Brownian motion",
+      "abstract": "We study angular variation in the frontier of branching Brownian motion (BBM) in multiple dimensions. The time average of this frontier is tied to the long-time limit of the critical derivative martingale, which is a random integrable function on the sphere. We show that this function is nowhere locally bounded. As a consequence, BBM exhibits strong persistent anisotropy: there are dense arbitrarily large gaps between the BBM frontier in different directions.",
+      "authors": [
+        "Cole Graham",
+        "Leonid Mytnik",
+        "Lenya Ryzhik"
+      ],
+      "published": "2026-08-20T19:58:19Z",
+      "updated": "2026-08-20T19:58:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20537v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20537v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20613v1",
+      "title": "Random walks on wreath products and spectral gaps for coloured interchange processes",
+      "abstract": "We introduce group-valued coloured interchange processes, a class of continuous-time random walks on wreath products generated by transpositions and arbitrary symmetric base-group transitions. We give a complete representation-theoretic characterisation of their spectral gaps by decomposing the associated quasi-regular representation and determining precisely which irreducible representations are required. For abelian base groups, we realise these representations on multislices and identify their Laplacians with discrete Schrödinger operators. We then classify the minimal families of irreducible representations that determine the spectral gap for every choice of transition rates.",
+      "authors": [
+        "Haoran Zhu"
+      ],
+      "published": "2026-08-20T23:23:45Z",
+      "updated": "2026-08-20T23:23:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.GR",
+        "math.RT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20613v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20613v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20620v1",
+      "title": "A probabilistic approach to the Yang--Baxter equation and skew braces",
+      "abstract": "We investigate finite non-degenerate set-theoretic solutions to the Yang--Baxter equation and skew braces using a probabilistic approach. We introduce four probabilities that measure how far a solution is from being a flip, but in different ways. Our main results state that for solutions arising from skew braces, these probabilities exhibit a rigid behaviour --- apart from a finite list of exceptional values (which we show to occur by means of explicit examples), they admit an upper bound that is slightly above $\\frac{1}{2}$. In the skew brace setting, these probabilities measure how far the underlying skew brace is from being a trivial brace (in two different ways: one via the annihilator and the other via the socle), a trivial skew brace, and an almost trivial skew brace. We also introduce a probability that is related to the indecomposable components of a solution, and a probability that measures how close an arbitrary bijective non-degenerate map is to being a solution. In contrast to our main results, these two probabilities do not exhibit a discrete behaviour near $1$ --- they can be made arbitrarily close to $1$.",
+      "authors": [
+        "Maria Ferrara",
+        "Marco Trombetti",
+        "Cindy Tsang"
+      ],
+      "published": "2026-08-20T23:40:58Z",
+      "updated": "2026-08-20T23:40:58Z",
+      "primary_category": "math.GR",
+      "categories": [
+        "math.GR",
+        "math.PR",
+        "math.RA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20620v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20620v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20816v1",
+      "title": "Thin-Shell implies small-ball deviation via Gaussian tilts",
+      "abstract": "We show that uniform thin-shell estimates for (even) isotropic log-concave measures $μ$ on $\\mathbb{R}^n$ yield precise and explicit deviation estimates for the Euclidean norm $|X|$ below the expectation, improving the square-root dependence of Klartag-Lehec to a quadratic one (which is best possible, up to numeric constants). Using the recent Chen-Klartag sharp variance bound, we deduce: $$ μ\\left(|X|\\le \\sqrt{n}-s\\right) \\le \\exp\\left\\{ -\\frac{s^2}{4} \\left(1+O\\left(\\frac{s}{\\sqrt{n}}\\right)\\right) \\right\\} \\qquad \\forall\\, s\\in(0,\\sqrt{n}). $$ In particular, this yields a new and transparent proof that Thin-Shell implies Slicing (by passing through small-ball estimates). Our method is based on using central Gaussian tilts, recently introduced by Brazitikos, which may be thought of as a deterministic version of Eldan's stochastic localization.",
+      "authors": [
+        "Silouanos Brazitikos",
+        "Emanuel Milman"
+      ],
+      "published": "2026-08-21T07:38:49Z",
+      "updated": "2026-08-21T07:38:49Z",
+      "primary_category": "math.FA",
+      "categories": [
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20816v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20816v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.20854v1",
+      "title": "Heat Codimension and Scalar Curvature",
+      "abstract": "Motivated by recent proofs of Gromov's codimension-two volume-growth conjecture, we propose a synthetic theory for scalar lower bound on metric measure Dirichlet spaces.",
+      "authors": [
+        "Bang-Xian Han"
+      ],
+      "published": "2026-08-21T08:20:27Z",
+      "updated": "2026-08-21T08:20:27Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.DG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.20854v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.20854v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21014v1",
+      "title": "The stochastic Cahn-Hilliard equation in critical spaces",
+      "abstract": "We study stochastic Cahn-Hilliard equations in bounded smooth domains with a double-well potential, transport-type noise, and natural Neumann boundary conditions in dimensions $d\\le 4$. By employing stochastic maximal regularity techniques and deriving suitable energy estimates, we prove local and global well-posedness. The initial data considered here are allowed to belong to the critical trace space $B^{d/q-1}_{q,p}$, which is locally invariant under the natural scaling of the Cahn-Hilliard equation. In particular, for arbitrary $\\varepsilon>1/3$ one can find $q$ sufficiently large such that uniqueness and global existence of a probabilistically strong solution hold for every initial datum $u_0\\in H^{\\varepsilon, q}(\\mathscr{O})$. If $u_0\\in H^1(\\mathscr{O})$, then these global solutions have $L_t^2H_x^3 \\cap C_tH_x^1$-regularity on finite time intervals.",
+      "authors": [
+        "Simon Bau",
+        "Gideon Chiusole",
+        "Sarah Geiss",
+        "Katharina Klioba",
+        "Tobias Werner"
+      ],
+      "published": "2026-08-21T12:02:01Z",
+      "updated": "2026-08-21T12:02:01Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21014v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21014v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21063v1",
+      "title": "Non-bijective scaling limits and phase transitions of planar maps",
+      "abstract": "We prove that the uniform random non-separable planar map with $n$ edges admits the Brownian sphere as Gromov--Hausdorff--Prokhorov scaling limit as $n$ tends to infinity. Our proof introduces a non-bijective ``common-core transfer method'' that constitutes a novel and universal proof strategy for scaling limits of random discrete structures. As an application, we complete the phase diagram for limiting shapes of block-weighted planar maps by Stufler~(2019). We describe phases with limits given by the Brownian sphere, stable trees, and Brownian sphere decorated stable trees recently introduced by S{é}nizergues, Stef{á}nsson and Stufler~(2023).",
+      "authors": [
+        "Benedikt Stufler"
+      ],
+      "published": "2026-08-21T13:07:03Z",
+      "updated": "2026-08-21T13:07:03Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21063v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21063v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21090v1",
+      "title": "Ornstein-Uhlenbeck process conditioned to have restricted $L_2$-norm",
+      "abstract": "We condition an Ornstein-Uhlenbeck process on having an atypically small $L_2$-norm on long time intervals. The weak limit of these conditioned processes is again an Ornstein-Uhlenbeck process, this time with a stronger mean-reverting force than the unconditioned process, which is controlled by the restriction on the $L_2$-norm.",
+      "authors": [
+        "Frank Aurzada",
+        "Mikhail Lifshits",
+        "Max Wiegand"
+      ],
+      "published": "2026-08-21T13:34:16Z",
+      "updated": "2026-08-21T13:34:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21090v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21090v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21255v1",
+      "title": "Laws of the iterated logarithm for random Dirichlet series with general weights",
+      "abstract": "For each $s>0$, we consider a random Dirichlet series $X(s)=\\sum_{k\\geq 1}k^{-1/2-s}a_kη_k$, where $η_1$, $η_2,\\ldots$ are independent and identically distributed random variables with mean zero and finite positive variance, and $(a_k)_{k\\geq 1}$ is a deterministic sequence of real numbers satisfying $\\sum_{k\\geq 1}k^{-1-2s}a_k^2<\\infty$ for each $s>0$ and $\\sum_{k\\geq 1}k^{-1}a_k^2=\\infty$. We investigate the almost-sure fluctuations of $X(s)$ as $s\\to0+$. Under these minimal assumptions, we construct examples exhibiting several non-standard forms of the law of the iterated logarithm (LIL) along suitable sequences: the normalization and the upper and lower limit constants may differ from their classical counterparts. We also show that a regular growth condition of the form $\\sum_{k\\leq n}k^{-1}a_k^2\\sim c(\\log n)^β$, where $c,β>0$, is not by itself sufficient to ensure a standard LIL. Finally, under an additional counting condition controlling the frequency of indices at which the weights $a_k$ are comparatively large, we prove that $(2{\\rm Var}\\,[X(s)]\\log\\log({\\rm Var}\\,[X(s)]))^{-1/2}X(s)$ has the almost-sure cluster set $[-1,1]$ as $s\\to 0+$. The latter result is applied to several coefficient sequences of number-theoretic origin.",
+      "authors": [
+        "Alexander Iksanov",
+        "Ruslan Kostohryz"
+      ],
+      "published": "2026-08-21T16:08:58Z",
+      "updated": "2026-08-21T16:08:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21255v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21255v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21306v1",
+      "title": "The spin-1/2 Heisenberg XXZ chain and the Lorentz mirror model with loop weight 2",
+      "abstract": "We prove that for the spin-1/2 Heisenberg XXZ chain in the range $Δ\\in[-1,1/2]$, the ground state on the torus of length $L$ converges to an infinite volume ground state $\\langle\\cdot\\rangle$ as $L\\to\\infty$, and that the spin-spin correlation $\\langle S_0^{(1)}S_x^{(1)}\\rangle$ decays polynomially fast in $x$. In the range $Δ\\in[-1,0]$ we have the stronger results: that the convergence holds for several finite-volume, finite temperature states, that $L$ and $β=1/T$ can be taken to infinity in any order, that the convergence holds on (Euclidean) dynamic correlators, and that $\\langle S_0^{(1)}S_x^{(1)}(t)\\rangle$ decays to zero in $|(x,t)|$, and cannot decay exponentially fast. The convergence of the ground state in infinite volume is known rigorously by Bethe Ansatz methods, while our correlation decay results (apart from the points $Δ=0,-1$), the convergence on dynamic correlators and the interchangeability of limits are new at the rigorous level. Moreover our methods are new and do not use any Bethe Ansatz techniques, using only the following related probabilistic models. In the Lorentz mirror model with loop weight 2, a model of random loops on the square lattice, in a large range of parameters we prove that connection probabilities tend to 0, and do so polynomially fast in the symmetric case of the model. Our proof uses two couplings of this mirror model with the six-vertex model, one of which is new. The main input is the delocalisation of the height function of the six-vertex model proved by several authors. We further prove that the height function of a certain space-time version of the six-vertex model delocalises and then prove through analogous couplings to those mentioned above that connection probabilities converge to 0 in the loop representation of the XXZ model introduced by Ueltschi.",
+      "authors": [
+        "Kieran Ryan"
+      ],
+      "published": "2026-08-21T17:07:43Z",
+      "updated": "2026-08-21T17:07:43Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21306v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21306v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21312v1",
+      "title": "Interface between competing random walks on a cycle",
+      "abstract": "We consider a competition between two independent random walks on a cycle of length $N$. Each vertex is claimed by the walker that visits it first, and remains claimed thereafter. We prove that if the initial distance between the walkers is $d$, then the expected number of edges whose endpoints are claimed by different walkers is of order $\\ln(1+N/d).$ This confirms the logarithmic dependence on $N/d$ predicted in Gomes Jr. et al. [Coloring of a one-dimensional lattice by two independent random walkers. Physica A: Statistical Mechanics and its Applications 225.1 (1996): 81-88].",
+      "authors": [
+        "Shirshendu Chatterjee",
+        "Nadya Nabahi",
+        "Grigory Terlov"
+      ],
+      "published": "2026-08-21T17:21:34Z",
+      "updated": "2026-08-21T17:21:34Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21312v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21312v1",
+      "score": 0,
+      "matched_keywords": [],
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.21354v1",
+      "title": "Almost sure upper bound for sums of random multiplicative functions and critical chaos",
+      "abstract": "Let $f$ be a Steinhaus or Rademacher random multiplicative function. We use methods from the theory of critical chaos to improve on the best known upper bound for partial sums of random multiplicative functions. In particular, our results imply that for any $\\varepsilon>0$, almost surely $$ \\Big|\\sum_{n\\le x}f(n)\\Big| \\ll_{f,\\varepsilon}\\sqrt{x}(\\log_2x)^{1/4}(\\log_3x)^{1+\\varepsilon}. $$ This proves in a strong form a conjecture of Harper on large fluctuations of partial sums of random multiplicative functions, and determines the exact corresponding logarithmic exponent.",
+      "authors": [
+        "William Verreault"
+      ],
+      "published": "2026-08-21T17:57:50Z",
+      "updated": "2026-08-21T17:57:50Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.21354v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.21354v1",
       "score": 0,
       "matched_keywords": [],
       "coauthors": [],
