@@ -125,7 +125,9 @@ def parse_entry(e):
         node = e.find(tag, NS)
         return node.text.strip() if node is not None and node.text else ""
 
-    arxiv_id = txt("a:id").split("/abs/")[-1]
+    # strip the version suffix ('…v2') so the id and links always point at the
+    # latest revision of the article rather than the announced version
+    arxiv_id = re.sub(r"v\d+$", "", txt("a:id").split("/abs/")[-1])
     authors = [a.find("a:name", NS).text.strip()
                for a in e.findall("a:author", NS)
                if a.find("a:name", NS) is not None]

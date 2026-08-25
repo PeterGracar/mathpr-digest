@@ -62,6 +62,16 @@ def _mark_own(week):
             e["bucket"] = "own"
 
 
+def _strip_versions(week):
+    """Point ids and arXiv links at the versionless (latest) article page.
+    New weeks arrive clean from parse_entry(); finalized week JSONs are
+    frozen, so older cached weeks are rewritten here at build time (in
+    memory only — data/ is never rewritten)."""
+    for e in week.get("entries", []):
+        for k in ("id", "abs_url", "pdf_url"):
+            e[k] = re.sub(r"v\d+$", "", e[k])
+
+
 def _counts(week):
     c = {"own": 0, "coauthor": 0, "high": 0, "medium": 0, "other": 0}
     for e in week["entries"]:
@@ -104,6 +114,7 @@ def build(weeks=None):
     weeks = [w for w in weeks if w.get("entries")]
     for w in weeks:
         _mark_own(w)
+        _strip_versions(w)
     site_data = os.path.join(SITE_DIR, "data")
     os.makedirs(site_data, exist_ok=True)
 
