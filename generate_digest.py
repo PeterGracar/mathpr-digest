@@ -6,8 +6,8 @@ Idempotent and re-runnable:
   * Determines every completed Mon-Sun week from FIRST_WEEK_MONDAY up to the
     most recent completed Sunday (strictly before "today").
   * Fetches new submissions to math.PR for any week not already cached in
-    data/, scores them against Peter's research interests, flags coauthors,
-    and writes data/week-YYYY-MM-DD.json.
+    data/, scores them against Peter's research interests, flags his own
+    papers and coauthors, and writes data/week-YYYY-MM-DD.json.
   * Rebuilds the browsable HTML site in site/ from all cached weeks.
 
 This means missing past digests are constructed retroactively on every run.
@@ -160,8 +160,10 @@ def score_entry(e):
         if re.search(pat, hay):
             score += w
             matched.append(kw.strip())
-    # coauthor detection
+    # own-paper / coauthor detection
     author_norm = [norm(a) for a in e["authors"]]
+    op = norm(config.OWNER).split()
+    own = any(op[-1] in an and op[0] in an for an in author_norm)
     coauthors_hit = []
     for ca in config.COAUTHORS:
         cn = norm(ca)
@@ -174,8 +176,11 @@ def score_entry(e):
                 break
     e["score"] = score
     e["matched_keywords"] = sorted(set(matched))
+    e["own"] = own
     e["coauthors"] = sorted(set(coauthors_hit))
-    if e["coauthors"]:
+    if own:
+        e["bucket"] = "own"
+    elif e["coauthors"]:
         e["bucket"] = "coauthor"
     elif score >= config.HIGH_THRESHOLD:
         e["bucket"] = "high"
@@ -217,7 +222,8 @@ def build_week(monday, sunday, today, force=False):
     entries, total = fetch_week(monday, sunday)
     for e in entries:
         score_entry(e)
-    entries.sort(key=lambda x: (x["bucket"] != "coauthor",
+    entries.sort(key=lambda x: (x["bucket"] != "own",
+                                x["bucket"] != "coauthor",
                                 x["bucket"] != "high",
                                 x["bucket"] != "medium",
                                 -x["score"], x["published"]))
@@ -239,6 +245,7 @@ def build_week(monday, sunday, today, force=False):
     with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
     print(f"    -> {len(entries)} submissions, "
+          f"{sum(1 for e in entries if e.get('own'))} own, "
           f"{sum(1 for e in entries if e['coauthors'])} coauthor, "
           f"{sum(1 for e in entries if e['bucket']=='high')} high-relevance"
           f"{'' if finalized else '  (will refresh next run)'}",

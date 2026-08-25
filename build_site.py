@@ -20,6 +20,7 @@ Can be run standalone (reads data/) or called as build(weeks).
 import glob
 import json
 import os
+import unicodedata
 from datetime import datetime, timezone
 
 import config
@@ -37,8 +38,29 @@ def load_all_weeks():
     return weeks
 
 
+def _norm(s):
+    """Lowercase + strip accents — mirrors norm() in generate_digest.py."""
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return s.lower()
+
+
+def _mark_own(week):
+    """Flag entries authored by config.OWNER and lift them into the 'own'
+    bucket. New weeks arrive already flagged by score_entry(); finalized week
+    JSONs are frozen, so older cached weeks are upgraded here at build time
+    (in memory only — data/ is never rewritten)."""
+    op = _norm(config.OWNER).split()
+    for e in week.get("entries", []):
+        if "own" not in e:
+            e["own"] = any(op[-1] in an and op[0] in an
+                           for an in (_norm(a) for a in e["authors"]))
+        if e["own"]:
+            e["bucket"] = "own"
+
+
 def _counts(week):
-    c = {"coauthor": 0, "high": 0, "medium": 0, "other": 0}
+    c = {"own": 0, "coauthor": 0, "high": 0, "medium": 0, "other": 0}
     for e in week["entries"]:
         c[e.get("bucket", "other")] = c.get(e.get("bucket", "other"), 0) + 1
     c["total"] = len(week["entries"])
@@ -55,6 +77,8 @@ def build(weeks=None):
     # Monday papers land in the next run) — so it shouldn't appear in the UI (nav,
     # index, or a lazy data file) until it has at least one entry.
     weeks = [w for w in weeks if w.get("entries")]
+    for w in weeks:
+        _mark_own(w)
     site_data = os.path.join(SITE_DIR, "data")
     os.makedirs(site_data, exist_ok=True)
 
@@ -154,6 +178,7 @@ window.MathJax = {
     <h2>Digests</h2>
     <nav id="weekList"></nav>
     <div class="legend">
+      <span class="chip own">own paper</span>
       <span class="chip coauthor">coauthor</span>
       <span class="chip high">highly relevant</span>
       <span class="chip medium">possibly relevant</span>
@@ -180,6 +205,7 @@ function typesetMath(node){
 }
 
 const BUCKETS = [
+  {key:"own",      label:"Own papers",           cls:"own"},
   {key:"coauthor", label:"Coauthor submissions", cls:"coauthor"},
   {key:"high",     label:"Highly relevant",      cls:"high"},
   {key:"medium",   label:"Possibly relevant",    cls:"medium"},
@@ -206,10 +232,13 @@ function isCoauthor(a, ca){
 // Banner names: prefer the paper's own spelling ('Mönch') over the ASCII config
 // entry, falling back to the config name when no author matched.
 const coauthorNames = e => (e.coauthors||[]).map(ca=>(e.authors||[]).find(a=>isCoauthor(a,ca))||ca);
+// The owner's own name uses the same first+last rule.
+const isOwner = a => isCoauthor(a, D.owner||'');
 
 function authorsHTML(e){
   const cos=e.coauthors||[];
   return e.authors.map(a=>
+    isOwner(a)? '<strong class="own">'+esc(a)+'</strong>' :
     cos.some(ca=>isCoauthor(a,ca))? '<strong class="co">'+esc(a)+'</strong>' : esc(a)
   ).join(', ');
 }
@@ -218,9 +247,10 @@ function entryCard(e){
   const card=el('article','entry b-'+e.bucket);
   const cats=e.categories.map(c=>'<span class="cat'+(c===e.primary_category?' prim':'')+'">'+esc(c)+'</span>').join('');
   const kws=(e.matched_keywords||[]).slice(0,8).map(k=>'<span class="kw">'+esc(k)+'</span>').join('');
+  const own=e.own?'<div class="ownbanner">✦ Own paper</div>':'';
   const co=(e.coauthors&&e.coauthors.length)?'<div class="cobanner">★ Coauthor: '+coauthorNames(e).map(esc).join(', ')+'</div>':'';
   card.innerHTML =
-    co+
+    own+co+
     '<h3><a href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.title)+'</a></h3>'+
     '<div class="authors">'+authorsHTML(e)+'</div>'+
     '<div class="meta">'+cats+' <a class="idlink" href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.id)+'</a>'+
@@ -258,10 +288,12 @@ function collapsibleOther(sec, body, startHidden){
 function renderWeek(w, term){
   const main=$('#main'); main.innerHTML='';
   const head=el('div','weekhead');
+  const ownN=w.entries.filter(e=>e.bucket==='own').length;
   const coN=w.entries.filter(e=>e.bucket==='coauthor').length;
   head.innerHTML='<h2>'+fmtRange(w)+(inProgress(w)?' <span class="tag-prog">in progress</span>':'')+'</h2>'+
     '<p class="wstats">'+w.entries.length+(inProgress(w)?' submissions so far':' new submissions')+' to '+esc(w.category)+
     ' &middot; ISO week '+w.iso_year+'-W'+String(w.iso_week).padStart(2,'0')+
+    (ownN?' &middot; <span class="hlown">'+ownN+' own</span>':'')+
     (coN?' &middot; <span class="hl">'+coN+' coauthor</span>':'')+'</p>'+
     (inProgress(w)?'<div class="progress">● Partial week — data through '+fmtDay(w.data_through)+
       '. This digest updates automatically on each run until the week closes.</div>':'');
@@ -319,7 +351,7 @@ function scopeLoaded(){ return scopeIndices().every(i=>(window.DIGEST_WEEKS||{})
 function filteredCounts(monday, t){
   const wk=(window.DIGEST_WEEKS||{})[monday];
   if(!wk) return null;
-  const c={coauthor:0,high:0,medium:0,other:0,total:0};
+  const c={own:0,coauthor:0,high:0,medium:0,other:0,total:0};
   for(const e of wk.entries){
     if(!entryMatches(e,t)) continue;
     c[(e.bucket in c)?e.bucket:'other']++;
@@ -332,11 +364,13 @@ function filteredCounts(monday, t){
 // coauthor★ / high / medium / other (nonzero only); without, the static layout.
 function badgesHTML(c, term){
   if(!lc(term)){
-    return (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
+    return (c.own?'<span class="b own">✦'+c.own+'</span>':'')+
+           (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
            (c.high?'<span class="b high">'+c.high+'</span>':'')+
            '<span class="b tot">'+c.total+'</span>';
   }
-  return (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
+  return (c.own?'<span class="b own">✦'+c.own+'</span>':'')+
+         (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
          (c.high  ?'<span class="b high">'  +c.high  +'</span>':'')+
          (c.medium?'<span class="b medium">'+c.medium+'</span>':'')+
          (c.other ?'<span class="b other">' +c.other +'</span>':'');
@@ -387,6 +421,7 @@ function renderNav(term){
   order.forEach(y=>{
     const items=byYear[y];
     const open=openYears.has(y);
+    const ownAll=items.reduce((s,i)=>s+(D.weeks[i].counts.own||0),0);
     const coAll=items.reduce((s,i)=>s+D.weeks[i].counts.coauthor,0);
     // during search, show this year's total hits once all its weeks are loaded
     let yearHits=null;
@@ -397,7 +432,8 @@ function renderNav(term){
     }
     const head=el('button','yearhead'+(open?' open':''));
     const meta=(yearHits!=null)? items.length+' wk · <span class="hits">'+yearHits+' hit'+(yearHits===1?'':'s')+'</span>'
-                               : items.length+' wk'+(coAll?' · <span class="co">★'+coAll+'</span>':'');
+                               : items.length+' wk'+(ownAll?' · <span class="own">✦'+ownAll+'</span>':'')+
+                                 (coAll?' · <span class="co">★'+coAll+'</span>':'');
     head.innerHTML='<span><span class="caret">'+(open?'▾':'▸')+'</span> '+y+'</span>'+
       '<span class="ymeta">'+meta+'</span>';
     head.addEventListener('click',()=>{ openYears.has(y)?openYears.delete(y):openYears.add(y); renderNav(term); });
@@ -416,7 +452,7 @@ function renderAllEntry(term){
   const box=$('#allResults'); box.innerHTML='';
   const t=lc(term);
   if(!t) return;
-  const c={coauthor:0,high:0,medium:0,other:0,total:0};
+  const c={own:0,coauthor:0,high:0,medium:0,other:0,total:0};
   scopeIndices().forEach(i=>{ const fc=filteredCounts(D.weeks[i].monday,t);
     if(fc) for(const k in c) c[k]+=fc[k]; });
   const scoped=(searchScope==='recent' && olderCount()>0);
@@ -603,7 +639,7 @@ init();
 
 STYLE_CSS = r""":root{
   --bg:#0f1115; --panel:#171a21; --panel2:#1d2129; --ink:#e7e9ee; --mut:#9aa3b2;
-  --line:#272c36; --accent:#6ea8fe; --co:#ffcf5c; --hi:#67d99b; --med:#8fb6ff;
+  --line:#272c36; --accent:#6ea8fe; --own:#ff8fab; --co:#ffcf5c; --hi:#67d99b; --med:#8fb6ff;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -628,6 +664,7 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .yearhead:hover{color:var(--accent)}
 .yearhead .caret{display:inline-block;width:12px;color:var(--mut);font-size:11px}
 .yearhead .ymeta{font-size:11.5px;font-weight:400;color:var(--mut)}
+.yearhead .ymeta .own{color:var(--own)}
 .yearhead .ymeta .co{color:var(--co)}
 .yearhead .ymeta .hits{color:var(--accent)}
 .yearweeks{margin-bottom:4px}
@@ -651,8 +688,10 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .b.other{background:#2a3140;color:var(--mut)}
 .b.loading{background:#2a3140;color:var(--mut);opacity:.7}
 .b.coauthor{background:rgba(255,207,92,.18);color:var(--co)}
+.b.own{background:rgba(255,143,171,.18);color:var(--own)}
 .legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
 .chip{font-size:11px;padding:2px 9px;border-radius:20px}
+.chip.own{background:rgba(255,143,171,.18);color:var(--own)}
 .chip.coauthor{background:rgba(255,207,92,.18);color:var(--co)}
 .chip.high{background:rgba(103,217,155,.16);color:var(--hi)}
 .chip.medium{background:rgba(143,182,255,.16);color:var(--med)}
@@ -660,6 +699,7 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .weekhead h2{margin:0 0 2px;font-size:21px}
 .wstats{margin:0 0 18px;color:var(--mut);font-size:13.5px}
 .wstats .hl{color:var(--co);font-weight:600}
+.wstats .hlown{color:var(--own);font-weight:600}
 .tag-prog{font-size:12px;vertical-align:middle;background:rgba(110,168,254,.18);color:var(--accent);
   padding:2px 9px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase}
 .progress{margin:0 0 18px;padding:9px 13px;border:1px solid rgba(110,168,254,.4);
@@ -673,16 +713,20 @@ header .sub{margin:0;color:var(--mut);max-width:820px}
 .bhead.collapsible{cursor:pointer}
 .bhead.collapsible:hover{color:var(--ink)}
 .bbody.hidden{display:none}
+.bucket.own .bhead{color:var(--own)}
 .bucket.coauthor .bhead{color:var(--co)}
 .bucket.high .bhead{color:var(--hi)}
 .entry{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin-bottom:12px}
 .entry.b-coauthor{border-color:rgba(255,207,92,.55);background:linear-gradient(180deg,rgba(255,207,92,.06),var(--panel))}
+.entry.b-own{border-color:rgba(255,143,171,.6);background:linear-gradient(180deg,rgba(255,143,171,.07),var(--panel))}
 .entry.b-high{border-left:3px solid var(--hi)}
 .cobanner,.cobanner.co{display:none}
 .cobanner{display:block;color:var(--co);font-weight:600;font-size:12.5px;margin-bottom:6px}
+.ownbanner{color:var(--own);font-weight:600;font-size:12.5px;margin-bottom:6px}
 .entry h3{margin:0 0 6px;font-size:16px;line-height:1.4}
 .authors{color:var(--mut);font-size:13.5px;margin-bottom:8px}
 .authors .co{color:var(--co)}
+.authors .own{color:var(--own)}
 .meta{font-size:12px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
 .cat{background:#252b36;padding:1px 7px;border-radius:5px;font-size:11px}
 .cat.prim{background:rgba(110,168,254,.18);color:var(--accent)}

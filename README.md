@@ -141,7 +141,8 @@ Notes:
 Each submission's title+abstract is matched (word-boundary, accent-insensitive)
 against weighted keywords in `config.py`. Submissions are bucketed:
 
-- **Coauthor** — any author matches `config.COAUTHORS` (always surfaced first).
+- **Own** — any author matches `config.OWNER` (Peter's own papers, always first).
+- **Coauthor** — any author matches `config.COAUTHORS`.
 - **Highly relevant** — score ≥ `HIGH_THRESHOLD`.
 - **Possibly relevant** — score ≥ `MED_THRESHOLD`.
 - **Everything else** — collapsed by default in the UI.
