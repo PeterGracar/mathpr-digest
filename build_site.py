@@ -18,8 +18,11 @@ to serve the folder instead.
 Can be run standalone (reads data/) or called as build(weeks).
 """
 import glob
+import hashlib
 import json
 import os
+import re
+import subprocess
 import unicodedata
 from datetime import datetime, timezone
 
@@ -65,6 +68,28 @@ def _counts(week):
         c[e.get("bucket", "other")] = c.get(e.get("bucket", "other"), 0) + 1
     c["total"] = len(week["entries"])
     return c
+
+
+def _fetch_site_chrome():
+    """Mirror gracar.org's rendered header and footer verbatim (links, text,
+    future edits included) so the digest page always matches the homepage.
+    Uses the curl CLI like generate_digest (the bundled Python has no CA
+    bundle); root-relative hrefs are made absolute. On any failure the baked
+    snapshot at the bottom of this file is used instead."""
+    try:
+        html = subprocess.run(
+            ["curl", "-sS", "-m", "30", "https://gracar.org/"],
+            capture_output=True, text=True, check=True).stdout
+        h = re.search(r'<header class="site-header">.*?</header>', html, re.S)
+        f = re.search(r'<footer class="site-footer">.*?</footer>', html, re.S)
+        if not h or not f:
+            raise ValueError("site chrome not found in homepage HTML")
+        def absolutize(s):
+            return re.sub(r'\b(href|src)="/', r'\1="https://gracar.org/', s)
+        return absolutize(h.group(0)), absolutize(f.group(0))
+    except Exception as e:
+        print(f"  ! could not mirror gracar.org chrome ({e}); using baked snapshot")
+        return SITE_HEADER_FALLBACK, SITE_FOOTER_FALLBACK
 
 
 def build(weeks=None):
@@ -118,8 +143,12 @@ def build(weeks=None):
     if os.path.exists(legacy):
         os.remove(legacy)
 
+    header, footer = _fetch_site_chrome()
+    css_v = hashlib.md5(STYLE_CSS.encode()).hexdigest()[:8]
     with open(os.path.join(SITE_DIR, "index.html"), "w") as f:
-        f.write(INDEX_HTML)
+        f.write(INDEX_HTML.replace("__SITE_HEADER__", header)
+                          .replace("__SITE_FOOTER__", footer)
+                          .replace("__CSS_V__", css_v))
     with open(os.path.join(SITE_DIR, "style.css"), "w") as f:
         f.write(STYLE_CSS)
     print(f"  site built: {len(weeks)} week(s), lazy-loaded "
@@ -139,7 +168,8 @@ INDEX_HTML = r"""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,700&family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="https://gracar.org/style.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=__CSS_V__">
+<script src="https://gracar.org/site.js" defer></script>
 <script>
 // Render LaTeX in arXiv titles/abstracts. Content is built dynamically, so we
 // disable auto-typeset on load and call MathJax.typesetPromise() ourselves after
@@ -168,20 +198,14 @@ window.MathJax = {
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="site-header-inner">
-    <p class="site-kicker">arXiv math.PR &middot; automated weekly digest</p>
-    <h1 class="site-name">math.PR weekly digest</h1>
-    <p class="site-tagline">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
-       curated for <a id="ownerLink" href="#" target="_blank" rel="noopener"></a>'s research interests
-       &mdash; random geometric graphs, percolation, particle systems, and the spread of infection.</p>
-  </div>
-  <nav class="site-nav" aria-label="Primary">
-    <ul>
-      <li><a id="backLink" href="#"></a></li>
-    </ul>
-  </nav>
-</header>
+__SITE_HEADER__
+
+<div class="wrap page-intro">
+  <h1>math.PR weekly digest</h1>
+  <p class="reading-width">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
+     curated for <a id="ownerLink" href="#" target="_blank" rel="noopener"></a>'s research interests
+     &mdash; random geometric graphs, percolation, particle systems, and the spread of infection.</p>
+</div>
 
 <div class="layout wrap">
   <aside id="sidebar">
@@ -196,18 +220,13 @@ window.MathJax = {
       <span class="chip high">highly relevant</span>
       <span class="chip medium">possibly relevant</span>
     </div>
+    <p class="foot" id="genStamp"></p>
   </aside>
 
   <main id="main"></main>
 </div>
 
-<footer class="site-footer">
-  <div class="site-footer-inner">
-    <p><a id="footHome" href="https://gracar.org">gracar.org</a> &middot;
-       <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a></p>
-    <p id="genStamp"></p>
-  </div>
-</footer>
+__SITE_FOOTER__
 
 <script src="index.js"></script>
 <script>
@@ -611,39 +630,8 @@ function onSearchInput(raw){
   searchTimer=setTimeout(()=>selectAll(raw), 200);
 }
 
-// Where the header's back link points. Prefers the page the visitor actually
-// arrived from — an explicit ?from= on the incoming link, else the referrer
-// (which only carries a path when the linking page sets referrerpolicy; browsers
-// otherwise trim cross-site referrers to the bare origin) — and falls back to
-// config.BACK_URL. Candidates must live on the BACK_URL host, so a hand-crafted
-// ?from= can't repoint the link off-site. Remembered for the session so a reload
-// keeps it, and ?from= is stripped from the address bar so the referring path
-// isn't carried along if the digest URL gets shared.
-function backTarget(){
-  const home=D.back_url||D.profile_url||'https://gracar.org';
-  let host; try{ host=new URL(home).host; }catch(e){ return home; }
-  const same=u=>{
-    if(!u) return '';
-    try{ const p=new URL(u,home);
-      return /^https?:$/.test(p.protocol)&&(p.host===host||p.host.endsWith('.'+host))? p.href : ''; }
-    catch(e){ return ''; }
-  };
-  const store=(v)=>{ try{ return v==null? sessionStorage.getItem('backTo')
-    : (sessionStorage.setItem('backTo',v),v); }catch(e){ return v||''; } };
-  const q=new URLSearchParams(location.search).get('from');
-  const from=same(q)||same(document.referrer);
-  if(q!==null) try{                       // some browsers refuse this on file://
-    const u=new URL(location.href); u.searchParams.delete('from');
-    history.replaceState(null,'',u.pathname+u.search+u.hash);
-  }catch(e){}
-  return from? store(from) : (store()||home);
-}
-
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
-  const bk=$('#backLink'); bk.href=backTarget();
-  bk.textContent='← Back to '+(D.back_label||'gracar.org');
-  $('#footHome').href=D.back_url||D.profile_url||'https://gracar.org';
   $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
     ' · '+D.weeks.length+' week(s) archived';
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
@@ -669,14 +657,13 @@ STYLE_CSS = r"""/* Digest-specific overlay on the live gracar.org stylesheet, wh
 body{font-size:var(--text-sm)}
 .weeklink,.entry-week{background-image:none}
 summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
-.wrap{max-width:var(--site-max-width);margin:0 auto;padding:0 1rem}
+/* body is the site's flex column, so auto margins alone would shrink-to-fit;
+   size .wrap exactly like the site sizes main */
+.wrap{width:min(100% - 2rem,var(--site-max-width));margin:0 auto}
 /* fallback shade if the hotlinked banner.webp fails to load (the site's
    background shorthand resets background-color, so this later rule wins) */
 .site-header{background-color:#2b1310}
-/* the digest's tagline links sit on the banner: keep them near-white */
-.site-header a{color:inherit;--underline-image:linear-gradient(currentColor,currentColor)}
-.site-header a:hover{color:inherit}
-h1.site-name{color:inherit}
+.page-intro{margin-top:clamp(1.5rem,3vw,2.4rem)}
 /* #main is a grid cell here, not the site's centred prose column */
 #main{flex:none;width:auto;margin:0;padding:0}
 .layout{display:grid;grid-template-columns:320px 1fr;gap:1.6rem;padding-top:1.5rem;padding-bottom:3.5rem;align-items:start}
@@ -780,6 +767,42 @@ h1.site-name{color:inherit}
 .empty{color:var(--color-text-muted);padding:1.8rem 0}
 @media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static}}
 """
+
+
+# Baked snapshot of gracar.org's header/footer (links absolutized), used only
+# when _fetch_site_chrome can't reach the live homepage. Refresh it if it has
+# drifted noticeably from the site, but drift only ever shows offline.
+SITE_HEADER_FALLBACK = r"""<header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-kicker">University of Leeds · School of Mathematics</p>
+      <p class="site-name"><a href="https://gracar.org/">Peter Gracar</a></p>
+      <p class="site-tagline">Probability, random geometric graphs, dependent percolation, and related stochastic processes.</p>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a data-page-link="home" href="https://gracar.org/">About</a></li>
+        <li><a data-page-link="research" href="https://gracar.org/research.html">Research</a></li>
+        <li><a data-page-link="teaching" href="https://gracar.org/teaching.html">Teaching</a></li>
+        <li><a data-page-link="contact" href="https://gracar.org/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>"""
+
+SITE_FOOTER_FALLBACK = r"""<footer class="site-footer">
+    <div class="site-footer-inner">
+      <p>
+        <button type="button" class="pride-toggle" data-pride-toggle hidden aria-pressed="true" title="Pride colours are on this June — toggle off">
+          <span class="pride-flag" aria-hidden="true">🏳️‍🌈</span>
+          <span class="pride-toggle-label">Pride colours</span>
+        </button>
+        <a href="https://eps.leeds.ac.uk/maths/staff/13156/dr-peter-gracar">Leeds profile</a> &middot;
+        <a href="https://eps.leeds.ac.uk/maths">School of Mathematics</a> &middot;
+        <a href="https://orcid.org/0000-0001-8340-8340">ORCiD</a> &middot;
+        <a href="https://arxiv.org/a/gracar_p_1">arXiv</a>
+      </p>
+      <p><a class="secret-dot" href="https://gracar.org/secret.html" aria-label="Site index">&copy;</a> <span data-year></span> Peter Gracar &middot; University of Leeds</p>
+    </div>
+  </footer>"""
 
 
 if __name__ == "__main__":
