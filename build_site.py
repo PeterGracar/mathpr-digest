@@ -131,7 +131,14 @@ INDEX_HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f8f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111216" media="(prefers-color-scheme: dark)">
 <title>math.PR Weekly Digest &middot; Peter Gracar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://gracar.org/style.css">
 <link rel="stylesheet" href="style.css">
 <script>
 // Render LaTeX in arXiv titles/abstracts. Content is built dynamically, so we
@@ -160,14 +167,20 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <a class="back" id="backLink" href="#"></a>
-    <h1>math.PR weekly digest</h1>
-    <p class="sub">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="site-header-inner">
+    <p class="site-kicker">arXiv math.PR &middot; automated weekly digest</p>
+    <h1 class="site-name">math.PR weekly digest</h1>
+    <p class="site-tagline">New submissions to <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a>,
        curated for <a id="ownerLink" href="#" target="_blank" rel="noopener"></a>'s research interests
        &mdash; random geometric graphs, percolation, particle systems, and the spread of infection.</p>
   </div>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a id="backLink" href="#"></a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="layout wrap">
@@ -183,11 +196,18 @@ window.MathJax = {
       <span class="chip high">highly relevant</span>
       <span class="chip medium">possibly relevant</span>
     </div>
-    <p class="foot" id="genStamp"></p>
   </aside>
 
   <main id="main"></main>
 </div>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p><a id="footHome" href="https://gracar.org">gracar.org</a> &middot;
+       <a href="https://arxiv.org/list/math.PR/recent" target="_blank" rel="noopener">arXiv math.PR</a></p>
+    <p id="genStamp"></p>
+  </div>
+</footer>
 
 <script src="index.js"></script>
 <script>
@@ -623,6 +643,7 @@ function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
   const bk=$('#backLink'); bk.href=backTarget();
   bk.textContent='← Back to '+(D.back_label||'gracar.org');
+  $('#footHome').href=D.back_url||D.profile_url||'https://gracar.org';
   $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
     ' · '+D.weeks.length+' week(s) archived';
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
@@ -637,112 +658,126 @@ init();
 """
 
 
-STYLE_CSS = r""":root{
-  --bg:#0f1115; --panel:#171a21; --panel2:#1d2129; --ink:#e7e9ee; --mut:#9aa3b2;
-  --line:#272c36; --accent:#6ea8fe; --own:#ff8fab; --co:#ffcf5c; --hi:#67d99b; --med:#8fb6ff;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
-header{background:linear-gradient(180deg,#191d26,#12151c);border-bottom:1px solid var(--line);padding:26px 0 20px}
-header .back{display:inline-block;margin:0 0 10px;color:var(--mut);font-size:12.5px}
-header .back:hover{color:var(--accent);text-decoration:none}
-header h1{margin:0 0 6px;font-size:25px;letter-spacing:.2px}
-header .sub{margin:0;color:var(--mut);max-width:820px}
-.layout{display:grid;grid-template-columns:300px 1fr;gap:26px;padding-top:24px;padding-bottom:60px;align-items:start}
-#sidebar{position:sticky;top:18px}
-.search input{width:100%;padding:9px 11px;border-radius:9px;border:1px solid var(--line);
-  background:var(--panel);color:var(--ink);font-size:14px}
-.searchstat{margin:6px 2px 0;font-size:11.5px;color:var(--mut)}
-#sidebar h2{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut);margin:18px 0 8px}
+STYLE_CSS = r"""/* Digest-specific overlay on the live gracar.org stylesheet, which is
+   linked first in index.html. Tokens (--color-*, --text-*, fonts, radii,
+   shadows), the link-underline system, the header/nav/footer chrome and the
+   system-driven light/dark switch are all inherited from there, so restyling
+   the homepage restyles this page too. This file owns only the digest's
+   bucket hues, layout, and components. */
+:root{ --own:#950000; --co:#e65100; --hi:#2e7d32; --med:#1565c0 }
+@media(prefers-color-scheme:dark){:root{ --own:#ff9f87; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6 }}
+body{font-size:var(--text-sm)}
+.weeklink,.entry-week{background-image:none}
+summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
+.wrap{max-width:var(--site-max-width);margin:0 auto;padding:0 1rem}
+/* fallback shade if the hotlinked banner.webp fails to load (the site's
+   background shorthand resets background-color, so this later rule wins) */
+.site-header{background-color:#2b1310}
+/* the digest's tagline links sit on the banner: keep them near-white */
+.site-header a{color:inherit;--underline-image:linear-gradient(currentColor,currentColor)}
+.site-header a:hover{color:inherit}
+h1.site-name{color:inherit}
+/* #main is a grid cell here, not the site's centred prose column */
+#main{flex:none;width:auto;margin:0;padding:0}
+.layout{display:grid;grid-template-columns:320px 1fr;gap:1.6rem;padding-top:1.5rem;padding-bottom:3.5rem;align-items:start}
+#sidebar{position:sticky;top:1rem}
+.search input{width:100%;padding:.55rem .7rem;border-radius:var(--radius-md);border:1px solid var(--color-border);
+  background:var(--color-surface);color:var(--color-text);font:400 var(--text-sm)/1.4 var(--font-body)}
+.searchstat{margin:.35rem .15rem 0;font-size:var(--text-xs);color:var(--color-text-muted)}
+#sidebar h2{font:600 var(--text-xs)/1.2 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
+  color:var(--color-text-muted);margin:1.2rem 0 .5rem}
 .yearhead{width:100%;display:flex;justify-content:space-between;align-items:center;
-  background:transparent;border:none;color:var(--ink);cursor:pointer;
-  padding:7px 4px;margin-top:6px;font-size:13.5px;font-weight:600;letter-spacing:.02em}
-.yearhead:hover{color:var(--accent)}
-.yearhead .caret{display:inline-block;width:12px;color:var(--mut);font-size:11px}
-.yearhead .ymeta{font-size:11.5px;font-weight:400;color:var(--mut)}
+  background:transparent;border:none;color:var(--color-text);cursor:pointer;
+  padding:.45rem .25rem;margin-top:.4rem;font:600 var(--text-sm)/1.3 var(--font-body);letter-spacing:.02em}
+.yearhead:hover{color:var(--color-accent)}
+.yearhead .caret{display:inline-block;width:12px;color:var(--color-text-muted);font-size:var(--text-xs)}
+.yearhead .ymeta{font-size:var(--text-xs);font-weight:400;color:var(--color-text-muted)}
 .yearhead .ymeta .own{color:var(--own)}
 .yearhead .ymeta .co{color:var(--co)}
-.yearhead .ymeta .hits{color:var(--accent)}
-.yearweeks{margin-bottom:4px}
-.weeklink{display:flex;justify-content:space-between;align-items:center;gap:8px;
-  padding:9px 11px;border:1px solid var(--line);border-radius:9px;margin-bottom:7px;background:var(--panel);color:var(--ink)}
-.weeklink:hover{border-color:#37414f;text-decoration:none}
-.weeklink.active{border-color:var(--accent);background:var(--panel2)}
+.yearhead .ymeta .hits{color:var(--color-accent)}
+.yearweeks{margin-bottom:.3rem}
+.weeklink{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+  padding:.55rem .7rem;border:1px solid var(--color-border);border-radius:var(--radius-md);
+  margin-bottom:.45rem;background:var(--color-surface);color:var(--color-text)}
+.weeklink:hover{border-color:var(--color-accent-soft)}
+.weeklink.active{border-color:var(--color-accent);background:var(--color-surface-soft)}
 .weeklink.nomatch{opacity:.42}
 .weeklink.nomatch:hover{opacity:.7}
 .weeklink.outofscope{opacity:.5}
 .weeklink.outofscope:hover{opacity:.8}
 .weeklink.pending .badges{opacity:.6}
-.weeklink.allweeks{margin-top:6px;border-color:var(--accent)}
+.weeklink.allweeks{margin-top:.4rem;border-color:var(--color-accent)}
 .weeklink.allweeks .wr{font-weight:600}
-.weeklink .wr{font-size:13.5px}
-.badges{display:flex;gap:5px;flex-shrink:0}
-.b{font-size:11px;padding:1px 7px;border-radius:20px;background:#2a3140;color:var(--mut)}
-.b.tot{background:#2a3140}
-.b.high{background:rgba(103,217,155,.16);color:var(--hi)}
-.b.medium{background:rgba(143,182,255,.16);color:var(--med)}
-.b.other{background:#2a3140;color:var(--mut)}
-.b.loading{background:#2a3140;color:var(--mut);opacity:.7}
-.b.coauthor{background:rgba(255,207,92,.18);color:var(--co)}
-.b.own{background:rgba(255,143,171,.18);color:var(--own)}
-.legend{margin-top:14px;display:flex;flex-wrap:wrap;gap:6px}
-.chip{font-size:11px;padding:2px 9px;border-radius:20px}
-.chip.own{background:rgba(255,143,171,.18);color:var(--own)}
-.chip.coauthor{background:rgba(255,207,92,.18);color:var(--co)}
-.chip.high{background:rgba(103,217,155,.16);color:var(--hi)}
-.chip.medium{background:rgba(143,182,255,.16);color:var(--med)}
-.foot{color:var(--mut);font-size:11.5px;margin-top:16px}
-.weekhead h2{margin:0 0 2px;font-size:21px}
-.wstats{margin:0 0 18px;color:var(--mut);font-size:13.5px}
+.weeklink .wr{font-size:var(--text-sm)}
+.badges{display:flex;gap:4px;flex-shrink:0}
+.b{font-size:var(--text-xs);font-weight:600;padding:.05rem .4rem;border-radius:999px;
+  background:var(--color-surface-soft);color:var(--color-text-muted)}
+.b.high{background:color-mix(in srgb,var(--hi) 14%,transparent);color:var(--hi)}
+.b.medium{background:color-mix(in srgb,var(--med) 14%,transparent);color:var(--med)}
+.b.loading{opacity:.7}
+.b.coauthor{background:color-mix(in srgb,var(--co) 15%,transparent);color:var(--co)}
+.b.own{background:color-mix(in srgb,var(--own) 14%,transparent);color:var(--own)}
+.legend{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.35rem}
+.chip{font-size:var(--text-xs);font-weight:600;padding:.1rem .55rem;border-radius:999px}
+.chip.own{background:color-mix(in srgb,var(--own) 14%,transparent);color:var(--own)}
+.chip.coauthor{background:color-mix(in srgb,var(--co) 15%,transparent);color:var(--co)}
+.chip.high{background:color-mix(in srgb,var(--hi) 14%,transparent);color:var(--hi)}
+.chip.medium{background:color-mix(in srgb,var(--med) 14%,transparent);color:var(--med)}
+.weekhead h2{margin:0 0 .15rem;color:var(--color-text);font:700 var(--text-lg)/1.2 var(--font-heading);letter-spacing:.01em}
+.wstats{margin:0 0 1.1rem;color:var(--color-text-muted);font-size:var(--text-sm)}
 .wstats .hl{color:var(--co);font-weight:600}
 .wstats .hlown{color:var(--own);font-weight:600}
-.tag-prog{font-size:12px;vertical-align:middle;background:rgba(110,168,254,.18);color:var(--accent);
-  padding:2px 9px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase}
-.progress{margin:0 0 18px;padding:9px 13px;border:1px solid rgba(110,168,254,.4);
-  border-radius:9px;background:rgba(110,168,254,.08);color:#bcd2ff;font-size:13px}
-.progress::first-letter{color:var(--accent)}
-.weeklink .dot{color:var(--accent);font-size:10px;vertical-align:middle}
-.bucket{margin-bottom:26px}
-.bhead{font-size:13px;text-transform:uppercase;letter-spacing:.1em;color:var(--mut);
-  border-bottom:1px solid var(--line);padding-bottom:6px;margin:0 0 14px;display:flex;align-items:center;gap:8px}
-.bhead .ct{background:#2a3140;color:var(--mut);font-size:11px;padding:0 8px;border-radius:20px;letter-spacing:0}
+.tag-prog{font-size:var(--text-xs);font-weight:600;vertical-align:middle;
+  background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent);
+  padding:.1rem .55rem;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+.progress{margin:0 0 1.1rem;padding:.55rem .8rem;border:1px solid color-mix(in srgb,var(--color-accent) 40%,transparent);
+  border-radius:var(--radius-md);background:color-mix(in srgb,var(--color-accent) 8%,transparent);
+  color:var(--color-text);font-size:var(--text-sm)}
+.progress::first-letter{color:var(--color-accent)}
+.weeklink .dot{color:var(--color-accent);font-size:10px;vertical-align:middle}
+.bucket{margin-bottom:1.6rem}
+.bhead{font:600 var(--text-xs)/1.3 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
+  color:var(--color-text-muted);border-bottom:1px solid var(--color-border);
+  padding-bottom:.4rem;margin:0 0 .9rem;display:flex;align-items:center;gap:.5rem}
+.bhead .ct{background:var(--color-surface-soft);color:var(--color-text-muted);font-size:var(--text-xs);
+  padding:0 .5rem;border-radius:999px;letter-spacing:0}
 .bhead.collapsible{cursor:pointer}
-.bhead.collapsible:hover{color:var(--ink)}
+.bhead.collapsible:hover{color:var(--color-text)}
 .bbody.hidden{display:none}
 .bucket.own .bhead{color:var(--own)}
 .bucket.coauthor .bhead{color:var(--co)}
 .bucket.high .bhead{color:var(--hi)}
-.entry{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px 17px;margin-bottom:12px}
-.entry.b-coauthor{border-color:rgba(255,207,92,.55);background:linear-gradient(180deg,rgba(255,207,92,.06),var(--panel))}
-.entry.b-own{border-color:rgba(255,143,171,.6);background:linear-gradient(180deg,rgba(255,143,171,.07),var(--panel))}
+.entry{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-card);padding:clamp(.9rem,1.8vw,1.2rem);margin-bottom:.8rem}
+.entry.b-coauthor{border-color:color-mix(in srgb,var(--co) 45%,transparent);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--co) 8%,var(--color-surface)),var(--color-surface))}
+.entry.b-own{border-color:color-mix(in srgb,var(--own) 50%,transparent);
+  background:linear-gradient(180deg,color-mix(in srgb,var(--own) 8%,var(--color-surface)),var(--color-surface))}
 .entry.b-high{border-left:3px solid var(--hi)}
-.cobanner,.cobanner.co{display:none}
-.cobanner{display:block;color:var(--co);font-weight:600;font-size:12.5px;margin-bottom:6px}
-.ownbanner{color:var(--own);font-weight:600;font-size:12.5px;margin-bottom:6px}
-.entry h3{margin:0 0 6px;font-size:16px;line-height:1.4}
-.authors{color:var(--mut);font-size:13.5px;margin-bottom:8px}
+.cobanner{color:var(--co);font-weight:600;font-size:var(--text-xs);margin-bottom:.35rem}
+.ownbanner{color:var(--own);font-weight:600;font-size:var(--text-xs);margin-bottom:.35rem}
+.entry h3{margin:0 0 .35rem;font:700 var(--text-base)/1.35 var(--font-heading);letter-spacing:.01em}
+.authors{color:var(--color-text-muted);font-size:var(--text-sm);margin-bottom:.45rem}
 .authors .co{color:var(--co)}
 .authors .own{color:var(--own)}
-.meta{font-size:12px;color:var(--mut);display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px}
-.cat{background:#252b36;padding:1px 7px;border-radius:5px;font-size:11px}
-.cat.prim{background:rgba(110,168,254,.18);color:var(--accent)}
-.idlink{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11.5px}
-.abs summary{cursor:pointer;color:var(--mut);font-size:13px;outline:none}
-.abs summary:hover{color:var(--ink)}
-.abs p{margin:8px 0 0;color:#c3c9d4;font-size:13.5px}
-.entry-week{display:inline-block;margin-bottom:8px;font-size:11.5px;
-  color:var(--mut);background:#222834;padding:1px 9px;border-radius:20px}
-.entry-week:hover{color:var(--ink);text-decoration:none}
-.loadmore{display:block;width:100%;margin:6px 0 0;padding:11px;border:1px dashed var(--line);
-  border-radius:10px;background:var(--panel);color:var(--accent);cursor:pointer;font-size:13.5px}
-.loadmore:hover{border-color:var(--accent);background:var(--panel2)}
-.kws{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
-.kw{font-size:11px;background:#222834;color:#9fb4d8;padding:1px 8px;border-radius:20px}
-.empty{color:var(--mut);padding:30px 0}
+.meta{font-size:var(--text-xs);color:var(--color-text-muted);display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin-bottom:.45rem}
+.cat{background:var(--color-surface-soft);padding:.05rem .5rem;border-radius:999px;font-size:var(--text-xs)}
+.cat.prim{background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent)}
+.idlink{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--text-xs)}
+.abs summary{cursor:pointer;color:var(--color-text-muted);font-size:var(--text-sm)}
+.abs summary:hover{color:var(--color-text)}
+.abs p{margin:.5rem 0 0;color:var(--color-text);font-size:var(--text-sm)}
+.entry-week{display:inline-block;margin-bottom:.45rem;font-size:var(--text-xs);font-weight:600;
+  color:var(--color-text-muted);background:var(--color-surface-soft);padding:.05rem .55rem;border-radius:999px}
+.entry-week:hover{color:var(--color-accent)}
+.loadmore{display:block;width:100%;margin:.4rem 0 0;padding:.7rem;border:1px dashed var(--color-border);
+  border-radius:var(--radius-md);background:var(--color-surface);color:var(--color-accent);cursor:pointer;
+  font:400 var(--text-sm)/1.4 var(--font-body)}
+.loadmore:hover{border-color:var(--color-accent);background:var(--color-surface-soft)}
+.kws{margin-top:.55rem;display:flex;flex-wrap:wrap;gap:.3rem}
+.kw{font-size:var(--text-xs);font-weight:600;background:var(--color-surface-soft);color:var(--color-text-muted);
+  padding:.05rem .5rem;border-radius:999px}
+.empty{color:var(--color-text-muted);padding:1.8rem 0}
 @media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static}}
 """
 
