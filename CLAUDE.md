@@ -18,8 +18,11 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
 - **`config.py`** — coauthors, weighted relevance keywords, `HIGH_THRESHOLD` /
   `MED_THRESHOLD`, `FIRST_WEEK_MONDAY`, `FINALIZE_GRACE_DAYS`.
 - **`generate_digest.py`** — fetches arXiv (via the `curl` CLI; bundled Python has
-  no CA bundle), scores each entry, buckets it (`coauthor` / `high` / `medium` /
-  `other`), and writes one JSON file per Mon–Sun ISO week to `data/`. Idempotent,
+  no CA bundle), scores each entry, buckets it (`own` / `coauthor` / `high` /
+  `medium` / `other`), and writes one JSON file per Mon–Sun ISO week to `data/`.
+  Finalized week JSONs are frozen, so `build_site.py` re-derives the `own` flag
+  from author lists at build time (`_mark_own`) for weeks cached before the
+  bucket existed. Idempotent,
   self-backfilling, and re-fetches non-finalized weeks. Then calls `build_site.build`.
 - **`build_site.py`** — reads `data/*.json` and emits the whole site.
 
@@ -34,7 +37,7 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   edit those strings and re-run `python3 build_site.py`. There are no separate
   `.html` / `.css` / front-end `.js` source files.
 - **The site is lazy-loaded.** `site/index.js` (`window.DIGEST_INDEX`) holds only
-  per-week summaries — dates + `counts {coauthor, high, medium, other, total}`,
+  per-week summaries — dates + `counts {own, coauthor, high, medium, other, total}`,
   **no entries**. Full entries live in `site/data/week-<monday>.js`
   (`window.DIGEST_WEEKS["<monday>"]`), injected via `<script>` on demand. Keep the
   initial payload constant as weeks accumulate — don't bake entry text into the index.
