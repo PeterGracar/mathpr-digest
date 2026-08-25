@@ -124,13 +124,16 @@ def build(weeks=None):
             "total_submissions", "fetched", "generated_at")
     summaries = []
     for w in weeks:
+        payload = (f'window.DIGEST_WEEKS=window.DIGEST_WEEKS||{{}};'
+                   f'window.DIGEST_WEEKS["{w["monday"]}"]='
+                   + json.dumps(w, ensure_ascii=False) + ";\n")
         with open(os.path.join(site_data, f"week-{w['monday']}.js"), "w") as f:
-            f.write(f'window.DIGEST_WEEKS=window.DIGEST_WEEKS||{{}};'
-                    f'window.DIGEST_WEEKS["{w["monday"]}"]=')
-            json.dump(w, f, ensure_ascii=False)
-            f.write(";\n")
+            f.write(payload)
         summary = {k: w.get(k) for k in META}
         summary["counts"] = _counts(w)
+        # content hash, appended as ?v= when the week is lazy-loaded — so a
+        # cached copy (browser or CDN) can never be served for changed data
+        summary["v"] = hashlib.md5(payload.encode()).hexdigest()[:8]
         summaries.append(summary)
 
     # lightweight index loaded up front (no entries)
@@ -144,10 +147,9 @@ def build(weeks=None):
         "coauthors": config.COAUTHORS,
         "weeks": summaries,
     }
+    index_js = "window.DIGEST_INDEX = " + json.dumps(index, ensure_ascii=False) + ";\n"
     with open(os.path.join(SITE_DIR, "index.js"), "w") as f:
-        f.write("window.DIGEST_INDEX = ")
-        json.dump(index, f, ensure_ascii=False)
-        f.write(";\n")
+        f.write(index_js)
 
     # drop the old single-file payload if present (superseded by lazy loading)
     legacy = os.path.join(SITE_DIR, "digests.js")
@@ -156,10 +158,12 @@ def build(weeks=None):
 
     header, footer = _fetch_site_chrome()
     css_v = hashlib.md5(STYLE_CSS.encode()).hexdigest()[:8]
+    js_v = hashlib.md5(index_js.encode()).hexdigest()[:8]
     with open(os.path.join(SITE_DIR, "index.html"), "w") as f:
         f.write(INDEX_HTML.replace("__SITE_HEADER__", header)
                           .replace("__SITE_FOOTER__", footer)
-                          .replace("__CSS_V__", css_v))
+                          .replace("__CSS_V__", css_v)
+                          .replace("__JS_V__", js_v))
     with open(os.path.join(SITE_DIR, "style.css"), "w") as f:
         f.write(STYLE_CSS)
     print(f"  site built: {len(weeks)} week(s), lazy-loaded "
@@ -239,7 +243,7 @@ __SITE_HEADER__
 
 __SITE_FOOTER__
 
-<script src="index.js"></script>
+<script src="index.js?v=__JS_V__"></script>
 <script>
 const D = window.DIGEST_INDEX;
 const $ = (s, r=document) => r.querySelector(s);
@@ -466,7 +470,9 @@ function weekLink(i, term){
   }
   a.innerHTML='<span class="wr">'+fmtRangeShort(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
     '<span class="badges">'+badges+'</span>';
-  a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
+  // keep the reader's scroll position: the sidebar is sticky, so a week picked
+  // mid-page shouldn't yank the viewport back to the top
+  a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value, false);});
   return a;
 }
 
@@ -565,7 +571,10 @@ function loadWeek(mon, cb, err){
   const store=window.DIGEST_WEEKS||(window.DIGEST_WEEKS={});
   if(store[mon]) return cb(store[mon]);
   const s=document.createElement('script');
-  s.src='data/week-'+mon+'.js';
+  // ?v= is the build-time content hash from the index, so a cached copy
+  // (browser or CDN) can never be served once the week's data has changed
+  const w=D.weeks.find(x=>x.monday===mon);
+  s.src='data/week-'+mon+'.js'+(w&&w.v?'?v='+w.v:'');
   s.onload=()=>{ const d=(window.DIGEST_WEEKS||{})[mon]; d?cb(d):(err&&err()); };
   s.onerror=()=>err&&err();
   document.head.appendChild(s);
@@ -597,11 +606,15 @@ function refreshSearch(){
 }
 
 function selectWeek(i, term, scroll){
+  // scroll===false keeps the reader's position; the browser clamps the scroll
+  // while the 'Loading…' placeholder shrinks the page, so restore it after the
+  // async render rather than relying on it surviving.
+  const y=window.scrollY;
   current=i; viewAll=false; $('#searchStat').hidden=true; renderNav(term);
   const w=D.weeks[i], main=$('#main');
   if(!(window.DIGEST_WEEKS||{})[w.monday]) main.innerHTML='<p class="empty">Loading&hellip;</p>';
   loadWeek(w.monday,
-    full=>renderWeek(full, $('#filter').value),
+    full=>{ renderWeek(full, $('#filter').value); if(scroll===false) window.scrollTo(0,y); },
     ()=>{ main.innerHTML='<p class="empty">Couldn\'t load <code>data/week-'+w.monday+'.js</code>. '+
       'If you opened this page directly from disk, your browser may be blocking local data files &mdash; '+
       'serve the folder instead: <code>python3 -m http.server --directory site</code></p>'; });
