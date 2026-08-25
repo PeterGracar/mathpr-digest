@@ -78,16 +78,24 @@ jobs:
             git commit -m "Digest update — $(date -u +%Y-%m-%d)"
             # Another commit (e.g. a merge to main) may land between checkout and
             # push, which would reject a bare push as non-fast-forward. Rebase our
-            # data/ commit onto the latest main and retry. Rebasing is safe here
-            # because this job only ever commits data/.
+            # data/ commit onto the latest main and retry. The intervening commit
+            # can even be another run's own digest commit (a "Re-run" checks out
+            # the run's original SHA, so its regenerated week files collide with
+            # data already pushed since), so a plain rebase can hit content
+            # conflicts in data/. -X theirs resolves them in favour of the commit
+            # being replayed — i.e. this run's freshly fetched data, which is the
+            # newer of the two.
+            pushed=
             for attempt in 1 2 3 4 5; do
               if git push; then
+                pushed=1
                 break
               fi
               echo "push rejected (attempt $attempt) — rebasing on origin/main"
-              git pull --rebase origin main
+              git pull --rebase -X theirs origin main
               sleep $((attempt * 2))
             done
+            [ -n "$pushed" ] || { echo "could not push digest data after 5 attempts"; exit 1; }
           fi
 
       - uses: actions/configure-pages@v6
