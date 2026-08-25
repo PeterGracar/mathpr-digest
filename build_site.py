@@ -62,6 +62,16 @@ def _mark_own(week):
             e["bucket"] = "own"
 
 
+def _strip_versions(week):
+    """Point ids and arXiv links at the versionless (latest) article page.
+    New weeks arrive clean from parse_entry(); finalized week JSONs are
+    frozen, so older cached weeks are rewritten here at build time (in
+    memory only — data/ is never rewritten)."""
+    for e in week.get("entries", []):
+        for k in ("id", "abs_url", "pdf_url"):
+            e[k] = re.sub(r"v\d+$", "", e[k])
+
+
 def _counts(week):
     c = {"own": 0, "coauthor": 0, "high": 0, "medium": 0, "other": 0}
     for e in week["entries"]:
@@ -104,6 +114,7 @@ def build(weeks=None):
     weeks = [w for w in weeks if w.get("entries")]
     for w in weeks:
         _mark_own(w)
+        _strip_versions(w)
     site_data = os.path.join(SITE_DIR, "data")
     os.makedirs(site_data, exist_ok=True)
 
@@ -255,6 +266,14 @@ function fmtRange(w){
   const o={month:'short',day:'numeric'};
   const a=new Date(w.monday+'T00:00:00'), b=new Date(w.sunday+'T00:00:00');
   return a.toLocaleDateString('en-GB',o)+' – '+b.toLocaleDateString('en-GB',{...o,year:'numeric'});
+}
+// Sidebar week labels omit the year (the year group header already carries it)
+// and the start month when the week doesn't cross one: '24 – 30 Aug'.
+function fmtRangeShort(w){
+  const o={month:'short',day:'numeric'};
+  const a=new Date(w.monday+'T00:00:00'), b=new Date(w.sunday+'T00:00:00');
+  return (a.getMonth()===b.getMonth()? a.getDate() : a.toLocaleDateString('en-GB',o))+
+    ' – '+b.toLocaleDateString('en-GB',o);
 }
 function fmtDay(d){ return d? new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : ''; }
 const inProgress = w => w.complete===false;
@@ -445,7 +464,7 @@ function weekLink(i, term){
       if(!fc.total && i!==current) a.classList.add('nomatch');
     }
   }
-  a.innerHTML='<span class="wr">'+fmtRange(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
+  a.innerHTML='<span class="wr">'+fmtRangeShort(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
     '<span class="badges">'+badges+'</span>';
   a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
   return a;
@@ -724,7 +743,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .monthhead.nomatch:hover{opacity:.8}
 .monthweeks{margin:0 0 .25rem .85rem}
 .yearweeks{margin-bottom:.3rem}
-.weeklink{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
+.weeklink{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.2rem .5rem;
   padding:.55rem .7rem;border:1px solid var(--color-border);border-radius:var(--radius-md);
   margin-bottom:.45rem;background:var(--color-surface);color:var(--color-text)}
 .weeklink:hover{border-color:var(--color-accent-soft)}
@@ -736,8 +755,10 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .weeklink.pending .badges{opacity:.6}
 .weeklink.allweeks{margin-top:.4rem;border-color:var(--color-accent)}
 .weeklink.allweeks .wr{font-weight:600}
-.weeklink .wr{font-size:var(--text-sm)}
-.badges{display:flex;gap:4px;flex-shrink:0}
+.weeklink .wr{font-size:var(--text-sm);white-space:nowrap}
+/* if the chips still can't fit beside the date, the cluster wraps to its own
+   right-aligned line rather than breaking the date label */
+.badges{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px;flex-shrink:0;margin-left:auto}
 .b{font-size:var(--text-xs);font-weight:600;padding:.05rem .4rem;border-radius:999px;
   background:var(--color-surface-soft);color:var(--color-text-muted)}
 .b.high{background:color-mix(in srgb,var(--hi) 14%,transparent);color:var(--hi)}
