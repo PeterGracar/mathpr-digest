@@ -36,6 +36,17 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   `INDEX_HTML` and `STYLE_CSS` raw-string constants. To change anything in the UI,
   edit those strings and re-run `python3 build_site.py`. There are no separate
   `.html` / `.css` / front-end `.js` source files.
+- **Theming is inherited live from gracar.org.** `index.html` links
+  `https://gracar.org/style.css` before the local stylesheet, and the header /
+  nav / footer markup reuses that stylesheet's class names (`.site-header`,
+  `.site-nav`, `.site-footer`, `.skip-link`), so palette, fonts, chrome and the
+  system-driven (`prefers-color-scheme`) light/dark switch follow the homepage
+  automatically — the banner image resolves relative to the remote CSS, and
+  GitHub Pages' ~10-min cache bounds propagation. `STYLE_CSS` is only an
+  overlay: the digest's bucket hues (`--own/--co/--hi/--med`), layout, and
+  components, expressed in the site's tokens (`--color-*`, `--text-*`, radii,
+  shadows). Don't re-add copies of site chrome rules here; if a token the
+  overlay consumes is renamed on gracar.org, this overlay must follow.
 - **The site is lazy-loaded.** `site/index.js` (`window.DIGEST_INDEX`) holds only
   per-week summaries — dates + `counts {own, coauthor, high, medium, other, total}`,
   **no entries**. Full entries live in `site/data/week-<monday>.js`

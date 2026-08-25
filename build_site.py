@@ -138,12 +138,7 @@ INDEX_HTML = r"""<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,700&family=Source+Sans+3:wght@400;600;700&display=swap">
-<script>
-// Apply a stored explicit theme before first paint (same convention as the
-// standalone simulations on gracar.org: html[data-theme] beats the media query).
-(function(){try{var t=localStorage.getItem('theme-pref');
-  if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
-</script>
+<link rel="stylesheet" href="https://gracar.org/style.css">
 <link rel="stylesheet" href="style.css">
 <script>
 // Render LaTeX in arXiv titles/abstracts. Content is built dynamically, so we
@@ -172,6 +167,7 @@ window.MathJax = {
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="site-header-inner">
     <p class="site-kicker">arXiv math.PR &middot; automated weekly digest</p>
@@ -181,14 +177,9 @@ window.MathJax = {
        &mdash; random geometric graphs, percolation, particle systems, and the spread of infection.</p>
   </div>
   <nav class="site-nav" aria-label="Primary">
-    <div class="site-nav-inner">
-      <ul><li><a id="backLink" href="#"></a></li></ul>
-      <div id="theme-toggle" role="group" aria-label="Colour scheme">
-        <button type="button" data-theme="light" title="Light">&#9728;</button>
-        <button type="button" data-theme="system" title="System" class="active">Auto</button>
-        <button type="button" data-theme="dark" title="Dark">&#9790;</button>
-      </div>
-    </div>
+    <ul>
+      <li><a id="backLink" href="#"></a></li>
+    </ul>
   </nav>
 </header>
 
@@ -660,22 +651,6 @@ function init(){
   selectWeek(0,'',false);
   $('#filter').addEventListener('input',e=>onSearchInput(e.target.value));
 }
-
-// Three-way theme toggle (Light/Auto/Dark), persisted like the standalone sims
-// on gracar.org. 'system' removes the attribute so prefers-color-scheme wins.
-(function(){
-  const btns=[...document.querySelectorAll('#theme-toggle button')];
-  const apply=m=>{
-    if(m==='light'||m==='dark')document.documentElement.setAttribute('data-theme',m);
-    else document.documentElement.removeAttribute('data-theme');
-    btns.forEach(b=>b.classList.toggle('active',b.getAttribute('data-theme')===m));
-    try{localStorage.setItem('theme-pref',m);}catch(e){}
-  };
-  btns.forEach(b=>b.addEventListener('click',()=>apply(b.getAttribute('data-theme'))));
-  let saved='system'; try{saved=localStorage.getItem('theme-pref')||'system';}catch(e){}
-  apply(saved);
-})();
-
 init();
 </script>
 </body>
@@ -683,102 +658,27 @@ init();
 """
 
 
-STYLE_CSS = r""":root{
-  --font-heading:"Newsreader",Georgia,"Times New Roman",serif;
-  --font-body:"Source Sans 3","Segoe UI",Arial,sans-serif;
-  --color-bg:#f8f4ee; --color-surface:#ffffff; --color-surface-soft:#f1ebe1;
-  --color-text:#1f1b18; --color-text-muted:#554e47; --color-border:#d8cec1;
-  --color-accent:#950000; --color-accent-strong:#6f0000; --color-accent-soft:#cf6a54;
-  --color-header-overlay:linear-gradient(120deg,rgba(20,9,8,.8),rgba(90,18,16,.45));
-  --color-nav-bg:rgba(24,15,12,.66); --color-focus:#ff9f4a;
-  --underline-image:linear-gradient(var(--color-accent-strong),var(--color-accent-strong));
-  --shadow-soft:0 12px 30px rgba(34,20,15,.12); --shadow-card:0 6px 18px rgba(34,20,15,.08);
-  --radius-sm:.45rem; --radius-md:.75rem; --radius-lg:1.1rem;
-  --text-xs:clamp(.84rem,.8rem + .2vw,.94rem);
-  --text-sm:clamp(.95rem,.9rem + .3vw,1.05rem);
-  --text-base:clamp(1.04rem,1rem + .3vw,1.18rem);
-  --text-lg:clamp(1.25rem,1.15rem + .55vw,1.65rem);
-  --text-xl:clamp(1.9rem,1.55rem + 1.1vw,2.85rem);
-  --site-max-width:74rem;
-  --transition-fast:170ms ease; --transition-base:250ms ease;
-  /* digest bucket hues: own = site accent family, rest = pub-badge idiom */
-  --own:#950000; --co:#e65100; --hi:#2e7d32; --med:#1565c0;
-}
-@media(prefers-color-scheme:dark){:root{
-  --color-bg:#111216; --color-surface:#1a1e24; --color-surface-soft:#232831;
-  --color-text:#ece4d9; --color-text-muted:#b7afa3; --color-border:#3a4049;
-  --color-accent:#ff7558; --color-accent-strong:#ff9f87; --color-accent-soft:#ff9f87;
-  --color-header-overlay:linear-gradient(120deg,rgba(2,5,12,.86),rgba(74,20,19,.5));
-  --color-nav-bg:rgba(7,9,14,.72); --color-focus:#ffd089;
-  --shadow-soft:0 12px 30px rgba(0,0,0,.28); --shadow-card:0 6px 18px rgba(0,0,0,.22);
-  --own:#ff9f87; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6;
-}}
-/* Explicit toggle choice (html[data-theme]) outranks :root, so it beats the
-   media query — same layering as the gracar.org standalone simulations. */
-html[data-theme="light"]{
-  color-scheme:light;
-  --color-bg:#f8f4ee; --color-surface:#ffffff; --color-surface-soft:#f1ebe1;
-  --color-text:#1f1b18; --color-text-muted:#554e47; --color-border:#d8cec1;
-  --color-accent:#950000; --color-accent-strong:#6f0000; --color-accent-soft:#cf6a54;
-  --color-header-overlay:linear-gradient(120deg,rgba(20,9,8,.8),rgba(90,18,16,.45));
-  --color-nav-bg:rgba(24,15,12,.66); --color-focus:#ff9f4a;
-  --shadow-soft:0 12px 30px rgba(34,20,15,.12); --shadow-card:0 6px 18px rgba(34,20,15,.08);
-  --own:#950000; --co:#e65100; --hi:#2e7d32; --med:#1565c0;
-}
-html[data-theme="dark"]{
-  color-scheme:dark;
-  --color-bg:#111216; --color-surface:#1a1e24; --color-surface-soft:#232831;
-  --color-text:#ece4d9; --color-text-muted:#b7afa3; --color-border:#3a4049;
-  --color-accent:#ff7558; --color-accent-strong:#ff9f87; --color-accent-soft:#ff9f87;
-  --color-header-overlay:linear-gradient(120deg,rgba(2,5,12,.86),rgba(74,20,19,.5));
-  --color-nav-bg:rgba(7,9,14,.72); --color-focus:#ffd089;
-  --shadow-soft:0 12px 30px rgba(0,0,0,.28); --shadow-card:0 6px 18px rgba(0,0,0,.22);
-  --own:#ff9f87; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6;
-}
-*{box-sizing:border-box}
-html{color-scheme:light dark}
-body{margin:0;min-height:100vh;display:flex;flex-direction:column;
-  background:var(--color-bg);color:var(--color-text);
-  font:400 var(--text-sm)/1.55 var(--font-body);text-rendering:optimizeLegibility}
-a{color:var(--color-accent);text-decoration:none;
-  background-image:var(--underline-image);background-size:0% 1.5px;
-  background-position:0 100%;background-repeat:no-repeat;
-  transition:color var(--transition-fast),background-size var(--transition-base)}
-a:hover{color:var(--color-accent-strong);background-size:100% 1.5px}
-.site-nav a,.weeklink,.entry-week{background-image:none}
-a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
-  outline:3px solid var(--color-focus);outline-offset:3px}
+STYLE_CSS = r"""/* Digest-specific overlay on the live gracar.org stylesheet, which is
+   linked first in index.html. Tokens (--color-*, --text-*, fonts, radii,
+   shadows), the link-underline system, the header/nav/footer chrome and the
+   system-driven light/dark switch are all inherited from there, so restyling
+   the homepage restyles this page too. This file owns only the digest's
+   bucket hues, layout, and components. */
+:root{ --own:#950000; --co:#e65100; --hi:#2e7d32; --med:#1565c0 }
+@media(prefers-color-scheme:dark){:root{ --own:#ff9f87; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6 }}
+body{font-size:var(--text-sm)}
+.weeklink,.entry-week{background-image:none}
+summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
 .wrap{max-width:var(--site-max-width);margin:0 auto;padding:0 1rem}
-.site-header{position:relative;isolation:isolate;color:#f8f5f2;
-  background:var(--color-header-overlay),url("https://gracar.org/banner.webp") center/cover no-repeat #2b1310}
+/* fallback shade if the hotlinked banner.webp fails to load (the site's
+   background shorthand resets background-color, so this later rule wins) */
+.site-header{background-color:#2b1310}
+/* the digest's tagline links sit on the banner: keep them near-white */
 .site-header a{color:inherit;--underline-image:linear-gradient(currentColor,currentColor)}
 .site-header a:hover{color:inherit}
-.site-header-inner{max-width:var(--site-max-width);margin:0 auto;
-  padding:clamp(2rem,3.5vw,3.2rem) 1rem clamp(1rem,2vw,1.5rem)}
-.site-kicker{margin:0;font-size:var(--text-sm);letter-spacing:.08em;text-transform:uppercase;opacity:.95}
-.site-name{margin:.35rem 0;color:inherit;font:700 var(--text-xl)/1.12 var(--font-heading);letter-spacing:.01em}
-.site-tagline{margin:0;max-width:60ch;font-size:var(--text-sm)}
-.site-nav{background:var(--color-nav-bg);backdrop-filter:blur(6px)}
-.site-nav-inner{max-width:var(--site-max-width);margin:0 auto;padding:.45rem 1rem .55rem;
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.4rem}
-.site-nav ul{margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem;list-style:none}
-.site-nav a{display:inline-block;color:#fff;font-size:var(--text-sm);font-weight:600;
-  padding:.34rem .7rem;border-radius:999px;
-  transition:background-color var(--transition-fast),color var(--transition-fast)}
-.site-nav a:hover,.site-nav a:focus-visible{background:rgba(255,255,255,.14);color:#fff}
-#theme-toggle{display:flex;background:var(--color-surface-soft);border:1px solid var(--color-border);
-  border-radius:999px;padding:3px;box-shadow:var(--shadow-soft)}
-#theme-toggle button{border:none;background:transparent;cursor:pointer;padding:4px 12px;
-  border-radius:999px;font:600 var(--text-xs)/1.2 var(--font-body);color:var(--color-text-muted);
-  white-space:nowrap;transition:background-color var(--transition-fast),color var(--transition-fast)}
-#theme-toggle button.active{background:var(--color-accent);color:#fff}
-.site-footer{margin-top:auto;border-top:1px solid var(--color-border);background:var(--color-surface-soft)}
-.site-footer-inner{max-width:var(--site-max-width);margin:0 auto;padding:1rem;
-  font-size:var(--text-sm);color:var(--color-text-muted);
-  display:flex;flex-wrap:wrap;justify-content:space-between;gap:.3rem 1.5rem}
-.site-footer-inner p{margin:0}
-.site-footer-inner a{color:var(--color-text-muted)}
-.site-footer-inner a:hover{color:var(--color-accent)}
+h1.site-name{color:inherit}
+/* #main is a grid cell here, not the site's centred prose column */
+#main{flex:none;width:auto;margin:0;padding:0}
 .layout{display:grid;grid-template-columns:320px 1fr;gap:1.6rem;padding-top:1.5rem;padding-bottom:3.5rem;align-items:start}
 #sidebar{position:sticky;top:1rem}
 .search input{width:100%;padding:.55rem .7rem;border-radius:var(--radius-md);border:1px solid var(--color-border);
@@ -879,8 +779,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
   padding:.05rem .5rem;border-radius:999px}
 .empty{color:var(--color-text-muted);padding:1.8rem 0}
 @media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{
-  animation-duration:1ms;animation-iteration-count:1;transition-duration:1ms}}
 """
 
 
