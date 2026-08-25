@@ -701,7 +701,8 @@ function onSearchInput(raw){
 
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
-  $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB')+
+  $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB',
+      {day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'})+
     ' · '+D.weeks.length+' week(s) archived';
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
   renderNav('');
