@@ -77,6 +77,12 @@ Search behaviour (current status — all implemented and on `main`):
 - **Dynamic sidebar counts.** While searching, each week's badges show filtered
   high / medium / other (+ coauthor★) counts (`filteredCounts` + `badgesHTML`);
   zero-match weeks dim; a sidebar "All weeks" entry shows the aggregate.
+- **Month aggregation.** Inside an open year, weeks at least one month old fold
+  into collapsible month sub-groups (`mergeCutoff` = previous 'YYYY-MM'; weeks
+  with an older monday merge, so the current and previous month stay individual).
+  Month headers reuse the year-header meta (`groupMeta`: week count + ✦/★, or
+  aggregated hits during search, dimming at zero); the active week's month is
+  held open like its year (`openMonths`).
 - **Time-windowed scope (scalability).** The combined search defaults to the last
   `WINDOW_MONTHS` (12) — only in-scope week files are fetched (`loadScope`) and
   aggregated (`scopeIndices` / `inScope` / `scopeLoaded`). An "Include older weeks"
