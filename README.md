@@ -67,7 +67,13 @@ honouring it and is suppressed entirely by some privacy settings.
 
 The sidebar groups weeks under **collapsible year headers**; only the current
 year is expanded by default, so the selector stays compact as years accumulate
-(one collapsed line per past year). Click a year to expand/collapse it.
+(one collapsed line per past year). Click a year to expand/collapse it. Within
+an open year, weeks **at least one month old fold into collapsible month
+sub-groups** (in September, July's weeks merge; August and September stay
+individually listed), each showing its week count and any ✦ own / ★ coauthor
+totals — so an expanded year is ~12 month lines plus the recent weeks, not 52
+rows. During a search, month headers show that month's aggregated hit count and
+dim when nothing matches.
 
 The site is **lazy-loaded** so it scales to many weeks without bloat:
 

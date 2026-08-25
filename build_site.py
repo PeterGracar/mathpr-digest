@@ -365,12 +365,20 @@ function renderWeek(w, term){
 
 let current=0;
 let openYears=null;                       // Set of expanded years; null => init
+let openMonths=new Set();                 // expanded month sub-groups ('YYYY-MM')
 let viewAll=false;                        // main panel showing combined results?
 let lastWeek=0;                           // week to restore when search is cleared
 let searchTimer=null;                     // debounce timer for cross-week search
 let searchScope='recent';                 // cross-week search window: 'recent'|'all'
 const WINDOW_MONTHS=12;                    // size of the 'recent' window
 const yearOf = w => w.monday.slice(0,4);
+const monthOf = w => w.monday.slice(0,7);
+const fmtMonth = m => new Date(m+'-01T00:00:00').toLocaleDateString('en-GB',{month:'long'});
+// Weeks at least one month old collapse into month sub-groups in the sidebar: a
+// week merges once its monday's month is before last month (so in September the
+// July weeks merge, while August and September stay individually listed).
+function mergeCutoff(){ const d=new Date(), y=d.getFullYear(), m=d.getMonth();
+  return (m===0?y-1:y)+'-'+String((m+11)%12+1).padStart(2,'0'); }
 const lc = s => fold(s).trim();           // normalise a search term (folds accents)
 
 // Cross-week search is windowed so the download and combined render stay bounded
@@ -406,6 +414,7 @@ function badgesHTML(c, term){
     return (c.own?'<span class="b own">✦'+c.own+'</span>':'')+
            (c.coauthor?'<span class="b coauthor">★'+c.coauthor+'</span>':'')+
            (c.high?'<span class="b high">'+c.high+'</span>':'')+
+           (c.medium?'<span class="b medium">'+c.medium+'</span>':'')+
            '<span class="b tot">'+c.total+'</span>';
   }
   return (c.own?'<span class="b own">✦'+c.own+'</span>':'')+
@@ -457,32 +466,60 @@ function renderNav(term){
     openYears=new Set(order.length?[order[0]]:[]);
   }
   openYears.add(yearOf(D.weeks[current]));   // keep the active week's year open
+  openMonths.add(monthOf(D.weeks[current])); // …and its month sub-group, if merged
   order.forEach(y=>{
     const items=byYear[y];
     const open=openYears.has(y);
-    const ownAll=items.reduce((s,i)=>s+(D.weeks[i].counts.own||0),0);
-    const coAll=items.reduce((s,i)=>s+D.weeks[i].counts.coauthor,0);
-    // during search, show this year's total hits once all its weeks are loaded
-    let yearHits=null;
-    if(t){
-      yearHits=0;
-      for(const i of items){ const fc=filteredCounts(D.weeks[i].monday,t);
-        if(fc) yearHits+=fc.total; else { yearHits=null; break; } }
-    }
+    const meta=groupMeta(items, t);
     const head=el('button','yearhead'+(open?' open':''));
-    const meta=(yearHits!=null)? items.length+' wk · <span class="hits">'+yearHits+' hit'+(yearHits===1?'':'s')+'</span>'
-                               : items.length+' wk'+(ownAll?' · <span class="own">✦'+ownAll+'</span>':'')+
-                                 (coAll?' · <span class="co">★'+coAll+'</span>':'');
     head.innerHTML='<span><span class="caret">'+(open?'▾':'▸')+'</span> '+y+'</span>'+
-      '<span class="ymeta">'+meta+'</span>';
+      '<span class="ymeta">'+meta.html+'</span>';
     head.addEventListener('click',()=>{ openYears.has(y)?openYears.delete(y):openYears.add(y); renderNav(term); });
     nav.appendChild(head);
     if(open){
       const grp=el('div','yearweeks');
-      items.forEach(i=>grp.appendChild(weekLink(i,term)));
+      // recent weeks stay individual rows; older ones fold into month sub-groups
+      // (items are newest-first, so weeks of a month are contiguous)
+      const cut=mergeCutoff(), segs=[];
+      items.forEach(i=>{
+        const m=monthOf(D.weeks[i]);
+        if(m>=cut){ segs.push({week:i}); return; }
+        const last=segs[segs.length-1];
+        (last && last.month===m)? last.items.push(i) : segs.push({month:m, items:[i]});
+      });
+      segs.forEach(s=>{
+        if(s.week!==undefined){ grp.appendChild(weekLink(s.week,term)); return; }
+        const mOpen=openMonths.has(s.month);
+        const mMeta=groupMeta(s.items, t);
+        const mh=el('button','monthhead'+(mOpen?' open':'')+(mMeta.hits===0?' nomatch':''));
+        mh.innerHTML='<span><span class="caret">'+(mOpen?'▾':'▸')+'</span> '+fmtMonth(s.month)+'</span>'+
+          '<span class="ymeta">'+mMeta.html+'</span>';
+        mh.addEventListener('click',()=>{ openMonths.has(s.month)?openMonths.delete(s.month):openMonths.add(s.month); renderNav(term); });
+        grp.appendChild(mh);
+        if(mOpen){
+          const mg=el('div','monthweeks');
+          s.items.forEach(i=>mg.appendChild(weekLink(i,term)));
+          grp.appendChild(mg);
+        }
+      });
       nav.appendChild(grp);
     }
   });
+}
+
+// Shared meta line for year/month group headers: week count plus ✦/★ totals, or
+// the group's total hits during search once all its weeks are loaded. `hits` is
+// null outside search (or while some week is still loading / out of scope).
+function groupMeta(items, t){
+  let hits=null;
+  if(t){ hits=0;
+    for(const i of items){ const fc=filteredCounts(D.weeks[i].monday,t);
+      if(fc) hits+=fc.total; else { hits=null; break; } } }
+  if(hits!=null) return {hits, html:items.length+' wk · <span class="hits">'+hits+' hit'+(hits===1?'':'s')+'</span>'};
+  const own=items.reduce((s,i)=>s+(D.weeks[i].counts.own||0),0);
+  const co=items.reduce((s,i)=>s+D.weeks[i].counts.coauthor,0);
+  return {hits, html:items.length+' wk'+(own?' · <span class="own">✦'+own+'</span>':'')+
+                     (co?' · <span class="co">★'+co+'</span>':'')};
 }
 
 // Sidebar "All weeks" entry: aggregated hit counts across all loaded weeks. Only
@@ -673,15 +710,19 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .searchstat{margin:.35rem .15rem 0;font-size:var(--text-xs);color:var(--color-text-muted)}
 #sidebar h2{font:600 var(--text-xs)/1.2 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
   color:var(--color-text-muted);margin:1.2rem 0 .5rem}
-.yearhead{width:100%;display:flex;justify-content:space-between;align-items:center;
+.yearhead,.monthhead{width:100%;display:flex;justify-content:space-between;align-items:center;
   background:transparent;border:none;color:var(--color-text);cursor:pointer;
   padding:.45rem .25rem;margin-top:.4rem;font:600 var(--text-sm)/1.3 var(--font-body);letter-spacing:.02em}
-.yearhead:hover{color:var(--color-accent)}
-.yearhead .caret{display:inline-block;width:12px;color:var(--color-text-muted);font-size:var(--text-xs)}
-.yearhead .ymeta{font-size:var(--text-xs);font-weight:400;color:var(--color-text-muted)}
-.yearhead .ymeta .own{color:var(--own)}
-.yearhead .ymeta .co{color:var(--co)}
-.yearhead .ymeta .hits{color:var(--color-accent)}
+.yearhead:hover,.monthhead:hover{color:var(--color-accent)}
+.yearhead .caret,.monthhead .caret{display:inline-block;width:12px;color:var(--color-text-muted);font-size:var(--text-xs)}
+.yearhead .ymeta,.monthhead .ymeta{font-size:var(--text-xs);font-weight:400;color:var(--color-text-muted)}
+.yearhead .ymeta .own,.monthhead .ymeta .own{color:var(--own)}
+.yearhead .ymeta .co,.monthhead .ymeta .co{color:var(--co)}
+.yearhead .ymeta .hits,.monthhead .ymeta .hits{color:var(--color-accent)}
+.monthhead{padding:.3rem .25rem .3rem .85rem;margin-top:.1rem;font-size:var(--text-xs)}
+.monthhead.nomatch{opacity:.45}
+.monthhead.nomatch:hover{opacity:.8}
+.monthweeks{margin:0 0 .25rem .85rem}
 .yearweeks{margin-bottom:.3rem}
 .weeklink{display:flex;justify-content:space-between;align-items:center;gap:.5rem;
   padding:.55rem .7rem;border:1px solid var(--color-border);border-radius:var(--radius-md);
