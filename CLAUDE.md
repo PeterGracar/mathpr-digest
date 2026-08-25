@@ -61,6 +61,9 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   **no entries**. Full entries live in `site/data/week-<monday>.js`
   (`window.DIGEST_WEEKS["<monday>"]`), injected via `<script>` on demand. Keep the
   initial payload constant as weeks accumulate — don't bake entry text into the index.
+  Like `style.css?v=…`, `index.js` and every week file are fetched with a
+  build-time content-hash `?v=` (the week's hash rides in its index summary as
+  `v`), so no cached copy — browser or Pages CDN — can outlive a data change.
 
 ## The browser app (inside `INDEX_HTML`)
 
