@@ -466,7 +466,9 @@ function weekLink(i, term){
   }
   a.innerHTML='<span class="wr">'+fmtRangeShort(w)+(inProgress(w)?' <span class="dot" title="in progress">●</span>':'')+'</span>'+
     '<span class="badges">'+badges+'</span>';
-  a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value);});
+  // keep the reader's scroll position: the sidebar is sticky, so a week picked
+  // mid-page shouldn't yank the viewport back to the top
+  a.addEventListener('click',ev=>{ev.preventDefault();selectWeek(i, $('#filter').value, false);});
   return a;
 }
 
@@ -597,11 +599,15 @@ function refreshSearch(){
 }
 
 function selectWeek(i, term, scroll){
+  // scroll===false keeps the reader's position; the browser clamps the scroll
+  // while the 'Loading…' placeholder shrinks the page, so restore it after the
+  // async render rather than relying on it surviving.
+  const y=window.scrollY;
   current=i; viewAll=false; $('#searchStat').hidden=true; renderNav(term);
   const w=D.weeks[i], main=$('#main');
   if(!(window.DIGEST_WEEKS||{})[w.monday]) main.innerHTML='<p class="empty">Loading&hellip;</p>';
   loadWeek(w.monday,
-    full=>renderWeek(full, $('#filter').value),
+    full=>{ renderWeek(full, $('#filter').value); if(scroll===false) window.scrollTo(0,y); },
     ()=>{ main.innerHTML='<p class="empty">Couldn\'t load <code>data/week-'+w.monday+'.js</code>. '+
       'If you opened this page directly from disk, your browser may be blocking local data files &mdash; '+
       'serve the folder instead: <code>python3 -m http.server --directory site</code></p>'; });
