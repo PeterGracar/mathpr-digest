@@ -6,11 +6,68 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-25",
-  "total_submissions": 22,
-  "fetched": 22,
-  "generated_at": "2026-08-25T14:26:19Z",
+  "data_through": "2026-08-26",
+  "total_submissions": 44,
+  "fetched": 44,
+  "generated_at": "2026-08-26T03:18:49Z",
   "entries": [
+    {
+      "id": "2608.24830",
+      "title": "Motion helps the contact process: survival below the percolation threshold on Poisson Brownian motions",
+      "abstract": "We consider the SIS contact process on a Poisson system of independent Brownian motions in $\\mathbb{R}^d$ of intensity $η$. Two particles are in contact when their distance is at most $2r$. An infected particle transmits the infection to a susceptible particle in contact with it at rate $λ\\in(0,\\infty]$, and recovers at rate $μ\\in(0,\\infty]$, after which it is susceptible again. When $λ=\\infty$, recovery acts only while a particle is isolated. Let $η_c^{\\mathrm{B}}$ be the critical intensity of the static Boolean model, below which the contact graph has only finite components at every fixed time. We show that for $d\\ge2$, with motion, at every intensity strictly below $η_c^{\\mathrm{B}}$, the infection survives and spreads at positive speed once the recovery rate $μ$ is small enough, depending on the intensity; that is, started from a single infected particle, at time $t$ there is an infected particle at distance of order $t$ from the origin. In particular there exists $μ_\\dagger>0$ such that $η_c(\\infty,μ)<η_c^{\\mathrm{B}}$ for every $μ<μ_\\dagger$, and as $μ\\downarrow0$ the set of intensities at which the infection survives extends to all of $(0,η_c^{\\mathrm{B}})$. We also show that the critical density is positive at every recovery rate, with a lower bound that does not depend on the infection rate, and that for $d\\ge2$, at every intensity and every finite infection rate, the infection survives and spreads at positive speed once $μ$ is small enough.",
+      "authors": [
+        "Peter Gracar"
+      ],
+      "published": "2026-08-25T17:13:59Z",
+      "updated": "2026-08-25T17:13:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24830",
+      "pdf_url": "https://arxiv.org/pdf/2608.24830",
+      "score": 19,
+      "matched_keywords": [
+        "boolean model",
+        "contact process",
+        "percolation",
+        "sis",
+        "survival"
+      ],
+      "own": true,
+      "coauthors": [],
+      "bucket": "own"
+    },
+    {
+      "id": "2608.24520",
+      "title": "Homomorphic-core phase transition threshold in Erdős--Rényi random graphs",
+      "abstract": "It is shown in this manuscript that a random graph $G$ drawn from the Erdős--Rényi model $\\mathcal{G}(n,p)$ with \\[ p=p(n)\\leq 1/2, \\qquad \\lim_{n\\to+\\infty}(np-\\log n-\\log\\log n)=+\\infty, \\] is a homomorphic core, i.e., every homomorphism from $G$ to itself is an automorphism. This implies tight ETH-based lower bounds of the subgraph isomorphism problem for almost all $k$-vertex patterns with polynomial average degree.",
+      "authors": [
+        "Jiaheng Wang"
+      ],
+      "published": "2026-08-25T13:09:38Z",
+      "updated": "2026-08-25T13:09:38Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "cs.CC",
+        "cs.DM",
+        "cs.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24520",
+      "pdf_url": "https://arxiv.org/pdf/2608.24520",
+      "score": 10,
+      "matched_keywords": [
+        "erdos",
+        "phase transition",
+        "random graph",
+        "renyi"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
     {
       "id": "2608.23135",
       "title": "Graph distance and effective resistance of the random walk trace in four and five dimensions",
@@ -66,6 +123,53 @@
       "bucket": "medium"
     },
     {
+      "id": "2608.23661",
+      "title": "$θ(p_c,{\\mathbb Z}^d)=0?$",
+      "abstract": "We discuss the famous conjecture {$θ(p_c,{\\mathbb Z}^d)=0$} for the Bernoulli site percolation model on $\\Z^d$ with $d\\geq 3$. We prove that, for $d\\geq 3$, in the Bernoulli percolation model on ${\\mathbb Z}^d$, at the critical point $p_c$, either there is no infinite cluster or the tail of the finite cluster distribution is not a stretched exponential.",
+      "authors": [
+        "Raphaël Cerf"
+      ],
+      "published": "2026-08-24T16:33:40Z",
+      "updated": "2026-08-24T16:33:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23661",
+      "pdf_url": "https://arxiv.org/pdf/2608.23661",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.24294",
+      "title": "Existence of densities and atoms for the running maximum of time-inhomogeneous jump diffusions",
+      "abstract": "We prove absolute continuity of the running maximum $X^{\\ast}_T=\\sup_{0\\leq s\\leq T}X_s$ of one-dimensional time-inhomogeneous Lévy--Itô diffusions driven by a Brownian motion and an independent non-truncated pure-jump Lévy process. Using Bismut's directional Malliavin calculus on the Wiener--Poisson space together with the running-maximum criteria of Song--Xie and Nakagawa--Suzuki, we reduce the problem to constructing an admissible direction $Θ$. The key is to ensure that the directional derivative $D_ΘX_t$ is strictly positive for all $t\\in(0,T]$. We give explicit directions in two regimes. In the uniformly elliptic case with time-inhomogeneous coefficients, a purely Brownian perturbation yields an explicit positive integral representation for $D_ΘX_t$, and hence $X^{\\ast}_T$ admits a density without truncating the jump component. In a Brownian-degenerate pure-jump model with a bounded deterministic time-dependent jump weight $κ(t)$ that may vanish on subintervals, we prove absolute continuity under the minimal nondegeneracy-in-time condition $\\int_0^t κ(s)^2\\,ds>0$ for every $t>0$ and infinite activity of the Lévy measure. A weighted Poisson positivity lemma is the key new input. Finally, we show that silent initial intervals can create atoms and we derive an explicit atom--density decomposition.",
+      "authors": [
+        "Takuya Nakagawa",
+        "Ryoichi Suzuki"
+      ],
+      "published": "2026-08-25T09:22:56Z",
+      "updated": "2026-08-25T09:22:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24294",
+      "pdf_url": "https://arxiv.org/pdf/2608.24294",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2608.22671",
       "title": "Exact Finite-Length Theory of Uniform Car Parking: Spatial Laws, Absorption, and Aggregation",
       "abstract": "The uniform car-parking process is the one-dimensional random sequential adsorption of unit cars on a segment of finite length $s$: cars arrive at uniformly random positions and park wherever they fit, until no gap admits another. This paper develops the exact finite-$s$ theory. The joint density of the parked positions is resolved into jamming cells, on each of which it is a rational function, and evaluated by a subset recursion in $O(2^n n)$ operations; the marginal and gap order statistics are obtained as hyperlogarithms whose weight is fixed by the number of coordinates integrated out; and the absorption count and the aggregate quantities are treated through the integral equation descending from Rényi.",
@@ -87,6 +191,58 @@
       "score": 2,
       "matched_keywords": [
         "renyi"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24213",
+      "title": "Optimal Hardy Inequalities for Random Walks on $\\mathbb{Z}^2$",
+      "abstract": "We prove an optimal Hardy inequality for every aperiodic, symmetric random walk in $\\mathbb{Z}^2$ with finite variance. In particular, we verify null-criticality, and thus, optimality of the underlying Hardy weight. Under suitable moment conditions, we use fine asymptotics of the potential kernel due to Fukai and Uchiyama in order to derive the asymptotics of the weight. For the standard Laplacian, we recover the expected first order term in the asymptotics but also show that next order term is negative. Thus, our result shows that the constant in the Hardy inequality proven by Kapitanski and Laptev cannot be larger than $1/4$, which is the optimal constant in the continuum. The proof of null-criticality rests on a new criterion for general graphs beyond the locally finite case. We also recover the situation of $\\mathbb{Z}^d$ with $d \\geq 3$ which can also be also treated by our new method.",
+      "authors": [
+        "Philipp Hake",
+        "Matthias Keller",
+        "Felix Pogorzelski"
+      ],
+      "published": "2026-08-25T08:20:18Z",
+      "updated": "2026-08-25T08:20:18Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math-ph",
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24213",
+      "pdf_url": "https://arxiv.org/pdf/2608.24213",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24837",
+      "title": "Strategic geometry of competing first-passage random walks",
+      "abstract": "Two competitors choose starting vertices for independent, constant-speed random walks, and each site is acquired by its first visitor. We study the spatial geometry of the resulting first-passage location game. On every finite path the optimal strategies are exactly the distributions supported on the central vertices. The proof combines reflecting-boundary harmonic barriers with a parameter-uniform aggregate estimate for product-chain exit probabilities. After diffusive rescaling, the complete two-start payoff landscape converges uniformly to the game between independent reflected Brownian motions. Its unique equilibrium concentrates at the midpoint, with explicit cubic stability. Beyond paths, attaching two leaves to every vertex of a clique of order k produces a 3k-vertex graph on which every exact optimal strategy randomizes over all k clique vertices; for k=2, this is a six-vertex tree with no pure equilibrium. The continuum best response to an endpoint is uniquely determined. A first-passage random-ranking representation relates the finite game to maximal lotteries without identifying it with nonstrategic painting, deterministic Voronoi allocation, or absorbing-trap placement. Parameter-uniform statements follow from analytic arguments or symbolic polynomial identities; identified finite exceptions and numerical enclosures have reproducible certificates.",
+      "authors": [
+        "Ian Meng Si"
+      ],
+      "published": "2026-08-25T17:27:53Z",
+      "updated": "2026-08-25T17:27:53Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24837",
+      "pdf_url": "https://arxiv.org/pdf/2608.24837",
+      "score": 2,
+      "matched_keywords": [
+        "voronoi"
       ],
       "own": false,
       "coauthors": [],
@@ -526,6 +682,370 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.23545",
       "pdf_url": "https://arxiv.org/pdf/2608.23545",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23742",
+      "title": "Second-order Fusion Asymptotics for Sine\\b{eta} Correlation Functions",
+      "abstract": "Recent work gives an all-$β$, all-order stochastic-zeta representation of the correlation functions of the $\\Sine_β$ process and determines their leading Vandermonde asymptotics when several variables merge. We compute the first nontrivial correction throughout the regime $mβ>1$. If $a_1,\\ldots,a_m$ are distinct real numbers and \\[ V(a)=\\sum_{1\\le i<j\\le m}(a_i-a_j)^2, \\] then, as $\\varepsilon\\to0$, \\[ ρ^{(m)}_β(\\varepsilon a_1,\\ldots,\\varepsilon a_m) =C^{(m)}_β|\\varepsilon|^{β\\binom m2}\\prod_{i<j}|a_i-a_j|^β\\left[1-\\frac{β^2 V(a)}{8(mβ-1)(2m+1)}\\varepsilon^2+o(\\varepsilon^2)\\right]. \\] For $m=2$ the normalized second-order coefficient is $-β^2/[40(2β-1)]$ for every $β>1/2$. The proof combines a finite-$N$ rotational Ward identity, exact Hua--Pickrell trace moments, compact moment bounds for the stochastic-zeta entire function and its derivatives, and a quantitative multivariate expectation--Taylor lemma. As a by-product we evaluate \\[ \\E_{\\HP_{β,mβ/2}}\\sum_x x^{-2}=\\frac{mβ}{4(mβ-1)(2m+1)}. \\] The pole at $mβ=1$ marks the boundary of the present second-moment argument and suggests a transition in the form of the next fusion correction.",
+      "authors": [
+        "Weiyang Fang"
+      ],
+      "published": "2026-08-24T18:29:44Z",
+      "updated": "2026-08-24T18:29:44Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23742",
+      "pdf_url": "https://arxiv.org/pdf/2608.23742",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23756",
+      "title": "Measure-valued fluid limits for partial service queues with correlated patience and service times",
+      "abstract": "We consider a many-server queue where tasks with general patience and service times arrive as a renewal process. Contrary to the standard assumptions, we allow for preemption and abandonment during service, relevant in applications such as electric vehicle charging and anytime algorithms in cloud computing. Moreover, we do not assume independence of patience and service times, which has been a critical assumption in the literature. We describe the state of the system using a discrete measure on a two-dimensional orthant, such that the coordinates of its atoms represent the attained service and time in the system of tasks. Under mild assumptions, we derive the fluid limit as the number of servers approaches infinity and the arrival rate of tasks grows proportionally. The limit is given by a measure-valued integral transport equation that we solve explicitly when the initial condition is the null measure. We also prove that all solutions, regardless of the initial condition, converge to the same fixed point, which admits a closed-form expression. Our results focus on the preemptive Last-Come-First-Served (LCFS) policy, which has been identified as practically appealing in recent work.",
+      "authors": [
+        "Diego Goldsztajn",
+        "Fernando Paganini",
+        "Andres Ferragut"
+      ],
+      "published": "2026-08-24T18:44:36Z",
+      "updated": "2026-08-24T18:44:36Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23756",
+      "pdf_url": "https://arxiv.org/pdf/2608.23756",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23948",
+      "title": "Free Bakry--Émery Calculus",
+      "abstract": "We prove a free probabilistic Bakry--Émery criterion for logarithmic Sobolev inequalities and hypercontractivity. Our approach relies on a noncommutative version of the carré du champ operator and its iteration, which we are able to define in the free probability setting. This allows us to formulate a positive curvature condition, which is shown to be sufficient for logarithmic Sobolev inequalities and hypercontractivity in this setting. In the setting of free Gibbs measures, we also show that this curvature condition can be expressed in terms of the positivity of the Hessian of the associated potential.",
+      "authors": [
+        "Ajay Chandra",
+        "Maria Gordina",
+        "Martin Peev"
+      ],
+      "published": "2026-08-25T01:15:59Z",
+      "updated": "2026-08-25T01:15:59Z",
+      "primary_category": "math.OA",
+      "categories": [
+        "math.OA",
+        "math.DG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23948",
+      "pdf_url": "https://arxiv.org/pdf/2608.23948",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23963",
+      "title": "Borell--Brascamp--Lieb inequality with finitely many output functions",
+      "abstract": "The classical Borell--Brascamp--Lieb inequality for multiple functions is an integral inequality relating finitely many input functions to a single output function. In this paper, we give an extension that allows a distinct output function for each input function. More precisely, we establish the following inequality. For a weight $ λ= ( λ_1 , \\dots , λ_m ) $, we set $ z_λ( x ) := \\sum_{ i = 1 }^m λ_i x_i $ and denote by $ M_p^λ$ the weighted power mean of power $ p $. In addition, the power transform $ Q_d $ is defined as the continuous extension of $ p \\mapsto p / ( 1 - d p ) $. We consider integrable functions $ f_1 , \\dots , f_m , g_1 , \\dots , g_m \\colon \\mathbb{ R }^d \\to \\mathbb{ R }_{ \\geq 0 } $ satisfying $ 0 < \\| f_i \\|_1 < \\infty $ for every $ i = 1 , 2 , \\dots , m $. Then one has \\[ \\operatorname*{ess\\,inf}_{ x = ( x_1 , \\dots , x_m ) } M_p^λ\\left( \\frac{ g_1 ( z_λ( x ) ) }{ f_1 ( x_1 ) }, \\dots , \\frac{ g_m ( z_λ( x ) ) }{ f_m ( x_m ) } \\right) \\leq M_{ Q_d ( p ) }^λ\\left( \\frac{ \\| g_1 \\|_1 }{ \\| f_1 \\|_1 }, \\dots , \\frac{ \\| g_m \\|_1 }{ \\| f_m \\|_1 } \\right) \\] for any $ - \\infty \\leq p \\leq 1 / d $, where the essential infimum is taken over the set of points satisfying $ f_i ( x_i ) > 0 $ for every $ i = 1 , 2 , \\dots , m $. When all output functions $ g_1 , \\dots , g_m $ are equal, this recovers the classical Borell--Brascamp--Lieb inequality for multiple functions. When $ p = 0 $ and the hypothesis is imposed pointwise, it coincides with a special case of the multi-output Prékopa--Leindler inequality of Cordero-Erausquin--Maurey.",
+      "authors": [
+        "Takashi Satomi"
+      ],
+      "published": "2026-08-25T01:42:28Z",
+      "updated": "2026-08-25T01:42:28Z",
+      "primary_category": "math.CA",
+      "categories": [
+        "math.CA",
+        "math.AP",
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23963",
+      "pdf_url": "https://arxiv.org/pdf/2608.23963",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23989",
+      "title": "Collision Properties in Discrete and Continuous Time on Bounded-Degree Graphs",
+      "abstract": "We prove that, on every connected bounded-degree graph, the infinite collision property holds in discrete time if and only if it holds in constant-speed continuous time, and the same equivalence holds for the finite collision property. The proof is based on a pointwise comparison between the Green kernels of the synchronous discrete-time pair chain and the asynchronous pair chain obtained by Poissonization. The main estimate exploits the binomial interlacing of the coordinate updates together with a local binomial estimate. We then use Martin capacities and collision zero--one laws to relate this Green-kernel comparison to infinite visits of the diagonal.",
+      "authors": [
+        "Jhon Astoquillca"
+      ],
+      "published": "2026-08-25T02:30:14Z",
+      "updated": "2026-08-25T02:30:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23989",
+      "pdf_url": "https://arxiv.org/pdf/2608.23989",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.23998",
+      "title": "A Unified Exact Factorial-Moment Theory for Multi-set Allocation Occupancy (MAO) in Finite Populations",
+      "abstract": "Let $A_1,\\ldots,A_T$ be independent uniformly selected subsets of a finite population of size $n$, with prescribed cardinalities $m_1,\\ldots,m_T$. For each population element, define its occupancy level as the number of selected subsets containing it. Let $x_t$ and $x_{\\geq t}$ denote the numbers of elements with occupancy exactly $t$ and at least $t$, respectively. The 2025 work introduced a general multi-set allocation occupancy (MAO) representation for higher-order occupancy moments. The present paper establishes its joint-probabilistic interpretation and provides a rigorous unified derivation for arbitrary joint occupancy categories and moment orders. Specifically, for arbitrary $B_1,\\ldots,B_\\ell\\subseteq\\{0,1,\\ldots,T\\}$, we prove the exact representation $F_\\ell(B_1,\\ldots,B_\\ell)=G_T(B_1,\\ldots,B_\\ell)/(n)_\\ell^{T-1}$, where $G_T(B_1,\\ldots,B_\\ell)$ is the corresponding generalized MAO transversal sum. This identity unifies the joint factorial moments of arbitrary occupancy categories within a single exact finite-population framework. In particular, writing $B_{\\geq t}=\\{t,t+1,\\ldots,T\\}$, the factorial moments of exact- and threshold-occupancy counts are obtained as the specializations $\\mathbb{E}[(x_t)_\\ell]=F_\\ell(\\{t\\},\\ldots,\\{t\\})$ and $\\mathbb{E}[(x_{\\geq t})_\\ell]=F_\\ell(B_{\\geq t},\\ldots,B_{\\geq t})$. Mixed factorial moments, raw moments, variances, and covariances follow from the same representation through standard transformations. The formulas are verified by exhaustive enumeration over feasible parameter ranges and by Monte Carlo simulation. The resulting theory provides a rigorous and unified finite-population foundation for exact and threshold multi-set occupancy statistics.",
+      "authors": [
+        "Xing-gang Mao",
+        "Xiao-yan Xue"
+      ],
+      "published": "2026-08-25T02:40:34Z",
+      "updated": "2026-08-25T02:40:34Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.23998",
+      "pdf_url": "https://arxiv.org/pdf/2608.23998",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24261",
+      "title": "Boundary Free Energies, Quenched Mixing, and Gibbs-State Selection in Disordered Ising Models",
+      "abstract": "We study boundary free energies and half-space responses in nearest-neighbor disordered Ising models. First, we prove the existence of fixed-depth tangential pressure and identify its derivative almost everywhere with the limiting boundary response. Second, under quenched exponential boundary-response mixing, we prove Gibbs-state selection independence and exponential convergence of finite-depth pressures. We further show that uniform one-spin mixing yields DLR uniqueness and Gaussian normal localization, and verify the required mixing conditions whenever $(2d-1)\\mathbb E\\tanh(β\\vert{}J\\vert{})<1$. Finally, we establish an all-face surface limit in the bounded Dobrushin regime and provide counterexamples that delimit general surface and stiffness claims.",
+      "authors": [
+        "Mauris Chueng",
+        "Hexiang Wang",
+        "Keheng Zhu"
+      ],
+      "published": "2026-08-25T08:50:28Z",
+      "updated": "2026-08-25T08:50:28Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.dis-nn",
+        "cond-mat.stat-mech",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24261",
+      "pdf_url": "https://arxiv.org/pdf/2608.24261",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24352",
+      "title": "Second moments associated with finite free multiplicative convolution",
+      "abstract": "We compute the second mixed moment of elementary symmetric polynomials in the eigenvalues of the random matrix model $AUBU^*$, where $A$ and $B$ are positive, and $U$ is a Haar-distributed random matrix, associated with finite free multiplicative convolution.",
+      "authors": [
+        "Nicolas Gilliers",
+        "Andrea Pettenello"
+      ],
+      "published": "2026-08-25T10:09:09Z",
+      "updated": "2026-08-25T10:09:09Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24352",
+      "pdf_url": "https://arxiv.org/pdf/2608.24352",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24356",
+      "title": "Another solvable population dynamic with uniform ancestral memory",
+      "abstract": "We study a population model with non-overlapping generations, where individuals have a type and retain the memory of the types of all their ancestors. We assume that for each individual, the reproduction law depends on the empirical distribution of ancestral types, unlike for a classical multi-type branching process where it hinges on the parental type only. We further assume the mean reproduction matrix has rank one. Building on techniques from previous works with Bastien Mallein, which themselves draw on foundational contributions by Philippe Flajolet and collaborators in the context of analytic urns, we analyze the population at large generations. In particular, we determine the Malthusian parameter and estimate the expected size of the sub-population whose empirical distribution of ancestral types lies within a given set.",
+      "authors": [
+        "Jean Bertoin"
+      ],
+      "published": "2026-08-25T10:11:20Z",
+      "updated": "2026-08-25T10:11:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24356",
+      "pdf_url": "https://arxiv.org/pdf/2608.24356",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24552",
+      "title": "Asymptotic Rounding Laws for Optimal Thresholds in Secretary Problems",
+      "abstract": "We study second-order asymptotics for optimal thresholds in secretary-type problems. Under a unimodality assumption and a local affine expansion of the discrete payoff increments, we establish a general principle showing that sufficiently accurate rational approximations to the leading threshold proportion yield exact optimal integer thresholds. Continued-fraction convergents provide an immediate application. We also derive an asymptotic rounding law and apply the results to several variants of the secretary problem with fixed and random horizons.",
+      "authors": [
+        "Raúl Sánchez Galán"
+      ],
+      "published": "2026-08-25T13:37:29Z",
+      "updated": "2026-08-25T13:37:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24552",
+      "pdf_url": "https://arxiv.org/pdf/2608.24552",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24575",
+      "title": "Longest increasing subsequences of dyadic-type chaotic orbits",
+      "abstract": "This paper studies the longest increasing subsequence (LIS) problem for sequences generated by dyadic-type chaotic interval maps. Starting from a single point $x\\in[0,1)$ chosen uniformly at random, we form the order pattern of the first $N$ points of its orbit, with the doubling map as the basic model. Let $λ_1^{(N)}$ be the LIS length, equivalently the length of the first row of the Young diagram obtained by Schensted's insertion. We show that $\\mathbb E[λ_1^{(N)}]/\\sqrt N\\to 2$, matching the leading asymptotics in the classical Ulam--Hammersley problem for uniform random permutations.",
+      "authors": [
+        "Shinsuke Iwao",
+        "Fumihiko Nakamura",
+        "Yushi Nakano"
+      ],
+      "published": "2026-08-25T14:02:52Z",
+      "updated": "2026-08-25T14:02:52Z",
+      "primary_category": "math.DS",
+      "categories": [
+        "math.DS",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24575",
+      "pdf_url": "https://arxiv.org/pdf/2608.24575",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24595",
+      "title": "An Exchangeable Pair-Hawkes Reference Model and a Cumulant Obstruction for Hard-Sphere Collision Statistics",
+      "abstract": "An exchangeable Hawkes process indexed by unordered particle pairs is introduced as a reference model for collision records. Using the Johnson scheme \\texorpdfstring{\\(J(N,2)\\)}{J(N,2)}, we separate the global, tagged particle and cycle modes and obtain the stationarity condition, mean rates, finite size parametrization and finite window covariances. The Poisson cluster representation is used to prove that the third long time cumulant rate is at least the second for every nonempty subset of event types. The first Sonine benchmark for hard particles has the opposite ordering for every \\texorpdfstring{\\(d\\geq2\\)}{d >= 2}, and therefore cannot be reproduced as the exact long time limit of a nonnegative subset count of the positive pair Hawkes process. The exact finite window formulas are compared with simulations for systems up to \\texorpdfstring{\\(N=400\\)}{N = 400}. We also analyze one hundred independent two dimensional hard particle realizations, each with \\texorpdfstring{\\(N=1024\\)}{N = 1024} and \\texorpdfstring{\\(4\\times10^6\\)}{4 million} recorded collisions. At the longest window, the interval across realizations for the mean estimate of \\texorpdfstring{\\((c_3-c_2)/c_1\\)}{(c3 - c2)/c1} lies below zero. A separate three dimensional realization with \\texorpdfstring{\\(N=108\\)}{N = 108} gives the mean rate and the three modal projections, but its cumulant interval does not determine the ordering. These calculations are finite system comparisons; they do not derive a physical collision law. Finally, a counterexample with nonnegative counts is obtained from a two state jump process, and a sufficient stationarity condition is proved for a clipped signed extension.",
+      "authors": [
+        "Luis Iván Hernández Ruíz"
+      ],
+      "published": "2026-08-25T14:19:39Z",
+      "updated": "2026-08-25T14:19:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24595",
+      "pdf_url": "https://arxiv.org/pdf/2608.24595",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24616",
+      "title": "Power-sum convergence for randomly weighted means and Breiman's conjecture",
+      "abstract": "We establish a power-sum convergence principle for randomly weighted means. Let $P(t)=(P_j(t))$ be random finitely supported subprobability weight sequences, independent of iid centered integrable marks. If the expected total mass converges and the expected power sum of some order $r\\in(0,1)$ is uniformly bounded, then convergence, for one fixed mark law, of $\\sum_jP_j(t)X_j$ to a nondegenerate law forces $\\mathbb{E}\\sum_jP_j(t)^p$ to converge to a positive limit for some $p\\in(1,2]$. The proof combines normal-family compactness for Mellin transforms of characteristic-function remainders, inversion at frequencies $\\pm u$, and Landau's theorem at the abscissa of convergence; a uniform Abelian estimate handles the endpoint $p=2$. For weights obtained by normalizing a Poisson-sized iid sample of nonnegative variables, a gap below one for the logarithmic slope of the Laplace exponent yields the required power-sum bound of order below one. A Poissonized ratio Tauberian theorem then identifies the common tail of the unnormalized variables as regularly varying, with index $-β$ for a unique $β\\in[0,1)$. As an application, this proves the remaining necessity direction in Breiman's 1965 conjecture for centered integrable marks. Combined with Breiman's sufficiency theorem, it completes the conjecture.",
+      "authors": [
+        "Jacopo Lenzi"
+      ],
+      "published": "2026-08-25T14:37:18Z",
+      "updated": "2026-08-25T14:37:18Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24616",
+      "pdf_url": "https://arxiv.org/pdf/2608.24616",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24675",
+      "title": "Towards Liouville Quantum Gravity on fractals",
+      "abstract": "Motivated by the recent construction of fractional Gaussian fields on the Sierpinski gasket, we study those Gaussian fields whose covariance function exhibits a logarithmic behavior. We introduce a parametric family of random measures associated with these fields, which can be regarded as the analogue to Liouville quantum gravity. The construction is based on Kahane's approach via Gaussian multiplicate chaos. We establish reflection invariance and scaling self-similarity for both the fields and the measures, and in addition construct the corresponding analogue to Liouville Brownian motion.",
+      "authors": [
+        "Patricia Alonso Ruiz",
+        "Eva Kopfer"
+      ],
+      "published": "2026-08-25T15:09:13Z",
+      "updated": "2026-08-25T15:09:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24675",
+      "pdf_url": "https://arxiv.org/pdf/2608.24675",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24863",
+      "title": "Uniform logarithmic Sobolev inequalities for the 2D Coulomb gas at the diffusive temperature scale",
+      "abstract": "For $N\\ge2$ and $β>0$, consider the canonical 2D Coulomb gas ensemble \\begin{equation} \\mathrm{d}\\mathbb{P}_{N,β}(Z) =\\mathsf{Z}_{N,β}^{-1}e^{-β|Z|^2/2} \\prod_{i<j}|z_i-z_j|^{β/N}\\,\\mathrm{d}Z \\qquad\\text{on }\\mathbb{C}^N. \\end{equation} The factor $N^{-1}$ in the pair exponent places the ensemble at the diffusive, or high-temperature, scale. We prove that, for every fixed inverse temperature $β>0$, this Gibbs measure satisfies a logarithmic Sobolev inequality (LSI) on the closed Dirichlet-form domain generated by collision-free compactly supported smooth functions, with a positive constant independent of $N$. The LSI constant may be chosen uniformly when $β$ ranges over a compact subset of $(0,\\infty)$. A second main result establishes Poincaré and logarithmic Sobolev inequalities for planar Gaussian measures weighted by finite products of positive powers of distances to points, with constants depending only on the total variance of the underlying Gaussian measure and the total exponent, not on the number or locations of the points. To prove the full labeled Poincaré inequality, we decompose variance into permutation-invariant and label-dependent parts, controlled respectively by a weighted $\\bar\\partial$ estimate and by relative-coordinate conditioning with random transpositions; separately, one-site logarithmic Sobolev inequalities, a conditional entropy inequality, and a repulsive partition estimate give a defective logarithmic Sobolev inequality. Rothaus tightening combines the resulting full labeled Poincaré inequality with the defective logarithmic Sobolev inequality. No uniformity as $β\\to0$ or $β\\to\\infty$ is asserted.",
+      "authors": [
+        "Matthew Rosenzweig"
+      ],
+      "published": "2026-08-25T17:45:40Z",
+      "updated": "2026-08-25T17:45:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24863",
+      "pdf_url": "https://arxiv.org/pdf/2608.24863",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.24868",
+      "title": "Mass scaling of the near-critical Ising model in dimensions $d\\geq 4$",
+      "abstract": "We study the Ising model on $\\mathbb{Z}^d$ with $d\\geq 4$ and derive near-critical bounds on the truncated two-point function $\\langleσ_0;σ_x\\rangle_{β,h} := \\langleσ_0σ_x\\rangle_{β,h} - \\langleσ_0\\rangle_{β,h}\\langleσ_x\\rangle_{β,h}$ at parameters $β\\leqβ_c$ and $h\\geq 0$. As a corollary, we obtain that the associated mass (or exponential decay rate) is equal to \\begin{equation*} \\max\\bigl((β_c-β)^{1/2},h^{1/3}\\bigr)^{1+o(1)}, \\end{equation*} where $o(1)$ tends to $0$ as $(β,h)$ tends to $(β_c,0)$. The proof combines the corresponding result at $h=0$, recently established by Duminil-Copin and Panis, with an interpolation argument inspired by Aizenman and Fernández and carried out via the random current representation of the model.",
+      "authors": [
+        "Romain Panis"
+      ],
+      "published": "2026-08-25T17:51:25Z",
+      "updated": "2026-08-25T17:51:25Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24868",
+      "pdf_url": "https://arxiv.org/pdf/2608.24868",
       "score": 0,
       "matched_keywords": [],
       "own": false,
