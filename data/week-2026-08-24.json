@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-08-26",
-  "total_submissions": 44,
-  "fetched": 44,
-  "generated_at": "2026-08-26T03:18:49Z",
+  "data_through": "2026-08-27",
+  "total_submissions": 61,
+  "fetched": 61,
+  "generated_at": "2026-08-27T12:48:10Z",
   "entries": [
     {
       "id": "2608.24830",
@@ -37,6 +37,64 @@
       "own": true,
       "coauthors": [],
       "bucket": "own"
+    },
+    {
+      "id": "2608.25201",
+      "title": "Recurrence of strong-decay inhomogeneous long-range percolation clusters",
+      "abstract": "We prove recurrence criteria for inhomogeneous long-range percolation in dimensions one and two. In dimension one, recurrence follows from a purely geometric scarcity condition: long edges eventually disappear on exponential scales. This applies to weight-dependent random connection models and related one-dimensional spatial scale-free graphs whenever the standard strong-decay long-edge estimate holds. In dimension two, we combine the linear chemical-distance estimate of Lüchtrath with an area-order bound on the degree measure. Graph-distance layers in exponentially separated bands then give the required Nash-Williams cutsets for planar random geometric graphs satisfying the polynomial mixing and long-edge estimates [J. Theoret. Probab. 39 (2026), Paper No. 12]. As a concrete consequence, every connected component of the two-dimensional weight-dependent random connection model with interpolation kernel is recurrent throughout the strong-decay region $δ>2$, $γ<1-\\frac{1}δ$, and $α<1-γ$.",
+      "authors": [
+        "Johannes Bäumler",
+        "Lukas Lüchtrath",
+        "Christian Mönch"
+      ],
+      "published": "2026-08-25T22:42:59Z",
+      "updated": "2026-08-25T22:42:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25201",
+      "pdf_url": "https://arxiv.org/pdf/2608.25201",
+      "score": 30,
+      "matched_keywords": [
+        "inhomogeneous",
+        "long-range percolation",
+        "percolation",
+        "random connection model",
+        "scale-free",
+        "weight-dependent"
+      ],
+      "own": false,
+      "coauthors": [
+        "Christian Monch",
+        "Lukas Luchtrath"
+      ],
+      "bucket": "coauthor"
+    },
+    {
+      "id": "2608.25065",
+      "title": "Detection of first homology via random geometric graphs in the thermodynamic regime",
+      "abstract": "Consider a random geometric graph $G_M(n;r)$ on a compact Riemannian manifold $M$, whose vertices are a cloud of $n$ independently sampled points, and whose edges connect vertices at distance $\\le r$. We show that, in the thermodynamic (i.e. bounded expected average degree) regime, if $G_M(n;r)$ is supercritical in the sense of continuum percolation, then the first homology group $H_1(M)$ of $M$ can be correctly inferred from $G_M(n;r)$ with high probability as $n \\to \\infty$. Specifically, one can obtain $H_1(M)$ by taking the cycle space of $G_M(n;r)$ and quotienting out all the cycles of metric diameter $O(r|\\log r|)$ (or of graph diameter $O(|\\log r|)$). Our method of estimating $H_1(M)$ exploits a coarse-topological fact about supercritical percolation, as opposed to usual methods, which examine the topology of neighborhoods of the point cloud. Whereas previous methods use combinatorial models which require $O(n \\log n)$ edges, our method only requires $O(n)$ edges. We also show that, in all phases of the thermodynamic regime, if one instead takes the quotient by cycles of metric diameter $o(r|\\log r|)$, with high probability, one will not recover $H_1(M)$. Thus $Θ(r|\\log r|)$ is the ``right scale.'' On the way, we show that an arbitrary compact $d$-dimensional Riemannian manifold has a \\emph{first homological percolation threshold} in the sense of Bobrowski and Skraba \\cite{BS2020} which coincides with the continuum percolation threshold on $\\R^d$, a result previously only known for the flat torus. This strongly suggests that our results are optimal, in the sense that $H_1(M)$ cannot be inferred from $G_M(n;r)$ in the subcritical thermodynamic regime. All results hold for homology with arbitrary coefficients.",
+      "authors": [
+        "Christian Gorski"
+      ],
+      "published": "2026-08-25T18:59:47Z",
+      "updated": "2026-08-25T18:59:47Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25065",
+      "pdf_url": "https://arxiv.org/pdf/2608.25065",
+      "score": 15,
+      "matched_keywords": [
+        "continuum percolation",
+        "percolation",
+        "random geometric graph"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
     },
     {
       "id": "2608.24520",
@@ -164,6 +222,34 @@
       "score": 4,
       "matched_keywords": [
         "inhomogeneous"
+      ],
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2608.25280",
+      "title": "Empirical-Bayes Elastic-Net Computation for Exponential Random Graph Models",
+      "abstract": "Exponential random graph models (ERGMs) describe dependence among network ties, but inference becomes difficult when the likelihood is intractable and candidate network statistics are strongly correlated. We introduce BERGM Elastic Net, an adaptive empirical-Bayes approach that combines lasso shrinkage with ridge stabilization in a Bayesian ERGM. A latent-variable formulation supports approximate exchange sampling, while empirical-Bayes updates adapt the amount of regularization to the observed network. We connect the proposed prior to elastic-net penalized likelihood and clarify the interpretation of thresholded reporting and coefficient grouping. The method is developed for over-specified network models containing many related structural and covariate effects.",
+      "authors": [
+        "Dan Han",
+        "Vicki Modisette",
+        "Ting Li",
+        "Akidul Haque"
+      ],
+      "published": "2026-08-26T01:32:06Z",
+      "updated": "2026-08-26T01:32:06Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25280",
+      "pdf_url": "https://arxiv.org/pdf/2608.25280",
+      "score": 3,
+      "matched_keywords": [
+        "random graph"
       ],
       "own": false,
       "coauthors": [],
@@ -689,6 +775,29 @@
       "bucket": "other"
     },
     {
+      "id": "2608.24948",
+      "title": "The equality cases $P_t(\\mathbb{N})=\\tfrac12$ for the deconvolved sum-of-digits measures",
+      "abstract": "Let $s(n)$ denote the number of ones in the binary expansion of an integer $n\\in\\mathbb{N}$, and let $μ_t$ be the probability measure on $\\mathbb{Z}$ defined by the asymptotic densities of the level sets of the function $\\mathbb{N}\\ni n\\mapsto s(n+t)-s(n)\\in\\mathbb{Z}$. Let $P_t$ be the family of finitely supported measures defined by the convolution $μ_t=μ_1*P_t$. Recently, Tarlowski (2026) has shown that the family $P_t$ may be represented as a recursively grown binary tree $T_t$, and that the Cusick's conjecture - $μ_t(\\mathbb{N})>\\frac12$, $t\\in\\mathbb{N}$, - follows from the asymmetry property of the family $T_t$, which was posed there as an open problem. Next, Cheng (2026) has provided the combinatorial description of the family $T_t$ in the language of principal subsequence ideals, and proved both conjectures. Both of these problems are directly related to the problem of determining the zeros of the function $\\mathbb{N}\\ni t \\mapsto P_t(\\mathbb{N})-\\frac12\\in[0,\\tfrac12]$, a problem left open by Cheng (2026) as a saturation problem, and previously analyzed only numerically. In this paper we solve this problem completely. Writing an odd integer $t\\ge3$ as $t=(1\\,w\\,1)_2$ with $w\\in\\{0,1\\}^{\\star}$, we show that $P_t(\\mathbb{N})=\\frac12$ if and only if $w$ is \\emph{saturated} in the following sense: in the block decomposition $w=1^{a_0}\\,0\\,1^{a_1}\\,0\\cdots0\\,1^{a_k}$ with exactly $k$ zeros, every block of \"1\" satisfies $a_i\\ge k$. Additionally, we show that the lower bound for $P_t(\\mathbb{N})$ established by Cheng for $0$-initial words holds true for all non-saturated words.",
+      "authors": [
+        "Dawid Tarłowski"
+      ],
+      "published": "2026-08-24T18:10:24Z",
+      "updated": "2026-08-24T18:10:24Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.24948",
+      "pdf_url": "https://arxiv.org/pdf/2608.24948",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2608.23742",
       "title": "Second-order Fusion Asymptotics for Sine\\b{eta} Correlation Functions",
       "abstract": "Recent work gives an all-$β$, all-order stochastic-zeta representation of the correlation functions of the $\\Sine_β$ process and determines their leading Vandermonde asymptotics when several variables merge. We compute the first nontrivial correction throughout the regime $mβ>1$. If $a_1,\\ldots,a_m$ are distinct real numbers and \\[ V(a)=\\sum_{1\\le i<j\\le m}(a_i-a_j)^2, \\] then, as $\\varepsilon\\to0$, \\[ ρ^{(m)}_β(\\varepsilon a_1,\\ldots,\\varepsilon a_m) =C^{(m)}_β|\\varepsilon|^{β\\binom m2}\\prod_{i<j}|a_i-a_j|^β\\left[1-\\frac{β^2 V(a)}{8(mβ-1)(2m+1)}\\varepsilon^2+o(\\varepsilon^2)\\right]. \\] For $m=2$ the normalized second-order coefficient is $-β^2/[40(2β-1)]$ for every $β>1/2$. The proof combines a finite-$N$ rotational Ward identity, exact Hua--Pickrell trace moments, compact moment bounds for the stochastic-zeta entire function and its derivatives, and a quantitative multivariate expectation--Taylor lemma. As a by-product we evaluate \\[ \\E_{\\HP_{β,mβ/2}}\\sum_x x^{-2}=\\frac{mβ}{4(mβ-1)(2m+1)}. \\] The pole at $mβ=1$ marks the boundary of the present second-moment argument and suggests a transition in the form of the next fusion correction.",
@@ -1046,6 +1155,308 @@
       ],
       "abs_url": "https://arxiv.org/abs/2608.24868",
       "pdf_url": "https://arxiv.org/pdf/2608.24868",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25052",
+      "title": "Improved Analysis for Hessian-free High-resolution Monte Carlo Sampling",
+      "abstract": "Hessian-free high-resolution (HFHR) dynamics augments underdamped Langevin dynamics (ULD) with reversible position diffusion for sampling problems that arise in machine learning. We establish an explicit quantitative contraction rate for HFHR dynamics under a position Poincaré inequality, weighted Hessian and Laplacian bounds, and a compact Sobolev embedding, where the potential function is not necessarily convex. An adapted time-augmented Poincaré inequality yields an explicit rate that improves upon the contraction rate of the underdamped Langevin dynamics. We also give a weak-solution construction and a self-contained spectral proof of the divergence lemma underlying the argument. For HFHR Monte Carlo (HFHRMC) algorithm, which is based on a discretization scheme of HFHR dynamics, we use a path-space Girsanov argument to obtain a non-asymptotic convergence bound and an explicit iteration complexity in total variation distance. The bounds hold for every $α\\geq0$ and $γ>0$ and remain regular at the ULD endpoint. Optimizing the iteration complexity bound yields a positive, accuracy-dependent position-diffusion parameter at finite accuracy, while its leading high-accuracy order coincides with that of the optimized ULD endpoint. Our iteration complexity bound improves upon the existing work on HFHR algorithms. Numerical experiments including Bayesian learning problems on real data are provided to illustrate the effect of positive $α$ and its benefit.",
+      "authors": [
+        "Wujun Lv",
+        "Xiaoyu Wang",
+        "Yingli Wang",
+        "Lingjiong Zhu"
+      ],
+      "published": "2026-08-25T18:42:23Z",
+      "updated": "2026-08-25T18:42:23Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25052",
+      "pdf_url": "https://arxiv.org/pdf/2608.25052",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25094",
+      "title": "Noising-Denoising by Large Temperature Schrödinger Bridges",
+      "abstract": "In this note, we establish a connection between denoising diffusion models and large temperature dynamic Schrödinger bridges computed with respect to certain reference processes. In particular, we show that in the large temperature regime (i.e. $T \\to +\\infty$), the Schrödinger bridge behaves like a forward time diffusion process over the time interval $[0,T/2]$, and approximately like the time reversal of a diffusion process over $[T/2,T]$. This construction provides a process-level characterization of the gradient flow approximation developed by Clerc et al. (2023).",
+      "authors": [
+        "Garrett Mulcahy"
+      ],
+      "published": "2026-08-25T19:45:02Z",
+      "updated": "2026-08-25T19:45:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25094",
+      "pdf_url": "https://arxiv.org/pdf/2608.25094",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25164",
+      "title": "A time-fractional Kalman filter",
+      "abstract": "We study a linear filtering problem in which the signal process is described by a time-fractional linear stochastic differential equation driven by Brownian motion. We derive a stochastic integral equation for the conditional mean alongside a Riccati--Volterra type integral equation for the mean-square error function. As a core application, we introduce a time-fractional state-estimation framework for modelling learning trajectories in children with developmental dyscalculia.",
+      "authors": [
+        "Olfa Draouil",
+        "Rahma Yasmina Moulay Hachemi",
+        "Bernt Øksendal",
+        "Aliane Abderrahmen"
+      ],
+      "published": "2026-08-25T21:20:17Z",
+      "updated": "2026-08-25T21:20:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25164",
+      "pdf_url": "https://arxiv.org/pdf/2608.25164",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25223",
+      "title": "On the hedging problem in general 1D diffusion markets",
+      "abstract": "We develop a PDE-based methodology for pricing and hedging European contingent claims in general one-dimensional diffusion markets characterized solely by their scale function and speed measure, possibly without a classical SDE representation, and with constant interest rate. We derive a hedging equation whose solution generates a self-financing hedging strategy and provide sufficient conditions on scale, speed, and interest rate, under which this strategy achieves the minimal hedging capital, expressed through the no free lunch with vanishing risk (NFLVR) condition. We further prove necessary and sufficient conditions for NFLVR and characterize the class of equivalent local martingale measures through an auxiliary diffusion whose scale and speed characteristics are determined by those of the real-world diffusion and by the interest rate. When the NFLVR condition fails, the framework may produce multiple hedging equations corresponding to non-minimal strategies, whose associated prices can exceed the minimal hedging capital. We illustrate both the effectiveness and limitations of the approach through numerical experiments involving diffusion models with irregular features.",
+      "authors": [
+        "Alexis Anagnostakis",
+        "David Criens",
+        "Mikhail Urusov"
+      ],
+      "published": "2026-08-25T23:22:52Z",
+      "updated": "2026-08-25T23:22:52Z",
+      "primary_category": "q-fin.MF",
+      "categories": [
+        "q-fin.MF",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25223",
+      "pdf_url": "https://arxiv.org/pdf/2608.25223",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25279",
+      "title": "Provable Non-Acceleration of Standard Strang Splittings of Kinetic Langevin Dynamics",
+      "abstract": "The OBABO and BAOAB schemes and the other standard Strang splittings of kinetic (underdamped) Langevin dynamics are widely used Markov chain Monte Carlo algorithms. Under a suitable friction scaling, the underlying diffusion relaxes on a ballistic time scale, suggesting that these discretizations, suitably tuned, sample targets with condition number $κ$ in $O(\\sqrtκ)$ iterations. We prove that no fixed choice of step size and friction, based only on the curvature bounds and the dimension, achieves this acceleration: total variation mixing time lower bounds for OBABO show that ballistic cold-start mixing fails uniformly over the smooth strongly convex class, and the lower bounds extend, with the same orders, to BAOAB and the other four Strang splittings. The proof transfers non-acceleration from optimization to sampling. Eliminating velocity gives an exact noisy heavy-ball recursion, and by the non-acceleration theorem of Goujaud, Taylor and Dieuleveut, for every tuning either some Gaussian target has a mode with relaxation time at least of order $κ$, or an attracting cycle exists on a smooth potential; dilating such a potential as $U_R(x)=R^2U(x/R)$ preserves its curvature bounds and produces metastability for a number of steps exponential in $R^2$, from an initial state at Wasserstein distance $O(R)$ from equilibrium. Using contraction estimates of Leimkuhler, Paulin and Whalley and a Wasserstein-to-total-variation regularization estimate, we prove a complementary upper bound of $O(κ)$ steps, up to logarithmic factors, for a fixed-parameter OBABO tuning. Hence, among fixed-parameter OBABO tunings, the optimal condition-number dependence of cold-start total variation mixing over this class is linear, up to logarithmic factors. A direct Gaussian calculation also rules out fixed-parameter acceleration for the left-endpoint exponential integrator.",
+      "authors": [
+        "Nawaf Bou-Rabee"
+      ],
+      "published": "2026-08-26T01:27:39Z",
+      "updated": "2026-08-26T01:27:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NA",
+        "stat.CO",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25279",
+      "pdf_url": "https://arxiv.org/pdf/2608.25279",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25362",
+      "title": "Fluctuations of the free energy of the Sherrington-Kirkpatrick model with ferromagnetic interaction",
+      "abstract": "We study the Sherrington-Kirkpatrick model with an additional Curie-Weiss ferromagnetic interaction (SKFI), whose phase diagram in the plane of the disorder strength $β$ and the ferromagnetic coupling $γ$ consists of a paramagnetic, a ferromagnetic, and a spin glass region. Our main result is a central limit theorem for the free energy in the ferromagnetic regime: at scale $N^{-1/2}$, the fluctuations coincide with those of the Sherrington-Kirkpatrick model in an effective external field determined by the limiting magnetization. We prove this for general mixed even $p$-spin interactions, using the fluctuation theory of Chen, Dey, and Panchenko. For the pure 2-spin model we complete the picture of the phase diagram: we give a new proof of the order-$N^{-1}$ Gaussian fluctuations in the paramagnetic regime, obtained earlier by Banerjee, valid up to the critical window; we determine the limiting distribution on the critical line $γ= 1 + θN^{-1/2}$ separating the paramagnetic and ferromagnetic regimes; and we show that in the spin glass regime the fluctuations coincide with those of the zero-field SK model under a widely believed variance-divergence assumption. Our results form the Ising analogue of the fluctuation results of Baik and Lee for the spherical SKFI model.",
+      "authors": [
+        "Partha S. Dey",
+        "Taegu Kang"
+      ],
+      "published": "2026-08-26T04:34:55Z",
+      "updated": "2026-08-26T04:34:55Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25362",
+      "pdf_url": "https://arxiv.org/pdf/2608.25362",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25471",
+      "title": "Exact Hausdorff measures and fine geometry of collisions of independent Markov processes",
+      "abstract": "We study the fine geometry of collision measures associated with independent Markov processes on a common metric measure space. These measures are natural space-time random measures encoding collision times and collision points. Under small-scale Ahlfors regularity and standard short-time heat-kernel estimates, we determine the local dimensions of their temporal and spatial marginals, the Hausdorff dimensions of their supports and of the collision sets themselves, and logarithmic limsup laws for their local masses at typical collisions and at exceptional thick collisions. Through this analysis, we identify exact Hausdorff measure functions for the collision-time sets and, in a natural regime, for the collision-point sets. Moreover, we prove that the corresponding Hausdorff measures are comparable, uniformly over all Borel subsets, to the temporal and spatial marginals of the collision measures. This provides a broad solution to the Hausdorff-measure part of an open question posed by Xiao more than two decades ago. Our framework covers symmetric stable processes, canonical diffusions on affine nested fractals such as the Sierpiński gasket, and stable-like jump processes on $d$-sets.",
+      "authors": [
+        "Ryoichiro Noda"
+      ],
+      "published": "2026-08-26T07:42:22Z",
+      "updated": "2026-08-26T07:42:22Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25471",
+      "pdf_url": "https://arxiv.org/pdf/2608.25471",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25491",
+      "title": "A Spectral Local-to-Global Principle for Spin Systems on Graphs with Girth At Least Five",
+      "abstract": "It is proved that, for every $δ\\in (0,1)$, the Glauber dynamics for the uniform distribution on proper $q$-colorings is rapidly mixing when $q \\geq (1+δ)Δ$ and the underlying graph has girth at least $5$ and maximum degree $Δ= Ω_δ(1)$. This result also extends to general multi-spin systems satisfying a $\\textit{local spectral contraction}$ condition, including the anti-ferromagnetic Potts model with $q\\geq (1+δ)(1-β)Δ$. These results are achieved by a new spectral local-to-global principle on graphs with girth at least five for general multi-spin systems, and a novel Fourier analysis for Glauber dynamics on a star. The main ideas behind all the proofs were developed through several rounds of interaction with GPT-5.6 Sol Ultra.",
+      "authors": [
+        "Xiaoyu Chen",
+        "Kuikui Liu"
+      ],
+      "published": "2026-08-26T08:05:56Z",
+      "updated": "2026-08-26T08:05:56Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "cs.DM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25491",
+      "pdf_url": "https://arxiv.org/pdf/2608.25491",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25685",
+      "title": "Explicit domain preserving numerical schemes for a class of stochastic differential equations",
+      "abstract": "We construct and analyze numerical schemes for systems of stochastic differential equations, which preserve almost surely a given hypercube of arbitrary dimension. We propose a new general class of explicit schemes, such that for any choice of the time-step size the numerical solution takes values in the hypercube. We prove strong and weak convergence results for this general class of domain preserving numerical schemes, with strong order $1/2$ and weak order $1$ in general. We also construct a variant of the scheme which achieves strong order $1$ when the stochastic differential equation is driven by a one-dimensional Brownian motion. The convergence results are illustrated with numerical experiments.",
+      "authors": [
+        "Charles-Edouard Bréhier",
+        "David Cohen"
+      ],
+      "published": "2026-08-26T12:04:06Z",
+      "updated": "2026-08-26T12:04:06Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25685",
+      "pdf_url": "https://arxiv.org/pdf/2608.25685",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25689",
+      "title": "Analysis of a first-order explicit positivity preserving scheme for a class of scalar SDEs",
+      "abstract": "We propose and analyze a first-order numerical scheme for a class of scalar Itô stochastic differential equations with almost surely positive solutions. We construct a new explicit numerical scheme, such that for any choice of the time-step size, the numerical solution is guaranteed to remain almost surely positive. The main result of this article is the first-order strong convergence of the proposed positivity preserving scheme, which is illustrated with numerical experiments and proved rigorously. It is also shown how to adapt the scheme and the results to Stratonovich stochastic differential equations with positive solutions.",
+      "authors": [
+        "Charles-Edouard Bréhier",
+        "David Cohen"
+      ],
+      "published": "2026-08-26T12:08:38Z",
+      "updated": "2026-08-26T12:08:38Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25689",
+      "pdf_url": "https://arxiv.org/pdf/2608.25689",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25772",
+      "title": "Propagation of Chaos and Gaussian Fluctuations for Mean-field Coupled Maps",
+      "abstract": "We study a class of discrete-time interacting particle systems arising from mean-field coupled maps. We establish a Dobrushin-type estimate, a relative entropy estimate and Central Limit Theorem (CLT) type results for this class of systems. First we control the growth of the 1-Wasserstein distance between the empirical measures and the limiting distributions. Then we use the relative entropy method to show the propagation of chaos. Finally we consider the asymptotic behavior of the fluctuations for the empirical measures and prove that the sequence of fluctuation processes converges in distribution to some Gaussian process, where we establish both qualitative and quantitative results.",
+      "authors": [
+        "Ruicheng Cheng"
+      ],
+      "published": "2026-08-26T13:15:13Z",
+      "updated": "2026-08-26T13:15:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25772",
+      "pdf_url": "https://arxiv.org/pdf/2608.25772",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.25961",
+      "title": "Superadditivity of classical communication over quantum channels via random and deterministic permutations",
+      "abstract": "Since Hastings' proof of superadditivity of classical communication over quantum channels, considerable effort has been devoted to finding a structural explanation of this phenomenon that was originally established by concentration of measure for Haar random unitaries. The main observation of this work is that Haar randomness can be replaced by random permutations without changing the limiting geometry responsible for nonadditivity. This replacement turns a continuous problem over unitary matrices into a discrete combinatorial problem over zero--one permutation matrices, and thereby opens a path toward derandomization. The theorem of Bordenave and Collins shows that random permutations have the required limiting behavior and the algorithm of O'Donnell and Wu then provides a deterministic asymptotic construction, running in polynomial time in the size when the channel parameters and accuracy are fixed. Thus the random construction can be derandomized in an asymptotic algorithmic sense, although finding a simple closed-form or practically computable counterexample remains open. Finally, a quantitative random permutation estimate by Chen, Garza-Vargas, Tropp and van Handel gives a fully numerical estimate: there exists a tuple of 57,836,025 permutations acting on a set of size \\[ N \\le 5.422\\times 10^{116216}\\] such that the associated finite dimensional channel exhibits nonadditivity. This enormous value remains an obstacle to a practical construction.",
+      "authors": [
+        "Benjamin Lovitz",
+        "Peixue Wu"
+      ],
+      "published": "2026-08-26T16:21:19Z",
+      "updated": "2026-08-26T16:21:19Z",
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.25961",
+      "pdf_url": "https://arxiv.org/pdf/2608.25961",
+      "score": 0,
+      "matched_keywords": [],
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2608.26038",
+      "title": "Rotated semicircle laws for permanental roots of Gaussian random matrices",
+      "abstract": "For matrices drawn from the standard Gaussian orthogonal ensemble (GOE) and Gaussian unitary ensemble (GUE), we prove that the normalized zero counting measure of the permanental characteristic polynomial $Per(zI_N-H_N)$ converges almost surely to the standard Wigner semicircle law on $[-2,2]$, rotated by $π/2$ onto the imaginary axis. This proves the conjecture proposed by Fyodorov in \\cite{Fyodorov2006}.",
+      "authors": [
+        "Renjie Feng",
+        "Dong Yao"
+      ],
+      "published": "2026-08-26T17:15:52Z",
+      "updated": "2026-08-26T17:15:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2608.26038",
+      "pdf_url": "https://arxiv.org/pdf/2608.26038",
       "score": 0,
       "matched_keywords": [],
       "own": false,
