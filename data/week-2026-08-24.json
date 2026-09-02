@@ -5,11 +5,11 @@
   "iso_week": 35,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-08-30",
   "total_submissions": 146,
   "fetched": 146,
-  "generated_at": "2026-09-01T07:49:43Z",
+  "generated_at": "2026-09-02T07:06:34Z",
   "entries": [
     {
       "id": "2608.24830",
@@ -1429,13 +1429,13 @@
     },
     {
       "id": "2608.24616",
-      "title": "Power-sum convergence for randomly weighted means and Breiman's conjecture",
-      "abstract": "We establish a power-sum convergence principle for randomly weighted means. Let $P(t)=(P_j(t))$ be random finitely supported subprobability weight sequences, independent of iid centered integrable marks. If the expected total mass converges and the expected power sum of some order $r\\in(0,1)$ is uniformly bounded, then convergence, for one fixed mark law, of $\\sum_jP_j(t)X_j$ to a nondegenerate law forces $\\mathbb{E}\\sum_jP_j(t)^p$ to converge to a positive limit for some $p\\in(1,2]$. The proof combines normal-family compactness for Mellin transforms of characteristic-function remainders, inversion at frequencies $\\pm u$, and Landau's theorem at the abscissa of convergence; a uniform Abelian estimate handles the endpoint $p=2$. For weights obtained by normalizing a Poisson-sized iid sample of nonnegative variables, a gap below one for the logarithmic slope of the Laplace exponent yields the required power-sum bound of order below one. A Poissonized ratio Tauberian theorem then identifies the common tail of the unnormalized variables as regularly varying, with index $-β$ for a unique $β\\in[0,1)$. As an application, this proves the remaining necessity direction in Breiman's 1965 conjecture for centered integrable marks. Combined with Breiman's sufficiency theorem, it completes the conjecture.",
+      "title": "Inverse theorems for randomly weighted means: Breiman's conjecture, Lévy endpoint limits, and $Λ$-coalescents",
+      "abstract": "We study when the law of one randomly weighted mean determines structure in the underlying weights. For centered iid nonconstant integrable marks and countable subprobability weights, two signed Fourier$\\unicode{x2013}$Mellin identities extract a positive limiting expected power sum from every nondegenerate limit, without assuming convergence of the expected total mass. At the $L^1$ boundary a uniform subunit power-sum bound is sufficient, while any moment above one removes it. Combined with model-specific Tauberian inversion, this settles Breiman's fixed-mark conjecture under mere integrability and classifies full-sequence endpoint limits for nonzero, unkilled, driftless subordinators with nonconstant integrable marks, assuming infinite activity at zero. The nondegenerate branch is equivalent to regular variation of the Lévy tail with index $-α$, $0\\leqα<1$, and yields $\\mathrm{PD}(α,0)$-weighted limits, or the mark itself when $α=0$; the constant branch is equivalent to disappearance of the largest normalized jump. At the degenerate boundary this maximal-jump criterion, rather than regular variation with index $-1$, is exact. The same classification shows that convergence of one nonconstant mean functional in the corresponding fixed-base homogeneous class forces convergence of the entire normalized random measure. A complementary fixed-time inversion for $Λ$-coalescents uses finite-restriction semigroups and Hausdorff moment determinacy: one asymmetric Bernoulli-marked marginal law determines the collision measure and yields a topological embedding.",
       "authors": [
         "Jacopo Lenzi"
       ],
       "published": "2026-08-25T14:37:18Z",
-      "updated": "2026-08-25T14:37:18Z",
+      "updated": "2026-08-30T13:31:41Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -2070,12 +2070,12 @@
     {
       "id": "2608.26707",
       "title": "An Exponential Lower Bound for the Permanent of Random Bernoulli Matrix",
-      "abstract": "Let $M_n$ be an $n\\times n$ matrix with independent uniform sign entries. We prove that there exist absolute constants $C,c>0$ such that, for all sufficiently large $n$, \\[ \\mathbb{P}\\!\\left( \\left|\\operatorname{Per}(M_n)\\right| \\ge e^{-Cn}\\sqrt{n!} \\right) \\ge 1-n^{-c}. \\] Our proof tracks the total squared permanent of minors under successive row exposure. Up to $k=\\lfloor n/2\\rfloor$, the total squared permanent grows deterministically via the Boolean lattice up-operator; for larger $k$, the row exposure increments are governed by positive semidefinite Rademacher quadratic forms. Therefore, we confirms the exponential scale lower bound suggested by Tao and Vu.",
+      "abstract": "Let $M_n$ be an $n\\times n$ matrix with independent uniform sign entries. We prove that there exist absolute constants $C,c>0$ such that, for all sufficiently large $n$, \\[ \\mathbb{P}\\!\\left( \\left|\\operatorname{Per}(M_n)\\right| \\ge e^{-Cn}\\sqrt{n!} \\right) \\ge 1-n^{-c}. \\] This confirms, up to the exponential scale, the lower bound suggested by Tao and Vu.",
       "authors": [
         "Yiming Chen"
       ],
       "published": "2026-08-27T07:02:18Z",
-      "updated": "2026-08-27T07:02:18Z",
+      "updated": "2026-09-01T08:02:54Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -2440,13 +2440,13 @@
     },
     {
       "id": "2608.27657",
-      "title": "A Dimension-Free Central Limit Theorem for Log-Concave Inner Products via Stein Kernels",
-      "abstract": "Let $X,Y\\in\\mathbb R^n$ be independent isotropic log-concave random vectors. Using the quadratic-form and moment-map matrix-energy estimates proved in Theorems 1.2 and 2.5 of [Let26], we derive a covariance bound for trace observables of the moment-map Stein kernel: \\[ \\operatorname{Var}\\!\\left(\\operatorname{Tr}(Aτ(Y))\\right) \\leq 4\\operatorname{Tr}(A^2),\\qquad A=A^{\\mathsf T}. \\] The main ingredient, in the regular moment-map model, is the exact identity \\[ \\operatorname{Var}\\!\\left(\\operatorname{Tr}(Aτ(Y))\\right) =\\operatorname{Var}(Y^{\\mathsf T}AY) -3\\mathbb{E}(AY)^{\\mathsf T}τ(Y)(AY) +\\mathbb{E}\\operatorname{Tr}(Aτ(Y)Aτ(Y)). \\] Combining this trace bound with conditional quadratic-form control produces a scalar Stein kernel for $\\langle X,Y\\rangle$ whose normalized squared $L^2$ discrepancy is at most $20/n$. Consequently, \\[ W_2^2 \\left( L\\!\\bigl(\\frac{\\langle X,Y\\rangle}{\\sqrt n}\\bigr),N(0,1) \\right)\\leq\\frac{20}{n}, \\qquad W_2^2\\!\\left(L(\\langle X,Y\\rangle),N(0,n)\\right)\\leq20. \\] This proves the dimension-free central limit theorem proposed by [JLV20], subject to the cited preprint results. We include cutoff and approximation details, exact dependency accounting, and Gaussian and product-exponential checks.",
+      "title": "Stein Kernels and Normal Approximation for Log-Concave Bilinear Forms",
+      "abstract": "Jiang, Lee, and Vempala conjectured that if $X,Y\\in\\mathbb{R}^n$ are independent isotropic log-concave random vectors, then $W_2(L(\\langle X,Y\\rangle),N(0,n))$ is bounded by a universal constant. Subject to Theorems 1.2 and 2.5 of arXiv:2607.24164v1, we prove this conjecture and a rectangular bilinear-form extension. For independent isotropic log-concave $X\\in\\mathbb{R}^m$, $Y\\in\\mathbb{R}^n$, and nonzero $B\\in\\mathbb{R}^{m\\times n}$, put \\[ r_4(B)=\\frac{(\\operatorname{Tr}(B^\\top B))^2} {\\operatorname{Tr}((B^\\top B)^2)}. \\] We construct a nonnegative scalar Stein kernel for $X^\\top B Y/\\|B\\|_F$ whose squared $L^2$ discrepancy is at most $20/r_4(B)$, and consequently obtain the same bound for squared $2$-Wasserstein distance to $N(0,1)$. The proof develops an exact covariance identity and deficit decomposition for trace observables of moment-map Stein kernels, together with a stability theorem for positive Stein kernels under log-concave approximation. Taking $B=I_n$ yields \\[ W_2^2\\left(L\\left(\\frac{\\langle X,Y\\rangle}{\\sqrt{n}}\\right),N(0,1)\\right)\\leq\\frac{20}{n}, \\] which is the Jiang--Lee--Vempala conjecture.",
       "authors": [
         "Tianle Liu"
       ],
       "published": "2026-08-27T19:45:42Z",
-      "updated": "2026-08-27T19:45:42Z",
+      "updated": "2026-09-01T03:13:47Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3062,7 +3062,7 @@
         "Tianle Liu"
       ],
       "published": "2026-08-29T19:08:24Z",
-      "updated": "2026-08-29T19:08:24Z",
+      "updated": "2026-09-01T04:59:30Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
