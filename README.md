@@ -14,8 +14,13 @@ python3 generate_digest.py 2026-06-16 # override "today" (for testing/backfill)
 
 The generator is **idempotent, self-backfilling, and self-updating**:
 
-- It builds one digest per **Mon–Sun ISO week**, from the first week of June 2026
-  (`config.FIRST_WEEK_MONDAY`) up to and including the current week.
+- It builds one digest per week (keyed by its Monday), from the first week of
+  June 2026 (`config.FIRST_WEEK_MONDAY`) up to and including the current week.
+  A week's digest is the set of papers arXiv **announced (listed) Monday to
+  Friday** of that week. Those were submitted between 14:00 ET on the previous
+  Thursday and 14:00 ET on the week's Thursday, so the generator fetches that
+  Thursday-to-Thursday `submittedDate` window and keeps the entries whose
+  derived listing date falls in the week (see Notes below).
 - arXiv announces new submissions only on **weekdays (Mon–Fri)**, so a week is
   treated as **complete once its Friday has passed**. The scheduled run is daily
   on weekdays, so the first run after a week's Friday captures it as a full week.
@@ -24,8 +29,10 @@ The generator is **idempotent, self-backfilling, and self-updating**:
   in on later runs.)
 - A complete week is still **re-fetched on each run until it is finalized**, kept
   open for a grace period past its nominal Sunday
-  (`config.FINALIZE_GRACE_DAYS`, default 2 days) so any weekend-submitted papers
-  that arXiv only announces the following week are captured before freezing.
+  (`config.FINALIZE_GRACE_DAYS`, default 10 days) so a late API index update or
+  a holiday-shifted mailing is captured before freezing. The API only exposes a
+  paper once arXiv has announced it, and the Christmas/New Year closure lasts
+  about a week, so the grace period is sized to outlast any recent closure.
 - A week is **finalized** once `(today − its Sunday) > FINALIZE_GRACE_DAYS`. Once
   finalized it is frozen and never re-fetched; before then it is refreshed.
 - **Any missing past week is constructed retroactively** automatically.
@@ -158,13 +165,13 @@ Tune keywords/weights in `config.py`; new coauthors go in `config.COAUTHORS`.
 ## Notes
 
 - arXiv filters on `submittedDate`, so each week captures genuinely *new*
-  (v1) submissions announced in that window, including math.PR cross-lists.
+  (v1) submissions, including math.PR cross-lists; the week they land in is
+  decided by their derived listing date, not the submission date.
 - Within each bucket, entries are listed in **announcement order** (newest
   first), then by score. The announcement date shown on each card is derived
   from the submission time using arXiv's published schedule (14:00 ET daily
   cutoff; batches mailed Sun–Thu 20:00 ET and listed the next weekday), see
   https://info.arxiv.org/help/availability.html. arXiv holiday closures are
   not modelled, so a paper announced right after one may be dated a weekday
-  early. A paper submitted late on Friday belongs to that week's file but is
-  announced the following Tuesday.
+  early.
 - The bundled Python lacks a CA bundle, so network requests use the `curl` CLI.
