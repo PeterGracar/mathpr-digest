@@ -364,16 +364,19 @@ const BUCKETS = [
   {key:"other",    label:"Everything else",      cls:"other"},
 ];
 
+// A week's digest covers arXiv's Monday–Friday listings, so ranges run to the
+// Friday (w.sunday is only the ISO week end used for finalization).
+const fridayOf = w => { const d=new Date(w.monday+'T00:00:00'); d.setDate(d.getDate()+4); return d; };
 function fmtRange(w){
   const o={month:'short',day:'numeric'};
-  const a=new Date(w.monday+'T00:00:00'), b=new Date(w.sunday+'T00:00:00');
+  const a=new Date(w.monday+'T00:00:00'), b=fridayOf(w);
   return a.toLocaleDateString('en-GB',o)+' – '+b.toLocaleDateString('en-GB',{...o,year:'numeric'});
 }
 // Sidebar week labels omit the year (the year group header already carries it)
-// and the start month when the week doesn't cross one: '24 – 30 Aug'.
+// and the start month when the week doesn't cross one: '24 – 28 Aug'.
 function fmtRangeShort(w){
   const o={month:'short',day:'numeric'};
-  const a=new Date(w.monday+'T00:00:00'), b=new Date(w.sunday+'T00:00:00');
+  const a=new Date(w.monday+'T00:00:00'), b=fridayOf(w);
   return (a.getMonth()===b.getMonth()? a.getDate() : a.toLocaleDateString('en-GB',o))+
     ' – '+b.toLocaleDateString('en-GB',o);
 }
@@ -454,7 +457,7 @@ function renderWeek(w, term){
   const ownN=w.entries.filter(e=>e.bucket==='own').length;
   const coN=w.entries.filter(e=>e.bucket==='coauthor').length;
   head.innerHTML='<h2>'+fmtRange(w)+(inProgress(w)?' <span class="tag-prog">in progress</span>':'')+'</h2>'+
-    '<p class="wstats">'+w.entries.length+(inProgress(w)?' submissions so far':' new submissions')+' to '+esc(w.category)+
+    '<p class="wstats">'+w.entries.length+(inProgress(w)?' submissions announced so far':' new submissions announced')+' in '+esc(w.category)+
     ' &middot; ISO week '+w.iso_year+'-W'+String(w.iso_week).padStart(2,'0')+
     (ownN?' &middot; <span class="hlown">'+ownN+' own</span>':'')+
     (coN?' &middot; <span class="hl">'+coN+' coauthor</span>':'')+'</p>'+

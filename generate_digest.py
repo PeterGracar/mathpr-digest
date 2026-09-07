@@ -3,11 +3,12 @@
 Weekly math.PR arXiv digest generator for Peter Gracar.
 
 Idempotent and re-runnable:
-  * Determines every completed Mon-Sun week from FIRST_WEEK_MONDAY up to the
-    most recent completed Sunday (strictly before "today").
-  * Fetches new submissions to math.PR for any week not already cached in
-    data/, scores them against Peter's research interests, flags his own
-    papers and coauthors, and writes data/week-YYYY-MM-DD.json.
+  * Determines every week (keyed by its Monday) from FIRST_WEEK_MONDAY up to
+    the week containing "today".
+  * Fetches the new math.PR submissions arXiv announced Monday to Friday of
+    any week not already finalized in data/, scores them against Peter's
+    research interests, flags his own papers and coauthors, and writes
+    data/week-YYYY-MM-DD.json.
   * Rebuilds the browsable HTML site in site/ from all cached weeks.
 
 This means missing past digests are constructed retroactively on every run.
@@ -84,9 +85,15 @@ def curl_get(params, retries=3):
 # --------------------------------------------------------------------------
 # fetching
 # --------------------------------------------------------------------------
-def fetch_week(monday, sunday):
-    lo = monday.strftime("%Y%m%d") + "0000"
-    hi = sunday.strftime("%Y%m%d") + "2359"
+def fetch_week(monday):
+    """Fetch every submission that can have been announced (listed) Mon–Fri
+    of the week starting `monday`. Those were received between 14:00 ET on
+    the previous Thursday and 14:00 ET on this week's Thursday (see
+    build_site.announced_on), so the query covers those two Thursdays whole
+    — robust to how the API interprets submittedDate's timezone — and the
+    caller trims to the announcement window by derived listing date."""
+    lo = (monday - timedelta(days=4)).strftime("%Y%m%d") + "0000"   # prev. Thu
+    hi = (monday + timedelta(days=3)).strftime("%Y%m%d") + "2359"   # this Thu
     query = f"cat:{config.CATEGORY} AND submittedDate:[{lo} TO {hi}]"
     entries = []
     start = 0
@@ -118,7 +125,7 @@ def fetch_week(monday, sunday):
         if e["id"] not in seen:
             seen.add(e["id"])
             uniq.append(e)
-    return uniq, total
+    return uniq
 
 
 def parse_entry(e):
@@ -205,13 +212,13 @@ def week_path(monday):
 def build_week(monday, sunday, today, force=False):
     path = week_path(monday)
     friday = monday + timedelta(days=4)
-    # arXiv announces new submissions only on weekdays (Mon–Fri), so once a
-    # week's Friday has passed (i.e. a Saturday-or-later run) the whole week's
-    # announced content is in and the week is treated as complete.
+    # A week's digest is the set of papers arXiv announced (listed) Monday to
+    # Friday of that week. arXiv lists new submissions only on weekdays, so
+    # once the Friday has passed (a Saturday-or-later run) the week's content
+    # is in and the week is treated as complete.
     complete = today > friday
-    # Still re-fetch for a grace period past the nominal Sunday so any weekend-
-    # submitted papers that arXiv only announces the following week are captured
-    # before the week is frozen.
+    # Still re-fetch for a grace period past the nominal Sunday so a late API
+    # index update (or a holiday-shifted mailing) is captured before freezing.
     finalized = (today - sunday).days > config.FINALIZE_GRACE_DAYS
     # Skip only weeks already cached AND finalized. Partial (current) weeks and
     # just-completed weeks still inside the grace window are re-fetched so future
@@ -223,9 +230,14 @@ def build_week(monday, sunday, today, force=False):
             return cached
     tag = "partial" if not complete else ("finalizing" if not finalized else "final")
     print(f"  fetching {monday} .. {sunday} ({tag}) ...", flush=True)
-    entries, total = fetch_week(monday, sunday)
+    entries = fetch_week(monday)
     for e in entries:
         score_entry(e)
+    # keep only papers listed Mon–Fri of this week; the fetch window's edges
+    # belong to the neighbouring weeks (Thursday-afternoon submissions are
+    # listed the following Monday)
+    lo, hi = monday.isoformat(), friday.isoformat()
+    entries = [e for e in entries if lo <= e["announced"] <= hi]
     # bucket, then announcement date, then score, then submission time — the
     # same key build_site applies at build time, so JSON and site never differ
     entries.sort(key=build_site.entry_sort_key)
@@ -238,8 +250,8 @@ def build_week(monday, sunday, today, force=False):
         "category": config.CATEGORY,
         "complete": complete,
         "finalized": finalized,
-        "data_through": (sunday if complete else today).isoformat(),
-        "total_submissions": total,
+        "data_through": (friday if complete else today).isoformat(),
+        "total_submissions": len(entries),
         "fetched": len(entries),
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "entries": entries,

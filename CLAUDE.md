@@ -19,7 +19,11 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   `MED_THRESHOLD`, `FIRST_WEEK_MONDAY`, `FINALIZE_GRACE_DAYS`.
 - **`generate_digest.py`** — fetches arXiv (via the `curl` CLI; bundled Python has
   no CA bundle), scores each entry, buckets it (`own` / `coauthor` / `high` /
-  `medium` / `other`), and writes one JSON file per Mon–Sun ISO week to `data/`.
+  `medium` / `other`), and writes one JSON file per week to `data/`. A week
+  holds the papers arXiv **announced Mon–Fri** of that week: the fetch covers
+  the previous-Thursday-to-Thursday `submittedDate` window and trims by the
+  derived listing date (`announced`). `sunday` in the JSON is only the ISO
+  week end used for the finalization grace period; the UI shows Mon–Fri.
   Finalized week JSONs are frozen, so `build_site.py` re-derives the `own` flag
   from author lists at build time (`_mark_own`) for weeks cached before the
   bucket existed. Idempotent,
