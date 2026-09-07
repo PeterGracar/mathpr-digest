@@ -25,6 +25,7 @@ import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 
+import build_site
 import config
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -178,6 +179,7 @@ def score_entry(e):
                 break
     e["score"] = score
     e["matched_keywords"] = sorted(set(matched))
+    e["announced"] = build_site.announced_on(e["published"])
     e["own"] = own
     e["coauthors"] = sorted(set(coauthors_hit))
     if own:
@@ -224,11 +226,9 @@ def build_week(monday, sunday, today, force=False):
     entries, total = fetch_week(monday, sunday)
     for e in entries:
         score_entry(e)
-    entries.sort(key=lambda x: (x["bucket"] != "own",
-                                x["bucket"] != "coauthor",
-                                x["bucket"] != "high",
-                                x["bucket"] != "medium",
-                                -x["score"], x["published"]))
+    # bucket, then announcement date, then score, then submission time — the
+    # same key build_site applies at build time, so JSON and site never differ
+    entries.sort(key=build_site.entry_sort_key)
     iso = monday.isocalendar()
     data = {
         "monday": monday.isoformat(),
@@ -272,7 +272,6 @@ def main():
     for m, s in weeks:
         all_weeks.append(build_week(m, s, today))
 
-    import build_site
     build_site.build(all_weeks)
     print("Done.")
 
