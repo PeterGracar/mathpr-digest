@@ -29,8 +29,10 @@ The generator is **idempotent, self-backfilling, and self-updating**:
   in on later runs.)
 - A complete week is still **re-fetched on each run until it is finalized**, kept
   open for a grace period past its nominal Sunday
-  (`config.FINALIZE_GRACE_DAYS`, default 2 days) so a late API index update or
-  a holiday-shifted mailing is captured before freezing.
+  (`config.FINALIZE_GRACE_DAYS`, default 10 days) so a late API index update or
+  a holiday-shifted mailing is captured before freezing. The API only exposes a
+  paper once arXiv has announced it, and the Christmas/New Year closure lasts
+  about a week, so the grace period is sized to outlast any recent closure.
 - A week is **finalized** once `(today − its Sunday) > FINALIZE_GRACE_DAYS`. Once
   finalized it is frozen and never re-fetched; before then it is refreshed.
 - **Any missing past week is constructed retroactively** automatically.
