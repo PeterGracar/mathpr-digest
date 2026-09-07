@@ -159,4 +159,12 @@ Tune keywords/weights in `config.py`; new coauthors go in `config.COAUTHORS`.
 
 - arXiv filters on `submittedDate`, so each week captures genuinely *new*
   (v1) submissions announced in that window, including math.PR cross-lists.
+- Within each bucket, entries are listed in **announcement order** (newest
+  first), then by score. The announcement date shown on each card is derived
+  from the submission time using arXiv's published schedule (14:00 ET daily
+  cutoff; batches mailed Sun–Thu 20:00 ET and listed the next weekday), see
+  https://info.arxiv.org/help/availability.html. arXiv holiday closures are
+  not modelled, so a paper announced right after one may be dated a weekday
+  early. A paper submitted late on Friday belongs to that week's file but is
+  announced the following Tuesday.
 - The bundled Python lacks a CA bundle, so network requests use the `curl` CLI.

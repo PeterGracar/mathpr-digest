@@ -24,7 +24,7 @@ import os
 import re
 import subprocess
 import unicodedata
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone, tzinfo
 
 import config
 
@@ -72,6 +72,102 @@ def _strip_versions(week):
             e[k] = re.sub(r"v\d+$", "", e[k])
 
 
+# arXiv's announcement schedule (https://info.arxiv.org/help/availability.html):
+# the daily cutoff is 14:00 US Eastern. Submissions received between 14:00 on
+# one weekday and 14:00 on the next are mailed at 20:00 ET that second day and
+# appear in the listing dated the *following* weekday; the Thu 14:00 – Fri 14:00
+# batch is mailed Sunday 20:00 ET and listed Monday, and the Fri 14:00 –
+# Mon 14:00 batch is mailed Monday 20:00 ET and listed Tuesday. arXiv holidays
+# (no mailing) are not modelled, so a paper announced after one is dated a
+# weekday early.
+class _EasternUS(tzinfo):
+    """US Eastern time with the post-2007 DST rule (second Sunday of March to
+    first Sunday of November, changing at 02:00 local). Only used when the
+    zoneinfo database is unavailable."""
+    def _dst_bounds(self, y):
+        mar = datetime(y, 3, 1); nov = datetime(y, 11, 1)
+        start = mar + timedelta(days=(6 - mar.weekday()) % 7 + 7, hours=2)
+        end = nov + timedelta(days=(6 - nov.weekday()) % 7, hours=2)
+        return start, end
+    def utcoffset(self, dt):
+        return timedelta(hours=-5) + self.dst(dt)
+    def dst(self, dt):
+        start, end = self._dst_bounds(dt.year)
+        naive = dt.replace(tzinfo=None)
+        return timedelta(hours=1) if start <= naive < end - timedelta(hours=1) else timedelta(0)
+    def tzname(self, dt):
+        return "EDT" if self.dst(dt) else "EST"
+
+
+def _eastern():
+    try:
+        from zoneinfo import ZoneInfo
+        return ZoneInfo("America/New_York")
+    except Exception:
+        return _EasternUS()
+
+
+_ET = _eastern()
+_CUTOFF_HOUR = 14
+
+
+def announced_on(published):
+    """Listing date ('YYYY-MM-DD') on which arXiv announced a submission with
+    the given API `published` timestamp (v1 submission time, ISO 8601 UTC)."""
+    t = datetime.strptime(published, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    t = t.astimezone(_ET)
+    # the weekday whose 14:00 ET cutoff closes this submission's batch
+    d = t.date() + timedelta(days=1 if t.hour >= _CUTOFF_HOUR else 0)
+    while d.weekday() >= 5:            # weekend batch closes at Monday 14:00
+        d += timedelta(days=1)
+    d += timedelta(days=1)             # listed the weekday after the batch closes
+    while d.weekday() >= 5:            # Friday's batch is listed on Monday
+        d += timedelta(days=1)
+    return d.isoformat()
+
+
+def _mark_announced(week):
+    """Add the derived announcement date. New weeks arrive with it from
+    score_entry(); finalized week JSONs are frozen, so older cached weeks
+    get it here at build time (in memory only — data/ is never rewritten)."""
+    for e in week.get("entries", []):
+        if "announced" not in e and e.get("published"):
+            e["announced"] = announced_on(e["published"])
+
+
+BUCKET_ORDER = ["own", "coauthor", "high", "medium", "other"]
+
+
+def _day_ordinal(d):
+    try:
+        return datetime.strptime(d, "%Y-%m-%d").toordinal()
+    except (TypeError, ValueError):
+        return 0
+
+
+def _stamp(published):
+    try:
+        return datetime.strptime(published, "%Y-%m-%dT%H:%M:%SZ").timestamp()
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def entry_sort_key(e):
+    """Bucket order, then announcement date (newest first), then score (high
+    first), then submission time (newest first) — the order both the JSON
+    files and the site use."""
+    b = e.get("bucket", "other")
+    return (BUCKET_ORDER.index(b) if b in BUCKET_ORDER else len(BUCKET_ORDER),
+            -_day_ordinal(e.get("announced")), -e.get("score", 0),
+            -_stamp(e.get("published")))
+
+
+def _sort_entries(week):
+    """Weeks cached before announcement-date ordering existed are re-sorted
+    at build time (in memory only)."""
+    week["entries"] = sorted(week.get("entries", []), key=entry_sort_key)
+
+
 def _counts(week):
     c = {"own": 0, "coauthor": 0, "high": 0, "medium": 0, "other": 0}
     for e in week["entries"]:
@@ -115,6 +211,8 @@ def build(weeks=None):
     for w in weeks:
         _mark_own(w)
         _strip_versions(w)
+        _mark_announced(w)
+        _sort_entries(w)
     site_data = os.path.join(SITE_DIR, "data")
     os.makedirs(site_data, exist_ok=True)
 
@@ -280,6 +378,8 @@ function fmtRangeShort(w){
     ' – '+b.toLocaleDateString('en-GB',o);
 }
 function fmtDay(d){ return d? new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) : ''; }
+// announcement (listing) date on the card meta line: 'Tue 1 Sept 2026'
+function fmtAnn(d){ return new Date(d+'T00:00:00').toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short',year:'numeric'}).replace(',',''); }
 const inProgress = w => w.complete===false;
 
 // Author names carry diacritics ('Mönch') while config.COAUTHORS is ASCII
@@ -316,7 +416,8 @@ function entryCard(e){
     '<h3><a href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.title)+'</a></h3>'+
     '<div class="authors">'+authorsHTML(e)+'</div>'+
     '<div class="meta">'+cats+' <a class="idlink" href="'+e.abs_url+'" target="_blank" rel="noopener">'+esc(e.id)+'</a>'+
-      ' &middot; <a href="'+e.pdf_url+'" target="_blank" rel="noopener">pdf</a></div>'+
+      ' &middot; <a href="'+e.pdf_url+'" target="_blank" rel="noopener">pdf</a>'+
+      (e.announced?' &middot; <span class="ann" title="arXiv listing date">announced '+fmtAnn(e.announced)+'</span>':'')+'</div>'+
     '<details class="abs"><summary>Abstract</summary><p>'+esc(e.abstract)+'</p></details>'+
     (kws?'<div class="kws">'+kws+'</div>':'');
   return card;
@@ -701,9 +802,11 @@ function onSearchInput(raw){
 
 function init(){
   const ol=$('#ownerLink'); ol.textContent=D.owner; ol.href=D.profile_url;
-  $('#genStamp').textContent='Generated '+new Date(D.generated_at).toLocaleString('en-GB',
-      {day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'})+
-    ' · '+D.weeks.length+' week(s) archived';
+  // two fixed lines (flex column in .foot), so neither phrase wraps mid-sentence
+  const n=D.weeks.length;
+  $('#genStamp').innerHTML='<span>Generated '+esc(new Date(D.generated_at).toLocaleString('en-GB',
+      {day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZoneName:'short'}))+'</span>'+
+    '<span>'+n+' week'+(n===1?'':'s')+' archived</span>';
   if(!D.weeks.length){ $('#main').innerHTML='<p class="empty">No digests yet.</p>'; return; }
   renderNav('');
   selectWeek(0,'',false);
@@ -781,6 +884,10 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .b.coauthor{background:color-mix(in srgb,var(--co) 15%,transparent);color:var(--co)}
 .b.own{background:color-mix(in srgb,var(--own) 14%,transparent);color:var(--own)}
 .legend{margin-top:.9rem;display:flex;flex-wrap:wrap;gap:.35rem}
+/* the site's p rule (reading width, body size) doesn't suit a 320px sidebar
+   caption: small, muted, one phrase per line */
+.foot{display:flex;flex-direction:column;gap:.1rem;max-width:none;margin:.9rem .15rem 0;
+  font-size:var(--text-xs);line-height:1.5;color:var(--color-text-muted)}
 .chip{font-size:var(--text-xs);font-weight:600;padding:.1rem .55rem;border-radius:999px}
 .chip.own{background:color-mix(in srgb,var(--own) 14%,transparent);color:var(--own)}
 .chip.coauthor{background:color-mix(in srgb,var(--co) 15%,transparent);color:var(--co)}
@@ -827,6 +934,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .cat{background:var(--color-surface-soft);padding:.05rem .5rem;border-radius:999px;font-size:var(--text-xs)}
 .cat.prim{background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent)}
 .idlink{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--text-xs)}
+.meta .ann{white-space:nowrap}
 .abs summary{cursor:pointer;color:var(--color-text-muted);font-size:var(--text-sm)}
 .abs summary:hover{color:var(--color-text)}
 .abs p{margin:.5rem 0 0;color:var(--color-text);font-size:var(--text-sm)}

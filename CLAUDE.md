@@ -24,7 +24,14 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   from author lists at build time (`_mark_own`) for weeks cached before the
   bucket existed. Idempotent,
   self-backfilling, and re-fetches non-finalized weeks. Then calls `build_site.build`.
-- **`build_site.py`** — reads `data/*.json` and emits the whole site.
+- **`build_site.py`** — reads `data/*.json` and emits the whole site. Also owns
+  the shared entry helpers the generator imports: `announced_on(published)`
+  derives each paper's arXiv **listing (announcement) date** from its v1
+  submission time and arXiv's 14:00 ET cutoff / Sun–Thu 20:00 ET mailing
+  schedule (holidays are not modelled), and `entry_sort_key` orders entries
+  by bucket, then announcement date (newest first), then score, then
+  submission time (newest first). Like `_mark_own`, both are re-applied at build time
+  (`_mark_announced`, `_sort_entries`) so frozen weeks pick them up.
 
 ## Key architectural facts
 
