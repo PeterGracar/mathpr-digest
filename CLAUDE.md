@@ -29,8 +29,8 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
   derives each paper's arXiv **listing (announcement) date** from its v1
   submission time and arXiv's 14:00 ET cutoff / Sun–Thu 20:00 ET mailing
   schedule (holidays are not modelled), and `entry_sort_key` orders entries
-  by bucket, then announcement date (oldest first), then score, then
-  submission time. Like `_mark_own`, both are re-applied at build time
+  by bucket, then announcement date (newest first), then score, then
+  submission time (newest first). Like `_mark_own`, both are re-applied at build time
   (`_mark_announced`, `_sort_entries`) so frozen weeks pick them up.
 
 ## Key architectural facts

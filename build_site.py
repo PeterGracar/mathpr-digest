@@ -138,12 +138,28 @@ def _mark_announced(week):
 BUCKET_ORDER = ["own", "coauthor", "high", "medium", "other"]
 
 
+def _day_ordinal(d):
+    try:
+        return datetime.strptime(d, "%Y-%m-%d").toordinal()
+    except (TypeError, ValueError):
+        return 0
+
+
+def _stamp(published):
+    try:
+        return datetime.strptime(published, "%Y-%m-%dT%H:%M:%SZ").timestamp()
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def entry_sort_key(e):
-    """Bucket order, then announcement date, then score (high first), then
-    submission time — the order both the JSON files and the site use."""
+    """Bucket order, then announcement date (newest first), then score (high
+    first), then submission time (newest first) — the order both the JSON
+    files and the site use."""
     b = e.get("bucket", "other")
     return (BUCKET_ORDER.index(b) if b in BUCKET_ORDER else len(BUCKET_ORDER),
-            e.get("announced", ""), -e.get("score", 0), e.get("published", ""))
+            -_day_ordinal(e.get("announced")), -e.get("score", 0),
+            -_stamp(e.get("published")))
 
 
 def _sort_entries(week):
