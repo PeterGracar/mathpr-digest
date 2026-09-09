@@ -9,18 +9,18 @@
   "data_through": "2026-09-04",
   "total_submissions": 181,
   "fetched": 181,
-  "generated_at": "2026-09-08T07:15:11Z",
+  "generated_at": "2026-09-09T07:23:43Z",
   "entries": [
     {
       "id": "2609.03359",
       "title": "Epidemics with avoidance and isolation on $\\mathbb{Z}^d$",
-      "abstract": "The contact process with avoidance is generalization of the classical contact process (SIS epidemic) that introduces a mechanism for healthy individuals to avoid their infected neighbors. Let $G$ be a directed graph. At each time $t$, each vertex is either healthy or infected and edge edge is either active or inactive. Each infected vertex infects each healthy neighbor across each active edge at rate $λ$ and recovers at rate $1$ while each active edge pointing from an infected vertex to a healthy vertex becomes inactive at rate $α$. An inactive edge becomes active when its tail vertex recovers. This model has been previously studied on $\\mathbb{Z}$, the $n$-cycle $\\mathbb{Z}_n$, and the $n$-star graph; here we extend the study of this model to lattices $\\mathbb{Z}^d$, $d \\geq 2$. We show that for every $d \\geq 2$ and fixed $α> 0$, there exist constants $λ(α,d)^-$ and $λ(α,d)^+$ such that for all $λ< λ(α,d)^-$ the infection dies out almost surely while for all $λ> λ(α,d)^+$ the infection persists indefinitely with positive probability. Furthermore, we show that both $λ(α,d)^-$ and $λ(α,d)^+$ scale like $1/d$ as $d \\rightarrow \\infty$ and that there exists a constant $C(α)$ such that when $λ> C(α)/d$ the process has a nontrivial invariant measure for $d$ sufficiently large. Our methods and most of our results also apply to the SIRS model and a related model in which infected vertices enter an isolated state at rate $α$ and transition from both isolated and infected to healthy at rate $1$.",
+      "abstract": "The contact process with avoidance is a generalization of the classical contact process (SIS epidemic) that introduces a mechanism for healthy individuals to avoid their infected neighbors. Let $G$ be a directed graph. At each time $t$, each vertex is either healthy or infected and each edge is either active or inactive. Each infected vertex infects each healthy neighbor across each active edge at rate $λ$ and recovers at rate $1$, while each active edge pointing from an infected vertex to a healthy vertex becomes inactive at rate $α$. An inactive edge becomes active when its tail vertex recovers. This model has been previously studied on $\\mathbb{Z}$, the $n$-cycle $\\mathbb{Z}_n$, and the $n$-star graph; here we extend the study of this model to lattices $\\mathbb{Z}^d$, $d \\geq 2$. We show that for every $d \\geq 2$ and fixed $α> 0$, there exist constants $λ(α,d)^-$ and $λ(α,d)^+$ such that for all $λ< λ(α,d)^-$ the infection dies out almost surely while for all $λ> λ(α,d)^+$ the infection persists indefinitely with positive probability. Furthermore, we show that both $λ(α,d)^-$ and $λ(α,d)^+$ scale like $1/d$ as $d \\rightarrow \\infty$ and that there exists a constant $C(α)$ such that when $λ> C(α)/d$ the process has a nontrivial invariant measure for $d$ sufficiently large. Our methods and most of our results also apply to the SIRS model and a related model in which infected vertices enter an isolated state at rate $α$ and transition from both isolated and infected to healthy at rate $1$.",
       "authors": [
         "Andrew Heeszel",
         "Matthew Wascher"
       ],
       "published": "2026-09-03T04:35:50Z",
-      "updated": "2026-09-03T04:35:50Z",
+      "updated": "2026-09-08T04:51:48Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1508,7 +1508,7 @@
         "Timothy Wildey"
       ],
       "published": "2026-09-02T17:15:48Z",
-      "updated": "2026-09-02T17:15:48Z",
+      "updated": "2026-09-06T17:48:03Z",
       "primary_category": "stat.ML",
       "categories": [
         "stat.ML",
@@ -2466,7 +2466,7 @@
         "Yi Han"
       ],
       "published": "2026-09-01T14:27:58Z",
-      "updated": "2026-09-01T14:27:58Z",
+      "updated": "2026-09-08T13:50:17Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
