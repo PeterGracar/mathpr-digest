@@ -271,7 +271,7 @@ def to_unicode(tex):
 # math.NA = cs.NA, ...) and arXivRaw lists both; the Atom API listed one, and
 # the cache follows it. Maps the name to drop -> the name kept when both occur.
 CATEGORY_ALIASES = {"math.MP": "math-ph", "cs.NA": "math.NA", "stat.TH": "math.ST",
-                    "cs.IT": "math.IT", "econ.GN": "q-fin.EC", "eess.SY": "cs.SY"}
+                    "math.IT": "cs.IT", "econ.GN": "q-fin.EC", "eess.SY": "cs.SY"}
 
 
 def dedupe_aliases(cats):
