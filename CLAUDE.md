@@ -17,12 +17,21 @@ config.py ──▶ generate_digest.py ──▶ data/week-YYYY-MM-DD.json ─�
 
 - **`config.py`** — coauthors, weighted relevance keywords, `HIGH_THRESHOLD` /
   `MED_THRESHOLD`, `FIRST_WEEK_MONDAY`, `FINALIZE_GRACE_DAYS`.
-- **`generate_digest.py`** — fetches arXiv (via the `curl` CLI; bundled Python has
-  no CA bundle), scores each entry, buckets it (`own` / `coauthor` / `high` /
-  `medium` / `other`), and writes one JSON file per week to `data/`. A week
-  holds the papers arXiv **announced Mon–Fri** of that week: the fetch covers
-  the previous-Thursday-to-Thursday `submittedDate` window and trims by the
-  derived listing date (`announced`). `sunday` in the JSON is only the ISO
+- **`generate_digest.py`** — fetches arXiv's **OAI-PMH** endpoint
+  (`oaipmh.arxiv.org/oai`, `metadataPrefix=arXivRaw`, `set=math:math:PR`, via
+  the `curl` CLI; bundled Python has no CA bundle), scores each entry, buckets
+  it (`own` / `coauthor` / `high` / `medium` / `other`), and writes one JSON
+  file per week to `data/`. A week holds the papers arXiv **announced Mon–Fri**
+  of that week. OAI-PMH selects by datestamp (the day arXiv last touched a
+  record), so `fetch_week` lists from the previous Thursday to the week's
+  finalization horizon (capped at today), takes the v1 time from each record's
+  version history, and `build_week` trims by the derived listing date
+  (`announced`). Records are raw TeX; `tex2utf.py` (arXiv's own filter,
+  vendored from arxiv-base, MIT) converts titles, abstracts and author lines
+  so the JSON matches what the old Atom API produced, and `split_authors`
+  turns the author line into names, dropping affiliations. The Atom API
+  (`export.arxiv.org/api/query`) was abandoned because it rate-limits
+  GitHub's shared runner IPs for hours on Monday mornings. `sunday` in the JSON is only the ISO
   week end used for the finalization grace period; the UI shows Mon–Fri.
   Finalized week JSONs are frozen, so `build_site.py` re-derives the `own` flag
   from author lists at build time (`_mark_own`) for weeks cached before the
@@ -138,6 +147,7 @@ into a `global.window` shim and exercise helpers like `entryMatches` /
 - Match the surrounding code style (the embedded JS is terse, single-quoted, minimal).
 - Don't introduce front-end build tooling or split the generator's strings into
   separate asset files without a reason — the single-file generator is intentional.
-- Commit only source (`config.py`, `generate_digest.py`, `build_site.py`, `data/`).
+- Commit only source (`config.py`, `generate_digest.py`, `build_site.py`,
+  `tex2utf.py`, `data/`).
 - Develop on a branch and open a PR; `site/` rebuilds in CI for the Pages artifact.
 - The GitHub Actions workflow is `.github/workflows/daily-digest.yml`.

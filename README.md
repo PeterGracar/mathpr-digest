@@ -18,9 +18,12 @@ The generator is **idempotent, self-backfilling, and self-updating**:
   June 2026 (`config.FIRST_WEEK_MONDAY`) up to and including the current week.
   A week's digest is the set of papers arXiv **announced (listed) Monday to
   Friday** of that week. Those were submitted between 14:00 ET on the previous
-  Thursday and 14:00 ET on the week's Thursday, so the generator fetches that
-  Thursday-to-Thursday `submittedDate` window and keeps the entries whose
-  derived listing date falls in the week (see Notes below).
+  Thursday and 14:00 ET on the week's Thursday. The generator lists arXiv's
+  OAI-PMH endpoint (`oaipmh.arxiv.org`, `arXivRaw` format, set `math:math:PR`)
+  for records stamped from that previous Thursday up to the week's
+  finalization horizon, reads each paper's v1 submission time from its version
+  history, and keeps the entries whose derived listing date falls in the week
+  (see Notes below).
 - arXiv announces new submissions only on **weekdays (Mon–Fri)**, so a week is
   treated as **complete once its Friday has passed**. The scheduled run is daily
   on weekdays, so the first run after a week's Friday captures it as a full week.
@@ -29,8 +32,8 @@ The generator is **idempotent, self-backfilling, and self-updating**:
   in on later runs.)
 - A complete week is still **re-fetched on each run until it is finalized**, kept
   open for a grace period past its nominal Sunday
-  (`config.FINALIZE_GRACE_DAYS`, default 10 days) so a late API index update or
-  a holiday-shifted mailing is captured before freezing. The API only exposes a
+  (`config.FINALIZE_GRACE_DAYS`, default 10 days) so a late index update or
+  a holiday-shifted mailing is captured before freezing. OAI-PMH only exposes a
   paper once arXiv has announced it, and the Christmas/New Year closure lasts
   about a week, so the grace period is sized to outlast any recent closure.
 - A week is **finalized** once `(today − its Sunday) > FINALIZE_GRACE_DAYS`. Once
@@ -112,8 +115,8 @@ on Monday mornings), plus a push-to-`main`
 trigger (so template/code edits go live immediately) and a manual "Run workflow"
 button, runs `generate_digest.py`, commits the updated `data/` back to the repo
 (`site/` is git-ignored and rebuilt each run), and publishes the freshly built
-`site/` to **GitHub Pages** over https. No secrets are needed — arXiv's API is
-public.
+`site/` to **GitHub Pages** over https. No secrets are needed — arXiv's OAI-PMH
+endpoint is public.
 
 One-time setup:
 
@@ -145,7 +148,8 @@ Notes:
 | Path                  | Purpose                                                       |
 |-----------------------|--------------------------------------------------------------|
 | `config.py`           | Coauthors, relevance keywords/weights, thresholds, dates.    |
-| `generate_digest.py`  | Fetch (arXiv API via `curl`), score, cache per-week JSON.    |
+| `generate_digest.py`  | Fetch (arXiv OAI-PMH via `curl`), score, cache per-week JSON. |
+| `tex2utf.py`          | arXiv's own TeX-accent-to-Unicode filter, vendored from arxiv-base (MIT). |
 | `build_site.py`       | Render `data/*.json` → `site/{index.html, style.css, index.js, data/week-*.js}`. Holds all HTML/CSS/JS as raw strings. |
 | `data/week-*.json`    | One cached digest per week (raw + scored entries).           |
 | `site/`               | The generated browsable website (git-ignored; rebuilt each run). |
@@ -166,9 +170,19 @@ Tune keywords/weights in `config.py`; new coauthors go in `config.COAUTHORS`.
 
 ## Notes
 
-- arXiv filters on `submittedDate`, so each week captures genuinely *new*
-  (v1) submissions, including math.PR cross-lists; the week they land in is
-  decided by their derived listing date, not the submission date.
+- Each week captures genuinely *new* (v1) submissions, including math.PR
+  cross-lists; the week they land in is decided by their derived listing date,
+  not the submission date. OAI-PMH lists records by the day arXiv last touched
+  them, so the fetch window is wide and the v1 time in each record's version
+  history decides. A consequence is that a week can only be reconstructed
+  from scratch while it is recent: papers touched after its finalization
+  horizon have left the window. `data/` is the persistent cache.
+- The fetch moved from the `export.arxiv.org` Atom API to OAI-PMH in September
+  2026: the API answered GitHub's shared runner IPs with `429 Rate exceeded.`
+  for hours on Monday mornings, longer than any retry could wait. OAI-PMH
+  hands out titles, abstracts and author lines as submitted, TeX escapes
+  included, so `tex2utf.py` (arXiv's own conversion) is applied to keep the
+  JSON identical to what the API produced.
 - Within each bucket, entries are listed in **announcement order** (newest
   first), then by score. The announcement date shown on each card is derived
   from the submission time using arXiv's published schedule (14:00 ET daily
