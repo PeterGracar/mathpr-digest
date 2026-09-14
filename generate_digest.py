@@ -21,6 +21,7 @@ import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 import unicodedata
 import xml.etree.ElementTree as ET
@@ -68,45 +69,83 @@ def weeks_to_build(today):
     return weeks
 
 
-def curl_get(params, retries=6):
+USER_AGENT = "mathpr-digest/1.0 (+https://github.com/PeterGracar/mathpr-digest)"
+
+
+def curl_get(params, retries=8):
     """GET the arXiv API and return the parsed Atom feed root.
 
-    Every failure mode is retried with a growing backoff (15 s, 30 s, ...,
-    about 5 min in total by default), not just a failed transfer: arXiv
-    answers with an HTML error page (HTTP 503 / maintenance) now and then,
-    which curl reports as success, so an HTTP error status, a body that is
-    not well-formed XML, and a body that is XML but not an Atom feed all count
-    as a failed attempt too. Returning the parsed root (rather than the raw
-    text) is what lets the parse error be caught here instead of aborting the
-    whole run one level up."""
-    args = ["curl", "-sS", "-m", "90", "--fail-with-body", "-G",
-            "https://export.arxiv.org/api/query"]
-    for k, v in params.items():
-        args += ["--data-urlencode", f"{k}={v}"]
-    last_err = ""
-    for attempt in range(retries):
-        p = subprocess.run(args, capture_output=True, text=True)
-        body = p.stdout
-        if p.returncode != 0:
-            last_err = (p.stderr.strip() or f"curl exit {p.returncode}")
-            if body.strip():
-                last_err += f", body starts: {body.strip()[:120]!r}"
-        elif not body.strip():
-            last_err = "empty response"
-        else:
-            try:
-                root = ET.fromstring(body)
-            except ET.ParseError as e:
-                last_err = f"response is not XML ({e}), starts: {body.strip()[:120]!r}"
+    Every failure mode is retried, not just a failed transfer: arXiv answers
+    with a plain-text "Rate exceeded." (HTTP 429) or an HTML error page
+    (HTTP 503 / maintenance) now and then, and without --fail-with-body curl
+    reports those as success, so an HTTP error status, a body that is not
+    well-formed XML, and a body that is XML but not an Atom feed all count as
+    a failed attempt too. Returning the parsed root (rather than the raw text)
+    is what lets the parse error be caught here instead of aborting the whole
+    run one level up.
+
+    Backoff: 15 s, 30 s, ... for generic failures; for 429 / 503 the wait is
+    at least 60 s, 120 s, ... (about 30 min over the default 8 attempts) and
+    honours a Retry-After header. Rate limiting is per IP and GitHub's runners
+    share theirs, so a throttled run needs minutes, not seconds, to clear.
+    The User-Agent identifies this client to arXiv, as its API terms ask."""
+    with tempfile.NamedTemporaryFile(prefix="arxiv-hdr-", suffix=".txt") as hdr:
+        args = ["curl", "-sS", "-m", "90", "--fail-with-body", "-A", USER_AGENT,
+                "-D", hdr.name, "-G", "https://export.arxiv.org/api/query"]
+        for k, v in params.items():
+            args += ["--data-urlencode", f"{k}={v}"]
+        last_err = ""
+        for attempt in range(retries):
+            open(hdr.name, "w").close()   # no stale headers if curl never connects
+            p = subprocess.run(args, capture_output=True, text=True)
+            body = p.stdout
+            status, retry_after = _response_meta(hdr.name)
+            if p.returncode != 0:
+                last_err = (p.stderr.strip() or f"curl exit {p.returncode}")
+                if body.strip():
+                    last_err += f", body starts: {body.strip()[:120]!r}"
+            elif not body.strip():
+                last_err = "empty response"
             else:
-                if root.tag == f"{{{NS['a']}}}feed":
-                    return root
-                last_err = f"unexpected XML root {root.tag!r}"
-        print(f"    arXiv request attempt {attempt + 1}/{retries} failed: {last_err}",
-              file=sys.stderr)
-        if attempt + 1 < retries:
-            time.sleep(15 * (attempt + 1))
+                try:
+                    root = ET.fromstring(body)
+                except ET.ParseError as e:
+                    last_err = f"response is not XML ({e}), starts: {body.strip()[:120]!r}"
+                else:
+                    if root.tag == f"{{{NS['a']}}}feed":
+                        return root
+                    last_err = f"unexpected XML root {root.tag!r}"
+            print(f"    arXiv request attempt {attempt + 1}/{retries} failed: {last_err}",
+                  file=sys.stderr)
+            if attempt + 1 < retries:
+                if status in (429, 503):
+                    wait = max(60 * (attempt + 1), retry_after)
+                else:
+                    wait = 15 * (attempt + 1)
+                wait = min(wait, 600)
+                print(f"    waiting {wait} s before retrying", file=sys.stderr)
+                time.sleep(wait)
     raise RuntimeError(f"arXiv API request failed after {retries} attempts: {last_err}")
+
+
+def _response_meta(header_file):
+    """(HTTP status, Retry-After seconds) from the headers curl dumped with -D;
+    (None, 0) if there is no usable status line. Only the last status line
+    counts, so a redirect's headers do not shadow the final response."""
+    status, retry_after = None, 0
+    try:
+        with open(header_file, encoding="utf-8", errors="replace") as f:
+            for line in f:
+                if line.startswith("HTTP/"):
+                    parts = line.split()
+                    status = int(parts[1]) if len(parts) > 1 and parts[1].isdigit() else None
+                    retry_after = 0
+                elif line.lower().startswith("retry-after:"):
+                    value = line.split(":", 1)[1].strip()
+                    retry_after = int(value) if value.isdigit() else 0
+    except OSError:
+        pass
+    return status, retry_after
 
 
 # --------------------------------------------------------------------------
