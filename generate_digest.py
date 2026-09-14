@@ -68,18 +68,45 @@ def weeks_to_build(today):
     return weeks
 
 
-def curl_get(params, retries=3):
-    args = ["curl", "-sS", "-m", "90", "-G", "https://export.arxiv.org/api/query"]
+def curl_get(params, retries=6):
+    """GET the arXiv API and return the parsed Atom feed root.
+
+    Every failure mode is retried with a growing backoff (15 s, 30 s, ...,
+    about 5 min in total by default), not just a failed transfer: arXiv
+    answers with an HTML error page (HTTP 503 / maintenance) now and then,
+    which curl reports as success, so an HTTP error status, a body that is
+    not well-formed XML, and a body that is XML but not an Atom feed all count
+    as a failed attempt too. Returning the parsed root (rather than the raw
+    text) is what lets the parse error be caught here instead of aborting the
+    whole run one level up."""
+    args = ["curl", "-sS", "-m", "90", "--fail-with-body", "-G",
+            "https://export.arxiv.org/api/query"]
     for k, v in params.items():
         args += ["--data-urlencode", f"{k}={v}"]
     last_err = ""
     for attempt in range(retries):
         p = subprocess.run(args, capture_output=True, text=True)
-        if p.returncode == 0 and p.stdout.strip():
-            return p.stdout
-        last_err = p.stderr or "empty response"
-        time.sleep(5 * (attempt + 1))
-    raise RuntimeError(f"arXiv API request failed: {last_err}")
+        body = p.stdout
+        if p.returncode != 0:
+            last_err = (p.stderr.strip() or f"curl exit {p.returncode}")
+            if body.strip():
+                last_err += f", body starts: {body.strip()[:120]!r}"
+        elif not body.strip():
+            last_err = "empty response"
+        else:
+            try:
+                root = ET.fromstring(body)
+            except ET.ParseError as e:
+                last_err = f"response is not XML ({e}), starts: {body.strip()[:120]!r}"
+            else:
+                if root.tag == f"{{{NS['a']}}}feed":
+                    return root
+                last_err = f"unexpected XML root {root.tag!r}"
+        print(f"    arXiv request attempt {attempt + 1}/{retries} failed: {last_err}",
+              file=sys.stderr)
+        if attempt + 1 < retries:
+            time.sleep(15 * (attempt + 1))
+    raise RuntimeError(f"arXiv API request failed after {retries} attempts: {last_err}")
 
 
 # --------------------------------------------------------------------------
@@ -100,14 +127,13 @@ def fetch_week(monday):
     page = 100
     total = None
     while True:
-        xml = curl_get({
+        root = curl_get({
             "search_query": query,
             "start": str(start),
             "max_results": str(page),
             "sortBy": "submittedDate",
             "sortOrder": "ascending",
         })
-        root = ET.fromstring(xml)
         if total is None:
             total = int(root.find("os:totalResults", NS).text)
         batch = root.findall("a:entry", NS)
