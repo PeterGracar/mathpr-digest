@@ -237,14 +237,14 @@ def parse_record(rec):
         return node.text.strip() if node is not None and node.text else ""
 
     def clean(s):
-        return " ".join(tex2utf(s).split())
+        return " ".join(to_unicode(s).split())
 
     arxiv_id = txt("raw:id")
     versions = sorted(
         ((int(v.get("version", "v0")[1:]), v.findtext("raw:date", "", NS).strip())
          for v in md.findall("raw:version", NS)),
         key=lambda x: x[0])
-    cats = txt("raw:categories").split()
+    cats = dedupe_aliases(txt("raw:categories").split())
     return {
         "id": arxiv_id,
         "title": clean(txt("raw:title")),
@@ -257,6 +257,25 @@ def parse_record(rec):
         "abs_url": f"https://arxiv.org/abs/{arxiv_id}",
         "pdf_url": f"https://arxiv.org/pdf/{arxiv_id}",
     }
+
+
+def to_unicode(tex):
+    """tex2utf with one upstream gap closed: its dotless-i/j normalisation
+    (\\u{\\i} -> \\u{i}) never fires because of a stray '/' in the regex, so
+    Kre\\u{\\i}n came out as "Kre\\uın" where the Atom API gave "Kreĭn"."""
+    tex = re.sub(r"(\\[\'`^\"~=.uvH])\{\\([ij])\}", r"\1{\2}", tex)
+    return tex2utf(tex)
+
+
+# arXiv stores both names of an aliased category pair (math-ph = math.MP,
+# math.NA = cs.NA, ...) and arXivRaw lists both; the Atom API listed one, and
+# the cache follows it. Maps the name to drop -> the name kept when both occur.
+CATEGORY_ALIASES = {"math.MP": "math-ph", "cs.NA": "math.NA", "stat.TH": "math.ST",
+                    "math.IT": "cs.IT", "econ.GN": "q-fin.EC", "eess.SY": "cs.SY"}
+
+
+def dedupe_aliases(cats):
+    return [c for c in cats if CATEGORY_ALIASES.get(c) not in cats]
 
 
 def iso_utc(rfc2822):
@@ -277,7 +296,7 @@ def split_authors(line):
     B. Bar (1 and 2) and C. Baz ((1) Univ X (2) Univ Y)' -> ['A. Foo',
     'B. Bar', 'C. Baz']. Follows arXiv's own parse_author_affil (arxiv-base)
     in what it treats as separators, suffixes and 'et al'."""
-    s = tex2utf(line)
+    s = to_unicode(line)
     out, depth = [], 0        # drop parenthesised material, nested too
     for ch in s:
         if ch == "(":
@@ -289,7 +308,8 @@ def split_authors(line):
     s = re.sub(r",?\s+(and|&)\s+", ",", "".join(out))
     names = []
     for part in re.split(r"[,;:]", s):
-        name = " ".join(part.replace("{", "").replace("}", "").split())
+        name = re.sub(r"\.(\S)", r". \1", part)   # O.I. Marichev -> O. I. Marichev
+        name = " ".join(name.replace("{", "").replace("}", "").split())
         if not name or re.match(r"^et\.?\s+al\.?$", name, re.I):
             continue
         if _SUFFIX.match(name) and names:
