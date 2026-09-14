@@ -33,15 +33,6 @@ on:
     # crons are frequently delayed or dropped under load. An off-hour minute is
     # far more likely to fire on time.
     - cron: '17 2 * * 1-5'
-    # Monday retries. arXiv rate-limits by IP and GitHub's hosted runners
-    # share theirs; on several Monday mornings (its busiest listing, covering
-    # Fri-Sun submissions) the API has answered every request with 429 "Rate
-    # exceeded." for hours, longer than any in-run backoff can wait. The
-    # generator is idempotent, so a later run simply picks up whatever the
-    # morning one could not. If the morning run succeeded these are near
-    # no-ops (no data change, no commit).
-    - cron: '17 12 * * 1'
-    - cron: '17 18 * * 1'
   workflow_dispatch: {}   # adds a manual "Run workflow" button in the Actions tab
 
 # Action versions below are pinned to Node 24-native majors, so nothing relies on

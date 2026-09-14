@@ -109,9 +109,7 @@ python3 -m http.server 8731 --directory site
 ## Running on GitHub (no local machine needed)
 
 `.github/workflows/daily-digest.yml` runs the whole pipeline on GitHub's
-infrastructure: a weekday cron (02:17 UTC, Mon–Fri, with Monday retries at
-12:17 and 18:17 UTC because arXiv often rate-limits GitHub's shared runner IPs
-on Monday mornings), plus a push-to-`main`
+infrastructure: a weekday cron (02:17 UTC, Mon–Fri), plus a push-to-`main`
 trigger (so template/code edits go live immediately) and a manual "Run workflow"
 button, runs `generate_digest.py`, commits the updated `data/` back to the repo
 (`site/` is git-ignored and rebuilt each run), and publishes the freshly built
