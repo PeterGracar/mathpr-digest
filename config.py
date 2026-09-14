@@ -21,7 +21,7 @@ FIRST_WEEK_MONDAY = "2026-06-01"  # first week of June 2026
 # is treated as COMPLETE once its Friday has passed (e.g. the Saturday run). A
 # week is still re-fetched on each run until it is "finalized" — kept open for a
 # grace period past its nominal Sunday so papers arXiv announces late are still
-# captured before the week is frozen. The API only exposes a paper once it has
+# captured before the week is frozen. OAI-PMH only exposes a paper once it has
 # been announced, and arXiv's holiday closures (about a week around Christmas
 # and New Year) can push a listing well past the week it is derived into, so
 # the grace period is sized to outlast any recent closure. Costs roughly one

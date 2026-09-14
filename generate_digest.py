@@ -13,12 +13,16 @@ Idempotent and re-runnable:
 
 This means missing past digests are constructed retroactively on every run.
 
-Network access uses the `curl` CLI (the bundled Python has no CA bundle).
+Network access uses the `curl` CLI (the bundled Python has no CA bundle)
+against arXiv's OAI-PMH endpoint (https://oaipmh.arxiv.org/oai, arXivRaw
+format); the old export.arxiv.org Atom API rate-limits GitHub's shared
+runner IPs for hours at a time.
 Usage:  python3 generate_digest.py [YYYY-MM-DD as "today" override]
 """
 import json
 import os
 import re
+from email.utils import parsedate_to_datetime
 import subprocess
 import sys
 import tempfile
@@ -29,15 +33,16 @@ from datetime import date, datetime, timedelta, timezone
 
 import build_site
 import config
+from tex2utf import tex2utf
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 SITE_DIR = os.path.join(HERE, "site")
 
+OAI_URL = "https://oaipmh.arxiv.org/oai"
 NS = {
-    "a": "http://www.w3.org/2005/Atom",
-    "o": "http://arxiv.org/schemas/atom",
-    "os": "http://a9.com/-/spec/opensearch/1.1/",
+    "oai": "http://www.openarchives.org/OAI/2.0/",
+    "raw": "http://arxiv.org/OAI/arXivRaw/",
 }
 
 
@@ -73,7 +78,7 @@ USER_AGENT = "mathpr-digest/1.0 (+https://github.com/PeterGracar/mathpr-digest)"
 
 
 def curl_get(params, retries=8):
-    """GET the arXiv API and return the parsed Atom feed root.
+    """GET the arXiv OAI-PMH endpoint and return the parsed OAI-PMH root.
 
     Every failure mode is retried, not just a failed transfer: arXiv answers
     with a plain-text "Rate exceeded." (HTTP 429) or an HTML error page
@@ -90,8 +95,8 @@ def curl_get(params, retries=8):
     share theirs, so a throttled run needs minutes, not seconds, to clear.
     The User-Agent identifies this client to arXiv, as its API terms ask."""
     with tempfile.NamedTemporaryFile(prefix="arxiv-hdr-", suffix=".txt") as hdr:
-        args = ["curl", "-sS", "-m", "90", "--fail-with-body", "-A", USER_AGENT,
-                "-D", hdr.name, "-G", "https://export.arxiv.org/api/query"]
+        args = ["curl", "-sS", "-m", "300", "--fail-with-body", "-A", USER_AGENT,
+                "-D", hdr.name, "-G", OAI_URL]
         for k, v in params.items():
             args += ["--data-urlencode", f"{k}={v}"]
         last_err = ""
@@ -112,7 +117,7 @@ def curl_get(params, retries=8):
                 except ET.ParseError as e:
                     last_err = f"response is not XML ({e}), starts: {body.strip()[:120]!r}"
                 else:
-                    if root.tag == f"{{{NS['a']}}}feed":
+                    if root.tag == f"{{{NS['oai']}}}OAI-PMH":
                         return root
                     last_err = f"unexpected XML root {root.tag!r}"
             print(f"    arXiv request attempt {attempt + 1}/{retries} failed: {last_err}",
@@ -151,40 +156,52 @@ def _response_meta(header_file):
 # --------------------------------------------------------------------------
 # fetching
 # --------------------------------------------------------------------------
-def fetch_week(monday):
-    """Fetch every submission that can have been announced (listed) Mon–Fri
-    of the week starting `monday`. Those were received between 14:00 ET on
-    the previous Thursday and 14:00 ET on this week's Thursday (see
-    build_site.announced_on), so the query covers those two Thursdays whole
-    — robust to how the API interprets submittedDate's timezone — and the
-    caller trims to the announcement window by derived listing date."""
-    lo = (monday - timedelta(days=4)).strftime("%Y%m%d") + "0000"   # prev. Thu
-    hi = (monday + timedelta(days=3)).strftime("%Y%m%d") + "2359"   # this Thu
-    query = f"cat:{config.CATEGORY} AND submittedDate:[{lo} TO {hi}]"
+def fetch_week(monday, today):
+    """Fetch every math.PR record that can belong to the week starting
+    `monday`, i.e. that can have been announced (listed) Mon-Fri of it.
+
+    OAI-PMH selects by *datestamp*, the UTC day arXiv last touched the
+    record (announcing a version, adding a cross-list or journal-ref), not by
+    submission time. A new paper is stamped when its announcement is
+    processed, i.e. on the listing day or the evening before (mailings go
+    out Sun-Thu 20:00 ET, which is Mon-Fri 00:00 EDT / 01:00 EST in UTC).
+    The window therefore starts on the previous Thursday for margin, and runs
+    to the week's finalization horizon so that a paper replaced during the
+    grace period (which moves its datestamp) is still found by the daily
+    re-fetch. It cannot run past today: the endpoint rejects `until` beyond
+    tomorrow. Every record carries all its versions, so the caller can still
+    derive the listing date from the v1 submission time and trim to the week.
+    Unlike the old Atom API's submittedDate query, this cannot rebuild a week
+    that is long past: papers touched after its horizon have moved out of
+    the window. data/ is the persistent cache for that reason."""
+    frm = monday - timedelta(days=4)
+    until = min(today, datetime.now(timezone.utc).date(),
+                monday + timedelta(days=6 + config.FINALIZE_GRACE_DAYS))
+    params = {
+        "verb": "ListRecords",
+        "metadataPrefix": "arXivRaw",
+        "set": oai_set(config.CATEGORY),
+        "from": frm.isoformat(),
+        "until": until.isoformat(),
+    }
     entries = []
-    start = 0
-    page = 100
-    total = None
     while True:
-        root = curl_get({
-            "search_query": query,
-            "start": str(start),
-            "max_results": str(page),
-            "sortBy": "submittedDate",
-            "sortOrder": "ascending",
-        })
-        if total is None:
-            total = int(root.find("os:totalResults", NS).text)
-        batch = root.findall("a:entry", NS)
-        if not batch:
+        root = curl_get(params)
+        err = root.find("oai:error", NS)
+        if err is not None:
+            if err.get("code") == "noRecordsMatch":
+                break
+            raise RuntimeError(f"OAI-PMH error {err.get('code')}: {(err.text or '').strip()}")
+        for rec in root.findall("oai:ListRecords/oai:record", NS):
+            e = parse_record(rec)
+            if e is not None:
+                entries.append(e)
+        token = root.find("oai:ListRecords/oai:resumptionToken", NS)
+        if token is None or not (token.text or "").strip():
             break
-        for e in batch:
-            entries.append(parse_entry(e))
-        start += page
-        if start >= total:
-            break
+        params = {"verb": "ListRecords", "resumptionToken": token.text.strip()}
         time.sleep(3)  # be polite to arXiv
-    # de-dup by id (paging can occasionally overlap)
+    # de-dup by id (a listing spanning several pages can repeat a record)
     seen, uniq = set(), []
     for e in entries:
         if e["id"] not in seen:
@@ -193,32 +210,93 @@ def fetch_week(monday):
     return uniq
 
 
-def parse_entry(e):
+def oai_set(category):
+    """OAI-PMH setSpec for an arXiv category: group:archive:subject, e.g.
+    math.PR -> math:math:PR (physics categories sit under the physics group:
+    hep-th -> physics:hep-th). Selects the category as primary or cross-list."""
+    archive, _, subject = category.partition(".")
+    group = "physics" if archive in PHYSICS_ARCHIVES else archive
+    return ":".join(p for p in (group, archive, subject) if p)
+
+
+PHYSICS_ARCHIVES = {"astro-ph", "cond-mat", "gr-qc", "hep-ex", "hep-lat", "hep-ph",
+                    "hep-th", "math-ph", "nlin", "nucl-ex", "nucl-th", "physics",
+                    "quant-ph"}
+
+
+def parse_record(rec):
+    """One OAI-PMH <record> in arXivRaw format -> entry dict, or None for a
+    deleted record. Field names and formats match what the old Atom API
+    fetch produced, so cached weeks and the site need no migration."""
+    md = rec.find("oai:metadata/raw:arXivRaw", NS)
+    if md is None:   # <header status="deleted"> carries no metadata
+        return None
+
     def txt(tag):
-        node = e.find(tag, NS)
+        node = md.find(tag, NS)
         return node.text.strip() if node is not None and node.text else ""
 
-    # strip the version suffix ('…v2') so the id and links always point at the
-    # latest revision of the article rather than the announced version
-    arxiv_id = re.sub(r"v\d+$", "", txt("a:id").split("/abs/")[-1])
-    authors = [a.find("a:name", NS).text.strip()
-               for a in e.findall("a:author", NS)
-               if a.find("a:name", NS) is not None]
-    cats = [c.get("term") for c in e.findall("a:category", NS)]
-    prim = e.find("o:primary_category", NS)
-    primary = prim.get("term") if prim is not None else (cats[0] if cats else "")
+    def clean(s):
+        return " ".join(tex2utf(s).split())
+
+    arxiv_id = txt("raw:id")
+    versions = sorted(
+        ((int(v.get("version", "v0")[1:]), v.findtext("raw:date", "", NS).strip())
+         for v in md.findall("raw:version", NS)),
+        key=lambda x: x[0])
+    cats = txt("raw:categories").split()
     return {
         "id": arxiv_id,
-        "title": " ".join(txt("a:title").split()),
-        "abstract": " ".join(txt("a:summary").split()),
-        "authors": authors,
-        "published": txt("a:published"),
-        "updated": txt("a:updated"),
-        "primary_category": primary,
+        "title": clean(txt("raw:title")),
+        "abstract": clean(txt("raw:abstract")),
+        "authors": split_authors(txt("raw:authors")),
+        "published": iso_utc(versions[0][1]) if versions else "",
+        "updated": iso_utc(versions[-1][1]) if versions else "",
+        "primary_category": cats[0] if cats else "",
         "categories": cats,
         "abs_url": f"https://arxiv.org/abs/{arxiv_id}",
         "pdf_url": f"https://arxiv.org/pdf/{arxiv_id}",
     }
+
+
+def iso_utc(rfc2822):
+    """'Wed, 25 Jun 2008 15:29:38 GMT' (arXivRaw version date) ->
+    '2008-06-25T15:29:38Z', the Atom API's timestamp format the JSON and
+    build_site.announced_on expect."""
+    t = parsedate_to_datetime(rfc2822)
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return t.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+_SUFFIX = re.compile(r"^(Jr\.?|Sr\.?|I{2,3}|IV)$", re.I)
+
+
+def split_authors(line):
+    """Names from an arXiv authors line, affiliations dropped: 'A. Foo (1),
+    B. Bar (1 and 2) and C. Baz ((1) Univ X (2) Univ Y)' -> ['A. Foo',
+    'B. Bar', 'C. Baz']. Follows arXiv's own parse_author_affil (arxiv-base)
+    in what it treats as separators, suffixes and 'et al'."""
+    s = tex2utf(line)
+    out, depth = [], 0        # drop parenthesised material, nested too
+    for ch in s:
+        if ch == "(":
+            depth += 1
+        elif ch == ")":
+            depth = max(depth - 1, 0)
+        elif depth == 0:
+            out.append(ch)
+    s = re.sub(r",?\s+(and|&)\s+", ",", "".join(out))
+    names = []
+    for part in re.split(r"[,;:]", s):
+        name = " ".join(part.replace("{", "").replace("}", "").split())
+        if not name or re.match(r"^et\.?\s+al\.?$", name, re.I):
+            continue
+        if _SUFFIX.match(name) and names:
+            names[-1] += ", " + name
+        else:
+            names.append(name)
+    return names
 
 
 # --------------------------------------------------------------------------
@@ -295,7 +373,7 @@ def build_week(monday, sunday, today, force=False):
             return cached
     tag = "partial" if not complete else ("finalizing" if not finalized else "final")
     print(f"  fetching {monday} .. {sunday} ({tag}) ...", flush=True)
-    entries = fetch_week(monday)
+    entries = fetch_week(monday, today)
     for e in entries:
         score_entry(e)
     # keep only papers listed Mon–Fri of this week; the fetch window's edges
