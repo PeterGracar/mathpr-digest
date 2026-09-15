@@ -9,7 +9,7 @@
   "data_through": "2026-09-11",
   "total_submissions": 227,
   "fetched": 227,
-  "generated_at": "2026-09-14T13:16:57Z",
+  "generated_at": "2026-09-15T07:45:44Z",
   "entries": [
     {
       "id": "2609.09892",
@@ -1615,13 +1615,13 @@
     },
     {
       "id": "2609.11418",
-      "title": "Entropy concavity for log-concave random variables: an asymmetric counterexample",
-      "abstract": "The Ball-Nayar-Tkocz entropy concavity conjecture asserts that, if $X,Y$ are independent identically distributed real random variables with a common log-concave density, then the differential entropy of their weighted sum, \\[ F(t)=h\\bigl(\\sqrt{1-t}\\,X+\\sqrt t\\,Y\\bigr),\\qquad 0\\le t\\le1, \\] is a concave function of the weight parameter $t$. We construct an asymmetric, strictly positive smooth probability density $f$ with mean zero, variance one, and $(\\log f)''<-1/2$, for which the corresponding function satisfies $F''(t)>0$ throughout an endpoint neighborhood $0<t<δ$. This disproves the conjecture without an additional symmetry assumption. For a class of Gaussian perturbation densities, we first establish the endpoint expansion \\[ F''(t)=-\\frac{μ_3J_3}{16\\sqrt t}+O(1),\\qquad t\\downarrow0. \\] Here $μ_3=\\int x^3f(x)\\,dx$ is the third central moment. Writing $ρ=(\\log f)'$ for the score function, its third moment is $J_3=\\int f(x)ρ(x)^3\\,dx$. A Hermite perturbation gives $μ_3>0$ and $J_3<0$, and explicit remainder estimates verify the constructed density and its endpoint curvature. The counterexample does not address the conjecture with an additional symmetry assumption.",
+      "title": "Near-Gaussian counterexamples to the Ball-Nayar-Tkocz entropy concavity conjecture",
+      "abstract": "The Ball-Nayar-Tkocz conjecture asserts that, for independent real random variables $X,Y$ with a common log-concave density, the function $t\\mapsto h(\\sqrt tX+\\sqrt{1-t}Y)$ is concave on $[0,1]$. Gaussian distributions have this property. We construct strongly log-concave counterexamples arbitrarily close to the Gaussian and study their persistence under Gaussian smoothing. Let $X$ have mean zero and variance one, let $G$ be an independent standard Gaussian, and let $q\\in[0,1]$ denote the signal variance proportion in the smoothed variable $\\sqrt qX+\\sqrt{1-q}G$. In the asymmetric case, for every fixed $0<q\\le1$, there are counterexamples for which the entropy of the weighted sum of two independent copies of the smoothed variable has strictly positive second derivative near the endpoints. In the symmetric case, for every $4/7<q\\le1$, there are counterexamples for which an unequally weighted sum has strictly greater entropy than the equally weighted sum. Both families have smooth, strictly positive densities and are strongly log-concave before and after smoothing. The density ratios $f/φ$ converge uniformly to one, and each derivative of fixed positive order converges uniformly to zero, where $φ$ is the standard Gaussian density. The symmetric counterexamples can also match any prescribed finite number of Gaussian moments exactly. The asymmetric construction uses an endpoint expansion of entropy, whereas the symmetric construction exploits the different decay rates of high-order Hermite perturbations under different weights. Thus, densities violating concavity approach the Gaussian density in the strong sense described above. The question of uniform concavity in the symmetric class for $0<q\\le4/7$ remains open.",
       "authors": [
         "Congyi Luo"
       ],
       "published": "2026-09-10T11:48:28Z",
-      "updated": "2026-09-10T11:48:28Z",
+      "updated": "2026-09-14T05:35:46Z",
       "primary_category": "cs.IT",
       "categories": [
         "cs.IT",
@@ -1713,7 +1713,7 @@
         "Yiqing Chen"
       ],
       "published": "2026-09-10T08:53:51Z",
-      "updated": "2026-09-10T08:53:51Z",
+      "updated": "2026-09-12T12:18:36Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1787,7 +1787,7 @@
         "Valerio Lucarini"
       ],
       "published": "2026-09-10T06:24:56Z",
-      "updated": "2026-09-10T06:24:56Z",
+      "updated": "2026-09-14T13:31:34Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4062,15 +4062,15 @@
     },
     {
       "id": "2609.07121",
-      "title": "Asymptotic properties of the Bingham distribution in arbitrary dimensions",
-      "abstract": "The Bingham distribution is widely used to model directional data with antipodal symmetry, and a central analytical object is the normalizing constant $Z$. Even though efficient algorithms exist for bounded or moderate parameter values, its singular behavior in general dimensions remains underexplored in the literature. We use a well-known integral representation to obtain asymptotic series of $Z$ and its derivatives, which lead to asymptotic profiles of its moments. Then, we also study the asymptotic behavior of the Bingham entropy, and prove its decomposition into an explicit logarithmic leading term and a Lipschitz continuous correction term. The degeneration of higher-dimensional Bingham distributions to their lower-dimensional counterparts is observed in both the asymptotic series and the entropy.",
+      "title": "Uniform asymptotics and entropy structure of the Bingham distribution in arbitrary dimensions",
+      "abstract": "The Bingham distribution is widely used to model directional data with antipodal symmetry, and its normalizing constant $Z$ and moments play a central role in statistical inference and closure models. Their behavior becomes singular when one or more eigenvalue gaps of the parameter matrix become unbounded. In this work, we develop a uniform asymptotic framework for the Bingham distribution in arbitrary dimensions. Starting from an inverse-Laplace integral representation, we derive asymptotic expansions with explicit remainder estimates that are uniform with respect to arbitrary relative scales among multiple diverging eigenvalues. In a particular regime, the asymptotic series becomes absolutely convergent with an exponentially small remainder. These results yield precise asymptotic profiles of the Bingham moments and characterize the degeneration of higher-dimensional distributions to lower-dimensional counterparts. As an application to the Bingham closure, we prove that the entropy admits a decomposition into an explicit logarithmic leading term and a residual that is uniformly Lipschitz continuous on the moment simplex. Moreover, on each boundary face, the residual agrees with its lower-dimensional version up to an explicit additive constant. The results provide a unified description of the singular structure of the Bingham distribution and have implications for numerical closure and $Q$-tensor models of nematic liquid crystals.",
       "authors": [
         "Dawei Wu",
         "Lei Zhang",
         "Pingwen Zhang"
       ],
       "published": "2026-09-07T07:05:45Z",
-      "updated": "2026-09-07T07:05:45Z",
+      "updated": "2026-09-14T07:44:29Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4135,13 +4135,13 @@
     {
       "id": "2609.07041",
       "title": "Gaussian Convolution, Internal Energies, and the Kneser--Poulsen Conjecture",
-      "abstract": "We study the persistence under heat flow of internal energy comparisons induced by $1$-Lipschitz maps. We define a new hierarchy of internal energies based on iterative nonnegativity of the associated pressure law, and show that Gaussian marginalisation leads to hierarchical ascent. This mechanism, combined with a stronger dimension-free result for continuously contracting homotopies, allows us to prove that persistence holds for tiers in the hierarchy depending on the ambient dimension, including all convex energy densities in the two-dimensional case. We then connect these results to geometry, specifically to the volume of tubes, showing that several principal known cases of the Kneser--Poulsen conjecture follow from our results. Partly motivated by this connection, we conjecture that persistence holds for all convex energy densities in all dimensions. We also discuss a characterisation of isotropic Gaussians arising naturally in this framework.",
+      "abstract": "We study to what extent the majorisation order between a probability measure and its $1$-Lipschitz image is preserved when both measures undergo Gaussian convolution. We show that the majorisation order is fully preserved in dimensions $n\\leq 2$, and obtain dimension-dependent partial preservation in higher dimensions. The perspective taken is that majorisation between densities amounts to comparison through internal energies satisfying a certain pressure condition. Accordingly we introduce a notion of iterated nonnegativity of pressure, closely related to iterated pressures arising in optimal transport, placing the majorisation order within a graded hierarchy of internal energy comparisons. Using the observation that the volume of Euclidean neighbourhoods can be detected from internal energy measurements along the heat flow, we show that our results imply several principal known cases of the Kneser--Poulsen conjecture.",
       "authors": [
         "Gautam Aishwarya",
         "Dongbin Li"
       ],
       "published": "2026-09-07T04:51:16Z",
-      "updated": "2026-09-07T04:51:16Z",
+      "updated": "2026-09-13T09:56:26Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
