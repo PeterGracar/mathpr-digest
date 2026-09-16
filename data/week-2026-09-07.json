@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-11",
-  "total_submissions": 227,
-  "fetched": 227,
-  "generated_at": "2026-09-15T07:45:44Z",
+  "total_submissions": 228,
+  "fetched": 228,
+  "generated_at": "2026-09-16T07:42:26Z",
   "entries": [
     {
       "id": "2609.09892",
@@ -1303,6 +1303,31 @@
       "bucket": "other"
     },
     {
+      "id": "2609.16025",
+      "title": "Does the problem of the Nile have a solution?",
+      "abstract": "The problem of the Nile has been stated by R. Fisher in 1936. This problem concerns the fair division of an agricultural land and is the eponymous problem of a general class of problems on measures and similar regions. In 1938, W. Feller has shown that the general problem has no solution. However, we will show that under a natural hypothesis, the original problem of the Nile is solvable with connected plots.",
+      "authors": [
+        "Guillaume Chèze",
+        "François Ollivier"
+      ],
+      "published": "2026-09-10T15:56:25Z",
+      "updated": "2026-09-10T15:56:25Z",
+      "primary_category": "math.HO",
+      "categories": [
+        "math.HO",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.16025",
+      "pdf_url": "https://arxiv.org/pdf/2609.16025",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-11",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.11712",
       "title": "Generalization Analysis of Distributed Kernel-based Robust Gradient Descent Algorithms",
       "abstract": "In this paper, we investigate the generalization performance of distributed gradient descent algorithms in a reproducing kernel Hilbert space under a robust loss function $l_σ$. By exploiting the spectral characterization of gradient descent together with the intrinsic properties of robust loss functions, we establish optimal learning rates for the distributed kernel-based robust gradient descent (DKRGD) algorithm with an appropriately chosen scale parameter $σ$. The proposed parameter choice of $σ$ simultaneously alleviates the saturation phenomenon and guarantees statistical robustness. A key technical contribution is a novel error analysis that provides substantially sharper bounds for products of operators, thereby significantly relaxing existing restrictions on the maximum number of local machines while retaining optimal learning rates. Finally, we develop a communication-efficient strategy that further improves the convergence performance of DKRGD.",
@@ -1805,13 +1830,13 @@
     {
       "id": "2609.11039",
       "title": "Uniform-in-Time Boltzmann Mean-Field Limits for Anchored Binary Opinion Dynamics",
-      "abstract": "We study a continuous-time opinion model in which agents interact in pairs and each agent has a fixed anchor. At each interaction epoch, both opinions are updated according to a possibly nonlinear rule with random inputs. Under suitable stability and moment assumptions, we establish uniform-in-time propagation of chaos: as the population grows, the joint law of any fixed number of agents converges, uniformly over time, to the corresponding product of the law solving a nonlinear Boltzmann equation. We first obtain a graphical estimate in total variation on finite time intervals, assuming only that the interaction rule is measurable. We extend this approximation uniformly over time by showing that both the finite system and its nonlinear limit converge exponentially fast to their respective stationary laws. We also prove uniform-in-time convergence in Wasserstein distance of order two under a contraction condition in mean square. For this result, we assume either a bounded state space or a drift condition that keeps moments of some order greater than two uniformly bounded. We examine two applications. For an anchored Friedkin-Johnsen model with random coefficients, we derive an affine stochastic recurrence for the stationary deviation of an opinion from its anchor. We use this recurrence to give conditions for sub-Gaussian or power-law tails and to characterize the exponent in the power-law case. We also study a model of biased assimilation, in which agents favor information that agrees with their current opinions. With the anchor and incoming evidence held at neutral values, we determine when an interaction moves an opinion farther from the neutral value, even if it starts close to it. Simulations illustrate the tail predictions and show how a single peak in the opinion distribution can split into two.",
+      "abstract": "We study a continuous-time opinion model in which agents interact in pairs and each agent has a fixed anchor. At each interaction, both opinions are updated according to a possibly nonlinear rule with random inputs. Under suitable stability and moment assumptions, we establish uniform-in-time propagation of chaos: as the population grows, any fixed number of agents become asymptotically independent, with a common law solving a nonlinear Boltzmann equation. The proof combines a graphical approximation on finite time intervals with exponential convergence of the finite system and its nonlinear limit to their respective stationary laws. We examine two applications. For an anchored variant of the Friedkin-Johnsen model with random coefficients, we give conditions for sub-Gaussian or power-law tails of stationary deviations from the anchors. Occasional overreaction can produce power-law tails with Gaussian anchors and noise, even as the nonlinear law converges exponentially fast to stationarity. We also study an anchored model of biased assimilation, determining when a nearby opinion moves toward or away from neutrality with the anchor and incoming evidence held at neutral values. Simulations illustrate the tail predictions and show how a single peak in the smoothed empirical opinion profile can split into two.",
       "authors": [
         "Jingyi Zhang",
         "Debankur Mukherjee"
       ],
       "published": "2026-09-10T03:36:50Z",
-      "updated": "2026-09-10T03:36:50Z",
+      "updated": "2026-09-15T01:07:51Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
