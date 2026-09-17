@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-11",
-  "total_submissions": 228,
-  "fetched": 228,
-  "generated_at": "2026-09-16T07:42:26Z",
+  "total_submissions": 229,
+  "fetched": 229,
+  "generated_at": "2026-09-17T07:40:57Z",
   "entries": [
     {
       "id": "2609.09892",
@@ -1017,11 +1017,10 @@
       "title": "Rough paths below the Young threshold: an exact scale calculus and the locality phase transition at one quarter",
       "abstract": "Since Young's 1936 theorem, irregular integration has been organized around the threshold 1/2: above it the path determines the integral, while below it higher-order data are needed. For fractional Brownian motion, H = 1/4 is the threshold for the canonical Gaussian enhancement, although geometric rough lifts exist for every H > 0. We prove that H = 1/4 is instead the exact threshold for measurable locality. For d-dimensional fractional Brownian motion with independent components, d at least 2, if 0 < H <= 1/4, no positive-measure Borel set supports even one finite off-diagonal second-level coordinate satisfying Chen's relation and measurable interval by interval from path increments. No moment, Holder, geometricity, stationarity, or scaling assumption is imposed. If 1/4 < H <= 1/2, every full-law local rough-path lift in the standard Holder range is automatically square-integrable and hence classified without an assumed L2 condition; for H > 1/2, every finite-step enhancement with natural graded Holder bounds is uniquely the Young signature. We also introduce an exact scale calculus below classical differentiability. Matched dyadic differences recover normalized derivatives with sharp O(epsilon^2) error, exact localized inversion, and lossless reconstruction. Multiplication and smooth functional calculus transport exactly to scale coordinates, while the corona quotient yields an exact universal derivation. Reinserting the Holder amplitude and using Fourier-normal ordering produces strong geometric lifts for every positive input regularity and every lower rough exponent, with explicit ultraviolet rates and stability. Thus rough lifts exist below one quarter, but no measurable lift on a positive-measure domain can be interval-local there. The results separate existence from local recoverability and show that nondifferentiability does not destroy exact differential information.",
       "authors": [
-        "Zongjian Han",
-        "Yuanhe Luo"
+        "Zongjian Han"
       ],
       "published": "2026-09-05T08:25:11Z",
-      "updated": "2026-09-05T08:25:11Z",
+      "updated": "2026-09-15T21:58:07Z",
       "primary_category": "math.FA",
       "categories": [
         "math.FA",
@@ -1769,6 +1768,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.11229",
       "pdf_url": "https://arxiv.org/pdf/2609.11229",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-11",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.17584",
+      "title": "Computing Stationary Equilibria in Measure-Dependent Markov Systems",
+      "abstract": "Many stochastic systems in operations and economics exhibit feedback between their long-run state distribution and the transition law governing their dynamics. In this paper, we develop a computational framework for stationary equilibria in such measure-dependent Markov systems when this feedback operates through a finite-dimensional aggregate. We show that the original stationary-equilibrium problem can be reduced to a finite-dimensional self-consistency equation, separating steady-state analysis of the underlying Markov system from equilibrium computation. We use properties of the resulting self-consistency map to guide the choice among fixed-point iteration, relaxed fixed-point iteration, and minimization of the fixed-point residual. The last approach requires derivatives of the self-consistency map, which are typically unavailable in closed form. We therefore develop finite-time infinitesimal perturbation analysis estimators for these derivatives, with error bounds that separate Monte Carlo error from finite-time bias. We illustrate the framework through a strategic $G/G/c$ queue and an opinion-dynamics model, showing how different structural properties lead naturally to different equilibrium-computation methods.",
+      "authors": [
+        "Jing Dong",
+        "Bar Light",
+        "Xin Tong"
+      ],
+      "published": "2026-09-10T08:07:49Z",
+      "updated": "2026-09-10T08:07:49Z",
+      "primary_category": "cs.GT",
+      "categories": [
+        "cs.GT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.17584",
+      "pdf_url": "https://arxiv.org/pdf/2609.17584",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-11",
@@ -4738,12 +4762,12 @@
     {
       "id": "2609.05847",
       "title": "A global spectral gap for Metropolis-adjusted Langevin algorithm with a uniformly randomized step size",
-      "abstract": "Let $π(\\mathrm{d} x)\\propto e^{-U(x)}\\,\\mathrm{d} x$ on $\\mathbb R^d$, where $0<m\\leq L<\\infty$, $mI_d\\preceq\\nabla^2U(x)\\preceq LI_d$, and $κ=L/m$. It is known that, under warm-start assumptions, fixed-step Metropolis-adjusted Langevin algorithm (MALA) with properly tuned step size has mixing time of order $κ\\sqrt{d}$ up to logarithmic factors. By contrast, when the condition number is bounded away from one, no single fixed step size yields a matching spectral-gap lower bound of order $(κ\\sqrt{d})^{-1}$ uniformly over this target class. We show that MALA with a uniformly randomized step size admits a spectral-gap lower bound of this size. At each iteration, the randomized-step MALA considered here draws $h$ uniformly from $(0,H)$ and performs one ordinary MALA transition with step size $h$. We show that, when $H$ is of order $(L\\sqrt{d})^{-1}$, the right spectral gap of randomized-step MALA admits a lower bound of order \\[ \\frac{1}{κ\\sqrt{d}\\,[1+\\log(d+1)+\\logκ]}. \\] The main new ingredient in the proof is a Cheeger-type inequality for aggregating estimates of the one-step flow of MALA out of measurable sets at various step-size scales. It allows the scale used to control the flow to depend on the set and avoids the additional loss that would result from first summing the flows and then applying the standard Cheeger inequality. This work was developed with substantial assistance from ChatGPT, which suggested the uniformly randomized-step approach, developed the principal proof arguments, and generated the simulation and Lean 4 code. The human author checked and verified the mathematical content and take full responsibility for the results.",
+      "abstract": "Let $π(\\mathrm{d} x)\\propto e^{-U(x)}\\,\\mathrm{d} x$ on $\\mathbb R^d$, where $0<m\\leq L<\\infty$, $mI_d\\preceq\\nabla^2U(x)\\preceq LI_d$, and $κ=L/m$. It is known that, under warm-start assumptions, fixed-step Metropolis-adjusted Langevin algorithm (MALA) with properly tuned step size has mixing time of order $κ\\sqrt{d}$ up to logarithmic factors. By contrast, when the condition number is bounded away from one, no single fixed step size yields a matching spectral-gap lower bound of order $(κ\\sqrt{d})^{-1}$ uniformly over this target class. We show that MALA with a uniformly randomized step size admits a spectral-gap lower bound of this size. At each iteration, the randomized-step MALA considered here draws $h$ uniformly from $(0,H)$ and performs one ordinary MALA transition with step size $h$. We show that, when $H$ is of order $(L\\sqrt{d})^{-1}$, the right spectral gap of randomized-step MALA admits a lower bound of order \\[ \\frac{1}{κ\\sqrt{d}\\,[1+\\log(d+1)+\\logκ]}. \\] A key ingredient in the proof is a Cheeger-type inequality for aggregating estimates of the one-step flow of MALA out of measurable sets at various step-size scales. It allows the scale used to control the flow to depend on the set and avoids the additional loss that would result from first estimating the conductance and then applying the standard Cheeger inequality. This work was developed with substantial assistance from ChatGPT, which suggested the uniformly randomized-step approach, developed the principal proof arguments, and generated the simulation and Lean 4 code. The human author checked and verified the mathematical content and take full responsibility for the results.",
       "authors": [
         "Qian Qin"
       ],
       "published": "2026-09-05T03:22:46Z",
-      "updated": "2026-09-05T03:22:46Z",
+      "updated": "2026-09-16T14:50:37Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -5537,7 +5561,7 @@
         "Luciano Tubaro"
       ],
       "published": "2026-09-03T20:09:33Z",
-      "updated": "2026-09-03T20:09:33Z",
+      "updated": "2026-09-16T15:00:24Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
