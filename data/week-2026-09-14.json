@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 38,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-09-18",
-  "total_submissions": 244,
-  "fetched": 244,
-  "generated_at": "2026-09-18T07:24:54Z",
+  "total_submissions": 246,
+  "fetched": 246,
+  "generated_at": "2026-09-21T07:58:35Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -1074,7 +1074,8 @@
       "updated": "2026-09-17T17:05:36Z",
       "primary_category": "math.PR",
       "categories": [
-        "math.PR"
+        "math.PR",
+        "math-ph"
       ],
       "abs_url": "https://arxiv.org/abs/2609.20707",
       "pdf_url": "https://arxiv.org/pdf/2609.20707",
@@ -1819,7 +1820,7 @@
         "Kasper Larsen"
       ],
       "published": "2026-09-16T20:11:44Z",
-      "updated": "2026-09-16T20:11:44Z",
+      "updated": "2026-09-18T11:36:31Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -2293,7 +2294,7 @@
         "José Luis Romero"
       ],
       "published": "2026-09-16T14:04:28Z",
-      "updated": "2026-09-16T14:04:28Z",
+      "updated": "2026-09-18T10:41:09Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2656,7 +2657,7 @@
         "Jenna Zomback"
       ],
       "published": "2026-09-16T03:06:22Z",
-      "updated": "2026-09-16T03:06:22Z",
+      "updated": "2026-09-17T20:55:32Z",
       "primary_category": "math.DS",
       "categories": [
         "math.DS",
@@ -3484,6 +3485,53 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.16524",
       "pdf_url": "https://arxiv.org/pdf/2609.16524",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.20866",
+      "title": "Critical and near-critical influence bounds for ferromagnetic Ising models",
+      "abstract": "For a ferromagnetic Ising model on a graph of maximum degree $Δ\\ge3$, we prove a bound of order $\\sqrt n$ on every row of the influence matrix at the tree uniqueness threshold. The estimate is uniform in the degree, the external fields, and all pinnings. More generally, if the couplings are bounded by $β$ and $\\varepsilon=((Δ-1)\\tanhβ-1)_+$, the bound is $C(\\sqrt n+n\\varepsilon)$. The proof combines a pointwise cavity bound with a positive-series magnetization tilt and the field comparison theorem of Ding, Song and Sun. The critical estimate removes the logarithm in recent general graphical bounds for the ferromagnetic case. As a consequence, zero-field single-site Glauber dynamics mixes in polynomial time throughout the supercritical window $\\varepsilon=O(\\sqrt{\\log n/n})$, with the polynomial degree depending on the window size.",
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "published": "2026-09-15T01:49:49Z",
+      "updated": "2026-09-15T01:49:49Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cs.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.20866",
+      "pdf_url": "https://arxiv.org/pdf/2609.20866",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.20864",
+      "title": "Graph Decompositions at the Expectation Threshold",
+      "abstract": "For \\(n\\ge3\\) and a graph \\(H\\) on at most \\(n\\) vertices, let \\(q(H)\\) be the expectation threshold for its containment in \\(G(n,p)\\). We prove that there are absolute constants \\(a,L>0\\) such that, for every \\(C>0\\), every graph of degeneracy at most \\(C\\log n/\\log\\log n\\) has a deterministic edge decomposition into at most \\(\\lceil a(C+1)\\rceil\\) pieces, each with ordinary containment threshold at most \\(Lq(H)\\). This removes the maximum-degree hypothesis from a theorem of Ascoli, He, Park, and Talagrand in their approach to Talagrand's discrete convexity problem. With constants depending on the fixed parameters, a structural extension allows the addition of \\(O(\\log n)\\) vertices with arbitrary incident edges. The uniform main bound also gives an \\(O(1+\\log\\log n)\\)-piece decomposition for every target graph, with an absolute threshold multiplier. The main ingredient converts Li's two-set coupling for spread measures into a partition of a prescribed neighborhood list, fixed before the random host is sampled. It allows arbitrary overlaps and repetitions and controls all Hall matching conditions simultaneously by bounding target demand and host supply through common two-sided approximations under the biased host measure.",
+      "authors": [
+        "Jia-Qi Yang"
+      ],
+      "published": "2026-09-15T00:58:13Z",
+      "updated": "2026-09-15T00:58:13Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.20864",
+      "pdf_url": "https://arxiv.org/pdf/2609.20864",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-16",
@@ -5214,13 +5262,13 @@
     {
       "id": "2609.12666",
       "title": "Exact calibration of structural models via time-change",
-      "abstract": "In this note, we propose a general structural approach to model a default time $τ$ as the first-passage time (FPT) of a (``firm-value'') process $S$ below a (``debt'') barrier $K$ that comply with a pre-specified survival probability curve $G(t)=\\Pr(τ>t)$. Following an idea of Mbaye and Vrins (Mathematical Finance, 2022) applied to reduced-form models, our approach consists in two steps: choose a latent FPT model driven by a barrier $\\tilde{K}$ and process $\\tilde{S}$, and time-change those using a deterministic clock $Θ$ to get $K_t=\\tilde{K}_{Θ(t)}$ and $S_t:=\\tilde{S}_{Θ(t)}$, leading to the final FTP model $(K,S,Θ)$. As the market curve $G$ and the latent model $(\\tilde{K},\\tilde{S})$ are assumed to be given, the calibration step simply consists in finding the clock $Θ$ such that the distribution of the FPT of $S$ below $K$ coincides with the survival curve $G$. We show that this is achievable for a broad class of specified curves $G$ and latent FTP models. The calibration amounts to a simple inversion of a function, which is almost immediate provided that the latent model is tractable enough. In particular, we show that the AT1P model of Brigo, Morini and Tarenghi \\--- which is able to reproduce a broad range of CDS term-structures \\--- can be regarded as the FPT of a time-changed drifted Brownian motion to a constant barrier: $\\tilde{V}_t=μt+W_t$ and $\\tilde{K}_t=k<0$. This connection offers an elegant interpretation for the instantaneous volatility function featured in AT1P and yields an immediate calibration of the latter to perfectly match a target survival curve.",
+      "abstract": "In this note, we propose a general structural approach to model a default time $τ$ as the first-passage time (FPT) of a (``firm-value'') process $S$ below a (``debt'') barrier $K$ that comply with a pre-specified survival probability curve $G(t)=\\Pr(τ>t)$. Following an idea of Mbaye and Vrins (Mathematical Finance, 2022) applied to reduced-form models, our approach consists in two steps: choose a latent FPT model driven by a barrier $\\tilde{K}$ and process $\\tilde{S}$, and time-change those using a deterministic clock $Θ$ to get $K_t=\\tilde{K}_{Θ(t)}$ and $S_t:=\\tilde{S}_{Θ(t)}$, leading to the final FTP model $(K,S,Θ)$. As the market curve $G$ and the latent model $(\\tilde{K},\\tilde{S})$ are assumed to be given, the calibration step simply consists in finding the clock $Θ$ such that the distribution of the FPT of $S$ below $K$ coincides with the survival curve $G$. We show that this is achievable for a broad class of specified curves $G$ and latent FTP models. The calibration amounts to a simple inversion of a function, which is almost immediate provided that the latent model is tractable enough. In particular, we show that the AT1P model of Brigo, Morini and Tarenghi - which is able to reproduce a broad range of CDS term-structures - can be regarded as the FPT of a time-changed drifted Brownian motion to a constant barrier: $\\tilde{V}_t=μt+W_t$ and $\\tilde{K}_t=k<0$. This connection offers an elegant interpretation for the instantaneous volatility function featured in AT1P and yields an immediate calibration of the latter to perfectly match a target survival curve.",
       "authors": [
         "Frédéric Vrins",
         "Damiano Brigo"
       ],
       "published": "2026-09-11T10:11:47Z",
-      "updated": "2026-09-11T10:11:47Z",
+      "updated": "2026-09-18T08:07:58Z",
       "primary_category": "q-fin.MF",
       "categories": [
         "q-fin.MF",

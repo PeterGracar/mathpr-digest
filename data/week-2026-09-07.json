@@ -9,7 +9,7 @@
   "data_through": "2026-09-11",
   "total_submissions": 229,
   "fetched": 229,
-  "generated_at": "2026-09-18T07:24:52Z",
+  "generated_at": "2026-09-21T07:58:33Z",
   "entries": [
     {
       "id": "2609.09892",
@@ -2451,12 +2451,12 @@
     {
       "id": "2609.09556",
       "title": "High-probability guarantees for linear accessibility in feature superposition",
-      "abstract": "Neural networks can leverage feature superposition to encode more concepts than dimensions, but cross-feature interference constrains the linear accessibility of simultaneously active features. By framing linear accessibility as a compressed sensing problem, we derive high-probability bounds for fixed supports under subgaussian noise, proving the sufficient dimension scales linearly ($d=O_{\\varepsilon}(k \\log m)$) rather than prior worst-case quadratic limits. We then validate these bounds across system parameters through Gaussian-tail approximations. These results quantify the geometric constraints of the linear representation hypothesis, providing a framework for evaluating sparse autoencoders, compositional generalization, and neural interpretability.",
+      "abstract": "Neural networks can leverage feature superposition to encode more concepts than dimensions, but cross-feature interference constrains the linear accessibility of simultaneously active features. By framing linear accessibility as a compressed sensing problem, we derive high-probability bounds for fixed supports under subgaussian noise, proving the sufficient dimension scales linearly ($d=O_{\\varepsilon}(k \\log m)$) rather than prior worst-case quadratic limits. We characterize the asymmetry between active and inactive interference and the trade-off between interference and observation-noise budgets. We then validate these bounds across system parameters through Gaussian-tail approximations. We also introduce IHT-SAE, which uses learned iterative refinement to improve feature recovery beyond the limits of linear availability. These results quantify the geometric constraints of the linear representation hypothesis, providing a framework for evaluating sparse autoencoders, compositional generalization, and neural interpretability.",
       "authors": [
         "Enrico Vompa"
       ],
       "published": "2026-09-09T00:26:35Z",
-      "updated": "2026-09-09T00:26:35Z",
+      "updated": "2026-09-17T21:15:17Z",
       "primary_category": "stat.ML",
       "categories": [
         "stat.ML",
