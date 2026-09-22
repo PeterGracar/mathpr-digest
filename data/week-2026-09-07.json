@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-11",
-  "total_submissions": 229,
-  "fetched": 229,
-  "generated_at": "2026-09-21T07:58:33Z",
+  "total_submissions": 230,
+  "fetched": 230,
+  "generated_at": "2026-09-22T07:43:27Z",
   "entries": [
     {
       "id": "2609.09892",
@@ -4043,7 +4043,7 @@
         "Marc Potters"
       ],
       "published": "2026-09-07T08:36:22Z",
-      "updated": "2026-09-07T08:36:22Z",
+      "updated": "2026-09-21T13:44:00Z",
       "primary_category": "cond-mat.dis-nn",
       "categories": [
         "cond-mat.dis-nn",
@@ -4453,7 +4453,7 @@
         "Eva Loeser"
       ],
       "published": "2026-09-06T14:07:27Z",
-      "updated": "2026-09-06T14:07:27Z",
+      "updated": "2026-09-18T19:04:20Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4761,12 +4761,12 @@
     {
       "id": "2609.05847",
       "title": "A global spectral gap for Metropolis-adjusted Langevin algorithm with a uniformly randomized step size",
-      "abstract": "Let $π(\\mathrm{d} x)\\propto e^{-U(x)}\\,\\mathrm{d} x$ on $\\mathbb R^d$, where $0<m\\leq L<\\infty$, $mI_d\\preceq\\nabla^2U(x)\\preceq LI_d$, and $κ=L/m$. It is known that, under warm-start assumptions, fixed-step Metropolis-adjusted Langevin algorithm (MALA) with properly tuned step size has mixing time of order $κ\\sqrt{d}$ up to logarithmic factors. By contrast, when the condition number is bounded away from one, no single fixed step size yields a matching spectral-gap lower bound of order $(κ\\sqrt{d})^{-1}$ uniformly over this target class. We show that MALA with a uniformly randomized step size admits a spectral-gap lower bound of this size. At each iteration, the randomized-step MALA considered here draws $h$ uniformly from $(0,H)$ and performs one ordinary MALA transition with step size $h$. We show that, when $H$ is of order $(L\\sqrt{d})^{-1}$, the right spectral gap of randomized-step MALA admits a lower bound of order \\[ \\frac{1}{κ\\sqrt{d}\\,[1+\\log(d+1)+\\logκ]}. \\] A key ingredient in the proof is a Cheeger-type inequality for aggregating estimates of the one-step flow of MALA out of measurable sets at various step-size scales. It allows the scale used to control the flow to depend on the set and avoids the additional loss that would result from first estimating the conductance and then applying the standard Cheeger inequality. This work was developed with substantial assistance from ChatGPT, which suggested the uniformly randomized-step approach, developed the principal proof arguments, and generated the simulation and Lean 4 code. The human author checked and verified the mathematical content and take full responsibility for the results.",
+      "abstract": "Let $π(\\mathrm{d} x)\\propto e^{-U(x)}\\,\\mathrm{d} x$ on $\\mathbb{R}^d$, where $U$ is continuously differentiable and $m$-strongly convex with a globally $L$-Lipschitz gradient, $0<m\\leq L<\\infty$, and $κ=L/m$. It is known that, under warm-start assumptions, fixed-step Metropolis-adjusted Langevin algorithm (MALA) with properly tuned step size has mixing time of order $κ\\sqrt{d}$ up to logarithmic factors. By contrast, when the condition number is bounded away from one, no single fixed step size yields a matching spectral-gap lower bound of order $(κ\\sqrt{d})^{-1}$ uniformly over this target class. We establish a global spectral-gap lower bound for MALA with a uniformly randomized step size. At each iteration, the algorithm draws $h$ uniformly from $(0,H)$ and performs one ordinary MALA transition. Choosing $H$ of order $$\\frac{1}{L\\sqrt{d[1+\\log(d+1)+\\logκ]}}$$ yields a right spectral-gap lower bound of order $$\\frac{1}{κ\\sqrt{d[1+\\log(d+1)+\\logκ]}},$$ uniformly over the target class. A key ingredient in the proof is a Cheeger-type inequality for aggregating estimates of the one-step flow of MALA out of measurable sets at various step-size scales. It allows the scale used to control the flow to depend on the set and avoids the additional loss that would result from first estimating the conductance and then applying the standard Cheeger inequality. This work was developed with substantial assistance from ChatGPT, which suggested the uniformly randomized-step approach, developed the principal proof arguments, and generated the simulation and Lean 4 code. The human author checked and verified the mathematical content and takes full responsibility for the results.",
       "authors": [
         "Qian Qin"
       ],
       "published": "2026-09-05T03:22:46Z",
-      "updated": "2026-09-16T14:50:37Z",
+      "updated": "2026-09-21T03:10:31Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -5425,6 +5425,32 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.04789",
       "pdf_url": "https://arxiv.org/pdf/2609.04789",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-07",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.22240",
+      "title": "Statistical Inference for Adversarial Training: Central Limit Theorems via Optimal Transport",
+      "abstract": "The purpose of this paper is to rigorously quantify the statistical and learning-theoretic properties of adversarial training models for classification. Equivalently, we establish the statistical properties of empirical optimal partial transport. Precisely, first we provide two types of central limit theorems (CLT): CLT centered at the expected empirical value, and CLT centered at the population one with smoothing. These results are based on the uniqueness of optimal potential for various equivalent optimal transport formulations, and the empirical process theory argument. For the binary setting, we indeed prove the uniqueness of optimal potential by leveraging the connection between optimal partial transport and the derived multi-marginal optimal transport formula. As byproducts, we also obtain the stability of a saddle point of the adversarial training model, and the sample complexity and concentration probability of the generalization error.",
+      "authors": [
+        "Kim Jakwang",
+        "Kwon Dohyun"
+      ],
+      "published": "2026-09-04T03:14:00Z",
+      "updated": "2026-09-04T03:14:00Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.PR",
+        "math.ST",
+        "stat.ML"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.22240",
+      "pdf_url": "https://arxiv.org/pdf/2609.22240",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-07",

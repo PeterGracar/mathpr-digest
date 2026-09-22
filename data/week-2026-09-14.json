@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-18",
-  "total_submissions": 246,
-  "fetched": 246,
-  "generated_at": "2026-09-21T07:58:35Z",
+  "total_submissions": 248,
+  "fetched": 248,
+  "generated_at": "2026-09-22T07:43:29Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -665,6 +665,32 @@
       "bucket": "medium"
     },
     {
+      "id": "2609.22301",
+      "title": "Towards the spin-glass transition in finite dimensions via blue percolation",
+      "abstract": "We prove blue percolation in the Chayes-Machta-Redner representation of the zero-field Edwards-Anderson spin glass in high finite dimensions. For fixed symmetric iid couplings with $0<m=\\mathbb{E}|J|<\\infty$, the first percolation onset is asymptotic to $(2dm)^{-1}$ in periodic joint limits. For symmetric $\\pm1$ couplings, we give a computer-assisted dimension-22 certificate. For exponential-moment disorder, we also establish a percolating regime with exactly equal infinite-blue-sector densities and finite spin-glass susceptibility. In these periodic limits, persistent density imbalance would imply distinct spin-flip-related Gibbs states and a pressure cusp for a suitable finite local replica coupling, without requiring finite-blue cancellation. Proving imbalance remains open.",
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "published": "2026-09-14T17:09:03Z",
+      "updated": "2026-09-14T17:09:03Z",
+      "primary_category": "cond-mat.dis-nn",
+      "categories": [
+        "cond-mat.dis-nn",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.22301",
+      "pdf_url": "https://arxiv.org/pdf/2609.22301",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "announced": "2026-09-15",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
       "id": "2609.15585",
       "title": "Extension of Likelihood Ratio Analysis Method to Skorokhod $M_1$ Topology (with Application to Poissonian Smooth Change-Point Model)",
       "abstract": "We extend the Ibragimov-Khasminskii likelihood ratio analysis method, in the one-dimensional parameter case, to a framework based on the Skorokhod $M\\_1$ topology. The proposed framework applies to a broad class of statistical models, including those for which the normalized likelihood ratio processes are continuous while the limiting likelihood ratio process is discontinuous, a setting outside the scope of classical approaches based on the uniform or Skorokhod $J\\_1$ topologies. We derive sufficient conditions for the weak convergence of likelihood ratio processes in the space of c{à}dl{à}g functions on $\\RR$ vanishing at $\\pm\\infty$, endowed with the Skorokhod $M\\_1$ topology, and show how this convergence yields the asymptotic behavior of the maximum likelihood estimator. We also introduce new techniques for controlling the $M\\_1$ modulus of continuity. Although these techniques are particularly well suited to models in which all jumps and steep continuous transitions are in the same direction, they are of independent interest and may prove useful beyond this setting. As an application, we study a smooth change-point model for inhomogeneous Poisson processes in the fast regime, where the transition interval shrinks faster than $1/n$. We establish that in this case the maximum likelihood estimator has the same asymptotic behavior (consistency, rate of convergence, limiting distribution and convergence of moments) as in the corresponding ''pure'' change-point model.",
@@ -1015,12 +1041,12 @@
       "abstract": "We prove existence and uniqueness of a strong initial trace for every bounded kinetic solution of a stochastic scalar conservation law, although no initial value is prescribed and no nondegeneracy condition is imposed on the flux. The core of the proof is pathwise. After fixing a realization, the rescaled stochastic terms and kinetic measure vanish in the blow-up limit, so Panov's compactness argument applies; degenerate flux intervals are handled by recursive dimension reduction. The stochastic setting creates several additional difficulties. The martingale identities must remain valid on one common full-probability set throughout the reductions, which requires a parameterized stochastic-Fubini construction. Moreover, the pathwise trace is not automatically measurable because its exceptional sets may depend on the realization. Deterministic time averages and right-continuity of the filtration yield a jointly measurable initial trace, with local strong convergence along essential times, both almost surely and in mean.",
       "authors": [
         "Marko Erceg",
-        "Nikola Konatar",
         "Kenneth Karlsen",
+        "Nikola Konatar",
         "Darko Mitrovic"
       ],
       "published": "2026-09-17T17:25:17Z",
-      "updated": "2026-09-17T17:25:17Z",
+      "updated": "2026-09-19T11:17:24Z",
       "primary_category": "math.AP",
       "categories": [
         "math.AP",
@@ -2158,6 +2184,30 @@
       "bucket": "other"
     },
     {
+      "id": "2609.22334",
+      "title": "A rank-two spherical transform for eigenvector and singular-vector overlaps",
+      "abstract": "We define a rank-two extension $\\mathcal{H}^{(2)}$ of the spherical $\\mathcal{H}$-transform, together with its associated transform $\\mathcal{R}^{(2)}$. For sums, both transforms are additive. The transform $\\mathcal{R}^{(2)}$ yields a $4\\times4$ formula for the average product of two hermitized resolvents, and hence for off-diagonal eigenvector overlaps, recovering the Ginibre, elliptic, and bi-invariant formulas. We also treat correlated pairs of matrices, and obtain overlaps between their eigenvectors or singular vectors.",
+      "authors": [
+        "Pierre Bousseyroux"
+      ],
+      "published": "2026-09-16T15:07:42Z",
+      "updated": "2026-09-16T15:07:42Z",
+      "primary_category": "cond-mat.dis-nn",
+      "categories": [
+        "cond-mat.dis-nn",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.22334",
+      "pdf_url": "https://arxiv.org/pdf/2609.22334",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-17",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.18786",
       "title": "Delocalisation and scaling limit for the disordered long-range Discrete Gaussian Chain",
       "abstract": "In this paper, we study the effect of an external random field on the localisation / delocalisation of the long-range Discrete Gaussian Chain (DGC), recently studied by Garban arXiv:2312.04536 and Coquille \\emph{et al.} arXiv:2412.15782. We prove that the model is delocalised at every inverse temperature for any polynomial decay $α> 3/2$. This behaviour differs qualitatively from the one of the disorder-free long-range DGC, for which delocalisation at every temperature occurs only for $α> 2$, similarly to what happens for long-range Ising models as already proved by Aizenman and Wehr. Additionally, we provide a more detailed description of the delocalised phase by identifying the growth exponent and scaling limit of the height at the origin for any decay exponent $α> 3/2$.",
@@ -3007,7 +3057,7 @@
         "Yuval Peres"
       ],
       "published": "2026-09-15T02:05:07Z",
-      "updated": "2026-09-15T02:05:07Z",
+      "updated": "2026-09-19T10:43:47Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3251,15 +3301,15 @@
     },
     {
       "id": "2609.17053",
-      "title": "Forward recursive aggregator systems and the forward Epstein-Zin recursiveparadigm",
-      "abstract": "We introduce forward recursive aggregator systems in It__o-diffusion markets, bridging the theories of recursive utilities and of forward performance criteria. We derive the associated HJB SPDE and sufficient conditions for consistency and admissibility. We also develop a convex duality theory based on state price densities and identify the density generated by the optimal wealth process. For homothetic aggregators, we characterize a class of forward Epstein--Zin recursive utility processes, derive the optimal investment and consumption policies, and obtain explicit solutions in the Black and Scholes and Heston models.",
+      "title": "Forward recursive aggregator systems and the forward Epstein-Zin recursive paradigm",
+      "abstract": "We introduce forward recursive aggregator systems in It{ô}-diffusion markets, bridging the theories of recursive utilities and of forward performance criteria. The resulting criteria are constructed forward in time and accommodate arbitrary or rolling horizons. We derive the associated HJB SPDE and sufficient conditions for consistency and admissibility. We also develop a convex duality theory based on state price densities and identify the density generated by the optimal wealth process. For homothetic aggregators, we characterize a class of forward Epstein--Zin recursive utility processes, derive the optimal investment and consumption policies, and obtain explicit solutions in the Black and Scholes and Heston models.",
       "authors": [
         "Zakaria Bensaid",
         "Anis Matoussi",
         "Thaleia Zariphopoulou"
       ],
       "published": "2026-09-15T12:04:44Z",
-      "updated": "2026-09-15T12:04:44Z",
+      "updated": "2026-09-21T12:29:50Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3524,7 +3574,7 @@
         "Jia-Qi Yang"
       ],
       "published": "2026-09-15T00:58:13Z",
-      "updated": "2026-09-15T00:58:13Z",
+      "updated": "2026-09-21T04:39:35Z",
       "primary_category": "math.CO",
       "categories": [
         "math.CO",
@@ -4232,7 +4282,7 @@
         "Masoud Badiei Khuzani"
       ],
       "published": "2026-09-14T07:32:31Z",
-      "updated": "2026-09-14T07:32:31Z",
+      "updated": "2026-09-19T17:23:50Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4275,13 +4325,13 @@
     {
       "id": "2609.15025",
       "title": "Matrix Spencer: Eight Standard Deviations Suffice and an Almost-Linear Time Algorithm for Dense Input",
-      "abstract": "The Matrix Spencer conjecture asserts that for all symmetric matrices $A_1,\\ldots,A_n\\in\\mathbb{R}^{n\\times n}$ with $\\|A_i\\|\\le1$ there are signs $\\varepsilon_1,\\ldots,\\varepsilon_n\\in\\{-1,1\\}$ with $\\|\\sum_{i=1}^n\\varepsilon_iA_i\\|=O(\\sqrt n)$. Random signs give only the matrix-concentration bound $O(\\sqrt{n\\log n})$, and the conjecture was known only under rank, block-diagonal, or Frobenius-norm restrictions. We prove it: a signing of discrepancy below $8\\sqrt n$ always exists. We also give a randomized algorithm that finds a signing of discrepancy below $12\\sqrt n$ with failure probability at most $p$ using $n^{3+o(1)}\\operatorname{polylog}(1/p)$ arithmetic operations in the real-arithmetic model, which matches the size $n^3$ of the dense input up to subpolynomial factors. The existence proof is a partial-coloring argument with one new estimate: a hereditary Gaussian small-ball bound for the spectral body $\\{x\\in \\mathbb{R}^n:\\|\\sum_ix_iA_i\\|\\le R\\}$, proved by interpolating a log-partition function from a diagonal model to the noncommutative one under a matrix-weighted Poincaré inequality. Proving the conjecture and bringing the constant below $8$ are different problems. The partial-coloring argument loses a large factor twice, when it turns Gaussian measure into signs through a union bound and when it proves the small-ball estimate at a radius far larger than necessary. We remove the first loss by a lossless coding of Gaussian measure into signs and the second by smooth spectral barriers with certified coefficients. The algorithms project Gaussian points onto a smoothed version of the spectral body, whose derivatives are traces against one Gibbs matrix. Four successively cheaper ways of maintaining that matrix bring the running time down to $n^{3+o(1)}$.",
+      "abstract": "The Matrix Spencer conjecture asserts that for all symmetric matrices $A_1,\\ldots,A_n\\in\\mathbb{R}^{n\\times n}$ with $\\|A_i\\|\\le1$ there are signs $\\varepsilon_1,\\ldots,\\varepsilon_n\\in\\{-1,1\\}$ with $\\|\\sum_{i=1}^n\\varepsilon_iA_i\\|=O(\\sqrt n)$. We prove it: a signing of discrepancy below $8\\sqrt n$ always exists. We also give a randomized algorithm that finds a signing of discrepancy below $12\\sqrt n$ with failure probability at most $p$. The algorithm uses $n^{3+o(1)}\\operatorname{polylog}(1/p)$ arithmetic operations in the real-arithmetic model. This matches the size $n^3$ of the dense input up to subpolynomial factors. In the other direction, we prove that for every $n$ there are collections of symmetric matrices such that every signing has discrepancy at least $(2-o(1))\\sqrt{n}$. We present three different proofs of the matrix Spencer conjecture. The key to every proof is a hereditary small-ball estimate. This is a lower bound on the Gaussian measure of the spectral body $\\{x\\in \\mathbb{R}^n:\\|\\sum_ix_iA_i\\|\\le R\\}$ that holds for every subfamily of the matrices. The other ingredient turns that Gaussian measure into a partial signing. We give three approaches to obtain such a signing. The first one covers the cube by partially signed faces through Gaussian concentration with a constant $7\\cdot10^9$. The second proof replaces the covering by a projection lemma with explicit parameters for a constant $156000$. The third proof turns Gaussian measure into signs by a lossless coding, with no union bound. It proves the estimate at the right radius with smooth spectral barriers and certified coefficients. It gives a constant below $7.88$. For algorithms, the main idea is to project Gaussian points onto a smoothed spectral body. The $n^{3+o(1)}$ time algorithm tracks the Gibbs matrix of that body across coordinate-descent steps with sketched increments and random refreshes.",
       "authors": [
         "Zhao Song",
         "Lichen Zhang"
       ],
       "published": "2026-09-14T04:41:54Z",
-      "updated": "2026-09-14T04:41:54Z",
+      "updated": "2026-09-21T06:22:06Z",
       "primary_category": "cs.DS",
       "categories": [
         "cs.DS",
@@ -5194,7 +5244,7 @@
         "Amir Sepehri"
       ],
       "published": "2026-09-11T18:40:33Z",
-      "updated": "2026-09-11T18:40:33Z",
+      "updated": "2026-09-21T04:15:03Z",
       "primary_category": "stat.CO",
       "categories": [
         "stat.CO",
@@ -5377,7 +5427,8 @@
       "updated": "2026-09-11T15:09:00Z",
       "primary_category": "math.PR",
       "categories": [
-        "math.PR"
+        "math.PR",
+        "math.AP"
       ],
       "abs_url": "https://arxiv.org/abs/2609.12948",
       "pdf_url": "https://arxiv.org/pdf/2609.12948",
