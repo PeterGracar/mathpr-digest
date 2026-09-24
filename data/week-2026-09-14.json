@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-18",
-  "total_submissions": 248,
-  "fetched": 248,
-  "generated_at": "2026-09-22T07:43:29Z",
+  "total_submissions": 250,
+  "fetched": 250,
+  "generated_at": "2026-09-24T07:36:41Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -776,7 +776,7 @@
     },
     {
       "id": "2609.15346",
-      "title": "Triangular MCKean-Vlasov Forward Backward System with Jumps, Law-dependent Monotone Source, and Propagation of Chaos",
+      "title": "Occupation BAsed Propagation of Chaos for MacKean Vlasov Forward Backward Systems with Jumps and Monotone Sources",
       "abstract": "We study robust Mckean-Vlasov Forxard Backward systems with jumps under a nondominated family of probability measures. The backward equation contains a lawdependent nonsmooth monotone source motivated by asymmetric loss aversion. We establish well-posedness and stability of the system, analyze its Yosida regularization, and develop quantitative particle approximations. The main difficulty comes from the discontinuity of the minimal selection across switching interfaces, which prevents the use of direct Lipschitz estimates. To overcome this difficulty, we combine forward propagation of chaos with occupation estimates for the limiting forward process. Importantly, no occupation estimate is required for the particle system. Under a second-moment occupation condition, we obtain an improved joint convergence rate for the particle and Yosida approximations, controlling the forward and backward states, the martingale integrands, and the accumulated source. We also verify the required occupation conditions for several concrete jump models, including affine stable-like dynamics, predictable variable jump amplitudes, and a non-affine class obtained by smooth conjugacy",
       "authors": [
         "Tcheick Kayembe Tshiswaka",
@@ -785,7 +785,7 @@
         "Jean-Pierre Bosonga Bofeki Lounga"
       ],
       "published": "2026-09-14T10:32:54Z",
-      "updated": "2026-09-14T10:32:54Z",
+      "updated": "2026-09-21T20:21:44Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2363,12 +2363,12 @@
     {
       "id": "2609.19222",
       "title": "TV between Bernoulli products, up to constants",
-      "abstract": "We obtain efficiently computable upper and lower bounds for the total variation distance between two product Bernoulli measures whose ratio is bounded by an absolute constant.",
+      "abstract": "We obtain upper and lower bounds on the total variation distance between two product Bernoulli measures. The bounds are efficiently computable and match up to an absolute constant factor.",
       "authors": [
         "Gleb Smirnov"
       ],
       "published": "2026-09-16T13:49:53Z",
-      "updated": "2026-09-16T13:49:53Z",
+      "updated": "2026-09-22T03:39:14Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3284,7 +3284,7 @@
         "Leonard Pleschberger"
       ],
       "published": "2026-09-15T12:14:56Z",
-      "updated": "2026-09-15T12:14:56Z",
+      "updated": "2026-09-22T19:21:21Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3606,6 +3606,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.16439",
       "pdf_url": "https://arxiv.org/pdf/2609.16439",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.25063",
+      "title": "Optimal complete-feedback card guessing under nonincreasing valley weights: A proof of the Diaconis-Fulman-Holmes shelf-shuffling conjecture",
+      "abstract": "Let a random permutation $W\\in S_n$ represent the order of $n$ distinct cards. After each guess, the player learns the actual card, and the objective is to maximize the expected total number of correct guesses. Diaconis, Fulman, and Holmes conjectured that, after a single uniform, unbiased shelf shuffle, the direction-tracking strategy is optimal: first guess the smallest card, and thereafter choose the nearest remaining card in the direction of the most recent rise or fall. We prove a more general theorem: if \\[ \\mathbb P(W=w)=\\frac{f(v(w))}{\\sum_{σ\\in S_n}f(v(σ))}, \\] where $v(w)$ is the number of interior valleys of the permutation, $f$ is nonnegative and nonincreasing, and the denominator is positive, then direction tracking maximizes the conditional probability of correctly guessing the next card after every history of positive probability. It therefore maximizes the expected total number of correct guesses among all complete-feedback strategies. Here an interior valley is a position $2\\le i\\le n-1$ satisfying $w_{i-1}>w_i<w_{i+1}$. Combined with the known shelf-shuffling probability formula, this theorem proves the conjecture for every deck size and number of shelves. The key to the proof is a swap of adjacent remaining values that preserves the revealed prefix: starting from the preferred candidate, the swap leaves the valley count unchanged or increases it by one, thereby turning monotonicity of the weights into a conditional probability ordering after every history.",
+      "authors": [
+        "Congyi Luo"
+      ],
+      "published": "2026-09-14T21:28:27Z",
+      "updated": "2026-09-14T21:28:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.25063",
+      "pdf_url": "https://arxiv.org/pdf/2609.25063",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-16",
@@ -3956,6 +3979,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.16100",
       "pdf_url": "https://arxiv.org/pdf/2609.16100",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-15",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.25062",
+      "title": "Extremal expectations in card guessing with partial feedback: proofs of two conjectures of Diaconis-Graham-Spiro",
+      "abstract": "We study the minimum and maximum expected scores over all adaptive strategies in sequential card guessing with yes/no feedback. A deck contains $n$ labels, each appearing $m$ times, and is shuffled uniformly. The cards are guessed one at a time, and after each guess the player is told only whether it was correct. Always guessing the same label gives exactly $m$ points. How far can the expected score depart from $m$ if all previous feedback is used either to seek or to avoid correct guesses? Diaconis, Graham, and Spiro conjectured that the minimum expectation is $m-o(m)$ as $m\\to\\infty$ with $n$ sufficiently large in terms of $m$, and that, for each fixed $m$, the limit superior of the maximum expectation as $n\\to\\infty$ is at most $(e-1)m$. Writing these extrema as $P^-_{m,n}$ and $P^+_{m,n}$, we prove \\[ 0\\le m-P^-_{m,n}\\le3m^{3/4} \\qquad(n\\ge m\\ge1), \\] and the finite-parameter bound \\[ \\frac{P^+_{m,n}}m\\le\\sum_{k=1}^{n}\\frac1{k!}<e-1 \\] for all positive integers $m,n$. The first bound gives a first-order asymptotic uniform in $n\\ge m$; the universal constant $e-1$ in the second cannot be reduced. Thus both conjectures follow. The lower bound combines a switching comparison for restricted permutations with martingale second-moment estimates. For the upper bound, we represent the repeated cards as a random interleaving of independent decks of distinct cards and prove that the optimal expectation is additive when the component-deck labels are revealed.",
+      "authors": [
+        "Congyi Luo"
+      ],
+      "published": "2026-09-14T16:57:19Z",
+      "updated": "2026-09-14T16:57:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.25062",
+      "pdf_url": "https://arxiv.org/pdf/2609.25062",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-15",
@@ -4942,14 +4988,14 @@
     },
     {
       "id": "2609.13971",
-      "title": "Fractional Wiener chaos: Part 2. // Interface spectral chaos and decay of collective correlations",
-      "abstract": "We construct a product spectral decomposition from power-normalised parabolic-cylinder functions. At noninteger real orders, these functions are not square integrable with respect to the corresponding full-line Gaussian measure. Bringing the admissible half-line branches into the same Gaussian space and matching them at the origin gives a corrected orthonormal eigenbasis. A unitary transformation to a weighted probability space makes the eigenfunction corresponding to the lowest eigenvalue constant and permits consistent countable products. The resulting law is non-Gaussian under deformation, and the decomposition recovers classical Wiener chaos when the deformation is removed. We identify the associated closed gradient, adjoint divergence and deformed number operator. The Rodrigues formula covers all orders occurring in the spectral branches, including negative orders. Under deformation, however, changing both branch orders by the same nonzero amount breaks the required relation between them. Fractional evolution defined through spectral calculus preserves the basis. After unitary identification, the one-coordinate fractional evolution operators converge in operator norm to Gaussian and three-dimensional radial Ornstein-Uhlenbeck fractional evolutions at the respective parameter endpoints. Convergence is uniform on compact time intervals away from zero. We use the constructed product spectral decomposition to derive explicit expansions for collective threshold correlations under shared and independent inverse stable clocks. These expansions determine the algebraic decay rates and leading coefficients and provide explicit truncation error bounds. Under equilibrium initialisation, both models have identical one-coordinate process laws and identical fixed-time joint laws, yet collective correlations decay more slowly under a shared clock",
+      "title": "Fractional Wiener chaos: Part 2. Interface spectral chaos",
+      "abstract": "We construct a product spectral decomposition from power-normalised parabolic-cylinder functions. At noninteger real orders, these functions are not square integrable with respect to the corresponding full-line Gaussian measure. Bringing the admissible half-line branches into the same Gaussian space and matching them at the origin gives a corrected orthonormal eigenbasis. A unitary transformation to a weighted probability space makes the eigenfunction corresponding to the lowest eigenvalue constant and permits consistent countable products. The resulting law is non-Gaussian under deformation, and the decomposition recovers classical Wiener chaos when the deformation is removed. We identify the associated closed gradient, adjoint divergence and deformed number operator. The Rodrigues formula covers all orders occurring in the spectral branches, including negative orders. Under deformation, however, changing both branch orders by the same nonzero amount breaks the required relation between them. Fractional evolution defined through spectral calculus preserves the basis. After unitary identification, the one-coordinate fractional evolution operators converge in operator norm to Gaussian and three-dimensional radial Ornstein--Uhlenbeck fractional evolutions at the respective parameter endpoints. Convergence is uniform on compact time intervals away from zero. An application example with inverse stable clock is provided in the accompanying github repository.",
       "authors": [
         "Elena Boguslavskaya",
         "Elina Shishkina"
       ],
       "published": "2026-09-12T14:40:40Z",
-      "updated": "2026-09-12T14:40:40Z",
+      "updated": "2026-09-22T16:13:27Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -5606,13 +5652,13 @@
     {
       "id": "2609.12714",
       "title": "Minimal central slices of the regular simplex",
-      "abstract": "We prove that minimal-volume hyperplane sections of the regular simplex through its centroid are parallel to a facet. The proof combines variational methods with Fourier-analytic techniques and zero-diminishing arguments to show that every critical normal vector with no zero coordinates has at most three distinct values. Analysis of the two- and three-value cases then yields the sharp lower bound.",
+      "abstract": "We prove that minimal-volume hyperplane sections of the regular simplex through its centroid are parallel to a facet. The proof combines variational methods with Fourier-analytic techniques and zero-diminishing arguments to show that every critical normal vector has at most three distinct non-zero coordinates. Analysis of the two- and three-value cases then yields the sharp lower bound.",
       "authors": [
         "Gergely Ambrus",
         "Barnabás Gárgyán"
       ],
       "published": "2026-09-11T11:09:17Z",
-      "updated": "2026-09-11T11:09:17Z",
+      "updated": "2026-09-22T14:56:44Z",
       "primary_category": "math.MG",
       "categories": [
         "math.MG",
