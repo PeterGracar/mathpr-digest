@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-18",
-  "total_submissions": 250,
-  "fetched": 250,
-  "generated_at": "2026-09-24T07:36:41Z",
+  "total_submissions": 251,
+  "fetched": 251,
+  "generated_at": "2026-09-25T07:50:06Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -451,6 +451,31 @@
       "score": 4,
       "matched_keywords": [
         "random conductance"
+      ],
+      "announced": "2026-09-18",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.20546",
+      "title": "Fractional expectation thresholds and the \"second\" Kahn-Kalai conjecture",
+      "abstract": "We show that the uniform probability measure on copies of a nonempty graph $H$ in $K_n$ is $Cq_H\\log(2e(H))$-spread, where $q_H$ is its graphic expectation threshold. Consequently, the fractional expectation threshold of $H$ is at most $Cq_H\\log(2e(H))$. We remove the logarithmic factor for trees and for graphs whose average degree is at least the logarithm of their maximum degree. This proves the ``second'' Kahn-Kalai conjecture for these two classes, which encompass most of the standard families studied in random graph containment problems.",
+      "authors": [
+        "Tuan Tran"
+      ],
+      "published": "2026-09-17T15:12:09Z",
+      "updated": "2026-09-24T13:52:39Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.20546",
+      "pdf_url": "https://arxiv.org/pdf/2609.20546",
+      "score": 3,
+      "matched_keywords": [
+        "random graph"
       ],
       "announced": "2026-09-18",
       "own": false,
@@ -1275,29 +1300,6 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.20576",
       "pdf_url": "https://arxiv.org/pdf/2609.20576",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-09-18",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
-      "id": "2609.20546",
-      "title": "Fractional expectation thresholds and the \"second\" Kahn-Kalai conjecture",
-      "abstract": "We show that the uniform measure on copies of a graph $H$ is $Cq_H\\log(2e(H))$-spread, where $q_H$ is its graphic expectation threshold defined using expected count one. This gives a fractional expectation threshold of at most $C\\pe(H)\\log(2e(H))$. We remove the logarithmic loss for trees and for graphs whose maximum degree is at most exponential in their average degree. The ``second'' Kahn-Kalai conjecture therefore holds for all such graphs.",
-      "authors": [
-        "Tuan Tran"
-      ],
-      "published": "2026-09-17T15:12:09Z",
-      "updated": "2026-09-17T15:12:09Z",
-      "primary_category": "math.CO",
-      "categories": [
-        "math.CO",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.20546",
-      "pdf_url": "https://arxiv.org/pdf/2609.20546",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-18",
@@ -3543,6 +3545,30 @@
       "bucket": "other"
     },
     {
+      "id": "2609.28503",
+      "title": "Uniform displacement bounds and Gibbs limits for periodic one-dimensional Riesz gases",
+      "abstract": "For the neutral periodic one-dimensional Riesz gas with pair potential locally $-|x|^a$, $0<a<1$, we prove a particle-displacement variance bound of order $β^{-1}$, uniformly in the number of particles. Log-concavity also gives exponential displacement tails. Every stationary periodic thermodynamic limit is simple, has intensity one, and admits a stationary ordered matching to the unit lattice with the same bounds. Each limit satisfies the canonical Gibbs equations for the full-line interaction, with an ordinary symmetric spatial principal value for the exterior potential. The matching implies uniformly bounded interval number variance and a positive limiting second moment of the reciprocal-lattice Fourier average at sufficiently low temperature. The main estimate compares the inverse random Hessian, through deterministic electrical flows, to a transient long-range network.",
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "published": "2026-09-15T01:55:59Z",
+      "updated": "2026-09-15T01:55:59Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.stat-mech",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.28503",
+      "pdf_url": "https://arxiv.org/pdf/2609.28503",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.20866",
       "title": "Critical and near-critical influence bounds for ferromagnetic Ising models",
       "abstract": "For a ferromagnetic Ising model on a graph of maximum degree $Δ\\ge3$, we prove a bound of order $\\sqrt n$ on every row of the influence matrix at the tree uniqueness threshold. The estimate is uniform in the degree, the external fields, and all pinnings. More generally, if the couplings are bounded by $β$ and $\\varepsilon=((Δ-1)\\tanhβ-1)_+$, the bound is $C(\\sqrt n+n\\varepsilon)$. The proof combines a pointwise cavity bound with a positive-series magnetization tilt and the field comparison theorem of Ding, Song and Sun. The critical estimate removes the logarithm in recent general graphical bounds for the ferromagnetic case. As a consequence, zero-field single-site Glauber dynamics mixes in polynomial time throughout the supercritical window $\\varepsilon=O(\\sqrt{\\log n/n})$, with the polynomial degree depending on the window size.",
@@ -4539,12 +4565,12 @@
     {
       "id": "2609.14832",
       "title": "A constructive solution to Talagrand's Gaussian convexification problem",
-      "abstract": "Talagrand asked for an explicit construction of a large convex subset of a bounded Minkowski sum of a large Gaussian set. Let $A\\subset\\mathbb{R}^n$ be closed with $γ_n(A)\\ge 7/8$. We prove that for every $λ>4$ and every $4\\le t<λ$, one can construct a finite polyhedron $C\\subset\\mathbb{R}^n$ such that \\[ C\\subset λ(A+A+A) \\qquad\\text{and}\\qquad γ_n(C)\\ge 1-\\frac1t. \\] The construction is finite-dimensional: a separation argument produces polyhedral convex barriers, Gaussian integrability yields a uniform slope bound, and a finite net reduces the global problem to a finite convex minimization problem. As an application, we give a finite semidefinite construction of an optimal-scale ellipsoid. There is a universal constant $c>0$ such that, for $n\\ge2$, one can construct an ellipsoid $E$ satisfying \\[ γ_n(E)\\ge\\frac12 \\qquad\\text{and}\\qquad c\\sqrt{\\frac{\\log n}{n}}\\,E\\subset λ(A+A+A). \\] The same finite-barrier method also yields a constructive bounded-step convexification result for balanced Gaussian sets.",
+      "abstract": "Talagrand asked for a construction of a large convex subset of a bounded Minkowski sum of a large Gaussian set. We first prove a stronger nonsymmetric existential statement: if $A\\subset\\mathbb{R}^n$ is measurable and $γ_n(A)>2/3$, then $A+A+A$ contains a compact convex set of Gaussian measure at least $1/2$. Let now $A$ be closed with $γ_n(A)\\ge7/8$, let $Φ$ be the standard Gaussian distribution function, and put $a_0=Φ^{-1}(3/4)$. For every $Λ>1$ and every $0<p<2Φ(Λa_0)-1$ we construct a centrally symmetric finite polytope $C\\subsetΛ(A+A+A)$ with $γ_n(C)\\ge p$. Thus measure $3/4$ is obtained for every $Λ>1.705510\\ldots$. We give matching upper and lower bounds for the optimal high-measure dilation and show that the dilation profile used by the construction is sharp among all symmetric half-measure cores. Finally, if $γ_n(A)\\ge5/6+η$, we construct, for every $0<\\varepsilon\\le1/2$, a centered ellipsoid $E_\\varepsilon$ with $γ_n(E_\\varepsilon)\\ge1-\\varepsilon$ and \\begin{equation} \\frac{c}{Φ^{-1}(1-\\varepsilon/2)}\\sqrt{\\frac{\\log n}{n}}\\,E_\\varepsilon\\subset A+A+A. \\end{equation} Both the dimension dependence and the dependence on $\\varepsilon$ are optimal up to constants. The construction also gives a six-summand theorem for balanced sets and a second finite construction based on subgaussian tests.",
       "authors": [
         "Othmane Mazhar"
       ],
       "published": "2026-09-13T22:56:02Z",
-      "updated": "2026-09-13T22:56:02Z",
+      "updated": "2026-09-23T23:06:37Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
