@@ -238,8 +238,6 @@ def build(weeks=None):
     index = {
         "owner": config.OWNER,
         "profile_url": config.PROFILE_URL,
-        "back_url": config.BACK_URL,
-        "back_label": config.BACK_LABEL,
         "category": config.CATEGORY,
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "coauthors": config.COAUTHORS,
