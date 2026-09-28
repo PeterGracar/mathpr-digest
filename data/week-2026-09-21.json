@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 39,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-09-25",
-  "total_submissions": 206,
-  "fetched": 206,
-  "generated_at": "2026-09-25T07:50:08Z",
+  "total_submissions": 211,
+  "fetched": 211,
+  "generated_at": "2026-09-28T08:42:37Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -204,6 +204,31 @@
       "own": false,
       "coauthors": [],
       "bucket": "high"
+    },
+    {
+      "id": "2609.30347",
+      "title": "Loop content of bond percolation on hyperbolic triangulations: an exact identity and a $1/λ$ expansion",
+      "abstract": "We study the homology of percolation clusters on disk-shaped patches of the regular $\\{3,q\\}$ triangle tilings for $q\\ge7$. Varying $q$ gives a one-parameter family of hyperbolic tilings, from mildly curved ($q=7$) to deeply hyperbolic ($q=20$), and this paper measures and derives loop content as a function of curvature. A single growth-rate parameter $λ(q)$, the asymptotic ratio of successive ring sizes, governs every result. Total persistent $H_1$ of the bond-percolation complex, per vertex, is measured across $q=7,\\dots,20$ and found to be a nearly linear function of $1/λ(q)$. An exact identity reduces total loop persistence to the weight of the lattice's minimum spanning tree minus a boundary correction. The boundary correction follows from the ring recursion, and the spanning-tree weight is derived to first order in $1/λ(q)$ by attaching rings one at a time to a contracted interior, with a correction for loops that close through the ring outside. The resulting formula has no free parameters, gives the large-curvature intercept in closed form as $5/4-2π/(3\\sqrt3)$, and agrees with the measurements to within the size of the next-order term.",
+      "authors": [
+        "Zachary Treisman"
+      ],
+      "published": "2026-09-24T13:56:27Z",
+      "updated": "2026-09-24T13:56:27Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30347",
+      "pdf_url": "https://arxiv.org/pdf/2609.30347",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "announced": "2026-09-25",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
     },
     {
       "id": "2609.29806",
@@ -522,13 +547,13 @@
     {
       "id": "2609.29894",
       "title": "A Computer-Assisted Proof of Speed Monotonicity for the Biased Random Walk on a Galton-Watson Tree Beyond the Known Range",
-      "abstract": "The speed v(lambda) of the lambda-biased random walk on a supercritical Galton-Watson tree without leaves is conjectured to be nonincreasing on [0,m), where m is the mean offspring. Monotonicity is known only for small bias: lambda <= 1/1160, lambda <= 1/2, and, when every vertex has at least m_1 >= 2 children, lambda <= m_1/(1+sqrt(1-1/m_1)). For offspring uniform on {2,3} (m=2.5) the last bound is 1.1716. We prove, with computer assistance, that v is strictly decreasing on [0,1.755] for this law. The proof has three parts. Aidekon's speed formula gives v=(R-lambda)/(R+lambda) for an explicit functional R, so v decreases exactly when R/lambda does; we compare R/lambda at two biases directly, which avoids differentiating the conductance. A pathwise Lipschitz bound on the conductance in lambda turns that comparison into an inequality between expectations of explicit functions. A monotone sandwich of discretised laws gives two-sided bounds on the conductance law, and each lambda-cell is verified with exact rational arithmetic on top of bounded floating-point error; an independent interval-arithmetic implementation agrees on spot cells. The method stops where the crude Lipschitz bound becomes too weak; sharper control of the derivative of the conductance is what the full range needs. Code and certificates are public.",
+      "abstract": "The speed v(lambda) of the lambda-biased random walk on a supercritical Galton-Watson tree without leaves is conjectured to be nonincreasing on [0,m), where m is the mean offspring. For non-constant offspring, monotonicity is known only for small bias: lambda <= 1/1160, lambda <= 1/2, and, when every vertex has at least m_1 >= 2 children, lambda <= m_1/(1+sqrt(1-1/m_1)). For offspring uniform on {2,3} (m=2.5) the last bound is 2/(1+sqrt(1/2)) = 1.17157... We prove, with computer assistance, that v is strictly decreasing on [0,1.755] for this law. The proof has three parts. Aidekon's speed formula gives v=(R-lambda)/(R+lambda) for an explicit functional R, so v decreases exactly when R/lambda does; we compare R/lambda at two biases directly, which avoids differentiating the conductance. A pathwise Lipschitz bound on the conductance in lambda turns that comparison into an inequality between expectations of explicit functions. A monotone sandwich of discretised laws gives two-sided bounds on the conductance law, and each lambda-cell is verified with exact rational arithmetic on top of bounded floating-point error; an independent interval-arithmetic implementation re-certifies five cells, including the one that sets the endpoint. The method stops where the crude Lipschitz bound becomes too weak; sharper control of the derivative of the conductance is what the full range needs. Code and certificates are public.",
       "authors": [
         "Madhulatha Mandarapu",
         "Sandeep Kunkunuru"
       ],
       "published": "2026-09-24T14:40:01Z",
-      "updated": "2026-09-24T14:40:01Z",
+      "updated": "2026-09-25T07:04:01Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1104,6 +1129,29 @@
       "bucket": "other"
     },
     {
+      "id": "2609.30331",
+      "title": "Constants in the Weighted Law of the Iterated Logarithm under Long-Range Dependence: Hermite Rank Two",
+      "abstract": "At Hermite rank two, the constant in the weighted law of the iterated logarithm under long-range dependence is represented as the largest eigenvalue of a suitably normalized positive integral operator on the unit interval. The same eigenvalue determines the exponential-moment threshold and the logarithmic right-tail rate of the weighted second-chaos limit, which in the unweighted case is the Rosenblatt law. The weighted third spectral moment is evaluated in closed form. Convergent two-sided spectral enclosures are obtained, and in the weight-concentration limit the leading eigenvalue is characterized by a scalar equation with a uniform geometric remainder. At the unweighted memory boundary, the constant decays like the square root of the distance to criticality. Its leading coefficient is determined to $25$ decimal places with certified full-operator residual bounds. After division by the square-root boundary factor, the weight-concentration and memory limits commute. Their common coefficient differs from the unweighted boundary coefficient and lies in the certified interval $(1.370323114331,\\,1.370323114332)$. The joint asymptotic formula is established with a uniform two-parameter remainder bound.",
+      "authors": [
+        "Elina Moldavskaya"
+      ],
+      "published": "2026-09-24T01:14:16Z",
+      "updated": "2026-09-24T01:14:16Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30331",
+      "pdf_url": "https://arxiv.org/pdf/2609.30331",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-25",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.28875",
       "title": "Concentration of bounded sparse chaoses and sparse Khatri-Rao embeddings",
       "abstract": "We establish moment and mixed-tail inequalities for fixed-order decoupled homogeneous chaoses generated by independent, centered, sparse bounded random variables. Our bounds apply to arbitrary real rectangular coefficient tensors and describe the fluctuation scales through weighted slice and partition norms, with a Bennett-type logarithmic improvement in the largest-entry term. As an application, we derive guarantees for sparse Khatri--Rao embeddings that explicitly account for sparsity and input geometry.",
@@ -1130,14 +1178,61 @@
       "bucket": "other"
     },
     {
+      "id": "2609.30330",
+      "title": "Macroscopic freezing of a vector Gaussian free field conditioned to avoid a ball",
+      "abstract": "We consider a fixed finite number of independent two-dimensional discrete Gaussian free fields on a box of side $n$, with zero boundary values, conditioned so that the vector-valued field stays outside a fixed ball on a macroscopic interior domain. We prove that the field, divided by $\\log n$, converges in distribution in $L^2$ to twice the equilibrium potential of the domain multiplied by a uniform random unit vector. We also identify the exact capacity cost of the conditioning event and obtain alignment on a deterministic density-one set of sites, with no restriction on their mutual distance. The proof combines the norm repulsion theorem of Korzhenkova and Sepúlveda with Gaussian large deviations and the equality case in the capacity variational problem.",
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "published": "2026-09-24T00:10:40Z",
+      "updated": "2026-09-24T00:10:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.stat-mech",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30330",
+      "pdf_url": "https://arxiv.org/pdf/2609.30330",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-25",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30329",
+      "title": "Stability of Change-of-Numéraire Reweighting: An Exact Wasserstein Boundary",
+      "abstract": "Reweighting a probability law by a positive numéraire and pushing forward the payoff-to-numéraire ratio yields the change-of-numéraire reweighting: the swap-rate law under the annuity measure, the numéraire-inversion involution of martingale optimal transport, and the population form of self-normalized importance sampling. We characterize exactly when it is Wasserstein-stable. Along weakly convergent inputs with uniformly integrable numéraires and a strictly positive limiting numéraire mean, convergence of the reweighted laws is equivalent to a uniform integrability condition, computed under the inputs, on one explicit family in the payoff and numéraire. At first order the numéraire cancels, the sole obstruction being payoff mass where the numéraire vanishes; absent such mass, prices and first moments pass to the limit under a uniformly integrable payoff alone, with no assumption on the reciprocal numéraire. Two-atom examples with bounded inputs attain the threshold exactly. Applications characterize a standing moment assumption in the transport literature and delimit which annuity-measure statistics survive.",
+      "authors": [
+        "Shaosai Huang"
+      ],
+      "published": "2026-09-24T00:06:14Z",
+      "updated": "2026-09-24T00:06:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30329",
+      "pdf_url": "https://arxiv.org/pdf/2609.30329",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-25",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.28814",
       "title": "Wiman-Valiron inequalities in the unit disk outside sets of finite logarithmic measure",
-      "abstract": "We give affirmative answers to both parts of Question~2.6 posed by Grosse-Erdmann (2025) concerning Wiman--Valiron inequalities in the unit disk. For every unbounded analytic function in the disk, we establish the proposed iterated-logarithm inequalities outside exceptional sets of finite logarithmic measure. The corresponding power estimate is a corollary. Both conclusions follow from a variance bound for Khinchin families and a classical estimate for their largest atom. The multiplicative constants in the main inequalities can be chosen absolute. We also obtain a disk analogue of Rosenbloom's composition estimate, with an explicit boundary prefactor. The key step combines a boundary change of variable with a monotone auxiliary function whose derivative is exactly the variance of a rescaled member of the Khinchin family. A classical example shows that the leading logarithmic exponent $1/2$ cannot be decreased.",
+      "abstract": "We give affirmative answers to both parts of Question 2.6 posed by Grosse-Erdmann (2025) concerning Wiman--Valiron inequalities in the unit disk. For every unbounded analytic function in the disk, we establish the proposed iterated-logarithm inequalities outside exceptional sets of finite logarithmic measure. The corresponding power estimate is a corollary. Both conclusions follow from a variance bound for Khinchin families and a classical estimate for their largest atom. The multiplicative constants in the main inequalities can be chosen absolute. We also obtain a disk analogue of Rosenbloom's composition estimate, with an explicit boundary prefactor. The key step combines a boundary change of variable with a monotone auxiliary function whose derivative is exactly the variance of a rescaled member of the Khinchin family. A classical example shows that the leading logarithmic exponent $1/2$ cannot be decreased.",
       "authors": [
         "Víctor J. Maciá"
       ],
       "published": "2026-09-23T21:49:13Z",
-      "updated": "2026-09-23T21:49:13Z",
+      "updated": "2026-09-25T08:58:52Z",
       "primary_category": "math.CV",
       "categories": [
         "math.CV",
@@ -1195,6 +1290,32 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.28742",
       "pdf_url": "https://arxiv.org/pdf/2609.28742",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-25",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30321",
+      "title": "Adaptive Random Matrices in Gaussian Bandits: Spectral Universality and Selection-Induced Outliers",
+      "abstract": "Adaptive arm selection changes the distribution of the observations collected by a bandit algorithm, but it need not change their limiting empirical spectrum. We study Gaussian bandit designs in which the dimension and the number of observations grow proportionally. A quantitative coupling theorem compares the design generated by any causal selection rule with an independent Gaussian design. If the logarithm of the number of available arms is sublinear in the dimension, the empirical spectral distribution converges to the Marchenko-Pastur law, uniformly over the selection rule. Consequently, Gaussian Bayesian bandits have policy-independent first-order limits for posterior mean-square uncertainty, squared posterior covariance, and information acquisition. For linear-score selection, we obtain the exact conditional arm distribution and show that two-arm selection produces an exactly Wishart Gram matrix in every dimension, despite its nonzero conditional mean. For a fixed selection direction, we identify an explicit eigenvalue and eigenvector transition governed by the second moment of a Gaussian maximum. A counterexample shows that a direction's overlap with a reference signal does not determine this transition. Finally, an exponentially large arm pool permits a different bulk limit, establishing the order-sharpness of the arm-growth condition. These results distinguish global spectral stability from directional effects in adaptive bandit data.",
+      "authors": [
+        "Sudarshan Manikantan",
+        "Abhishek Bhattacharjee"
+      ],
+      "published": "2026-09-23T18:45:31Z",
+      "updated": "2026-09-23T18:45:31Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30321",
+      "pdf_url": "https://arxiv.org/pdf/2609.30321",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-25",

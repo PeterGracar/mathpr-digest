@@ -1,0 +1,462 @@
+{
+  "monday": "2026-09-28",
+  "sunday": "2026-10-04",
+  "iso_year": 2026,
+  "iso_week": 40,
+  "category": "math.PR",
+  "complete": false,
+  "finalized": false,
+  "data_through": "2026-09-28",
+  "total_submissions": 18,
+  "fetched": 18,
+  "generated_at": "2026-09-28T08:42:38Z",
+  "entries": [
+    {
+      "id": "2609.31183",
+      "title": "Recurrence and transience of open Jackson networks with balanced nodes",
+      "abstract": "Consider an open Jackson network with Poisson arrivals and exponential services, in which no node is overloaded and exactly~$k_0$ nodes have load equal to~$1$. We prove that the queue-length process is recurrent if and only if $k_0\\leq 2$. For that, we show that the network satisfies a sector condition, so its capacities are comparable to those of its symmetrisation; the latter is a reversible network whose recurrence/transience can be dealt with by standard means. We also discuss what the Lyapunov-function method gives in this setting; in particular, we show that every balanced queue is empty at arbitrarily large times, also in the transient case.",
+      "authors": [
+        "Serguei Popov"
+      ],
+      "published": "2026-09-25T12:14:39Z",
+      "updated": "2026-09-25T12:14:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31183",
+      "pdf_url": "https://arxiv.org/pdf/2609.31183",
+      "score": 9,
+      "matched_keywords": [
+        "recurrence and transience",
+        "transience"
+      ],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2609.31410",
+      "title": "Anatomical Connectivity from Tractography-free Diffusion Tensor Imaging and Its Application to EEG Brain Imagin",
+      "abstract": "This proof-of-concept paper demonstrates how the Kalman filter, as a brain imaging method, can be enhanced by incorporating raw diffusion tensor imaging (DTI) data without tractography, in addition to EEG recordings. An efficient algorithm is designed to streamline the otherwise tedious process of inferring connectivity between brain regions from DTI data. The DTI-based evolution model is applied to the Kalman filter and the Standardized Kalman filter, and these are compared with their conventional counterparts using the random walk evolution model. The numerical experiments use synthetic somatosensory and auditory evoked potentials. The results show that the DTI-modelled Kalman filter can obtain deep activity in the brainstem and thalamus. Moreover, the connection model limits the estimated spreads to the correct or nearest anatomical brain region.",
+      "authors": [
+        "Joonas Lahtinen"
+      ],
+      "published": "2026-09-25T15:34:09Z",
+      "updated": "2026-09-25T15:34:09Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31410",
+      "pdf_url": "https://arxiv.org/pdf/2609.31410",
+      "score": 4,
+      "matched_keywords": [
+        "connectivity",
+        "random walk"
+      ],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.31353",
+      "title": "Semilinear Neumann boundary value problems for measure-valued maps",
+      "abstract": "We study the Wasserstein lift of nonlinear Poisson systems with inhomogeneous Neumann boundary conditions. We establish the existence of minimizers using new estimates involving the $p$-moments of measure-valued traces. We also derive the optimality conditions, which turn out to be matrix-valued generalizations of pressureless Euler equations. While deterministic minimizers exist under suitable convexity assumptions and for one-dimensional source domains, we show that genuinely measure-valued minimizers arise in higher dimensions. In particular, we construct examples in which the lifted and classical variational problems have different minimum values, thereby precluding the solutions to the lifted problem from being deterministic, despite the absence of any a priori mechanism enforcing measure-valued behavior. To the best of our knowledge, this phenomenon is new in the nonlinear elliptic theory.",
+      "authors": [
+        "Aleksei Kroshnin",
+        "Hugo Lavenant",
+        "Dmitry Vorotnikov"
+      ],
+      "published": "2026-09-25T14:51:22Z",
+      "updated": "2026-09-25T14:51:22Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.DG",
+        "math.FA",
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31353",
+      "pdf_url": "https://arxiv.org/pdf/2609.31353",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.31085",
+      "title": "2D target search with boundary-induced resetting",
+      "abstract": "Most studies of stochastic search processes with resetting focus on spontaneous resetting events that occur at a random sequence of times typically generated by a Poisson process. One of the major consequences of spontaneous resetting is that it yields a finite mean first passage time (MFPT) in unbounded domains, resulting in an optimal resetting rate that minimises the MFPT. An optimal resetting rate can also occur in bounded domains provided that the reset point is not too far from the target. Recently, there has been growing interest in event-based rather than spontaneous resetting, where resetting is triggered when a specific threshold is reached. Identifying the threshold with a physical non-target boundary then leads to so-called boundary-induced resetting. In this paper, we explore the effects of boundary-induced resetting on single-particle diffusive search in a two-dimensional (2D) bounded domain $Ω$ containing one or more small interior targets. The interior target boundaries are totally absorbing, whereas the exterior boundary $\\partial Ω$ is sticky. That is, whenever the particle reaches a point on $\\partial Ω$ it remains attached for a random waiting time $τ$ after which it immediately resets to a fixed interior point $\\x_0\\in Ω$. Using renewal theory, matched asymptotic analysis and Green's functions we calculate the unconditional MFPT for absorption by any of the targets and compare this with the corresponding MFPT of a search process on the same domain with a reflecting surface $\\partial Ω$ and no resetting. We show that boundary-induced resetting only reduces the MFPT relative to the no resetting case if the searcher's reset point $\\x_0$ is sufficiently close to one of the targets.",
+      "authors": [
+        "Kevin Chen",
+        "Paul C. Bressloff"
+      ],
+      "published": "2026-09-25T10:25:29Z",
+      "updated": "2026-09-25T10:25:29Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31085",
+      "pdf_url": "https://arxiv.org/pdf/2609.31085",
+      "score": 3,
+      "matched_keywords": [
+        "poisson process"
+      ],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.30648",
+      "title": "Random walk in a non-homogeneous random environment on some random trees and the non-negative integers",
+      "abstract": "In this paper, we consider a random walk in a non-homogeneous random environment on two types of random trees and non-negative integers. The random trees here have progeny distributions that depend on the parent's generation. We provide a sharp threshold for the type of the random walk in a random environment on the random trees and the non-negative integers, up to the critical case. Then, we find the speed of the random walk on the non-negative integers and on random spherically symmetric trees. We use the method based on the relationship between the mean exit time from a vertex and speed. Meanwhile, we discuss several special cases that could be derived from those results. We also include many limiting formulas for sequences and series in the appendix, which are helpful for this study and others.",
+      "authors": [
+        "Tamer Oraby",
+        "András Telcs"
+      ],
+      "published": "2026-09-25T00:39:06Z",
+      "updated": "2026-09-25T00:39:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30648",
+      "pdf_url": "https://arxiv.org/pdf/2609.30648",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31578",
+      "title": "Algorithmic trading and stochastic integration",
+      "abstract": "We study simple predictable processes whose coefficients are represented by neural networks. On finite measure spaces, we establish density results for neural networks in Orlicz spaces. For filtrations generated by a stochastic process, measurable random variables, including at stopping times, can be approximated by neural networks depending on finitely many observations. Every stochastic integral with respect to a semimartingale can then be approximated, in the semimartingale topology, by integrals of such simple predictable processes. We show that restricting trading strategies to this class leaves the minimal mean-variance hedging error under partial information unchanged and obtain a no-free-lunch characterization in terms of equivalent martingale measures. Finally, the Bichteler-Dellacherie characterization of semimartingales remains valid even upon restricting the predictable integrands to those whose coefficients are represented by neural networks.",
+      "authors": [
+        "Aleksandar Arandjelovic",
+        "Uwe Schmock"
+      ],
+      "published": "2026-09-25T17:38:40Z",
+      "updated": "2026-09-25T17:38:40Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31578",
+      "pdf_url": "https://arxiv.org/pdf/2609.31578",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31487",
+      "title": "Singular Backward SDEs for Optimal Control with State Constraints",
+      "abstract": "We investigate a class of backward stochastic differential equations (BSDEs) with at most quadratic growth which explode at a possibly unbounded random horizon, defined through the first hitting of zero of an adapted Ito process. In contrast with the classical theory of singular BSDEs, the explosion is generated by the nonlinear dependence of the generator on the martingale integrand, rather than by a superlinear coercivity condition in the solution component. We construct a minimal singular solution and derive two-sided estimates on its explosion, together with weighted BMO estimates for the martingale integrand. We also obtain the uniqueness and exact explosion rates under additional structural assumptions. For Hamiltonian generators, we establish a verification theorem for an infinite-horizon stochastic optimal control problem with possible non-Markovian state constraints, showing that the BSDE feedback induces the unique optimal constrained law. We finally specialize the theory to exit times of uniformly elliptic Markov diffusions and recover the connection with large solutions of viscous Hamilton-Jacobi equations.",
+      "authors": [
+        "Mathieu Lise",
+        "Nizar Touzi"
+      ],
+      "published": "2026-09-25T16:29:46Z",
+      "updated": "2026-09-25T16:29:46Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31487",
+      "pdf_url": "https://arxiv.org/pdf/2609.31487",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31369",
+      "title": "Convergence of a fully discrete approximation for the stochastic 2D Euler equations with Kraichnan transport noise",
+      "abstract": "We study a fully discrete approximation theory for the two-dimensional incompressible Euler equations on $\\mathbb{T}^{2}$, in vorticity form, driven by Kraichnan-type transport noise and with $\\mathbb{H}^{-1}(\\mathbb{T}^2)$-valued initial vorticity. The main new ingredient is a finite-dimensional coercivity estimate for the torus Kraichnan model, which captures at the discrete level the regularizing mechanism induced by the rough transport noise. Together with a new compactness strategy based on continuous equation-based interpolants and localized discrete estimates, this coercivity estimate gives tightness of the approximations and shows that subsequential limit is a weak martingale solution of the Euler equations.",
+      "authors": [
+        "Abhishek Chaudhary",
+        "Ujjwal Koley",
+        "Andreas Prohl"
+      ],
+      "published": "2026-09-25T15:04:53Z",
+      "updated": "2026-09-25T15:04:53Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.NA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31369",
+      "pdf_url": "https://arxiv.org/pdf/2609.31369",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31345",
+      "title": "On the asymptotic shape of quantile surfaces",
+      "abstract": "This article is concerned with the asymptotic shape of quantile surfaces, defined as the set of quantiles at a given level $α$ generated by a controlled one-dimensional distribution. Specifically, when the distribution arises as a linear combination of log-normal random variables and the control is a vector of positive coefficients, we prove that quantile surfaces are globally concave in the left tail ($α\\to0$) and globally convex in the right tail ($α\\to1$). Moreover, these surfaces exhibit asymptotic separation of scale and shape.",
+      "authors": [
+        "Florian Gach",
+        "Simon Hochgerner"
+      ],
+      "published": "2026-09-25T14:44:45Z",
+      "updated": "2026-09-25T14:44:45Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31345",
+      "pdf_url": "https://arxiv.org/pdf/2609.31345",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31187",
+      "title": "Universality of cutoff for the Exclusion Process",
+      "abstract": "Under a fairly general condition on the underlying jump rates, we prove that the Exclusion Process with fixed particle density exhibits cutoff at time $t_{mix}\\sim \\frac{1}{2}{t}_{rel} \\log N$, where $N$ is the volume and ${t}_{rel}$ the relaxation time of the single-particle dynamics. Our result covers, in particular, the standard setting of uniform nearest-neighbor jumps on large discrete tori in any fixed dimension and, more generally, on any sequence of vertex-transitive graphs with bounded degree and polynomially diverging diameter. Our (short and entirely human) proof combines Wilson's method, the Octopus Inequality, Fourier analysis on Hamming slices, and a sharp comparison with the Dirichlet form of a natural accelerated variant of the dynamics.",
+      "authors": [
+        "Jonathan Hermon",
+        "Gady Kozma",
+        "Justin Salez"
+      ],
+      "published": "2026-09-25T12:19:50Z",
+      "updated": "2026-09-25T12:19:50Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31187",
+      "pdf_url": "https://arxiv.org/pdf/2609.31187",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31127",
+      "title": "Large and Moderate Deviations for Conservative Tail-Index Estimation",
+      "abstract": "To design systems that are protected against events much rarer than the observational record, extreme-value methods are needed to extrapolate distribution tails. Tail-index estimators such as the Hill estimator are central to this extrapolation, but overestimating the tail exponent can lead to substantial underestimation of rare-event probabilities. Motivated by this, we derive large- and moderate-deviation asymptotics for the Hill estimator and use them to construct estimators whose probability of exceeding the true tail index decays at a controlled exponential rate (the decay rate). In the large-deviations regime, we show that a simple rescaled version of the Hill estimator achieves an optimal balance between bias and decay rate among scale-invariant estimators based on the same top $k$ order statistics. Under a second-order condition, we quantify the effect of the Hill bias, analyze a bias-corrected estimator, and identify sufficient conditions for moderate deviations in the boundary case where the second-order parameter $ρ$ equals zero.",
+      "authors": [
+        "Martijn Gösgens",
+        "Bart P. G. van Parys",
+        "Bert Zwart"
+      ],
+      "published": "2026-09-25T11:21:47Z",
+      "updated": "2026-09-25T11:21:47Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31127",
+      "pdf_url": "https://arxiv.org/pdf/2609.31127",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.31102",
+      "title": "Affine pure-jump Volterra fields",
+      "abstract": "We study a class of non-negative spatio-temporal random fields that exhibit self-exciting clustering, which we refer to as affine pure-jump Volterra fields. They are defined via stochastic integration of a Volterra kernel against a thinned Poisson random measure and the thinning is such that the field admits a representation as a stochastic integral of the same kernel, but against a random measure whose compensator has a density that is pointwise affine in the field itself. This representation leads to affine transform formulas characterizing the Laplace transform of functionals of the field up to the solution of a deterministic non-linear Volterra integral equation. Affine pure-jump Volterra random fields extend a non-negative finite-first-moment subclass of pure-jump affine Volterra processes to the random-field setting. The framework includes non-negative finite-variation ambit fields, marked Hawkes systems, and branching-type models as special cases, and we make these connections explicit through examples.",
+      "authors": [
+        "Sven Karbach",
+        "Thomas K. Kloster"
+      ],
+      "published": "2026-09-25T10:40:38Z",
+      "updated": "2026-09-25T10:40:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.31102",
+      "pdf_url": "https://arxiv.org/pdf/2609.31102",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30808",
+      "title": "Optimal Sample Exponents for Direct Discrete-Gaussian SVP Search on Haar Random Lattices",
+      "abstract": "We determine the optimal sample exponent for direct discrete Gaussian SVP search on Haar random unimodular lattices, counting zero outputs. The output is one sampled vector, optionally divided by the greatest common divisor of its lattice coordinates. For every fixed approximation factor $1\\leqγ<\\sqrt e$, the exponent is $γ^2/(2e)-\\logγ$ in natural logarithmic units; it is zero for $γ\\geq\\sqrt e$. For exact SVP this gives $0.2653689\\ldots$ in base two. The converse permits arbitrary positive widths chosen from the lattice and all previous outputs, and a fixed width attains every exponent above the threshold. Aggarwal, Dadush, Regev, and Stephens-Davidowitz already give a width within a factor two of optimal for exact SVP on each lattice. We determine the explicit Haar typical rate and show that primitive reduction preserves it. An explicit finite dimensional converse controls all widths simultaneously, including recovery from long multiples; together with finite attainment bounds, it yields query guarantees in both directions. The proof uses random lattice moments and a pointwise Gaussian bound optimized over the width. We account for sampling error and separate sample requirements from generation costs in comparisons with the random lattice search of Pouly and Shen and later algorithms.",
+      "authors": [
+        "Masahiro Kaminaga"
+      ],
+      "published": "2026-09-25T04:36:06Z",
+      "updated": "2026-09-25T04:36:06Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30808",
+      "pdf_url": "https://arxiv.org/pdf/2609.30808",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30689",
+      "title": "Comment on \"Symmetric Pseudo-Random Matrices\"",
+      "abstract": "In 2018, Soloveychik, Xiang and Tarokh considered a pseudo-random symmetric circulant matrix constructed from binary Golomb sequences of length $n=2^m-1$, and claimed a proof that its empirical spectral distribution converges almost surely to the semicircle law as $n$ grows to infinity by the method of moments. In this comment note we show that their argument contains several technical flaws and inappropriate applications of technical lemmas. Instead we demonstrate that the eigenvalues of the matrix are simply a normalized twisted Kloosterman sum varying over the multiplicative character, to which we apply Katz's result directly to establish the asymptotically semicircle spectral distribution deterministically.",
+      "authors": [
+        "Chin Hei Chan"
+      ],
+      "published": "2026-09-25T01:52:24Z",
+      "updated": "2026-09-25T01:52:24Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30689",
+      "pdf_url": "https://arxiv.org/pdf/2609.30689",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30680",
+      "title": "A Log-Star Comparison Between Expectation Threshold and Fractional Expectation Threshold",
+      "abstract": "We proved a log-star comparison between the expectation threshold $q(\\mathcal F)$ and the fractional expectation threshold $q_f(\\mathcal F)$ for any nontrivial increasing family $\\mathcal F$ on a finite ground set $V$ of size $|V|=N$. Specifically, we show that $$q_f(\\mathcal F)\\le64\\log_2^*(N+2)\\,q(\\mathcal F),$$ where we define $\\log_2^* x$ to be the least integer $k\\ge0$ such that applying $\\log_2$ repeatedly $k$ times gives a number at most $1$.",
+      "authors": [
+        "Xuan Fang",
+        "Tianyu Wang"
+      ],
+      "published": "2026-09-25T01:35:56Z",
+      "updated": "2026-09-25T01:35:56Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30680",
+      "pdf_url": "https://arxiv.org/pdf/2609.30680",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30590",
+      "title": "Potential Hessian Ascent IV: Sampling the Sherrington-Kirkpatrick model at $β< 1$",
+      "abstract": "We give a polynomial-time algorithm to sample from the Gibbs measure of the Sherrington-Kirkpatrick (SK) model with $o_n(1)$ error in total-variation distance (TVD) at any inverse-temperature $β< 1$. The algorithm combines algorithmic stochastic localization (ASL) with rejection sampling over path-space via Jarzynski's equality (JE). The analysis extends the authors' prior $β< 1/2$ result [arXiv:2605.03718] by replacing all global regularity requirements in the stochastic differential equation (SDE) error analysis with local regularity around likely trajectories. The relaxed regularity is established using Celentano's proof of the local strong convexity of the TAP free energy [arXiv:2208.09550]. The analysis utilizes the cavity interpolation theory and free probability toolkit developed in the authors' previous result, where the former applies nearly verbatim and the latter applies supplemented with Lipschitz and $C^2$ extensions of various functions. The ASL and JE analysis arises from using the TAP free energy as an efficiently computable proxy for the actual free energy of the stochastically localized Gibbs measure [$ §$ 3, arXiv:2605.03718]. We give a list of \\vocab{desiderata} encapsulating the approximation and regularity properties required of the TAP free energy, relaxing those of [$ §$ 2.5, arXiv:2605.03718] to only require local regularity. These generic desiderata are potentially applicable in other settings where a free energy surrogate exists, giving algorithmic sampling guarantees while bypassing the usual functional inequalities based approach.",
+      "authors": [
+        "Holden Lee",
+        "Juspreet Singh Sandhu",
+        "Jonathan Shi"
+      ],
+      "published": "2026-09-24T22:08:43Z",
+      "updated": "2026-09-24T22:08:43Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30590",
+      "pdf_url": "https://arxiv.org/pdf/2609.30590",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30585",
+      "title": "Linear time mixing and pre-cutoff for oriented kinetically constrained models",
+      "abstract": "We establish linear time precutoff for oriented kinetically constrained models (KCMs) on a $d$-dimensional box of side length $n$, whenever the finite-volume spectral gap is bounded away from zero uniformly in $n$. A typical example is the North-East model, a $0$-$1$ spin system on the two-dimensional integer lattice that evolves according to the following rule: whenever a site's southerly and westerly nearest neighbours have spin $0$, with rate one it resets its own spin by tossing a $(1-q)$-coin; at all other times its spin remains frozen. This settles, in the oriented case, a conjecture which states that there is linear time precutoff for all KCMs in the (open) ergodic parameter regime ($q>q_c$). The result has been shown recently, for general update families, in a perturbative regime ($q$ close to $1$). The previous general upper bound on the mixing time for oriented update families, in the full ergodic regime, was $O(n \\log n)$. The proof combines a spectral estimate for a certain killed process with a graphical coupling to a stationary process and a backward witness path argument, exploiting the orientation of the constraints, to control the probability of failing to couple.",
+      "authors": [
+        "Paul Chleboun"
+      ],
+      "published": "2026-09-24T21:58:54Z",
+      "updated": "2026-09-24T21:58:54Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30585",
+      "pdf_url": "https://arxiv.org/pdf/2609.30585",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.30525",
+      "title": "Sudakov minoration for unconditional log-concave vectors with negatively associated magnitudes",
+      "abstract": "We prove the Sudakov minoration principle, with a universal constant, for unconditional log-concave random vectors whose coordinate magnitudes are negatively associated. The main step is a deterministic selection theorem: pairwise witnesses in convex downwardclosed sets yield, on an exponentially large subfamily, one fixed witness per label separating it from every other retained label. The selection combines a prefix counting inequality with convex separation in the space of all label-coordinate arrays. Negative association then controls the expected number of active joint-tail witnesses, while a Bernoulli argument on complementary coordinate sets retains the random signs. The proof uses joint upper-orthant probabilities and applies negative association only under the original law. Consequences include minoration for products of Orlicz-based log-concave measures and a covering estimate in the moment metric, expressed geometrically through polar Lp centroid bodies.",
+      "authors": [
+        "Witold Bednorz",
+        "Rafal Martynek",
+        "Rafal Meller"
+      ],
+      "published": "2026-09-24T20:19:42Z",
+      "updated": "2026-09-24T20:19:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.30525",
+      "pdf_url": "https://arxiv.org/pdf/2609.30525",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-28",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    }
+  ]
+}
