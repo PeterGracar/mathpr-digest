@@ -274,8 +274,8 @@ INDEX_HTML = r"""<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" content="#f8f4ee" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#111216" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f6f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
 <title>math.PR Weekly Digest &middot; Peter Gracar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -827,9 +827,11 @@ STYLE_CSS = r"""/* Digest-specific overlay on the live gracar.org stylesheet, wh
    shadows), the link-underline system, the header/nav/footer chrome and the
    system-driven light/dark switch are all inherited from there, so restyling
    the homepage restyles this page too. This file owns only the digest's
-   bucket hues, layout, and components. */
+   bucket hues, layout, and components. Match the site's register: small
+   radii (--radius-*), border-only cards, no pills, no shadows and no
+   tracked-uppercase labels; the dark --own hue is the site's dark accent. */
 :root{ --own:#950000; --co:#e65100; --hi:#2e7d32; --med:#1565c0 }
-@media(prefers-color-scheme:dark){:root{ --own:#ff9f87; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6 }}
+@media(prefers-color-scheme:dark){:root{ --own:#f28b82; --co:#ffab40; --hi:#69f0ae; --med:#64b5f6 }}
 body{font-size:var(--text-sm)}
 .weeklink,.entry-week{background-image:none}
 summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
@@ -838,7 +840,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .wrap{width:min(100% - 2rem,var(--site-max-width));margin:0 auto}
 /* fallback shade if the hotlinked banner.webp fails to load (the site's
    background shorthand resets background-color, so this later rule wins) */
-.site-header{background-color:#2b1310}
+.site-header{background-color:#101619}
 .page-intro{margin-top:clamp(1.5rem,3vw,2.4rem)}
 /* #main is a grid cell here, not the site's centred prose column */
 #main{flex:none;width:auto;margin:0;padding:0}
@@ -847,7 +849,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .search input{width:100%;padding:.55rem .7rem;border-radius:var(--radius-md);border:1px solid var(--color-border);
   background:var(--color-surface);color:var(--color-text);font:400 var(--text-sm)/1.4 var(--font-body)}
 .searchstat{margin:.35rem .15rem 0;font-size:var(--text-xs);color:var(--color-text-muted)}
-#sidebar h2{font:600 var(--text-xs)/1.2 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
+#sidebar h2{font:600 var(--text-xs)/1.2 var(--font-body);
   color:var(--color-text-muted);margin:1.2rem 0 .5rem}
 .yearhead,.monthhead{width:100%;display:flex;justify-content:space-between;align-items:center;
   background:transparent;border:none;color:var(--color-text);cursor:pointer;
@@ -879,7 +881,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 /* if the chips still can't fit beside the date, the cluster wraps to its own
    right-aligned line rather than breaking the date label */
 .badges{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px;flex-shrink:0;margin-left:auto}
-.b{font-size:var(--text-xs);font-weight:600;padding:.05rem .4rem;border-radius:999px;
+.b{font-size:var(--text-xs);font-weight:600;padding:.05rem .4rem;border-radius:var(--radius-sm);
   background:var(--color-surface-soft);color:var(--color-text-muted)}
 .b.high{background:color-mix(in srgb,var(--hi) 14%,transparent);color:var(--hi)}
 .b.medium{background:color-mix(in srgb,var(--med) 14%,transparent);color:var(--med)}
@@ -891,7 +893,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
    caption: small, muted, one phrase per line */
 .foot{display:flex;flex-direction:column;gap:.1rem;max-width:none;margin:.9rem .15rem 0;
   font-size:var(--text-xs);line-height:1.5;color:var(--color-text-muted)}
-.chip{font-size:var(--text-xs);font-weight:600;padding:.1rem .55rem;border-radius:999px}
+.chip{font-size:var(--text-xs);font-weight:600;padding:.1rem .55rem;border-radius:var(--radius-sm)}
 .chip.own{background:color-mix(in srgb,var(--own) 14%,transparent);color:var(--own)}
 .chip.coauthor{background:color-mix(in srgb,var(--co) 15%,transparent);color:var(--co)}
 .chip.high{background:color-mix(in srgb,var(--hi) 14%,transparent);color:var(--hi)}
@@ -902,18 +904,18 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .wstats .hlown{color:var(--own);font-weight:600}
 .tag-prog{font-size:var(--text-xs);font-weight:600;vertical-align:middle;
   background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent);
-  padding:.1rem .55rem;border-radius:999px;letter-spacing:.04em;text-transform:uppercase}
+  padding:.1rem .55rem;border-radius:var(--radius-sm)}
 .progress{margin:0 0 1.1rem;padding:.55rem .8rem;border:1px solid color-mix(in srgb,var(--color-accent) 40%,transparent);
   border-radius:var(--radius-md);background:color-mix(in srgb,var(--color-accent) 8%,transparent);
   color:var(--color-text);font-size:var(--text-sm)}
 .progress::first-letter{color:var(--color-accent)}
 .weeklink .dot{color:var(--color-accent);font-size:10px;vertical-align:middle}
 .bucket{margin-bottom:1.6rem}
-.bhead{font:600 var(--text-xs)/1.3 var(--font-body);text-transform:uppercase;letter-spacing:.08em;
+.bhead{font:600 var(--text-sm)/1.3 var(--font-body);
   color:var(--color-text-muted);border-bottom:1px solid var(--color-border);
   padding-bottom:.4rem;margin:0 0 .9rem;display:flex;align-items:center;gap:.5rem}
 .bhead .ct{background:var(--color-surface-soft);color:var(--color-text-muted);font-size:var(--text-xs);
-  padding:0 .5rem;border-radius:999px;letter-spacing:0}
+  padding:0 .5rem;border-radius:var(--radius-sm)}
 .bhead.collapsible{cursor:pointer}
 .bhead.collapsible:hover{color:var(--color-text)}
 .bbody.hidden{display:none}
@@ -921,11 +923,11 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .bucket.coauthor .bhead{color:var(--co)}
 .bucket.high .bhead{color:var(--hi)}
 .entry{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);
-  box-shadow:var(--shadow-card);padding:clamp(.9rem,1.8vw,1.2rem);margin-bottom:.8rem}
+  padding:clamp(.9rem,1.8vw,1.2rem);margin-bottom:.8rem}
 .entry.b-coauthor{border-color:color-mix(in srgb,var(--co) 45%,transparent);
-  background:linear-gradient(180deg,color-mix(in srgb,var(--co) 8%,var(--color-surface)),var(--color-surface))}
+  background:color-mix(in srgb,var(--co) 6%,var(--color-surface))}
 .entry.b-own{border-color:color-mix(in srgb,var(--own) 50%,transparent);
-  background:linear-gradient(180deg,color-mix(in srgb,var(--own) 8%,var(--color-surface)),var(--color-surface))}
+  background:color-mix(in srgb,var(--own) 6%,var(--color-surface))}
 .entry.b-high{border-left:3px solid var(--hi)}
 .cobanner{color:var(--co);font-weight:600;font-size:var(--text-xs);margin-bottom:.35rem}
 .ownbanner{color:var(--own);font-weight:600;font-size:var(--text-xs);margin-bottom:.35rem}
@@ -934,7 +936,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .authors .co{color:var(--co)}
 .authors .own{color:var(--own)}
 .meta{font-size:var(--text-xs);color:var(--color-text-muted);display:flex;flex-wrap:wrap;gap:.35rem;align-items:center;margin-bottom:.45rem}
-.cat{background:var(--color-surface-soft);padding:.05rem .5rem;border-radius:999px;font-size:var(--text-xs)}
+.cat{background:var(--color-surface-soft);padding:.05rem .5rem;border-radius:var(--radius-sm);font-size:var(--text-xs)}
 .cat.prim{background:color-mix(in srgb,var(--color-accent) 14%,transparent);color:var(--color-accent)}
 .idlink{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:var(--text-xs)}
 .meta .ann{white-space:nowrap}
@@ -942,7 +944,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .abs summary:hover{color:var(--color-text)}
 .abs p{margin:.5rem 0 0;color:var(--color-text);font-size:var(--text-sm)}
 .entry-week{display:inline-block;margin-bottom:.45rem;font-size:var(--text-xs);font-weight:600;
-  color:var(--color-text-muted);background:var(--color-surface-soft);padding:.05rem .55rem;border-radius:999px}
+  color:var(--color-text-muted);background:var(--color-surface-soft);padding:.05rem .55rem;border-radius:var(--radius-sm)}
 .entry-week:hover{color:var(--color-accent)}
 .loadmore{display:block;width:100%;margin:.4rem 0 0;padding:.7rem;border:1px dashed var(--color-border);
   border-radius:var(--radius-md);background:var(--color-surface);color:var(--color-accent);cursor:pointer;
@@ -950,7 +952,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .loadmore:hover{border-color:var(--color-accent);background:var(--color-surface-soft)}
 .kws{margin-top:.55rem;display:flex;flex-wrap:wrap;gap:.3rem}
 .kw{font-size:var(--text-xs);font-weight:600;background:var(--color-surface-soft);color:var(--color-text-muted);
-  padding:.05rem .5rem;border-radius:999px}
+  padding:.05rem .5rem;border-radius:var(--radius-sm)}
 .empty{color:var(--color-text-muted);padding:1.8rem 0}
 @media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static}}
 """
