@@ -9,7 +9,7 @@
   "data_through": "2026-09-18",
   "total_submissions": 251,
   "fetched": 251,
-  "generated_at": "2026-09-28T10:40:23Z",
+  "generated_at": "2026-09-29T08:32:17Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -665,14 +665,14 @@
     {
       "id": "2609.16708",
       "title": "Brownian motion on the complex general group and the non-compact Jacobi process",
-      "abstract": "In this paper, we introduce and study a new matrix-valued process built out of truncations of the Brownian motion on complex positive definite matrices and of its inverse. In particular, we prove that its eigenvalue process is a non-compact Jacobi particle system on $(1,\\infty)$. Surprisingly, the same particle system occurred in \\cite{BDW} in relation with the Brownian motion on the non-compact complex Grassmann manifold. In this respect, we provide some evidence supporting this occurrence and based on the realization of the Grassmann manifold as a generalized Poincaré disc. We proceed further to the spectral study of the large size limit of our matrix model and prove results that parallel those obtained by the second author for the free Jacobi process.",
+      "abstract": "In this paper, we introduce and study a new non Hermitian matrix-valued process built from truncations of Brownian motion on complex positive-definite matrices and of its inverse. We prove that its eigenvalue process is valued in $(1,+\\infty)$ and that it forms a non-compact Jacobi particle system. Surprisingly, the same particle system occurs in \\cite{BDW} in connection with Brownian motion on a non-compact complex Grassmann manifold. In this respect, we supply evidences showing that this occurrence holds true only at the spectral level and not on the corresponding matrix diffusions. We then study the large-size limit of our matrix model and prove results parallel to those obtained by the second author for the free Jacobi process.",
       "authors": [
         "Martin Auer",
         "Nizar Demni",
         "Nicolas Gilliers"
       ],
       "published": "2026-09-15T06:32:45Z",
-      "updated": "2026-09-15T06:32:45Z",
+      "updated": "2026-09-26T09:36:00Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -904,14 +904,14 @@
     },
     {
       "id": "2609.14225",
-      "title": "Likelihood-Coin Poisson Sampling for Bayesian Inverse Problems: Exact Sampling and Sharp Complexity",
-      "abstract": "We develop an exact direct-sampling framework for Bayesian inverse problems whose bounded forward observables can be queried through Bernoulli events rather than numerically evaluated. A Bernstein--Poisson construction converts these events into scaled Gaussian likelihood coins. Thinning a prior-based Poisson point process with these coins yields a posterior point process whose locations, conditional on its cardinality, are independent posterior draws; the cardinality also provides an unbiased estimator of the reduced evidence. The main theoretical contribution is a sharp analysis of the actual early-stopped computational work. In the small-noise regime, the work is governed by the local prior-predictive mass near the exact-fit set, revealing a predictive-dimension effect distinct from the nominal dimension of the unknown. A multivariate extension accommodates correlated Gaussian observation errors and gives a precision-weighted allocation of factory effort. For a bounded class of elliptic resolvent problems, Feynman--Kac representations, Poisson killing, and lazy random-series evaluation provide exact continuum Bernoulli oracles without introducing a spatial discretization or a fixed parameter truncation in the posterior target. Numerical experiments illustrate posterior thinning in parameter space, confirm the sharp work regimes, and validate the function-valued PDE construction.",
+      "title": "Exact Likelihood-Coin Poisson Sampling for Bayesian Inverse Problems with Sharp Complexity Bounds",
+      "abstract": "We develop an exact posterior-sampling framework for Bayesian inverse problems when selected bounded forward observables can be accessed through Bernoulli events. A Bernstein--Poisson construction converts these forward coins into scaled Gaussian likelihood coins, and thinning an inflated prior Poisson point process yields posterior atoms that are iid conditional on their number. For independent Gaussian observations, we derive an exact mean-work identity for the implemented early-stopped factory and sharp small-noise complexity laws governed by local prior-predictive mass near the exact-fit set; a factorial-moment construction extends the likelihood factory to correlated Gaussian errors. The posterior algorithm is model-agnostic once Bernoulli access is available. As one continuum realization, we use Feynman--Kac sampling, Poisson killing, and lazy random-series evaluation for a bounded elliptic resolvent problem with a function-valued coefficient. Numerical experiments validate the forward and likelihood coins, support the predicted work regimes, and demonstrate posterior sampling without deterministic spatial discretization or fixed parameter truncation in the target. A matched-accuracy benchmark against finite-difference prior rejection illustrates how deterministic discretization bias changes the posterior accuracy--cost balance.",
       "authors": [
         "Zhiliang Deng",
         "Xiaomei Yang"
       ],
       "published": "2026-09-13T01:38:18Z",
-      "updated": "2026-09-13T01:38:18Z",
+      "updated": "2026-09-28T07:02:57Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -937,7 +937,7 @@
         "Kuan Yang"
       ],
       "published": "2026-09-11T02:24:17Z",
-      "updated": "2026-09-11T02:24:17Z",
+      "updated": "2026-09-26T02:42:09Z",
       "primary_category": "cs.DS",
       "categories": [
         "cs.DS",
@@ -3529,7 +3529,7 @@
         "Zhen Wu"
       ],
       "published": "2026-09-15T02:14:04Z",
-      "updated": "2026-09-15T02:14:04Z",
+      "updated": "2026-09-28T13:27:47Z",
       "primary_category": "math.OC",
       "categories": [
         "math.OC",
@@ -4378,7 +4378,7 @@
         "Atmadeep Sengupta"
       ],
       "published": "2026-09-14T06:01:15Z",
-      "updated": "2026-09-14T06:01:15Z",
+      "updated": "2026-09-28T09:31:24Z",
       "primary_category": "math.CO",
       "categories": [
         "math.CO",
@@ -5777,14 +5777,14 @@
     },
     {
       "id": "2609.12590",
-      "title": "Tight Sampling Complexity with stochastic gradient oracles in Fixed Dimensions",
-      "abstract": "We investigate the stochastic-gradient query complexity of sampling smooth strongly log-concave distributions in any fixed Euclidean dimension. The potential is $μ$-strongly convex and $L$-smooth, with an unknown mode in the ball of radius $μ^{-1/2}$ about the origin. We have access to unbiased stochastic oracles with the variance at most $σ^2$. For every $σ^2\\ge0$ and total variation (TV) accuracy $0<\\varepsilon\\le1/10$, we prove that the tight complexity of sampling a distribution within $ε$-TV distance from the target distribution is \\[ N^\\star_{\\text{TV}}=Θ\\!\\left(\\log(1+κ)+ \\frac{σ^2}{με}\\right), \\] where $κ:=\\frac Lμ$ is the condition number. Note that this complexity bound is simultaneously tight for the condition number $κ$ and accuracy $ε$. Besides, our tight complexity bound is adaptive to noiseless setting $σ=0$, which is $ N^\\star_{\\text{TV}}=Θ\\!\\left(\\log(1+κ)\\right)$.",
+      "title": "Tight Sampling Complexity with Stochastic Gradient Oracles in Fixed Dimensions",
+      "abstract": "We establish the stochastic-gradient query complexity of sampling smooth strongly log-concave distributions in every fixed dimension $d\\geq1$. For $μ$-strongly convex, $L$-smooth potentials with unknown minimizers $x_f^\\star$ in the ball $\\mathbb{B}(0,μ^{-1/2})$, and unbiased gradient oracles with variance at most $σ^2$, the minimax worst-case expected query complexity is $Θ\\left(\\log(1+κ)+\\frac{σ^2}{μ\\varepsilon}\\right)$, jointly optimal for the condition number $κ:=L/μ$, variance $σ^2\\ge 0$, and TV accuracy $0<\\varepsilon\\leq 1/10$. In the noiseless setting $σ=0$, this tight complexity $Θ\\left(\\log(1+κ)\\right)$ is independent of $\\varepsilon$. Moreover, a gradient-only sampler generates an exact sample with ${O}(\\log(1+κ))$ worst-case expected queries. Without previous ball $\\mathbb{B}(0,μ^{-1/2})$, exact sampling from any initial point $x_0$ can be implemented with expected cost ${O}\\left(\\log(1+κ)+\\log(1+\\sqrtμ\\|x_0-x_f^\\star\\|)\\right)$, without knowing the initial distance. We also show that dependence on initial distance is generally unavoidable.",
       "authors": [
         "Weiming Ou",
         "Xiao Wang"
       ],
       "published": "2026-09-11T08:44:06Z",
-      "updated": "2026-09-11T08:44:06Z",
+      "updated": "2026-09-26T15:20:41Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
