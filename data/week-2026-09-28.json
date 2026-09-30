@@ -6,10 +6,10 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-09-29",
-  "total_submissions": 69,
-  "fetched": 69,
-  "generated_at": "2026-09-29T08:32:21Z",
+  "data_through": "2026-09-30",
+  "total_submissions": 92,
+  "fetched": 92,
+  "generated_at": "2026-09-30T08:35:39Z",
   "entries": [
     {
       "id": "2609.32480",
@@ -62,6 +62,87 @@
       "own": false,
       "coauthors": [],
       "bucket": "high"
+    },
+    {
+      "id": "2609.38017",
+      "title": "Quantum percolation conjecture on regular trees",
+      "abstract": "For Bernoulli bond percolation on every regular tree of degree at least three, we prove that infinite clusters appear strictly before absolutely continuous spectrum. Throughout an explicit supercritical interval, the adjacency operator of every open cluster almost surely has no absolutely continuous component. Together with Bordenave's theorem, this gives $p_c<p_{ac}<1$.",
+      "authors": [
+        "Simon Becker",
+        "Izak Oltman"
+      ],
+      "published": "2026-09-29T17:01:39Z",
+      "updated": "2026-09-29T17:01:39Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "cond-mat.dis-nn",
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.38017",
+      "pdf_url": "https://arxiv.org/pdf/2609.38017",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.37897",
+      "title": "Non-equilibrium fluctuations of gradient exclusion processes in dimension $d\\le 3$",
+      "abstract": "We consider a gradient, speed-change, symmetric exclusion process on the discrete torus $T^d_n$, $d\\le 3$, whose empirical measure evolves, on the diffusive scale, according to a non-linear parabolic equation. We prove that, starting from a sequence of initial states whose relative entropy with respect to the inhomogeneous product measure associated with the initial profile is $o(n^{d/2})$, and whose density fluctuation field converges, the density fluctuation field converges, in $L^1(0,T; H_{- r})$, to the solution of a linear stochastic partial differential equation with time-dependent coefficients driven by a conservative space-time white noise.",
+      "authors": [
+        "Claudio Landim",
+        "Sunder Sethuraman"
+      ],
+      "published": "2026-09-29T15:59:58Z",
+      "updated": "2026-09-29T15:59:58Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.stat-mech"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37897",
+      "pdf_url": "https://arxiv.org/pdf/2609.37897",
+      "score": 4,
+      "matched_keywords": [
+        "inhomogeneous"
+      ],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2609.36195",
+      "title": "A two-scale approach for sampling local free energy minimisers",
+      "abstract": "When a free energy admits several local minimisers, the associated mean-field particle system exhibits a metastable behavior, undergoing random transitions between these minimisers. However, when the number of particles is large, these transitions are rare events and typically occur at a time-scale which is out of reach for simulations. In this work, we introduce a system of particles coupled with a slow macroscopic external variable which approximately follows a Langevin dynamics associated to a coarse-grained free energy. The empirical distribution of the particle system thus samples all local minimisers of the initial free energy, with transition times which are now independent from the number of particles. The construction is inspired by a theoretical tool: the two-scale approach for proving log-Sobolev inequalities for Gibbs measures.",
+      "authors": [
+        "Antoine Leclerc",
+        "Pierre Monmarché"
+      ],
+      "published": "2026-09-28T19:57:39Z",
+      "updated": "2026-09-28T19:57:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AP",
+        "math.OC"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36195",
+      "pdf_url": "https://arxiv.org/pdf/2609.36195",
+      "score": 3,
+      "matched_keywords": [
+        "particle system"
+      ],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
     },
     {
       "id": "2609.35320",
@@ -299,6 +380,453 @@
       "own": false,
       "coauthors": [],
       "bucket": "medium"
+    },
+    {
+      "id": "2609.36728",
+      "title": "Stochastic dominance of first return times for nearest-neighbor random walks on $\\mathbb{Z}^d$",
+      "abstract": "For a $d$-dimensional probability vector $\\mathbf{h}=(h_1,\\dots, h_d)$, let $(S^{\\mathbf{h}}_n)_{n\\geq 0}$ be a nearest-neighbor random walk on $\\mathbb{Z}^d$ such that at each step, it moves to one of the two nearest neighbors in the $i$-th dimension with probability $\\frac{1}{2} h_i$ ($i=1,\\dots, d$). Let $T^{\\mathbf{h}}=\\inf\\{n\\geq 1: S^{\\mathbf{h}}_n=(0,\\dots,0)\\}$, the first return time to the origin. For two $d$-dimensional probability vectors $\\mathbf{h}'$ and $\\mathbf{h}''$ with the former majorizing the latter, we show that $T^{\\mathbf{h}'}$ is stochastically smaller than $T^{\\mathbf{h}''}$. In particular, the first return time for the $d$-dimensional simple random walk is stochastically larger than $T^{\\mathbf{h}}$ for all $d$-dimensional probability vectors $\\mathbf{h}$.",
+      "authors": [
+        "Shoou-Ren Hsiau",
+        "Ting-Yi Tsai",
+        "Yi-Ching Yao"
+      ],
+      "published": "2026-09-29T05:03:50Z",
+      "updated": "2026-09-29T05:03:50Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36728",
+      "pdf_url": "https://arxiv.org/pdf/2609.36728",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.38132",
+      "title": "Achieving an $O(1/N)$ Optimality Gap in Average-Reward Weakly-Coupled MDPs",
+      "abstract": "We study average-reward weakly-coupled Markov decision processes (WCMDPs), where a WCMDP consists of $N$ smaller MDPs, called arms, that share multiple per-step budget constraints. We consider the setting where the arms have identical model parameters, multiple actions, and state- and action-dependent costs. For restless bandits (RBs), a well-studied special case of WCMDPs, prior work has developed policies that achieve an $O(1/\\sqrt{N})$ optimality gap under general conditions, and has further identified conditions under which policies can achieve a better-than-$1/\\sqrt{N}$ optimality gap. However, for general WCMDPs, no prior result achieves an optimality gap better than $1/\\sqrt{N}$. In this paper, we identify conditions analogous to those for RBs under which a better-than-$1/\\sqrt{N}$ optimality gap is achievable, and design a policy that attains an $O(1/N)$ optimality gap. Notably, unlike prior approaches based on generalizing priority orderings, our policy is not priority-based but rather is designed to induce locally linear mean-field dynamics.",
+      "authors": [
+        "Yige Hong",
+        "Xiangcheng Zhang",
+        "Qiaomin Xie",
+        "Yudong Chen",
+        "Weina Wang"
+      ],
+      "published": "2026-09-29T17:53:39Z",
+      "updated": "2026-09-29T17:53:39Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.38132",
+      "pdf_url": "https://arxiv.org/pdf/2609.38132",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.38061",
+      "title": "Kruskal-style algorithm for Boltzmann equation molecule reduction",
+      "abstract": "We are interested in the molecule reduction algorithm used by Deng, Hani and Ma. This algorithm allows them to establish a rigidity theorem, which plays a central role in the long-time derivation of the Boltzmann equation using the hard-sphere dynamics. In the present article, we show that this algorithm is a graph traversal algorithm of Kruskal type, and we prove that it constructs a Kruskal spanning tree of the input molecule.",
+      "authors": [
+        "Yvain Bruned",
+        "Valentin Clarisse"
+      ],
+      "published": "2026-09-29T17:27:40Z",
+      "updated": "2026-09-29T17:27:40Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.38061",
+      "pdf_url": "https://arxiv.org/pdf/2609.38061",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.38044",
+      "title": "A Tale of Two Walks: Kipnis, Marchioro and Presutti Meet Kac in a Quantum World",
+      "abstract": "We reveal an unexpected connection between the parallel Kac's walk and the Kipnis-Marchioro-Presutti (KMP) process. The twirling channel induced by the parallel Kac's walk on the symmetric subspace is exactly encoded by a classical Markov chain on partitions, which lifts to a parallel KMP process on complete graphs. This correspondence reduces the analysis of the twirling channel to the mixing of the parallel KMP process. We prove that $O(\\log d+\\log(1/\\varepsilon))$ repetitions suffice to approximate Haar twirling on the symmetric subspace of $(\\mathbb C^d)^{\\otimes t}$ to error $\\varepsilon$, uniformly in the number of copies $t$. For the standard KMP process on general graphs, we prove a mixing-time analogue of Aldous's conjecture: at fixed accuracy, the mixing time of the $t$-particle process is at most a constant times the single-particle mixing time multiplied by the logarithm of the number of vertices, uniformly in $t$. As an application, we improve the total variation mixing-time bound for coordinate hit-and-run on the $n$-dimensional standard simplex from $\\widetilde O(n^3)$ (Kook and Vempala, 2026) to $\\widetilde O(n)$, while removing the dependence on the initial distribution. Our main technical contribution is conditional product structure for both parallel and standard KMP processes. Conditioned on suitable auxiliary randomness, the labeled particles evolve independently. Combining this structure with an exact coupling yields mixing bounds uniform in the number of particles for both unlabeled KMP models. These bounds are sharp up to logarithmic factors and imply rapid convergence of the parallel Kac twirling channel on the symmetric subspace.",
+      "authors": [
+        "Qian Chen",
+        "Jingcheng Liu",
+        "Minglong Qin",
+        "Leonard Schulman",
+        "Fang Song",
+        "Penghui Yao",
+        "Mingnan Zhao"
+      ],
+      "published": "2026-09-29T17:17:59Z",
+      "updated": "2026-09-29T17:17:59Z",
+      "primary_category": "quant-ph",
+      "categories": [
+        "quant-ph",
+        "cs.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.38044",
+      "pdf_url": "https://arxiv.org/pdf/2609.38044",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37881",
+      "title": "Global Structure and Local Specifications in Sublinear Valuation",
+      "abstract": "This work studies the relationships among sublinear valuation rules, uncertainty structures, and local specifications in a time-homogeneous Markovian framework with killing. These objects are linked, under finiteness and locality of the upper generator and a Lyapunov condition, by three maps: robust valuation, globalization, and localization. First, we show that the corresponding classes of uncertainty structures and sublinear valuation rules are order-isomorphic via the robust valuation map. Second, our analysis clarifies how local specifications constrain sublinear valuation and uncertainty structures, as well as what information localization and globalization preserve. In particular, the compositions of localization and globalization need not recover the original objects but yield canonical extremal elements. Third, the sublinear valuation generated by a local specification is characterized by the greatest viscosity subsolution of the associated Hamilton--Jacobi--Bellman equation. Finally, each uncertainty structure with killing admits a unique representation by a family of pairs consisting of a cumulative discounting process and an underlying state law. These results provide a framework for order relations, probabilistic and PDE-based representations, and model recovery in sublinear valuation without requiring uniqueness of the underlying martingale problems or a viscosity comparison principle.",
+      "authors": [
+        "Jongjin Park",
+        "David Criens",
+        "Hyungbin Park"
+      ],
+      "published": "2026-09-29T15:53:57Z",
+      "updated": "2026-09-29T15:53:57Z",
+      "primary_category": "q-fin.MF",
+      "categories": [
+        "q-fin.MF",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37881",
+      "pdf_url": "https://arxiv.org/pdf/2609.37881",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37846",
+      "title": "Visitation measures for non-linear iterations with random perturbations",
+      "abstract": "A sequence of non-linear iterations with non-identically distributed random perturbations is studied. The asymptotic behaviour of the sequence is described via its visitations measures, which are deterministic measures that allow one to estimate the time spent by the sequence in the neighbourhoods of its partial limits. The results obtained are compared with statements regarding the statistical convergence of the sequence of iterations under study",
+      "authors": [
+        "Andrey A. Dorogovtsev",
+        "Iryna Nishchenko"
+      ],
+      "published": "2026-09-29T15:41:42Z",
+      "updated": "2026-09-29T15:41:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37846",
+      "pdf_url": "https://arxiv.org/pdf/2609.37846",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37805",
+      "title": "Markov property for systems driven by the Brownian sheet",
+      "abstract": "We study stochastic systems driven by a Brownian sheet and formulate a Markov property adapted to their two-parameter structure. For time-space homogeneous Itô sheets, the future evolution from a point $(t,x)$ is not determined by the single value $Y(t,x)$ alone, but also by the boundary data along the horizontal and vertical edges issuing from $(t,x)$. We therefore show that the enlarged state consisting of the triple $(Y,D_1Y,D_2Y)$ satisfies a natural Markov property with respect to the past sigma-algebra generated by the two coordinate histories of the Brownian sheet. The result is illustrated by examples showing the strong martingale property for the Brownian sheet and for simple Brownian sheet systems. We also recall a Brownian sheet Girsanov theorem and use it to treat drifted sheets.",
+      "authors": [
+        "Nacira Agram",
+        "Bernt Øksendal",
+        "Frank Proske",
+        "Olena Tymoshenko"
+      ],
+      "published": "2026-09-29T15:24:27Z",
+      "updated": "2026-09-29T15:24:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37805",
+      "pdf_url": "https://arxiv.org/pdf/2609.37805",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37154",
+      "title": "CovEsts: Nonparametric Autocovariance Estimation and Analysis",
+      "abstract": "The paper introduces the R package CovEsts, which implements several nonparametric estimators for the autocovariance function. First, it presents the theoretical foundations of the implemented estimators, their properties, assumptions, and potential limitations. Next, it outlines the structure of the package and its key functions, including several methods for estimating autocovariance functions, constructing corresponding bootstrap confidence regions, and correcting the provided estimators. The package also includes diagnostic tools, such as several metrics for comparing estimators, and additional functions for broader use. The article illustrates a high degree of flexibility of the package in the selection of function parameters and the tuning of the estimators. Applications of selected estimators and package functions are illustrated using simulated data, yearly sunspot counts, and US unemployment increments data.",
+      "authors": [
+        "Adam Bilchouris",
+        "Andriy Olenko"
+      ],
+      "published": "2026-09-29T09:45:18Z",
+      "updated": "2026-09-29T09:45:18Z",
+      "primary_category": "stat.ME",
+      "categories": [
+        "stat.ME",
+        "math.PR",
+        "stat.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37154",
+      "pdf_url": "https://arxiv.org/pdf/2609.37154",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37020",
+      "title": "On random Binomial-Fibonacci sequences",
+      "abstract": "Motivated by the pioneer work of Viswanath \\cite{VIS2000} on random Fibonacci sequences and the development of random Euclidean addition chains in cryptography, we introduce a new family of random Binomial-Fibonacci sequences. We study the asymptotic behavior of their finite-time Lyapunov exponents. In the special case of random Bernoulli-Fibonacci sequences, we show that they convergence almost surely to an explicit Lyapunov exponent and prove a central limit theorem with an explicit formula for the variance. We also show that they satisfy a large deviation principle.",
+      "authors": [
+        "Bernard Bercu",
+        "Fabrice Gamboa"
+      ],
+      "published": "2026-09-29T08:37:27Z",
+      "updated": "2026-09-29T08:37:27Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37020",
+      "pdf_url": "https://arxiv.org/pdf/2609.37020",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37019",
+      "title": "Consistency and Convergence of the Backward-Euler Scheme for Stochastic Functional Differential Equations Driven by Fractional Brownian Motion",
+      "abstract": "We study the backward-Euler scheme for a class of stochastic functional differential equations (SFDEs) with memory driven by a fractional Brownian motion with Hurst parameter H > 1/2. We first establish the local consistency of the method, with a local truncation error of order H -$ρ$- $β$ + 1, and then, as the main result, prove the uniform global pathwise convergence of the numerical approximation, on a set of probability one, with order H -$ρ$ -$β$, for $β$ $\\in$ (1-H, 1/2) and 0 < $ρ$ < H -$β$. A uniform high-probability formulation with deterministic constants follows as a corollary. In particular, the convergence order can be taken arbitrarily close to 2H -1, matching the order obtained for the explicit Euler scheme. The convergence proof relies on an exact integral representation of the scheme at mesh points, an a priori bound for the numerical solution, fractional calculus estimates, and a Gronwall inequality for weakly singular kernels.",
+      "authors": [
+        "Alexander Abreu",
+        "Lisandro Fermin",
+        "Ernesto Mordecki",
+        "Soledad Torres"
+      ],
+      "published": "2026-09-29T08:37:19Z",
+      "updated": "2026-09-29T08:37:19Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.NA"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37019",
+      "pdf_url": "https://arxiv.org/pdf/2609.37019",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36517",
+      "title": "Angle Distributions for Intersecting Random Segments in Star-Shaped Planar Domains",
+      "abstract": "Let $Ω\\subset\\mathbb{R}^2$ be a bounded planar set that is star-shaped with respect to the origin, and let $A,B,C,D$ be independent random points uniformly distributed on $Ω$. We consider the random segments $S_{AB}$ and $S_{CD}$ and study the distribution of the smaller angle $Θ\\in[0,π/2]$ formed by them, conditional on the event that they intersect. Using the radial function of $Ω$, together with a parametrization of each segment in terms of its supporting line and the positions of its endpoints along that line, we derive an integral representation for the conditional distribution \\[ \\Pr\\{Θ\\leqθ| S_{AB}\\cap S_{CD}\\neq\\varnothing\\}. \\] The resulting expression makes explicit how the geometry of the boundary of $Ω$ determines the angular distribution. The probability of intersection appears naturally as the normalizing constant and is related to the probabilistic version of Sylvester's four-point problem.",
+      "authors": [
+        "Paulo Manrique"
+      ],
+      "published": "2026-09-29T02:12:17Z",
+      "updated": "2026-09-29T02:12:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36517",
+      "pdf_url": "https://arxiv.org/pdf/2609.36517",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36403",
+      "title": "Almost sure global well-posedness for the Benjamin-Bona-Mahony equation",
+      "abstract": "We prove that the Benjamin-Bona-Mahony equation is almost surely globally well-posed with respect to random Gaussian initial data of negative Sobolev regularity in $H^{s}(\\mathbb{T})$ for any $s>-\\frac 14$. This result is sharp in view of the mild probabilistic ill-posedness due to Oh-Tzvetkov (2026). This also improves on a previous result of the author which established this only in a logarithmically negative regularity. To break through this logarithmic regularity barrier, we combine the $I$-method with the low-high argument from Bona-Tzvetkov (2007), which motivates a refined first-order expansion for solutions.",
+      "authors": [
+        "Justin Forlano"
+      ],
+      "published": "2026-09-28T23:57:18Z",
+      "updated": "2026-09-28T23:57:18Z",
+      "primary_category": "math.AP",
+      "categories": [
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36403",
+      "pdf_url": "https://arxiv.org/pdf/2609.36403",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36361",
+      "title": "Distance flexibility in spatial matching: the value of concentration",
+      "abstract": "In spatial matching markets, a supply unit's flexibility is measured by its service radius, the maximum distance at which it can serve demand. In dimensions $k \\geq 2$, we study how a platform should allocate service radii among the supply nodes subject to a budget on their sum. The platform makes this choice before observing supply and demand locations, with the objective of maximizing the expected fulfilled demand. We show that the shape of a preferred allocation depends on the total budget: under suitable conditions, large budgets favor allocations that are more uniform in the sense of majorization, while small budgets favor concentration. We also characterize a non-uniform allocation that is asymptotically optimal for a very-sparse regime, and show that the uniform allocation is suboptimal in this regime. Our results provide theoretical explanations for the radius allocation questions raised by the numerical experiments in [ASY26b].",
+      "authors": [
+        "Taha Ameen",
+        "Sophie H. Yu"
+      ],
+      "published": "2026-09-28T22:49:01Z",
+      "updated": "2026-09-28T22:49:01Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36361",
+      "pdf_url": "https://arxiv.org/pdf/2609.36361",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36269",
+      "title": "Exit problems for additive-increase and multiplicative-decrease Markov-modulated processes",
+      "abstract": "We study one-sided, two-sided and reflected exit problems for a finite-state Markov-modulated additive-increase and multiplicative-decrease process. For upward passage, a first-jump decomposition and a spatial Laplace transform lead to a recursion indexed by finite words of phases and to a convergent Green series. For downward passage, the first-jump operator is a strict contraction and the known contribution from $[p_i b,b]$ becomes an explicit boundary forcing term in the same spatial recursion. These allow to derive the corresponding Green representation of the first passage matrix and its finite-dimensional compatibility condition. The derivation of the two-sided exit identity is based on the Markov property, which in this context is equivalent to the cocycle property of the Laplace transform, together with the recursive equation at the upper level. For reflection at the running infimum, a finite $\\bar p$-geometric method of steps realizes a certain Picard map that allows to find the exit matrix. As a result, we construct a Doob martingale related to the first passage time of the reflected Markov-modulated AIMD.",
+      "authors": [
+        "Bernardo D'Auria",
+        "Zbigniew Palmowski"
+      ],
+      "published": "2026-09-28T21:00:08Z",
+      "updated": "2026-09-28T21:00:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36269",
+      "pdf_url": "https://arxiv.org/pdf/2609.36269",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36257",
+      "title": "When Hedging Changes the Payoff: Option Replication with Price Impact and Execution Costs",
+      "abstract": "Hedging a derivative by trading the underlying asset changes the payoff that the hedging intended to replicate. We study this phenomenon when trading generates price impact and execution costs. In a binomial model, we characterize replication through a fixed-point equation. In continuous time, we derive a nonlinear pricing PDE whose implicit terminal condition captures the nature of the moving target problem of the hedger. For monotone convex Lipschitz payoffs (such as calls and puts) we establish exact replication under midpoint execution costs. Numerical experiments illustrate: (i) how price impact shifts the effective strike, (ii) the non-linear dependence of the option price on the number of contracts, (iii) how execution costs smooth terminal holdings, (iv) the extent to which the hedger's own trading can bring an otherwise worthless option into the money, and (v) we explain the spread and the shape of the limit order book in the options market based on the price impact and the shape of the limit order book of the underlying.",
+      "authors": [
+        "David Itkin",
+        "Leandro Sánchez-Betancourt"
+      ],
+      "published": "2026-09-28T20:47:12Z",
+      "updated": "2026-09-28T20:47:12Z",
+      "primary_category": "q-fin.MF",
+      "categories": [
+        "q-fin.MF",
+        "math.PR",
+        "q-fin.TR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36257",
+      "pdf_url": "https://arxiv.org/pdf/2609.36257",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36192",
+      "title": "Feasibility Correction in Linear Programs",
+      "abstract": "We study feasibility correction for linear programs. Suppose an initial point satisfies most of the constraints. Can it be moved into the feasible region without changing the objective value? Our main deterministic result says that this is possible if the constraint matrix satisfies a restricted isometry property (RIP). We apply the correction theorem to obtain lower bounds for random linear programs with finite-moment or sub-Weibull entries. We complement these with matching-order upper bounds under a uniform $p$th-moment bound for some $p>2$ and a delocalization condition on the objective direction. As an application of our techniques, we also derive lower bounds for the Gaussian width of feasible regions under RIP assumptions.",
+      "authors": [
+        "Pedro Abdalla",
+        "Roman Vershynin",
+        "Guangyi Zou"
+      ],
+      "published": "2026-09-28T19:55:57Z",
+      "updated": "2026-09-28T19:55:57Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36192",
+      "pdf_url": "https://arxiv.org/pdf/2609.36192",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36055",
+      "title": "Scale operators for Cramér--Lundberg type Markov additive processes",
+      "abstract": "In this paper, we consider Markov additive processes (MAPs) whose additive components are $\\bR$-valued and have no positive jumps. Specifically, we assume that the modulators are Feller processes with only finitely many jumps on each bounded time interval and that the additive components also have only finitely many jumps on each bounded time interval. For such MAPs, we characterize the associated scale operators and use them to solve the two-sided exit problem, which concerns the first entrance time into one half-line on the event that it is reached before the other, and to characterize the potential measures of the processes killed when their additive components exit an interval. Our proofs rely on properties of analogues of local times, properties of the exit systems obtained by pairing them with suitable kernels, and results on the extension of $C_0$-semigroups to $C_0$-groups.",
+      "authors": [
+        "Kei Noba"
+      ],
+      "published": "2026-09-28T18:14:39Z",
+      "updated": "2026-09-28T18:14:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36055",
+      "pdf_url": "https://arxiv.org/pdf/2609.36055",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.36030",
+      "title": "Preferent Compression Bounds Are Tight",
+      "abstract": "The lack of rigorous safety and performance certificates remains a key bottleneck to the deployment of modern learning-based methods. Sample compression has recently emerged as a powerful tool for deriving such certificates, with particularly sharp bounds available for algorithms satisfying a so-called preference property -- also known as stability in the learning theory literature. These bounds find direct application across domains as different as the Scenario Approach, Pick-to-Learn, and Support Vector methods. However, whether they are tight has remained an open problem. In this paper we resolve this question affirmatively and show that the state-of-the-art bound for preferent compressions is provably tight. We establish this by exhibiting an explicit construction based on the uniform distribution and order statistics that attains the bound in the limit. Along the way, we also provide a considerably shorter and more accessible proof of this bound, requiring only elementary counting arguments and no infinite-dimensional duality.",
+      "authors": [
+        "Dario Paccagnan",
+        "Marius Tirlea"
+      ],
+      "published": "2026-09-28T18:03:02Z",
+      "updated": "2026-09-28T18:03:02Z",
+      "primary_category": "cs.LG",
+      "categories": [
+        "cs.LG",
+        "cs.SY",
+        "math.OC",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.36030",
+      "pdf_url": "https://arxiv.org/pdf/2609.36030",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
     },
     {
       "id": "2609.35213",
@@ -623,6 +1151,29 @@
       "bucket": "other"
     },
     {
+      "id": "2609.35923",
+      "title": "Transpose-odd operator chirality in co-moving multiplicative processes: exact tail-level structure and a detectability obstruction",
+      "abstract": "We ask whether transposition changes the stationary heavy tail of the co-moving recursion $\\mathbf x_{t+1}=Q_tBQ_t^\\top\\mathbf x_t+Q_t\\boldsymbolη_t$ in $d=3$. The model has independent Haar rotations, Gaussian body-frame noise with covariance $Σ$, and an explicit positive metric $\\mathsf g$. The tail index $α_\\star$ depends only on singular values, so $α_\\star(B)=α_\\star(B^\\top)$. The structure theorem and polar-twist mechanism are unconditional. In the $\\mathsf g=I$ chart, write $B=S+\\widehat{\\boldsymbolω}$: $Δ_6(B)=-16\\det[\\boldsymbolω,S\\boldsymbolω,S^2\\boldsymbolω]$. Then $B\\not\\sim_{O(3)}B^\\top$, $Δ_6(B)\\ne0$, $\\operatorname{rank}[\\boldsymbolω,S\\boldsymbolω,S^2\\boldsymbolω]=3$, and controllability of $(S,\\boldsymbolω)$ are equivalent; intrinsic operator chirality is a Kalman rank condition. Unlike the exponent, the tail level need not be transpose-invariant. The exact polar-twist identity rotates the anisotropic noise frame under mirroring, showing how level asymmetry can enter. A nonzero asymmetry is established only conditionally and numerically, not by a closed-form example: under Assumption R on the SPD chart, $Δ\\log C=\\langle A,G\\rangle+o(\\|A\\|)$ as $A\\to0$, with $G=2H\\circ[Σ,\\partial_Σ\\log C]$; finite-threshold simulations are consistent with this first-order law. Strict-Haar averaging makes every lagged second-order cross-moment transpose-blind; a fourth radial moment retains an odd channel. No finite scalar-weighted radial-moment combination uniformly cancels the even quadratic form while retaining the odd covector.",
+      "authors": [
+        "Nihat Çağrı Çalışkan"
+      ],
+      "published": "2026-09-28T11:51:20Z",
+      "updated": "2026-09-28T11:51:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.35923",
+      "pdf_url": "https://arxiv.org/pdf/2609.35923",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-29",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2609.34831",
       "title": "Structured Neural SDEs for Functional Calibration",
       "abstract": "Neural Stochastic Differential Equations (Neural SDEs) provide flexible continuous-time generative models, but generic neural drift and diffusion networks are costly to simulate on long horizons and can give unstable gradients when the training signal is a path functional rather than a pointwise observation. We introduce SLiSDE, a family of Neural SDE models built from structured linear stochastic layers. Parallel-in-time simulation is obtained at the layer level, while expressivity is recovered by gated in-flow stacking: previous-layer paths modulate the next layer's latent flow through learned gates. For functional calibration tasks in which rare paths dominate the loss, we add an optional Girsanov tilt that acts as a learned importance sampler with an exact likelihood-ratio correction. We prove well-posedness, a discretisation error bound, validity of the change of measure, and a universality result: the terminal laws of the gated stack are dense in the space of square-integrable laws. Experiments on functional calibration benchmarks show that the structured model outperforms fully neural SDE baselines while retaining parallel-time simulation and stable importance weights.",
@@ -714,6 +1265,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.34468",
       "pdf_url": "https://arxiv.org/pdf/2609.34468",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-29",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.37479",
+      "title": "Vertical and reentrant ferromagnetic boundaries below the Nishimori point",
+      "abstract": "We prove that below the multicritical (Nishimori) point the ferromagnetic boundary of a biased Ising spin glass, argued by Nishimori (1986) to be exactly vertical, can be vertical and can also be reentrant, so that cooling at fixed disorder destroys order. It is vertical in the Sherrington-Kirkpatrick (SK) model with a Curie-Weiss bias $J_0$, and reentrant near the triple point of fully connected $p$-spin glasses and, at one disorder strength, on a decorated planar $\\mathbb{Z}^2$-periodic lattice. For every $T<J$ the SK magnetization vanishes for $J_0\\le J$, continuously at $J_0=J$, and is macroscopic for $J_0>J$. For every integer $p\\ge3$, at each bias slightly larger than the triple-point bias, the $p$-spin magnetization is macroscopic at the Nishimori temperature and vanishes at an explicit lower temperature; this is Nishimori's recent replica prediction in two-temperature form. On the lattice ($\\mathbb{Z}^2$ with each bond replaced by a fixed series-parallel gadget; maximum degree four), with iid $\\pm J$ couplings at $\\mathbb{P}(J_e=-1)=9/10000$, the Gibbs state is almost surely unique at high temperature, non-unique in a window containing the Nishimori temperature, and unique again at low temperature. As Dey and Kang observed, the SK boundary is set by the zero-field susceptibility together with an envelope bound on the free-energy gain in a field, which follows from the gauge inequality. We prove that this susceptibility is the curvature at the origin of the zero-field Parisi PDE solution, which Lopatto evaluated for every $β>1$ via his theorem that the support of the Parisi measure accumulates at the origin; we give a short alternative proof of that theorem. The $p$-spin and lattice results and the alternative proof are computer-assisted. The models are proxies for the nearest-neighbour $\\pm J$ model on $\\mathbb{Z}^2$ and say nothing about $\\mathbb{Z}^d$.",
+      "authors": [
+        "Yan Ru Pei"
+      ],
+      "published": "2026-09-28T01:03:17Z",
+      "updated": "2026-09-28T01:03:17Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.37479",
+      "pdf_url": "https://arxiv.org/pdf/2609.37479",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-29",
