@@ -5,11 +5,11 @@
   "iso_week": 38,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-09-18",
-  "total_submissions": 251,
-  "fetched": 251,
-  "generated_at": "2026-09-30T08:35:35Z",
+  "total_submissions": 248,
+  "fetched": 248,
+  "generated_at": "2026-10-01T08:57:45Z",
   "entries": [
     {
       "id": "2609.20422",
@@ -690,32 +690,6 @@
       "bucket": "medium"
     },
     {
-      "id": "2609.22301",
-      "title": "Towards the spin-glass transition in finite dimensions via blue percolation",
-      "abstract": "We prove blue percolation in the Chayes-Machta-Redner representation of the zero-field Edwards-Anderson spin glass in high finite dimensions. For fixed symmetric iid couplings with $0<m=\\mathbb{E}|J|<\\infty$, the first percolation onset is asymptotic to $(2dm)^{-1}$ in periodic joint limits. For symmetric $\\pm1$ couplings, we give a computer-assisted dimension-22 certificate. For exponential-moment disorder, we also establish a percolating regime with exactly equal infinite-blue-sector densities and finite spin-glass susceptibility. In these periodic limits, persistent density imbalance would imply distinct spin-flip-related Gibbs states and a pressure cusp for a suitable finite local replica coupling, without requiring finite-blue cancellation. Proving imbalance remains open.",
-      "authors": [
-        "Yan Ru Pei"
-      ],
-      "published": "2026-09-14T17:09:03Z",
-      "updated": "2026-09-14T17:09:03Z",
-      "primary_category": "cond-mat.dis-nn",
-      "categories": [
-        "cond-mat.dis-nn",
-        "math-ph",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.22301",
-      "pdf_url": "https://arxiv.org/pdf/2609.22301",
-      "score": 4,
-      "matched_keywords": [
-        "percolation"
-      ],
-      "announced": "2026-09-15",
-      "own": false,
-      "coauthors": [],
-      "bucket": "medium"
-    },
-    {
       "id": "2609.15585",
       "title": "Extension of Likelihood Ratio Analysis Method to Skorokhod $M_1$ Topology (with Application to Poissonian Smooth Change-Point Model)",
       "abstract": "We extend the Ibragimov-Khasminskii likelihood ratio analysis method, in the one-dimensional parameter case, to a framework based on the Skorokhod $M\\_1$ topology. The proposed framework applies to a broad class of statistical models, including those for which the normalized likelihood ratio processes are continuous while the limiting likelihood ratio process is discontinuous, a setting outside the scope of classical approaches based on the uniform or Skorokhod $J\\_1$ topologies. We derive sufficient conditions for the weak convergence of likelihood ratio processes in the space of c{à}dl{à}g functions on $\\RR$ vanishing at $\\pm\\infty$, endowed with the Skorokhod $M\\_1$ topology, and show how this convergence yields the asymptotic behavior of the maximum likelihood estimator. We also introduce new techniques for controlling the $M\\_1$ modulus of continuity. Although these techniques are particularly well suited to models in which all jumps and steep continuous transitions are in the same direction, they are of independent interest and may prove useful beyond this setting. As an application, we study a smooth change-point model for inhomogeneous Poisson processes in the fast regime, where the transition interval shrinks faster than $1/n$. We establish that in this case the maximum likelihood estimator has the same asymptotic behavior (consistency, rate of convergence, limiting distribution and convergence of moments) as in the corresponding ''pure'' change-point model.",
@@ -1300,31 +1274,6 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.20576",
       "pdf_url": "https://arxiv.org/pdf/2609.20576",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-09-18",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
-      "id": "2609.20512",
-      "title": "Copula Operad and Copula Entropy",
-      "abstract": "We construct a symmetric operad $\\mathfrak{C}$ on the class of all multivariate copulas, with operadic composition given by Sklar substitution. This places the hierarchical combination of dependence structures into an algebraic framework. Restricting to absolutely continuous copulas whose densities lie in $L\\log L$, we prove that copula entropy is additive under composition, making it an additive character on suitable finite-entropy suboperads. We exhibit explicit closed suboperads (bounded, $L^{p}$, boundary-growth) and show by counterexample that componentwise $L\\log L$ does not imply closure under composition.",
-      "authors": [
-        "Xuexing Lu"
-      ],
-      "published": "2026-09-17T14:53:59Z",
-      "updated": "2026-09-17T14:53:59Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR",
-        "cs.IT",
-        "math.CT",
-        "math.ST"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.20512",
-      "pdf_url": "https://arxiv.org/pdf/2609.20512",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-18",
@@ -2717,31 +2666,6 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.18061",
       "pdf_url": "https://arxiv.org/pdf/2609.18061",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-09-17",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
-      "id": "2609.18023",
-      "title": "A quantitative tree-likeness bound from average hyperbolicity",
-      "abstract": "Chatterjee and Sloman proved that a bounded measurable similarity function with sufficiently small average Gromov hyperbolicity admits a tree representation with small mean approximation error. Their argument uses a weighted version of Szemerédi's regularity lemma and does not yield useful quantitative bounds. Here, we establish an explicit relation between average hyperbolicity and mean tree approximation error. For a similarity function $s:S\\times S\\to[0,b]$, we prove that $$\\operatorname{Tree}(s) \\leq (63/e)^{1/3} \\sqrt[3]{b^2 \\operatorname{Hyp}(s)} \\leq 2.8512 \\sqrt[3]{b^2 \\operatorname{Hyp}(s)}.$$ The proof uses a simple pivoting construction inspired by KwikCluster. We also discuss the optimal dependence on average hyperbolicity, including a square-root lower bound, and connections with ultrametric fitting.",
-      "authors": [
-        "Joon-Hyeok Yim"
-      ],
-      "published": "2026-09-16T02:24:29Z",
-      "updated": "2026-09-17T09:08:14Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR",
-        "cs.DS",
-        "math.CO",
-        "math.MG"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.18023",
-      "pdf_url": "https://arxiv.org/pdf/2609.18023",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-17",

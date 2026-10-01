@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-25",
-  "total_submissions": 212,
-  "fetched": 212,
-  "generated_at": "2026-09-30T08:35:37Z",
+  "total_submissions": 213,
+  "fetched": 213,
+  "generated_at": "2026-10-01T08:57:48Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -476,7 +476,7 @@
         "Panagiotis E. Souganidis"
       ],
       "published": "2026-09-18T20:27:29Z",
-      "updated": "2026-09-18T20:27:29Z",
+      "updated": "2026-09-29T19:11:54Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -1251,12 +1251,12 @@
     {
       "id": "2609.28781",
       "title": "Eigenvalue and Eigenvector Approximation for Random Matrices Using Low-Degree Polynomials",
-      "abstract": "We initiate the study of approximating the top eigenvalue and eigenvector of a random symmetric matrix $ A \\in \\mathbb{R}^{n\\times n} $ using $ q(A)b $ where $q$ is a degree-$d$ polynomial and $b$ is a standard Gaussian vector independent of $A$. For spiked GOE $ Y = λvv^\\top + X $, we identify $ d_\\star = \\frac{\\log(n)}{2\\log(λ)} $ to be the critical degree threshold above which accurate approximation of the top eigenvalue and eigenvector is possible. This sharpens the common belief that spectral methods can be implemented by $ O(\\log(n)) $-step power iterations and offers a precise connection between spectral methods and low-degree polynomial algorithms, a popular proxy for all polynomial-time algorithms. For GOE $X$, we identify $ d_\\star = n^{1/3+o(1)} $ to be the critical degree threshold for top eigenvector approximation, whereas constant degree suffices for top eigenvalue approximation. Moreover, in the limit where $ d/n^{1/3} $ converges to a positive finite constant, we compute the exact asymptotic eigenvector approximation accuracy in terms of the expected squared overlap. These results significantly improve upon predictions made in randomized numerical linear algebra for deterministic data matrices that the iteration count of power methods is governed by the inverse spectral gap. Technically, our analyses leverage extremal properties of Chebyshev polynomials and draw upon the rich literature of random matrix theory.",
+      "abstract": "We initiate the study of approximating the top eigenvalue and eigenvector of a random symmetric matrix $ A \\in \\mathbb{R}^{n\\times n} $ using $ q(A)b $ where $q$ is a degree-$d$ polynomial and $b$ is a standard Gaussian vector independent of $A$. For spiked GOE $ Y = λvv^\\top + X $, we identify $ d_\\star = \\frac{\\log(n)}{2\\log(λ)} $ to be the critical degree threshold above which accurate approximation of the top eigenvalue and eigenvector is possible. This sharpens the common belief that spectral methods can be implemented by $ O(\\log(n)) $-step power iterations and offers a precise connection between spectral methods and low-degree polynomial algorithms, a popular proxy for all polynomial-time algorithms. For GOE $X$, we identify $ d_\\star = n^{1/3+o(1)} $ to be the critical degree threshold for top eigenvector approximation, whereas constant degree suffices for top eigenvalue approximation. Moreover, in the limit where $ d/n^{1/3} $ converges to a positive finite constant, we compute the exact asymptotic eigenvector approximation accuracy in terms of the expected squared overlap. These results significantly improve upon predictions made in randomized numerical linear algebra for deterministic data matrices that the iteration count of power methods with random initialization is governed by the inverse spectral gap. Technically, our analyses leverage extremal properties of Chebyshev polynomials and draw upon the rich literature of random matrix theory.",
       "authors": [
         "Yihan Zhang"
       ],
       "published": "2026-09-23T20:56:20Z",
-      "updated": "2026-09-23T20:56:20Z",
+      "updated": "2026-09-30T09:33:14Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -1458,7 +1458,7 @@
         "Lingjiong Zhu"
       ],
       "published": "2026-09-23T17:20:14Z",
-      "updated": "2026-09-23T17:20:14Z",
+      "updated": "2026-09-30T08:37:07Z",
       "primary_category": "math.NA",
       "categories": [
         "math.NA",
@@ -5022,6 +5022,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.21311",
       "pdf_url": "https://arxiv.org/pdf/2609.21311",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-21",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2609.38192",
+      "title": "Quasi-exponentials and semi-classical limits for the chordal BPZ system",
+      "abstract": "We study the nonlinear Hamilton--Jacobi system arising as the formal semi-classical limit of the chordal Belavin--Polyakov--Zamolodchikov equations with a common eigenvalue parameter $λ$. We determine the number of global real-valued solutions modulo additive constants. When $λ=0$, the number of solutions can be derived using the connection between the solutions and rational functions, due to Eremenko. We focus on the case when $λ\\neq 0$ in this article. For $λ>0$, a Schwarzian correspondence relates the algebraic equations for the gradients to quasi-exponentials with prescribed critical points. Enumeration and transversality results of Mukhin, Tarasov, and Varchenko yield smooth real branches, and a Poisson bracket identity establishes their exactness. An energy bound rules out global real-valued solutions for $λ<0$.",
+      "authors": [
+        "Mo Chen",
+        "Hao Wu"
+      ],
+      "published": "2026-09-18T03:20:17Z",
+      "updated": "2026-09-18T03:20:17Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2609.38192",
+      "pdf_url": "https://arxiv.org/pdf/2609.38192",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-21",
