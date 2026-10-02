@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-09-25",
-  "total_submissions": 213,
-  "fetched": 213,
-  "generated_at": "2026-10-01T08:57:48Z",
+  "total_submissions": 214,
+  "fetched": 214,
+  "generated_at": "2026-10-02T08:33:15Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -1454,11 +1454,10 @@
       "abstract": "We study global convergence guarantees of third-order Langevin dynamics for non-convex optimization via simulated annealing with fixed friction and decreasing noise. An explicit three-block distorted entropy transfers dissipation from the noisy auxiliary variable to the full state. Under dissipativity, regularity, and low-temperature functional-inequality assumptions, logarithmic cooling drives the objective values to the global minimum in probability at the barrier-controlled kinetic rate. For the exact-force-integral and midpoint three-stage discretizations, polynomially decreasing steps preserve this rate on the physical time scale. The cubic local endpoint estimate gives a less restrictive sufficient step-size condition than the available frozen-force kinetic result. A comparison with the one-gradient UBU integrator shows how its centered stochastic local error leads, under the same strong-coupling analysis, to a smaller sufficient iteration exponent. Numerical experiments are conducted to illustrate our theory. For a double well objective, third-order Langevin terminal-success point estimates are higher than UBU at both a common horizon and an equal gradient budget. For a high-dimensional nonconvex neural-network objective using synthetic data, independently tuned UBU and third-order Langevin schemes both outperform overdamped Langevin dynamics; the third-order Langevin point estimate is higher. For the same neural-network objective on real data, we show the same point-estimate ordering for best-basin probability and post-quench test accuracy. Numerical code and associated experiment results are publicly available at https://github.com/gagawjbytw/simulated-annealing-third-order-langevin.",
       "authors": [
         "Yingli Wang",
-        "Kelvin Shuangjian Zhang",
         "Lingjiong Zhu"
       ],
       "published": "2026-09-23T17:20:14Z",
-      "updated": "2026-09-30T08:37:07Z",
+      "updated": "2026-10-01T03:05:25Z",
       "primary_category": "math.NA",
       "categories": [
         "math.NA",
@@ -1686,6 +1685,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.27634",
       "pdf_url": "https://arxiv.org/pdf/2609.27634",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-24",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.00242",
+      "title": "Quantum Reverse Hypercontractivity for KMS-Symmetric Quantum Markov Semigroups",
+      "abstract": "In this paper, we construct primitive KMS-symmetric quantum Markov semigroups for which the $p$-logarithmic Sobolev constant vanishes at $p=1/2$ and a correlated graph-based example for which the $p$-logarithmic Sobolev constant tends to $-\\infty$ as $p\\to 0^+$. These examples obstruct a positive uniform reverse-hypercontractivity rate on $(0,1)$. By contrast, we show that every primitive KMS-symmetric quantum Markov semigroup satisfies quantum reverse hypercontractivity for $1/2< p\\leq q < 1$ with explicit sufficient times. For each fixed $δ>0$, a sufficiently strong dephasing perturbation satisfies a uniform positive logarithmic Sobolev inequality on $[δ, 1]$ and hence quantum reverse hypercontractivity for $δ< p\\leq q<1$ with fixed $0<δ<1/2$. Furthermore, we establish reverse hypercontractivity for graph-based KMS-symmetric quantum Markov semigroups for $δ< p\\leq q< 1$ with fixed $0<δ<1$ for connected graphs when $n \\geq 3$.",
+      "authors": [
+        "Jinsong Wu"
+      ],
+      "published": "2026-09-23T09:49:42Z",
+      "updated": "2026-09-23T09:49:42Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.OA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.00242",
+      "pdf_url": "https://arxiv.org/pdf/2610.00242",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-24",
@@ -2863,12 +2886,12 @@
     {
       "id": "2609.24867",
       "title": "Heat flow and repeated differentiation of polynomials with i.i.d. roots",
-      "abstract": "How do the zeros of a polynomial evolve under the holomorphic heat flow or repeated differentiation? We study these two evolutions for random polynomials with i.i.d.~roots $z_1,\\dots,z_n\\simμ_0$, where $μ_0$ has a bounded compactly supported density in the complex plane. For the heat flow of small enough time $t>0$ and assuming Lipschitz continuous Stieltjes transform of $μ_0$, we prove the conjectured weak convergence of the empirical root distributions, in fact almost surely. We also identify the conjectured weak limit after $\\lfloor tn \\rfloor$ differentiations, for rotationally invariant initial distributions. Both limit distributions are given by push-forwards under explicit transport maps: The heat flow transforms of the circular law into the elliptic law, while differentiation moves surviving mass towards the origin. The common proof strategy crucially relies on recursion identities from leaving a factor out, together with Stieltjes transforms and concentration inequalities. It allows for generalizations beyond symmetric distributions, and quantifications of the statement that the limiting distribution $μ_0$ is preserved under $o(n)$ derivatives or heat flow of time $t_n\\to 0$.",
+      "abstract": "How do the zeros of a polynomial evolve under the holomorphic heat flow or repeated differentiation? In this work, we develop a unified probabilistic proof to three conjectures on the evolution of polynomial zeros under holomorphic heat flow and repeated differentiation. We study these two evolutions for random polynomials with i.i.d.~roots $z_1,\\dots,z_n\\simμ_0$, where $μ_0$ on $\\mathbb C$ satisfies suitable $2+δ$ logarithmic moment conditions. For the heat flow of small time $t>0$ and Lipschitz continuous Stieltjes transform of $μ_0$, we identify the limit distribution $μ_t$ as explicit push-forward of $μ_0$ under a transport map. For rotationally invariant $μ_0$, we characterize the limit after $\\lfloor tn\\rfloor$ differentiations through its radial quantiles. For instance, the heat flow evolves the circular law into the elliptic and semicircle law, while differentiation moves surviving mass towards the origin. We also show that $o(n)$ derivatives preserve the initial distribution $μ_0$. In fact, all convergences hold almost surely. The common proof strategy crucially relies on recursion identities from leaving out a root, and concentration inequalities, which lead to self-consistent equations for Stieltjes transforms. This brings a method familiar from random matrix theory to polynomial evolutions. Moreover, it allows for generalizations beyond rotational symmetric distributions and quantitative stability estimates for $o(n)$ differentiations and vanishing heat-flow times.",
       "authors": [
         "Jonas Jalowy"
       ],
       "published": "2026-09-21T16:37:12Z",
-      "updated": "2026-09-21T16:37:12Z",
+      "updated": "2026-10-01T15:33:39Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3511,7 +3534,7 @@
         "Sean O'Rourke"
       ],
       "published": "2026-09-20T22:34:39Z",
-      "updated": "2026-09-20T22:34:39Z",
+      "updated": "2026-10-01T17:51:29Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
