@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 40,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-10-02",
-  "total_submissions": 188,
-  "fetched": 188,
-  "generated_at": "2026-10-02T08:33:17Z",
+  "total_submissions": 190,
+  "fetched": 190,
+  "generated_at": "2026-10-05T09:06:04Z",
   "entries": [
     {
       "id": "2610.01298",
@@ -1123,6 +1123,29 @@
       "bucket": "other"
     },
     {
+      "id": "2610.02282",
+      "title": "Global Central Limit Theorems for Markov chains with normal transition operator",
+      "abstract": "Let $P$ be a Markov operator on a general state space $(S,Σ)$ with invariant probability $m$, assumed ergodic. When $P$ is normal in $L_2(m)$, we prove the necessity of uniform ergodicity, under some spectral conditions (satisfied when $P$ is symmetric), for the annealed CLT to hold for {\\it every} centered $ f \\in L_2(m)$. We also obtain results without assuming normality under some Ritt-type conditions.",
+      "authors": [
+        "Christophe Cuny",
+        "Michael Lin"
+      ],
+      "published": "2026-10-01T12:56:57Z",
+      "updated": "2026-10-01T12:56:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.02282",
+      "pdf_url": "https://arxiv.org/pdf/2610.02282",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-02",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.01607",
       "title": "Structural stability of systems and cycle covers in random graphs",
       "abstract": "Structural system theory studies which network topologies can sustain a prescribed system property such as controllability or stability. When the topology is itself random, the relevant question becomes probabilistic: how likely is a graph drawn from a stochastic model to sustain the property? Such probabilities measure the abundance and robustness of the property across topologies, and indicate whether systems requiring it can be reliably deployed in uncertain environments. We address this question for asymptotic stability of linear systems in the directed graphon setting. We consider two graph-theoretic properties. The first is $\\mathcal N$, and it requires that for every $k\\leq n$ some $k$-vertex induced subdigraph of $D$ admits a cycle cover, and the second is $\\mathcal S$, which requires that these subdigraphs can be chosen so that their node sets form a nested sequence $V_1\\subset\\cdots\\subset V_n=V(D)$ starting from a single vertex with a loop. We have shown that $\\mathcal N$ is necessary and $\\mathcal S$ is sufficient for structural stability. We sample $D$ from a directed step-graphon $W$. Our main results give necessary and sufficient conditions for $\\Pr(\\mathcal N)\\to 1$ and $\\Pr(\\mathcal S)\\to 1$ as $n\\to\\infty$. In more detail, to a step-graphon $W$ with skeleton digraph $S$ on $q$ nodes and concentration vector $x^*$ we associate a cycle polytope $\\vec{\\mathcal X}(S)\\subseteqΔ_q$. The conditions are then formulated in terms of the position of $x^*$ within $\\vec{\\mathcal X}(S)$, the dimension of the polytope, the loop density of $W$ and, for $\\mathcal S$, an ordering condition on the cycles of the skeleton. Together these results identify, for directed step-graphons, the regime in which a sampled topology is overwhelmingly likely or unlikely to sustain stable dynamics.",
@@ -1258,6 +1281,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.01411",
       "pdf_url": "https://arxiv.org/pdf/2610.01411",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-02",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.02276",
+      "title": "Greedy Uniformity on Trees: Exact Obstruction and Near-Uniform Spiders",
+      "abstract": "Choose a uniformly random ordering of the vertices of a finite tree and run the usual greedy maximal-independent-set algorithm. We compare the resulting law on maximal independent sets with the uniform law. We prove that exact uniformity occurs only for the one-vertex tree and the single edge. The proof is structural: a diameter endpoint exposes a pendant star, and the remaining one-pendant-leaf case is resolved by a strict injection between exact permutation fibres obtained by swapping the pendant leaf with its support vertex. Exact uniformity is therefore rigid, but it can be approached closely. For an explicit mixed-spider family $T_{k,l}$ we count the maximal independent sets and compute the exact probability of every output. With $l=2^k-k$ the total-variation bias is positive and satisfies [ b(T_{k,2^k-k})=O!\\left(\\frac{\\sqrt{k}}{4^k}\\right) =O!\\left(\\frac{\\sqrt{\\log n_k}}{n_k^2}\\right), \\qquad n_k=2^k+k+1. ] The theorem package has also been formalised in Lean and registered with Palomar. These records document machine-checked formal verification and the checked axiom boundary; they are not peer review or a certificate of novelty.",
+      "authors": [
+        "John Fairfax-Ball"
+      ],
+      "published": "2026-10-01T10:07:00Z",
+      "updated": "2026-10-01T10:07:00Z",
+      "primary_category": "math.CO",
+      "categories": [
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.02276",
+      "pdf_url": "https://arxiv.org/pdf/2610.02276",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-02",
@@ -4408,7 +4454,7 @@
         "Justin Salez"
       ],
       "published": "2026-09-25T12:19:50Z",
-      "updated": "2026-09-25T12:19:50Z",
+      "updated": "2026-10-02T08:39:41Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
