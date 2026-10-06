@@ -9,7 +9,7 @@
   "data_through": "2026-09-25",
   "total_submissions": 214,
   "fetched": 214,
-  "generated_at": "2026-10-05T09:06:02Z",
+  "generated_at": "2026-10-06T08:59:56Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -718,12 +718,12 @@
     {
       "id": "2609.30105",
       "title": "On the SoS Certifiability of Log-Concave Distributions",
-      "abstract": "For an arbitrary isotropic log-concave distribution $P$ on $\\mathbb{R}^d$, we prove that the polynomial $(Cm)^m\\|v\\|_2^m - \\mathbb{E}_{X\\sim P}\\langle X,v\\rangle^m$ is a sum of squares for every even $m\\ge2$, where $C>0$ is a universal constant. This removes the dependence on the Poincaré constant in the theorem of Kothari and Steinhardt (arXiv:1711.07465), recovering the optimal moment bounds for log-concave distributions. As an immediate corollary, we obtain computationally efficient algorithms with dimension-free error guarantees for a wide range of high-dimensional statistical estimation problems. Our proof uses stochastic localization to decompose $P$ as an average of random strongly log-concave measures, whose centered moments admit the subgaussian certificates of Diakonikolas, Hopkins, Pensia, and Tiegel (STOC 2025; arXiv:2410.21194). With a covariance-adapted choice of localization, we show that a fourth-moment certificate derived from Letwin's variance inequality for quadratic forms (arXiv:2607.24164) suffices to control this averaging at every even degree.",
+      "abstract": "We prove that for every isotropic log-concave distribution $P$ on $\\mathbb{R}^d$ and every even $m\\ge2$, the polynomial $(Cm)^m\\|v\\|_2^m - \\mathbb{E}_{X\\sim P}\\langle X,v\\rangle^m$ is a sum of squares, where $C>0$ is a universal constant. This improves on the Poincaré-dependent bounds (Kothari and Steinhardt, 2017), recovering the optimal moment bounds for log-concave distributions. As an immediate corollary, we obtain computationally efficient algorithms with dimension-free error guarantees for a wide range of statistical estimation problems. Our proof proceeds by using stochastic localization to decompose $P$ as an average of strongly log-concave measures, whose centered moments admit the subgaussian certificates (Diakonikolas et al., 2025). With a covariance-adapted choice of localization, we show that a fourth-moment certificate derived from the variance inequality for quadratic forms (Letwin, 2026) suffices to control this averaging at every even degree.",
       "authors": [
         "Aleksandr Storozhenko"
       ],
       "published": "2026-09-24T16:48:02Z",
-      "updated": "2026-09-24T16:48:02Z",
+      "updated": "2026-10-05T17:58:55Z",
       "primary_category": "cs.LG",
       "categories": [
         "cs.LG",
@@ -871,12 +871,12 @@
     {
       "id": "2609.29762",
       "title": "Generic well-posedness for a family of quadratic BSDE systems",
-      "abstract": "We study a two-parameter family of quadratic BSDE systems of the form given by Jackson (2023) in his open questions on non-Markovian solvability. Fan, Hu, and Tang (2025) established well-posedness for arbitrary bounded terminal data when $1/α+1/β=1$. For every $α,β>0$ and $M>0$, we prove that the space of terminal data with components bounded by $M$, equipped with convergence in probability, contains a dense $G_δ$ set on which the system has a unique solution in $\\mathcal S^\\infty\\times\\mathrm{BMO}$. This gives generic well-posedness in the sense of Baire category for all positive parameters, including Jackson's stochastic-game example $α=β=1$. The solution map is continuous on this set in $\\mathcal S^p\\times\\mathcal H^p$ for every $1\\le p<\\infty$. The proof combines uniform BMO estimates, stability on a dense class of solvable terminal data, and Baire's theorem. We also establish well-posedness for arbitrary two-valued terminal data and show that solvability for all bounded terminal data is equivalent to solvability for all three-valued terminal data.",
+      "abstract": "We study a two-parameter family of quadratic BSDE systems of the form given by Jackson (2023) in his open questions on non-Markovian solvability. Fan, Hu, and Tang (2025) established well-posedness for every bounded terminal datum when $1/α+1/β=1$. For every $α,β>0$ and $M>0$, we establish existence and uniqueness in $\\mathcal{S}^{\\infty}\\times\\mathrm{BMO}$ for a dense $G_δ$ subset of the space of terminal data satisfying $|ξ_i|\\le M$ a.s., $i=1,2$, equipped with the topology of convergence in probability. We also obtain well-posedness for every terminal datum taking at most two values. Furthermore, we show that every bounded terminal problem can be reduced to one with a three-valued terminal datum while preserving its solution set. However, for every positive parameter pair with $1/α+1/β\\ne1$, we construct a three-valued terminal datum admitting at least two distinct solutions in $\\mathcal{S}^{\\infty}\\times\\mathrm{BMO}$. In particular, uniqueness can fail in Jackson's stochastic-game example $α=β=1$.",
       "authors": [
         "Siyi Wang"
       ],
       "published": "2026-09-24T13:12:27Z",
-      "updated": "2026-09-24T13:12:27Z",
+      "updated": "2026-10-05T16:28:46Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1549,12 +1549,12 @@
     {
       "id": "2609.28104",
       "title": "On the foundations of logic and probability, I. Modal sentential calculi",
-      "abstract": "A class of models which does not require an additional operator on the language of classical sentential calculi to capture some notion of necessity, possibility, and impossibility is introduced and investigated.",
+      "abstract": "A class of models which does not require additional operators on the language of classical sentential calculi to capture some notion of necessity, possibility, and impossibility is introduced and investigated.",
       "authors": [
         "Loic Cosyns"
       ],
       "published": "2026-09-23T13:36:17Z",
-      "updated": "2026-09-23T13:36:17Z",
+      "updated": "2026-10-05T15:40:39Z",
       "primary_category": "math.LO",
       "categories": [
         "math.LO",
@@ -1572,7 +1572,7 @@
     {
       "id": "2609.28091",
       "title": "Log-Sobolev inequality for the sinh-Gordon model",
-      "abstract": "For the sinh-Gordon model (without external mass term), we show that the log-Sobolev inequality holds uniformly in the lattice and volume regularisations for all parameters in the regime in which the Gaussian multiplicative chaos has second moments. As a consequence, this establishes that infinite-volume (massless) sinh-Gordon measures on $\\mathbb{R}^2$ exist. The proof uses the Polchinski equation method for log-Sobolev inequalities. The required estimates on the renormalised potential are established using simple perturbation theoretic bounds, valid for absolutely monotone potentials, and an extension of the correlation inequality of Ding--Song--Sun to potentials in the GHS class. This inequality is proved also by using a variant of the Polchinski equation through the maximum principle.",
+      "abstract": "For the sinh-Gordon model (without external mass term), we show that the log-Sobolev inequality holds uniformly in the lattice and volume regularisations for all parameters in the regime in which the Gaussian multiplicative chaos has second moments. This implies that infinite-volume ``massless'' sinh-Gordon measures on $\\mathbb{R}^2$ satisfying all Osterwalder--Schrader axioms exist and that they have exponential decay of correlations (are ``massive''). The proof uses the Polchinski equation method for log-Sobolev inequalities. The required estimates on the renormalised potential are established using simple perturbation theoretic bounds, valid for absolutely monotone potentials, and an extension of the correlation inequality of Ding--Song--Sun to potentials in the GHS class. This inequality is proved also by using a variant of the Polchinski equation through the maximum principle.",
       "authors": [
         "Omar Abdelghani",
         "Roland Bauerschmidt",
@@ -1580,7 +1580,7 @@
         "Benoit Dagallier"
       ],
       "published": "2026-09-23T13:25:55Z",
-      "updated": "2026-09-23T13:25:55Z",
+      "updated": "2026-10-02T19:10:54Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4133,13 +4133,13 @@
     {
       "id": "2609.22952",
       "title": "Representation-free Densities of Ratios and Powers of Stable Variables",
-      "abstract": "We derive representation-free densities of ratios and powers of the positive stable random variable given only its simple Laplace transform. This suffices to obtain Laplace/Stieltjes forward transforms of various random variable combinations. We state representation-free densities associated with occupation times (Lamperti, 1958) and Bessel process excursions (Bertoin et al., 2006) and their forward transforms. We also readily obtain simple representations of these and other densities using a known infinite series representation of the stable density.",
+      "abstract": "We derive representation-free densities of ratios of the positive stable random variable and obtain their Laplace/Stieltjes transforms. We state representation-free densities of occupation times (Lamperti, 1958) and Bessel process excursions (Bertoin et al., 2006) and their transforms. We also obtain simple representations of these and other densities using a known infinite series representation of the stable density.",
       "authors": [
         "Nomvelo Karabo Sibisi",
         "Sibusiso Sibisi"
       ],
       "published": "2026-09-19T11:08:44Z",
-      "updated": "2026-09-22T13:12:40Z",
+      "updated": "2026-10-03T11:39:58Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4161,7 +4161,7 @@
         "Francesco Vaccarino"
       ],
       "published": "2026-09-19T10:16:15Z",
-      "updated": "2026-09-22T05:58:16Z",
+      "updated": "2026-10-03T17:21:43Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",

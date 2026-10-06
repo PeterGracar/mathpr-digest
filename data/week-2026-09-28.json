@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-02",
-  "total_submissions": 190,
-  "fetched": 190,
-  "generated_at": "2026-10-05T09:06:04Z",
+  "total_submissions": 191,
+  "fetched": 191,
+  "generated_at": "2026-10-06T08:59:58Z",
   "entries": [
     {
       "id": "2610.01298",
@@ -1227,7 +1227,7 @@
         "Shanjian Tang"
       ],
       "published": "2026-10-01T12:14:03Z",
-      "updated": "2026-10-01T12:14:03Z",
+      "updated": "2026-10-05T06:41:34Z",
       "primary_category": "math.OC",
       "categories": [
         "math.OC",
@@ -1244,14 +1244,14 @@
     },
     {
       "id": "2610.01447",
-      "title": "An $O(4^{\\log^* n})$ Bound for the KLS Constant",
-      "abstract": "The Kannan--Lovász--Simonovits (KLS) conjecture asks whether every isotropic log-concave probability measure on $\\mathbb R^n$ has a Cheeger constant bounded below by a universal positive constant. The best previous upper bound is $ψ_n\\lesssim\\log^{1/4}n$, due to Letwin [Let26]. We prove that $ψ_n\\le C \\cdot 4^{\\log^*(n+2)}$ for a universal constant $C$, where $\\log^*x$ is the least number of successive natural logarithms needed to bring $x$ to at most one. We also prove that $C_P(μ)\\le C'16^{\\log^*(n+2)}$ for every isotropic log-concave probability measure $μ$ on $\\mathbb R^n$, with a universal constant $C'>0$.",
+      "title": "An $O(1)$ Bound for the KLS Constant",
+      "abstract": "The Kannan--Lovász--Simonovits (KLS) conjecture asks whether every isotropic log-concave probability measure on $\\mathbb R^n$ has a Cheeger constant bounded below by a universal positive constant. We prove that $ψ_n\\le C$ for a universal constant $C>0$, resolving the KLS conjecture. We also prove that $C_P(μ)\\le C'$ for every isotropic log-concave probability measure $μ$ on $\\mathbb R^n$, with a universal constant $C'>0$.",
       "authors": [
         "Zhao Song",
         "Xinzhi Zhang"
       ],
       "published": "2026-10-01T10:43:04Z",
-      "updated": "2026-10-01T10:43:04Z",
+      "updated": "2026-10-04T21:21:03Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1476,6 +1476,31 @@
       "bucket": "other"
     },
     {
+      "id": "2610.03793",
+      "title": "Optimal Catastrophe Bond Design and its Applications to Climate Change Risk",
+      "abstract": "Catastrophe bonds have become a central instrument for transferring catastrophic risk to capital markets, yet their payout structures are typically specified exogenously rather than optimized. In this paper, we treat the indemnity function as the decision variable and study the optimal design of CAT bonds from the sponsor's perspective. We establish the optimality of a piecewise linear indemnity function under both expected-disutility and spectral-risk-measure frameworks and thereby reduce an infinite-dimensional design problem to a one-dimensional optimization over the attachment point. The optimal design also eliminates the potential moral hazard associated with the discontinuity of threshold payout structures. We characterize the optimal attachment point under six risk criteria and obtain explicit or semi-explicit solutions. We further derive bounds for the optimal attachment point and develop comparative statics that provide practical design insights. Using U.S. severe storm losses from NOAA's Billion-Dollar Weather and Climate Disasters database for calibration, we show that the optimal CAT bond designs achieve substantial risk reductions across most risk criteria.",
+      "authors": [
+        "Andres Medina",
+        "Wei Wei"
+      ],
+      "published": "2026-09-30T23:32:53Z",
+      "updated": "2026-09-30T23:32:53Z",
+      "primary_category": "q-fin.PR",
+      "categories": [
+        "q-fin.PR",
+        "math.PR",
+        "q-fin.RM"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.03793",
+      "pdf_url": "https://arxiv.org/pdf/2610.03793",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-02",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.00798",
       "title": "Conformal non-removability of the Brownian graph",
       "abstract": "We prove that the graph of a standard one-dimensional Brownian motion, $Γ_B=\\{(t,B_t):t \\in [0,1]\\}$, is almost surely not conformally removable. This resolves the question left open by Doherty and Miller in their study of the Sobolev removability of the Brownian graph~\\cite{DM26}. We also construct non-removable $α$-Hölder graphs for every $α\\in (0,2/3)$, including the previously open range $α\\in [1/2, 2/3)$. Together with the known removability result for $α>2/3$, this identifies $2/3$ as the threshold for conformal removability of Hölder graphs.",
@@ -1653,7 +1678,7 @@
         "Peixue Wu"
       ],
       "published": "2026-09-30T17:44:29Z",
-      "updated": "2026-09-30T17:44:29Z",
+      "updated": "2026-10-05T17:26:30Z",
       "primary_category": "quant-ph",
       "categories": [
         "quant-ph",
@@ -1802,14 +1827,14 @@
     },
     {
       "id": "2609.40164",
-      "title": "Exact spectral gaps for random Pauli rotations",
-      "abstract": "We resolve the spectral-gap problem posed by Baer and Haah for random Pauli rotations. In this walk, a nonidentity $n$-qubit Pauli operator $P$ and an angle $θ$ modulo $2π$ are chosen independently and uniformly, and the step is $e^{\\mathrm{i}θP}$. Writing $d=2^n$, we prove that the gap on $\\mathsf{SU}(d)$ is $(d-8)/(8(d-1))$ for $n\\ge4$. This disproves their conjectured formula on the full special unitary group. We also prove that the conjectured value, $d(d-3)/(8(d^2-1))$, is exactly the gap on $\\mathsf{PU}(d)$ for $n\\ge3$. The special-unitary gap is attained by an explicit vector in $\\bigwedge^8\\mathbb C^d$, constructed from affine three-dimensional subspaces of $\\mathbb F_2^n$. Its nontrivial central action explains why balanced tensor representations do not detect this smaller gap. On the projective group, the gap is attained in $U\\mapsto U^{\\otimes4}\\otimes\\bar U^{\\otimes4}$. The matching lower bounds hold uniformly over all finite-dimensional unitary representations. They combine the spectrum of the graph of anticommuting Pauli operators, a minimum-weight bound for binary polynomials, and a local inequality on a single-qubit Clifford-fixed subspace. The proof is analytic and requires no computational verification.",
+      "title": "Spectral gaps and slow modes of Pauli rotations and random quantum circuits",
+      "abstract": "We determine which representation sectors control the slowest convergence of random Pauli rotations and several local random quantum circuits. For $d=2^n$, the continuous Pauli walk has exact all-representation gaps $$Δ_{\\mathsf{SU}(d)}=\\frac{d-8}{8(d-1)}\\quad(n\\ge4),\\qquad Δ_{\\mathsf{PU}(d)}=\\frac{d(d-3)}{8(d^2-1)}\\quad(n\\ge3).$$ The special-unitary gap is attained in $\\bigwedge^8\\mathbb{C}^d$ and is invisible to balanced moments, while the projective gap is already attained in a balanced fourth-moment representation. We obtain exact discrete and orthogonal Pauli analogues, exact finite-Clifford chain/path gaps, and dimension-independent all-representation Haar brickwork lower bounds; on three qubits every weighted Haar-$\\mathsf{SU}(4)$ edge walk reduces to one universal principal-angle constant. For real complete-graph models, the entire ordinary fourth-tensor gap reduces to a quadratic-size occupation operator, is simple for every $n\\ge4$, and has an expansion beginning $$Δ_n^{(4)}=\\frac{10}{9n}-\\frac{88}{105n^2}+O(n^{-3}),$$ with competing branches separated only beyond all algebraic orders. For the two finite real Clifford complete-graph walks, this fourth-tensor mode is the exact all-representation group gap for every $n\\ge144$; in the same range it simultaneously governs every ordinary even tensor degree $k\\ge4$. Thus different representation scopes can have genuinely different slow modes.",
       "authors": [
         "Ziyuan Dong",
         "Xiang Fan"
       ],
       "published": "2026-09-30T16:58:33Z",
-      "updated": "2026-09-30T16:58:33Z",
+      "updated": "2026-10-04T16:06:59Z",
       "primary_category": "quant-ph",
       "categories": [
         "quant-ph",
@@ -2409,14 +2434,14 @@
     {
       "id": "2609.39256",
       "title": "Stochastic Knothe-Rosenblatt: Light-speed Calibration of Stochastic Local Volatility Models",
-      "abstract": "European option smiles determine the risk-neutral marginal laws of an asset, but not their intertemporal coupling, which is decisive for many applications. The Bass martingale construction selects, among all calibrated martingales, the one closest to Bachelier dynamics; it permits fast calibration at discrete maturities and recovers the Dupire local-volatility (LV) model as the maturity grid is refined. This article develops a modular calibration overlay for existing stochastic and path-dependent volatility models. We recursively construct a martingale that matches all prescribed marginals exactly while remaining as close as possible, in an adapted Knothe-Rosenblatt sense, to the reference dynamics. As with the Bass LV model, each calibration step is amenable to an efficient Martingale Sinkhorn algorithm. We develop the theoretical foundations, numerical implementation and consider convergence to the SLV model. We also benchmark the method for Heston and Bergomi finite-factor path-dependent volatility dynamics and develop the multi-asset extension.",
+      "abstract": "European option smiles determine the risk-neutral marginal laws of an asset, but not their intertemporal coupling, which is decisive for many applications. The Bass martingale construction selects, among all calibrated martingales, the one closest to Bachelier dynamics; it permits fast calibration at discrete maturities and recovers the Dupire local-volatility (LV) model as the maturity grid is refined. This article develops a modular calibration overlay for existing stochastic and path-dependent volatility models. We sequentially construct a martingale that matches all prescribed marginals exactly while remaining as close as possible, in an adapted Knothe-Rosenblatt sense, to the reference dynamics. As with the Bass LV model, each calibration step is amenable to an efficient Martingale Sinkhorn algorithm. We develop the theoretical foundations, numerical implementation and consider convergence to the SLV model. We also benchmark the method for Heston and Bergomi finite-factor path-dependent volatility dynamics and develop the multi-asset extension.",
       "authors": [
         "Mathias Beiglböck",
         "Manuel Hasenbichler",
         "Gudmund Pammer"
       ],
       "published": "2026-09-30T08:19:27Z",
-      "updated": "2026-09-30T08:19:27Z",
+      "updated": "2026-10-05T17:37:31Z",
       "primary_category": "q-fin.PR",
       "categories": [
         "q-fin.PR",
@@ -2557,12 +2582,12 @@
     {
       "id": "2609.38726",
       "title": "Local decisions, diffusive influence, and lower bounds for graphical balanced allocation",
-      "abstract": "In graphical two-choice allocation, each arriving ball is assigned to one endpoint of a random edge. We study rules whose decision is a monotone function of the two endpoint loads, allowing edge-dependent thresholds and fresh randomization. Such a rule has an exact unit-discrepancy coupling: adding one ball to the initial state produces one tagged discrepancy at every later time. We represent the tag by conditional-expectation projections on the marked edge space and obtain diffusive displacement bounds. A transport-volume inequality then converts slow propagation of influence into lower bounds for the load gap. On the cycle with $n$ vertices, from every initial distribution and at every physical time $t\\ge 1/n$, the expected gap is at least a constant times $\\min\\{\\sqrt n,t^{1/4}\\}$, and the gap exceeds this scale with probability at least $1/8$. After exactly $k\\ge1$ allocations, the corresponding scale is $\\min\\{\\sqrt n,(k/n)^{1/4}\\}$. No stationarity, symmetry, recurrence, or moment assumption is used. The general inequality also yields a lower bound of order $\\sqrt{L/K+\\log K}$ on the $L\\times K$ discrete torus $C_L\\square C_K$. These results separate endpoint-local rules from global-information strategies that achieve polylogarithmic gaps on cycles.",
+      "abstract": "In graphical two-choice allocation, each arriving ball is assigned to one endpoint of a random edge. We study rules whose decision is a monotone function of the two endpoint loads, allowing edge-dependent thresholds and fresh randomization. Such a rule has an exact unit-discrepancy coupling: adding one ball to the initial state produces one tagged discrepancy at every later time. We represent the tag by conditional-expectation projections on the marked edge space and obtain diffusive displacement bounds. A transport-volume inequality then converts slow propagation of influence into lower bounds for the load gap. On the cycle with $n$ vertices, from every initial distribution and at every physical time $t\\ge 1/n$, the expected gap is at least a constant times $\\min\\{\\sqrt n,t^{1/4}\\}$, and the gap exceeds this scale with probability at least $1/8$. After exactly $k\\ge1$ allocations, the corresponding scale is $\\min\\{\\sqrt n,(k/n)^{1/4}\\}$. No stationarity, symmetry, recurrence, or moment assumption is used. A smoothed threshold rule in the same class has expected gap $O(\\sqrt n\\log n)$ up to any fixed polynomial time horizon, so the saturated cycle bound is sharp within the class up to a logarithmic factor. The general inequality also yields a lower bound of order $\\sqrt{L/K}$ on the $L\\times K$ rectangular torus $C_L\\square C_K$; combined with a strategy-independent logarithmic bound, this gives order $\\sqrt{L/K}+\\log(LK)$. These results separate endpoint-local rules from global-information strategies that achieve polylogarithmic gaps on cycles. All numbered results are verified in Lean.",
       "authors": [
         "Obinna Okechukwu"
       ],
       "published": "2026-09-30T01:00:14Z",
-      "updated": "2026-09-30T01:00:14Z",
+      "updated": "2026-10-05T13:25:06Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
