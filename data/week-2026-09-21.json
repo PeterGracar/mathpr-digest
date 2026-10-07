@@ -9,7 +9,7 @@
   "data_through": "2026-09-25",
   "total_submissions": 214,
   "fetched": 214,
-  "generated_at": "2026-10-06T08:59:56Z",
+  "generated_at": "2026-10-07T08:40:33Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -1227,12 +1227,12 @@
     {
       "id": "2609.28814",
       "title": "Wiman-Valiron inequalities in the unit disk outside sets of finite logarithmic measure",
-      "abstract": "We give affirmative answers to both parts of Question 2.6 posed by Grosse-Erdmann (2025) concerning Wiman--Valiron inequalities in the unit disk. For every unbounded analytic function in the disk, we establish the proposed iterated-logarithm inequalities outside exceptional sets of finite logarithmic measure. The corresponding power estimate is a corollary. Both conclusions follow from a variance bound for Khinchin families and a classical estimate for their largest atom. The multiplicative constants in the main inequalities can be chosen absolute. We also obtain a disk analogue of Rosenbloom's composition estimate, with an explicit boundary prefactor. The key step combines a boundary change of variable with a monotone auxiliary function whose derivative is exactly the variance of a rescaled member of the Khinchin family. A classical example shows that the leading logarithmic exponent $1/2$ cannot be decreased.",
+      "abstract": "We give affirmative answers to both parts of Question 2.6 posed by Grosse-Erdmann (2025) concerning Wiman-Valiron inequalities in the unit disk. For every unbounded analytic function in the disk, we establish the proposed iterated-logarithm inequalities outside exceptional sets of finite logarithmic measure. The corresponding power estimate is a corollary. Both conclusions follow from a variance bound for Khinchin families and a classical estimate for their largest atom. The multiplicative constants in the main inequalities can be chosen absolute. We also obtain a disk analogue of Rosenbloom's composition estimate, with an explicit boundary prefactor. The key step combines a boundary change of variable with a monotone auxiliary function whose derivative is exactly the variance of a rescaled member of the Khinchin family. A classical example shows that the leading logarithmic exponent $1/2$ cannot be decreased.",
       "authors": [
         "Víctor J. Maciá"
       ],
       "published": "2026-09-23T21:49:13Z",
-      "updated": "2026-09-25T08:58:52Z",
+      "updated": "2026-10-06T17:55:01Z",
       "primary_category": "math.CV",
       "categories": [
         "math.CV",
@@ -3166,13 +3166,13 @@
     {
       "id": "2609.24426",
       "title": "Localization Lengths for Two-Dimensional Random Band Matrices: Stretched-Exponential Lower Bounds",
-      "abstract": "We consider $N \\times N$ random band matrices $H = (H_{xy})$ with centered complex Gaussian entries, indexed by points $x,y$ on the two-dimensional discrete torus $(\\mathbb{Z} / \\sqrt{N} \\mathbb{Z})^2$. The matrix entries $H_{xy}$ vanish whenever the distance between $x$ and $y$ exceeds the bandwidth parameter $W$. We prove that if $W \\geq (\\log N)^{55}$, then, with high probability, all bulk eigenvectors are delocalized. Equivalently, this yields a lower bound of order $\\exp(W^{1/55})$ for the localization lengths of two-dimensional random band matrices, improving the superpolynomial lower bound $W^C$ for every fixed constant $C>0$ established in arXiv:2503.07606.",
+      "abstract": "We consider $N \\times N$ random band matrices $H = (H_{xy})$ with centered complex Gaussian entries, indexed by points $x,y$ on the two-dimensional discrete torus $(\\mathbb{Z} / \\sqrt{N} \\mathbb{Z})^2$. The matrix entries $H_{xy}$ vanish whenever the distance between $x$ and $y$ exceeds the bandwidth parameter $W$. We prove that if $W \\geq (\\log N)^{7}$, then, with high probability, all bulk eigenvectors are delocalized. Equivalently, this yields a lower bound of order $\\exp(W^{1/7})$ for the localization lengths of two-dimensional random band matrices, improving the superpolynomial lower bound $W^C$ for every fixed constant $C>0$ established in arXiv:2503.07606.",
       "authors": [
         "Xujie Lai",
         "Fan Yang"
       ],
       "published": "2026-09-21T11:21:48Z",
-      "updated": "2026-09-21T11:21:48Z",
+      "updated": "2026-10-06T03:47:06Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4622,14 +4622,14 @@
     {
       "id": "2609.21954",
       "title": "Finite Explosion for One-dimensional Lévy Driven SDEs and its Application to SPDEs",
-      "abstract": "This paper addresses finite-time explosion of one-dimensional stochastic differential equations (SDEs) driven by pure-jump Lévy processes \\[ X_{t}^{x}=x-\\int_{0}^{t}b(X_{s}^{x})\\,\\dd s+L_{t}, \\] where the drift coefficient $b$ is locally Lipschitz continuous, and $(L_t)_{t\\ge0}$ is a pure jump Lévy process. We formulate three sets of conditions: a right-tail return condition; a nondegeneracy condition together with a left-tail Osgood bound; and a right-tail Osgood bound. The first two imply almost-sure explosion to \\(-\\infty\\) from every finite initial state, whereas the latter two imply a uniform bound on the mean explosion time. As an application, we give explicit conditions on the nonlinearity and the Lévy measure under which every local weak solution of a semilinear parabolic stochastic partial differential equation (SPDE) with additive Lévy space--time white noise and homogeneous Dirichlet boundary conditions has an almost surely finite lifetime.",
+      "abstract": "We study finite-time explosion to $-\\infty$ for the one-dimensional stochastic differential equation \\[ X_t^x=x-\\int_0^t b(X_s^x)\\,\\dd s+L_t,\\quad x\\in\\R, \\] where $b$ is locally Lipschitz and $(L_t)_{t\\ge0}$ is a pure-jump Lévy process. We give verifiable conditions involving Osgood-type integrability under which explosion occurs almost surely from every finite initial state. Under stronger tail conditions, we obtain a uniform bound on the mean explosion time. In particular, under suitable tail monotonicity, converse results make these criteria necessary and sufficient, and yield an explicit classification for Riccati drifts. As an application, we consider a semilinear parabolic stochastic partial differential equation (SPDE) with additive Lévy space--time white noise and homogeneous Dirichlet boundary conditions. We give explicit conditions on the nonlinearity and the Lévy measure under which every local weak solution defined up to explosion has an almost surely finite explosion time.",
       "authors": [
         "Pei-Sen Li",
         "Yuichi Shiozawa",
         "Jian Wang"
       ],
       "published": "2026-09-18T16:11:12Z",
-      "updated": "2026-09-18T16:11:12Z",
+      "updated": "2026-10-06T04:08:01Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -5061,7 +5061,7 @@
         "Hao Wu"
       ],
       "published": "2026-09-18T03:20:17Z",
-      "updated": "2026-09-18T03:20:17Z",
+      "updated": "2026-10-06T06:12:52Z",
       "primary_category": "math-ph",
       "categories": [
         "math-ph",

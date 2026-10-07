@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-02",
-  "total_submissions": 191,
-  "fetched": 191,
-  "generated_at": "2026-10-06T08:59:58Z",
+  "total_submissions": 192,
+  "fetched": 192,
+  "generated_at": "2026-10-07T08:40:36Z",
   "entries": [
     {
       "id": "2610.01298",
@@ -1761,7 +1761,7 @@
         "Kevin Yang"
       ],
       "published": "2026-09-30T17:59:12Z",
-      "updated": "2026-09-30T17:59:12Z",
+      "updated": "2026-10-05T23:34:45Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3657,6 +3657,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.34700",
       "pdf_url": "https://arxiv.org/pdf/2609.34700",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-09-29",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.06894",
+      "title": "Memory Prediction Excess: A Probabilistic Quantity for Predictive Gain and Memory Length in Stochastic Processes",
+      "abstract": "A central question in the prediction of stochastic processes is the extent to which past information can improve the probability of correctly predicting the next state. We introduce the Memory Prediction Excess (MPE) to address this question quantitatively. The MPE measures the average improvement in prediction accuracy obtained by using the entire observed history relative to using only the static marginal distribution, in discrete-time finite-state processes. It is defined as the difference between the expected optimal conditional prediction accuracy and the optimal static prediction accuracy. Its basic properties are examined: the MPE is always non-negative; it admits an upper bound depending on the static accuracy, attained if and only if the future is almost surely a deterministic function of the past; and degenerate cases in which the MPE vanishes are characterized. A normalized version, taking values in the unit interval, is introduced as a dimensionless measure of predictive efficiency. A lower bound is derived by comparing predictions based on histories of different lengths, showing that the expected optimal prediction accuracy is monotone with respect to the history length. The framework is extended to finite-length histories, where the finite-history MPE (FH-MPE) measures the predictive gain attainable when only the most recent observations are retained. This leads to the notion of a minimal memory length required to achieve the same predictive performance as the full history. For finite-order Markov chains, this minimal memory length is shown to be bounded by the Markov order. The MPE and its variants are formulated in terms of conditional probabilities and prediction accuracies, offering a probabilistic perspective on the predictive utility of memory that is complementary to classical information-theoretic approaches.",
+      "authors": [
+        "Jiahao Jiang"
+      ],
+      "published": "2026-09-28T08:52:12Z",
+      "updated": "2026-09-28T08:52:12Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.IT",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.06894",
+      "pdf_url": "https://arxiv.org/pdf/2610.06894",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-29",
