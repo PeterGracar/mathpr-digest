@@ -5,11 +5,11 @@
   "iso_week": 39,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-09-25",
-  "total_submissions": 214,
-  "fetched": 214,
-  "generated_at": "2026-10-07T08:40:33Z",
+  "total_submissions": 210,
+  "fetched": 210,
+  "generated_at": "2026-10-08T08:59:23Z",
   "entries": [
     {
       "id": "2609.29425",
@@ -257,32 +257,6 @@
       "bucket": "medium"
     },
     {
-      "id": "2609.28989",
-      "title": "From killed BBM with drift to BBM: the extremal process",
-      "abstract": "In this paper, we study the asymptotic behavior of the extreme of a standard one-dimensional branching Brownian motion (BBM) with drift $-ρ>-\\sqrt2$ and absorbing barrier at level $-x$. We prove that the two-dimensional point process, with first component being the extremal process of the BBM and the second component being the running minimum of the BBM with drift, converges weakly to a decorated Poisson point process (DPPP) on $\\mathbb{R} \\times [0, \\infty)$. This framework allows us to explicitly derive the limit, as $t\\to\\infty$, of the extremal process of the killed BBM killed at level $-x$, demonstrating that the double limit, when $t\\to\\infty$ first and then $x\\to\\infty$, of the extremal process of the BBM with drift $-ρ$ and killed at level $-x$ coincides with the limit of the extreme of (un-killed) BBM up to a multiplicative constant factor.",
-      "authors": [
-        "Yan-Xia Ren",
-        "Renming Song",
-        "Fan Yang"
-      ],
-      "published": "2026-09-24T04:01:20Z",
-      "updated": "2026-09-24T04:01:20Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.28989",
-      "pdf_url": "https://arxiv.org/pdf/2609.28989",
-      "score": 3,
-      "matched_keywords": [
-        "point process"
-      ],
-      "announced": "2026-09-25",
-      "own": false,
-      "coauthors": [],
-      "bucket": "medium"
-    },
-    {
       "id": "2609.27335",
       "title": "Polynomial Decay in Absorbing Continuous-Time Markov Chains",
       "abstract": "Let $P(t)$ be the transition function of an absorbing continuous-time Markov chain on a countable state space. We study asymptotic relations of the form $p_{ij}(t)\\sim a_{ij} L(t)$, $t\\to\\infty$, where $L$ is independent of $i$ and $j$. We obtain general conditions under which the coefficient matrix $A=(a_{ij})$ has rank one and describe the resulting consequences for survival probabilities and conditional distributions. The analysis applies to both reducible and irreducible chains. We also construct an irreducible counterexample, based on a killed random walk on a homogeneous tree, for which a common asymptotic scale exists but the coefficient matrix has rank greater than one. This shows that irreducibility alone does not imply rank-one asymptotics. The results identify conditions under which fixed-state transition asymptotics determine the asymptotic behaviour of the entire transition function and clarify the limitations of such conclusions in the absence of additional structure.",
@@ -301,31 +275,6 @@
       "matched_keywords": [
         "random walk",
         "survival"
-      ],
-      "announced": "2026-09-24",
-      "own": false,
-      "coauthors": [],
-      "bucket": "medium"
-    },
-    {
-      "id": "2609.26902",
-      "title": "Down-the-middle isometries for the Airy and KPZ sheets",
-      "abstract": "We find a new coupling between the Airy sheet $\\mathcal{S}$ and the Airy line ensemble $\\{ \\mathcal{A}_n \\}_{n \\in \\mathbb{N}}$, which we call the down-the-middle isometry. In this coupling, the Airy sheet is encoded by last passage values that start at $\\mathcal{A}_k(0)$ for some $k \\in \\mathbb{N}$ and end on the top line $\\mathcal{A}_1$. Using this coupling, we give a new construction of the (extended) Airy sheet as a scaling limit of Brownian last passage percolation and study coalescence of geodesics in the directed landscape. This coupling extends to discrete polymers and last passage percolation models, as well as to the KPZ line ensemble and KPZ sheet.",
-      "authors": [
-        "Duncan Dauvergne",
-        "Fardin Syed"
-      ],
-      "published": "2026-09-22T18:02:46Z",
-      "updated": "2026-09-22T18:02:46Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.26902",
-      "pdf_url": "https://arxiv.org/pdf/2609.26902",
-      "score": 4,
-      "matched_keywords": [
-        "percolation"
       ],
       "announced": "2026-09-24",
       "own": false,
@@ -1396,35 +1345,6 @@
       "bucket": "other"
     },
     {
-      "id": "2609.28464",
-      "title": "The Spectra of the Henze-Zirkler and Henze-Wagner Operators for BHEP Tests",
-      "abstract": "The Baringhaus-Henze-Epps-Pulley (BHEP) tests for multivariate normality are affine-invariant goodness-of-fit tests based on a Gaussian-weighted $L^2$ distance between empirical and Gaussian characteristic functions. In 1990, Henze and Zirkler expressed the limiting null distribution through the eigenvalues of an integral operator on the standard Gaussian space. In 1997, Henze and Wagner obtained a simpler covariance kernel and raised the problem of calculating the eigenvalues of the resulting operator on a Gaussian-weighted space. Although subsequent work treated the univariate case and numerical approximations in a few low dimensions, the complete all-dimensional spectral problem remained open. This paper determines both complete spectra for every dimension $d \\in \\mathbb{N}$ and every smoothing parameter $β> 0$. The two operators are shown to have the forms $\\mathcal{X}_{β,d}^*\\mathcal{X}_{β,d}$ and $\\mathcal{X}_{β,d}\\mathcal{X}_{β,d}^*$ for the same Hilbert-Schmidt operator $\\mathcal{X}_{β,d}$. Consequently, their nonzero eigenvalues agree, including multiplicities, while the null space of the Henze-Zirkler operator is identified exactly. The Gaussian integral operator in the Henze-Wagner decomposition is diagonalized by Mehler's formula, and rotational symmetry confines the finite-rank correction to the sectors associated with spherical harmonics of degrees $0$, $1$, and $2$. The degree-$1$ and degree-$2$ eigenvalues are characterized by scalar transcendental equations, and the radial eigenvalues by an explicit pole-safe Fredholm determinant. The paper establishes nonnegativity, multiplicities, eigenfunction reconstruction, completeness, the trace identity, and a complete characterization of all exceptional pole cases.",
-      "authors": [
-        "Bruno Ebner",
-        "Dominic Edelmann",
-        "Norbert Henze",
-        "Frédéric Ouimet",
-        "Donald Richards"
-      ],
-      "published": "2026-09-23T17:53:55Z",
-      "updated": "2026-09-29T01:28:18Z",
-      "primary_category": "math.ST",
-      "categories": [
-        "math.ST",
-        "math.CA",
-        "math.FA",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.28464",
-      "pdf_url": "https://arxiv.org/pdf/2609.28464",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-09-24",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
       "id": "2609.28452",
       "title": "Stochastic Domination of Gaussian Maxima by the Regular Simplex",
       "abstract": "Let $n\\ge2$, and let $X=(X_1,\\ldots,X_n)$ be a centered Gaussian vector with $\\mathrm{Var}(X_i)=1$ for every $i$. Let $Z_1,\\ldots,Z_n$ be independent standard Gaussians, and put $\\overline{Z}=(Z_1+\\cdots+Z_n)/n$. We prove $\\mathbb{P}\\{\\max_i X_i\\le t\\}\\ge\\mathbb{P}\\{\\sqrt{n/(n-1)}\\,\\max_i(Z_i-\\overline{Z})\\le t\\}$ for every $t\\in\\mathbb{R}$, and for each fixed $t>0$ equality holds only when $\\mathrm{Cov}(X_i,X_j)=-1/(n-1)$ for all $i\\ne j$. The right side is the distribution function of the maximum of the regular simplex vector. Equivalently, among all simplices containing a given centered ball, the regular simplex circumscribed about the ball has the least standard Gaussian measure, as conjectured by Balitskiy, Karasev, and Tsigler. In our preceding paper we proved this comparison after both maxima are smoothed by independent Gaussian noise of variance $1/(n-1)$, which suffices for the Weak Simplex Conjecture; here we remove the smoothing, which is what probabilities at a single threshold require. As an application we consider $n$ equally likely signals of equal energy in Gaussian noise, where the transmitter may also send nothing. At every positive false-alarm level, and for every law of a common nonnegative random amplitude not concentrated at zero, the regular simplex uniquely maximizes the average probability of correct identification whenever the signal dimension is at least $n-1$. A Lean formalization is available at https://github.com/abhmul/full-simplex-conjecture-lean.",
@@ -1836,29 +1756,6 @@
       ],
       "abs_url": "https://arxiv.org/abs/2609.27440",
       "pdf_url": "https://arxiv.org/pdf/2609.27440",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-09-24",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
-      "id": "2609.27384",
-      "title": "Shape without scale: an identifiability dichotomy for a bounded tail observed through a non-additive measurement kernel",
-      "abstract": "A latent severity has a bounded lower tail with density of shape alpha and scale L. It is observed only through a fixed Markov kernel K that is biased and non-additive. The relative conditional spread of K diverges at the endpoint. Our sample is i.i.d. from the marginal Q alone, with no anchoring covariate or instrument. We prove a dichotomy. The shape index alpha is identifiable: for every admissible choice of the class constants, any two observationally equivalent members of a lean class share alpha, determined by a near-endpoint expansion of Q. The rate, namely L and the fixed-scale exceedance p_tau, does not survive. There exist admissible shared class constants and two members of a smaller regularity class whose observed laws coincide exactly. Across the pair alpha agrees, whereas L and p_tau move. A degenerate Le Cam two-point bound excludes any uniformly consistent estimator of either, and pointwise consistency fails at one member. Only the rate needs an anchor. We conjecture that a known kernel family with known edge map identifies the rate fiber by fiber if and only if the family satisfies a fixed-scale injectivity clause, and we prove the sufficiency direction. In surrogate safety, uncalibrated conflict data give the shape of near-crash risk, not its absolute rate.",
-      "authors": [
-        "Jiarui Qi"
-      ],
-      "published": "2026-09-23T05:34:40Z",
-      "updated": "2026-09-23T05:34:40Z",
-      "primary_category": "math.ST",
-      "categories": [
-        "math.ST",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2609.27384",
-      "pdf_url": "https://arxiv.org/pdf/2609.27384",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-09-24",
