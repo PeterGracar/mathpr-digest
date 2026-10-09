@@ -9,7 +9,7 @@
   "data_through": "2026-10-02",
   "total_submissions": 193,
   "fetched": 193,
-  "generated_at": "2026-10-08T08:59:26Z",
+  "generated_at": "2026-10-09T09:06:14Z",
   "entries": [
     {
       "id": "2610.01298",
@@ -4637,13 +4637,13 @@
     {
       "id": "2609.30680",
       "title": "A Log-Star Comparison Between Expectation Threshold and Fractional Expectation Threshold",
-      "abstract": "We proved a log-star comparison between the expectation threshold $q(\\mathcal F)$ and the fractional expectation threshold $q_f(\\mathcal F)$ for any nontrivial increasing family $\\mathcal F$ on a finite ground set $V$ of size $|V|=N$. Specifically, we show that $$q_f(\\mathcal F)\\le64\\log_2^*(N+2)\\,q(\\mathcal F),$$ where we define $\\log_2^* x$ to be the least integer $k\\ge0$ such that applying $\\log_2$ repeatedly $k$ times gives a number at most $1$.",
+      "abstract": "We proved a log-star comparison between the expectation threshold $q(\\mathcal F)$ and the fractional expectation threshold $q_f(\\mathcal F)$ for any nontrivial increasing family $\\mathcal F$ on a finite ground set $V$ of size $|V|=N$. Specifically, we show that $$q_f(\\mathcal F)\\le64\\log_2^*(N+2)\\,q(\\mathcal F),$$ where $\\log_2^* x$ is the iterated logarithm of base-2. Using similiar methods, one can extend this result to the following stronger form: there exists a universal constant $C>0$ such that \\[ q_f(\\mathcal F)\\le Cq(\\mathcal F)\\log_2^*(l(\\mathcal F)),\\quad q_f(\\mathcal F)\\le Cq(\\mathcal F)\\log_2^*(\\operatorname{VC}(\\min\\mathcal F)), \\] where $l(\\mathcal F):=\\max\\{2,\\max_{S\\in\\min\\mathcal F}|S|\\}$ and $\\operatorname{VC}(\\min\\mathcal F)$ denotes the VC-dimension of $\\min\\mathcal F$. On October 7, 2026, OpenAI released a result proving the equivalence of fractional and integral thresholds, which supersedes the findings in this note. The authors are keeping this note for historical reference.",
       "authors": [
         "Xuan Fang",
         "Tianyu Wang"
       ],
       "published": "2026-09-25T01:35:56Z",
-      "updated": "2026-09-25T01:35:56Z",
+      "updated": "2026-10-08T08:17:13Z",
       "primary_category": "math.CO",
       "categories": [
         "math.CO",

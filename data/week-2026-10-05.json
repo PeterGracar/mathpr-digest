@@ -6,11 +6,38 @@
   "category": "math.PR",
   "complete": false,
   "finalized": false,
-  "data_through": "2026-10-08",
-  "total_submissions": 199,
-  "fetched": 199,
-  "generated_at": "2026-10-08T08:59:28Z",
+  "data_through": "2026-10-09",
+  "total_submissions": 244,
+  "fetched": 244,
+  "generated_at": "2026-10-09T09:06:17Z",
   "entries": [
+    {
+      "id": "2610.12053",
+      "title": "Loop soup percolation and boundary dimension on metric trees",
+      "abstract": "We determine the percolation threshold of the Brownian loop soup on a transient locally finite weighted tree with proper cable metric and no killing. It equals $1-D_G/2$, where $D_G\\in[0,2]$ is the Hausdorff dimension of the boundary in the metric induced by the normalized Green function. This gives an analogue of Lyons' branching-number formula for Bernoulli percolation, with Green distance replacing graph distance. Spherically symmetric trees with unit conductances and branching number two realize every threshold in $[1/2,1]$, while geometric conductances give explicit positive thresholds below one-half and a subdivided binary tree has threshold zero. Under the capacity assumption of Drewitz, Prévost and Rodriguez, we characterize the threshold one-half by a finite-energy condition, without a minimum-degree assumption. Non-percolation at one-half then follows from their theorem and Lupu's coupling. For supercritical Galton-Watson trees with unit conductances, conditioned on survival, the boundary dimension is almost surely one and the threshold is one-half, with non-percolation at criticality. No offspring moment assumption is required, and leaves and vertices with one child are allowed. The classification also applies intrinsically to proper real trees spanned by their infinite rays.",
+      "authors": [
+        "Christian Mönch"
+      ],
+      "published": "2026-10-08T14:36:46Z",
+      "updated": "2026-10-08T14:36:46Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12053",
+      "pdf_url": "https://arxiv.org/pdf/2610.12053",
+      "score": 6,
+      "matched_keywords": [
+        "percolation",
+        "survival"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [
+        "Christian Monch"
+      ],
+      "bucket": "coauthor"
+    },
     {
       "id": "2610.08149",
       "title": "Infinite-mean Galton-Watson trees have zero random-interchange threshold",
@@ -69,6 +96,121 @@
         "Alexander Drewitz"
       ],
       "bucket": "coauthor"
+    },
+    {
+      "id": "2610.11808",
+      "title": "Mixing time and isoperimetry of long-range percolation in the diffusive regime",
+      "abstract": "We consider long-range percolation (LRP) on $\\mathbb{Z}^d, d \\ge 1$ with connection probabilities $\\mathbf{p}(x, y) \\approx \\fracβ{\\|x-y\\|^s}$ for $β>0$ and $s > \\min(2d, d+2)$. Our main result is that the mixing time of the random walk on the giant component of supercritical LRP inside a box of side length $n$ is of order $n^2$. To establish the upper bound, we show that a $d$-dimensional isoperimetric inequality holds almost surely simultaneously for all connected sets inside the giant component that are large enough.",
+      "authors": [
+        "Dieter Mitsche",
+        "Carlo Scali"
+      ],
+      "published": "2026-10-08T12:16:05Z",
+      "updated": "2026-10-08T12:16:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11808",
+      "pdf_url": "https://arxiv.org/pdf/2610.11808",
+      "score": 16,
+      "matched_keywords": [
+        "giant component",
+        "long-range percolation",
+        "percolation",
+        "random walk"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2610.12366",
+      "title": "Directed fractal percolation and non-Lipschitz variants",
+      "abstract": "While models of undirected and directed geometry in random i.i.d. disorder with rapidly decaying tails are expected to behave similarly and exhibit features of the Kardar--Parisi--Zhang universality class, the scenario when the background noise is fractal is expected to be significantly different. A canonical example of the latter is Liouville Quantum Gravity, where the planar Gaussian free field forms the fractal background. A toy model capturing some of the essential features is given by Mandelbrot's fractal percolation, a random Cantor set. In the simplest setting, dyadic cubes of different scales are retained independently with probability $p$ (a parameter of the model), and the intersection of all retained cubes forms the set of open sites. Connectivity properties of such sets have been intensely studied. Across [CCD88, Cha95], a surprising result was proven. Namely, while there is a phase transition for connectivity of the fractal percolation set (like in usual bond percolation), directed percolation never occurs. Results of a similar spirit have been obtained in geometric measure theory as well. As a step towards understanding last passage percolation (LPP) driven by the Gaussian free field (initiated in [GGN24]), we study the problem of quantifying LPP in fractal percolation. Developing a multi-scale framework, we show an almost polynomial gap from linear growth of the passage time. The obstruction to high LPP values is the Lipschitz nature of directed paths. Along these lines, [Cha96] showed that any connected subset of fractal percolation must have Hausdorff dimension strictly larger than one. We show that one can construct directed paths passing through open sites in fractal percolation provided they move exponentially fast in the spatial direction---a model we introduce and term as unrectifiable directed percolation.",
+      "authors": [
+        "Shirshendu Ganguly",
+        "Victor Ginsburg",
+        "Kaihao Jing"
+      ],
+      "published": "2026-10-08T17:27:33Z",
+      "updated": "2026-10-08T17:27:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.CA",
+        "math.MG"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12366",
+      "pdf_url": "https://arxiv.org/pdf/2610.12366",
+      "score": 9,
+      "matched_keywords": [
+        "connectivity",
+        "percolation",
+        "phase transition"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2610.11872",
+      "title": "Explicit upper bounds on the threshold of one-dimensional long-range percolation",
+      "abstract": "We study bond percolation on the one-dimensional lattice in which two sites at distance $r$ are connected with probability $p_r=C/r^{1+σ}$, where $0 < σ< 1$. An infinite cluster exists if $C$ exceeds a critical value $C_c(σ)$, which is not known exactly: the available results are the lower bound of Schulman, $C_c\\ge1/[2ζ(1+σ)]$, and numerical estimates. Here we prove explicit upper bounds. We apply a second-moment argument to a family of random monotone paths whose steps have a heavy-tailed (Sibuya) distribution. Two such paths meet only a finite number of times, and their overlap is computed exactly by renewal theory. The result is a closed-form bound, which gives $C_c\\leσ+O(σ^2)$ as $σ\\to0$ and is below $1$ for $σ< 0.667$. Since the paths are monotone, the bound holds also for oriented percolation, and it determines the oriented threshold asymptotically: $C_c^{\\rightarrow}ζ(1+σ)\\to1$ as $σ\\to0$. A coarse-grained version of the argument, with blocks of sites in place of sites, gives an explicit bound $C_c < 1$ for every $σ< 1$. We compare the bounds with the known numerical values of $C_c$.",
+      "authors": [
+        "Guy Amit"
+      ],
+      "published": "2026-10-08T12:46:28Z",
+      "updated": "2026-10-08T12:46:28Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.stat-mech"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11872",
+      "pdf_url": "https://arxiv.org/pdf/2610.11872",
+      "score": 9,
+      "matched_keywords": [
+        "long-range percolation",
+        "percolation"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2610.12312",
+      "title": "The Geometry of Hierarchical Navigation: Accuracy and Query Cost for Point Process Input",
+      "abstract": "Large-scale information retrieval systems, including retrieval-augmented generation (RAG) and recommendation engines, widely use multi-layered hierarchical data structures for ultra-fast approximate nearest-neighbor search in high-dimensional vector spaces. However, the geometric conditions that ensure accurate and efficient greedy navigation remain poorly understood. In this work, we study the efficiency of greedy navigation on a hierarchy of proximity graphs constructed from \\(n\\) data points on the \\(d\\)-dimensional torus~$\\mathbb{T}^d$. We identify a deterministic coverage condition under which, given any query $q\\in \\mathbb{T}^d$, greedy search returns a point within $(1+\\varepsilon)$-factor of the distance to the closest point. This coverage property holds with high probability when the data is distributed as a homogeneous Poisson process, a Hermitian determinantal process, or a bounded-density Cox process, as long as $d = o(\\log n/\\log \\log n)$. Under the same assumptions, the expected number of greedy hops for a fixed query is \\(O\\!\\left(\\exp\\!\\left(\\tfrac12 d\\log d+O(d)\\right)\\log n\\right)\\), yielding logarithmic expected hop count in fixed dimension.",
+      "authors": [
+        "Shankar Bhamidi",
+        "Souvik Dhara",
+        "Lars Schroeder",
+        "Clara Stegehuis"
+      ],
+      "published": "2026-10-08T16:59:36Z",
+      "updated": "2026-10-08T16:59:36Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "cs.CG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12312",
+      "pdf_url": "https://arxiv.org/pdf/2610.12312",
+      "score": 6,
+      "matched_keywords": [
+        "point process",
+        "poisson process"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
     },
     {
       "id": "2610.09076",
@@ -350,6 +492,133 @@
       "own": false,
       "coauthors": [],
       "bucket": "high"
+    },
+    {
+      "id": "2610.12160",
+      "title": "Capacities and Hitting Times for Simple and (critical) Branching Random Walk Sausages",
+      "abstract": "For a finite set $A\\subseteq\\mathbb Z^d$, we study the capacities of a sausage obtained by transporting $A$ along the Minkowski sum of simple or critical branching random walks. We first establish quantitative capacity estimates for the random walk sausage and the branching sausage. This in turn, gives us estimates for the probability that Minkowski sums of a mixture of walks hit a finite set in high dimensions. Our approach is based on an annular decomposition of a critical branching random walk into successive waves, which may have further applications.",
+      "authors": [
+        "Joelle Ishak"
+      ],
+      "published": "2026-10-08T15:38:42Z",
+      "updated": "2026-10-08T15:38:42Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12160",
+      "pdf_url": "https://arxiv.org/pdf/2610.12160",
+      "score": 5,
+      "matched_keywords": [
+        "branching random walk",
+        "random walk"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2610.12460",
+      "title": "Infinite light rays and infinite clusters with infinitely many pivots",
+      "abstract": "It is conjectured that in the Lorentz mirror model on $\\Z^2$ all trajectories are finite. Quas showed that, almost surely, the two halves of any infinite trajectory, cut at an edge, meet at infinitely many vertices, each of which is pivotal: changing its state can make the trajectory finite. We construct plane graphs on which infinite trajectories exist, and all of them have this property. Given $p\\in(0,1)$, we replace each edge of a random one-ended subtree of $\\Z^2$ by a number of parallel edges, depending on $p$, that is at most logarithmic in the height of the corresponding descendant tree. The medial graph of the resulting plane multigraph is a factor of the tree, and for the uniform spanning tree it has finite vertex intensity. In the mirror model on this medial graph, with probability $p$ for mirrors along primal edges and any probability $r\\in(0,1-p]$ for mirrors along dual edges, infinite trajectories exist, and the two halves of each of them meet infinitely often. The construction rests on Bernoulli percolation: every random one-ended locally finite tree can be decorated in this way such that bond percolation with parameter $p$ is critical and percolates, and every vertex of the infinite cluster has infinitely many pivotal edges. We characterize this property for bond and site percolation and for mirrors.",
+      "authors": [
+        "Martin P. W. Zerner"
+      ],
+      "published": "2026-10-08T17:59:35Z",
+      "updated": "2026-10-08T17:59:35Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12460",
+      "pdf_url": "https://arxiv.org/pdf/2610.12460",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2610.11239",
+      "title": "Optimal upper tail estimates for the edge eigenvalues of $β$-ensembles",
+      "abstract": "Hermite and Laguerre $β$-ensembles are important and well studied models in random matrix theory, with the special cases $β=1,2,4$ corresponding to classical matrix ensembles. Although sharp moderate-deviation estimates have been established for the largest eigenvalues, substantially less is known for other edge eigenvalues. Even for the limiting distributions $TW_β^{(k)}$, the leading constants in the tail asymptotics are not known for general $β$ and $k\\ge2$. In this paper, for each fixed $k\\ge2$, we prove matching upper and lower moderate deviation bounds for the right tail of the $k$-th largest eigenvalue, with the optimal exponential constant $2βk/3$, for general $β$. We also establish sharp lower tail estimates for the second largest eigenvalue of the Gaussian and Laguerre orthogonal ensembles, with exponential constant $1/24$, same as for the largest eigenvalue. For $TW_β^{(k)}$, we obtain matching right-tail asymptotics for $β\\ge2/k$ and left-tail asymptotics for $0<β\\le2$ for $k=2$. We also obtain new stochastic domination results for the edge eigenvalues. Our proofs combine variational arguments from tridiagonal matrix models, last passage percolation, stochastic comparisons of sums of edge eigenvalues, and superposition-decimation identities.",
+      "authors": [
+        "Jnaneshwar Baslingker"
+      ],
+      "published": "2026-10-08T04:40:51Z",
+      "updated": "2026-10-08T04:40:51Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11239",
+      "pdf_url": "https://arxiv.org/pdf/2610.11239",
+      "score": 4,
+      "matched_keywords": [
+        "percolation"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2610.11680",
+      "title": "Intermediate coverings, random images, and projections",
+      "abstract": "We study intermediate coverings of spectral families, Cantor sets, and projections of measures. Two perturbation families of a fixed ReLU tangent kernel have identical source thresholds. Their Brownian images have equal box thresholds and distinct intermediate thresholds, almost surely along prescribed geometric scales. For Cantor sets with delayed contractions, we obtain entropy formulas for the intermediate dimensions of the sets and their fractional Brownian images. These formulas yield endpoint asymptotics and a sharp separation theorem for the first phase transition. An oscillating variant has distinct lower and upper intermediate dimensions while preserving the Assouad spectrum. Finally, almost every orthogonal projection preserves both intermediate dimensions of a nonzero finite compactly supported measure whose quasi-Assouad dimension does not exceed the target dimension.",
+      "authors": [
+        "Yunhao Zhao",
+        "Yingyu Zhao",
+        "Chen Zhou",
+        "Shengyang Zang"
+      ],
+      "published": "2026-10-08T10:53:29Z",
+      "updated": "2026-10-08T10:53:29Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11680",
+      "pdf_url": "https://arxiv.org/pdf/2610.11680",
+      "score": 3,
+      "matched_keywords": [
+        "phase transition"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2610.10849",
+      "title": "Sine beta is tail trivial",
+      "abstract": "We prove that the sine beta point process is tail trivial for every beta >0. The key ingredient in the proof is a certain uniform entropy bound, that makes use of the DLR equations of Dereudre et al. (2021) and the bounded two-point correlation density obtained by Qu and Valko (2025) and Assiotis and Najnudel (2026), that allows us to show that tail events are translation invariant. Tail triviality then follows either from the uniqueness theorem of Assiotis (2026) or from translation mixing, which we derive from the correlation estimates of Dumaz and Malvy (2026). As consequences, we obtain the following applications: (a) extremality of sine beta in the full convex class of fixed kernel Gibbs measures without stationarity and finite-energy conditions; (b) L^2-ergodicity of the associated infinite-particle reversible diffusion for every beta>0; and (c) the almost-sure collision/noncollision dichotomy with threshold beta=1 for the diffusion.",
+      "authors": [
+        "Theodoros Assiotis",
+        "Kohei Suzuki"
+      ],
+      "published": "2026-10-07T19:53:43Z",
+      "updated": "2026-10-07T19:53:43Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10849",
+      "pdf_url": "https://arxiv.org/pdf/2610.10849",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
     },
     {
       "id": "2610.10525",
@@ -754,6 +1023,762 @@
       "bucket": "medium"
     },
     {
+      "id": "2610.12138",
+      "title": "A shape theorem for a radially excited random walk in dimensions $d \\ge 2$",
+      "abstract": "We consider a once-excited random walk on $\\mathbb{Z}^d$, $d \\ge 2$, where the walk on its first visit has a bias of constant strength $β>0$ toward the origin and moves like a simple symmetric random walk on subsequent visits to that site. We show that the walk is recurrent and prove an almost sure spherical shape theorem: the trace after $n$ steps is asymptotically a Euclidean ball centered at the origin, with radius proportional to $n^{1/(d+1)}$, and the local times have an asymptotically conical profile. This result confirms a conjecture of Kozma (2007) on the shape of the trace for this model.",
+      "authors": [
+        "Arvind Singh"
+      ],
+      "published": "2026-10-08T15:24:39Z",
+      "updated": "2026-10-08T15:24:39Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12138",
+      "pdf_url": "https://arxiv.org/pdf/2610.12138",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12047",
+      "title": "Characterization and scaling limit of three-dimensional loop-erased random walk and random-walk loop-catchers",
+      "abstract": "Random-walk loop-catchers (RWLC) are a one-parameter family of random subsets of the trace of a random walk, recently introduced in [Cai 2026, arXiv:2607.18070], which interpolates between loop-erased random walk (LERW) and the full walk trace, satisfying a recovery property. We prove that the continuous version of this recovery property uniquely characterizes the scaling limit of LERW and RWLC in three dimensions, using a Green-function test via entangled multipath LERW, as outlined in [Cai 2026, arXiv:2607.18070]. For LERW, this resolves the 3D case of the conjecture of Sapozhnikov--Shiraishi [Sapozhnikov--Shiraishi 2018, Probab. Theory Related Fields 172, 615--662] and gives a new and axiomatic proof of the existence of the scaling limit, which was first proved in [Kozma 2007, Acta Math. 199, 29--152]. For RWLC, this gives the construction of 3D Brownian loop-catchers. The characterization also yields inversion invariance of the 3D LERW scaling limit.",
+      "authors": [
+        "Gefei Cai",
+        "Xinyi Li",
+        "Daisuke Shiraishi"
+      ],
+      "published": "2026-10-08T14:33:52Z",
+      "updated": "2026-10-08T14:33:52Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12047",
+      "pdf_url": "https://arxiv.org/pdf/2610.12047",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11919",
+      "title": "Random walk in a regenerating random environment",
+      "abstract": "In this paper we consider random walks moving in a dynamic random environment that is completely resampled with probability $p$ after each step of the random walker. This resampling yields a straightforward regeneration structure and limit theorems, such as a law of large numbers with a limiting speed $v(p)$ that depends on $p$. We investigate several properties of $v(p)$ as a function of $p$, such as differentiability and monotonicity. Similarily, we study the limiting diffusivity $σ^2(p)$ in a central limit theorem.",
+      "authors": [
+        "Raphael Martin",
+        "Jan Nagel"
+      ],
+      "published": "2026-10-08T13:14:45Z",
+      "updated": "2026-10-08T13:14:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11919",
+      "pdf_url": "https://arxiv.org/pdf/2610.11919",
+      "score": 2,
+      "matched_keywords": [
+        "random walk"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11324",
+      "title": "Universal Radial Laws for Random Polynomials: Erdős Problem #522 and Non-Universal Fluctuations",
+      "abstract": "We resolve Erdős Problem #522, posed in 1961, by proving that for random Littlewood polynomials the proportion of zeros in the closed unit disk converges almost surely to $1/2$. More generally, for partial sums of random power series with i.i.d. coefficients that are bounded, nondegenerate, and centrally symmetric, real Gaussian, or circular complex Gaussian, we prove that the proportion of zeros in the disk of radius $1+x/n$ converges almost surely to $\\frac12(1+\\coth x-1/x)$, uniformly in $x\\in\\mathbb{R}$. Thus almost all zeros lie at distance $O(1/n)$ from the unit circle. For random Littlewood polynomials, even with arbitrary dependence between degrees, the convergence at the unit circle holds at the almost-sure rate $O(n^{-1/4}\\sqrt{\\log n})$. We establish a law-of-the-iterated-logarithm criterion for dependent sequences and, for real Gaussian coefficients, obtain the sharp law of the iterated logarithm over all integer degrees, variance and cross-degree covariance asymptotics, quantitative central limit theorems, joint Gaussian limits, and increment bounds. For symmetric coefficient laws with bounded density and all moments finite, the number of zeros in the closed unit disk has variance $(c_G+κ_4/12)n+O_ξ(n^{399/400})$, and for random signs the constant is $c_G-1/6$. Thus the radial law is universal, while the fluctuations depend on the coefficient law through its fourth cumulant $κ_4$. All our main results are formally verified in Lean 4, and our proof of Erdős Problem #522 has been accepted as a solution to its formal statement in Google DeepMind's Formal Conjectures project.",
+      "authors": [
+        "Sebastien Kawada"
+      ],
+      "published": "2026-10-08T06:23:48Z",
+      "updated": "2026-10-08T06:23:48Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CA",
+        "math.CV"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11324",
+      "pdf_url": "https://arxiv.org/pdf/2610.11324",
+      "score": 2,
+      "matched_keywords": [
+        "erdos"
+      ],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12456",
+      "title": "Coupling Independence Implies Zero-Freeness",
+      "abstract": "For $Δ\\ge2$ and $q\\ge11Δ/6$, we prove that the antiferromagnetic $q$-state Potts partition function on finite simple graphs of maximum degree at most $Δ$ has no Fisher zeros in a graph-uniform complex neighbourhood of $[0,1]$. For $q>11Δ/6$, the proof establishes coupling independence throughout $[0,1]$ using a soft version of Vigoda's flip dynamics. Our main tool is a separator-shell transfer theorem for the Potts model on induced-subgraph closed classes of graphs of maximum degree at most $Δ$, with $q\\geΔ+1$. It yields a graph-uniform zero-free neighbourhood of $[0,1]$ from Hamming coupling independence at $0$ and a uniform coupling-independence bound on each interval $[δ,1]$, $δ\\in(0,1]$. We also obtain zero-free Lee-Yang polydiscs around the uniform field for vertex- and edge-colour fields. For Boolean Holant problems on bounded-degree graphs whose signatures come from a fixed finite family of log-concave symmetric signatures $f$ with $f(0)>0$, such as $b$-matchings, we obtain graph-uniform zero-free polytubes around every bounded box of nonnegative activities; their union is an open zero-free neighbourhood of the nonnegative orthant. An appendix summarizes further coupling-independence inputs and the zero-free regions they yield.",
+      "authors": [
+        "Shuai Shao",
+        "Ke Shi"
+      ],
+      "published": "2026-10-08T17:59:17Z",
+      "updated": "2026-10-08T17:59:17Z",
+      "primary_category": "cs.DS",
+      "categories": [
+        "cs.DS",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12456",
+      "pdf_url": "https://arxiv.org/pdf/2610.12456",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12425",
+      "title": "On Large Drift Enhancement for the Relaxation Time of Averages",
+      "abstract": "In this note we prove in a broad analytic set-up a general result characterizing the asymptotic vanishing of the $L^2$-relaxation time of averages in the presence of a large incompressible drift-like term. The broad analytic set-up is analogous to that of Constantin-Kiselev-Ryzhik-Zlatos '08 or of Coti Zelati-Delgadino-Elgindi '20. A crucial role is played by the singular value gap method of Chatterjee '25, further developed by Eberle-Lörler '26.",
+      "authors": [
+        "Alain-Sol Sznitman",
+        "Klaus Widmayer"
+      ],
+      "published": "2026-10-08T17:55:13Z",
+      "updated": "2026-10-08T17:55:13Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12425",
+      "pdf_url": "https://arxiv.org/pdf/2610.12425",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12358",
+      "title": "Subspace Uncertainty and Sharp Sampling Thresholds on the Boolean Cube",
+      "abstract": "We study Gaussian regression under squared population $L_2$ loss in a known $m$-dimensional subspace of degree-at-most-$k$ functions on the $d$-dimensional Boolean cube. Random inputs can undersample regions essential for prediction, delaying the parametric rate even when the model is known. For fixed $q_0<1/2$, $1\\le k\\le q_0d$, and sufficiently large fixed $A$, the worst-subspace sample threshold for minimax error $Aσ^2(m+t)/n$ with confidence $1-e^{-t}$, $t\\ge\\log4$, is \\[ N=(m+t)\\exp\\{E_{d,k}+O(k^{1/3})\\}, \\quad E_{d,k}=dΨ(k/d), \\] where $Ψ(q)=\\log2-\\mathsf H(\\tfrac12-\\sqrt{q(1-q)})$ and $\\mathsf H$ is binary entropy with natural logarithms. The upper bound holds for every feasible $m$; the matching lower bound holds when $m\\le\\binom d{\\lfloor k^{1/3}\\rfloor}$ or $t\\ge m$. We sharpen the Polyanskiy--Samorodnitsky uncertainty principle in two respects. First, for fixed leakage $ρ\\in(0,1)$, the smallest set carrying a fraction $1-ρ$ of a nonzero degree-at-most-$k$ polynomial's energy has probability $\\exp\\{-E_{d,k}+O_{ρ,q_0}(k^{1/3})\\}$. An Airy-kernel construction proves that the remainder cannot be $o(k^{1/3})$ in general. Second, we construct a subspace of dimension $\\binom d{\\lfloor k^{1/3}\\rfloor}$ such that every function in the subspace has at least a fraction $1-ρ$ of its energy on the same set, whose probability is at most $\\exp\\{-E_{d,k}+C_{ρ,q_0}k^{1/3}\\}$. For sufficiently large $k$, this set is a Hamming ball. A striking consequence is an exponential cost of noise: the parametric rate can require $(m+t)4^k\\exp\\{-O(k^{1/3})\\}$ samples, whereas $O((m+t)2^k)$ suffice for noiseless identification. As $k\\to\\infty$ with $k/d\\to0$, the noisy threshold is $(m+t)\\exp\\{2k+o(k)\\}$.",
+      "authors": [
+        "Thomas Weinberger"
+      ],
+      "published": "2026-10-08T17:23:25Z",
+      "updated": "2026-10-08T17:23:25Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.IT",
+        "cs.LG",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12358",
+      "pdf_url": "https://arxiv.org/pdf/2610.12358",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12354",
+      "title": "Brownian motion with drift conditioned to have restricted $L^2$-norm",
+      "abstract": "We study the long-time behaviour of Brownian motion with drift under a rare-event conditioning of the quadratic additive functional $Z_T=\\int_0^T W_s^2ds$, where $(W_t)_{t\\geq 0}$ is a Brownian motion with drift $μ$. More precisely, we consider the conditional law of $W$ given the event $Z_T\\le θT$, as $T\\to\\infty$, allowing the drift $μ$ to depend on $T$. We derive sharp, uniform small-deviation asymptotics for $Z_T$, including the exact prefactor, and use them to show that the conditioned process converges weakly to an Ornstein--Uhlenbeck process. Remarkably, the limiting dynamics are independent of the original drift.",
+      "authors": [
+        "Frank Aurzada",
+        "Yuvraj Dutta",
+        "Max Wiegand"
+      ],
+      "published": "2026-10-08T17:22:11Z",
+      "updated": "2026-10-08T17:22:11Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12354",
+      "pdf_url": "https://arxiv.org/pdf/2610.12354",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12335",
+      "title": "Anomalous scaling limit of a Brownian particle in a log-correlated potential",
+      "abstract": "We study a Brownian particle in $\\mathbb{R}^d$, $d\\geq2$, with drift given by the gradient of a log-correlated Gaussian potential. At weak disorder, we prove convergence to a scaling limit whose law is singular with respect to Brownian motion and whose invariant measure is given by Gaussian multiplicative chaos. The proof uses a renormalization group induction: at each scale, the elliptic operator is well approximated by a Laplacian with effective diffusivity decaying as a power of scale. We compute this exponent exactly in dimension two.",
+      "authors": [
+        "Scott Armstrong",
+        "Ahmed Bou-Rabee",
+        "Tuomo Kuusi"
+      ],
+      "published": "2026-10-08T17:12:29Z",
+      "updated": "2026-10-08T17:12:29Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.AP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12335",
+      "pdf_url": "https://arxiv.org/pdf/2610.12335",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12197",
+      "title": "Limit Theorems for Persistent Homology of Multiparameter Complex Processes",
+      "abstract": "Multiparameter complex processes, based on the Costa-Farber model, provide a common framework for growing random simplicial complexes, including the Linial-Meshulam and random flag complex processes. We establish laws of large numbers for persistent Betti numbers of these processes and prove that, after a deterministic time change and normalization, their persistence diagrams converge weakly in probability to a deterministic finite measure. Its quadrant masses are determined by universal limits of normalized persistent Betti numbers, characterized by an explicit finite-dimensional optimization problem. We extend the diagram convergence to integrals of continuous functions with polynomial growth in the death coordinate and controlled singularities at the diagonal. These results yield convergence of additive and multiplicative lifetime measures and total persistence. We further deduce convergence in optimal transport distance. The proofs combine local weak convergence of simplicial pairs, spectral analysis of compressed Laplacians accounting for dependence through shared faces, and quantitative estimates for large death coordinates and short lifetimes.",
+      "authors": [
+        "Masanori Hino",
+        "Shu Kanazawa"
+      ],
+      "published": "2026-10-08T15:52:59Z",
+      "updated": "2026-10-08T15:52:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.AT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12197",
+      "pdf_url": "https://arxiv.org/pdf/2610.12197",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11990",
+      "title": "Strong RSW estimates for the FK-Ising model on s-embeddings",
+      "abstract": "We adapt the 'induction over scales' scheme of Duminil-Copin, Manolescu, and Tassion to the FK-Ising model on s-embeddings. Namely, we prove the existence of crossings of rough topological quadrilaterals with unfavorable boundary conditions, known as 'strong' RSW, under the 'uniformly bounded geometry' assumption (all edge lengths are comparable to 1 and all angles are bounded from below) on the tangential quads that form an s-embedding. This result has a number of standard consequences like quasi-multiplicativity of arm events and fractal properties of the clusters. It can be applied in a variety of setups including near-critical Ising models on regular grids below the correlation length scale by considering appropriate s-embedding thereof.",
+      "authors": [
+        "Dmitry Chelkak",
+        "Yanqing Wei"
+      ],
+      "published": "2026-10-08T13:59:10Z",
+      "updated": "2026-10-08T13:59:10Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11990",
+      "pdf_url": "https://arxiv.org/pdf/2610.11990",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11946",
+      "title": "Dense uniqueness and dense nonuniqueness of Fréchet means",
+      "abstract": "From previous results it follows that probability distributions on metric spaces featuring unique Fréchet means are dense among measures admitting means in both the quadratic Wasserstein metric and the total variation metric. Additionally, we show that the converse also holds on complete finite-dimensional noncontractible Alexandrov spaces with curvatures bounded from below, which encompass compact manifolds without boundaries and nonmanifold shape spaces: Probability distributions featuring nonunique Fréchet means are also dense in both the Wasserstein metric and the total variation metric. Moreover, in either metric, no nonempty open set of probability measures admits a continuous selection of means. This sharpens a previous result on zero reach of the Dirac embedding. Our argument combines cut-locus avoidance for atoms with a topological obstruction. For Riemannian manifolds, all of our conclusions hold for all exponents $1 < p < \\infty$, also.",
+      "authors": [
+        "Stephan F. Huckemann",
+        "Alexander Lytchak"
+      ],
+      "published": "2026-10-08T13:34:38Z",
+      "updated": "2026-10-08T13:34:38Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.ST"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11946",
+      "pdf_url": "https://arxiv.org/pdf/2610.11946",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11939",
+      "title": "Transient Behavior of Threshold-Dependent Ruin and Queueing Models with Phase-Type Jumps",
+      "abstract": "We study the transient behavior of two threshold-dependent stochastic models: a Cramér--Lundberg risk model and an M/G/1-type queueing model. In both models, the dynamics are driven by two different compound Poisson processes with drift, with the governing process depending on whether the current state is below or above a fixed threshold. For the risk model, we characterize the probability of ruin before an exponentially distributed epoch, while for the queueing model, we characterize the Laplace--Stieltjes transform of the workload at an exponentially distributed epoch. These quantities are characterized using fluctuation-theoretic results for spectrally positive Lévy processes, with Laplace transforms taken with respect to time for the risk model and with respect to both state and time for the queueing model. We consider general claim-size and job-size distributions and provide explicit representations of the relevant auxiliary quantities when these distributions are of phase-type.",
+      "authors": [
+        "Onno Boxma",
+        "Michel Mandjes",
+        "Daniël Rutgers",
+        "Werner Scheinhardt"
+      ],
+      "published": "2026-10-08T13:31:34Z",
+      "updated": "2026-10-08T13:31:34Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11939",
+      "pdf_url": "https://arxiv.org/pdf/2610.11939",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11895",
+      "title": "Permutations from ranking independent random variables",
+      "abstract": "Let $X_1,\\ldots,X_n$ be almost surely distinct independent real-valued random variables. Let $σ$ be the random permutation of $\\{1,\\ldots,n\\}$ such that $X_{σ(1)}<X_{σ(2)}<\\cdots< X_{σ(n)}$. We show that the set of laws of $σ$, as the laws of $X_1,\\ldots,X_n$ vary, has semialgebraic dimension \\[ \\sum_{k=2}^n {n \\choose k}(k-1)! \\] as a subset of the $(n!-1)$-simplex. This establishes a conjecture of Babson, Duchin, Iseli, Poggi-Corradini, Thurston, and Tucker-Foltz who proved that the dimension is upper bounded by the above expression. We prove their conjecture by constructing a family of finitely supported laws for $X_1,\\ldots,X_n$ that provides the correct dimension. We also give an alternative proof of the upper bound using a theorem of Radford. Furthermore, we show that the Mallows law on permutations cannot arise as a law of $σ$ for $n\\geq 4$, answering a question of Ed Crane.",
+      "authors": [
+        "Luke Turvey"
+      ],
+      "published": "2026-10-08T13:03:49Z",
+      "updated": "2026-10-08T13:03:49Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11895",
+      "pdf_url": "https://arxiv.org/pdf/2610.11895",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11822",
+      "title": "Weighted selection from elliptical distributions: a stochastic representation and an application to portfolio separation",
+      "abstract": "We represent (weighted-)selection-elliptical distributions as an affine combination of the $q$ selection variables plus an elliptical term whose direction alone is independent. This form suffices for $q+2$ fund separation via first-order stochastic dominance, inter alia relaxing Simaan's (1993) three-fund assumptions.",
+      "authors": [
+        "Nils Chr Framstad"
+      ],
+      "published": "2026-10-08T12:24:02Z",
+      "updated": "2026-10-08T12:24:02Z",
+      "primary_category": "q-fin.PM",
+      "categories": [
+        "q-fin.PM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11822",
+      "pdf_url": "https://arxiv.org/pdf/2610.11822",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11806",
+      "title": "Grey Random Fields on the Sphere",
+      "abstract": "We introduce a new and tractable class of non-Gaussian isotropic random fields on the sphere, which we call, for brevity, Grey Spherical Random Fields (GSRFs). The proposed framework provides a flexible extension of the classical Gaussian theory, while preserving strong isotropy and embedding Gaussian random fields as a limiting special case. The construction is based on random spherical harmonic coefficients obtained as Gaussian mixtures driven by multivariate subordinators evaluated at independent random times (with Mittag-Leffler or more general distribution). This representation allows us to derive explicit characteristic functions, mixed moments and cumulants of arbitrary order. We also investigate asymptotic high-frequency behaviour and identify general conditions under which suitably normalized spherical harmonic coefficients converge to Gaussian scale mixtures, recovering several important models, including stable, Gamma and inverse Gaussian cases, as particular examples. Proving that GSRFs emerge as scaling limits of multivariate continuous-time random walks, with heavy-tailed waiting times, provides a microscopic foundation for the proposed models. We further obtain quantitative bounds measuring the deviation from Gaussianity of the spherical harmonic coefficients. The resulting framework substantially broadens the class of analytically tractable isotropic random fields on the sphere, while preserving explicit probabilistic representations and flexible dependence structures.",
+      "authors": [
+        "Luisa Beghin",
+        "Nikolai Leonenko",
+        "Domenico Marinucci"
+      ],
+      "published": "2026-10-08T12:12:56Z",
+      "updated": "2026-10-08T12:12:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11806",
+      "pdf_url": "https://arxiv.org/pdf/2610.11806",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11780",
+      "title": "Homogenization of weakly reinforced Pólya urns on countable networks",
+      "abstract": "We consider weakly reinforced Pólya urns on a countable graph of uniformly bounded degree. The vertices have positive bounded firing rates, which need not be bounded away from zero. For every reinforcement exponent $α\\in[0,1)$ and every deterministic choice of finite positive initial weights, the normalized edge weights converge almost surely, coordinate-wise, to a deterministic vector independent of the initial weights. We identify this vector as the unique non-vanishing equilibrium of the limiting equation. This proves the homogenization conjecture of Couzinié and Hirsch, including its formulation for non-uniform firing rates in the MATRIX open-problems report. The main step is a Liouville theorem for the limiting equation, established by a logarithmic-norm comparison of complete solutions using the row-sum balance at each vertex.",
+      "authors": [
+        "Shuo Qin"
+      ],
+      "published": "2026-10-08T11:59:26Z",
+      "updated": "2026-10-08T11:59:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11780",
+      "pdf_url": "https://arxiv.org/pdf/2610.11780",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11687",
+      "title": "On the asymptotic behavior of the number variance of random points on the unit torus",
+      "abstract": "The study of the distribution of real sequences in the unit torus has a long and rich history. There are many notions which describe the ``pseudo-random'' behavior of a given deterministic sequence (often of arithmetic origin), such as equidistribution (which describes the distribution on a ``global scale'') or the pair correlation (which is a ``local-scale'' statistics). Another popular and important statistics, which can be applied to all ranges from global via intermediate to local, is the number variance $V_N(s)$, which describes the mean-square fluctuation of the number of elements of an initial segment of the sequence in an interval of length $s$, when moving this interval around the torus. In the terminology of quantum chaology, where such statistics are used to describe the distribution of the energy levels of a system, pseudo-random behavior is called Poissonian behavior. Since the number variance is an important indicator to qualify pseudo-random behavior, it is quite surprising that the literature does not seem to contain a precise description of the distribution and of the almost sure asymptotic behavior of the number variance in the truly random case (i.i.d.\\ random points), even in the comparatively simple setup of uniformly distributed points on the unit torus. In the present paper we calculate the distribution of the number variance with high precision throughout a wide range of the parameter $s$, and determine the precise threshold (in terms of $s$) where the ``Poissonian'' asymptotics $V_N(s) \\sim N s$ breaks for a typical realization of a random sequence. Key technical input comes from the Komlós--Major--Tusnády theorem and the Karhunen-Loève decomposition.",
+      "authors": [
+        "Christoph Aistleitner",
+        "Siegfried Hörmann",
+        "Maryna Manskova"
+      ],
+      "published": "2026-10-08T10:58:57Z",
+      "updated": "2026-10-08T10:58:57Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph",
+        "math.NT"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11687",
+      "pdf_url": "https://arxiv.org/pdf/2610.11687",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11597",
+      "title": "Single-graph inference for fractal Gaussian networks",
+      "abstract": "We study inference on the strength of Gaussian multiplicative chaos from one geometric graph with unobserved vertex positions. In the planar model, the edge-count statistic has a piecewise deterministic limit with a transition at $γ=1$, whereas degree quantiles consistently estimate $ν=γ^2/2$ throughout the subcritical range. Fractional moments give uniform finite-sample risk bounds. At finite resolution, common graph envelopes calibrate tests over continuous parameter boxes with unknown Poisson intensity. They give simultaneous coverage under adaptive refinement for a fixed statistic, and conditional coverage for an independently piloted size--degree residual on a fixed partition. For the exact periodic FFT--pixel approximation, we prove explicit total-variation rates for the annealed spatial Cox law and the observed graph law, uniformly on every compact subcritical range $0\\leγ\\leΓ<2$. The rates allow intensity to grow with resolution and imply uniform asymptotic coverage after recalibration at each resolution. Numerical studies examine parameter refinement, residual calibration, and multiresolution stability.",
+      "authors": [
+        "Chunhao Cai"
+      ],
+      "published": "2026-10-08T09:43:47Z",
+      "updated": "2026-10-08T09:43:47Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11597",
+      "pdf_url": "https://arxiv.org/pdf/2610.11597",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11554",
+      "title": "Product approximations for uniform spanning trees and determinantal processes",
+      "abstract": "We prove that for every finite connected simple graph $G$ on $n$ vertices with minimum degree $k\\geq 2$, there is a coupling of its uniform spanning tree and its random $1$-out subgraph under which the expected number of differing edges is $O(n\\log (k)/\\sqrt{k})$. More generally, we establish analogous couplings between a wide class of determinantal processes and their corresponding $1$-out processes, including Kalai's determinantal hypertrees, with expected symmetric difference negligible compared to the size of the determinantal set. While the graphical case admits a surprisingly short and elegant proof, the more general result requires establishing an asymptotic equipartition property for the determinantal measures in this class, from which we also derive exponential growth rates for the homology torsion of determinantal hyperforests in higher-dimensional regular high-degree complexes.",
+      "authors": [
+        "András Mészáros",
+        "Yuval Peled"
+      ],
+      "published": "2026-10-08T09:16:02Z",
+      "updated": "2026-10-08T09:16:02Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11554",
+      "pdf_url": "https://arxiv.org/pdf/2610.11554",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11528",
+      "title": "Coupling-convexity of a diffusion with respect to its starting position",
+      "abstract": "In the present paper, we consider a $d$-dimensional time-homogeneous stochastic differential equation with diffusion matrix $a$ and no drift coefficient. We check that the convexity in the starting position $x$ of the distribution of its solution on the path space when the codomain is endowed with the convex order is equivalent to the convexity of $\\R^d\\ni x\\mapsto \\sqrt{ζ^*a(x)ζ}$ for each $ζ\\in\\R^d$. To do so, we introduce the seemingly stronger notion of coupling-convexity in the starting position and check that it is also equivalent to the convexity of the above square-rooted functions.",
+      "authors": [
+        "Benjamin Jourdain"
+      ],
+      "published": "2026-10-08T08:57:20Z",
+      "updated": "2026-10-08T08:57:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11528",
+      "pdf_url": "https://arxiv.org/pdf/2610.11528",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11443",
+      "title": "Long-time behavior of reducible stochastic linear reaction networks: a spectral and structural classification",
+      "abstract": "Exponential ergodicity of stochastic reaction networks has attracted considerable attention in recent years [SIAM J. Appl. Dyn. Syst. 24, 1668-1710 (2025)]. Here, we provide a structural classification of the long-time behavior of reducible stochastic linear reaction networks under the $L^1$-Wasserstein and total variation distances. The classification is determined by the maximal eigenvalue $λ_{\\max}$ of the first-order influx matrix $A$, the position of the zero-order influx vector $b$ relative to the left nullspace of $A$, and the conservation-law structure of the network restricted to the persistent species. We first prove that every stochastic linear reaction network is non-explosive. In the stable regime $λ_{\\max}<0$, the process converges exponentially fast to a unique stationary distribution. In the critical regime $λ_{\\max}=0$, when the zero eigenvalue of $A$ is semisimple and $b$ is orthogonal to the left nullspace of $A$, exponential convergence occurs if and only if a regularity condition on the restricted network is satisfied. If these two spectral conditions hold but the regularity condition fails, convergence occurs only in total variation and is non-exponential. In the divergent regimes, no closed irreducible positive recurrent class can contain an interior state, and any stationary distribution, if it exists, must be supported on the boundary. Moreover, by employing a coupling method, we obtain the optimal convergence rate in the exponentially convergent cases.",
+      "authors": [
+        "Bingjie Wu",
+        "Hao Kang",
+        "Chen Jia"
+      ],
+      "published": "2026-10-08T08:01:05Z",
+      "updated": "2026-10-08T08:01:05Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11443",
+      "pdf_url": "https://arxiv.org/pdf/2610.11443",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11330",
+      "title": "Exact Simulation of Multivariate Diffusions and Bridges",
+      "abstract": "We provide the first generic exact sampling algorithms with finite expected total cost for uniformly elliptic multivariate diffusions and the corresponding diffusion bridges with bounded coefficients and bounded continuous first derivatives. We formulate a computational cost model that counts work in terms of generation of Gaussian and uniform random variables to execute acceptance--rejection sampling, as well as function evaluations of the drift and diffusion coefficients, together with elementary operations such as sums and multiplications. Our constructions combine randomized parametrix expansions with a finite weighted graph that incorporates both bridge endpoints into the proposal. The exact sampling of the diffusion is minimax optimal jointly in the horizon and number of requested observations, while bridge sampling is minimax optimal in the number of observations for fixed horizon and endpoints.",
+      "authors": [
+        "Jose Blanchet",
+        "Jikai Jin",
+        "Hao Liu"
+      ],
+      "published": "2026-10-08T06:28:21Z",
+      "updated": "2026-10-08T06:28:21Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "stat.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11330",
+      "pdf_url": "https://arxiv.org/pdf/2610.11330",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11273",
+      "title": "Stochastic Porous Media Equations With Nonhomogeneous Dirichlet Boundary Conditions",
+      "abstract": "We aim at studying the well-posedness of stochastic porous media equation problems under nonhomogeneous Dirichlet boundary. We obtain an unconventional homogeneous Dirichlet boundary stochastic porous medium equation by transformation under an additional assumption, and then use approximation problems to obtain the well-posedness properties of the equation with homogeneous Dirichlet boundary conditions under different initial conditions. Consequently, we obtain the corresponding solution to the original equation.",
+      "authors": [
+        "Dan Goreac",
+        "Ioana Ciotir",
+        "Juan Li",
+        "Yufan Peng"
+      ],
+      "published": "2026-10-08T05:31:43Z",
+      "updated": "2026-10-08T05:31:43Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11273",
+      "pdf_url": "https://arxiv.org/pdf/2610.11273",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11139",
+      "title": "Accelerating Non-Smooth and Heavy-Tailed Sampling",
+      "abstract": "Anchored Langevin dynamics (ALD) is useful for non-smooth sampling where the density of the target distribution is possibly non-differentiable and heavy-tailed; reflected anchored Langevin dynamics (RALD) can sample possibly non-differentiable target density on a constrained domain. In this paper, we propose and study non-reversible anchored Langevin dynamics (NALD) for sampling possibly non-differentiable and heavy-tailed target density in the Euclidean space and the non-reversible reflected anchored Langevin dynamics (NRALD) for sampling possibly non-differentiable target density in the constrained space. Our construction adds a circulation drift generated by a possibly state-dependent divergence-free skew-symmetric matrix field and a stream potential. It preserves the target distribution without requiring derivatives of target density, admits a random-time-change representation, and applies both on the whole Euclidean space and on bounded domains with normal reflection. By breaking reversibility, we show that NALD and NRALD can converge to their target distributions faster than their reversible counterparts via finite-time non-asymptotic convergence analysis, a large deviations analysis and asymptotic variance reduction. Numerical experiments demonstrate the efficiency of the proposed algorithms.",
+      "authors": [
+        "Pervez Ali",
+        "Xiaoyu Wang",
+        "Yingli Wang",
+        "Lingjiong Zhu"
+      ],
+      "published": "2026-10-08T03:06:10Z",
+      "updated": "2026-10-08T03:06:10Z",
+      "primary_category": "stat.ML",
+      "categories": [
+        "stat.ML",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11139",
+      "pdf_url": "https://arxiv.org/pdf/2610.11139",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.11042",
+      "title": "A general framework for crystallization in maximal hard-core models",
+      "abstract": "We study general maximal hard-core models on periodic lattice-type graphs. While for standard models, phase coexistence may arise for high activity, for maximal models this behavior may occur also for sufficiently low activity values. Relying on the concept of volume allocation, we develop a {\\em unified set of assumptions} that imply the Peierls condition, a convergent cluster expansion for the partition function, and hence the conclusions of Pirogov-Sinai theory for this class of models. We further check these assumptions for a number of examples including standard lattice-type periodic graphs, proving crystallization for both high and low activity. We also derive estimates for the values of activity that bound the phase coexistence regions in the phase diagram, rewriting for this purpose the proof of a technical result in the derivation of Pirogov-Sinai theory.",
+      "authors": [
+        "Alexander Barg",
+        "Qidong He",
+        "Geyang Wang"
+      ],
+      "published": "2026-10-08T00:53:24Z",
+      "updated": "2026-10-08T00:53:24Z",
+      "primary_category": "cond-mat.stat-mech",
+      "categories": [
+        "cond-mat.stat-mech",
+        "cs.IT",
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.11042",
+      "pdf_url": "https://arxiv.org/pdf/2610.11042",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10982",
+      "title": "Exponential decay of fractional moments in the $H^{2|2}$ model on $\\mathbb Z^2$",
+      "abstract": "For the $H^{2|2}$ model on $\\mathbb Z^2$, we prove that, at energy zero, fractional moment of Green functions, $\\mathbb E[ G(x,y)^s]$ decays exponentially in the distance between $x$ and $y$, for every constant edge weight $W>0$ and every $0<s<1/2$. Here $G$ is the infinite-volume Green function at energy zero of the associated random Schrödinger operator. The main ingredient is a quantitative lower bound on the derivative of $\\mathbb E[e^{u_x/2}]$ with respect to the edge weights, where $u$ is the pinned effective field.",
+      "authors": [
+        "Jinglin Wang",
+        "Xiaolin Zeng"
+      ],
+      "published": "2026-10-07T23:15:33Z",
+      "updated": "2026-10-07T23:15:33Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10982",
+      "pdf_url": "https://arxiv.org/pdf/2610.10982",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10979",
+      "title": "Sharp Minimax Gram-Determinant Asymptotics for Labelled Unit Decompositions of the Identity",
+      "abstract": "We show that González Merino and Schymura's Conjecture 4.8, a sufficient condition for Makai's reverse isodiametric conjecture, fails in all sufficiently large dimensions. Its three-dimensional case follows from Aliev's proof. Pełczyński and Szarek's construction for enclosing parallelepipeds implies this failure. Using random frames, we also determine the sharp exponential determinant guarantee for every fixed ratio greater than one between the number of vectors and the dimension.",
+      "authors": [
+        "Haozhou Zhang"
+      ],
+      "published": "2026-10-07T23:06:56Z",
+      "updated": "2026-10-07T23:06:56Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10979",
+      "pdf_url": "https://arxiv.org/pdf/2610.10979",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10863",
+      "title": "Multilevel Picard approximations for McKean-Vlasov stochastic differential equations with jumps",
+      "abstract": "We introduce multilevel Picard (MLP) approximations of McKean-Vlasov stochastic differential equations (SDEs) with jumps of finite or infinite activity. Under Lipschitz and integrability assumptions on the coefficients, we show that the MLP algorithm does not suffer from the curse of dimensionality when approximating the solution of the McKean-Vlasov SDE. The latter means that its computational cost grows at most polynomially in both the state-space dimension of the SDE and the reciprocal of the prescribed error tolerance. In two numerical experiments, we demonstrate the practical applicability of the MLP algorithm for two different McKean-Vlasov SDEs in dimensions up to 200.",
+      "authors": [
+        "Ariel Neufeld",
+        "Tuan Anh Nguyen",
+        "Philipp Schmocker"
+      ],
+      "published": "2026-10-07T20:08:34Z",
+      "updated": "2026-10-07T20:08:34Z",
+      "primary_category": "math.NA",
+      "categories": [
+        "math.NA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10863",
+      "pdf_url": "https://arxiv.org/pdf/2610.10863",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10806",
+      "title": "Existence and Uniqueness of Viscosity Solutions for Stochastic Hamilton--Jacobi--Bellman Equations",
+      "abstract": "We study stochastic Hamilton--Jacobi--Bellman equations arising from stochastic optimal control problems with random coefficients and possible degenerateness. The viscosity solution is reformulated by using adapted smooth random test fields that touch on stopped space--time neighborhoods almost surely. The state coefficients are predictable, with no continuity assumption on their dependence on the underlying Brownian path. Under linear growth of locally Lipschitz drift and diffusion coefficients, polynomial growth of the running and terminal cost coefficients, and a nonempty separable metric space-valued control set, we show that the value function is the unique viscosity solution in this formulation among adapted continuous fields with square-integrable random polynomial growth bounds. The comparison proof constructs adapted fields from controlled trajectories and spatially shaken conditional values, using a weak semimartingale decomposition and regularization of its positive finite-variation part. In particular, the uniqueness allows for diffusion coefficients being random, degenerate, and depending on time, state, and control, whereas earlier uniqueness results of Qiu [SIAM J. Control Optim. 56 (2018), pp. 3708--3730] and Qiu and Zhang [Ann. Appl. Probab. 33 (2023), pp. 889--930] were obtained under additional structural restrictions on the diffusion coefficient, such as determinism combined with either superparabolicity or independence of the state and controls.",
+      "authors": [
+        "Jinniao Qiu"
+      ],
+      "published": "2026-10-07T19:07:41Z",
+      "updated": "2026-10-07T19:07:41Z",
+      "primary_category": "math.OC",
+      "categories": [
+        "math.OC",
+        "math.AP",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10806",
+      "pdf_url": "https://arxiv.org/pdf/2610.10806",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10736",
+      "title": "Finite- and long-range spin-wave free-energy asymptotics for the two-dimensional quantum Heisenberg ferromagnet",
+      "abstract": "For the two-dimensional quantum Heisenberg ferromagnet with asymptotically radial power-law exchange, we prove the leading low-temperature free energy at every fixed spin, uniformly on the weak-field scale. We obtain fractional and logarithmically corrected laws associated with the dispersions predicted in [16, 17]. Quantum Monte Carlo simulations support the associated anomalous magnon dispersions for spin one-half [20]. For kernels with finite second moment, we also extend the nearest-neighbour theorem [14], generalizing Takahashi's quadratic law [21] and its weak-field dependence [11].",
+      "authors": [
+        "Andreas Klippel"
+      ],
+      "published": "2026-10-07T18:07:56Z",
+      "updated": "2026-10-07T18:07:56Z",
+      "primary_category": "math-ph",
+      "categories": [
+        "math-ph",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10736",
+      "pdf_url": "https://arxiv.org/pdf/2610.10736",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.10511",
       "title": "The Exact Overlaps Conjecture for Self-Similar Measures on the Real Line",
       "abstract": "A generalization of the exact overlaps conjecture predicts a formula for the dimension of self-similar measures in terms of the random walk entropy and the Lyapunov exponent. We prove the exact overlaps conjecture and its generalized version in dimension one. The proof relies on a new entropy inequality quantifying the information lost under addition of independent random variables in terms of a quantity averaging variance across scales.",
@@ -845,6 +1870,28 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.10502",
       "pdf_url": "https://arxiv.org/pdf/2610.10502",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-08",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10664",
+      "title": "Why Distance Two Is Exceptional for Poisson-Binomial Point Probabilities",
+      "abstract": "Let $S$ be a finite sum of independent Bernoulli random variables. We ask how large the mean must be before the atom at $k+r$ can strictly exceed the atom at $k$. For the threshold $T_{k,r}:=\\inf\\{\\mathbb{E}S:\\mathbb{P}(S=k+r)>\\mathbb{P}(S=k)\\}$, the adjacent case recovers the classical Darroch boundary $k+1/(k+2)$, while every gap $r\\ge3$ has threshold $k+1$. Distance two is the unique nonadjacent exception: $T_{k,2}=k+Δ_k$, where $Δ_k$ and its staircase optimizer are explicit and $Δ_k=1/2+1/\\sqrt{2k}-1/(4k)+O(k^{-3/2})$. The proof combines the classical fixed-mean reduction to shifted binomial laws with an exact discrete optimization. The result also yields sharp restrictions on nonadjacent coefficient reversals in real-rooted polynomials with nonnegative coefficients.",
+      "authors": [
+        "Igor Kleiner"
+      ],
+      "published": "2026-10-07T17:42:45Z",
+      "updated": "2026-10-07T17:42:45Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10664",
+      "pdf_url": "https://arxiv.org/pdf/2610.10664",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-08",
@@ -986,7 +2033,7 @@
         "Iosif Pinelis"
       ],
       "published": "2026-10-07T15:49:51Z",
-      "updated": "2026-10-07T15:49:51Z",
+      "updated": "2026-10-08T03:55:17Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -1235,7 +2282,7 @@
         "Wioletta M. Ruszel"
       ],
       "published": "2026-10-07T13:18:11Z",
-      "updated": "2026-10-07T13:18:11Z",
+      "updated": "2026-10-08T09:00:46Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1592,6 +2639,30 @@
       "bucket": "other"
     },
     {
+      "id": "2610.10618",
+      "title": "The Hellinger Conjecture for Antipodal Boolean Functions",
+      "abstract": "The balanced Hellinger conjecture compares the overlap of two output laws induced by a Boolean decision under binary symmetric noise. We prove that a single input coordinate minimizes this overlap among antipodal decisions, whose values reverse when all input signs are reversed, throughout the noise interval. The proof uses a normalized nuclear norm of the cross-class block of the Gram matrix of square-root channel densities. Multiplication by an antipodal decision exchanges the even and odd Fourier spaces preserved by the Gram matrix. A coordinate exchange attains the minimum cost of matching their spectra. A matrix contraction extends the sharp bound to arbitrary independent binary-input channels. Fixed coordinate flips and randomized decisions follow from the same argument and concavity. These extensions give bounds for information and testing, including linear Gaussian observations, and a weighted edge-boundary inequality.",
+      "authors": [
+        "Vu Khac Ky"
+      ],
+      "published": "2026-10-07T07:39:37Z",
+      "updated": "2026-10-07T07:39:37Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10618",
+      "pdf_url": "https://arxiv.org/pdf/2610.10618",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-08",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.09570",
       "title": "A fixed-time stable limit theorem for non-normalized functionals on irregular time grids",
       "abstract": "Let an Itô semimartingale be observed at times satisfying $τ_{i+1}^n-τ_i^n=(nθ_{τ_i^n})^{-1}$, where $θ$ is adapted and càdlàg, and $θ$ and its reciprocal are bounded on compact intervals. Under the usual hypothesis (H) on the semimartingale, we prove fixed-time stable convergence for test functions whose Hessian is $o(\\norm{x})$ at zero. The limit is a sum of jump contributions with sampling scale $θ_{T-}^{-1}$ and separate pre-jump and post-jump volatilities. The proof establishes joint stable convergence of the local Poisson positions and Brownian increments on the endogenous grid, and controls infinitely many small jumps by a uniform Itô estimate. Three examples identify the left-limit sampling scale and show why positivity and càdlàg regularity alone cannot replace local control of the reciprocal sampling intensity.",
@@ -1788,6 +2859,29 @@
       "bucket": "other"
     },
     {
+      "id": "2610.10599",
+      "title": "An upper bound of 4.268 for the random 3-SAT satisfiability threshold",
+      "abstract": "We prove that a random 3-SAT formula with $n$ variables and $\\lfloor 4.268n\\rfloor$ clauses is unsatisfiable with high probability. The satisfiability threshold has attracted considerable attention: successive upper bounds reached 4.4898 in the work of Díaz, Kirousis, Mitsche, and Pérez-Giménez, while the cavity method predicts a value near 4.267. Our bound brings the rigorous upper estimate close to this prediction. The proof builds on earlier interpolation methods, including the energetic approach of Achlioptas and Menchaca-Méndez. We study the smallest number of clauses that any assignment must violate, comparing the random formula with a simpler system of constraints on individual variables. This comparison reduces the bound to a finite calculation, which we verify using exact rational arithmetic. The proof is formalized in Lean 4.",
+      "authors": [
+        "Fedor Vorobyev"
+      ],
+      "published": "2026-10-06T22:08:39Z",
+      "updated": "2026-10-06T22:08:39Z",
+      "primary_category": "cs.DM",
+      "categories": [
+        "cs.DM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10599",
+      "pdf_url": "https://arxiv.org/pdf/2610.10599",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-08",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.09135",
       "title": "Random $3$-regular graphs are not globally synchronizing",
       "abstract": "We study the homogeneous Kuramoto model on random 3-regular graphs. A connected graph $G$ is globally synchronizing if, for almost every initial condition, the gradient flow converges to a fully synchronized state, in which all phases coincide. It has been conjectured by Bandeira [Oberwolfach Rep. 21 (2024) 1163-1226] that a random 3-regular graph $G_{2n,3}$ is globally synchronizing with high probability. We disprove this conjecture in a strong way: $G_{2n,3}$ is not globally synchronizing with probability tending to 1.",
@@ -1876,6 +2970,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.09038",
       "pdf_url": "https://arxiv.org/pdf/2610.09038",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-08",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.10591",
+      "title": "The Markov Accessibility Topology and its Probabilistic Structure",
+      "abstract": "In this paper, we associate a canonical topology with the transition operator of a discrete-time Markov chain. We prove that this construction defines an Alexandroff topology, called the Markov Accessibility Topology, and subsequently establish that it coincides with the Alexandroff topology induced by the accessibility relation. This establishes a direct connection between probabilistic accessibility and order-theoretic topology, allowing several classical notions from Markov chain theory to be interpreted in topological terms. Among other results, we characterize absorbing subsets as closed sets, relate irreducibility to topological connectedness and the triviality of the topology, describe minimal open neighborhoods through accessibility and hitting probabilities, and investigate the communication quotient together with its relationship to lumpability.",
+      "authors": [
+        "Lourival Lima",
+        "Jorge Vielma"
+      ],
+      "published": "2026-10-06T18:29:12Z",
+      "updated": "2026-10-06T18:29:12Z",
+      "primary_category": "math.HO",
+      "categories": [
+        "math.HO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.10591",
+      "pdf_url": "https://arxiv.org/pdf/2610.10591",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-08",
@@ -2546,13 +3664,13 @@
     {
       "id": "2610.07728",
       "title": "A Dimension-Free Bound on the Poincaré Constant of Isotropic Log-Concave Measures",
-      "abstract": "The Kannan--Lovász--Simonovits (KLS) conjecture asks whether isotropic log-concave probability measures satisfy a Poincaré inequality with a constant independent of dimension. In this paper, we establish a dimension-free Poincaré inequality and hence a universal positive lower bound for the Euclidean Cheeger constant, thereby proving the KLS conjecture. Our proof has three steps. First, we study integration operators that undo differentiation and prove a curvature estimate that is uniform in the number of tensor indices. Second, an operator lemma turns bounds for low-degree polynomials into bounds for any number of integrations, with one common multiplicative factor. Third, we use stochastic localization to transfer the integration bounds back to polynomial norms.",
+      "abstract": "The Kannan--Lovász--Simonovits (KLS) conjecture asserts that isotropic log-concave probability measures have Poincaré constants bounded by a universal constant, independently of dimension. We give a deterministic variational proof with an explicit bound on the Poincaré constant $C_P(μ)\\le25$, where $μ$ is any isotropic log-concave probability measure. Starting from elliptic moment estimates and a quadratic variance inequality, we establish geometric bounds on normalized Appell coefficient norms through \\emph{joint} maximization over the measure and test function. Variation of the measure gives a maximum-principle inequality, while stationarity in the test function controls the highest-order cumulant terms. Two concave barriers constructed from quadratic and cubic polynomials close the induction. A weighted Helmholtz--Hodge decomposition then controls the curl correction of weighted divergence, yielding a curvature estimate for compatible symmetric tensor fields that is uniform in rank. Quadratic duality converts this estimate into an operator comparison for centered integration, linking the coefficient bounds to control of the inverse gradient. A spectral-radius estimate and a scalar growth inequality for adjoint iterates then yield the Poincaré bound. The final estimate is independent of the auxiliary positive curvature, allowing approximation to complete the proof for general isotropic log-concave measures.",
       "authors": [
         "Krishnakumar Balasubramanian",
         "Shiva Kasiviswanathan"
       ],
       "published": "2026-10-06T04:26:18Z",
-      "updated": "2026-10-06T04:26:18Z",
+      "updated": "2026-10-08T04:59:58Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3672,7 +4790,7 @@
         "Leo Brunswic"
       ],
       "published": "2026-10-04T19:58:52Z",
-      "updated": "2026-10-04T19:58:52Z",
+      "updated": "2026-10-08T12:26:51Z",
       "primary_category": "cs.LG",
       "categories": [
         "cs.LG",
