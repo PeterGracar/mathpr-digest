@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 41,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-10-09",
-  "total_submissions": 244,
-  "fetched": 244,
-  "generated_at": "2026-10-09T09:06:17Z",
+  "total_submissions": 246,
+  "fetched": 246,
+  "generated_at": "2026-10-12T09:18:52Z",
   "entries": [
     {
       "id": "2610.12053",
@@ -2028,12 +2028,12 @@
     {
       "id": "2610.10289",
       "title": "Exact bounds on the distribution function of isotropic log-concave distributions",
-      "abstract": "For each real $b$, exact upper and lower bounds on the probability $\\mathsf P(X\\ge b)$ over all random variables $X$ with log-concave p.d.f.'s such that $\\mathsf E X=0$ and $\\mathsf E X^2=1$ are obtained, as well as the best constant factor $C$ in the inequality $\\mathsf P(X\\ge b)\\le C e^{-b}$ for all real $b\\ge0$. Explicit exponentially decreasing upper bounds on the mentioned p.d.f.'s are given as well. Some general results concerning log-concave p.d.f.'s are also obtained.",
+      "abstract": "For each real $b$, exact upper and lower bounds on the probability $\\mathsf P(X\\ge b)$ over all random variables $X$ with log-concave p.d.f.'s such that $\\mathsf E X=0$ and $\\mathsf E X^2=1$ are obtained, as well as the best constant factor $C$ in the inequality $\\mathsf P(X\\ge b)\\le C e^{-b}$ for all real $b\\ge0$. Exact upper and lower bounds on the corresponding exponential moments (Proposition 9.4) and explicit exponentially decreasing upper bounds on the mentioned p.d.f.'s (Propositions 9.2 and 9.3) are given as well. Some general results concerning log-concave p.d.f.'s are also obtained.",
       "authors": [
         "Iosif Pinelis"
       ],
       "published": "2026-10-07T15:49:51Z",
-      "updated": "2026-10-08T03:55:17Z",
+      "updated": "2026-10-09T12:14:22Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2215,6 +2215,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.10228",
       "pdf_url": "https://arxiv.org/pdf/2610.10228",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-08",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12512",
+      "title": "A Second-Order Asymptotic Expansion for Nonlinear Filtering in the Lorenz--63 System",
+      "abstract": "A challenge in nonlinear filtering is to incorporate nonlinear effects into approximations of the conditional mean while retaining a finite-dimensional recursive algorithm. We derive a second-order asymptotic expansion of the filtering mean with respect to the system-noise intensity. We apply this expansion to the Lorenz--63 model, a prototypical three-dimensional chaotic dynamical system. The first-order approximation is computed using a Kalman--Bucy filter for the system linearized around the deterministic reference trajectory. The second-order correction incorporates the Hessian of the Lorenz--63 drift and is computed through a closed recursive system with 3+9+18=30 independent scalar components. The full system, including the reference trajectory and the first-order mean and covariance, has 42 independent scalar components. To support stable tracking of chaotic trajectories over long time intervals, we introduce recentering of the expansion and redistribution of Gaussian components between expansion orders. In the numerical experiments, we compare the proposed algorithm with an ensemble transform Kalman filter (ETKF) as a practical benchmark and a particle filter (PF) as a numerical reference. Under the full-observation settings, the proposed algorithm achieves a lower root-mean-square error relative to the truth and a smaller distance to the 10,000-particle PF reference than the 20-member ETKF. These results suggest that the proposed second-order extension of Kalman filtering has the potential to balance filtering accuracy and computational cost.",
+      "authors": [
+        "Masahiro Kurisaki",
+        "Kota Takeda"
+      ],
+      "published": "2026-10-07T14:19:23Z",
+      "updated": "2026-10-07T14:19:23Z",
+      "primary_category": "nlin.CD",
+      "categories": [
+        "nlin.CD",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12512",
+      "pdf_url": "https://arxiv.org/pdf/2610.12512",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-08",
@@ -4763,12 +4787,12 @@
     {
       "id": "2610.05498",
       "title": "Large deviations of the spectral radius of iid subgaussian random matrices",
-      "abstract": "We study large deviations of the spectral radius of $X_n=n^{-1/2}(ξ_{ij})_{i,j=1}^n$, where the entries are iid, centered, variance-one, and subgaussian, with zero pseudovariance in the complex case. For every fixed $r>1$, we prove $$ \\liminf_{n\\to\\infty}\\frac1n\\log\\mathbb{P}\\{ρ(X_n)>r\\} \\ge -\\frac\\beta2\\bigl(r^2-1-2\\log r\\bigr), $$ where $β=1$ for real entries and $β=2$ for complex entries. We prove a matching upper bound for real symmetric laws with Gaussian-dominated even moments and for complex laws satisfying the sharp Gaussian Laplace-transform bound. These classes include discrete distributions. In the complex sharp class, we also identify the exponential rate for an eigenvalue to enter a fixed disk outside the unit disk. We then turn to lower deviations and establish a quadratic-speed bound. Under the additional assumption that the entry law $μ$ has a bounded density, we prove $$ \\mathbb{P}\\{ρ(X_n)\\le r\\}\\le e^{-c_{μ,r}n^2} $$ for every fixed $0<r<1$ and all sufficiently large $n$, where $c_{μ,r}>0$. For the matching upper-tail classes with a bounded density, these bounds give a full speed-$n$ large deviation principle, with the displayed upper-tail rate for $r\\ge1$ and infinite rate for $r<1$. The upper-tail proof uses a change of measure that preserves the entry support and creates an outlying eigenvalue. The lower-tail proof develops a weighted comparison for adaptive orthonormal observations and applies it to Arnoldi residuals.",
+      "abstract": "We study large deviations of the spectral radius of $X_n=n^{-1/2}(ξ_{ij})_{i,j=1}^n$, where the entries are iid, centered, variance-one, and subgaussian, with zero pseudovariance in the complex case. We write $ρ(X_n)$ for its spectral radius, i.e. the largest modulus among its eigenvalues. For every fixed $r>1$, we prove $$ \\liminf_{n\\to\\infty}\\frac1n\\log\\mathbb{P}\\{ρ(X_n)>r\\} \\ge -\\frac\\beta2\\bigl(r^2-1-2\\log r\\bigr), $$ where $β=1$ for real entries and $β=2$ for complex entries. We prove a matching upper bound for real symmetric laws with Gaussian-dominated even moments and for complex laws satisfying the sharp Gaussian Laplace-transform bound. These classes include discrete distributions. In the complex sharp class, we also identify the exponential rate for an eigenvalue to enter a fixed disk outside the unit disk. We then turn to lower deviations and establish a quadratic-speed bound. Under the additional assumption that the entry law $μ$ has a bounded density, we prove $$ \\mathbb{P}\\{ρ(X_n)\\le r\\}\\le e^{-c_{μ,r}n^2} $$ for every fixed $0<r<1$ and all sufficiently large $n$, where $c_{μ,r}>0$. For the matching upper-tail classes with a bounded density, these bounds give a full speed-$n$ large deviation principle, with the displayed upper-tail rate for $r\\ge1$ and infinite rate for $r<1$. The upper-tail proof uses a change of measure that preserves the entry support and creates an outlying eigenvalue. The lower-tail proof develops a weighted comparison for adaptive orthonormal observations and applies it to Arnoldi residuals.",
       "authors": [
         "Yi Han"
       ],
       "published": "2026-10-04T20:11:40Z",
-      "updated": "2026-10-04T20:11:40Z",
+      "updated": "2026-10-09T17:11:44Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -5819,6 +5843,28 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.03076",
       "pdf_url": "https://arxiv.org/pdf/2610.03076",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-05",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.12503",
+      "title": "Functional limit theorems for weighted occupation times of supercritical superprocesses",
+      "abstract": "Suppose $X=(X_t)_{t\\ge0}$ is a supercritical superprocess with a non-local branching mechanism on a Lusin space $E$, whose mean semigroup admits a positive leading eigenvalue $λ_1$ with a bounded positive eigenfunction $φ$ and a finite eigenmeasure $\\widetildeφ$. Let $Y_t:=\\int_0^t X_s\\mathrm{d}s$ be its occupation measure. We first prove a law of large numbers, that is, for every bounded measurable function $f$, $e^{-λ_1 t}\\langle f,Y_t\\rangle$ converges in $L^2$ to $λ_1^{-1}\\langle f,\\widetildeφ\\rangle W^φ_\\infty$, where $W^φ_\\infty$ is the limit of the martingale $W^φ_t:=e^{-λ_1 t}\\langleφ,X_t\\rangle$. We then establish functional central limit theorems for the fluctuations of $\\langle f,Y_t\\rangle$ around this random centering. We show that the normalisation and the limit are determined by the spectral decay rate of $f$ compared with the critical value $λ_1/2$, and there are three possible regimes: after suitable normalisation, the fluctuation process converges in distribution in $\\mathcal{C}[0,+\\infty)$ either to a mixed Gaussian process $\\sqrt{W^φ_{\\infty}}G(f)$, or to a constant Gaussian process with random variance depending on $W^φ_{\\infty}$, or to a non-Gaussian limit given by the limit of a martingale associated with the spectral projection of $f$. These results are the occupation-time counterparts of the fluctuation theorems for linear functionals of supercritical non-local branching superprocesses.",
+      "authors": [
+        "Ting Yang"
+      ],
+      "published": "2026-10-02T09:30:08Z",
+      "updated": "2026-10-02T09:30:08Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.12503",
+      "pdf_url": "https://arxiv.org/pdf/2610.12503",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-05",
