@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-09",
-  "total_submissions": 246,
-  "fetched": 246,
-  "generated_at": "2026-10-13T09:26:24Z",
+  "total_submissions": 248,
+  "fetched": 248,
+  "generated_at": "2026-10-14T07:39:19Z",
   "entries": [
     {
       "id": "2610.12053",
@@ -545,12 +545,12 @@
     {
       "id": "2610.11239",
       "title": "Optimal upper tail estimates for the edge eigenvalues of $β$-ensembles",
-      "abstract": "Hermite and Laguerre $β$-ensembles are important and well studied models in random matrix theory, with the special cases $β=1,2,4$ corresponding to classical matrix ensembles. Although sharp moderate-deviation estimates have been established for the largest eigenvalues, substantially less is known for other edge eigenvalues. Even for the limiting distributions $TW_β^{(k)}$, the leading constants in the tail asymptotics are not known for general $β$ and $k\\ge2$. In this paper, for each fixed $k\\ge2$, we prove matching upper and lower moderate deviation bounds for the right tail of the $k$-th largest eigenvalue, with the optimal exponential constant $2βk/3$, for general $β$. We also establish sharp lower tail estimates for the second largest eigenvalue of the Gaussian and Laguerre orthogonal ensembles, with exponential constant $1/24$, same as for the largest eigenvalue. For $TW_β^{(k)}$, we obtain matching right-tail asymptotics for $β\\ge2/k$ and left-tail asymptotics for $0<β\\le2$ for $k=2$. We also obtain new stochastic domination results for the edge eigenvalues. Our proofs combine variational arguments from tridiagonal matrix models, last passage percolation, stochastic comparisons of sums of edge eigenvalues, and superposition-decimation identities.",
+      "abstract": "Hermite and Laguerre $β$-ensembles are important and well studied models in random matrix theory, with the special cases $β=1,2,4$ corresponding to classical matrix ensembles. Although sharp moderate-deviation estimates have been established for the largest eigenvalues, substantially less is known for other edge eigenvalues. Even for the limiting distributions $TW_β^{(k)}$, the leading constants in the tail asymptotics are not known for general $β$ and $k\\ge2$. In this paper, for each fixed $k\\ge2$, we prove matching upper and lower moderate deviation bounds for the right tail of the $k$-th largest eigenvalue, with the optimal exponential constant $2βk/3$, for general $β$. We also establish sharp lower tail estimates for the second largest eigenvalue of the Gaussian and Laguerre orthogonal ensembles, with exponential constant $1/24$, same as for the largest eigenvalue. For $TW_β^{(k)}$, we obtain optimal upper and lower tail asymptotics for general $β$ and $k\\geq 1$. We also obtain new stochastic domination results for the edge eigenvalues. Our proofs combine variational arguments from tridiagonal matrix models, last passage percolation, stochastic comparisons of sums of edge eigenvalues, and superposition-decimation identities.",
       "authors": [
         "Jnaneshwar Baslingker"
       ],
       "published": "2026-10-08T04:40:51Z",
-      "updated": "2026-10-08T04:40:51Z",
+      "updated": "2026-10-11T15:09:41Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1249,6 +1249,54 @@
       "bucket": "other"
     },
     {
+      "id": "2610.14086",
+      "title": "Linear stability and divisibility gaps for Gaussian maxima",
+      "abstract": "We study Gaussian maxima arising from isotropic families of unit vectors and show that their excess expected maximum is controlled by the distance from an orthonormal basis. We apply this stability result to correlation matrices with equal nonzero eigenvalues, obtaining an exact minimum when the matrix size is divisible by the rank and a quantitative gap otherwise. In dimension two, we determine the leading asymptotic term and describe the structure of near-optimal configurations. We also obtain covariance-block recovery results and a finite-dimensional lower bound for the higher-rank limiting problem.",
+      "authors": [
+        "Chahel Paatur"
+      ],
+      "published": "2026-10-08T17:04:31Z",
+      "updated": "2026-10-08T17:04:31Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.14086",
+      "pdf_url": "https://arxiv.org/pdf/2610.14086",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.14085",
+      "title": "Satisfiability and freezing in random integer programs",
+      "abstract": "We study a model of a random centrally symmetric polytope and ask about the existence of points in the polytope with non-zero, integer coordinates. Our main results are the location of a sharp threshold for the existence of these integer points, a characterization of the typical empirical distribution of their coordinates, and showing that near the feasibility threshold these integer points are almost always totally isolated --- at linear Hamming distance to the nearest other integer point in the polytope. The behavior of these random integer programs is related to that of the symmetric binary perceptron (the case when coordinates of points are $\\pm 1$-valued). The lack of symmetry in the set of potential solutions leads to new questions and phenomena, such as the distribution of the coordinate sizes in typical solutions, and requires the development of new information-theoretic techniques to deal with higher-dimensional optimization problems arising in the method of moments.",
+      "authors": [
+        "Dylan J. Altschuler",
+        "Ruben Ascoli",
+        "Will Perkins"
+      ],
+      "published": "2026-10-08T16:51:26Z",
+      "updated": "2026-10-08T16:51:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DM",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.14085",
+      "pdf_url": "https://arxiv.org/pdf/2610.14085",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.12197",
       "title": "Limit Theorems for Persistent Homology of Multiparameter Complex Processes",
       "abstract": "Multiparameter complex processes, based on the Costa-Farber model, provide a common framework for growing random simplicial complexes, including the Linial-Meshulam and random flag complex processes. We establish laws of large numbers for persistent Betti numbers of these processes and prove that, after a deterministic time change and normalization, their persistence diagrams converge weakly in probability to a deterministic finite measure. Its quadrant masses are determined by universal limits of normalized persistent Betti numbers, characterized by an explicit finite-dimensional optimization problem. We extend the diagram convergence to integrals of continuous functions with polynomial growth in the death coordinate and controlled singularities at the diagonal. These results yield convergence of additive and multiplicative lifetime measures and total persistence. We further deduce convergence in optimal transport distance. The proofs combine local weak convergence of simplicial pairs, spectral analysis of compressed Laplacians accounting for dependence through shared faces, and quantitative estimates for large death coordinates and short lifetimes.",
@@ -1685,13 +1733,13 @@
     },
     {
       "id": "2610.10979",
-      "title": "Sharp Minimax Gram-Determinant Asymptotics for Labelled Unit Decompositions of the Identity",
+      "title": "Sharp Minimax Gram-Determinant Asymptotics for Labelled Unit Decompositions of the Identity and Recent Developments on Makai's Conjecture",
       "abstract": "We show that González Merino and Schymura's Conjecture 4.8, a sufficient condition for Makai's reverse isodiametric conjecture, fails in all sufficiently large dimensions. Its three-dimensional case follows from Aliev's proof. Pełczyński and Szarek's construction for enclosing parallelepipeds implies this failure. Using random frames, we also determine the sharp exponential determinant guarantee for every fixed ratio greater than one between the number of vectors and the dimension.",
       "authors": [
         "Haozhou Zhang"
       ],
       "published": "2026-10-07T23:06:56Z",
-      "updated": "2026-10-07T23:06:56Z",
+      "updated": "2026-10-09T19:03:28Z",
       "primary_category": "math.MG",
       "categories": [
         "math.MG",
@@ -2500,7 +2548,7 @@
         "Bohan Yang"
       ],
       "published": "2026-10-07T10:08:08Z",
-      "updated": "2026-10-07T10:08:08Z",
+      "updated": "2026-10-13T16:46:59Z",
       "primary_category": "math.NT",
       "categories": [
         "math.NT",
@@ -2915,7 +2963,7 @@
         "Dieter Mitsche"
       ],
       "published": "2026-10-06T21:27:30Z",
-      "updated": "2026-10-06T21:27:30Z",
+      "updated": "2026-10-10T00:39:04Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3280,7 +3328,7 @@
         "Qidong He"
       ],
       "published": "2026-10-06T16:05:50Z",
-      "updated": "2026-10-06T16:05:50Z",
+      "updated": "2026-10-10T01:43:06Z",
       "primary_category": "math-ph",
       "categories": [
         "math-ph",
