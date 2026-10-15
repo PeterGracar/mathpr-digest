@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-09",
-  "total_submissions": 248,
-  "fetched": 248,
-  "generated_at": "2026-10-14T07:39:19Z",
+  "total_submissions": 249,
+  "fetched": 249,
+  "generated_at": "2026-10-15T07:27:50Z",
   "entries": [
     {
       "id": "2610.12053",
@@ -2324,10 +2324,11 @@
       "abstract": "Gaussian processes (GPs) are widely used across machine learning, spatial statistics, time-series analysis, optimization, Bayesian statistics, and scientific applications. A central component of a GP model is its kernel, which is typically specified through a parametric family. Among the most widely used choices is the radial basis function (RBF), also known as the squared exponential or Gaussian kernel, owing to its simple form, smoothness, and flexibility. In practice, the kernel parameters are routinely estimated by the maximum likelihood estimators (MLEs), as implemented by standard GP software. Despite this widespread use, the asymptotic behavior of the MLEs remains poorly understood under fixed-domain asymptotics, even for the RBF kernel. The main difficulty arises from the increasingly strong dependence among densely sampled observations and the nonlinear dependence of the covariance matrix on the kernel parameters. In this paper, we address this gap by providing, to the best of our knowledge, the first complete asymptotic characterization of the joint MLE of the spatial variance, lengthscale, and nugget variance under fixed-domain asymptotics. We establish consistency, derive convergence rates for all three parameters, prove joint asymptotic normality, and show that these rates are minimax optimal.",
       "authors": [
         "Ameer Qaqish",
+        "Sudipto Banerjee",
         "Didong Li"
       ],
       "published": "2026-10-07T13:44:55Z",
-      "updated": "2026-10-07T13:44:55Z",
+      "updated": "2026-10-13T18:51:37Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -3179,12 +3180,12 @@
     {
       "id": "2610.08755",
       "title": "Metastability and Sharp Propagation-of-Chaos Thresholds for Mean-Field Interacting Diffusions on the Circle",
-      "abstract": "We study metastability and long-time propagation-of-chaos for mean-field interacting diffusions on the circle with multiple local free-energy minima. Working modulo rotations, we identify sharp exponential time scales for metastability and the validity and breakdown of the McKean-Vlasov approximation. Assuming finitely many critical rotation orbits and distinct local-minimum energies, we show that, for initial data in the attraction basin of a nonglobal minimum, metastability and propagation-of-chaos hold uniformly over deterministic times up to $e^{N(D-\\varepsilon)}$ and fail at every deterministic sequence growing faster than $e^{N(D+\\varepsilon)}$. Here $N$ is the particle number and $D$ the depth of the maximal Freidlin-Wentzell energy cycle having that minimum as its bottom. The same threshold governs running averages of the squared approximation error in a stronger pathwise sense, with corresponding metastability and propagation-of-chaos bounds for suitably aligned time-averaged empirical measures. When the global-minimum orbit is unique, we establish uniform-in-time propagation-of-chaos in its attraction basin without assuming finitely many critical orbits. The proofs develop Freidlin-Wentzell cycle analysis for the empirical measure process on the rotation quotient. The key steps extend Dawson and Gärtner's fixed-horizon large deviation estimates to excursions of unbounded duration between metastable wells, yielding sharp cycle-exit estimates and localization at deterministic times. We give a checkable Fourier criterion for finiteness of the critical orbits and explicit examples with multiple wells, and discuss applications to the noisy Kuramoto model and conditional consequences for noisy transformer interactions. We also investigate how phase transitions in the free-energy landscape, as noise strength varies, affect metastability and propagation-of-chaos.",
+      "abstract": "We study metastability and long-time propagation-of-chaos for mean-field interacting diffusions on the circle with multiple local free-energy minima. Working modulo rotations, we identify sharp exponential time scales for metastability and the validity and breakdown of the McKean-Vlasov approximation. Assuming finitely many critical rotation orbits and distinct local-minimum energies, we show that, for initial data in the attraction basin of a nonglobal minimum, metastability and propagation-of-chaos hold uniformly over deterministic times up to $e^{N(D-\\varepsilon)}$ and fail at every deterministic sequence growing faster than $e^{N(D+\\varepsilon)}$. Here $N$ is the particle number and $D$ the depth of the maximal Freidlin-Wentzell energy cycle having that minimum as its bottom. The same threshold governs running averages of the squared approximation error in a stronger pathwise sense, with corresponding metastability and propagation-of-chaos bounds for suitably aligned time-averaged empirical measures. When the global-minimum orbit is unique, we establish uniform-in-time propagation-of-chaos in its attraction basin without assuming finitely many critical orbits. The proofs develop the Freidlin-Wentzell cycle analysis for the empirical measure process and exploit Dawson and Gärtner's fixed-horizon large deviation estimates to analyze long excursions between metastable wells. We give a checkable Fourier criterion for finiteness of the critical orbits. We also investigate connections with phase transitions in the free-energy landscape, and discuss applications to the noisy Kuramoto and noisy transformer models. We provide, to our knowledge, the first sharp exponential-time analysis of the Dawson-Gärtner `tunnelling phenomenon' for general smooth interactions, with two-sided probability bounds and matching propagation-of-chaos thresholds.",
       "authors": [
         "Sayan Banerjee"
       ],
       "published": "2026-10-06T17:47:29Z",
-      "updated": "2026-10-06T17:47:29Z",
+      "updated": "2026-10-14T12:31:04Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -5271,6 +5272,29 @@
       "bucket": "other"
     },
     {
+      "id": "2610.18884",
+      "title": "A subquadratic upper bound for the mixing time of the Thorp shuffle",
+      "abstract": "Let $n=2^d$. We prove that the worst-start total-variation mixing time of the full labelled Thorp shuffle satisfies, for every fixed $0<\\varepsilon<1$, \\[ t_{\\mathrm{mix}}(\\varepsilon) \\le C_* d^{5/3}+O_\\varepsilon\\!\\left(d^{4/3}\\log(d+2)\\right), \\qquad C_*=5.1536951454\\ldots . \\] Time is measured in ordinary Thorp shuffles. This improves the previously published full-deck upper bound $O(d^3)$ of Morris. The geometric starting point is elementary: label the $n=2^d$ positions by binary strings. One physical Thorp shuffle is a random swap layer on one coordinate matching of the $d$-dimensional cube, followed by a deterministic cyclic rotation of the coordinates. In a rotating frame that deterministic rotation disappears, so $d$ successive physical shuffles become one \\emph{sweep}: one independent random swap layer in each coordinate direction. The proof then combines five ingredients. First, a collision-graph representation and negative dependence give pointwise smoothing for ordered marked cards. Second, an entropy argument is sharpened by moving an endpoint moment up to the critical exponent $β_c=\\log_2(3/2)$, yielding an entropy-preparation clock $s^2/(2\\log(3/2))+O(s\\log s)$. Third, exact multiplicities in the ordered $h$-tuple permutation representation amplify marked-card bounds into Fourier operator and energy estimates on low representation levels. Fourth, entropy truncation produces a positive mixture whose regular component retains the marked-card budget. Finally, only two long blocks need this entropy regularization: a shorter third block is used solely for additional low-level smoothing. Optimizing the three block lengths gives the constant above.",
+      "authors": [
+        "Yunjiang Jiang"
+      ],
+      "published": "2026-10-03T18:03:26Z",
+      "updated": "2026-10-03T18:03:26Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cs.DS"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.18884",
+      "pdf_url": "https://arxiv.org/pdf/2610.18884",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-06",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.04564",
       "title": "Exact temporal variations and parameter estimation for space--time fractional stochastic heat equations driven by multiplicative noise",
       "abstract": "We establish exact limits for the normalized temporal power variations of every fixed real order \\(γ\\geq2\\) for the mild solution to a one-dimensional space--time fractional stochastic heat equation driven by multiplicative space--time white noise. The results include the exact normalized quadratic variation and the critical power variation of order \\(2α/(α-β)\\) as special cases. We also obtain the corresponding spatially averaged temporal variations. As applications, we construct consistent estimators for the drift parameter and for the ratio \\(β/α\\).",
@@ -5370,12 +5394,12 @@
     {
       "id": "2610.06924",
       "title": "Complexity of flows with interactions and stochastic analysis",
-      "abstract": "We study stochastic flows with interaction through an infinite-dimensional semigroup approach.By means of a kernel lifting procedure, we represent the solution to measure-valued stochastic equation as a Hilbert-valued Markov process. We identify its generator, construct the associated Markov semigroup, and establish a dense range condition using measure polynomial functionals. The results provide a framework for the analysis of stability of stochastic equations with interaction.",
+      "abstract": "We study stochastic flows with interaction through an infinite-dimensional semigroup approach. By means of a kernel lifting procedure, we represent the solution to measure-valued stochastic equation as a Hilbert-valued Markov process. We identify its generator, construct the associated Markov semigroup, and establish a dense range condition using measure polynomial functionals. The results provide a framework for the analysis of stability of stochastic equations with interaction.",
       "authors": [
         "Yifan Shi"
       ],
       "published": "2026-10-02T22:56:49Z",
-      "updated": "2026-10-02T22:56:49Z",
+      "updated": "2026-10-13T19:11:33Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
