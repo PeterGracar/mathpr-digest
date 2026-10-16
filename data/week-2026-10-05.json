@@ -9,7 +9,7 @@
   "data_through": "2026-10-09",
   "total_submissions": 249,
   "fetched": 249,
-  "generated_at": "2026-10-15T07:27:50Z",
+  "generated_at": "2026-10-16T07:11:04Z",
   "entries": [
     {
       "id": "2610.12053",
@@ -4110,13 +4110,13 @@
     },
     {
       "id": "2610.06935",
-      "title": "Uniform Bessel bounds for endpoint crossings in the persistent random walk",
-      "abstract": "A ball bounces down a Galton board, where its first bounce's direction is fair while every later bounce repeats the previous bounce's direction with probability $p$, all the way down to some bin. We ask for which $p$ the middle bin is exactly as likely as the end bins, a question originally posed by Kagey. We find that for $N$ bounces, the tie occurs when the ball changes direction (turns) approximately $\\log N$ times on average. We compare the central bin with a Bessel function, with an error bound that is explicit for all $N$. This yields an explicit interval for the tie at every $N \\geq 2$, rather than just for large $N$. This is done analytically for $N \\geq 175$, and for smaller $N$ exactly by integer arithmetic, cross-verified in Lean. We also find the tie of every other bin with the end bins and the shift caused by periodic boundaries.",
+      "title": "Uniform Bessel bounds for magnetization crossings in finite Ising chains",
+      "abstract": "In a finite zero-field Ising chain, the all-up configuration and zero magnetization become equally likely at a single coupling. This crossing has recently been described as a thermal transition of the finite chain, an analogue of a first-order transition temperature, and approximated by an analytic estimate and a numerical fit. We find its asymptotics, with explicit constants, for free and for periodic ends. The coupling at the crossing grows like half the logarithm of the length of the chain, minus half the logarithm of that logarithm. So the correlation length at the crossing is a vanishing fraction of the chain. Periodic ends lower the coupling at the crossing by an amount that decays like the inverse logarithm of the length. The earlier approximations lack the doubly logarithmic term, which explains why a fit on chains of moderate length finds a slope below one half. The proofs treat the magnetization as the position of a persistent random walk and compare its central probability with a modified Bessel function, with a relative error bound that is explicit for every length. For free ends this traps the crossing in an explicit interval at every length. The proof is analytic for long chains and uses exact integer arithmetic for short ones. We also locate, for each smaller magnetization, the coupling at which it becomes as likely as full magnetization.",
       "authors": [
         "Arjun Pemmasani"
       ],
       "published": "2026-10-03T03:40:16Z",
-      "updated": "2026-10-03T03:40:16Z",
+      "updated": "2026-10-15T10:02:31Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
