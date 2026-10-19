@@ -67,7 +67,9 @@ sub-groups** (in September, July's weeks merge; August and September stay
 individually listed), each showing its week count and any ✦ own / ★ coauthor
 totals — so an expanded year is ~12 month lines plus the recent weeks, not 52
 rows. During a search, month headers show that month's aggregated hit count and
-dim when nothing matches.
+dim when nothing matches. On wide screens the sidebar stays in view and, once
+it is taller than the window, scrolls on its own, independently of the
+article list.
 
 The site is **lazy-loaded** so it scales to many weeks without bloat:
 
