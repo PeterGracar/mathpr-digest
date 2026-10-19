@@ -843,7 +843,11 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 /* #main is a grid cell here, not the site's centred prose column */
 #main{flex:none;width:auto;margin:0;padding:0}
 .layout{display:grid;grid-template-columns:320px 1fr;gap:1.6rem;padding-top:1.5rem;padding-bottom:3.5rem;align-items:start}
-#sidebar{position:sticky;top:1rem}
+/* sticky, capped at the viewport and scrolling on its own: an uncapped sticky
+   column taller than the screen keeps its end hidden until the main column
+   runs out, i.e. past the whole article list. The padding (offset by the
+   margin and top) keeps focus outlines inside the scroll clip */
+#sidebar{position:sticky;top:.6rem;max-height:calc(100dvh - 1.2rem);overflow-y:auto;padding:.4rem;margin:-.4rem}
 .search input{width:100%;padding:.55rem .7rem;border-radius:var(--radius-md);border:1px solid var(--color-border);
   background:var(--color-surface);color:var(--color-text);font:400 var(--text-sm)/1.4 var(--font-body)}
 .searchstat{margin:.35rem .15rem 0;font-size:var(--text-xs);color:var(--color-text-muted)}
@@ -952,7 +956,7 @@ summary:focus-visible,input:focus-visible{outline:3px solid var(--color-focus);o
 .kw{font-size:var(--text-xs);font-weight:600;background:var(--color-surface-soft);color:var(--color-text-muted);
   padding:.05rem .5rem;border-radius:var(--radius-sm)}
 .empty{color:var(--color-text-muted);padding:1.8rem 0}
-@media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static}}
+@media(max-width:820px){.layout{grid-template-columns:1fr}#sidebar{position:static;max-height:none;overflow:visible}}
 """
 
 
