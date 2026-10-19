@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 42,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-10-16",
-  "total_submissions": 229,
-  "fetched": 229,
-  "generated_at": "2026-10-16T07:11:06Z",
+  "total_submissions": 230,
+  "fetched": 230,
+  "generated_at": "2026-10-19T07:49:45Z",
   "entries": [
     {
       "id": "2610.20984",
@@ -86,6 +86,33 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.21413",
       "pdf_url": "https://arxiv.org/pdf/2610.21413",
+      "score": 8,
+      "matched_keywords": [
+        "inhomogeneous",
+        "percolation"
+      ],
+      "announced": "2026-10-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2610.22417",
+      "title": "Strict monotonicity of weighted inhomogeneous percolation thresholds under covering maps",
+      "abstract": "We study Bernoulli bond percolation under weak covering maps for a class of weighted inhomogeneous product measures such that each edge $e$ carries a positive weight $w(e)$ and is open at intensity $λ\\geq 0$ with probability $1-\\exp(-λw(e))$. We prove a strict monotonicity of the weighted critical intensities $λ_c$ in the covering compatibility setting under bounded degree, uniform ellipticity, tame fibre and disjoint tree-lifting. While for the weighted uniform connection thresholds $λ_{\\mathrm{conn}}$, we establish their strict monotonicity for non-injective weak covering maps under bounded degree, covering compatibility, uniform ellipticity, bounded-fibre and disjoint tree-lifting. Moreover, we verify a general-profile theorem on strict monotonicities of the two thresholds $λ_c$ and $λ_{\\mathrm{conn}}$ respectively under explicit compact-interval finite-energy, derivative bounds and aforementioned geometric conditions.",
+      "authors": [
+        "Jing Liu",
+        "Kainan Xiang",
+        "Lang Zou"
+      ],
+      "published": "2026-10-15T01:01:20Z",
+      "updated": "2026-10-15T01:01:20Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.22417",
+      "pdf_url": "https://arxiv.org/pdf/2610.22417",
       "score": 8,
       "matched_keywords": [
         "inhomogeneous",
@@ -1776,12 +1803,12 @@
       "abstract": "For the empirical measure of the first $n$ points of one infinite sequence of independent uniform samples in the unit square, we identify the leading constant in the bounded-Lipschitz distance to area measure, equivalently in $W_1$, both in expectation and almost surely along all sample sizes. The constant is $c_*=κ_1/(2\\sqrtπ)\\in(0,1/4]$, where $κ_1$ is the linear-growth Gaussian variational constant of Armegioiu--Goldman--Grotto--Trevisan. This answers the two-dimensional bounded-Lipschitz convergence question posed by Yukich in 1989. We give the complete endpoint argument, square--torus comparison, empirical reduction, and full-sequence probability argument.",
       "authors": [
         "Weitao Huang",
-        "Yichen Wu",
         "Renzhen Wang",
+        "Yichen Wu",
         "Deyu Meng"
       ],
       "published": "2026-10-15T01:17:19Z",
-      "updated": "2026-10-15T01:17:19Z",
+      "updated": "2026-10-16T02:45:32Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -2821,7 +2848,7 @@
         "Li-Xin Zhang"
       ],
       "published": "2026-10-13T13:21:02Z",
-      "updated": "2026-10-14T06:04:48Z",
+      "updated": "2026-10-16T12:50:05Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4666,12 +4693,12 @@
     {
       "id": "2610.15006",
       "title": "DisCo Algebra: Why Disintegration and Combination Are Not Inverses",
-      "abstract": "We present DisCo algebra---a compositional framework for joint probability built from a symmetric cooperad (disintegration) and a symmetric operad (combination) on the bare family $\\mathcal{P}_n=\\mathrm{Prob}([0,1]^n)$. No probability integral transform, no external summary functions, no enrichment of objects with conditional kernels. The disintegration side uses block-wise joint CDFs as intrinsic, measure-determined 1D summaries, yielding a lossy compression. The combination side reads the same summaries and reconstructs via regular conditional measures, yielding a lossless embedding. We prove that combination followed by disintegration is the identity on admissible inputs, but disintegration followed by combination is not---the information loss is exactly the conditional KL divergence between the true conditional distribution and the conditionally independent product. This asymmetry reveals a hard limit on how much cross-block dependence can be captured by scalar block summaries.",
+      "abstract": "We present DisCo algebra---a compositional framework for joint probability built from a symmetric cooperad (disintegration) and a non-unital partial symmetric operad (combination restricted to the image of disintegration) on the bare family $\\mathcal{P}_n=\\mathrm{Prob}([0,1]^n)$. No probability integral transform, no external summary functions, no enrichment of objects with conditional kernels. The disintegration side uses block-wise joint CDFs as intrinsic, measure-determined 1D summaries, yielding a lossy compression. The combination side reads the same summaries and reconstructs via regular conditional measures, yielding a lossless embedding on admissible inputs. We prove that combination followed by disintegration is the identity on admissible inputs, but disintegration followed by combination is not---it defines a renormalization operator $R_{\\mathcal{I}}=\\text{Combine}\\circ\\text{Disintegrate}$. The information loss of this operator is exactly the probability curvature $\\mathcal{K}_{\\mathcal{I}}(μ)$---the conditional KL divergence between the true conditional distribution and the conditionally independent product. This curvature measures the obstruction to lossless decomposition and reveals a hard limit on how much cross-block dependence can be captured by CDF-based scalar block summaries.",
       "authors": [
         "Xuexing Lu"
       ],
       "published": "2026-10-10T15:40:44Z",
-      "updated": "2026-10-10T15:40:44Z",
+      "updated": "2026-10-16T15:54:20Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
