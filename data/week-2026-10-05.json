@@ -9,7 +9,7 @@
   "data_through": "2026-10-09",
   "total_submissions": 249,
   "fetched": 249,
-  "generated_at": "2026-10-19T16:09:18Z",
+  "generated_at": "2026-10-20T07:35:53Z",
   "entries": [
     {
       "id": "2610.12053",
@@ -869,12 +869,12 @@
     {
       "id": "2610.04420",
       "title": "Seed thresholds and degree variance in heterogeneous bootstrap percolation with growing degrees",
-      "abstract": "We study bootstrap percolation with independent vertex thresholds taking values one and two, with threshold-one probability $(1-c/d)/d$ for fixed $c>0$. The seed set is chosen uniformly among sets of a prescribed deterministic size, independently of the graph and thresholds. We prove threshold statements at fixed relative margins. For uniform simple graphs with prescribed nonnegative integer degrees of even sum and exact mean $d$, assume $\\max_i|d_i-d|\\le C\\sqrt d$ and $c+1-v_n\\geκ>0$, where $v_n=\\operatorname{Var}(D)/d$ and $C,κ$ are fixed. When $d\\to\\infty$ and $d=o(n^{1/7})$, the leading seed scale is $n(c+1-v_n)^2/(2d^4)$, without requiring a limit of $v_n$. At fixed relative margins below and above this scale, the final active set has size $O(n/d^3)$ and $n-o(n)$, respectively, with high probability. A separate result for $G(n,d/n)$ holds when $d\\to\\infty$ and $d^5/n\\to0$, and gives scale $nc^2/(2d^4)$. Thus regular and independent-edge graphs have different coefficients at the same asymptotic mean degree. Local exploration estimates yield explicit inactive remainders and survive conditioning on simplicity in the prescribed model. We also quantify the precision obstruction to static inclusion transfer and compute deterministic response-barrier corrections, without identifying a shrinking random critical window.",
+      "abstract": "We study bootstrap percolation with independent vertex thresholds taking values one and two, with threshold-one probability $(1-c/d)/d$ for fixed $c>0$. The seed set is chosen uniformly among sets of a prescribed deterministic size, independently of the graph and thresholds. We prove threshold statements at fixed relative margins. For uniform simple graphs with prescribed nonnegative integer degrees of even sum and exact mean $d$, assume $\\max_i|d_i-d|\\le C\\sqrt d$ and $c+1-v_n\\geκ>0$, where $v_n=\\operatorname{Var}(D)/d$ and $C,κ$ are fixed. When $d\\to\\infty$ and $d=o(n^{1/7})$, the leading seed scale is $n(c+1-v_n)^2/(2d^4)$, without requiring a limit of $v_n$. At fixed relative margins below and above this scale, the final active set has size $O(n/d^3)$ and $n-o(n)$, respectively, with high probability. For regular graphs, the supercritical conclusion strengthens to full activation. For $G(n,d/n)$, the same $O(n/d^3)$ and $n-o(n)$ conclusions hold when $d\\to\\infty$ and $d^5/n\\to0$, with seed scale $nc^2/(2d^4)$. Thus regular and independent-edge graphs have different coefficients at the same asymptotic mean degree. Local exploration estimates yield explicit inactive remainders and survive conditioning on simplicity in the prescribed model. We also quantify the precision obstruction to static inclusion transfer and compute deterministic response-barrier corrections, without identifying a shrinking random critical window.",
       "authors": [
         "Aleksandr Rodionov"
       ],
       "published": "2026-10-03T10:18:17Z",
-      "updated": "2026-10-03T10:18:17Z",
+      "updated": "2026-10-18T12:24:32Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4109,31 +4109,6 @@
       "bucket": "other"
     },
     {
-      "id": "2610.06935",
-      "title": "Uniform Bessel bounds for magnetization crossings in finite Ising chains",
-      "abstract": "In a finite zero-field Ising chain, the all-up configuration and zero magnetization become equally likely at a single coupling. This crossing has recently been described as a thermal transition of the finite chain, an analogue of a first-order transition temperature, and approximated by an analytic estimate and a numerical fit. We find its asymptotics, with explicit constants, for free and for periodic ends. The coupling at the crossing grows like half the logarithm of the length of the chain, minus half the logarithm of that logarithm. So the correlation length at the crossing is a vanishing fraction of the chain. Periodic ends lower the coupling at the crossing by an amount that decays like the inverse logarithm of the length. The earlier approximations lack the doubly logarithmic term, which explains why a fit on chains of moderate length finds a slope below one half. The proofs treat the magnetization as the position of a persistent random walk and compare its central probability with a modified Bessel function, with a relative error bound that is explicit for every length. For free ends this traps the crossing in an explicit interval at every length. The proof is analytic for long chains and uses exact integer arithmetic for short ones. We also locate, for each smaller magnetization, the coupling at which it becomes as likely as full magnetization.",
-      "authors": [
-        "Arjun Pemmasani"
-      ],
-      "published": "2026-10-03T03:40:16Z",
-      "updated": "2026-10-15T10:02:31Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR",
-        "cond-mat.stat-mech"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.06935",
-      "pdf_url": "https://arxiv.org/pdf/2610.06935",
-      "score": 2,
-      "matched_keywords": [
-        "random walk"
-      ],
-      "announced": "2026-10-06",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
       "id": "2610.04209",
       "title": "The Right Wing of the SABR Smile with an Absorbing Boundary: Resolution of Conjectures of Henry-Labordère",
       "abstract": "We determine the leading logarithmic asymptotics of the fixed-maturity right tail of the SABR model with $β\\in(0,1)$ and absorption at zero, for every correlation $ρ\\in(-1,1)$. If $P(k)$ is the probability that the terminal forward is at least $f_0e^k$, then $-k^{-2}\\ln P(k)\\to(1-β)^2/(2ν^2T(1-(ρ\\wedge0)^2))$ as $k\\to\\infty$. For $ρ\\ge0$ this is the rate predicted by the unrestricted hyperbolic geometry. For $ρ<0$ it is strictly larger: along the volatility excursion that produces the tail, survival forces the noise orthogonal to volatility to stay above a moving square-root barrier, at an additional cost of the same order $k^2$. Consequently the Black-Scholes implied volatility tends to $ν\\sqrt{1-(ρ\\wedge0)^2}/(1-β)$: Henry-Labordère's conjectured wing limit $ν/(1-β)$ holds for $ρ\\ge0$ and fails for every $ρ<0$. For his second conjecture, whose unrestricted-distance Gaussian estimate does not hold for $ρ<0$, we also identify the correct replacement for this model: at the level of tail probabilities, the rate is given by the squared intrinsic Riemannian distance, within the survival domain, from the initial state to the terminal target set. The proofs are direct, combining a stopped Lamperti transform, a conditional time change, Gaussian moving-barrier bounds and change-of-measure constructions, and use no heat-kernel estimates.",
@@ -5392,6 +5367,29 @@
       "bucket": "other"
     },
     {
+      "id": "2610.06935",
+      "title": "Uniform Bessel bounds for magnetization crossings in finite Ising chains",
+      "abstract": "We consider a finite Ising chain in zero field and ask when the all-up configuration is as likely as zero magnetization (magnetization one for an odd number of spins). For both free and periodic ends, the crossing coupling of a long chain is half the logarithm of its length minus half the logarithm of that logarithm, up to a term that vanishes as the length grows. We compute further terms with explicit constants and, for free ends, bound the crossing at every length. The second term is missing from an earlier approximation and explains why an earlier numerical fit gives a slope below one half. To locate the crossing, we compare the known magnetization law with its Bessel approximation. The Bessel approximation is above the exact weight, and we bound its relative error for every length, coupling and magnetization. At the crossing this bound tends to zero. The central bin still has about as many domain walls as the logarithm of the length on average, so the crossing has a coupling width of order the inverse logarithm. In a fixed positive dimensionless field the last crossing comes from near the edge of the row, at a coupling of about a quarter of the logarithm of the length. For long chains it is the one-spin crossing when the field exceeds half the logarithm of two. Below that value another bin crosses later.",
+      "authors": [
+        "Arjun Pemmasani"
+      ],
+      "published": "2026-10-03T03:40:16Z",
+      "updated": "2026-10-17T10:58:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.stat-mech"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.06935",
+      "pdf_url": "https://arxiv.org/pdf/2610.06935",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-06",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.06924",
       "title": "Complexity of flows with interactions and stochastic analysis",
       "abstract": "We study stochastic flows with interaction through an infinite-dimensional semigroup approach. By means of a kernel lifting procedure, we represent the solution to measure-valued stochastic equation as a Hilbert-valued Markov process. We identify its generator, construct the associated Markov semigroup, and establish a dense range condition using measure polynomial functionals. The results provide a framework for the analysis of stability of stochastic equations with interaction.",
@@ -5601,7 +5599,7 @@
         "Ofer Zeitouni"
       ],
       "published": "2026-10-02T16:36:21Z",
-      "updated": "2026-10-02T16:36:21Z",
+      "updated": "2026-10-19T17:56:43Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -5925,12 +5923,12 @@
     {
       "id": "2610.12503",
       "title": "Functional limit theorems for weighted occupation times of supercritical superprocesses",
-      "abstract": "Suppose $X=(X_t)_{t\\ge0}$ is a supercritical superprocess with a non-local branching mechanism on a Lusin space $E$, whose mean semigroup admits a positive leading eigenvalue $λ_1$ with a bounded positive eigenfunction $φ$ and a finite eigenmeasure $\\widetildeφ$. Let $Y_t:=\\int_0^t X_s\\mathrm{d}s$ be its occupation measure. We first prove a law of large numbers, that is, for every bounded measurable function $f$, $e^{-λ_1 t}\\langle f,Y_t\\rangle$ converges in $L^2$ to $λ_1^{-1}\\langle f,\\widetildeφ\\rangle W^φ_\\infty$, where $W^φ_\\infty$ is the limit of the martingale $W^φ_t:=e^{-λ_1 t}\\langleφ,X_t\\rangle$. We then establish functional central limit theorems for the fluctuations of $\\langle f,Y_t\\rangle$ around this random centering. We show that the normalisation and the limit are determined by the spectral decay rate of $f$ compared with the critical value $λ_1/2$, and there are three possible regimes: after suitable normalisation, the fluctuation process converges in distribution in $\\mathcal{C}[0,+\\infty)$ either to a mixed Gaussian process $\\sqrt{W^φ_{\\infty}}G(f)$, or to a constant Gaussian process with random variance depending on $W^φ_{\\infty}$, or to a non-Gaussian limit given by the limit of a martingale associated with the spectral projection of $f$. These results are the occupation-time counterparts of the fluctuation theorems for linear functionals of supercritical non-local branching superprocesses.",
+      "abstract": "Suppose $X=(X_t)_{t\\ge0}$ is a supercritical superprocess with a non-local branching mechanism on a Lusin space $E$, whose mean semigroup admits a positive leading eigenvalue $λ_1$ with a bounded positive eigenfunction $φ$ and a finite eigenmeasure $\\widetildeφ$. Let $Y_t:=\\int_0^t X_s\\mathrm{d}s$ be its occupation measure. We first prove a law of large numbers, that is, for every bounded measurable function $f$, $e^{-λ_1 t}\\langle f,Y_t\\rangle$ converges in $L^2$ to $λ_1^{-1}\\langle f,\\widetildeφ\\rangle W^φ_\\infty$, where $W^φ_\\infty$ is the limit of the martingale $W^φ_t:=e^{-λ_1 t}\\langleφ,X_t\\rangle$. We then establish functional central limit theorems for the fluctuations of $\\langle f,Y_t\\rangle$ around this random centering. We show that the normalisation and the limit are determined by the spectral decay rate of $f$ compared with the critical value $λ_1/2$, and there are three possible regimes: after suitable normalisation, the fluctuation process converges in distribution in $\\mathcal{C}[0,+\\infty)$ either to a mixed Gaussian process $\\sqrt{W^φ_{\\infty}}G(f)$, or to a constant Gaussian process with random variance depending on $W^φ_{\\infty}$, or to a non-Gaussian limit given by the limit of a martingale associated with the spectral projection of $f$. These results are the occupation-time counterparts of the fluctuation theorems for instantaneous linear functionals of supercritical non-local branching superprocesses.",
       "authors": [
         "Ting Yang"
       ],
       "published": "2026-10-02T09:30:08Z",
-      "updated": "2026-10-02T09:30:08Z",
+      "updated": "2026-10-19T06:29:45Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"

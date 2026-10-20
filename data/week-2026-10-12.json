@@ -9,7 +9,7 @@
   "data_through": "2026-10-16",
   "total_submissions": 230,
   "fetched": 230,
-  "generated_at": "2026-10-19T16:09:21Z",
+  "generated_at": "2026-10-20T07:35:55Z",
   "entries": [
     {
       "id": "2610.20984",
@@ -2188,7 +2188,7 @@
         "Ryokichi Tanaka"
       ],
       "published": "2026-10-14T08:36:09Z",
-      "updated": "2026-10-14T08:36:09Z",
+      "updated": "2026-10-19T03:14:04Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2794,12 +2794,12 @@
     {
       "id": "2610.18376",
       "title": "Quantitative Convergence of Markov Equilibria for Time-Inconsistent Controlled Diffusions",
-      "abstract": "Time-inconsistent stochastic control admits a natural game-theoretic interpretation in which successive decision dates are represented by different selves. In the Markovian framework of Björk-Khapko-Murgoci, the corresponding continuous-time equilibrium HJB system can be motivated by discrete subgame-perfect games, but the general discrete-to-continuous passage is not automatic. We establish a quantitative convergence theorem for a smooth uniformly elliptic class in which the control may enter both drift and diffusion. Using the exact sample-and-hold transition law on each time step, we construct, near a verified continuous equilibrium branch, a unique regular discrete Markov subgame-perfect equilibrium and prove first-order convergence of the continuation objects in an anisotropic $C^{2+β}$ topology and of the equilibrium policies in $C^0$. The key stability mechanism is structural: the discrete first-order condition forces the differential feedback correction in the frozen linearization to be nilpotent, which yields mesh-uniform block estimates through a two-norm dyadic Schauder argument despite the second-order coupling caused by controlled volatility. We also formulate a conditional transfer principle for structured polynomial-growth classes, with error-space stability stated as a separate hypothesis.",
+      "abstract": "Time-inconsistent stochastic control admits a natural game-theoretic interpretation in which successive decision dates are represented by different selves. In the Markovian framework of Björk-Khapko-Murgoci, the corresponding continuous-time equilibrium HJB system can be motivated by discrete subgame-perfect games, but the general discrete-to-continuous passage is not automatic. We establish a quantitative convergence theorem for a smooth uniformly elliptic class with strongly concave Hamiltonians and interior equilibrium controls, allowing control in both drift and diffusion. Using the exact sample-and-hold transition law on each time step, we construct, near a given verified continuous-time BKM weak equilibrium, a unique regular discrete Markov subgame-perfect equilibrium and prove first-order convergence of continuation objects in $C^{2+β}$ Hölder norms with mixed regularity and of policies and values uniformly. The key stability mechanism is structural: the discrete first-order condition makes the frozen differential feedback correction nilpotent. A two-norm dyadic Schauder argument, local Gaussian comparison, and spatial localization turn this cancellation into mesh-uniform block stability despite the second-order coupling caused by controlled volatility.",
       "authors": [
         "Sascha Desmettre"
       ],
       "published": "2026-10-13T13:29:26Z",
-      "updated": "2026-10-13T13:29:26Z",
+      "updated": "2026-10-17T10:48:57Z",
       "primary_category": "math.OC",
       "categories": [
         "math.OC",
@@ -3061,13 +3061,13 @@
     {
       "id": "2610.17775",
       "title": "Cutoff profiles and boundary effects in the Togashi-Kaneko model of autocatalytic reactions with weak mutations",
-      "abstract": "We determine explicit bulk and worst-case total variation cutoff profiles for the configuration law of a two-species Togashi--Kaneko model with a fixed population of $n$ particles and weak mutations. Boundary initial conditions introduce an additional logarithmic growth phase and change both the leading mixing-time coefficient and the limiting cutoff profile. Let $κ_1,κ_2>0$ be the autocatalytic rate constants and put $λ_*=κ_1κ_2/(κ_1+κ_2)$. For deterministic initial configurations whose density converges to $m\\in(0,1)$, the total variation distance to equilibrium at time $t_n(s)=\\frac{\\log n}{2λ_*}+\\frac{s}{λ_*}$ converges to $\\mathcal G(r(m)e^{-s})$ for every fixed $s\\in\\mathbb R$, where $\\mathcal G(r)=d_{\\mathrm{TV}}(\\mathcal N(r,1),\\mathcal N(0,1))$, $r(m)>0$ is explicit, and $\\mathcal N(a,b^2)$ denotes the Gaussian distribution with mean $a$ and variance $b^2$. For the worst-case distance $\\mathscr D_n(t)$ over all initial configurations, we prove $\\mathscr D_n(T_n+s/λ_*)\\to\\mathcal P(s)$, where $T_n=\\left(\\frac{1}{\\min\\{κ_1,κ_2\\}}+\\frac{1}{2λ_*}\\right)\\log n$.The profile $\\mathcal P$ is the total variation distance between the equilibrium Gaussian and a Gaussian mixture whose random displacement is determined by a gamma-distributed amplitude arising from early growth at the boundary. Unlike the bulk profile, $\\mathcal P$ depends on the mutation parameters. Both cutoffs have windows of constant order, and we identify the asymptotically worst boundary configurations.",
+      "abstract": "We determine explicit bulk and worst-case total variation cutoff profiles for the configuration law of a two-species Togashi--Kaneko model with a fixed population of $n$ particles and weak mutations. Boundary initial conditions introduce an additional logarithmic growth phase and change both the leading mixing-time coefficient and the limiting cutoff profile. Let $κ_1,κ_2>0$ be the autocatalytic rate constants and put $λ_*=κ_1κ_2/(κ_1+κ_2)$. For deterministic initial configurations whose density converges to $m\\in(0,1)$, the total variation distance to equilibrium at time $t_n(s)=\\frac{\\log n}{2λ_*}+\\frac{s}{λ_*}$ converges to $\\mathcal G(r(m)e^{-s})$ for every fixed $s\\in\\mathbb R$, where $\\mathcal G(r)=\\mathrm{d}_{\\mathsf{TV}}(\\mathcal N(r,1),\\mathcal N(0,1))$, $r(m)>0$ is explicit, and $\\mathcal N(a,b^2)$ denotes the Gaussian distribution with mean $a$ and variance $b^2$. For the worst-case distance $\\mathscr D_n(t)$ over all initial configurations, we prove $\\mathscr D_n(T_n+s/λ_*)\\to\\mathcal P(s)$, where $T_n=\\left(\\frac{1}{\\min\\{κ_1,κ_2\\}}+\\frac{1}{2λ_*}\\right)\\log n$.The profile $\\mathcal P$ is the total variation distance between the equilibrium Gaussian and a Gaussian mixture whose random displacement is determined by a gamma-distributed amplitude arising from early growth at the boundary. Unlike the bulk profile, $\\mathcal P$ depends on the mutation parameters. Both cutoffs have windows of constant order, and we identify the asymptotically worst boundary configurations.",
       "authors": [
         "Yangrui Xiang",
         "Wasiur R. KhudaBukhsh"
       ],
       "published": "2026-10-13T06:03:07Z",
-      "updated": "2026-10-13T06:03:07Z",
+      "updated": "2026-10-16T18:37:25Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3231,7 +3231,7 @@
     {
       "id": "2610.17465",
       "title": "Optimal Feature-Based Newsvendor Policies under Censored Demand",
-      "abstract": "We investigate a newsvendor problem where a decision-maker observes a $z$-dimensional vector of covariates, and wants to learn how much stock to order given a sample of size $n$ of censored demand data to minimize costs. Demand is censored when insufficient stock is available to meet it, and past stocking quantities are known. We propose a new model-agnostic loss function approach to estimate optimal order quantities using observational data, and characterize the optimal newsvendor policy as the policy that minimizes our proposed loss function. Our method requires only a single estimation step, can be scaled to datasets with hundreds of thousands of data points, and does not suffer from the same instabilities as inverse censoring probability weighting methods. We describe how this loss function can be implemented in linear empirical risk minimization, kernel weights optimization and deep neural network algorithms, and provide excess risk generalization bounds for their out-of-sample performance. Moreover, we show through numerical experiments that our method quickly converges to the optimal policy on synthetic data, and leads to improved performance on real world retail data.",
+      "abstract": "We investigate a newsvendor problem where a decision-maker observes a z-dimensional vector of covariates, and wants to learn how much stock to order given a sample of size n of censored demand data to minimize costs. Demand is censored when insufficient stock is available to meet it, and past stocking quantities are known. We propose a new model-agnostic loss function approach to estimate optimal order quantities using observational data, and characterize the optimal newsvendor policy as the policy that minimizes our proposed loss function. Our method requires only a single estimation step, can be scaled to datasets with hundreds of thousands of data points, and does not suffer from the same instabilities as inverse censoring probability weighting methods. We describe how this loss function can be implemented in linear empirical risk minimization, kernel weights optimization and deep neural network algorithms, and provide excess risk generalization bounds for their out-of-sample performance. Moreover, we show through numerical experiments that our method quickly converges to the optimal policy on synthetic data, and leads to improved performance on real world retail data.",
       "authors": [
         "Joost van der Haar",
         "Ilias Willems",
@@ -3239,7 +3239,7 @@
         "Ingrid Van Keilegom"
       ],
       "published": "2026-10-12T22:27:59Z",
-      "updated": "2026-10-12T22:27:59Z",
+      "updated": "2026-10-19T16:35:10Z",
       "primary_category": "math.OC",
       "categories": [
         "math.OC",
