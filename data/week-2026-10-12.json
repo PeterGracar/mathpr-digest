@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-16",
-  "total_submissions": 230,
-  "fetched": 230,
-  "generated_at": "2026-10-21T07:40:35Z",
+  "total_submissions": 231,
+  "fetched": 231,
+  "generated_at": "2026-10-22T07:36:25Z",
   "entries": [
     {
       "id": "2610.20984",
@@ -158,7 +158,7 @@
         "Kanta Nozawa"
       ],
       "published": "2026-10-14T11:53:58Z",
-      "updated": "2026-10-14T11:53:58Z",
+      "updated": "2026-10-21T07:18:37Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -468,6 +468,30 @@
       "score": 4,
       "matched_keywords": [
         "percolation"
+      ],
+      "announced": "2026-10-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2610.22011",
+      "title": "On Stopping Sets and Continuous-Time Decision Trees",
+      "abstract": "We study stopping sets and continuous-time decision trees (CTDTs) for Poisson point processes. We prove that every $μ$-continuous CTDT has an explicit exploration representation: between successive discoveries, the explored set grows according to a deterministic rule depending on the points already observed. If $μ$ is diffuse, we prove that the points are revealed one by one almost surely; this need not be imposed as a separate assumption. We also allow atoms of $μ$, in which case all points at one location are revealed together. For diffuse $μ$, we also prove that a locally bounded stopping set that reveals at most one Poisson point is attainable by a $μ$-continuous exploration. More generally, an increasing sequence of locally bounded stopping sets, each revealing at most one additional point, can be attained by a single exploration viewed at successive stopping times. Finally, we prove the spatial Markov property of the Poisson point process without assuming that the stopping set contains finitely many points or admits a finite approximation. The proof is based on a general criterion for characterizing conditionally Poisson point processes using moment measures, and uses the multivariate Mecke formula on the complement of the stopping set.",
+      "authors": [
+        "Ali Khezeli"
+      ],
+      "published": "2026-10-15T14:53:23Z",
+      "updated": "2026-10-21T07:42:22Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.22011",
+      "pdf_url": "https://arxiv.org/pdf/2610.22011",
+      "score": 3,
+      "matched_keywords": [
+        "point process"
       ],
       "announced": "2026-10-16",
       "own": false,
@@ -1432,28 +1456,6 @@
       "bucket": "other"
     },
     {
-      "id": "2610.22011",
-      "title": "On Stopping Sets and Continuous-Time Decision Trees",
-      "abstract": "We study stopping sets and continuous-time decision trees (CTDTs) for Poisson point processes. We first give a proof of the spatial Markov property without assuming that the stopping set contains finitely many points or admits a finite approximation. The proof uses the multivariate Mecke formula on the complement of the stopping set. We then prove that every $μ$-continuous CTDT has an explicit exploration representation: between successive discoveries, the explored set grows according to a deterministic rule depending on the points already observed. If $μ$ is diffuse, the points are revealed one by one almost surely; this need not be imposed as a separate assumption. We also allow atoms of $μ$, in which case all points at one location are revealed together. Finally, for diffuse $μ$, we prove that a locally bounded stopping set revealing at most one point is attainable by a $μ$-continuous exploration. More generally, an increasing sequence of locally bounded stopping sets, each revealing at most one additional point, can be attained by a single exploration at successive stopping times.",
-      "authors": [
-        "Ali Khezeli"
-      ],
-      "published": "2026-10-15T14:53:23Z",
-      "updated": "2026-10-15T14:53:23Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.22011",
-      "pdf_url": "https://arxiv.org/pdf/2610.22011",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-10-16",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
       "id": "2610.21986",
       "title": "Finite Cumulant Towers for Small-System-Noise Expansions in Nonlinear Filtering",
       "abstract": "We study asymptotic expansions for nonlinear filtering in the small-system-noise regime. Our main result is that the expansion coefficients of conditional cumulants satisfy a closed finite-dimensional system that can be solved recursively. At each expansion degree, the evolution of a coefficient introduces a coefficient of the next higher cumulant rank, while a high-rank vanishing property terminates this hierarchy, yielding a finite triangular tower. The first layer is the Kalman--Bucy filter, and subsequent layers satisfy linear equations once the lower layers are known. To derive these equations, we establish generalized Zakai and Kushner--Stratonovich equations for observation-dependent random variables and obtain explicit coefficient equations in arbitrary dimension. The conditional cumulant expansion also determines the expansion of the conditional characteristic function. We further obtain an explicit bound on the number of scalar variables in terms of the state dimension and expansion degree. When the observation function vanishes, the construction reduces to ODEs for unconditional cumulant coefficients. Comparisons with existing asymptotic-expansion algorithms illustrate the resulting reduction in the number of ODE variables.",
@@ -1931,6 +1933,29 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.20880",
       "pdf_url": "https://arxiv.org/pdf/2610.20880",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.28665",
+      "title": "Wavelet covariances under fixed finite observations: dilation symmetry breaking and distinct endpoint limits",
+      "abstract": "For a centered homogeneous generalized Gaussian field with spectral weight $C|ω|^{-γ}$, we prove two-endpoint recovery of normalized posterior wavelet covariances under fixed finite admissible observations. Global dilation symmetry holds if and only if all observation functions vanish. The nonzero wavelet and the observation functions are real Schwartz functions with $M\\geq1$ vanishing moments, with $C>0$ and $γ<2M+1$. Noise is Gaussian and field-independent, and total observation covariance is positive definite. Under simultaneous dilation of target scales and positions, multiplication by $λ^{-γ}$ recovers the prior covariance as $λ\\downarrow0$ and $λ\\uparrow\\infty$, uniformly on every fixed compact target set. If a nonzero observation function exists, additional finite first nonzero Fourier orders $m_ψ,m_i$ at zero of the wavelet and nonzero observation functions yield compact-uniform recovery bounds $O(λ^{2m_ψ+1-γ})$ and $O(λ^{-(2\\min_i m_i+1-γ)})$, with leading coefficients and cancellation-dependent improvements. The bounds are exact leading orders when their coefficients are nonzero. For the Matérn-type spectrum $S(ω)=C(κ^2+ω^2)^{-p}$, $κ>0$, $1/2<p<M+1/2$, fixed finite noisy point observations yield distinct compact-uniform limits: the homogeneous $C|ω|^{-2p}$ kernel after multiplication by $λ^{-2p}$ at small scales, and the constant-spectrum $S(0)$ kernel without normalization at large scales. A projection-norm criterion treats fixed closed observation subspaces; Mexican-hat formulas illustrate the finite-observation results.",
+      "authors": [
+        "Jun Tsuzurugi"
+      ],
+      "published": "2026-10-14T19:36:43Z",
+      "updated": "2026-10-14T19:36:43Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.28665",
+      "pdf_url": "https://arxiv.org/pdf/2610.28665",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-16",
@@ -3936,7 +3961,7 @@
         "Blanka Horvath"
       ],
       "published": "2026-10-12T13:03:48Z",
-      "updated": "2026-10-12T13:03:48Z",
+      "updated": "2026-10-21T08:13:28Z",
       "primary_category": "q-fin.MF",
       "categories": [
         "q-fin.MF",
@@ -4693,12 +4718,12 @@
     {
       "id": "2610.15006",
       "title": "DisCo Algebra: Why Disintegration and Combination Are Not Inverses",
-      "abstract": "We present DisCo algebra---a compositional framework for joint probability built from a symmetric cooperad (disintegration) and a non-unital partial symmetric operad (combination restricted to the image of disintegration) on the bare family $\\mathcal{P}_n=\\mathrm{Prob}([0,1]^n)$. No probability integral transform, no external summary functions, no enrichment of objects with conditional kernels. The disintegration side uses block-wise joint CDFs as intrinsic, measure-determined 1D summaries, yielding a lossy compression. The combination side reads the same summaries and reconstructs via regular conditional measures, yielding a lossless embedding on admissible inputs. We prove that combination followed by disintegration is the identity on admissible inputs, but disintegration followed by combination is not---it defines a renormalization operator $R_{\\mathcal{I}}=\\text{Combine}\\circ\\text{Disintegrate}$. The information loss of this operator is exactly the probability curvature $\\mathcal{K}_{\\mathcal{I}}(μ)$---the conditional KL divergence between the true conditional distribution and the conditionally independent product. This curvature measures the obstruction to lossless decomposition and reveals a hard limit on how much cross-block dependence can be captured by CDF-based scalar block summaries.",
+      "abstract": "We present DisCo algebra---a compositional framework for joint probability built from a symmetric cooperad (disintegration) and a magma-operad (non-associative partial combination, restricted to the image of disintegration) on the bare family $\\mathcal{P}_n=\\mathrm{Prob}([0,1]^n)$. No probability integral transform, no external summary functions, no enrichment of objects with conditional kernels. The disintegration side uses block-wise joint CDFs as intrinsic, measure-determined 1D summaries, yielding a lossy compression. The combination side reads the same summaries and reconstructs via regular conditional measures, yielding a lossless embedding on admissible inputs. We prove that combination followed by disintegration is the identity on admissible inputs, but disintegration followed by combination is not---it defines a renormalization operator $R_{\\mathcal{I}}=\\text{Combine}\\circ\\text{Disintegrate}$. The information loss of this operator is exactly the probability curvature $\\mathcal{K}_{\\mathcal{I}}(μ)$---the conditional KL divergence between the true conditional distribution and the conditionally independent product. This curvature measures the obstruction to lossless decomposition and reveals a hard limit on how much cross-block dependence can be captured by CDF-based scalar block summaries.",
       "authors": [
         "Xuexing Lu"
       ],
       "published": "2026-10-10T15:40:44Z",
-      "updated": "2026-10-16T15:54:20Z",
+      "updated": "2026-10-21T10:44:08Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
