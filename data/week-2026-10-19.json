@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 43,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-10-23",
-  "total_submissions": 218,
-  "fetched": 218,
-  "generated_at": "2026-10-23T07:33:33Z",
+  "total_submissions": 219,
+  "fetched": 219,
+  "generated_at": "2026-10-26T07:48:56Z",
   "entries": [
     {
       "id": "2610.29853",
@@ -904,6 +904,33 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.31550",
       "pdf_url": "https://arxiv.org/pdf/2610.31550",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-23",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.31736",
+      "title": "Free energy fluctuations of symmetric perceptron models up to and including criticality",
+      "abstract": "We study the free energy fluctuations of spherical and Ising perceptron models with general even activations. These include the symmetric binary perceptron, the $U$-perceptron, and the bipartite Sherrington--Kirkpatrick model. Our main result is a Gaussian CLT for the free energy that holds both in the ``high-temperature'' interior of a second moment RS regime and on its ``critical'' boundary. At criticality, the CLT has scale $(\\frac{\\log N}{6})^{1/2}$, which matches the free energy fluctuations of the critical Sherrington--Kirkpatrick model and suggests this scaling is universal. The proof shows that the perceptron model's free energy fluctuations are explained, up to an additive $o(1)$ error with high probability, by those of a corresponding spherical Hopfield model, and that this relation persists even at criticality. This proof strategy builds on a critical reweighted moment method developed by the first and third authors \\cite{du2026fluctuations} to identify the critical fluctuations of the SK free energy, which links these fluctuations to the spectral edge spacing of the disorder.",
+      "authors": [
+        "Hang Du",
+        "Shuyang Gong",
+        "Brice Huang",
+        "Zhangsong Li"
+      ],
+      "published": "2026-10-22T16:41:55Z",
+      "updated": "2026-10-22T16:41:55Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "cond-mat.dis-nn",
+        "math-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.31736",
+      "pdf_url": "https://arxiv.org/pdf/2610.31736",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-23",
@@ -1922,14 +1949,14 @@
     {
       "id": "2610.30196",
       "title": "Differentially Private Synthetic Data via Generalized Moment Matching",
-      "abstract": "We study $(\\varepsilon,δ)$-differentially private synthetic data for arbitrary databases of $n$ records in $[-1,1]^d$ under a specified integral probability metric (IPM). We introduce generalized moment matching, which estimates moments privately, fits a probability measure, and samples synthetic records. A general error theorem applies when moment error controls the target IPM. This framework extends Chebyshev moment matching for $1$-Wasserstein distance and smooth queries. We apply the framework to maximum mean discrepancy with Matern and Laplace kernels and a two-layer ReLU neural tangent kernel.We also obtain guarantees for sliced Wasserstein-$1$ and the IPM induced by norm-bounded ReLU networks. With sufficiently many synthetic records,these rates are minimax optimal up to logarithmic factors for fixed dimension.",
+      "abstract": "We study $(\\varepsilon,δ)$-differentially private synthetic data for arbitrary databases of $n$ records in $[-1,1]^d$ under a specified integral probability metric (IPM). We introduce generalized moment matching, which estimates moments privately, fits a probability measure, and samples synthetic records. A general error theorem applies when moment error controls the target IPM. This framework extends Chebyshev moment matching for $1$-Wasserstein distance and smooth queries. We apply the framework to maximum mean discrepancy with Matern and Laplace kernels and a two-layer ReLU neural tangent kernel. We also obtain guarantees for sliced Wasserstein-$1$ and the IPM induced by norm-bounded ReLU networks. With sufficiently many synthetic records,these rates are minimax optimal up to logarithmic factors for fixed dimension.",
       "authors": [
         "Rundong Ding",
         "Yiyun He",
         "Yizhe Zhu"
       ],
       "published": "2026-10-21T07:06:03Z",
-      "updated": "2026-10-21T07:06:03Z",
+      "updated": "2026-10-23T03:34:17Z",
       "primary_category": "stat.ML",
       "categories": [
         "stat.ML",
@@ -2021,14 +2048,14 @@
     {
       "id": "2610.29238",
       "title": "Strongly log-concave measures and lattices",
-      "abstract": "Let $Λ\\subset \\mathbb{R}^n$ be a full rank lattice with the property that $\\det Γ\\ge 1$ for all sublattices $Γ\\subseteq Λ^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that $f$ is $α$-strongly log-concave, where $α= 2π/e$, and $X + Λ$ is uniform on $\\mathbb{R}^n/Λ$. Moreover, we show that the existence of such a density $f$ characterizes the assumption on $Γ$ up to a constant. There are a few consequences of the above. First, for such lattices we can bound the covering radius \\[ μ(Λ, K) = \\max_{x \\in \\mathbb{R}^n} \\min_{λ\\in Λ} \\|x-λ\\|_K \\le \\sqrt{\\frac{2e}π} \\cdot \\mathbb{E}_G\\, \\|G\\|_K \\] of a convex body $K \\subset \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,I)$. This implies an $O(n\\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. Second, we establish as a consequence an alternative proof of the reverse Minkowski theorem with an explicit constant.",
+      "abstract": "Let $Λ\\subseteq \\mathbb{R}^n$ be a full rank lattice with the property that $\\det Γ\\ge 1$ for all sublattices $Γ\\subseteq Λ^*$. We prove that there exists a symmetric random vector $X \\in \\mathbb{R}^n$ with a smooth, strictly positive density $f : \\mathbb{R}^n \\to (0, \\infty)$ satisfying that (1) $f$ is $α$-strongly log-concave, where $α= 2π/e$, and (2) $X + Λ$ is uniform on $\\mathbb{R}^n/Λ$. Moreover, the existence of such a density characterizes this property up to a universal dilation. There are a few consequences of the above. We list some. First, for such lattices we can bound the covering radius \\[ μ(Λ, K) = \\max_{x\\in\\mathbb{R}^n}\\min_{λ\\inΛ} \\left\\|x-λ\\right\\|_K \\le \\sqrt{\\frac{2e}π} \\cdot \\mathbb{E}\\,\\left\\|G\\right\\|_K \\] of a convex body $K \\subseteq \\mathbb{R}^n$ containing $0$ in its interior, where $G \\sim N(0,\\mathrm{Id})$. This implies an $O(n \\sqrt{\\log n})$ bound for the flatness constant and an $O(\\log^{3/2} n)$ bound for the subspace flatness constant. We also compare the entire ordered spectrum of the associated flat torus on $Λ^*$ with that of a Gaussian, yielding an alternative proof of the reverse Minkowski theorem.",
       "authors": [
         "Brayden Letwin",
         "Victor Reis",
         "Thomas Rothvoss"
       ],
       "published": "2026-10-21T05:46:44Z",
-      "updated": "2026-10-21T05:46:44Z",
+      "updated": "2026-10-23T03:39:42Z",
       "primary_category": "math.MG",
       "categories": [
         "math.MG",
@@ -2414,13 +2441,13 @@
     },
     {
       "id": "2610.28497",
-      "title": "Matrix divisors, Christoffel transformations and symmetric $d$-connections",
-      "abstract": "The Christoffel transformation $w(x)\\mapsto x^2w(x)$ relates elementary bundle modifications to gap probability recurrences. The moment matrix determines normalization and the splitting type. We define the source and target moduli problems by their local data. The modifications identify common stable loci and conjugate their point-addition maps. For Pearson ratios $d(-z-1)/d(z)$ with $°d=1,2$, we construct rational spectral coordinates and compute the induced transformation. For positive even weights with finite moments, reweighting configurations yields the transformed gap probability recurrence. Its coefficient is a rational function of the transformed spectral coordinates. A local formula applies outside these charts under the stated hypotheses.",
+      "title": "Christoffel transformations of symmetric $d$-connections and gap probability recurrences",
+      "abstract": "We study the Christoffel transformation $w(x)\\mapsto x^2w(x)$ of an even discrete weight. For the associated orthogonal polynomial ensembles on squared nodes $y=x^2$, ratios of moment determinants relate the largest-particle distributions and transfer exact gap probability recurrences between the ensembles. For positive weights satisfying the stated moment and support assumptions, this comparison requires no Pearson condition. The transformation is realized by elementary bundle modifications at zero and infinity on $\\mathbb P^1$. When the original weight has Pearson ratio $d(-z-1)/d(z)$ with $\\mathrm{deg}\\; d=1,2$, these modifications conjugate cutoff dynamics on common stable loci of symmetric $d$-connections under the stated geometric hypotheses. The transformed recurrence coefficients are expressed explicitly as rational functions of spectral coordinates. On the unit lattice, a local recurrence formula applies to rational symmetric Pearson ratios of arbitrary degree, including outside these charts, whenever its local hypotheses hold.",
       "authors": [
         "Anton Selemenchuk"
       ],
       "published": "2026-10-20T16:40:52Z",
-      "updated": "2026-10-20T16:40:52Z",
+      "updated": "2026-10-22T18:08:19Z",
       "primary_category": "math-ph",
       "categories": [
         "math-ph",

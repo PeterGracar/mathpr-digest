@@ -9,7 +9,7 @@
   "data_through": "2026-10-16",
   "total_submissions": 232,
   "fetched": 232,
-  "generated_at": "2026-10-23T07:33:31Z",
+  "generated_at": "2026-10-26T07:48:54Z",
   "entries": [
     {
       "id": "2610.20984",
@@ -5031,13 +5031,13 @@
     },
     {
       "id": "2610.13063",
-      "title": "The Order Mass Identity of Rooted Forests, with a Direct Proof of the Extended Aldous--Broder Theorem",
-      "abstract": "Random spanning forests provide probability models for partitions and Monte Carlo methods on graphs. In these applications, the distribution produced by a sampler determines which forest functionals can be estimated. The Aldous--Broder algorithm constructs a spanning tree from the first-entrance edges of a covering random walk. Its distribution is known, but a direct calculation requires summing over all orders in which a fixed tree can be discovered. We evaluate this sum through an identity for rooted forests and real matrices with zero row sums. Under a nonsingularity condition on the principal submatrices encountered during growth, the sum of products of harmonic extension entries equals a principal cofactor of a matrix on the roots. With one root, the sum is one. The identity gives a direct proof of the extended Aldous--Broder theorem for every finite irreducible Markov chain started at a fixed state, without assuming reversibility or bidirectional transition support. It also gives the conditional distribution of the discovery order and the law of the forest obtained by stopping after all nonroot vertices have been visited. A completion weight describes the difference between this stopped-walk law and the weight-proportional forest law, including the support restriction needed for importance correction. Numerical examples illustrate the sampling implications. The identity, the Aldous--Broder theorem, and the stopped-forest law are formalized in Lean4.",
+      "title": "The Order Mass Identity of Rooted Forests, with a Direct Proof of the Extended Aldous-Broder Theorem",
+      "abstract": "The Aldous-Broder algorithm constructs a spanning tree from the first-entrance edges of a covering random walk. Its distribution is known, but deriving it by summing over the orders in which a fixed tree can be discovered remains difficult. In this paper, we evaluate this sum by establishing an order-mass identity for rooted forests. For real matrices with zero row sums, the identity expresses the sum of order weights associated with each root as a principal cofactor of a matrix on the roots, under a nonsingularity condition involving only the sets encountered along the growth orders of the given forest. We prove the identity using linear algebraic tools. With one root, the sum equals one, giving a direct proof of the extended Aldous-Broder theorem for every finite irreducible Markov chain started at a fixed state. With multiple roots, we derive the forest law produced by the stopped covering walk and show how it differs from the weight-proportional forest law. The identity and the resulting tree and forest laws are formalized in Lean 4.",
       "authors": [
         "Hugh Zheng"
       ],
       "published": "2026-10-09T06:25:01Z",
-      "updated": "2026-10-09T06:25:01Z",
+      "updated": "2026-10-23T17:17:44Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
