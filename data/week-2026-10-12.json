@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-16",
-  "total_submissions": 232,
-  "fetched": 232,
-  "generated_at": "2026-10-26T07:48:54Z",
+  "total_submissions": 233,
+  "fetched": 233,
+  "generated_at": "2026-10-27T07:53:34Z",
   "entries": [
     {
       "id": "2610.20984",
@@ -1703,15 +1703,15 @@
     },
     {
       "id": "2610.21242",
-      "title": "Enhanced Dissipation under Variable Growth: Stochastic $p(x)$-Laplace Equations with Transport Noise",
-      "abstract": "We study dissipation enhancement for stochastic $p(x)$-Laplace equations with divergence-free transport noise on $\\mathbb T^d$, $d\\ge2$. Under log-Hölder continuity and degenerate subcritical growth, we establish global variational well-posedness and an exact energy identity. For every prescribed positive coefficient, suitable transport noise yields averaged algebraic decay uniformly on bounded zero-mean $L^2$ balls. The noise is independent of the individual initial datum. This uniform enhancement holds despite the absence of homogeneous scaling and the two flux growth regimes associated with the variable exponent. We also identify $p^+$ as the optimal exponent for uniform modular coercivity near zero and obtain a strict averaged comparison with the unperturbed evolution at any prescribed time $T\\ge1$ on initial-data shells with bounded gradient modular. For each prescribed decay rate and finite moment order, deterministic stepwise Fourier profiles with fixed intensity and increasing frequency range give exponential decay of the $L^2$ norm in mean square and almost surely. The absolute random prefactors have uniformly bounded moments of the prescribed order throughout the initial-data ball.",
+      "title": "Enhanced Dissipation by Transport Noise for Stochastic $p(x)$-Laplace Equations",
+      "abstract": "We are concerned with dissipation enhancement by divergence-free transport noise for stochastic \\(p(x)\\)-Laplace equations on \\(\\mathbb T^d\\), \\(d\\ge2\\). Spatially variable growth removes homogeneous scaling and produces two flux growth regimes. For periodic log-Hölder continuous exponents satisfying \\(2<p^-\\le p^+<\\infty\\), we first establish global variational well-posedness and the exact energy identity in the natural dual spaces. Under the additional condition \\(p^+<2d/(d-2)\\) when \\(d\\ge3\\), we then prove averaged algebraic decay with any prescribed coefficient, uniformly on bounded zero-mean \\(L^2\\) balls, by estimating the two flux powers separately. A deterministic lower bound yields strict averaged comparison with the unperturbed flow at prescribed positive times on shells with bounded gradient modular. We also prove optimality of the modular coercivity exponent \\(p^+\\) near zero. Finally, combining these estimates with intervalwise noise acceleration from the constant-exponent theory gives exponential decay in mean square and almost surely, with moments of the random prefactors bounded uniformly on the initial-data ball. For the exponential estimates, the noise depends on the prescribed rate and moment order; its intensity is fixed in time and its frequency range increases.",
       "authors": [
         "Jiangwei Zhang",
         "Juntao Wu",
         "Shang Wu"
       ],
       "published": "2026-10-15T04:38:36Z",
-      "updated": "2026-10-15T04:38:36Z",
+      "updated": "2026-10-25T14:44:39Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1840,6 +1840,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.21014",
       "pdf_url": "https://arxiv.org/pdf/2610.21014",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-16",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.33035",
+      "title": "An autocomplete model for elections",
+      "abstract": "We consider two linked problems for ranked choice elections: building a compact summary of a preference profile $P$, and generating synthetic profiles that resemble $P$ in key ways. We introduce a Markov model based on which candidate names follow which on observed ballots and record this in a succession matrix on candidates together with a start/stop symbol. This provides the basis for new ``autocomplete'' methods for generating synthetic profiles, with ballot length that can be tuned to a target. We compare succession-based generation to parallel use of summaries built from positional frequencies and head-to-head comparisons. To execute this comparison, we introduce new descriptive statistics of profiles that allow new tests of whether synthetic profiles are realistic. In experiments on Scottish ranked-choice profiles, succession-based generation captures held-out ballot structure well, performs especially strongly when completing partial ballots, and often preserves election outcomes, outperforming the alternatives on all counts. Finally, we study the dynamics of iterating the train-and-generate process.",
+      "authors": [
+        "Moon Duchin",
+        "Kristopher Tapp"
+      ],
+      "published": "2026-10-14T22:25:25Z",
+      "updated": "2026-10-14T22:25:25Z",
+      "primary_category": "cs.SI",
+      "categories": [
+        "cs.SI",
+        "cs.GT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.33035",
+      "pdf_url": "https://arxiv.org/pdf/2610.33035",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-16",
@@ -3457,7 +3482,7 @@
         "Tim Van Hoose"
       ],
       "published": "2026-10-12T19:00:35Z",
-      "updated": "2026-10-12T19:00:35Z",
+      "updated": "2026-10-26T03:01:54Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4842,7 +4867,7 @@
         "Rafael Chiclana"
       ],
       "published": "2026-10-10T08:45:45Z",
-      "updated": "2026-10-10T08:45:45Z",
+      "updated": "2026-10-26T14:40:22Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"

@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-23",
-  "total_submissions": 219,
-  "fetched": 219,
-  "generated_at": "2026-10-26T07:48:56Z",
+  "total_submissions": 220,
+  "fetched": 220,
+  "generated_at": "2026-10-27T07:53:36Z",
   "entries": [
     {
       "id": "2610.29853",
@@ -1399,6 +1399,30 @@
       "bucket": "other"
     },
     {
+      "id": "2610.33087",
+      "title": "Quantitative Resolvent Calculus for Sample Covariance Matrices",
+      "abstract": "In this work, we develop a quantitative resolvent calculus for sample covariance matrices tailored to applications in high-dimensional statistics. We treat single resolvents, their derivatives, and products of two resolvents with different spectral parameters in the proportional-dimensional regime. Our bounds hold uniformly over compact subsets of $\\mathbb C\\setminus\\mathbb R_{\\geq0}$ with approximation errors of order $O_{\\mathbb P}(\\|Θ_n\\|_F/\\sqrt n)$ for deterministic test matrices $Θ_n$. These bounds require only uniformly bounded fourth moments and a uniformly bounded population covariance operator norm. Neither regular spectral edges nor convergence of the population spectral distribution is required. As a key technical ingredient, we develop an averaging argument for centered quadratic forms involving one or two leave-one-out resolvents. Applications of our results include precision-matrix shrinkage, prediction risk in ridge regression, and generalized cross-validation. For these problems, we obtain quantitative guarantees for estimation and data-driven parameter selection.",
+      "authors": [
+        "Thomas Stark",
+        "Nina Dörnemann"
+      ],
+      "published": "2026-10-21T20:05:12Z",
+      "updated": "2026-10-21T20:05:12Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.33087",
+      "pdf_url": "https://arxiv.org/pdf/2610.33087",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-23",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.30382",
       "title": "The longest increasing subsequences of Luce permutations and permutons",
       "abstract": "We investigate the longest increasing subsequences (LIS) of random permutations distributed under the Luce model with weights $θ_1^{(n)} \\ge \\ldots \\ge θ_n^{(n)}$. Our first main result provides a general formula for the growth rate of the LIS. For example, we get that the LIS of Luce permutations with Sukhatme weights $θ_k^{(n)} = n-k+1$ grows like $\\sqrt{n}$. We also give simple conditions for the LIS to be of order $n^β$, for any given $β\\in[1/2,1)$. Our second main result states that, if the weights are of the form $θ_k^{(n)} = f\\big( (k-1)/n \\big)$ for a sufficiently regular function $f$, then the LIS divided by $2\\sqrt{n}$ converges in probability to a constant $K(f)$ described by a variational problem. Throughout, we make extensive use of coupling techniques; in particular, to prove our second main result, we argue that Luce random permutations behave similarly to random permutations sampled from the ``Luce permuton''.",
@@ -1549,7 +1573,7 @@
         "Shuyuan Liang"
       ],
       "published": "2026-10-21T02:47:56Z",
-      "updated": "2026-10-21T02:47:56Z",
+      "updated": "2026-10-25T14:04:06Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
