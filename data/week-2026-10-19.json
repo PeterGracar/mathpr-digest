@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-23",
-  "total_submissions": 220,
-  "fetched": 220,
-  "generated_at": "2026-10-27T07:53:36Z",
+  "total_submissions": 221,
+  "fetched": 221,
+  "generated_at": "2026-10-28T08:34:37Z",
   "entries": [
     {
       "id": "2610.29853",
@@ -2382,6 +2382,32 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.28581",
       "pdf_url": "https://arxiv.org/pdf/2610.28581",
+      "score": 2,
+      "matched_keywords": [
+        "renyi"
+      ],
+      "announced": "2026-10-21",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.35933",
+      "title": "Deterministic Causal Quantization with Representative States and Bounded Error",
+      "abstract": "We study deterministic causal quantization with pathwise error at most $\\varepsilon$, using $ω$ shared representatives updated from transmitted addresses alone. For a midpoint realization with first-in, first-out replacement, we compare address entropy rates with process $\\varepsilon$-entropy, the least entropy rate of any block quantizer meeting the same constraint. From $\\varepsilon$-separated initialization, the gap is at most two bits per sample for every stationary source with finite scalar $\\varepsilon$-entropy, without density, independence or mixing assumptions. A causal address-tree argument extends this comparison to any synchronized quantizer with cell overlap $m$, giving $\\log_2 m$ bits. Lattice initialization with consistent boundary ownership realizes uniform grids with sharp one-bit scalar and process comparisons. Under an entropy condition and finite Fisher information rate $J$, the gap is at most $2J\\varepsilon^2/(π^2\\ln 2)$; general initializations add a term of order $ω\\varepsilon\\sqrt{J}$. The scalar grid estimate gives a nonasymptotic form of Rényi's theorem. Since a grid is causal, the price of causality is at most $\\min\\{1,2J\\varepsilon^2/(π^2\\ln 2)\\}$ bits per sample, versus the high-resolution squared-error loss $\\tfrac12\\log_2(πe/6)$. These bounds certify $\\varepsilon$-entropy brackets for autoregressive Laplace and Gaussian sources. For memoryless sources, the optimal causal rate equals the scalar $\\varepsilon$-entropy. For a stationary process on finitely many $2\\varepsilon$-separated centers, adding independent uniform noise of width $2\\varepsilon$ gives exact Shannon lower-bound equality at every block length, attained by storing those centers. This includes histograms with finitely many bins. Storing two non-lattice centers beats every uniform grid of the same cell width by half a bit per sample.",
+      "authors": [
+        "Rama Cont",
+        "Massoud Heidari"
+      ],
+      "published": "2026-10-20T11:51:27Z",
+      "updated": "2026-10-20T11:51:27Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.35933",
+      "pdf_url": "https://arxiv.org/pdf/2610.35933",
       "score": 2,
       "matched_keywords": [
         "renyi"
