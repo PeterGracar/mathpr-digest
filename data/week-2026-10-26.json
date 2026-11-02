@@ -4,12 +4,12 @@
   "iso_year": 2026,
   "iso_week": 44,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-10-30",
-  "total_submissions": 244,
-  "fetched": 244,
-  "generated_at": "2026-10-30T08:40:07Z",
+  "total_submissions": 245,
+  "fetched": 245,
+  "generated_at": "2026-11-02T09:31:52Z",
   "entries": [
     {
       "id": "2610.40084",
@@ -1724,11 +1724,11 @@
       "title": "The Berry--Esseen estimate in the Boolean central limit theorem",
       "abstract": "We estimate the Lévy distance to the symmetric Bernoulli distribution for normalized Boolean convolution powers of a probability measure with mean zero and variance one. If the absolute moment of order $r$ is finite, we obtain the upper bounds $o(n^{-(r-2)/6})$ for $2<r<5$ and $O(n^{-1/2})$ for $r\\ge5$. The proof relies on an inequality that controls the Lévy distance to the Bernoulli law by the values of the reciprocal Cauchy transform at two points. For each $r\\ge2$, we also construct a single fixed distribution whose absolute moments are finite exactly up to order $r$, and show that the exponent $\\min\\{(r-2)/6,1/2\\}$ cannot be improved. Under only a finite second moment assumption, the convergence can be arbitrarily slow.",
       "authors": [
-        "Maejima Makoto",
+        "Makoto Maejima",
         "Noriyoshi Sakuma"
       ],
       "published": "2026-10-29T10:05:13Z",
-      "updated": "2026-10-29T10:05:13Z",
+      "updated": "2026-10-30T08:33:52Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2117,6 +2117,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.39025",
       "pdf_url": "https://arxiv.org/pdf/2610.39025",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.40707",
+      "title": "A law of the iterated logarithm for random multiplicative functions on integers with a large prime factor",
+      "abstract": "Let $f$ be a Rademacher random multiplicative function supported on the squarefree integers. We investigate the almost sure fluctuations of the restricted sum $M^{>}(x)=\\sum_{n\\le x;~ P(n)>x^{1/2}}f(n)$, where $P(n)$ is the largest prime factor of $n$. With $Q(x)$ being the conditional variance of $M^{>}(x)$ given the values of $f$ at primes not exceeding $x^{1/2}$, we prove that, almost surely, the upper and lower limits of $M^{>}(x)(2Q(x)\\log\\log Q(x))^{-1/2}$ as $x\\to\\infty$ are $1$ and $-1$, respectively. Furthermore, it is shown that the almost sure cluster set of the normalized sum is $[-1,1]$.",
+      "authors": [
+        "Dariusz Buraczewski",
+        "Alexander Iksanov"
+      ],
+      "published": "2026-10-28T22:52:45Z",
+      "updated": "2026-10-28T22:52:45Z",
+      "primary_category": "math.NT",
+      "categories": [
+        "math.NT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.40707",
+      "pdf_url": "https://arxiv.org/pdf/2610.40707",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-30",
