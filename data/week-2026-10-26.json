@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-30",
-  "total_submissions": 245,
-  "fetched": 245,
-  "generated_at": "2026-11-02T09:31:52Z",
+  "total_submissions": 247,
+  "fetched": 247,
+  "generated_at": "2026-11-03T09:33:50Z",
   "entries": [
     {
       "id": "2610.40084",
@@ -118,6 +118,34 @@
         "erdos",
         "random graph",
         "renyi"
+      ],
+      "announced": "2026-10-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "high"
+    },
+    {
+      "id": "2611.00123",
+      "title": "Uniform duplication-divergence random graphs I: Degrees and Local Limits",
+      "abstract": "We study a growing random graph in which each new vertex chooses a uniformly random parent, joins that parent with probability $r\\in(0,1]$, and independently joins each of the parent's current neighbors with probability $p\\in(0,1)$. Let $p_c$ be the unique solution of $p_c e^{p_c}=1$. For $0<p<p_c$, we prove that the empirical degree distribution converges in probability to the stationary distribution $π$ of an explicit reset-and-growth Markov chain. Its upper tail satisfies $π((y,\\infty))\\sim C_{p,r}y^{-κ}$, where $C_{p,r}>0$ and $κ>0$ solves $p^κ+pκ=1$. This confirms predictions from physics (Lambiotte, Krapivsky, Bhat and Redner, \\textit{Physical Review Letters}, 2016). We further show that for every fixed radius $\\ell$ and $p<p_c$, the empirical distribution of induced rooted $\\ell$-neighborhoods converges to the invariant law of a graph-valued reset-and-growth Markov process. We give an explicit construction of the limiting graph using a marked ancestral genealogy. Its root component is almost surely finite for $r<1$, and infinite with exactly one end for $r=1$. Moreover, for every $0<p<1$, both the fixed-vertex degrees and the maximum degree grow on the scale $t^p$, and the vertex of maximum degree is eventually unique and persistent.",
+      "authors": [
+        "Partha S. Dey",
+        "Neeladri Maitra",
+        "Jaya M. Manthripragada",
+        "Grigory Terlov"
+      ],
+      "published": "2026-10-29T14:44:59Z",
+      "updated": "2026-10-29T14:44:59Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.00123",
+      "pdf_url": "https://arxiv.org/pdf/2611.00123",
+      "score": 6,
+      "matched_keywords": [
+        "degree distribution",
+        "random graph"
       ],
       "announced": "2026-10-30",
       "own": false,
@@ -872,12 +900,12 @@
     {
       "id": "2610.34309",
       "title": "Beyond Brown's radial tests: admissibility, parabolicity, and a doubling-Poincaré prior that neither test decides",
-      "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $δ_F$ is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
+      "abstract": "For the estimation of a normal mean in $\\mathbb{R}^m$ under quadratic loss, Brown (1971) proved that a generalized Bayes estimator $δ_F$ with bounded drift is admissible if and only if a diffusion attached to the marginal $f^*$ of the prior $F$ is recurrent, and gave two radial tests: a sphere-average test for recurrence and a ray test for transience. He observed that both tests can be silent. We read his theory as the potential theory of the weighted Euclidean space $(\\mathbb{R}^m,f^*\\,dx)$ and ask what the modern theory of recurrence on weighted manifolds adds inside the zone where neither test applies. Three results. (A) If $f^*\\,dx$ is doubling and supports a scale-invariant Poincaré inequality, the sphere test is already complete: recurrence, Brown's sphere test and the ball-volume test are equivalent, so geometric criteria can add decidable cases only on the inadmissible side. (B) They do add one. An explicit prior on $\\mathbb{R}^3$ whose marginal is small along a lattice of circles at dyadic scales with spacing equal to the square root of the scale, is doubling and Poincaré, silences both of Brown's tests, and is transient by the ball-volume test; its generalized Bayes estimator is inadmissible. (C) Outside the doubling-Poincaré class the zone is two-sided: the same circles placed on one surface per scale give an admissible estimator, decided by a flux bound along a non-spherical exhaustion, and a logarithmic product prior gives an inadmissible one, decided by product heat kernels. A comparison lemma shows that any positive weight with Lipschitz logarithm is, up to constants, the marginal of a prior, so that explicit weights may be used throughout.",
       "authors": [
         "Oleg Roshka"
       ],
       "published": "2026-10-25T14:22:58Z",
-      "updated": "2026-10-25T14:22:58Z",
+      "updated": "2026-11-01T12:24:53Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -1592,6 +1620,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.40082",
       "pdf_url": "https://arxiv.org/pdf/2610.40082",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.40057",
+      "title": "Invariant probability measures on holomorphic functions on the unit disk",
+      "abstract": "We study probability measures on the space of holomorphic functions on the unit disk that are invariant under pre-composition by conformal automorphisms and give no mass to constant functions. We determine the slowest possible growth of functions supported by such measures. Let $M_f(R)$ denote the maximum modulus of $f$ on the hyperbolic ball of radius $R$ centered at the origin. We show that given a non-decreasing function $G:[1,\\infty)\\to(0,\\infty)$, there exists an $\\textrm{Aut}(\\mathbb{D})$-invariant probability measure $μ$ on $\\textrm{Hol}(\\mathbb{D}, \\mathbb{C}) \\setminus \\{\\textrm{constant functions} \\}$ such that $\\log^+ M_f(R)=O_f(G(R))$ for $μ$ almost every $f$ if and only if $\\int_1^\\infty (R/G(R)) \\, dR <\\infty$. For the lower bound, we use a mass transport argument to show that almost every trajectory of the gradient flow of $\\log |f|$ has finite energy. To establish sharpness, we construct holomorphic functions of slow growth on infinite Riemann surfaces.",
+      "authors": [
+        "Oleg Ivrii",
+        "Uri Kreitner"
+      ],
+      "published": "2026-10-29T13:47:08Z",
+      "updated": "2026-10-29T13:47:08Z",
+      "primary_category": "math.CV",
+      "categories": [
+        "math.CV",
+        "math.DS",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.40057",
+      "pdf_url": "https://arxiv.org/pdf/2610.40057",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-30",
@@ -3332,7 +3385,7 @@
         "Janosch Ortmann"
       ],
       "published": "2026-10-27T15:12:22Z",
-      "updated": "2026-10-27T15:12:22Z",
+      "updated": "2026-10-30T19:19:44Z",
       "primary_category": "cs.LG",
       "categories": [
         "cs.LG",
@@ -4871,12 +4924,12 @@
     {
       "id": "2610.34371",
       "title": "Critical measures and coefficient limits for non-Gaussian holomorphic chaos",
-      "abstract": "We study critical holomorphic multiplicative chaos with circular iid inputs of unit variance. Writing $R=|X_1|$, we prove that the radially normalized boundary measures converge in probability to a finite measure with almost surely positive mass if and only if $\\mathbb{E}[R^2\\log(2+R)]<\\infty$; otherwise they converge to zero. We obtain distinct sharp criteria for convergence at each fractional order $0<q<1$ for radial approximations and for the full Fourier-radial family. Convergence at every such order is equivalent to an exponential-moment radius of at least two. In the positive-limit class, coefficient vectors normalized by $(\\log n)^{1/4}$ and their analytic windows converge stably to Gaussian mixtures determined by the same critical measure. This measure is nonatomic, has full support, and is carried by a set of Hausdorff dimension zero. Coefficient periodograms recover the measure, while scalar and matrix energy normalizations give universal Gaussian limits. Exact weighted tails under $\\mathbb{E} I_0(2R)<\\infty$, where $I_0$ is the modified Bessel function, and negative mass moments distinguish uncountably many coefficient-limit laws, even modulo deterministic scalar rescaling, within a uniformly bounded input family. This disproves the common-law clause of Gu-Zhang's Question 2 at its fixed normalization. We give conditions for convergence of the original coefficient moments and show that finiteness of the limiting moments alone does not suffice. For inputs with $\\log\\mathbb{P}(R>u)\\sim-λu^α$, $0<α<1$, the coefficient normalization and Gaussian-mixture form persist, but the limit has no finite positive moments; we determine its logarithmic tails. Finally, we prove Hardy nonmembership under finite variance alone and, in the positive-limit class, sharp weighted Bergman criteria for $0<p\\le2$ and the boundary Sobolev threshold $s=-1/2$.",
+      "abstract": "We study critical holomorphic multiplicative chaos with circular iid inputs of unit variance. Writing \\(R=|X_1|\\), the radially normalized boundary measures converge in probability to a finite measure with almost surely positive mass exactly when \\(\\mathbb{E}[R^2\\log(2+R)]<\\infty\\); otherwise they converge to zero. Radial and Fourier--radial approximations have distinct sharp \\(L^q\\) convergence criteria at each \\(0<q<1\\); convergence at every such order holds for both families exactly when \\(\\mathbb{E}e^{sR}<\\infty\\) for every \\(0<s<2\\). In the positive-limit class, coefficient vectors multiplied by \\((\\log n)^{1/4}\\) and their analytic windows converge stably to Gaussian mixtures determined by the same critical measure. A uniformly bounded input family gives uncountably many coefficient-limit laws inequivalent under nonzero deterministic complex rescaling. We distinguish these laws using exact weighted tails under \\(\\mathbb{E}I_0(2R)<\\infty\\), where \\(I_0\\) is the modified Bessel function, and negative mass moments. For \\(\\log\\mathbb{P}(R>u)\\sim-λu^α\\), \\(0<α<1\\) and \\(λ>0\\), the normalization and Gaussian-mixture form persist, while every positive limit moment diverges; we determine the logarithmic tails. Finite limiting moments need not imply convergence of the original coefficient moments. In the positive-limit class, coefficient periodograms recover the critical measure and energy normalization gives Gaussian limits. Hardy nonmembership holds under finite variance alone; the positive-limit class has sharp weighted Bergman criteria for \\(0<p\\le2\\) and boundary Sobolev threshold \\(s=-1/2\\).",
       "authors": [
         "Feng Guo"
       ],
       "published": "2026-10-25T15:24:09Z",
-      "updated": "2026-10-25T15:24:09Z",
+      "updated": "2026-11-01T16:00:35Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
