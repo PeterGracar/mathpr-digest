@@ -9,7 +9,7 @@
   "data_through": "2026-10-30",
   "total_submissions": 247,
   "fetched": 247,
-  "generated_at": "2026-11-03T09:33:50Z",
+  "generated_at": "2026-11-04T09:14:58Z",
   "entries": [
     {
       "id": "2610.40084",
@@ -1265,7 +1265,7 @@
     {
       "id": "2610.40562",
       "title": "Nearly-Optimal Time-Sample Trade-off in Consensus Dynamics",
-      "abstract": "How does the number of sampled opinions affect the time required to reach consensus in distributed consensus dynamics? We study the synchronous $h$-\\textsf{Majority}, in which every node independently samples $h$ nodes uniformly at random with replacement in each round and adopts a most frequent sampled opinion, breaking ties uniformly at random. We show that $h$-\\textsf{Majority} achieves the nearly-optimal trade-off between the sample size and the consensus time, among a broad class of consensus dynamics. In particular, we prove the following results. For every sample size $h \\ge 3$ and for every initial configuration, we prove that the process reaches consensus with high probability within $\\widetilde{O}\\left(1+\\min\\left\\{\\frac{1}{\\min\\{h^2p_{\\max},1\\}},\\frac{\\sqrt{n}}{h}\\right\\}\\right)$ rounds, where $n$ is the number of nodes and $p_{\\max}$ is the largest initial fraction of nodes supporting any single opinion. This is the first bound on the consensus time for $h$-\\textsf{Majority} that holds for every $h\\ge3$ and every initial configuration. When the initially most popular opinion has a sufficiently large lead over every other opinion, we show that all nodes adopt this opinion with high probability within $O(\\log n/\\min\\{h^2p_{\\max},1\\})$ rounds. We establish a matching lower bound up to polylogarithmic factors for any fixed update rule that treats all opinions symmetrically and that selects either a sampled opinion or the node's current opinion.",
+      "abstract": "How does the number of sampled opinions affect the time required to reach consensus in distributed consensus dynamics? We study the synchronous $h$-Majority, in which every node independently samples $h$ nodes uniformly at random with replacement in each round and adopts a most frequent sampled opinion, breaking ties uniformly at random. We show that $h$-Majority achieves the nearly-optimal trade-off between the sample size and the consensus time, among a broad class of consensus dynamics. In particular, we prove the following results. For every sample size $h \\ge 3$ and for every initial configuration, we prove that the process reaches consensus with high probability within $$\\widetilde{O}\\left(1+\\min\\left\\{\\frac{1}{\\min\\{h^2p_{\\max},1\\}},\\frac{\\sqrt{n}}{h}\\right\\}\\right)$$ rounds, where $n$ is the number of nodes and $p_{\\max}$ is the largest initial fraction of nodes supporting any single opinion. This is the first bound on the consensus time for $h$-Majority that holds for every $h\\ge3$ and every initial configuration. When the initially most popular opinion has a sufficiently large lead over every other opinion, we show that all nodes adopt this opinion with high probability within $O(\\log n/\\min\\{h^2p_{\\max},1\\})$ rounds. We establish a matching lower bound up to polylogarithmic factors for any fixed update rule that treats all opinions symmetrically and that selects either a sampled opinion or the node's current opinion.",
       "authors": [
         "Francesco d'Amore",
         "Joel Rybicki",
@@ -1274,7 +1274,7 @@
         "Robin Vacus"
       ],
       "published": "2026-10-29T17:41:23Z",
-      "updated": "2026-10-29T17:41:23Z",
+      "updated": "2026-11-03T13:31:42Z",
       "primary_category": "cs.DC",
       "categories": [
         "cs.DC",
@@ -1368,14 +1368,14 @@
     {
       "id": "2610.40510",
       "title": "Zero-freeness for Random Regular Graphs up to the Replica Symmetry Breaking Threshold",
-      "abstract": "We study antiferromagnetic spin systems on random regular graphs through the lens of the phase transitions characterized by the complex zeros of the partition function. Our motivating examples include the hardcore model and the antiferromagnetic Potts model (including proper $q$-colorings at $β=0$). For both models on random $d$-regular graphs, we establish, with high probability over the graph, zero-free regions throughout the interior of the replica-symmetric regime. Asymptotically, this regime extends up to tree occupation density $$α< α_{\\mathrm{RSB}}(d) = (2\\log d - 2\\log\\log d + 2 - 2\\log 2 + o_d(1))/d$$ for the hardcore model and up to degree $$d < d_{\\mathrm{RSB}}(q) = (2q-1)\\log q - 2\\log 2 + o_q(1)$$ for proper $q$-colorings. Leveraging the standard algorithmic implications of zero-freeness, we obtain deterministic polynomial-time algorithms that multiplicatively approximate the corresponding partition functions at fixed rational parameters throughout this regime, with high probability over the graph. Our algorithmic guarantees significantly improve upon prior work and extend beyond the parameter ranges reached by previously known search algorithms. To establish our results, we first develop reinforced small subgraph conditioning, which resolves short-cycle fluctuations in the complex plane by lifting classical small subgraph conditioning on random regular graphs to random holomorphic functions. Second, we overcome the standard second-moment barrier caused by the exponential blowup of the bare second moment inside the replica-symmetric phase, by showing that replica symmetry implies a nonpositive Bethe functional and upgrading planted overlap concentration to an exponentially small bound, which enables a typical-graph truncation that controls complex second moments up to the replica symmetry breaking threshold.",
+      "abstract": "We study antiferromagnetic spin systems on random regular graphs through the lens of the phase transitions characterized by the complex zeros of the partition function. Our motivating examples include the hardcore model and the antiferromagnetic Potts model (including proper $q$-colorings at $β=0$). For both models on random $d$-regular graphs, we establish, with high probability over the graph, zero-free regions throughout the interior of the replica-symmetric regime. Asymptotically, this regime extends up to tree occupation density $$α< α_{\\mathrm{RSB}}(d) = (2\\log d - 2\\log\\log d + 2 - 2\\log 2 + o_d(1))/d$$ for the hardcore model and up to degree $$d < d_{\\mathrm{RSB}}(q) = (2q-1)\\log q - 2\\log 2 + o_q(1)$$ for proper $q$-colorings. Leveraging the standard algorithmic implications of zero-freeness, we obtain deterministic polynomial-time algorithms that multiplicatively approximate the corresponding partition functions at fixed rational parameters throughout this regime, with high probability over the graph. Our algorithmic guarantees significantly improve upon prior work and extend beyond the parameter ranges reached by previously known search algorithms. As a key intermediate step, we establish the pointwise equivalence, away from the threshold, of three notions of replica symmetry: geometric (averaged pairwise correlation decay), thermodynamic (convergence to the Bethe free-energy prediction), and variational (nonpositivity of the Bethe functional). To establish zero-freeness, we develop reinforced small subgraph conditioning, lifting classical small subgraph conditioning to random holomorphic functions to control short-cycle fluctuations. We also use variational replica symmetry to obtain exponential planted overlap concentration. This enables a typical-graph truncation that controls complex second moments up to the replica symmetry breaking threshold.",
       "authors": [
         "Zejia Chen",
         "Chunyang Wang",
         "Xinyuan Zhang"
       ],
       "published": "2026-10-29T17:23:36Z",
-      "updated": "2026-10-29T17:23:36Z",
+      "updated": "2026-11-03T12:07:58Z",
       "primary_category": "cs.DS",
       "categories": [
         "cs.DS",

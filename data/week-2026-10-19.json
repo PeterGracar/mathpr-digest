@@ -9,7 +9,7 @@
   "data_through": "2026-10-23",
   "total_submissions": 221,
   "fetched": 221,
-  "generated_at": "2026-11-03T09:33:47Z",
+  "generated_at": "2026-11-04T09:14:36Z",
   "entries": [
     {
       "id": "2610.29853",
@@ -2391,32 +2391,6 @@
       "bucket": "other"
     },
     {
-      "id": "2610.35933",
-      "title": "Deterministic Causal Quantization with Representative States and Bounded Error",
-      "abstract": "We study deterministic causal quantization with pathwise error at most $\\varepsilon$, using $ω$ shared representatives updated from transmitted addresses alone. For a midpoint realization with first-in, first-out replacement, we compare address entropy rates with process $\\varepsilon$-entropy, the least entropy rate of any block quantizer meeting the same constraint. From $\\varepsilon$-separated initialization, the gap is at most two bits per sample for every stationary source with finite scalar $\\varepsilon$-entropy, without density, independence or mixing assumptions. A causal address-tree argument extends this comparison to any synchronized quantizer with cell overlap $m$, giving $\\log_2 m$ bits. Lattice initialization with consistent boundary ownership realizes uniform grids with sharp one-bit scalar and process comparisons. Under an entropy condition and finite Fisher information rate $J$, the gap is at most $2J\\varepsilon^2/(π^2\\ln 2)$; general initializations add a term of order $ω\\varepsilon\\sqrt{J}$. The scalar grid estimate gives a nonasymptotic form of Rényi's theorem. Since a grid is causal, the price of causality is at most $\\min\\{1,2J\\varepsilon^2/(π^2\\ln 2)\\}$ bits per sample, versus the high-resolution squared-error loss $\\tfrac12\\log_2(πe/6)$. These bounds certify $\\varepsilon$-entropy brackets for autoregressive Laplace and Gaussian sources. For memoryless sources, the optimal causal rate equals the scalar $\\varepsilon$-entropy. For a stationary process on finitely many $2\\varepsilon$-separated centers, adding independent uniform noise of width $2\\varepsilon$ gives exact Shannon lower-bound equality at every block length, attained by storing those centers. This includes histograms with finitely many bins. Storing two non-lattice centers beats every uniform grid of the same cell width by half a bit per sample.",
-      "authors": [
-        "Rama Cont",
-        "Massoud Heidari"
-      ],
-      "published": "2026-10-20T11:51:27Z",
-      "updated": "2026-10-20T11:51:27Z",
-      "primary_category": "cs.IT",
-      "categories": [
-        "cs.IT",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.35933",
-      "pdf_url": "https://arxiv.org/pdf/2610.35933",
-      "score": 2,
-      "matched_keywords": [
-        "renyi"
-      ],
-      "announced": "2026-10-21",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
       "id": "2610.27261",
       "title": "From Hermite Chaos to an Attractive Log-Gas: Explicit High-Rank Limits of Iterated-Logarithm and Tail Constants",
       "abstract": "Let $Z$ be a standard Hermite process of order $m\\ge2$ and Hurst index $H\\in(1/2,1)$. For $d<H-1/2$, let $Y$ be the variance-normalized version of the weighted integral $\\int_0^1 x^{-d}\\,\\mathrm dZ(x)$. Its right tail satisfies $ \\log\\Pr\\{Y>t\\}\\sim -\\frac12\\left(\\frac{t}{Λ_m}\\right)^{2/m}, t\\to\\infty, $ where the positive constant $Λ_m$ admits an infinite-dimensional variational representation. The same constant governs the sharp law of the iterated logarithm for weighted sums of nonlinear functions of long-memory Gaussian sequences. A general closed-form evaluation at finite order is not known. As $m\\to\\infty$ with $H$ and $d$ fixed, the normalized constants $\\sqrt{m!}\\,Λ_m$ decrease to an explicit positive function of $H$ and $d$, with relative error $O(m^{-1})$. This function also gives a lower bound for the normalized constant at every finite order. An exact Rényi variational representation at each order yields, in the high-rank limit, the entropy--energy variational problem of an attractive logarithmic gas. The limiting free energy is evaluated through the Selberg integral and the Barnes $G$ function. For $d\\le0$, convergence remains uniform up to the memory boundary $H=1/2$. After division by the square-root boundary factor $\\sqrt{2H-1}$, the high-rank and boundary limits commute. Their common value is explicit; for constant weights it equals $2^{3/2}π^3G(1/2)^8=2^{11/6}πe\\,\\mathsf A^{-12}$, where $\\mathsf A$ is the Glaisher--Kinkelin constant. The quadratic and cubic coefficients of the fixed-order expansion of the normalized constant as $H\\uparrow1$ converge, as $m\\to\\infty$, to those of the explicit limiting function. Global finite-order bounds and a concentrating-weight limit complement the main result.",
@@ -2772,6 +2746,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.28078",
       "pdf_url": "https://arxiv.org/pdf/2610.28078",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-21",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2610.35933",
+      "title": "Deterministic Causal Quantization with Bounded Error: Adaptive Reconstruction and Entropy bounds",
+      "abstract": "We study compression of real-valued stationary sources under a deterministic error bound: every sample must be reconstructed within a prescribed tolerance $\\varepsilon$ on every input sequence. Reconstructions are causal, depending only on present and past inputs. Rates are measured by the entropy of the quantizer output, which block entropy coding can approach, and compared with the minimum rate of unrestricted block quantization under the same error constraint. A uniform scalar quantizer with cells of width $2\\varepsilon$ is within one bit per sample of this minimum whenever finite-entropy scalar quantization is possible, without density, independence, or mixing assumptions. Under entropy and Sobolev regularity conditions, the gap is at most $2\\mathcal{J}\\varepsilon^2/(π^2\\ln 2)$, where $\\mathcal{J}$ is the asymptotic Fisher information per sample. Thus the cost of causal reconstruction vanishes at a quadratic rate as the tolerance decreases. A uniform grid, however, cannot adapt to the source. We construct an adaptive quantizer whose encoder and decoder maintain a common finite set of reconstruction values, updated from the transmitted symbols alone; suitable initialization reproduces any uniform grid. When its initial values are at least $\\varepsilon$ apart, its rate is within two bits per sample of the minimum for every such source. For sources uniform within separated intervals of width $2\\varepsilon$, storing the interval centers attains the minimum and its Shannon lower bound. Such configurations can outperform every uniform grid of the same cell width: over sources with well-separated intervals, the best uniform grid's worst-case excess rate is $1/(2\\ln 2)\\approx 0.72$ bit per sample.",
+      "authors": [
+        "Rama Cont",
+        "Massoud Heidari"
+      ],
+      "published": "2026-10-20T11:51:27Z",
+      "updated": "2026-11-02T21:17:50Z",
+      "primary_category": "cs.IT",
+      "categories": [
+        "cs.IT",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.35933",
+      "pdf_url": "https://arxiv.org/pdf/2610.35933",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-21",
@@ -4209,14 +4207,14 @@
     {
       "id": "2610.25353",
       "title": "Large deviations for the largest eigenvalue of a polynomial in Gaussian matrices",
-      "abstract": "In this article, we prove that the spectrum, the norm, and the largest eigenvalue of a self-adjoint polynomial $P$ in $k$ independent matrices from the GOE satisfy a large deviation principle.",
+      "abstract": "In this article, we prove that the spectrum, the norm, and the largest eigenvalue of a self-adjoint polynomial $P$ in $k$ independent matrices from the GOE or the GUE satisfy a large deviation principle.",
       "authors": [
         "Alice Guionnet",
         "Jonathan Husson",
         "Jana Reker"
       ],
       "published": "2026-10-18T15:50:35Z",
-      "updated": "2026-10-18T15:50:35Z",
+      "updated": "2026-11-03T16:32:42Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -4745,7 +4743,7 @@
         "Albert Zhang"
       ],
       "published": "2026-10-16T20:31:23Z",
-      "updated": "2026-10-16T20:31:23Z",
+      "updated": "2026-11-03T18:37:51Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
