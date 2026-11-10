@@ -5,11 +5,11 @@
   "iso_week": 43,
   "category": "math.PR",
   "complete": true,
-  "finalized": false,
+  "finalized": true,
   "data_through": "2026-10-23",
-  "total_submissions": 221,
-  "fetched": 221,
-  "generated_at": "2026-11-04T09:14:36Z",
+  "total_submissions": 218,
+  "fetched": 218,
+  "generated_at": "2026-11-10T09:57:30Z",
   "entries": [
     {
       "id": "2610.29853",
@@ -720,32 +720,6 @@
       "score": 4,
       "matched_keywords": [
         "percolation"
-      ],
-      "announced": "2026-10-19",
-      "own": false,
-      "coauthors": [],
-      "bucket": "medium"
-    },
-    {
-      "id": "2610.23003",
-      "title": "Perron-Wright asymptotics and critical component processes for regular inhomogeneous random graphs",
-      "abstract": "We extend Wright's enumeration of connected labelled graphs with fixed surplus to irreducible critical finite type kernels and regular compact type kernels. Let $C_t(k,r)$ denote the total weight of connected labelled graphs with $k$ vertices and surplus $r$. Let $u>0$ satisfy $Ku=u$ and $\\int u\\,dμ=1$, and put $α=\\int u^2\\,dμ$ and $β=\\int u^3\\,dμ$. We prove that the rooted-tree radius $ρ$ is positive and real analytic near $1$, with $ρ(1)=1$ and $\\logρ(t)=\\frac{α^2}{2β}(t-1)^2+O(|t-1|^3)$, and that, for fixed $r\\in\\mathbb{Z}_{\\ge0}$ and $0\\le L < \\infty$, $C_t(k,r)=w_rβ^{(r-1)/2}e^{-k}ρ(t)^{-k}k^{k+3r/2-2}\\{1+O_{r,L}(k^{-1/2})\\}$, uniformly for $|t-1|\\le Lk^{-1/2}$, where $w_r$ is the classical Wright constant. At $t_n=1+λn^{-1/3}$, these asymptotics yield local size and surplus point-process limits for deterministic finite type models and annealed compact type Bollobas-Janson-Riordan models satisfying projective quadratic regularity. After rescaling component sizes by $β^{1/3}n^{-2/3}$, the limit is the Aldous process at parameter $αβ^{-2/3}λ$, and the corresponding type profiles concentrate at the Perron law $p(dx)=u(x)μ(dx)$. For every regular countable critical kernel, we construct graph sequences with growing finite supports and the same local limits, and identify the additive shift of the critical window caused by spectral perturbations of order $n^{-1/3}$.",
-      "authors": [
-        "Wentao Hu",
-        "Wen Sun"
-      ],
-      "published": "2026-10-16T06:27:29Z",
-      "updated": "2026-10-16T06:27:29Z",
-      "primary_category": "math.PR",
-      "categories": [
-        "math.PR",
-        "math.CO"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.23003",
-      "pdf_url": "https://arxiv.org/pdf/2610.23003",
-      "score": 4,
-      "matched_keywords": [
-        "inhomogeneous"
       ],
       "announced": "2026-10-19",
       "own": false,
@@ -4474,32 +4448,6 @@
       "bucket": "other"
     },
     {
-      "id": "2610.24781",
-      "title": "Stochastic Gradient Leimkuhler-Matthews Integrator with Second Order Discretization Error",
-      "abstract": "Stochastic gradient Langevin dynamics (SGLD) has a discretization error of first order in the step size $h$, even with the full gradient. We study the stochastic gradient Leimkuhler-Matthews (SGLM) integrator, which has the same cost as SGLD, one stochastic gradient per step, and reuses each Gaussian vector in consecutive steps. With the full gradient, SGLM is the Leimkuhler-Matthews (LM) integrator, whose discretization error for the invariant distribution is of second order. For a potential strongly convex outside a ball, we prove the bound $\\mathcal O(\\frac{1}{Nh} + Σ^2 h^2 + h^4)$ on the mean square error (MSE) of time averages of SGLM over $N$ steps, where $Σ$ bounds the variance of the gradient noise. The proof uses a modified class that absorbs the non-Markovian part of SGLM. The discretization error enters this bound as $h^4$ and the MSE bound of SGLD as $h^2$, while a larger batch reduces only the term $Σ^2 h^2$ in both bounds. In Bayesian logistic regression on MNIST, SGLM has a smaller estimated MSE than SGLD. The coefficient of $h$ in the numerical bias of SGLM is given explicitly by the covariance of the gradient noise and the continuous Poisson equation. The coefficient for SGLD contains in addition the Hessian of the potential, which comes from the discretization error. Through Riesz representors, the coefficients of the numerical bias determine the coefficients of the Wasserstein-1 errors of SGLM and SGLD.",
-      "authors": [
-        "Xuda Ye",
-        "Yuliang Wang",
-        "Guang Lin",
-        "Cindy Xiangrui Kong"
-      ],
-      "published": "2026-10-17T16:59:23Z",
-      "updated": "2026-10-17T16:59:23Z",
-      "primary_category": "math.NA",
-      "categories": [
-        "math.NA",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.24781",
-      "pdf_url": "https://arxiv.org/pdf/2610.24781",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-10-20",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
       "id": "2610.24772",
       "title": "A Tensor Critical Threshold in Cubic Spherical Kernel Graphs",
       "abstract": "We identify a strong-detection transition within the critical scale for testing cubic spherical kernel graphs against $G(n,1/2)$. Let $X_1,\\ldots,X_n$ be independent uniform points on $\\mathbb S^{d-1}$. Conditional on these points, edges are independent, with connection probability \\[ \\frac{1+βZ_{3,d}(\\langle X_i,X_j\\rangle)}{2}. \\] Here $Z_{3,d}$ is the normalized cubic zonal harmonic, with multiplicity $N_{3,d}\\sim d^3/6$. Assume $n\\to\\infty$, $d=d_n\\to\\infty$, $β=β_n$ with $|β|\\le1$, and $n\\le d^A$, with $A<\\infty$ fixed. Write $r_n=nβ^2/(N_{3,d}d)$. On the critical scale $r_n\\to r\\in(0,\\infty)$, we identify the tensor variational threshold \\[ r_{\\mathrm{tens}} :=\\min_{0<q<1}\\frac{-2\\{\\log(1-q)+q\\}}{q^6}. \\] For $0<r<r_{\\mathrm{tens}}$, the log-likelihood ratio under the null admits an asymptotically Gaussian expansion in the signed triangle, and the total-variation distance converges to $2Φ(r^{3/2}/2)-1$, where $Φ$ is the standard normal distribution function. For $r>r_{\\mathrm{tens}}$, the likelihood-ratio test is strongly consistent, although the centered signed triangle still has Gaussian fluctuations. In the strict regimes $r_n\\to0$ and $r_n\\to\\infty$, total variation tends to zero and one, respectively, even when $β\\to0$.",
@@ -4799,30 +4747,6 @@
       ],
       "abs_url": "https://arxiv.org/abs/2610.24183",
       "pdf_url": "https://arxiv.org/pdf/2610.24183",
-      "score": 0,
-      "matched_keywords": [],
-      "announced": "2026-10-20",
-      "own": false,
-      "coauthors": [],
-      "bucket": "other"
-    },
-    {
-      "id": "2610.24169",
-      "title": "A Pricing and Hedging Framework for Infinite-Dimensional Financial Markets",
-      "abstract": "In this paper, we provide a comprehensive study of how the classical Black--Scholes-type market framework behaves in an infinite-dimensional setting. The asset prices are modeled by stochastic evolution equations in a separable Hilbert space. The evolution of the risk-free asset and the corresponding discounting operators are governed by a strongly continuous group of bounded linear operators. Accordingly, we consider contingent claims with Hilbert-space-valued payoffs, whose values are discounted through the corresponding operators. Within this framework, we investigate the pricing and hedging of contingent claims, deriving the corresponding infinite-dimensional Black--Scholes equations and establishing exact replication results for strong solutions and asymptotic replication results for mild solutions through Yosida approximations. We also study the special case where the infinitesimal generator is given by $A=rI$, allowing for real-valued contingent claims. We further investigate no-arbitrage and market completeness, introducing a Hilbert lattice structure to formulate arbitrage and characterizing attainability through operator equations associated with martingale representations. Finite-dimensional noise truncations and Yosida approximations are employed to establish approximate and asymptotic approximate completeness results. We introduce geometric Brownian motions in Hilbert spaces and derive sufficient conditions for the existence and uniqueness of an equivalent risk-neutral measure, together with explicit pricing formulas for some tractable examples. These results extend key aspects of the classical Black--Scholes framework to markets with infinite-dimensional asset-price dynamics. As a concrete application, the model can be interpreted as a segmented market consisting of a sequence of one-dimensional geometric Brownian motions.",
-      "authors": [
-        "Hanchao Liu"
-      ],
-      "published": "2026-10-16T19:45:45Z",
-      "updated": "2026-10-16T19:45:45Z",
-      "primary_category": "q-fin.MF",
-      "categories": [
-        "q-fin.MF",
-        "math.FA",
-        "math.PR"
-      ],
-      "abs_url": "https://arxiv.org/abs/2610.24169",
-      "pdf_url": "https://arxiv.org/pdf/2610.24169",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-10-20",

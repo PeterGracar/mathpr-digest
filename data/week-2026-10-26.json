@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-10-30",
-  "total_submissions": 247,
-  "fetched": 247,
-  "generated_at": "2026-11-04T09:14:58Z",
+  "total_submissions": 249,
+  "fetched": 249,
+  "generated_at": "2026-11-10T10:01:38Z",
   "entries": [
     {
       "id": "2610.40084",
@@ -2055,6 +2055,33 @@
       "bucket": "other"
     },
     {
+      "id": "2610.39242",
+      "title": "The Liouville property for geometric graphs in the plane",
+      "abstract": "We show that every bounded discrete harmonic function with respect to the cotangent Laplacian on a Delaunay triangulation of the Euclidean plane is constant; equivalently, the cotangent-weighted triangulation has the Liouville property. Our main theorem establishes this property for a more general class of connected weighted geometric graphs in the plane. Furthermore, we show that a planar Delaunay triangulation with cotangent weights could be transient but is recurrent if edge lengths are uniformly bounded.",
+      "authors": [
+        "Kuijun Liu",
+        "Feng Luo",
+        "Yanwen Luo",
+        "Zhenghao Rao"
+      ],
+      "published": "2026-10-29T02:58:06Z",
+      "updated": "2026-11-01T02:20:39Z",
+      "primary_category": "math.GT",
+      "categories": [
+        "math.GT",
+        "math.CO",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.39242",
+      "pdf_url": "https://arxiv.org/pdf/2610.39242",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-30",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.39239",
       "title": "Bregman projections and partition design for accelerating finite Markov chains",
       "abstract": "We study Gibbs averaging of finite Markov chains with a prescribed stationary distribution $π$. Given a transition matrix $P$ and the Gibbs kernel $G$ induced by a state-space partition, we prove that $GPG$ is an information projection for every admissible Bregman generator $ϕ$, with divergences defined using transition probabilities relative to $π$. A Pythagorean identity characterizes this projection and recovers the relative entropy and weighted Frobenius cases. A dual characterization identifies $GPG$ as a kernel closest to stationarity among those with the same projection chain as $P$; for relative entropy, it maximizes the entropy rate. The identities also give monotonicity under partition coarsening. For every reversible ergodic baseline $P$, Gibbs averaging cannot increase the squared weighted Frobenius distance to stationarity at any positive integer time, and the inequality is strict unless $P=GPG$. The corresponding mixing time therefore cannot increase. To choose the partition, we identify the divergence of $G$ from stationarity as the exact worst-case divergence of $GPG$ over all $π$-stationary baselines $P$. This objective depends only on the block masses. We give an exact algorithm for concave block costs, including those arising from relative entropy and power generators $ϕ(u)=u^p$ with $1<p<2$, and a greedy approximation algorithm with a provable guarantee for $p>2$. For power generators $ϕ(u)=u^p$ with $p>1$, the objective is proportional to Tsallis entropy of order $2-p$: its minimization favors imbalanced block masses when $1<p<2$ and balanced block masses when $p>2$, while all $k$-block partitions have the same objective value when $p=2$. A numerical experiment compares the resulting projected chains with a local Metropolis sampler on a multi-modal $π$.",
@@ -2644,11 +2671,10 @@
       "authors": [
         "Ioana Ciotir",
         "Andreea Negrut-Grajdeanu",
-        "Dan Goreac",
         "Eduard Rotenstein"
       ],
       "published": "2026-10-28T07:19:02Z",
-      "updated": "2026-10-28T07:19:02Z",
+      "updated": "2026-11-03T21:27:32Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3330,12 +3356,12 @@
     {
       "id": "2610.37413",
       "title": "Displacement Moments and Path-Terminal Separation in Brownian Interpolant Sampling",
-      "abstract": "Brownian stochastic interpolants connect paired endpoint samples, yet their sampling error can depend on displacement moments even when neither endpoint has a first moment. For arbitrary Borel couplings, we prove early-stopped, target-to-output KL guarantees for standard Euler sampling from the true source. A fourth displacement moment gives an explicit $O(N^{-1})$ bound; a second moment suffices for fixed-law convergence as drift error vanishes. For one fixed coupling with no displacement moment above two, original bridge-path KL stays of order one, comparison-path KL is of order $1/\\log N$, and terminal KL is at most $C/N^2$ on the same grid. The path decomposition identifies the information about the source discarded by Markov projection. When the original bridge is Markov, current-state Euler sampling instead has a second-moment $O((M_2+d)/N)$ bound; finite-entropy Schroedinger bridges for the probability Brownian reference are included. We also construct a current-state learner with expected output KL consistency from iid endpoint pairs. Numerical diagnostics illustrate the distinct errors. Conditional diffusion identities specify a restoration interface, while image controls find no iterative advantage over cheap probabilistic predictors. Uniform terminal rates for general second-moment couplings remain open.",
+      "abstract": "We prove early-stopped, target-to-output KL guarantees for Brownian interpolant Euler sampling from the true source under arbitrary Borel couplings, even with nonintegrable endpoints. At fixed stopping time and noise level, a fourth displacement moment yields an $O(N^{-1})$ discretization term. A second moment suffices for fixed-law convergence with grid refinement and vanishing drift error. For one fixed coupling with no displacement moment above two, the original and comparison paths have KL of orders one and $1/\\log N$ relative to the exact-drift Euler path. On the same geometric grid, terminal KL is at most $C/N^2$. The path decomposition identifies the information about the source discarded by Markov projection. When the original bridge is Markov, current-state Euler sampling has an $O((M_2+d)/N)$ discretization term. We prove expected stopped-output KL consistency for a learner trained on iid endpoint pairs with fresh true-source initialization. In a spatial image control, iterative sampling has worse fair energy scores than direct prediction with resampled residuals. Uniform terminal rates for general second-moment couplings remain open.",
       "authors": [
         "Zhong Han"
       ],
       "published": "2026-10-27T15:30:32Z",
-      "updated": "2026-10-27T15:30:32Z",
+      "updated": "2026-11-07T08:10:26Z",
       "primary_category": "cs.LG",
       "categories": [
         "cs.LG",
@@ -3725,12 +3751,12 @@
     {
       "id": "2610.36558",
       "title": "Holomorphic Cauchy Networks for Efficient Stationary Tail Computation in High-Dimensional Reflected Brownian Motions",
-      "abstract": "Stationary tail computation for high-dimensional reflected Brownian motions (RBMs) remains computationally challenging. Building on NN4MGF's shared-coordinate basic-adjoint-relationship (BAR) framework, we develop Holomorphic Cauchy Networks (HCNs). Native complex-valued rational Cauchy subnetworks enforce holomorphicity on pole-free domains, removing sampled Cauchy-Riemann penalties and their input-derivative graphs. Exact origin anchoring and boundary-coordinate exclusion enforce structural identities, while anchored interactions represent dependent transforms. Under holomorphic-log assumptions, we establish simultaneous value and first-derivative approximation for the constrained architectures and a mixed-derivative lower bound for coordinate-only representations under nonzero cross-covariance. Closed-form real-axis derivatives and sequential backpropagation further control memory. On the same NVIDIA H100 NVL, the tested 30D HCN configuration uses approximately tenfold less peak allocated memory and has 9.7-fold lower mean update time than NN4MGF; extrapolation to the respective scheduled update counts gives a projected full-schedule update-time ratio of 58.2. With 64 million sampled base inputs per high-dimensional run, HCN reaches 50 dimensions on a laptop GPU with 6.367% mean relative error over thresholds 1 through 8. Degree-matched comparisons yield lower reported mean relative errors over the primary evaluation ranges, including 1.422% versus 6.684% on the 2D Harrison non-product benchmark. An exploratory 10D correlated example illustrates the interaction extension.",
+      "abstract": "Stationary tail computation for high-dimensional reflected Brownian motions (RBMs) remains computationally challenging. Building on NN4MGF's shared-coordinate basic-adjoint-relationship (BAR) framework, we develop Holomorphic Cauchy Networks (HCNs). Native complex-valued rational Cauchy subnetworks enforce holomorphicity on pole-free domains, removing sampled Cauchy-Riemann penalties and their input-derivative graphs. Exact origin anchoring and boundary-coordinate exclusion enforce structural identities, while anchored interactions represent dependent transforms. Under holomorphic-log assumptions, we establish simultaneous value and first-derivative approximation for the constrained architectures and a mixed-derivative lower bound for coordinate-only representations under nonzero cross-covariance. Closed-form real-axis derivatives and sequential backpropagation further control memory. On the same NVIDIA H100 NVL, the tested 30D HCN configuration uses approximately tenfold less peak allocated memory and has 9.7-fold lower mean update time than NN4MGF; extrapolation to the respective scheduled update counts gives a projected full-schedule update-time ratio of 58.2. With 64 million sampled base inputs per high-dimensional run, HCN reaches 50 dimensions on a laptop GPU with 6.367% mean relative error over thresholds 1 through 8. Degree-matched comparisons yield lower reported mean relative errors over the primary evaluation ranges, including 1.422% versus 6.684% on the 2D Harrison non-product benchmark. On a 10D correlated RBM benchmark, HCN achieves 3.829% mean relative error over thresholds 1 through 8 against a simulation reference, compared with 19.386% for an independent-marginal baseline.",
       "authors": [
         "Kehan Wang"
       ],
       "published": "2026-10-27T03:05:32Z",
-      "updated": "2026-10-27T03:05:32Z",
+      "updated": "2026-11-08T02:28:41Z",
       "primary_category": "cs.LG",
       "categories": [
         "cs.LG",
@@ -4753,6 +4779,33 @@
       "bucket": "other"
     },
     {
+      "id": "2610.34651",
+      "title": "Approximating the Euclidean Ball by Polytopes: Surprising Rates in High Dimensions",
+      "abstract": "We provide sharp estimates on the number of vertices needed to approximate the Euclidean unit ball $B_d\\subset\\mathbb R^d$ with relative symmetric-difference volume error at most $\\varepsilon\\in(0,1)$. We show that the minimum vertex budget $N_\\varepsilon(d)$ satisfies $$\\log N_\\varepsilon(d)\\asymp d\\log\\left(1+\\frac1{\\varepsilon\\sqrt d}\\right).$$ In particular, $\\exp(O(\\sqrt d/\\varepsilon))$ vertices suffice for every $\\varepsilon\\in(0,1)$ and all sufficiently large $d$. We also prove that achieving a fixed error $\\varepsilon\\in(0,1)$ requires at least $Ω\\bigl((\\tfrac{1+\\varepsilon}{2\\sqrt\\varepsilon})^{d-1}\\bigr)$ facets, an exponential number in $d$. We extend our vertex approximation result to Gaussian symmetric-difference error, and give a positive answer to the question of De, Nadimpalli, and Servedio about subexponential vertex complexity for approximating Euclidean balls. We also disprove a Macbeath-type extremality principle for unrestricted vertex approximation. Whereas the ball uniformly maximizes the inscribed approximation error among all convex bodies (Macbeath, 1951), we show that approximating the hypercube $[-1,1]^d$ to relative error $\\varepsilon$, with $δ:=1-\\varepsilon$, requires $N\\ge\\fracδ{2}\\exp(Ω(δ^2d/\\log^2(2/δ)))$ vertices whenever $d\\ge16\\log(2/δ)$. Thus, when $d$ is large, the cube is harder to approximate than the ball in this sense. Finally, we determine the sharp dimensional order of the classical Laguerre-Delone triangulation number, showing that $\\mathrm{ldel}_{d-1}=Θ(d^{-1/2})$ as $d\\to\\infty$. This improves both the upper bound of Ludwig, Schütt, and Werner and the lower bound of Böröczky by a factor of order $\\sqrt d$. By classical asymptotic approximation theorems (Ludwig, 1999), this improvement applies to every convex body in $\\mathbb R^d$ with $C^2$ boundary and positive Gaussian curvature.",
+      "authors": [
+        "Yegor Gorodzha",
+        "Steven Hoehner",
+        "Gil Kur"
+      ],
+      "published": "2026-10-26T00:29:19Z",
+      "updated": "2026-11-03T21:52:29Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "cs.CG",
+        "cs.LG",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2610.34651",
+      "pdf_url": "https://arxiv.org/pdf/2610.34651",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-10-27",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2610.34630",
       "title": "Quantum wedges and large deviations for SLE with two force points",
       "abstract": "We prove a good large deviation principle for chordal $\\mathrm{SLE}_κ(W_1-2;W_2-2)$ with force points at $0^-$ and $0^+$, for every fixed $W_1,W_2>0$, as $κ\\downarrow0$. The topology is Hausdorff convergence of the entire compact trace. The rate has two equivalent descriptions: the sum of the component wedge energies obtained by cutting a deterministic ambient wedge, and the Loewner driving energy relative to the force-point drift.",
@@ -5442,7 +5495,7 @@
         "Pietro Majer"
       ],
       "published": "2026-10-23T20:52:30Z",
-      "updated": "2026-10-23T20:52:30Z",
+      "updated": "2026-11-05T22:37:18Z",
       "primary_category": "math.DS",
       "categories": [
         "math.DS",
