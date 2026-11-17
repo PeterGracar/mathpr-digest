@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-11-06",
-  "total_submissions": 259,
-  "fetched": 259,
-  "generated_at": "2026-11-16T09:45:41Z",
+  "total_submissions": 261,
+  "fetched": 261,
+  "generated_at": "2026-11-17T10:45:22Z",
   "entries": [
     {
       "id": "2611.06800",
@@ -2809,14 +2809,14 @@
     {
       "id": "2611.04781",
       "title": "On the Onsager--Machlup functional of the infinite-dimensional angular central Gaussian distribution and related measures",
-      "abstract": "The Onsager--Machlup functional of a probability measure is a generalisation of the negative logarithm of the probability density function, defined precisely using the ratios of masses of balls in the limit of vanishing radius. It plays an important role in several areas of applied mathematics because its minimisers can be understood as modes of the measure. We show that the Onsager--Machlup functional of the angular central Gaussian measure on the unit sphere of an infinite-dimensional Hilbert space---i.e., the radial projection of a centred Gaussian measure with covariance operator $C$---is constant on the finite-dimensional sphere spanned by the eigenvectors of leading eigenvalue under $C$, and takes the value $+\\infty$ elsewhere. We discuss the consequences of this extreme concentration of mass for maximum a posteriori estimation in Bayesian inverse problems with an angular central Gaussian prior.",
+      "abstract": "The Onsager--Machlup functional of a probability measure is a generalisation of the negative logarithm of the probability density function, defined precisely using the ratios of masses of balls in the limit of vanishing radius. It plays an important role in several areas of applied mathematics because its minimisers can be understood as modes of the measure. We show that the Onsager--Machlup functional of the angular central Gaussian measure on the unit sphere $\\mathcal{S}$ of an infinite-dimensional Hilbert space---i.e., the radial projection of a centred Gaussian measure with covariance operator $C$---is constant on the finite-dimensional subsphere of $\\mathcal{S}$ spanned by the eigenvectors of leading eigenvalue under $C$, and takes the value $+\\infty$ elsewhere. We discuss the consequences of this extreme concentration of mass for maximum a posteriori estimation in Bayesian inverse problems with an angular central Gaussian prior.",
       "authors": [
         "Hefin Lambley",
         "T. J. Sullivan",
         "Sam Taylor"
       ],
       "published": "2026-11-03T12:21:52Z",
-      "updated": "2026-11-03T12:21:52Z",
+      "updated": "2026-11-16T16:25:59Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4412,15 +4412,15 @@
     },
     {
       "id": "2611.02010",
-      "title": "Volume Doubling and Geometric Inequalities on Graphs with Bakry-Émery Curvature",
-      "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $ε>0$ and whose reversible measure satisfies $m_-\\le m(x)\\leκm_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we further prove volume doubling property: let $K_-:=\\max\\{-K,0\\}$ $$ \\mathrm{Vol}(B(o,2R))\\le C_0\\exp\\!\\bigl(C_1\\sqrt{K_-}\\,R\\bigr) \\mathrm{Vol}(B(o,R)),\\qquad R>0, $$ where $C_0,C_1$ depend only on $ε,κ$. If $d$ is the maximum combinatorial degree of the support graph, we further prove under $\\mathrm{CD}(0,\\infty)$ the sharp volume growth bound $\\mathrm{Vol}(B(o,R))\\le m_-CR^{\\lfloor d/2\\rfloor}$ for all $o$ and $R\\geq 1$.",
+      "title": "Wang's log-Harnack inequality for Markov chains and its applications",
+      "abstract": "We consider irreducible reversible Markov chains whose nonzero off-diagonal transition probabilities are bounded below by $\\varepsilon>0$ and whose reversible measure satisfies $m_-\\le m(x)\\leκm_-$. Under the Bakry--Émery curvature condition $\\mathrm{CD}(K,\\infty)$, with $K\\in\\mathbb{R}$, we establish Wang's log-Harnack inequality $$ P_t(\\log f)(x)\\le\\log P_tf(y) +\\frac{C\\mathrm{dist}(x,y)^2}{\\int_0^t e^{2Ks}\\mathrm{d} s}, $$ for bounded positive $f$ bounded away from zero and all $x,y\\in V$, where $C$ is a constant dependent only on $\\varepsilon$. Building upon this inequality, we prove volume doubling property, which extends the work of Guo-Huang-Huang to general weighted setting. We further prove a sharp volume growth and Li-Yau gradient estimates under $\\mathrm{CD}(0,\\infty)$ .",
       "authors": [
         "Yanlong Ding",
         "Shiping Liu",
         "Chiyu Zhou"
       ],
       "published": "2026-11-01T15:52:27Z",
-      "updated": "2026-11-01T15:52:27Z",
+      "updated": "2026-11-14T06:02:00Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4456,6 +4456,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.01979",
       "pdf_url": "https://arxiv.org/pdf/2611.01979",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-03",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18681",
+      "title": "Asymptotics for a continuous-time risk model with multivariate strongly regularly varying claims and stochastic investment returns",
+      "abstract": "In this paper we study the finite-time asymptotic behavior of the entrance probability of the discounted aggregate claims into an extreme region in a multidimensional risk model. Our non-standard risk model is not restricted to the Levy-Renewal framework, that represents a usual assumption for the stochastic returns and the counting process of the claim vectors, respectively. For the modeling of the distribution of claim vectors, we introduce the notion of set-based multivariate (strongly) regularly varying distributions. For the new set-based classes we provide certain closure properties and some examples to show the difference from the usual definitions of multivariate regularly varying distributions. This set-based framework provides a broad and flexible framework to the actuarial applications, and facilitates the modeling of dependence among the claim vectors that arrive at different time epochs. The two main results of the paper establish a unified asymptotic expression, that demonstrates the presence of multivariate linear single big jump principle. Despite of the assumptions the asymptotic expression remains explicit. In the first main result we suppose that the common distribution of the claim vectors belongs to the class of set-based multivariate regularly varying distributions, and the stochastic returns satisfy a general moment condition. In the second main result, we restrict the claim vectors in the class of setbased multivariate strongly regularly varying distributions, relaxing the moment condition on the stochastic returns. Finally, we conduct a numerical study to illustrate the accuracy of the proposed asymptotic approximation and investigate its sensitivity to the main model parameters.",
+      "authors": [
+        "Zhangting Chen",
+        "Charalampos D. Passalidis"
+      ],
+      "published": "2026-11-01T15:13:15Z",
+      "updated": "2026-11-01T15:13:15Z",
+      "primary_category": "q-fin.RM",
+      "categories": [
+        "q-fin.RM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18681",
+      "pdf_url": "https://arxiv.org/pdf/2611.18681",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-03",
@@ -4605,12 +4629,12 @@
     {
       "id": "2611.01727",
       "title": "Singular Tracking of Fractional Brownian Motion under Proportional Costs",
-      "abstract": "We study adapted finite-variation tracking of fractional Brownian motion under quadratic loss and proportional adjustment costs. For $H\\in(0,1)$, \\[ V_λ(T;a,b,σ)\\underset{λ\\downarrow0}{\\sim}κ_HT a^{(1-H)/(1+H)}(λb)^{2H/(1+H)}σ^{2/(1+H)}. \\] The positive long-run cell value $κ_H$ is unchanged by full past information. A bounded full-past reset correction yields finite-horizon bounds and continuity in $H$. The Brownian value is $κ_{1/2}=\\frac12(\\frac32)^{2/3}$. Coupling local paths with their filtrations gives a local limit, which we verify for Gaussian Volterra targets. Every asymptotically optimal control has the same leading tracking--variation cost split. Primal and dual bounds quantify the cell value. For $H<1/2$, we construct a positive-factor approximation and relate factor resolution to horizon length.",
+      "abstract": "We study the tracking of fractional Brownian motion by adapted controls of finite variation, with quadratic loss and proportional adjustment costs. Let $B^H$ be standard fractional Brownian motion with Hurst parameter $H\\in(0,1)$. We write $V_λ(T;a,b,σ)$ for the optimal expected cost of tracking $σB^H$ over a horizon $T>0$, where $σ>0$ is the target amplitude, $a>0$ weights the quadratic loss, and $λb$ is the cost per unit of adjustment, with $λ,b>0$. We prove \\[V_λ(T;a,b,σ)\\underset{λ\\to0}{\\sim}κ_HT a^{(1-H)/(1+H)}(λb)^{2H/(1+H)}σ^{2/(1+H)}. \\] Here $κ_H>0$ is the long-run optimal cost per unit time in the normalized problem $a=b=σ=λ=1$. Observing the entire past does not change $κ_H$. For the normalized problem with full past information, a horizon $L>0$ and a terminal adjustment to the target, the difference between its value and $κ_H L$ is bounded uniformly in $L$. This estimate also yields continuity of $κ_H$ in $H$. In the Brownian case, $κ_{1/2}=\\frac12(\\frac32)^{2/3}$. We extend the asymptotic formula to nonstationary targets under a coupling condition on local paths and their observation filtrations. We verify this condition for Gaussian Volterra targets under Brownian observation. All asymptotically optimal controls have the same leading-order split between tracking and adjustment costs. We also give primal and dual bounds on $κ_H$. For $H<1/2$, we construct approximations based on exponential sums with positive weights and quantify their error as the horizon grows.",
       "authors": [
         "Alexandre Autran"
       ],
       "published": "2026-11-01T09:24:19Z",
-      "updated": "2026-11-01T09:24:19Z",
+      "updated": "2026-11-14T12:04:19Z",
       "primary_category": "math.OC",
       "categories": [
         "math.OC",
@@ -5693,7 +5717,7 @@
         "Stephen DeSalvo"
       ],
       "published": "2026-10-30T18:43:42Z",
-      "updated": "2026-10-30T18:43:42Z",
+      "updated": "2026-11-14T19:43:37Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -5728,6 +5752,33 @@
       "score": 2,
       "matched_keywords": [
         "random walk"
+      ],
+      "announced": "2026-11-02",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18677",
+      "title": "Adapted Wasserstein Distance for Credit Risk: Rating Information and Model-Transfer Hedging",
+      "abstract": "Two credit models can quote the same bond prices today and still disagree on how information about the issuer unfolds over time. We quantify this disagreement by means of the adapted Wasserstein distance, an optimal transport distance between laws of processes consistent with the flow of information associated with them. For defaultable bond price processes, the squared distance is the smallest probability by which the two default indicators must disagree. This yields closed-form distances for rating reviews and a dynamic programming principle for multi-period rating migration. For a single review, the distance can be estimated from observed posterior survival probabilities at the parametric rate without losing calibration. For intensity models, we obtain an explicit formula for the adapted distance between bond prices that controls the error of bootstrap hedges along a quoted term structure, determine its sharp range over hazard schedules calibrated to the same prices, and show that it is stable under perturbations of the hazard rates. Finally, we complement the theoretical findings with applications to S&P transition data and Monte Carlo experiments to illustrate the size of these effects.",
+      "authors": [
+        "Luca Di Persio",
+        "Francesco Mattesini"
+      ],
+      "published": "2026-10-30T11:35:28Z",
+      "updated": "2026-10-30T11:35:28Z",
+      "primary_category": "q-fin.RM",
+      "categories": [
+        "q-fin.RM",
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18677",
+      "pdf_url": "https://arxiv.org/pdf/2611.18677",
+      "score": 2,
+      "matched_keywords": [
+        "survival"
       ],
       "announced": "2026-11-02",
       "own": false,
@@ -5788,13 +5839,13 @@
     {
       "id": "2610.42072",
       "title": "Spectra of stochastic matrices with a Toeplitz interior",
-      "abstract": "For stochastic matrices of order $n$, the Karpelevič region is the set of all possible eigenvalues. We study matrices whose first and last $m$ rows are arbitrary probability vectors, while the remaining middle rows come from one probability vector by successive cyclic shifts to the right, moving the last entry to the first position each time. As $m$ increases, their eigenvalue regions expand from the polygon spanned by the $n$th roots of unity. For $n\\ge3$, they first equal the full Karpelevič region at $m=\\lceil(n-1)/4\\rceil$. Reproducing all $n$ eigenvalues, counted with multiplicity, of every stochastic matrix of the same order requires $m=\\lfloor n/2\\rfloor$. Thus, in even order $n\\ge4$, retaining two consecutive rows with the Toeplitz pattern can exclude eigenvalue lists even when every possible eigenvalue occurs individually. The boundary of the Karpelevič region consists of arcs joining roots of unity. We determine the least $m$ for which every point of each arc occurs as an eigenvalue in our family. For arcs whose nonreal points first become possible eigenvalues at order $n\\ge4$, and for $m\\ge1$ below this minimum, no point on the arc other than its endpoints occurs in the family. At the minimum, every point on the arc becomes attainable. At the smallest order $n\\ge4$ at which a nonreal point on a boundary arc away from its endpoints can occur as an eigenvalue, that point determines the characteristic polynomial of every stochastic matrix of order $n$ having it as an eigenvalue. Further results describe the smaller regions and the angles at which their boundaries approach roots of unity.",
+      "abstract": "For stochastic matrices of order $n$, the Karpelevič region is the set of all possible eigenvalues. We study matrices whose first and last $m$ rows are arbitrary probability vectors, while the remaining rows have a Toeplitz pattern. As $m$ increases, their eigenvalue regions expand, first reaching the full Karpelevič region at $m=\\lceil(n-1)/4\\rceil$ for $n\\ge3$. Reproducing every complete stochastic spectrum, with multiplicities, requires $m=\\lfloor n/2\\rfloor$. For a boundary arc whose endpoints have orders $q<s$ as roots of unity, the least $m$ needed to attain the whole arc is $0$ for $q=1$ and $\\left\\lceil\\frac12\\left\\lfloor n/q\\right\\rfloor\\right\\rceil$ for $q\\ge2$. For a Karpelevič boundary arc whose nonreal points between the endpoints first occur as stochastic eigenvalues at order $n\\ge4$, fixing any one of these eigenvalues fixes the characteristic polynomial of every stochastic matrix of order $n$ with that eigenvalue. For these arcs and $m\\ge1$, our family attains either the whole arc or only its endpoints. Further results describe the smaller eigenvalue regions and the angles at which their boundaries approach roots of unity.",
       "authors": [
         "Brecht Verbeken",
         "Vincent Ginis"
       ],
       "published": "2026-10-30T17:29:53Z",
-      "updated": "2026-10-30T17:29:53Z",
+      "updated": "2026-11-15T23:42:04Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",

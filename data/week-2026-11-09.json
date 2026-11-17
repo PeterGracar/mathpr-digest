@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-11-13",
-  "total_submissions": 204,
-  "fetched": 204,
-  "generated_at": "2026-11-16T09:45:43Z",
+  "total_submissions": 209,
+  "fetched": 209,
+  "generated_at": "2026-11-17T10:45:24Z",
   "entries": [
     {
       "id": "2611.16599",
@@ -879,7 +879,7 @@
     },
     {
       "id": "2611.16157",
-      "title": "the limit point set of real roots of random polynomials: a resolution of erdős problem 521",
+      "title": "The limit point set of real roots of random polynomials: a resolution of erdős problem 521",
       "abstract": "We resolve Erdős Problem~521 by proving that the normalized real-root count $N_n/\\log n$ of Rademacher polynomials almost surely has no limit. More generally, consider the Kac polynomials \\[ P_n(x)=\\sum_{j=0}^{n}ξ_jx^j \\] with i.i.d.\\ real coefficients of mean zero, variance one, and a finite absolute exponential moment. Let $N_n$ denote the number of distinct real roots of $P_n$. We prove that, almost surely, \\[ \\liminf_{n\\to\\infty}\\frac{N_n}{\\log n}=\\frac1π, \\qquad \\limsup_{n\\to\\infty}\\frac{N_n}{\\log n}=\\frac1π+C_*, \\] and the set of subsequential limits is exactly \\[ \\left[\\frac1π,\\;\\frac1π+C_*\\right]. \\] Here $C_*>1/π$ is a constant uniquely determined by an equation. The lower-limit identity remains valid under the weaker assumption that $\\mathbb{E}|ξ_0|^{2+δ}<\\infty$ for some $δ>0$.",
       "authors": [
         "Zengjing Chen",
@@ -889,7 +889,7 @@
         "Mingjian Zhang"
       ],
       "published": "2026-11-12T01:40:00Z",
-      "updated": "2026-11-12T01:40:00Z",
+      "updated": "2026-11-15T04:48:16Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1171,6 +1171,32 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.17064",
       "pdf_url": "https://arxiv.org/pdf/2611.17064",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-13",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18781",
+      "title": "How shared pedigrees shape gene genealogies in finite admixed populations",
+      "abstract": "Gene genealogies along a chromosome are dependent not only because nearby alleles tend to experience no recombination and are therefore inherited together, but also because alleles at different loci may share parental histories through a common ancestor. Disentangling physical linkage and shared parental trajectories is key to understanding how demography shapes genetic diversity. We develop a mathematical framework for describing the joint genealogies of sampled alleles in a finite admixed population, tracing their ancestry backward to the source populations while explicitly accounting for parental relationships and recombination events. Under a Wright--Fisher model, we show that the joint gene genealogy forms an absorbing Markov chain, derive the likelihood of local ancestry, and connect it to other quantities of interest, notably the admixture fraction. We further establish that, once demographic parameters become constant, local ancestry converges to distinct limiting distributions depending on the demographic setting. Under isolation, chromosomes undergo infinitely many recombination events and linkage disequilibrium is due to drift within population replicates, retaining traces of past admixture events. Under constant gene flow from source populations, recent contributions progressively erase the influence of earlier ancestry. Using the joint genealogy of two alleles, we obtain the limiting variance of admixture fractions in both regimes. We illustrate our framework's flexibility through simulations of endogamy and selection. These examples show how genetic diversity depends on the structure of underlying parental relationships. Our work provides a framework for specifying and analyzing complex demographic scenarios and clarifies the links between local ancestry and mating patterns.",
+      "authors": [
+        "Gaspard Dousson Lys",
+        "Camille Coron",
+        "Tristan Mary-Huard",
+        "Paul Verdu"
+      ],
+      "published": "2026-11-12T16:13:50Z",
+      "updated": "2026-11-12T16:13:50Z",
+      "primary_category": "q-bio.PE",
+      "categories": [
+        "q-bio.PE",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18781",
+      "pdf_url": "https://arxiv.org/pdf/2611.18781",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-13",
@@ -1846,6 +1872,29 @@
       "bucket": "other"
     },
     {
+      "id": "2611.18759",
+      "title": "Portfolio-Size Constraints on Default Correlation: Exact Coherence Tests and Sharp Asymptotic Bounds",
+      "abstract": "An absorbing default process imposes joint restrictions on cumulative default distributions across horizons. We characterize these restrictions for finite homogeneous portfolios. For binomial mixtures whose mixing distribution functions cross at most once, stochastic ordering of the entire default count is equivalent to two inequalities: the probability of no defaults must be nonincreasing and the probability of all defaults must be nondecreasing. In the one-factor Gaussian model, these inequalities give an exact interval of admissible later correlations, obtained from two scalar equations. The intervals are nested as portfolio size increases. If the earlier and later default probabilities are $p_0<p_1$ and the earlier latent correlation is $ρ_0\\in(0,1)$, both interval boundaries approach $ρ_0$ at rate $(\\log n)^{-1/2}$, with common leading magnitude $ρ_0\\sqrt{2(1-ρ_0)}[Φ^{-1}(p_1)-Φ^{-1}(p_0)]$. We also give a constructive absorbing coupling, an exact sequential repair, differential conditions for smooth horizon curves, and a finite-size certificate of incompatibility. Log-domain quadrature, bracketed root finding, and deterministic numerical experiments evaluate the intervals and verify the restrictions on the full count distribution. The framework provides a feasibility analysis of prescribed horizon laws.",
+      "authors": [
+        "Marina Palaisti"
+      ],
+      "published": "2026-11-11T20:00:56Z",
+      "updated": "2026-11-11T20:00:56Z",
+      "primary_category": "q-fin.RM",
+      "categories": [
+        "q-fin.RM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18759",
+      "pdf_url": "https://arxiv.org/pdf/2611.18759",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-13",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2611.15900",
       "title": "Gaussian fluctuations and moderate deviations for two-dimensional stochastic nematic liquid crystal flows",
       "abstract": "We study the small-noise behaviour of a two-dimensional stochastic nematic liquid crystal model, where the Navier--Stokes equations with multiplicative noise are coupled with a Ginzburg--Landau equation for the director field driven by geometric Stratonovich noise. While large deviations for stochastic nematic liquid crystal models have been studied earlier, the central limit and moderate deviation regimes have not been considered. We first prove a central limit theorem in the natural energy space and show that the rescaled fluctuations converge, in every $L^p$-norm and with rate $\\sqrt{\\eps}$, to the solution of a linear stochastic system. The limiting process is centred Gaussian. We then establish a moderate deviation principle with a quadratic rate function determined by the corresponding linearised skeleton equation, which coincides with the Cameron--Martin form of the Gaussian limit. We also show that the moderate deviation principle holds uniformly over bounded sets of initial data. The main arguments use a cancellation between the coupling terms, a one-sided estimate for the polynomial potential, and energy estimates with deterministic Gronwall coefficients, thereby avoiding exponential moment estimates.",
@@ -2179,6 +2228,32 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.14977",
       "pdf_url": "https://arxiv.org/pdf/2611.14977",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-12",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18738",
+      "title": "Support recovery of diffusion models under the manifold hypothesis",
+      "abstract": "We study diffusion models under the manifold hypothesis with possibly large score estimation and discretization errors, and show that while they may not exactly recover the data distribution, they will exactly recover the support (or data manifold). In continuous time, we use a Lyapunov function to show that even if the relative score estimation error is fixed (and not necessarily vanishing), then the rate at which the process approaches the support is $O(\\sqrt{(T-t)|\\log(T-t)|})$ as $t \\to T$, where $T$ is the final time. In discrete time, we use geometric time steps with a fixed (non-vanishing) ratio and show that with a fixed (also not small) relative score estimation error, the process approaches the data manifold exponentially with the number of iterations. The proof relies on controlling a Gaussian measure of a neighborhood of the cut-locus of the data manifold, using a polynomial approximation argument combined with quantitative semi-algebraic estimates.",
+      "authors": [
+        "Ayya Alieva",
+        "Gautam Iyer",
+        "Alexei Novikov",
+        "Lenya Ryzhik"
+      ],
+      "published": "2026-11-11T02:56:31Z",
+      "updated": "2026-11-11T02:56:31Z",
+      "primary_category": "math.ST",
+      "categories": [
+        "math.ST",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18738",
+      "pdf_url": "https://arxiv.org/pdf/2611.18738",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-12",
@@ -3633,7 +3708,7 @@
         "Adrien Corenflos"
       ],
       "published": "2026-11-09T04:52:19Z",
-      "updated": "2026-11-09T04:52:19Z",
+      "updated": "2026-11-16T16:02:37Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -3734,6 +3809,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.11553",
       "pdf_url": "https://arxiv.org/pdf/2611.11553",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-10",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18719",
+      "title": "Triadic and assortative structure of absorbing states in the Axelrod model",
+      "abstract": "We study the Axelrod model of cultural dissemination, viewed as a finite-state Markov chain on an arbitrary finite graph, and classify its absorbing states. An absorbing configuration splits the edges into interior edges, whose endpoints share their whole culture, and boundary edges, whose endpoints share nothing. A partition of the vertices into connected blocks is the domain partition of some absorbing configuration exactly when its quotient graph is properly $q$-colourable. The configurations with a given domain partition correspond to homomorphisms from the quotient into the $F$-fold categorical power of $K_q$, so their total number is a sum of chromatic polynomials over connected partitions; this gives closed forms for trees and cycles and the value $2^{n+F-1}$ for $q=2$ on connected graphs. In absorbing configurations no triangle carries exactly one boundary edge, the open-wedge mass of the interior graph is at most that of the host graph, and Newman's assortativity coefficients for domains, cultures and single features are ordered. The feature counts are martingales and their sums of squares submartingales, which yields an absorption-time bound of order $n^2$ that is attained on paths. Exhaustive enumeration and simulations illustrate the results.",
+      "authors": [
+        "Moses Boudourides"
+      ],
+      "published": "2026-11-08T16:59:53Z",
+      "updated": "2026-11-08T16:59:53Z",
+      "primary_category": "cs.SI",
+      "categories": [
+        "cs.SI",
+        "math.CO",
+        "math.PR",
+        "physics.soc-ph"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18719",
+      "pdf_url": "https://arxiv.org/pdf/2611.18719",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-10",
@@ -3940,7 +4040,7 @@
         "Kenta Misumi"
       ],
       "published": "2026-11-08T05:00:39Z",
-      "updated": "2026-11-08T05:00:39Z",
+      "updated": "2026-11-14T11:31:53Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -4690,6 +4790,31 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.09459",
       "pdf_url": "https://arxiv.org/pdf/2611.09459",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-09",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.18704",
+      "title": "An INAR(1) Risk Model with by-claims applied to the PFAS issue",
+      "abstract": "We propose there a new type of unidimensional discrete-time risk model in ruin theory involving both main claims and by-claims, where the latter ones are counted thanks to an INAR(1) process. In this way, the model embodies a contagion phenomenon, which may be used to describe the damages caused and covered by an insurance company ensuing the spreading of PFAS compounds in the environment. We present mostly asymptotic ruin probabilities, and multiple comparisons with other models derived from the aforementioned one, in particular with two models where the dependence assumptions are relaxed.",
+      "authors": [
+        "Charles Minier",
+        "Stéphane Loisel",
+        "Naushad Mamode Khan"
+      ],
+      "published": "2026-11-06T12:06:59Z",
+      "updated": "2026-11-06T12:06:59Z",
+      "primary_category": "q-fin.RM",
+      "categories": [
+        "q-fin.RM",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.18704",
+      "pdf_url": "https://arxiv.org/pdf/2611.18704",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-09",
