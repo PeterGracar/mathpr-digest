@@ -7,9 +7,9 @@
   "complete": true,
   "finalized": false,
   "data_through": "2026-11-13",
-  "total_submissions": 209,
-  "fetched": 209,
-  "generated_at": "2026-11-17T10:45:24Z",
+  "total_submissions": 212,
+  "fetched": 212,
+  "generated_at": "2026-11-18T10:11:26Z",
   "entries": [
     {
       "id": "2611.16599",
@@ -613,6 +613,31 @@
       "matched_keywords": [
         "erdos",
         "renyi"
+      ],
+      "announced": "2026-11-10",
+      "own": false,
+      "coauthors": [],
+      "bucket": "medium"
+    },
+    {
+      "id": "2611.21665",
+      "title": "A Proof of the Achlioptas-Friedgut Convergence Conjecture",
+      "abstract": "For every fixed integer $q\\ge3$, we show that the $q$-colourability transition in a sparse random graph takes place at a limiting edge density, thus proving the Achlioptas-Friedgut convergence conjecture. The proof adapts the argument we recently introduced to settle the satisfiability conjecture.",
+      "authors": [
+        "Gaia Carenini"
+      ],
+      "published": "2026-11-09T17:16:14Z",
+      "updated": "2026-11-09T17:16:14Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21665",
+      "pdf_url": "https://arxiv.org/pdf/2611.21665",
+      "score": 3,
+      "matched_keywords": [
+        "random graph"
       ],
       "announced": "2026-11-10",
       "own": false,
@@ -1974,13 +1999,39 @@
         "Feng Guo"
       ],
       "published": "2026-11-11T17:09:57Z",
-      "updated": "2026-11-11T17:09:57Z",
+      "updated": "2026-11-16T21:33:32Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
       ],
       "abs_url": "https://arxiv.org/abs/2611.15733",
       "pdf_url": "https://arxiv.org/pdf/2611.15733",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-12",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.21667",
+      "title": "Michelson and Logarithmic Operator Contrasts Spectral Geometry, Tracial Extensions, and Random Products",
+      "abstract": "The Michelson contrast of a positive invertible operator is a bounded coordinate for its condition number. Its logarithmic lift, $\\operatorname{OLC}(A)=\\frac12\\log(\\|A\\|\\|A^{-1}\\|)$, connects spectral spread with projective Thompson geometry. This preprint collects the Novikov--Nikolaeva series and the associated single-author extensions by Novikov into one treatment. We develop the equality criterion for product subadditivity, its dimension and Jordan-rank thresholds, quantum-state examples, and contrasts associated with unitarily invariant norms. The latter have a sharp additive defect, while the full Schatten family records a logarithmic spectral profile up to homometry. Tracial extensions give characterisations of traces, dimension-sensitive defects, and spectral-edge asymptotics. Unbounded operators are described through critical exponents and finite sections. Tensor, matrix and free independence lead to distinct growth laws for products. Finally, symmetric cones provide a setting for the equality criterion, Lorentz boosts, and Jordan products. Classical ingredients are distinguished from the refinements developed in the series; conjectural asymptotic statements remain explicitly labelled.",
+      "authors": [
+        "Andrej Novikov",
+        "Irina Nikolaeva"
+      ],
+      "published": "2026-11-11T16:29:12Z",
+      "updated": "2026-11-11T16:29:12Z",
+      "primary_category": "math.OA",
+      "categories": [
+        "math.OA",
+        "math.FA",
+        "math.PR",
+        "math.SP"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21667",
+      "pdf_url": "https://arxiv.org/pdf/2611.21667",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-12",
@@ -2511,7 +2562,7 @@
         "Shravas Rao"
       ],
       "published": "2026-11-10T07:40:05Z",
-      "updated": "2026-11-10T07:40:05Z",
+      "updated": "2026-11-17T08:20:16Z",
       "primary_category": "math.CO",
       "categories": [
         "math.CO",
@@ -3043,12 +3094,12 @@
     {
       "id": "2611.14587",
       "title": "What the occupation law of a finite Markov chain determines: time reversal and principal minors",
-      "abstract": "What does the occupation law of a finite Markov chain determine about its generator $Q$? From the stationary start, the law of the occupation times at one time determines $Q$ exactly up to time reversal and reversals of memoryless blocks, the sets of states that are all left at one rate with one landing law and are entered in proportion to the stationary law. These reversals commute and give exactly $2^k$ generators, with $k$ read off a tree of memoryless blocks. This leaves only time reversal when $Q$ has no rank-one cut, when there are at most 4 states, and generically. The law at one time determines the law at every time, and a generic start determines $Q$. A renewal block is a set of states that is left at the same rates from each of its states, is entered with one law, and is charged by the start in proportion to that law. From every start the law determines $Q$ exactly up to lumped reversals, which lump disjoint renewal blocks to single states and reverse a memoryless block of the lumped chain. We also find every start that hides time reversal. At the scale of large deviations, the functional of Donsker and Varadhan determines exactly the principal minors of $-Q$.",
+      "abstract": "What does the occupation law of a finite Markov chain determine about its generator $Q$? From the stationary start, the law of the occupation times at one time determines $Q$ up to time reversal and reversals of memoryless blocks, the sets of states that are all left at one rate with one landing law and are entered in proportion to the stationary law. These reversals commute and give exactly $2^k$ generators, with $k$ read off a tree of memoryless blocks. This leaves only time reversal when $Q$ has no rank-one cut, when there are at most 4 states, and generically. The law at one time determines the law at every time, and a generic start determines $Q$. A renewal block is a set of states that is left at the same rates from each of its states, is entered with one law, and is charged by the start in proportion to that law. From every start the law determines $Q$ up to lumped reversals, which lump disjoint renewal blocks to single states and reverse a memoryless block of the lumped chain. We also find every start that hides time reversal. At the scale of large deviations, the functional of Donsker and Varadhan determines exactly the principal minors of $-Q$.",
       "authors": [
         "Arjun Pemmasani"
       ],
       "published": "2026-11-10T07:04:17Z",
-      "updated": "2026-11-10T07:04:17Z",
+      "updated": "2026-11-16T23:53:11Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -3098,7 +3149,8 @@
       "updated": "2026-11-13T04:31:48Z",
       "primary_category": "math.PR",
       "categories": [
-        "math.PR"
+        "math.PR",
+        "cs.IT"
       ],
       "abs_url": "https://arxiv.org/abs/2611.13533",
       "pdf_url": "https://arxiv.org/pdf/2611.13533",
@@ -3617,6 +3669,7 @@
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
+        "math.DG",
         "stat.ML"
       ],
       "abs_url": "https://arxiv.org/abs/2611.12107",
@@ -4165,6 +4218,30 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.10948",
       "pdf_url": "https://arxiv.org/pdf/2611.10948",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-10",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.21661",
+      "title": "A Sharp Perimeter Inequality for Mean Distances on Convex Curves",
+      "abstract": "For a planar convex body $K$, let $θ(K)$ denote the expected Euclidean distance between two independent points uniformly distributed on $\\partial K$ with respect to arclength. We prove the sharp inequality $$\\frac{θ(K)}{\\operatorname{per}K}>\\frac{1}{6}.$$ The constant is approached by rectangles degenerating to a segment.",
+      "authors": [
+        "Eric Shen"
+      ],
+      "published": "2026-11-07T20:08:18Z",
+      "updated": "2026-11-07T20:08:18Z",
+      "primary_category": "math.MG",
+      "categories": [
+        "math.MG",
+        "math.FA",
+        "math.PR"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.21661",
+      "pdf_url": "https://arxiv.org/pdf/2611.21661",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-10",

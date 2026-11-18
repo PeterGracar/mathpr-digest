@@ -9,7 +9,7 @@
   "data_through": "2026-11-06",
   "total_submissions": 261,
   "fetched": 261,
-  "generated_at": "2026-11-17T10:45:22Z",
+  "generated_at": "2026-11-18T10:11:24Z",
   "entries": [
     {
       "id": "2611.06800",
@@ -1032,7 +1032,7 @@
         "Feng Guo"
       ],
       "published": "2026-11-05T18:54:50Z",
-      "updated": "2026-11-05T18:54:50Z",
+      "updated": "2026-11-16T22:08:10Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1297,7 +1297,7 @@
     {
       "id": "2611.08074",
       "title": "Sharp moderate deviations and uniform Berry--Esseen bounds for Hotelling's $T^2$-statistic via Stein's method",
-      "abstract": "Let $\\mathbf X_1,\\ldots,\\mathbf X_n$ be independent random vectors in $\\mathbb R^d$ with common mean $\\boldsymbolμ_n$, where $d\\ge2$ is a fixed integer. Let $\\bar{\\mathbf X}_n=n^{-1}\\sum_{i=1}^n\\mathbf X_i$ denote the sample mean and let \\[ \\widehatΣ_n=\\frac1n\\sum_{i=1}^n (\\mathbf X_i-\\bar{\\mathbf X}_n) (\\mathbf X_i-\\bar{\\mathbf X}_n)^\\top \\] denote the sample covariance matrix. Assume that the average covariance matrix is positive definite and that $\\widehatΣ_n$ is nonsingular almost surely. For testing $H_0:\\boldsymbolμ_n=\\boldsymbolμ_0$, the Hotelling statistic is \\[ T^2_{H,n} =n(\\bar{\\mathbf X}_n-\\boldsymbolμ_0)^\\top \\widehatΣ_n^{-1} (\\bar{\\mathbf X}_n-\\boldsymbolμ_0). \\] Under $H_0$, we establish finite-sample Cramér-type moderate deviation results and uniform Berry--Esseen bounds under finite $p$th moments for $2<p\\le3$. The moderate deviation error order is optimal over independent triangular arrays, as shown by explicit constructions. For identically distributed observations with a fixed distribution, we obtain \\[ \\sup_{0\\le x\\le b_n} \\left| \\frac{\\mathbb P(T^2_{H,n}\\ge x^2)} {\\mathbb P(χ_d^2\\ge x^2)}-1 \\right| = O\\!\\left((1+b_n)^p n^{-(p-2)/2}\\right) \\] for every nonnegative sequence $b_n=o(n^{(p-2)/(2p)})$. The uniform Berry--Esseen bound is $O(n^{-(p-2)/2})$. The proof uses a radial Stein identity and a recursive error estimate. We apply the results to chi-squared calibration in simultaneous testing.",
+      "abstract": "Let $T^2_{H,n}$ denote the one-sample Hotelling statistic based on $n$ independent random vectors in $\\mathbb R^d$ with a common mean, where $d\\ge2$ is a fixed integer. Assume that the average covariance matrix is positive definite. We define the statistic to be zero when the centered sample covariance matrix is singular. Under the null hypothesis, we establish finite-sample Cramér-type moderate deviation results and uniform Berry--Esseen bounds under finite $p$th moments for $2<p\\le3$. Explicit constructions show that the moderate deviation error order is optimal over independent triangular arrays. For identically distributed observations with a fixed distribution, we obtain \\[ \\sup_{0\\le x\\le b_n} \\left| \\frac{\\mathbb P(T^2_{H,n}\\ge x^2)} {\\mathbb P(χ_d^2\\ge x^2)}-1 \\right| = O\\!\\left((1+b_n)^p n^{-(p-2)/2}\\right) \\] for every nonnegative sequence $b_n=o(n^{(p-2)/(2p)})$. In this identically distributed setting, the uniform Berry--Esseen bound is $O(n^{-(p-2)/2})$. The proof uses a radial Stein identity and a recursive error estimate.",
       "authors": [
         "Song-Hao Liu",
         "Qi-Man Shao",
@@ -1305,7 +1305,7 @@
         "Jing-Yu Xu"
       ],
       "published": "2026-11-05T14:26:35Z",
-      "updated": "2026-11-05T14:26:35Z",
+      "updated": "2026-11-17T09:17:12Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -2210,15 +2210,15 @@
     },
     {
       "id": "2611.06011",
-      "title": "Long-memory Hermite functional processes in functional time series spectral asymptotics",
-      "abstract": "Functional Non-Central Limit Theorems (NCLTs) are derived, in the functional spectral domain (see RuizMedina, 2022), for square integrable transformations, mapping an H_{1}-valued Gaussian stationary functional sequence into a nonlinear H_{2}-valued sequence, where H_{1} and H_{2} are separable Hilbert spaces. Linear and nonlinear operator-based scalings are considered, leading to different limit LRD Hermite functional processes. Under bounded linear operator scalings, an infinite-dimensional version of Theorem 5.3.1 in Pipiras and Taqqu (2017) is obtained, involving a functional reduction theorem, extending Theorem 5.3.3 in Pipiras and Taqqu (2017). Alternatively, when an operator-valued exponent based nonlinear scaling is applied, we pay attention to the LRD dominant set at each active output direction, in the leading chaos. Both scaling scenarios allow the derivation of NCLTs under similar settings of conditions.",
+      "title": "A Dobrushin-Major-Taqqu Theorem for Hilbert Space-Valued Random Variables",
+      "abstract": "Let $\\{X_t\\}_{ t \\in \\mathbb{Z}}$ be a stationary Gaussian process taking values in a separable Hilbert space $\\mathbb H_1$, with long-range dependence defined in the spectral domain through a memory operator $A:\\mathbb H_1 \\to \\mathbb H_1$. For square-integrable, nonlinear operators $G:\\mathbb H_1\\to\\mathbb H_2$, taking values in another separable Hilbert space $\\mathbb H_2$, we establish a non-central limit theorem for the centered partial-sum process of $\\{G[X_t]\\}_{t \\in \\mathbb{Z}}$, whenever $G[X_t]$ inherits the long-range dependence behavior from its Gaussian input process. We identify an operator normalization that accounts for both the underlying memory structure, characterized by the memory operator $A$, and the nonlinear transformation $G$. The limiting Hilbert space-valued process is, in general, non-Gaussian and can be expressed as multiple Wiener integrals involving only finitely many Wiener chaos orders along fixed directions in $\\mathbb{H}_2$. The proof introduces a Hilbert space-valued generalization of the reduction principle, identifying the dominant Hermite components and showing that the remainder is negligible under our operator normalization. We employ our results to prove non-central limit theorems for nonlinear transformations of functional FARIMA processes and sojourn functionals of temporally dependent spherical Gaussian fields.",
       "authors": [
-        "M. C. Düker",
-        "P. Zoubouloglou",
-        "M. D. Ruiz-Medina"
+        "M. -C. Düker",
+        "M. D. Ruiz-Medina",
+        "P. Zoubouloglou"
       ],
       "published": "2026-11-04T06:02:56Z",
-      "updated": "2026-11-04T06:02:56Z",
+      "updated": "2026-11-16T19:04:29Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -3889,12 +3889,12 @@
     {
       "id": "2611.03014",
       "title": "Stochastic Homogenization of Schrödinger Equations with Exponentially Mixing Sub-Gaussian Potentials",
-      "abstract": "We study the stochastic Schrödinger equation $ i\\partial_t u_{\\varepsilon} = H_{\\varepsilon} u_{\\varepsilon} $ with $ H_{\\varepsilon} = -Δ+ V(x/\\varepsilon) $, where V is a stationary ergodic sub-Gaussian field with exponential mixing. We establish the optimal algebraic error rate $ \\varepsilon^{d/2} $ in $ L^2(Ω; L^2_x) $ for every $ d\\ge1 $, prove it sharp by a matching lower bound when $ \\widehat{R}(0)>0 $, and upgrade the convergence of Zhang--Bal from convergence in probability to almost sure convergence. We further establish a Gaussian fluctuation central limit theorem with explicit covariance. The limiting fluctuation satisfies $ i\\partial_t \\mathcal{G} = (-Δ+ \\bar{V})\\mathcal{G} + \\sqrt{\\widehat R(0)}\\,\\dot W(t,x) $, a linear random Schrödinger equation driven by additive space-time white noise, where $ \\bar{V} = \\mathbb{E}[V] $ is the effective potential.",
+      "abstract": "We study $i\\partial_t u_{\\varepsilon}=H_{\\varepsilon} u_{\\varepsilon}$, $H_{\\varepsilon} = -Δ+ V\\left(\\frac{x}{\\varepsilon},ω\\right)$, where $V$ is a stationary ergodic sub-Gaussian field with exponential mixing. We establish the optimal algebraic error rate $\\varepsilon^{\\frac{d}2}$ in $L^2(Ω;L^2_x)$ for every $d\\ge1$, prove it sharp by a matching lower bound under a non degeneracy condition, and upgrade the mean square convergence of Zhang--Bal [Stoch. Dyn. 14 (2014), 1350013] to almost sure convergence. The results are non perturbative in the amplitude of $V$ and require neither Gaussian marginals nor weak randomness. We further establish a Gaussian fluctuation central limit theorem with explicit covariance. The limiting fluctuation is the solution to the linear stochastic Schrödinger equation with additive spatial white noise \\begin{equation*} i\\partial_t\\mathcal{G} = H_0 \\mathcal{G} + \\sqrt{\\widehat{R}(0)}\\,\\bar{u}\\,ξ, \\qquad H_0 = -Δ+ \\mathbb{E}[V], \\end{equation*} where $ξ$ is a time frozen spatial white noise on $\\mathbb{R}^d$ and $\\mathcal{G}$ takes values in $H^{-\\mathfrak{s}}(\\mathbb{R}^d)$ for every $\\mathfrak{s}>\\frac{d}{2}$. The proofs combine Duhamel iteration with multiscale cluster expansion for the cumulants of smoothed linear functionals of the potential.",
       "authors": [
         "Fanfei Meng"
       ],
       "published": "2026-11-02T12:13:36Z",
-      "updated": "2026-11-02T12:13:36Z",
+      "updated": "2026-11-17T10:51:00Z",
       "primary_category": "math.AP",
       "categories": [
         "math.AP",
