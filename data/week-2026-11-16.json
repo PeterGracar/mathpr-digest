@@ -4,24 +4,24 @@
   "iso_year": 2026,
   "iso_week": 47,
   "category": "math.PR",
-  "complete": false,
+  "complete": true,
   "finalized": false,
   "data_through": "2026-11-20",
-  "total_submissions": 184,
-  "fetched": 184,
-  "generated_at": "2026-11-20T10:01:52Z",
+  "total_submissions": 186,
+  "fetched": 186,
+  "generated_at": "2026-11-23T10:47:42Z",
   "entries": [
     {
       "id": "2611.25193",
       "title": "Extinction conditions for a two-sex branching process with random mating and overlapping generations",
-      "abstract": "We propose a modification of the bisexual branching process with random mating and overlapping generations. Unlike the model of Molina and Mota \\cite{Molina2024}, our modification introduces probabilistic age-dependent survival that depends on the state of the population. Our modification preserves the general properties of the original process. We establish two sufficient conditions characterizing the subcritical and supercritical regimes of the process, i.e., extinction of the population with probability one and survival of the population with positive probability.The results are illustrated with numerical simulations of the process performed in Python.",
+      "abstract": "We propose a modification of the bisexual branching process with random mating and overlapping generations. Unlike the model of Molina and Mota (2024), our modification introduces probabilistic age-dependent survival that depends on the state of the population. Our modification preserves the general properties of the original process. We establish two sufficient conditions characterizing the subcritical and supercritical regimes of the process, i.e., extinction of the population with probability one and survival of the population with positive probability. The results are illustrated with numerical simulations of the process performed in Python.",
       "authors": [
         "Nikita V. Gordeev",
         "Manuel Mota",
         "Elena B. Yarovaya"
       ],
       "published": "2026-11-18T21:14:22Z",
-      "updated": "2026-11-18T21:14:22Z",
+      "updated": "2026-11-20T09:56:30Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -867,7 +867,7 @@
         "Gabriele Steidl"
       ],
       "published": "2026-11-13T00:49:39Z",
-      "updated": "2026-11-13T00:49:39Z",
+      "updated": "2026-11-20T17:25:13Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -1039,6 +1039,29 @@
       "bucket": "other"
     },
     {
+      "id": "2611.26675",
+      "title": "Uniformising random greedy maximal independent sets on graphs with at most five vertices",
+      "abstract": "A random greedy algorithm scans the vertices of a finite graph in increasing order of independent exponential arrival times and accepts each vertex unless an accepted neighbour blocks it. We ask an inverse question: can strictly positive finite arrival rates be chosen so that the terminal inclusion-maximal independent sets are all equally likely? We call this exact property exponential greedy uniformisability (EGU). We establish the complete small-order classification: every finite simple graph on at most five vertices is EGU, with the unique exception of the five-vertex path $P_5$ up to graph isomorphism. A strict $2\\times2$ probability minor provides an explicit obstruction for the exceptional graph; the positive cases are certified by graph-isomorphism reduction and exact constructive witnesses. We explain the independent-exponential-clock probability law and the formal Lean 4 verification, registered as Palomar PALOMAR-2026-11-19-000021 (version 1). The registration is a formal proof record, not a claim of novelty certification or journal peer review.",
+      "authors": [
+        "John Fairfax-Ball"
+      ],
+      "published": "2026-11-19T17:17:56Z",
+      "updated": "2026-11-19T17:17:56Z",
+      "primary_category": "math.PR",
+      "categories": [
+        "math.PR",
+        "math.CO"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26675",
+      "pdf_url": "https://arxiv.org/pdf/2611.26675",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-20",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
       "id": "2611.26337",
       "title": "How Should Candidates Be Weighted under Open-List Proportional Representation? Harmonic Weights and Dirichlet Order Statistics",
       "abstract": "Candidates in open-list proportional representation systems are not equally prominent, and measurements that involve aggregation over candidates therefore require some form of weighting. We address the question of how those weights should be chosen. Since weights based on realized preference votes are unavailable in advance and endogenous to the electoral outcome, we seek a priori weights that depend on list position alone, and derive them as expected ordered vote shares under a probabilistic model of the division of the list vote among candidates. The natural starting point -- the uniform distribution on the simplex -- is unrealistic, as it prescribes the same degree of concentration of the vote for every list, and under it the leading candidates become more alike as lists lengthen. The other members of the symmetric Dirichlet family require a concentration parameter, which is unknown and which there is no reason to expect to be constant across countries, parties, and elections. Accordingly, we treat that parameter as random. We prove that under a scale-invariant prior restricted to lists with at least two effective candidates, the expected share of the $k$-th candidate decays as $1/k$, and we show that over the leading positions of a long list, up to one hundred of them, the resulting weights are within 1.4 to 3.4 percent, in total variation, of the harmonic weights $(k H_n)^{-1}$, where $H_n$ is the $n$-th harmonic number. No fixed value of the parameter yields similar weights. Moreover, under the uniform distribution itself, harmonic weights are exactly the normalized expected margins between consecutive candidates.",
@@ -1081,6 +1104,33 @@
       ],
       "abs_url": "https://arxiv.org/abs/2611.26295",
       "pdf_url": "https://arxiv.org/pdf/2611.26295",
+      "score": 0,
+      "matched_keywords": [],
+      "announced": "2026-11-20",
+      "own": false,
+      "coauthors": [],
+      "bucket": "other"
+    },
+    {
+      "id": "2611.26673",
+      "title": "Error analysis for the numerical approximation of the quantile hedging problem",
+      "abstract": "We analyse numerical approximations of quantile hedging in complete linear markets with Markovian diffusion dynamics. The problem is formulated as stochastic control for an augmented state $(X,P)$, where the probability martingale $P$ is constrained to $[0,1]$ and controlled through an unbounded volatility coefficient. We combine control truncation with piecewise-constant policy time-stepping (PCPT), stopping controls continuously upon boundary hitting to preserve the state constraint. Using one-step dynamic programming principles and regularisation, we derive a generator inequality and explicit value-function error bounds. Under standard coefficient regularity and a Lipschitz payoff, optimising the truncation and regularisation parameters yields an error exponent arbitrarily close to $1/8$ from below, uniformly in the probability variable. For controls bounded from the outset, we obtain exponents arbitrarily close to $1/4$ from below, approaching the exponent established by Jakobsen, Picarelli and Reisinger without state constraints. We also implement a fully discrete scheme with neural-network controls. Grid-time projection onto $[0,1]$ introduces a martingale defect and a pricing bias. We quantify this bias in a toy problem and mitigate it using a state-dependent control bound. Experiments in Black--Scholes and Lipschitz local-volatility models illustrate the correction and the decrease in pricing errors under grid refinement.",
+      "authors": [
+        "Cyril Bénézet",
+        "Cyril Nefzaoui-Blanchard",
+        "Sergio Pulido"
+      ],
+      "published": "2026-11-19T14:55:47Z",
+      "updated": "2026-11-19T14:55:47Z",
+      "primary_category": "q-fin.CP",
+      "categories": [
+        "q-fin.CP",
+        "math.OC",
+        "math.PR",
+        "q-fin.MF"
+      ],
+      "abs_url": "https://arxiv.org/abs/2611.26673",
+      "pdf_url": "https://arxiv.org/pdf/2611.26673",
       "score": 0,
       "matched_keywords": [],
       "announced": "2026-11-20",
@@ -1192,7 +1242,7 @@
         "Lukang Sun"
       ],
       "published": "2026-11-19T11:49:08Z",
-      "updated": "2026-11-19T11:49:08Z",
+      "updated": "2026-11-20T14:36:38Z",
       "primary_category": "math.SP",
       "categories": [
         "math.SP",
@@ -1731,7 +1781,7 @@
         "Kalina Petrova"
       ],
       "published": "2026-11-18T15:00:56Z",
-      "updated": "2026-11-18T15:00:56Z",
+      "updated": "2026-11-19T19:15:07Z",
       "primary_category": "math.CO",
       "categories": [
         "math.CO",
@@ -4068,12 +4118,12 @@
     {
       "id": "2611.18867",
       "title": "Weak and Strong Moments of Log-Concave Measures",
-      "abstract": "Let $X\\in\\mathbb{R}^d$ be a log-concave random vector, and let $N$ be a seminorm on $\\mathbb{R}^d$. For $p\\ge 1$, we show that $\\|N(X)\\|_p$ is at most $\\mathbb{E} N(X)+C s_p$, where $s_p$ is the supremum of $\\|u(X)\\|_p$ over all linear functionals $u$ satisfying $|u(x)|\\le N(x)$ for every $x\\in\\mathbb{R}^d$. A choice for $C$ is $2+5e/2$. This bound implies Latała's conjecture on weak and strong moments.",
+      "abstract": "Let $X\\in\\mathbb{R}^d$ be a log-concave random vector, and let $N$ be a seminorm on $\\mathbb{R}^d$. For $p\\ge 1$, we show that $\\|N(X)\\|_p$ is at most $\\mathbb{E} N(X)+C s_p$, where $s_p$ is the supremum of $\\|u(X)\\|_p$ over all linear functionals $u$ satisfying $|u(x)|\\le N(x)$ for every $x\\in\\mathbb{R}^d$. A choice for $C$ is $2+2e$. This bound implies Latała's conjecture on weak and strong moments.",
       "authors": [
         "Haozhou Zhang"
       ],
       "published": "2026-11-13T19:14:36Z",
-      "updated": "2026-11-13T19:14:36Z",
+      "updated": "2026-11-20T05:59:53Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
