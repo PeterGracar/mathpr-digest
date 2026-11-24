@@ -9,7 +9,7 @@
   "data_through": "2026-11-13",
   "total_submissions": 213,
   "fetched": 213,
-  "generated_at": "2026-11-23T10:47:40Z",
+  "generated_at": "2026-11-24T12:30:43Z",
   "entries": [
     {
       "id": "2611.16599",
@@ -1451,7 +1451,7 @@
         "Wenting Xu"
       ],
       "published": "2026-11-12T13:14:09Z",
-      "updated": "2026-11-12T13:14:09Z",
+      "updated": "2026-11-22T06:34:43Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
@@ -2362,14 +2362,14 @@
     {
       "id": "2611.14836",
       "title": "Beyond weak convergence of signed spectral measures: Eigenvector overlaps and high-dimensional prediction risk",
-      "abstract": "Many results in random matrix theory and high-dimensional statistics depend on weak convergence of spectral measures, which is usually established via pointwise convergence of Stieltjes transforms. This approach has recently been applied to signed measures. However, for signed measures, pointwise convergence of Stieltjes transforms alone no longer characterizes weak convergence. While this is unproblematic in many cases, in the high-dimensional regression setting, recently considered by Green and Romanov (2025), the underlying signed eigenvector-overlap measures can fail to converge weakly, despite pointwise convergence of their Stieltjes transforms. Using a novel approach to risk analysis, we show that weak convergence can be replaced by a simple convergence result for bilinear forms. This allows us to establish convergence of the prediction risk for estimators based on arbitrary continuous spectral filters, including (regularized) gradient descent and ridge regression, even when the underlying signed measures fail to converge weakly. Under additional regularity conditions, we construct an explicit finite signed measure yielding an integral representation of the asymptotic prediction risk. This representation provides necessary and sufficient conditions for minimum-norm interpolation and optimally tuned ridge regression to attain the smallest asymptotic prediction risk among estimators with continuous spectral filters. Moreover, we provide characterizations of weak and vague convergence of finite signed measures in terms of pointwise convergence of their Stieltjes transforms.",
+      "abstract": "Many results in random matrix theory and high-dimensional statistics depend on weak convergence of spectral measures, which is usually established via pointwise convergence of Stieltjes transforms. This approach has recently been applied to signed measures. However, for signed measures, pointwise convergence of Stieltjes transforms alone no longer characterizes weak convergence. While this is unproblematic in many cases, in the high-dimensional regression setting, recently considered by Green and Romanov, the underlying signed eigenvector-overlap measures can fail to converge weakly, despite pointwise convergence of their Stieltjes transforms. Using a novel approach to risk analysis, we show that weak convergence can be replaced by a simple convergence result for bilinear forms. This allows us to establish convergence of the prediction risk for estimators based on arbitrary continuous spectral filters, including (regularized) gradient descent and ridge regression, even when the underlying signed measures fail to converge weakly. Under additional regularity conditions, we construct an explicit finite signed measure yielding an integral representation of the asymptotic prediction risk. This representation provides necessary and sufficient conditions for minimum-norm interpolation and optimally tuned ridge regression to attain the smallest asymptotic prediction risk among estimators with continuous spectral filters. Moreover, we provide characterizations of weak and vague convergence of finite signed measures in terms of pointwise convergence of their Stieltjes transforms.",
       "authors": [
         "Thomas Stark",
         "Georg Köstenberger",
         "Nina Dörnemann"
       ],
       "published": "2026-11-10T23:37:02Z",
-      "updated": "2026-11-10T23:37:02Z",
+      "updated": "2026-11-21T00:14:48Z",
       "primary_category": "math.ST",
       "categories": [
         "math.ST",
@@ -2537,7 +2537,7 @@
         "Hua Qiu"
       ],
       "published": "2026-11-10T08:21:58Z",
-      "updated": "2026-11-10T08:21:58Z",
+      "updated": "2026-11-23T06:41:50Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -2583,12 +2583,12 @@
     {
       "id": "2611.14576",
       "title": "The bias interval of the elephant random walk",
-      "abstract": "Guérin, Laulin, Raschel, and Simon conjectured that the initial biases giving the superdiffusive elephant random walk a bimodal limit law form an interval centered at one half, and they described the problem as challenging. We prove this. For every superdiffusive memory, strongly biased starts are unimodal, and the limit density has two local maxima exactly when the bias lies in a proper open interval. Outside it, including its endpoints, the density has a unique local maximum. The interval is nonempty exactly above a single memory threshold, numerically about $0.6688$, whose uniqueness follows from a positive-weight integral for the central curvature of the fair-start density. We control sign changes in the finite walk's first and second differences, including those created at the boundary, and pass them to the limit. The bias boundary is continuous and tends to zero at least quadratically fast as memory tends to one.",
+      "abstract": "Guérin, Laulin, Raschel, and Simon conjectured that the initial biases giving the superdiffusive elephant random walk a bimodal limit law form an interval centered at one half, and they described the problem as challenging. We prove this. For every superdiffusive memory the limit density has two local maxima exactly when the bias lies in a proper open interval, and outside it, including its endpoints, the density has a unique local maximum. The interval is nonempty exactly above a single memory threshold, numerically about $0.6688$. Near this threshold $a_*$ the distance between the two modes is of order $(a-a_*)^{1/2}$, and the width of the interval is of order $(a-a_*)^{3/2}$. The bias boundary is continuous and tends to zero at least quadratically fast as memory tends to one. The proof bounds the sign changes of the first and second differences of the finite walk, including those created at the boundary, and passes them to the limit.",
       "authors": [
         "Arjun Pemmasani"
       ],
       "published": "2026-11-10T02:17:30Z",
-      "updated": "2026-11-13T08:31:16Z",
+      "updated": "2026-11-21T06:11:12Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR",
