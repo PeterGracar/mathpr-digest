@@ -9,7 +9,7 @@
   "data_through": "2026-11-13",
   "total_submissions": 213,
   "fetched": 213,
-  "generated_at": "2026-11-24T12:30:43Z",
+  "generated_at": "2026-11-25T11:18:36Z",
   "entries": [
     {
       "id": "2611.16599",
@@ -42,12 +42,12 @@
     {
       "id": "2611.15999",
       "title": "Recurrence and Transience in Monotone Environments: Increasing Conductances and Growing Domains",
-      "abstract": "We study discrete-time random walks on a locally finite graph whose conductances are non-decreasing in time and bounded on each edge. We compare their hitting probabilities with those of the time-homogeneous walk obtained by fixing the conductances at the starting time. These estimates give proofs of two results established in greater generality by Li and Park: if the upper network is recurrent, every vertex is visited infinitely often almost surely; if the initial network is transient, the expected number of visits to each vertex is finite. In a finite domain, the difference between the two exit probabilities is bounded by the square root of the product of a capacity increment and a dual energy. We obtain a corresponding infinite-volume estimate for the probability of never hitting a given vertex. To prove these estimates, we compare two Dirichlet forms and use a contraction property of the killed transition operators. We also consider walks on increasing finite sets. On each prescribed time interval, called a plateau, the transition operator is fixed. A lower bound on transition probabilities after mixing and an upper bound on the expected number of returns give a sufficient condition for every vertex to be visited infinitely often almost surely. For uniformly elliptic lazy walks on boxes of radius $R_n$ in $\\mathbb Z^d$, $d\\geq3$, it is enough that $\\sum_n(L_n-b_n)_+/R_n^d$ diverges, where $L_n$ is the duration of the $n$th plateau and $b_n=\\lceil aR_n^2\\rceil$.",
+      "abstract": "We study discrete-time random walks on a locally finite graph whose conductances are non-decreasing in time and bounded on each edge. We compare its hitting probabilities with those of the homogeneous walk whose conductances are fixed at the starting time. These estimates give another proof of two results of Li and Park, who work under more general assumptions. If the upper network is recurrent, the walk visits every vertex infinitely often almost surely. If the initial network is transient, the expected number of visits to each vertex is finite. Let us first consider the probability of leaving a finite set before hitting a given vertex. The difference between this probability and its value for the frozen walk is bounded in absolute value by the square root of the product of a capacity increment and a dual energy. On an initially transient network, we obtain a lower bound on the probability of never hitting the vertex. Both proofs use a comparison of two Dirichlet forms and a contraction property of the killed transition operators. We also consider walks on increasing finite sets. On each prescribed time interval, called a plateau, the transition operator is fixed. A lower bound on transition probabilities after mixing and an upper bound on the expected number of returns give a sufficient condition for every vertex to be visited infinitely often almost surely. For uniformly elliptic lazy walks on boxes of radius $R_n$ in $\\mathbb{Z}^d$, $d\\geq3$, it is enough that $\\sum_n(L_n-b_n)_+/R_n^d$ diverges, where $L_n$ is the duration of the $n$th plateau and $b_n=\\lceil aR_n^2\\rceil$ for a constant $a$ depending only on the dimension and the ellipticity bound.",
       "authors": [
         "Nordine Anis Moumeni"
       ],
       "published": "2026-11-11T20:55:28Z",
-      "updated": "2026-11-11T20:55:28Z",
+      "updated": "2026-11-24T16:03:55Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
@@ -1740,7 +1740,7 @@
         "Wenjun Zhang"
       ],
       "published": "2026-11-12T02:39:30Z",
-      "updated": "2026-11-12T02:39:30Z",
+      "updated": "2026-11-24T00:48:05Z",
       "primary_category": "math.PR",
       "categories": [
         "math.PR"
